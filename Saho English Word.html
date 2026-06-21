@@ -1,0 +1,3093 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saho English Word — めざせ TOEFL 100</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<!-- 単語マスター（Claudeが更新する外部ファイル）-->
+<script src="単語マスター.js"></script>
+<style>
+  :root {
+    --bg:        #f7f3ea;
+    --bg-2:      #efe8d8;
+    --card:      #fffdf8;
+    --ink:       #44403a;
+    --ink-soft:  #8a8377;
+    --line:      #e7dfcf;
+
+    --coral:     #ec7a63;
+    --coral-deep:#d65f48;
+    --coral-soft:#fbe3dc;
+    --teal:      #46a594;
+    --teal-soft: #d8efe9;
+    --honey:     #eaa83f;
+    --honey-soft:#fbeccf;
+    --berry:     #b3688c;
+    --berry-soft:#f1e0e9;
+
+    --good:      #3f9c7c;
+    --bad:       #d65f48;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Zen Maru Gothic", "Quicksand", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+    background:
+      radial-gradient(circle at 18% 12%, #fbf6ec 0%, transparent 40%),
+      radial-gradient(circle at 85% 0%, #f2ece0 0%, transparent 45%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 22px 14px 70px;
+    line-height: 1.6;
+  }
+
+  .wrap { max-width: 600px; margin: 0 auto; }
+
+  /* ---------- Header ---------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .logo {
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .logo .mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 10px;
+    background: var(--teal); color: #fff; font-size: 0.95rem;
+  }
+  .tagline { font-size: 0.72rem; color: var(--ink-soft); margin-top: 3px; padding-left: 37px; }
+  .header-btns { display: flex; gap: 7px; }
+
+  /* ---------- Progress card ---------- */
+  .journey-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 6px 6px 16px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(68,64,58,0.07);
+  }
+  .journey-svg {
+    width: 100%; height: 244px; display: block;
+    border-radius: 18px;
+  }
+  .journey-body { padding: 12px 16px 0; }
+
+  .elevation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .elev-num { font-weight: 900; font-size: 1.5rem; color: var(--ink); }
+  .elev-num small { font-size: 0.78rem; color: var(--ink-soft); font-weight: 500; }
+  .elev-label {
+    display: inline-block;
+    font-size: 0.74rem; color: var(--teal);
+    font-weight: 700; margin-top: 2px;
+  }
+  .elev-pct { font-weight: 900; font-size: 1.7rem; color: var(--coral); line-height: 1; }
+  .elev-pct small { font-size: 0.85rem; }
+  .elev-cap { font-size: 0.64rem; color: var(--ink-soft); text-align: right; letter-spacing: 0.05em; }
+
+  .track {
+    height: 12px; background: var(--bg-2);
+    border-radius: 999px; margin-top: 12px; overflow: hidden;
+    position: relative;
+  }
+  .track > div {
+    height: 100%;
+    background: linear-gradient(90deg, var(--teal), var(--honey), var(--coral));
+    border-radius: 999px; transition: width 0.5s ease;
+  }
+  .checkpoints {
+    display: flex; justify-content: space-between;
+    font-size: 0.68rem; color: var(--ink-soft);
+    margin-top: 8px; font-weight: 700;
+  }
+  .checkpoints span { opacity: 0.5; transition: opacity 0.2s, color 0.2s; }
+  .checkpoints span.passed { opacity: 1; color: var(--coral-deep); }
+
+  /* ---------- Forest friends roster ---------- */
+  .friends-roster {
+    margin-top: 14px; padding-top: 12px;
+    border-top: 1px dashed var(--line);
+  }
+  .roster-title {
+    font-size: 0.72rem; font-weight: 700; color: var(--ink-soft);
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 8px; margin-bottom: 6px;
+  }
+  .roster-title span { color: var(--teal); font-weight: 900; white-space: nowrap; }
+  .next-friend {
+    font-size: 0.72rem; font-weight: 700; color: var(--coral-deep);
+    background: var(--coral-soft); border-radius: 999px;
+    padding: 4px 12px; margin-bottom: 9px; display: inline-block;
+  }
+  .roster-list {
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px;
+    max-height: 168px; overflow-y: auto; padding: 2px;
+  }
+  @media (max-width: 460px) { .roster-list { grid-template-columns: repeat(5, 1fr); } }
+  .friend {
+    background: var(--bg); border: 1px solid var(--line);
+    border-radius: 11px; padding: 6px 2px 4px; text-align: center;
+    transition: all 0.25s;
+  }
+  .friend .face { font-size: 1.15rem; line-height: 1.1; filter: grayscale(1); opacity: 0.4; transition: all 0.25s; }
+  .friend .fname { font-size: 0.56rem; color: var(--ink-soft); margin-top: 0; font-weight: 700; line-height: 1.2; }
+  .friend .fneed { font-size: 0.52rem; color: var(--ink-soft); opacity: 0.8; }
+  .friend.met {
+    background: var(--honey-soft); border-color: #efd6a3;
+    box-shadow: 0 2px 6px rgba(234,168,63,0.18);
+  }
+  .friend.met .face { filter: none; opacity: 1; }
+  .friend.met .fname { color: var(--coral-deep); }
+  .friend.next { border-color: var(--coral); border-style: dashed; }
+  @keyframes pop-in { 0%{transform:scale(0.6);} 60%{transform:scale(1.12);} 100%{transform:scale(1);} }
+  .friend.met .face { animation: pop-in 0.4s ease; }
+
+  /* ---------- Stats ---------- */
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-bottom: 18px; }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 12px 4px 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(68,64,58,0.05);
+    position: relative;
+  }
+  .stat::before {
+    content: ""; position: absolute; top: 0; left: 18%; right: 18%; height: 3px;
+    border-radius: 0 0 4px 4px;
+  }
+  .stat.c1::before { background: var(--coral); }
+  .stat.c2::before { background: var(--honey); }
+  .stat.c3::before { background: var(--teal); }
+  .stat.c4::before { background: var(--berry); }
+  .stat-emoji { font-size: 0.95rem; }
+  .stat-val { font-weight: 900; font-size: 1.3rem; color: var(--ink); line-height: 1.1; }
+  .stat-label { font-size: 0.64rem; color: var(--ink-soft); margin-top: 1px; font-weight: 700; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    background: var(--coral);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 26px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.08s, box-shadow 0.15s, background 0.15s;
+    box-shadow: 0 4px 0 var(--coral-deep), 0 8px 16px rgba(214,95,72,0.22);
+  }
+  .btn:hover { background: var(--coral-deep); }
+  .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--coral-deep), 0 3px 8px rgba(214,95,72,0.2); }
+  .btn:disabled { background: #cfc6b6; box-shadow: 0 4px 0 #b9b0a0; cursor: not-allowed; }
+  .btn.wide { width: 100%; }
+  .btn.small { padding: 11px 18px; font-size: 0.9rem; }
+  .btn.ghost {
+    background: var(--card); color: var(--coral-deep);
+    box-shadow: 0 4px 0 var(--line), 0 6px 12px rgba(68,64,58,0.06);
+    border: 1px solid var(--line);
+  }
+  .btn.ghost:hover { background: #fff8ee; }
+  .btn.ghost:active { box-shadow: 0 1px 0 var(--line); }
+  .btn.teal { background: var(--teal); box-shadow: 0 4px 0 #357f71, 0 8px 16px rgba(70,165,148,0.22); }
+  .btn.teal:hover { background: #3c9384; }
+  .btn.teal:active { box-shadow: 0 1px 0 #357f71; }
+
+  /* ---------- Card ---------- */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 24px 22px;
+    box-shadow: 0 8px 22px rgba(68,64,58,0.07);
+  }
+  .card + .card { margin-top: 14px; }
+
+  /* ---------- Question ---------- */
+  .q-progress-bar { height: 8px; background: var(--bg-2); border-radius: 999px; overflow: hidden; margin-bottom: 16px; }
+  .q-progress-bar > div { height: 100%; background: linear-gradient(90deg, var(--teal), var(--coral)); transition: width 0.35s ease; border-radius: 999px; }
+  .q-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-bottom: 16px; font-weight: 700; color: var(--ink-soft); }
+  .q-type-tag { color: #fff; background: var(--berry); border-radius: 999px; padding: 3px 12px; font-size: 0.7rem; }
+
+  .q-prompt { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 10px; font-weight: 700; }
+  .q-content { font-size: 1.35rem; color: var(--ink); margin-bottom: 22px; line-height: 1.4; font-weight: 700; text-align: center; }
+  .q-content.word { font-size: 2.2rem; font-weight: 900; color: var(--coral-deep); letter-spacing: 0.01em; }
+  .q-content .blank { display: inline-block; min-width: 60px; border-bottom: 3px dashed var(--coral); color: var(--coral-deep); text-align: center; padding: 0 6px; }
+
+  .choices { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 480px) { .choices { grid-template-columns: 1fr 1fr; } }
+  .choice {
+    background: var(--card);
+    border: 2px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 0.96rem;
+    font-family: inherit; font-weight: 600;
+    color: var(--ink);
+    cursor: pointer; text-align: left;
+    transition: all 0.12s;
+    box-shadow: 0 3px 0 var(--bg-2);
+  }
+  .choice:hover:not(:disabled) { border-color: var(--teal); transform: translateY(-1px); }
+  .choice:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 1px 0 var(--bg-2); }
+  .choice.correct { background: var(--teal-soft); border-color: var(--good); color: var(--good); box-shadow: 0 3px 0 #bfe3d8; }
+  .choice.wrong { background: var(--coral-soft); border-color: var(--bad); color: var(--bad); box-shadow: 0 3px 0 #f3cfc6; }
+  .choice .letter {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 7px;
+    background: var(--bg-2); color: var(--ink-soft);
+    font-weight: 800; margin-right: 9px; font-size: 0.82rem; vertical-align: middle;
+  }
+
+  .feedback { margin-top: 16px; padding: 0; border-radius: 14px; font-size: 0.94rem; font-weight: 700; transition: all 0.2s; }
+  .feedback.show.ok  { background: var(--teal-soft); color: var(--good); padding: 13px 16px; }
+  .feedback.show.ng  { background: var(--coral-soft); color: var(--bad); padding: 13px 16px; }
+  .feedback .word-info { font-weight: 700; margin-top: 4px; color: var(--ink); }
+
+  /* ---------- Result ---------- */
+  .result { text-align: center; }
+  .result h2 { font-weight: 900; font-size: 1.4rem; color: var(--ink); margin-bottom: 6px; }
+  .result .summary { font-size: 0.96rem; color: var(--ink-soft); margin-bottom: 16px; font-weight: 700; }
+  .result-score { font-weight: 900; font-size: 3.2rem; color: var(--teal); margin: 8px 0 2px; }
+  .result-score small { font-size: 1rem; color: var(--ink-soft); font-weight: 700; }
+  .result-gain { color: var(--coral-deep); font-weight: 800; margin-bottom: 18px; }
+  .result-actions { display: flex; gap: 10px; margin-top: 12px; }
+  .result-actions .btn { flex: 1; }
+  .stars-burst { font-size: 1.7rem; margin-bottom: 2px; letter-spacing: 3px; }
+
+  /* ---------- Home ---------- */
+  .home-cta { text-align: center; padding: 4px 0; }
+  .home-cta h2 { font-weight: 900; font-size: 1.2rem; color: var(--ink); margin-bottom: 6px; }
+  .home-cta p { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 16px; font-weight: 600; }
+  .home-actions { display: flex; gap: 10px; margin-top: 12px; }
+  .home-actions .btn { flex: 1; }
+
+  /* ---------- Mode cards (Learn / Test) ---------- */
+  .mode-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 4px; }
+  .mode-card {
+    border: 2px solid var(--line); border-radius: 18px;
+    padding: 18px 12px; cursor: pointer; text-align: center;
+    font-family: inherit; transition: transform 0.1s, box-shadow 0.15s, border-color 0.15s;
+    box-shadow: 0 5px 0 var(--bg-2);
+  }
+  .mode-card:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 2px 0 var(--bg-2); }
+  .mode-card:disabled { opacity: 0.5; cursor: not-allowed; }
+  .mode-card.learn { background: var(--teal-soft); border-color: #bfe3d8; }
+  .mode-card.learn:hover:not(:disabled) { border-color: var(--teal); }
+  .mode-card.test { background: var(--coral-soft); border-color: #f3cfc6; }
+  .mode-card.test:hover:not(:disabled) { border-color: var(--coral); }
+  .mode-emoji { font-size: 1.9rem; }
+  .mode-name { font-weight: 900; font-size: 1.1rem; color: var(--ink); margin-top: 2px; }
+  .mode-desc { font-size: 0.7rem; color: var(--ink-soft); margin-top: 4px; line-height: 1.5; font-weight: 600; }
+
+  /* ---------- Learning: steps + flashcard ---------- */
+  .steps { display: flex; gap: 6px; justify-content: center; margin-bottom: 14px; }
+  .step-dot {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 0.68rem; font-weight: 800; color: var(--ink-soft);
+    background: var(--bg); border: 1px solid var(--line);
+    border-radius: 999px; padding: 4px 11px;
+  }
+  .step-dot.active { background: var(--teal); color: #fff; border-color: var(--teal); }
+  .step-dot.done { background: var(--teal-soft); color: var(--good); border-color: #bfe3d8; }
+
+  .flash-word {
+    text-align: center; font-weight: 900; font-size: 2.2rem;
+    color: var(--coral-deep); margin: 4px 0 2px; letter-spacing: 0.01em;
+  }
+  .audio-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--teal); color: #fff; border: none; cursor: pointer;
+    font-size: 1.2rem; box-shadow: 0 3px 0 #357f71; margin: 6px auto 10px;
+  }
+  .audio-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 #357f71; }
+  /* 例文ボックス（英語＋日本語） */
+  .flash-ex {
+    background: var(--honey-soft); border: 1px solid #efd6a3;
+    border-radius: 16px; padding: 14px 16px; margin: 4px 0 12px;
+    color: var(--ink); line-height: 1.6;
+  }
+  .flash-ex .lbl {
+    font-size: 0.68rem; color: #b07a17; font-weight: 800;
+    display: inline-flex; align-items: center; gap: 4px; margin-bottom: 6px;
+  }
+  .flash-ex .ex-en { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .flash-ex .ex-en b { color: var(--coral-deep); }
+  .flash-ex .ex-ja { font-size: 0.92rem; font-weight: 600; color: var(--ink-soft); border-top: 1px dashed #f0dcae; padding-top: 6px; margin-top: 4px; }
+  .flash-meaning {
+    background: var(--teal-soft); border-radius: 14px; padding: 14px 16px;
+    font-weight: 700; color: var(--ink); text-align: center; margin-bottom: 8px;
+  }
+  .flash-meaning .lbl { font-size: 0.66rem; color: var(--good); font-weight: 800; display: block; margin-bottom: 3px; }
+  .flash-example {
+    font-size: 0.95rem; color: var(--ink-soft); text-align: center;
+    margin-bottom: 16px; line-height: 1.6;
+  }
+  .flash-example b { color: var(--coral-deep); }
+  .growth-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.72rem; font-weight: 800; color: var(--ink-soft);
+    background: var(--honey-soft); border: 1px solid #efd6a3;
+    border-radius: 999px; padding: 3px 11px;
+  }
+  .reveal-hidden { filter: blur(7px); user-select: none; transition: filter 0.25s; }
+
+  /* ---------- つかう: タイピング入力 ---------- */
+  .use-input {
+    width: 100%; padding: 14px 16px; font-size: 1.3rem;
+    font-family: "Quicksand", "Zen Maru Gothic", system-ui, sans-serif;
+    font-weight: 700; text-align: center;
+    color: var(--ink); background: #fffdf8;
+    border: 2px solid var(--line); border-radius: 14px;
+    transition: border-color 0.15s, background 0.15s;
+    letter-spacing: 0.02em;
+  }
+  .use-input:focus { outline: none; border-color: var(--teal); }
+  .use-input.ok { border-color: var(--good); background: var(--teal-soft); color: var(--good); }
+  .use-input.ng { border-color: var(--bad); background: var(--coral-soft); color: var(--bad); }
+  .use-hint {
+    text-align: center; color: var(--ink-soft); font-size: 0.88rem;
+    margin: 10px 0 14px; font-weight: 600;
+  }
+  .use-hint b { color: var(--ink); font-weight: 800; }
+  .use-hint .ja { display: block; font-size: 0.8rem; margin-top: 4px; color: var(--ink-soft); opacity: 0.9; }
+
+  /* ---------- Session top bar (やめる / 切りかえ) ---------- */
+  .session-bar {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 8px; margin-bottom: 14px;
+  }
+  .session-bar .icon-btn { font-size: 0.74rem; padding: 7px 12px; }
+  .session-bar .switch-btn { color: var(--teal); border-color: #c9e6df; }
+  .session-bar .switch-btn:hover { background: var(--teal-soft); }
+
+  /* ---------- Upload ---------- */
+  .upload textarea {
+    width: 100%; min-height: 200px;
+    border: 2px solid var(--line); border-radius: 14px;
+    padding: 12px 14px;
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.85rem; line-height: 1.5; resize: vertical;
+    color: var(--ink); background: #fffdf8;
+  }
+  .upload textarea:focus { outline: none; border-color: var(--teal); }
+  .hint {
+    background: var(--honey-soft);
+    border-radius: 14px; padding: 12px 14px;
+    font-size: 0.82rem; color: #8a6313; margin: 12px 0; line-height: 1.7;
+    border: 1px solid #f0dcae;
+  }
+  .hint code { background: #fff; padding: 1px 6px; border-radius: 6px; color: var(--coral-deep); font-weight: 700; }
+  .preview-line { font-size: 0.88rem; color: var(--ink-soft); margin: 10px 0; min-height: 1.2em; font-weight: 700; }
+  .preview-line strong { color: var(--coral-deep); }
+  .sample {
+    font-size: 0.8rem; color: var(--ink-soft);
+    background: var(--teal-soft); border: 1px solid #c9e6df;
+    border-radius: 12px; padding: 10px 12px; margin-bottom: 12px;
+    max-height: 120px; overflow-y: auto;
+  }
+  .sample div { padding: 2px 0; }
+  .sample b { color: var(--ink); }
+
+  /* ---------- Test chart (折れ線グラフ) ---------- */
+  .test-chart {
+    background: #fffdf8;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 10px 6px 4px;
+    margin-bottom: 14px;
+  }
+  .test-chart svg { width: 100%; height: auto; max-height: 180px; display: block; }
+
+  /* ---------- Wrong-words list ---------- */
+  .wrong-word {
+    background: var(--coral-soft); border: 1px solid #f3cfc6;
+    border-radius: 12px; padding: 10px 14px; margin-bottom: 8px;
+  }
+  .wrong-word .ww-head {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .wrong-word .ww-word { color: var(--coral-deep); font-size: 1.05rem; font-weight: 800; }
+  .wrong-word .ww-date { font-size: 0.7rem; color: var(--ink-soft); }
+  .wrong-word .ww-def { font-size: 0.86rem; color: var(--ink); margin-top: 4px; }
+
+  /* ---------- History ---------- */
+  .hist-list { display: flex; flex-direction: column; gap: 8px; }
+  .hist-row {
+    display: grid; grid-template-columns: auto 1fr auto;
+    align-items: center; gap: 10px;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 10px 14px;
+    font-size: 0.85rem; box-shadow: 0 3px 10px rgba(68,64,58,0.05);
+  }
+  .hist-date { color: var(--ink-soft); font-variant-numeric: tabular-nums; font-weight: 700; }
+  .hist-bar { height: 9px; background: var(--bg-2); border-radius: 999px; overflow: hidden; }
+  .hist-bar > div { height: 100%; background: linear-gradient(90deg, var(--teal), var(--coral)); border-radius: 999px; }
+  .hist-score { font-weight: 900; color: var(--teal); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .hist-climb { font-size: 0.72rem; color: var(--coral-deep); font-weight: 700; }
+  .empty-note { color: var(--ink-soft); font-size: 0.9rem; text-align: center; padding: 20px 0; font-weight: 600; }
+
+  /* ---------- Modal ---------- */
+  .icon-btn {
+    background: var(--card); border: 1px solid var(--line);
+    color: var(--ink-soft); border-radius: 11px;
+    padding: 7px 11px; font-size: 0.76rem; cursor: pointer;
+    font-family: inherit; font-weight: 700;
+    box-shadow: 0 3px 8px rgba(68,64,58,0.06);
+  }
+  .icon-btn:hover { background: #fff8ee; color: var(--ink); }
+
+  .modal-backdrop {
+    position: fixed; inset: 0;
+    background: rgba(68,64,58,0.32);
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px; z-index: 100; backdrop-filter: blur(2px);
+  }
+  .modal {
+    background: var(--card); border-radius: 20px; padding: 24px;
+    max-width: 460px; width: 100%; max-height: 82vh; overflow-y: auto;
+    border: 1px solid var(--line);
+    box-shadow: 0 16px 40px rgba(68,64,58,0.28);
+  }
+  .modal h3 { font-weight: 900; color: var(--ink); margin-bottom: 14px; }
+  .modal p { font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 12px; font-weight: 600; }
+  .modal .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; flex-wrap: wrap; }
+
+  .section-title { font-weight: 900; font-size: 1.05rem; color: var(--ink); margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; }
+  .section-title .sub { font-size: 0.72rem; color: var(--ink-soft); font-weight: 600; }
+
+  /* theme toggle (森 / あつ森風) — SVG の 外に 小さく配置 */
+  .theme-toggle {
+    display: flex; justify-content: flex-end; gap: 4px;
+    padding: 8px 14px 4px;
+  }
+  .theme-toggle button {
+    background: transparent; border: 1px solid var(--line); cursor: pointer;
+    font-size: 0.72rem; padding: 3px 9px;
+    border-radius: 999px; transition: background 0.15s, color 0.15s;
+    font-family: inherit; color: var(--ink-soft); font-weight: 700;
+  }
+  .theme-toggle button:hover { background: var(--bg-2); color: var(--ink); }
+  .theme-toggle button.active {
+    background: var(--teal); color: #fff; border-color: var(--teal);
+  }
+  .journey-card { position: relative; }
+
+  /* deco anim */
+  @keyframes hop { 0%,100%{transform:translateY(0);} 35%{transform:translateY(-5px);} 55%{transform:translateY(0);} }
+  .mascot { animation: hop 2.6s ease-in-out infinite; transform-origin: center bottom; }
+  @keyframes sway { 0%,100%{transform:rotate(-2deg);} 50%{transform:rotate(2deg);} }
+  .sway { animation: sway 4s ease-in-out infinite; transform-origin: center bottom; }
+
+  /* clouds drift slowly */
+  @keyframes drift { 0%{transform:translateX(0)} 100%{transform:translateX(18px)} }
+  .cloud { animation: drift 16s ease-in-out infinite alternate; }
+
+  /* butterflies fluttering */
+  @keyframes flutter1 {
+    0%,100% { transform: translate(0,0) rotate(-6deg); }
+    25%     { transform: translate(28px,-12px) rotate(7deg); }
+    50%     { transform: translate(56px,-4px) rotate(-4deg); }
+    75%     { transform: translate(30px,-16px) rotate(8deg); }
+  }
+  .butterfly1 { animation: flutter1 11s ease-in-out infinite; transform-origin: center; }
+  @keyframes flutter2 {
+    0%,100% { transform: translate(0,0) rotate(5deg); }
+    30%     { transform: translate(-20px,-10px) rotate(-7deg); }
+    60%     { transform: translate(20px,-18px) rotate(6deg); }
+    85%     { transform: translate(-8px,-4px) rotate(-3deg); }
+  }
+  .butterfly2 { animation: flutter2 13s ease-in-out infinite; transform-origin: center; }
+
+  /* bird flying across */
+  @keyframes birdFly {
+    0%   { transform: translate(560px, 25px); }
+    50%  { transform: translate(300px, 18px); }
+    100% { transform: translate(40px, 22px); }
+  }
+  .bird-flight { animation: birdFly 26s linear infinite; }
+
+  /* river ripple */
+  @keyframes ripple { 0%,100%{transform:scaleX(1)} 50%{transform:scaleX(1.06)} }
+  .ripple { animation: ripple 3.2s ease-in-out infinite; transform-origin: center; }
+
+  /* friend-met glow */
+  @keyframes glowPulse { 0%,100%{filter:drop-shadow(0 0 2px #eaa83f);} 50%{filter:drop-shadow(0 0 6px #f0c86a);} }
+  .friend-next-glow { animation: glowPulse 1.8s ease-in-out infinite; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <div class="logo"><span class="mark">🐰</span> Saho English Word</div>
+      <div class="tagline">3000語あつめて、めざせ TOEFL 100</div>
+    </div>
+    <div class="header-btns">
+      <button class="icon-btn" onclick="renderHistory()">記録</button>
+      <button class="icon-btn" onclick="openSettings()">設定</button>
+    </div>
+  </header>
+
+  <div class="journey-card">
+    <div class="theme-toggle">
+      <button id="themeBtnForest" onclick="applySvgTheme('forest')" title="森テーマ">🌲 森</button>
+      <button id="themeBtnAc"     onclick="applySvgTheme('ac')"     title="あつ森風テーマ">🏝️ あつ森</button>
+    </div>
+    <svg id="journeySvg" class="journey-svg" viewBox="0 0 600 244" preserveAspectRatio="xMidYMid slice"></svg>
+    <!-- 旧 SVG (forestテーマ) は JS側 FOREST_SVG_INNER に 保存。 -->
+    <template id="forestSvgTemplate"><svg viewBox="0 0 600 196">
+      <defs>
+        <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%"  stop-color="#fbf3e2"/>
+          <stop offset="55%" stop-color="#f5ebd7"/>
+          <stop offset="100%" stop-color="#eaf2e4"/>
+        </linearGradient>
+        <linearGradient id="path" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0%" stop-color="#e9c98f"/>
+          <stop offset="100%" stop-color="#dcb877"/>
+        </linearGradient>
+        <radialGradient id="sunGrad" cx="0.4" cy="0.4">
+          <stop offset="0%" stop-color="#fff5c5"/>
+          <stop offset="80%" stop-color="#f6d98f"/>
+          <stop offset="100%" stop-color="#f0c86a"/>
+        </radialGradient>
+        <linearGradient id="river" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#bfdfee"/>
+          <stop offset="100%" stop-color="#94c6dd"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="600" height="244" fill="url(#sky)"/>
+
+      <!-- Sun with rays -->
+      <g transform="translate(520,44)">
+        <g opacity="0.5" stroke="#f0c86a" stroke-width="1.8" stroke-linecap="round">
+          <line x1="0" y1="-32" x2="0" y2="-27"/>
+          <line x1="0" y1="27" x2="0" y2="32"/>
+          <line x1="-32" y1="0" x2="-27" y2="0"/>
+          <line x1="27" y1="0" x2="32" y2="0"/>
+          <line x1="-23" y1="-23" x2="-19" y2="-19"/>
+          <line x1="19" y1="19" x2="23" y2="23"/>
+          <line x1="-23" y1="23" x2="-19" y2="19"/>
+          <line x1="19" y1="-19" x2="23" y2="-23"/>
+        </g>
+        <circle r="22" fill="url(#sunGrad)"/>
+      </g>
+
+      <!-- Drifting clouds -->
+      <g class="cloud">
+        <ellipse cx="100" cy="40" rx="22" ry="9" fill="#fff" opacity="0.88"/>
+        <ellipse cx="118" cy="35" rx="16" ry="8" fill="#fff" opacity="0.88"/>
+        <ellipse cx="84"  cy="38" rx="14" ry="7" fill="#fff" opacity="0.88"/>
+      </g>
+      <g class="cloud" style="animation-delay:-6s">
+        <ellipse cx="285" cy="26" rx="18" ry="7" fill="#fff" opacity="0.78"/>
+        <ellipse cx="300" cy="30" rx="13" ry="6" fill="#fff" opacity="0.78"/>
+      </g>
+      <g class="cloud" style="animation-delay:-11s">
+        <ellipse cx="430" cy="48" rx="20" ry="8" fill="#fff" opacity="0.72"/>
+        <ellipse cx="448" cy="44" rx="14" ry="7" fill="#fff" opacity="0.72"/>
+      </g>
+
+      <!-- Background mountains -->
+      <polygon points="130,180 175,80 220,180" fill="#a8c79f"/>
+      <polygon points="175,80 195,100 205,90 220,180 175,180" fill="#88b07e"/>
+      <polygon points="55,180 95,108 135,180" fill="#9fc196"/>
+      <polygon points="95,108 110,124 118,116 135,180 95,180" fill="#7ba271"/>
+
+      <!-- Far hills -->
+      <path d="M0,150 Q120,100 250,128 T600,108 L600,244 L0,244 Z" fill="#cfe0c2"/>
+      <path d="M0,170 Q160,128 330,152 T600,140 L600,244 L0,244 Z" fill="#b6d2a6"/>
+
+      <!-- River (with ripple animation) and bridge -->
+      <g>
+        <ellipse class="ripple" cx="265" cy="172" rx="58" ry="5" fill="url(#river)" opacity="0.85"/>
+        <ellipse cx="265" cy="172" rx="44" ry="2" fill="#dff0f7" opacity="0.7"/>
+        <!-- Bridge planks -->
+        <rect x="244" y="167" width="42" height="2.5" fill="#a86b3c"/>
+        <rect x="244" y="170" width="42" height="1.2" fill="#7a4f2a" opacity="0.6"/>
+        <line x1="250" y1="167" x2="250" y2="173" stroke="#7a4f2a" stroke-width="0.8"/>
+        <line x1="282" y1="167" x2="282" y2="173" stroke="#7a4f2a" stroke-width="0.8"/>
+      </g>
+
+      <!-- Many varied trees -->
+      <g class="sway"><ellipse cx="46" cy="128" rx="13" ry="15" fill="#7fae73"/><rect x="44" y="138" width="5" height="11" rx="1" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:0.8s"><ellipse cx="95" cy="118" rx="20" ry="22" fill="#7fae73"/><rect x="91" y="132" width="8" height="16" rx="2" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:1.5s"><ellipse cx="155" cy="126" rx="14" ry="16" fill="#86b57c"/><rect x="152" y="138" width="6" height="11" rx="1" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:0.3s"><ellipse cx="208" cy="122" rx="11" ry="13" fill="#73a468"/><rect x="206" y="131" width="5" height="10" rx="1" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:1.0s"><ellipse cx="335" cy="124" rx="14" ry="16" fill="#86b57c"/><rect x="332" y="135" width="6" height="12" rx="1" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:1.2s"><ellipse cx="360" cy="112" rx="17" ry="19" fill="#73a468"/><rect x="356" y="124" width="7" height="14" rx="2" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:0.6s"><ellipse cx="408" cy="127" rx="12" ry="14" fill="#86b57c"/><rect x="406" y="138" width="5" height="11" rx="1" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:1.8s"><ellipse cx="455" cy="118" rx="15" ry="17" fill="#7fae73"/><rect x="452" y="131" width="6" height="13" rx="1" fill="#9a7a55"/></g>
+      <g class="sway" style="animation-delay:0.5s"><ellipse cx="495" cy="129" rx="11" ry="13" fill="#73a468"/><rect x="492" y="139" width="5" height="10" rx="1" fill="#9a7a55"/></g>
+
+      <!-- Pine trees (different style) -->
+      <g class="sway" style="animation-delay:0.4s">
+        <polygon points="120,142 130,118 140,142" fill="#5d8a55"/>
+        <polygon points="122,134 130,114 138,134" fill="#6b9a62"/>
+        <rect x="128" y="142" width="4" height="9" rx="1" fill="#9a7a55"/>
+      </g>
+      <g class="sway" style="animation-delay:1.4s">
+        <polygon points="380,134 390,108 400,134" fill="#5d8a55"/>
+        <polygon points="382,126 390,106 398,126" fill="#6b9a62"/>
+        <rect x="388" y="134" width="4" height="10" rx="1" fill="#9a7a55"/>
+      </g>
+      <g class="sway" style="animation-delay:0.9s">
+        <polygon points="475,130 485,106 495,130" fill="#5d8a55"/>
+        <polygon points="477,122 485,102 493,122" fill="#6b9a62"/>
+        <rect x="483" y="130" width="4" height="10" rx="1" fill="#9a7a55"/>
+      </g>
+
+      <!-- Scattered flowers, mushrooms, rocks -->
+      <text x="32" y="194" font-size="9">🌸</text>
+      <text x="78" y="160" font-size="8">🌼</text>
+      <text x="160" y="190" font-size="9">🍄</text>
+      <text x="195" y="160" font-size="8">🌷</text>
+      <text x="340" y="195" font-size="8">🌻</text>
+      <text x="402" y="194" font-size="9">🌸</text>
+      <text x="465" y="190" font-size="8">🌼</text>
+      <text x="510" y="186" font-size="9">🪨</text>
+      <text x="55" y="174" font-size="8">🪨</text>
+      <text x="178" y="168" font-size="7">🐾</text>
+      <text x="430" y="168" font-size="7">🐾</text>
+
+      <!-- Butterflies fluttering -->
+      <g class="butterfly1" style="--bx:170; --by:90">
+        <text x="170" y="90" font-size="12">🦋</text>
+      </g>
+      <g class="butterfly2" style="--bx:440; --by:80">
+        <text x="440" y="80" font-size="11">🦋</text>
+      </g>
+
+      <!-- Bird flying across -->
+      <g class="bird-flight">
+        <text font-size="11" opacity="0.7">🐦</text>
+      </g>
+
+      <!-- Treehouse goal -->
+      <g transform="translate(548,58)">
+        <ellipse cx="6" cy="6" rx="28" ry="26" fill="#8cbb7e"/>
+        <ellipse cx="6" cy="9" rx="22" ry="20" fill="#7fae73"/>
+        <rect x="-6" y="2" width="24" height="18" rx="3" fill="#cf8f5e" stroke="#a96f44" stroke-width="1.5"/>
+        <polygon points="-9,3 6,-9 21,3" fill="#d65f48"/>
+        <rect x="2" y="9" width="8" height="11" rx="1" fill="#7a5230"/>
+        <circle cx="14" cy="11" r="2" fill="#fbe3dc"/>
+        <rect x="14" y="20" width="3" height="14" fill="#9a7a55"/>
+        <text x="6" y="-14" font-size="14" text-anchor="middle">🚩</text>
+      </g>
+
+      <!-- The trail -->
+      <path id="trail" d="M 30 184 C 130 178, 110 150, 220 150 S 360 150, 380 110 S 500 96, 540 78"
+            stroke="url(#path)" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <path d="M 30 184 C 130 178, 110 150, 220 150 S 360 150, 380 110 S 500 96, 540 78"
+            stroke="#fff" stroke-width="13" fill="none" stroke-linecap="round"
+            stroke-dasharray="1 20" opacity="0.65"/>
+
+      <!-- All 30 forest friends along the trail (placed by JS) -->
+      <g id="friends"></g>
+
+      <!-- Rabbit traveler -->
+      <g id="climber" class="mascot" transform="translate(30,184)">
+        <text font-size="26" text-anchor="middle" y="1">🐰</text>
+      </g>
+    </svg></template>
+    <!-- あつ森風テーマ (AC theme) -->
+    <template id="acSvgTemplate"><svg viewBox="0 0 600 196">
+      <defs>
+        <linearGradient id="acSky" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%"  stop-color="#fde8d2"/>
+          <stop offset="50%" stop-color="#fcd9c0"/>
+          <stop offset="100%" stop-color="#fdeacd"/>
+        </linearGradient>
+        <radialGradient id="acSun" cx="0.4" cy="0.4">
+          <stop offset="0%" stop-color="#fff8d2"/>
+          <stop offset="70%" stop-color="#ffd187"/>
+          <stop offset="100%" stop-color="#f5a04e" stop-opacity="0.6"/>
+        </radialGradient>
+        <linearGradient id="acPath" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#f6e2bb"/>
+          <stop offset="100%" stop-color="#e6c594"/>
+        </linearGradient>
+        <linearGradient id="acHill1" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#c2e1aa"/>
+          <stop offset="100%" stop-color="#a8d290"/>
+        </linearGradient>
+        <linearGradient id="acHill2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#abd293"/>
+          <stop offset="100%" stop-color="#8fbd7a"/>
+        </linearGradient>
+        <linearGradient id="acRiver" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#bfe2f0"/>
+          <stop offset="100%" stop-color="#7ec0dc"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="600" height="244" fill="url(#acSky)"/>
+
+      <!-- Big soft sun -->
+      <g transform="translate(95,46)">
+        <circle r="30" fill="url(#acSun)" opacity="0.55"/>
+        <circle r="20" fill="url(#acSun)"/>
+        <circle r="13" fill="#fff8d2" opacity="0.6"/>
+      </g>
+
+      <!-- Fluffy big clouds -->
+      <g class="cloud">
+        <ellipse cx="220" cy="38" rx="24" ry="13" fill="#ffffff"/>
+        <ellipse cx="240" cy="34" rx="20" ry="12" fill="#ffffff"/>
+        <ellipse cx="208" cy="42" rx="14" ry="10" fill="#ffffff"/>
+        <ellipse cx="252" cy="44" rx="14" ry="9" fill="#ffffff"/>
+      </g>
+      <g class="cloud" style="animation-delay:-7s">
+        <ellipse cx="380" cy="30" rx="20" ry="11" fill="#ffffff" opacity="0.92"/>
+        <ellipse cx="402" cy="34" rx="16" ry="10" fill="#ffffff" opacity="0.92"/>
+        <ellipse cx="368" cy="34" rx="12" ry="8" fill="#ffffff" opacity="0.92"/>
+      </g>
+      <g class="cloud" style="animation-delay:-13s">
+        <ellipse cx="470" cy="56" rx="18" ry="10" fill="#ffffff" opacity="0.82"/>
+        <ellipse cx="488" cy="52" rx="14" ry="9" fill="#ffffff" opacity="0.82"/>
+      </g>
+
+      <!-- Scoop hills (foreground rolling) -->
+      <path d="M 0,170 Q 60,135 130,160 Q 200,135 280,160 Q 360,135 440,160 Q 510,135 600,160 L 600,244 L 0,244 Z" fill="url(#acHill1)"/>
+      <path d="M 0,184 Q 80,170 160,180 Q 240,168 320,180 Q 400,168 480,180 Q 555,170 600,180 L 600,244 L 0,244 Z" fill="url(#acHill2)"/>
+
+      <!-- River -->
+      <g>
+        <ellipse class="ripple" cx="270" cy="174" rx="55" ry="5" fill="url(#acRiver)"/>
+        <ellipse cx="270" cy="174" rx="40" ry="2.5" fill="#eaf6fa" opacity="0.85"/>
+        <circle cx="252" cy="173" r="1" fill="#fff" opacity="0.7"/>
+        <circle cx="285" cy="175" r="1" fill="#fff" opacity="0.7"/>
+        <!-- Wooden bridge with handrails -->
+        <rect x="246" y="168" width="40" height="3" fill="#b88860" rx="0.5"/>
+        <rect x="246" y="171" width="40" height="1.4" fill="#7a4f2a" opacity="0.5"/>
+        <line x1="252" y1="166" x2="252" y2="168" stroke="#7a4f2a" stroke-width="1"/>
+        <line x1="280" y1="166" x2="280" y2="168" stroke="#7a4f2a" stroke-width="1"/>
+        <line x1="252" y1="166" x2="280" y2="166" stroke="#7a4f2a" stroke-width="0.8"/>
+      </g>
+
+      <!-- Round AC trees -->
+      <!-- Apple tree -->
+      <g class="sway" style="animation-delay:0.4s">
+        <ellipse cx="65" cy="132" rx="20" ry="20" fill="#86c178"/>
+        <ellipse cx="65" cy="127" rx="15" ry="13" fill="#a3d290"/>
+        <circle cx="57" cy="128" r="3" fill="#e8675a"/>
+        <circle cx="72" cy="131" r="3" fill="#e8675a"/>
+        <circle cx="64" cy="142" r="3" fill="#e8675a"/>
+        <rect x="62" y="150" width="6" height="12" rx="2" fill="#8c6740"/>
+      </g>
+      <!-- Round tree -->
+      <g class="sway" style="animation-delay:1.2s">
+        <ellipse cx="155" cy="138" rx="17" ry="17" fill="#7fae73"/>
+        <ellipse cx="155" cy="133" rx="13" ry="11" fill="#96be8b"/>
+        <rect x="152" y="153" width="6" height="11" rx="2" fill="#8c6740"/>
+      </g>
+      <!-- Pine tree -->
+      <g class="sway" style="animation-delay:0.7s">
+        <polygon points="335,148 350,108 365,148" fill="#5d8a55"/>
+        <polygon points="338,136 350,104 362,136" fill="#73a868"/>
+        <polygon points="341,124 350,100 359,124" fill="#86bb7a"/>
+        <rect x="347" y="148" width="6" height="10" rx="1" fill="#8c6740"/>
+      </g>
+      <!-- Cherry blossom tree -->
+      <g class="sway" style="animation-delay:1.5s">
+        <ellipse cx="430" cy="135" rx="20" ry="20" fill="#f2b6c7"/>
+        <ellipse cx="430" cy="130" rx="15" ry="13" fill="#f8cad8"/>
+        <circle cx="424" cy="128" r="2" fill="#fff5f8"/>
+        <circle cx="436" cy="125" r="2" fill="#fff5f8"/>
+        <circle cx="430" cy="140" r="2" fill="#fff5f8"/>
+        <rect x="427" y="151" width="6" height="12" rx="2" fill="#8c6740"/>
+      </g>
+      <!-- Small round bushes -->
+      <ellipse cx="475" cy="173" rx="12" ry="6" fill="#86c178"/>
+      <ellipse cx="485" cy="170" rx="9" ry="5" fill="#a3d290"/>
+      <ellipse cx="195" cy="173" rx="10" ry="5" fill="#86c178"/>
+      <ellipse cx="200" cy="171" rx="7" ry="4" fill="#a3d290"/>
+
+      <!-- Flower clusters (AC style: 3-flower bunches) -->
+      <g>
+        <circle cx="38" cy="180" r="2.6" fill="#f3b0c2"/>
+        <circle cx="44" cy="182" r="2.6" fill="#fbd76b"/>
+        <circle cx="50" cy="180" r="2.6" fill="#f3b0c2"/>
+        <circle cx="44" cy="182" r="0.9" fill="#fff"/>
+      </g>
+      <g>
+        <circle cx="220" cy="184" r="2.6" fill="#fbd76b"/>
+        <circle cx="226" cy="182" r="2.6" fill="#fff"/>
+        <circle cx="232" cy="184" r="2.6" fill="#fbd76b"/>
+      </g>
+      <g>
+        <circle cx="390" cy="186" r="2.6" fill="#a6e1f4"/>
+        <circle cx="396" cy="184" r="2.6" fill="#f3b0c2"/>
+        <circle cx="402" cy="186" r="2.6" fill="#a6e1f4"/>
+      </g>
+      <g>
+        <circle cx="505" cy="183" r="2.6" fill="#f3b0c2"/>
+        <circle cx="511" cy="181" r="2.6" fill="#fff"/>
+        <circle cx="517" cy="183" r="2.6" fill="#fbd76b"/>
+      </g>
+      <!-- 4-leaf shape sprinkle -->
+      <text x="248" y="190" font-size="9">🍀</text>
+      <text x="358" y="186" font-size="8">🌷</text>
+
+      <!-- Balloon with present (AC iconic) -->
+      <g class="cloud" style="animation-delay:-3s">
+        <ellipse cx="180" cy="68" rx="10" ry="13" fill="#e8675a"/>
+        <ellipse cx="176" cy="64" rx="3" ry="4" fill="#f9b5ab" opacity="0.7"/>
+        <line x1="180" y1="80" x2="180" y2="92" stroke="#7a5230" stroke-width="0.7"/>
+        <rect x="173" y="92" width="14" height="11" rx="1.5" fill="#eaa83f" stroke="#c98a30" stroke-width="0.7"/>
+        <line x1="180" y1="92" x2="180" y2="103" stroke="#c98a30" stroke-width="0.7"/>
+        <line x1="173" y1="97.5" x2="187" y2="97.5" stroke="#c98a30" stroke-width="0.7"/>
+        <circle cx="180" cy="92" r="2" fill="#d65f48"/>
+      </g>
+
+      <!-- Iconic floating leaf -->
+      <g class="butterfly1">
+        <text x="280" y="105" font-size="14">🍃</text>
+      </g>
+      <!-- Bell coin floating -->
+      <g class="butterfly2">
+        <text x="495" y="90" font-size="13">🔔</text>
+      </g>
+      <!-- Bird -->
+      <g class="bird-flight">
+        <text font-size="11" opacity="0.75">🐦</text>
+      </g>
+
+      <!-- Lamppost -->
+      <g transform="translate(95,168)">
+        <rect x="-0.7" y="-20" width="1.4" height="22" fill="#7a5230"/>
+        <circle cx="0" cy="-22" r="3" fill="#fbd76b"/>
+        <circle cx="0" cy="-22" r="1.5" fill="#fff5c5"/>
+        <ellipse cx="0" cy="-13" rx="3" ry="0.8" fill="#fff5c5" opacity="0.3"/>
+      </g>
+      <!-- Wooden bench -->
+      <g transform="translate(420,178)">
+        <rect x="-8" y="-3" width="16" height="2" fill="#a86b3c"/>
+        <rect x="-8" y="-1" width="16" height="1" fill="#7a4f2a" opacity="0.4"/>
+        <rect x="-7" y="-7" width="14" height="2" fill="#a86b3c"/>
+        <line x1="-6" y1="0" x2="-6" y2="4" stroke="#7a4f2a" stroke-width="1"/>
+        <line x1="6"  y1="0" x2="6"  y2="4" stroke="#7a4f2a" stroke-width="1"/>
+      </g>
+
+      <!-- Nook's Cranny-style shop (goal) -->
+      <g transform="translate(548,84)">
+        <!-- Roof -->
+        <polygon points="-24,-2 0,-22 24,-2" fill="#5b8aa3"/>
+        <polygon points="-22,-2 0,-19 22,-2" fill="#7aaac6" opacity="0.6"/>
+        <!-- Body -->
+        <rect x="-22" y="-2" width="44" height="22" rx="3" fill="#f3deb3" stroke="#c9a766" stroke-width="1"/>
+        <!-- Awning stripes -->
+        <rect x="-22" y="-2" width="44" height="3" fill="#d65f48"/>
+        <rect x="-15" y="-2" width="6" height="3" fill="#fff"/>
+        <rect x="-1"  y="-2" width="6" height="3" fill="#fff"/>
+        <rect x="13"  y="-2" width="6" height="3" fill="#fff"/>
+        <!-- Sign -->
+        <rect x="-15" y="2" width="30" height="5" fill="#8ba56e" stroke="#5d7644" stroke-width="0.5"/>
+        <text x="0" y="6" font-size="3.5" text-anchor="middle" fill="#fff" font-weight="900">SHOP</text>
+        <!-- Door -->
+        <rect x="-4" y="9" width="8" height="11" rx="1" fill="#7a4f2a"/>
+        <circle cx="2" cy="14" r="0.8" fill="#fbd76b"/>
+        <!-- Windows -->
+        <rect x="-17" y="9" width="7" height="7" rx="1" fill="#bfe2f0"/>
+        <line x1="-13.5" y1="9" x2="-13.5" y2="16" stroke="#fff" stroke-width="0.4"/>
+        <line x1="-17" y1="12.5" x2="-10" y2="12.5" stroke="#fff" stroke-width="0.4"/>
+        <rect x="10" y="9" width="7" height="7" rx="1" fill="#bfe2f0"/>
+        <line x1="13.5" y1="9" x2="13.5" y2="16" stroke="#fff" stroke-width="0.4"/>
+        <line x1="10" y1="12.5" x2="17" y2="12.5" stroke="#fff" stroke-width="0.4"/>
+        <!-- Flag on top -->
+        <line x1="0" y1="-22" x2="0" y2="-30" stroke="#7a5230" stroke-width="0.8"/>
+        <polygon points="0,-30 7,-28 0,-25" fill="#d65f48"/>
+      </g>
+
+      <!-- The trail (stepping stones) -->
+      <path id="trail" d="M 30 184 C 130 178, 110 150, 220 150 S 360 150, 380 110 S 500 96, 540 84"
+            stroke="url(#acPath)" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- Stepping-stone dots overlay -->
+      <path d="M 30 184 C 130 178, 110 150, 220 150 S 360 150, 380 110 S 500 96, 540 84"
+            stroke="#fffbe9" stroke-width="13" fill="none" stroke-linecap="round"
+            stroke-dasharray="3 24" opacity="0.6"/>
+
+      <!-- Friends along the trail (placed by JS) -->
+      <g id="friends"></g>
+
+      <!-- Rabbit traveler -->
+      <g id="climber" class="mascot" transform="translate(30,184)">
+        <text font-size="26" text-anchor="middle" y="1">🐰</text>
+      </g>
+    </svg></template>
+
+    <div class="journey-body">
+      <div class="elevation-row">
+        <div>
+          <div class="elev-num" id="elevNum">0 <small>/ <span id="elevTarget">3000</span> 語</small></div>
+          <div class="elev-label" id="elevLabel">スタート地点</div>
+        </div>
+        <div style="text-align:right">
+          <div class="elev-pct" id="elevPct">0<small>%</small></div>
+          <div class="elev-cap">ゴールまで</div>
+        </div>
+      </div>
+      <div class="track"><div id="trackFill" style="width:0%"></div></div>
+      <div class="checkpoints" id="ckLabels">
+        <span data-pct="0">🐾 0</span>
+        <span data-pct="25">🌱 750</span>
+        <span data-pct="50">🍃 1500</span>
+        <span data-pct="75">🌳 2250</span>
+        <span data-pct="100">🏡 3000</span>
+      </div>
+      <div class="friends-roster">
+        <div class="roster-title">森のなかま（100語ごとに合流）<span id="rosterCount">0 / 30</span></div>
+        <div class="next-friend" id="nextFriend"></div>
+        <div class="roster-list" id="rosterList"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat c1"><div class="stat-emoji">🌰</div><div class="stat-val" id="stMastered">0</div><div class="stat-label">覚えた語</div></div>
+    <div class="stat c2"><div class="stat-emoji">🔥</div><div class="stat-val" id="stStreak">0</div><div class="stat-label">連続日数</div></div>
+    <div class="stat c3"><div class="stat-emoji">🎯</div><div class="stat-val" id="stAcc">—</div><div class="stat-label">正解率</div></div>
+    <div class="stat c4"><div class="stat-emoji">📖</div><div class="stat-val" id="stWords">0</div><div class="stat-label">登録語</div></div>
+  </div>
+
+  <div id="app"></div>
+</div>
+
+<script>
+/* ============================================================
+   STARTER_WORDS — 最初から入っているお試し単語
+   単語をアップロードすると、これは置き換え/追加されます。
+   word : 英単語 / def : 英語の定義 / example : 例文(任意, ___ が空欄)
+   exJa  : 例文の日本語訳（であうフェーズで英語と一緒に表示）
+   ============================================================ */
+const STARTER_WORDS = [
+  { word:"accept",   def:"to agree to take something offered to you",            example:"She decided to ___ the job offer.",  exJa:"彼女はその仕事のさそいを受けることに決めた。" },
+  { word:"achieve",  def:"to succeed in doing or getting something",             example:"He worked hard to ___ his goal.",     exJa:"彼はゴールを たっせい するために がんばった。" },
+  { word:"admire",   def:"to respect or like someone very much",                 example:"I really ___ her courage.",           exJa:"わたしは彼女のゆうきを本当に そんけい している。" },
+  { word:"appear",   def:"to start to be seen",                                  example:"Stars ___ in the night sky.",         exJa:"星が夜空に あらわれる。" },
+  { word:"arrive",   def:"to reach a place",                                     example:"The train will ___ at 7 pm.",         exJa:"電車は午後7時に とうちゃくする。" },
+  { word:"believe",  def:"to think that something is true",                      example:"I ___ you can do it.",                exJa:"わたしは あなたが できると しんじている。" },
+  { word:"borrow",   def:"to use something that belongs to someone else for a short time", example:"Can I ___ your pen?",      exJa:"あなたのペンを かりて もいい？" },
+  { word:"brave",    def:"not afraid to do dangerous or difficult things",       example:"He was ___ enough to speak up.",      exJa:"彼は声をあげるほど ゆうかん だった。" },
+  { word:"bright",   def:"giving off a lot of light",                            example:"The sun is very ___ today.",          exJa:"今日は太陽がとても まぶしい。" },
+  { word:"calm",     def:"quiet and peaceful, not excited",                      example:"Stay ___ during the test.",           exJa:"テスト中は おちついて いよう。" },
+  { word:"careful",  def:"giving attention to avoid harm or mistakes",           example:"Be ___ when crossing the road.",      exJa:"道をわたるときは 気をつけて。" },
+  { word:"clever",   def:"quick to learn and understand",                        example:"My sister is very ___.",              exJa:"わたしの姉はとても かしこい。" },
+  { word:"collect",  def:"to gather things together",                            example:"He likes to ___ stamps.",             exJa:"彼は切手を あつめる のが好きだ。" },
+  { word:"create",   def:"to make something new",                                example:"Artists ___ beautiful things.",       exJa:"アーティストは美しいものを 作りだす。" },
+  { word:"decide",   def:"to choose after thinking",                             example:"I can't ___ what to wear.",           exJa:"何を着るか きめられない。" },
+  { word:"discover", def:"to find something for the first time",                 example:"Scientists ___ new planets.",         exJa:"科学者は新しい惑星を はっけんする。" },
+  { word:"explain",  def:"to make something clear by telling about it",          example:"Can you ___ this word to me?",        exJa:"この単語を せつめい してくれる？" },
+  { word:"famous",   def:"known by many people",                                 example:"Mt. Fuji is a ___ mountain.",         exJa:"富士山は ゆうめい な山だ。" },
+  { word:"gather",   def:"to come together in a group",                          example:"People ___ to watch the parade.",     exJa:"人々がパレードを見るために あつまる。" },
+  { word:"imagine",  def:"to picture something in your mind",                    example:"Can you ___ life without phones?",    exJa:"電話のない生活を そうぞう できる？" },
+  { word:"improve",  def:"to make something better",                             example:"I want to ___ my English.",           exJa:"わたしは英語を じょうたつ させたい。" },
+  { word:"journey",  def:"a trip from one place to another",                     example:"Their ___ took three days.",          exJa:"彼らの たび は3日かかった。" },
+  { word:"notice",   def:"to see or pay attention to something",                 example:"Did you ___ the new sign?",           exJa:"新しい看板に 気づいた？" },
+  { word:"polite",   def:"showing good manners",                                 example:"Always be ___ to elders.",            exJa:"年上の人にはいつも れいぎ正しく しよう。" },
+  { word:"prepare",  def:"to get ready for something",                           example:"We ___ dinner together.",             exJa:"わたしたちは いっしょに 夕食を じゅんびする。" },
+  { word:"protect",  def:"to keep someone or something safe",                    example:"Helmets ___ your head.",              exJa:"ヘルメットは頭を まもる。" },
+  { word:"realize",  def:"to suddenly understand something",                     example:"I ___ I left my keys at home.",       exJa:"家に鍵をわすれたことに 気がついた。" },
+  { word:"repair",   def:"to fix something broken",                              example:"He can ___ bikes.",                   exJa:"彼は自転車を しゅうり できる。" },
+  { word:"strange",  def:"unusual or surprising",                                example:"That's a ___ noise.",                 exJa:"あれは へん な音だ。" },
+  { word:"suggest",  def:"to offer an idea or plan",                             example:"I ___ we leave early.",               exJa:"早く出発することを ていあん する。" },
+];
+
+/* ============================================================
+   MY_100_WORDS — お子さんがアップロードした100語に対応する
+   例文 + 日本語訳。起動時に state.words に自動マージされる。
+   ============================================================ */
+const MY_100_WORDS = [
+  {word:`acquire`,        def:`to gain something`,                                                                                                        example:`She worked hard to acquire new skills.`,            exJa:`彼女は 新しい スキルを みにつける ために がんばった。`},
+  {word:`confirm`,        def:`to show that something is right or correct, usually with evidence`,                                                        example:`Please confirm your name before the test.`,         exJa:`テストの 前に なまえを かくにん してください。`},
+  {word:`fortune`,        def:`a large amount of money or things that are owned`,                                                                         example:`He made a fortune by selling his invention.`,       exJa:`彼は はつめい品を 売って 大金を 手に入れた。`},
+  {word:`invest`,         def:`to use your money to make more money (e.g. by buying stocks or rental properties)`,                                        example:`My uncle wants to invest his money in stocks.`,     exJa:`おじさんは お金を かぶに とうし する つもりだ。`},
+  {word:`submit`,         def:`to give something (especially a document) to someone to be approved or considered`,                                        example:`Please submit your homework by Friday.`,            exJa:`金よう日 までに しゅくだいを ていしゅつ してね。`},
+  {word:`ensure`,         def:`to make sure that something will be a certain way`,                                                                        example:`Wear a helmet to ensure your safety.`,              exJa:`あんぜんを まもる ために ヘルメットを かぶろう。`},
+  {word:`bond`,           def:`something that connects people or groups to each other`,                                                                   example:`The bond between sisters is very strong.`,          exJa:`しまいの きずな は とても 強い。`},
+  {word:`crisis`,         def:`a situation that needs serious attention, especially because it is dangerous`,                                             example:`The country faced a water crisis last summer.`,     exJa:`その国は 去年の夏 水ぶそくの きき に なった。`},
+  {word:`define`,         def:`to clearly show the outline or edge of something`,                                                                         example:`Can you define the word "happiness"?`,              exJa:`「しあわせ」 ということばを せつめい できる？`},
+  {word:`decline`,        def:`to decrease in amount or grow smaller in number`,                                                                          example:`Bee numbers will decline if we do not help.`,       exJa:`守らないと ハチの 数は へってしまう。`},
+  {word:`principal`,      def:`most important`,                                                                                                            example:`Rice is the principal food in many countries.`,     exJa:`米は 多くの 国で おもな 食べものだ。`},
+  {word:`candidate`,      def:`a person who is being considered for a position`,                                                                           example:`She is the best candidate for class president.`,    exJa:`彼女は クラス委員長に 一番ふさわしい こうほ だ。`},
+  {word:`encounter`,      def:`to meet someone or something without intending to`,                                                                         example:`We might encounter a deer in the forest.`,          exJa:`森で シカに であう かもしれない。`},
+  {word:`council`,        def:`a group of people who make rules or decisions about things`,                                                                example:`The city council voted to build a new park.`,       exJa:`市の いいんかいは 新しい 公園を 作ることを 決めた。`},
+  {word:`alternative`,    def:`offering a different choice or option`,                                                                                     example:`Milk is a good alternative to juice.`,              exJa:`ジュースの かわりに ミルクも いいよ。`},
+  {word:`institute`,      def:`an organization made to do a specific thing (e.g. research)`,                                                               example:`The institute studies sea life.`,                    exJa:`その けんきゅうじょは 海の 生きものを しらべている。`},
+  {word:`expand`,         def:`to get or make something bigger (in size, range, or amount)`,                                                              example:`Balloons expand when you blow air into them.`,      exJa:`空気を 入れると 風せんは ふくらむ。`},
+  {word:`efficient`,      def:`working without wasting time, money, or energy`,                                                                            example:`Electric cars are very efficient.`,                 exJa:`電気じどう車は とても こうりつ が いい。`},
+  {word:`specific`,       def:`clearly said or shown (in detail)`,                                                                                          example:`Please give me a specific example.`,                exJa:`ぐたいてきな れいを 教えて。`},
+  {word:`bury`,           def:`to put something in the ground or under many things, often to hide it`,                                                    example:`Dogs love to bury bones in the yard.`,              exJa:`犬は 庭に ほねを うめる のが 大すきだ。`},
+  {word:`arrest`,         def:`to hold someone (often a criminal) using the power of law`,                                                                 example:`The police came to arrest the thief.`,              exJa:`けいさつが どろぼうを たいほ しに 来た。`},
+  {word:`justice`,        def:`the condition of being fair in a situation`,                                                                                example:`Judges work to bring justice to everyone.`,         exJa:`さいばんかんは みんなに こうへいな せいぎを もたらすために はたらく。`},
+  {word:`scheme`,         def:`an official plan or program that is used to change something`,                                                              example:`The school started a scheme to recycle plastic.`,   exJa:`学校は プラスチックを リサイクルする けいかくを はじめた。`},
+  {word:`outcome`,        def:`the result of an activity or process`,                                                                                       example:`We waited to hear the outcome of the game.`,        exJa:`わたしたちは 試合の けっか を 聞くのを 待った。`},
+  {word:`remote`,         def:`far from other people or things`,                                                                                            example:`They live in a remote mountain village.`,           exJa:`彼らは 遠く はなれた 山の 村に 住んでいる。`},
+  {word:`emergency`,      def:`an unexpected situation that requires fast action (and is usually dangerous)`,                                              example:`Call 911 in an emergency.`,                         exJa:`きんきゅう のときは 911に 電話して。`},
+  {word:`landscape`,      def:`a piece of land that looks special`,                                                                                         example:`The desert landscape looked like another planet.`,  exJa:`さばくの けしき は べつの 星のようだった。`},
+  {word:`compete`,        def:`to try to get or win something that another person is also trying to get, or to try to be better than someone else`,        example:`Five teams will compete for the prize.`,            exJa:`5つの チームが しょうきんを めざして きそう。`},
+  {word:`convince`,       def:`to get someone to believe something or agree to do something`,                                                              example:`She tried to convince me to try sushi.`,            exJa:`彼女は わたしに おすしを 食べてみるように せっとく した。`},
+  {word:`brilliant`,      def:`great or very good`,                                                                                                          example:`Your drawing is brilliant!`,                        exJa:`あなたの 絵は すばらしい！`},
+  {word:`favor`,          def:`to like or support something`,                                                                                                example:`Many kids favor chocolate over vanilla.`,           exJa:`多くの子は バニラより チョコを このむ。`},
+  {word:`commission`,     def:`a group that has been organized and given an official job to find information or manage something`,                         example:`A safety commission checks the playgrounds.`,       exJa:`あんぜんいいんかいが 公園の あそびぐを てんけん する。`},
+  {word:`convert`,        def:`to change something so you can use it in a different way`,                                                                  example:`We will convert the old garage into a bedroom.`,    exJa:`古い ガレージを しん室に つくりかえる。`},
+  {word:`apparently`,     def:`used when describing something that looks like it is true based on current information`,                                    example:`Apparently, it will rain tomorrow.`,                exJa:`どうやら あした 雨が ふるらしい。`},
+  {word:`moreover`,       def:`in addition to something that has already been said`,                                                                        example:`She is smart; moreover, she is kind.`,              exJa:`彼女は かしこい。さらに、やさしい。`},
+  {word:`pursue`,         def:`to try to do or get something over a period of time`,                                                                        example:`He works hard to pursue his dream of being a pilot.`, exJa:`彼は パイロットになる ゆめを おう ために がんばっている。`},
+  {word:`generate`,       def:`to make something or cause it to be made`,                                                                                   example:`Solar panels generate electricity from the sun.`,   exJa:`ソーラーパネルは 太陽から 電気を 作りだす。`},
+  {word:`conclude`,       def:`to form or say an opinion, or to decide to do something after thinking about it`,                                           example:`After thinking, I conclude that camping is best.`,  exJa:`よく考えた すえに キャンプが 一番だと けつろん した。`},
+  {word:`extreme`,        def:`very great in degree or intensity`,                                                                                          example:`The desert has extreme heat in summer.`,            exJa:`さばくの 夏は きょくたん に 暑い。`},
+  {word:`consequence`,    def:`a result of an action or actions, especially one that is undesirable`,                                                       example:`Skipping practice has a consequence: you will lose.`, exJa:`練習を さぼると まける という けっかに なる。`},
+  {word:`administration`, def:`a government or a part of government that people connect with its leader (such as a president or prime minister)`,         example:`The new administration changed the rules.`,         exJa:`新しい せいけんは ルールを かえた。`},
+  {word:`characteristic`, def:`a special part of something that makes it different from something else`,                                                   example:`A long neck is a characteristic of giraffes.`,      exJa:`長い 首は キリンの とくちょうだ。`},
+  {word:`appreciate`,     def:`to be thankful for something or someone`,                                                                                    example:`I really appreciate your help.`,                    exJa:`あなたの 助けに 本当に かんしゃ している。`},
+  {word:`extend`,         def:`to continue across a certain area, distance, or time`,                                                                       example:`The beach can extend for many miles.`,              exJa:`ビーチは 何キロも つづくことが ある。`},
+  {word:`secure`,         def:`safe and protected from something dangerous`,                                                                                example:`Lock the door to keep your home secure.`,           exJa:`ドアを しめて 家を あんぜん に たもとう。`},
+  {word:`launch`,         def:`to start or release something big or important`,                                                                             example:`The company will launch a new game next month.`,    exJa:`会社は らいげつ 新しい ゲームを はつばい する。`},
+  {word:`conflict`,       def:`a strong and often angry fight or disagreement between people`,                                                              example:`The two friends had a small conflict over a toy.`,  exJa:`ふたりの 友だちは おもちゃを めぐって 小さな けんかを した。`},
+  {word:`chase`,          def:`to follow and try to catch someone or something`,                                                                            example:`My puppy loves to chase butterflies.`,              exJa:`うちの 子犬は ちょうちょを おいかける のが 大すきだ。`},
+  {word:`command`,        def:`to order someone to do something (in a forceful way)`,                                                                       example:`The captain will command the team to march.`,       exJa:`キャプテンは チームに こうしんせよと めいれい する。`},
+  {word:`grant`,          def:`to say someone is allowed to do or have something`,                                                                          example:`The king will grant the boy three wishes.`,         exJa:`王さまは 少年に 3つの ねがいを かなえると やくそく した。`},
+  {word:`contribute`,     def:`to give something, such as money or time, to help others`,                                                                   example:`Each student will contribute a can of food.`,       exJa:`せいとは ひとり 一つ かんづめを きふ する。`},
+  {word:`faith`,          def:`a strong belief or trust in a person or thing`,                                                                              example:`She has faith that her brother will keep his promise.`, exJa:`彼女は 弟が やくそくを 守ると しんじている。`},
+  {word:`predict`,        def:`to say that something will or might happen in the future`,                                                                   example:`The news can predict tomorrow's weather.`,          exJa:`ニュースは あすの 天気を よそく できる。`},
+  {word:`accompany`,      def:`to happen with or at the same time as another thing`,                                                                        example:`Loud thunder can accompany heavy rain.`,            exJa:`強い 雨には かみなりが ともなう ことが ある。`},
+  {word:`disaster`,       def:`an event that happens suddenly and causes harm to many people, such as an earthquake or flood`,                              example:`An earthquake is a natural disaster.`,              exJa:`じしんは しぜん さいがいだ。`},
+  {word:`threaten`,       def:`to tell someone that you will do something harmful to them or others`,                                                       example:`The bully tried to threaten me, but I was brave.`,  exJa:`いじめっ子は わたしを おどそうとした が わたしは ゆうかんだった。`},
+  {word:`restore`,        def:`to return something to its original condition (e.g. by fixing or cleaning it)`,                                              example:`Workers will restore the old painting.`,            exJa:`作業員は 古い 絵を ふくげん する。`},
+  {word:`entirely`,       def:`completely and with nothing left unfinished`,                                                                                example:`I am entirely sure of my answer.`,                  exJa:`わたしは 自分の 答えに かんぜんに じしんが ある。`},
+  {word:`explore`,        def:`to travel to or in a place to learn about it or find something`,                                                             example:`Let's explore the forest behind our school.`,       exJa:`学校の 後ろの 森を たんけん しよう。`},
+  {word:`possess`,        def:`to have or own something`,                                                                                                    example:`Owls possess very sharp eyesight.`,                 exJa:`ふくろうは とても するどい しりょくを もって いる。`},
+  {word:`incident`,       def:`something unexpected (and usually bad) that has happened`,                                                                   example:`There was a small incident at the bus stop.`,       exJa:`バス停で 小さな じけんが あった。`},
+  {word:`appoint`,        def:`to choose someone for a specific job or duty`,                                                                                example:`Our teacher will appoint me as the class leader.`,  exJa:`先生は わたしを クラスリーダーに にんめい する。`},
+  {word:`register`,       def:`to record information in a book or system so you can do something`,                                                          example:`We need to register for the soccer camp.`,          exJa:`サッカーキャンプに もうしこむ ひつようが ある。`},
+  {word:`pose`,           def:`to ask or present a question`,                                                                                                example:`The teacher will pose a tricky question.`,          exJa:`先生は むずかしい しつもんを なげかける。`},
+  {word:`appropriate`,    def:`right for the situation`,                                                                                                      example:`Wear appropriate clothes for the snow.`,            exJa:`雪に あった ふくを 着よう。`},
+  {word:`conference`,     def:`a meeting where many people talk about ideas or problems, usually for several days`,                                          example:`Scientists from many countries came to the conference.`, exJa:`多くの国の 科学者が かいぎに 集まった。`},
+  {word:`accurate`,       def:`correct and without mistakes`,                                                                                                  example:`Use a ruler to draw an accurate line.`,             exJa:`じょうぎを つかって せいかくな 線を ひこう。`},
+  {word:`occasionally`,   def:`sometimes but not often`,                                                                                                       example:`Mom occasionally bakes cookies.`,                   exJa:`ママは ときどき クッキーを 焼く。`},
+  {word:`thread`,         def:`a long, thin piece of material used for sewing`,                                                                              example:`Grandma sewed the button with red thread.`,         exJa:`おばあちゃんは 赤い いとで ボタンを ぬった。`},
+  {word:`resource`,       def:`something valuable a country has, such as oil or minerals`,                                                                   example:`Water is an important natural resource.`,           exJa:`水は たいせつな てんねん しげんだ。`},
+  {word:`capture`,        def:`to catch someone or something and hold them against their will`,                                                              example:`The hunters tried to capture the wild horse.`,      exJa:`ハンターたちは やせいの 馬を つかまえようとした。`},
+  {word:`preserve`,       def:`to keep something how it originally was or keep it in good condition`,                                                        example:`Salt is used to preserve fish.`,                    exJa:`しおは さかなを ほぞん する ために 使われる。`},
+  {word:`claim`,          def:`to say that something is true (although others might not agree)`,                                                              example:`He likes to claim he can run faster than me.`,      exJa:`彼は わたしより 早く 走れると しゅちょう する。`},
+  {word:`guarantee`,      def:`to promise that something is or will be a certain way`,                                                                       example:`The store will guarantee the toy will work for a year.`, exJa:`お店は その おもちゃが 1年 うごくと ほしょう する。`},
+  {word:`internal`,       def:`being inside something`,                                                                                                       example:`The heart is an internal organ.`,                   exJa:`心ぞうは からだの中の ぞうき（内ぞう）だ。`},
+  {word:`sensitive`,      def:`likely to cause people to feel an emotion, especially a negative one`,                                                        example:`Be careful — this is a sensitive topic.`,           exJa:`気を つけて、これは デリケート な わだいだ。`},
+  {word:`overcome`,       def:`to succeed at doing, managing, or controlling something difficult`,                                                           example:`She tried to overcome her fear of swimming.`,       exJa:`彼女は 水が こわい きもちを こくふく しようとした。`},
+  {word:`emerge`,         def:`to come from a hidden or unknown place or condition`,                                                                         example:`A butterfly will emerge from a cocoon.`,            exJa:`ちょうちょは まゆ から 出てくる。`},
+  {word:`rural`,          def:`of or relating to a place where people live in the countryside`,                                                              example:`Grandpa lives in a rural village.`,                 exJa:`おじいちゃんは いなかの 村に すんでいる。`},
+  {word:`investigate`,    def:`to look for information about someone or something`,                                                                          example:`Detectives investigate to find clues.`,             exJa:`たんていは てがかりを みつける ために そうさ する。`},
+  {word:`reputation`,     def:`a common opinion or knowledge that people share about someone or something`,                                                  example:`Our school has a reputation for kindness.`,         exJa:`わたしたちの 学校は しんせつ で 知られている。`},
+  {word:`encourage`,      def:`to try to make something happen or change`,                                                                                    example:`Coaches encourage their players to do their best.`, exJa:`コーチは せん手に ベストを つくすように はげます。`},
+  {word:`credit`,         def:`a good thing that people think about someone or something`,                                                                   example:`She got credit for solving the puzzle.`,            exJa:`彼女は パズルを とけたことで ほめられた。`},
+  {word:`cast`,           def:`to direct something toward someone or something`,                                                                              example:`The lamp can cast a warm light on the room.`,       exJa:`ランプは へやに あたたかい 光を なげかける。`},
+  {word:`output`,         def:`an amount of something that is made by a person or thing`,                                                                    example:`The factory's output is 1,000 cars a day.`,         exJa:`工場の せいさんりょうは 1日 1,000台 だ。`},
+  {word:`absolute`,       def:`complete or total`,                                                                                                            example:`I have absolute trust in my mother.`,               exJa:`わたしは 母を かんぜんに しんじている。`},
+  {word:`adopt`,          def:`to start using a different manner or method`,                                                                                  example:`Our class will adopt a new way to learn math.`,     exJa:`わたしたちの クラスは 新しい 算数の 学び方を とり入れる。`},
+  {word:`praise`,         def:`to say or write nice things about someone or something`,                                                                       example:`Dad will praise me for cleaning my room.`,          exJa:`パパは へやを そうじした わたしを ほめる。`},
+  {word:`swallow`,        def:`to move something from your mouth down to your throat and stomach`,                                                            example:`Chew your food well before you swallow.`,           exJa:`のみこむ 前に よく かもう。`},
+  {word:`bet`,            def:`to make a guess and offer to give something (usually money,) if your guess is wrong`,                                          example:`I bet you can not run faster than me.`,             exJa:`わたしより 早く 走れないって かけるよ。`},
+  {word:`deposit`,        def:`an amount of money that is put in a bank account`,                                                                              example:`Dad made a deposit at the bank.`,                   exJa:`パパは ぎんこうに お金を あずけた。`},
+  {word:`facility`,       def:`a building or equipment that is made for a specific use`,                                                                       example:`Our school has a new sports facility.`,             exJa:`学校に 新しい スポーツ しせつ が できた。`},
+  {word:`sentence`,       def:`a group of words that shows an idea`,                                                                                            example:`Write a sentence about your weekend.`,              exJa:`しゅうまつの ことを 文で 書いて みよう。`},
+  {word:`admire`,         def:`to feel respect and approve of someone or something because of something they have done`,                                       example:`I admire my mother for her hard work.`,             exJa:`わたしは がんばり屋の 母を そんけい している。`},
+  {word:`reveal`,         def:`to make something known to someone for the first time`,                                                                          example:`She wanted to reveal her secret hiding spot.`,      exJa:`彼女は ひみつの かくれ場所を あかしたかった。`},
+  {word:`approximately`,  def:`used to show that something is close in amount but not exact`,                                                                  example:`The trip takes approximately two hours.`,           exJa:`そのたびは およそ 2時間 かかる。`},
+  {word:`associate`,      def:`to connect one person or thing to another when you think of it`,                                                                example:`I associate summer with the beach.`,                exJa:`わたしは 夏 といえば 海を 思いうかべる。`},
+  {word:`engage`,         def:`to do or be involved in something`,                                                                                              example:`Students engage in many fun activities.`,           exJa:`せいとは たのしい かつどうに さんかする。`},
+  {word:`portion`,        def:`one part of a bigger thing`,                                                                                                     example:`I ate a small portion of cake.`,                    exJa:`わたしは ケーキを 少しだけ 食べた。`},
+  {word:`commit`,         def:`to do something that is against the law or hurts others`,                                                                        example:`The thief might commit another crime.`,             exJa:`どろぼうは また はんざいを おかす かもしれない。`},
+];
+
+const TARGET = 3000;
+const STORAGE_KEY = "vocabTrail_v1";
+const LEARN_NEW_TARGET = 10;    // まなぶ: 新規語の最大（learn-firstモード時）
+const LEARN_REVIEW_MAX = 15;    // まなぶ: 復習(testWrong+SRSdue)の最大数
+const MAX_REVIEW_LOOPS = 3;     // まなぶ: 同じ単語の再復習を最大何周まで
+const LEARN_REPEAT_MAX = 2;     // testWrong 1語が まなぶに 登場できる 最大回数（次のテストまで）
+const SESSION_WORDS_TARGET = 10;  // テスト: （後方互換用 定数）
+const TEST_NM_TARGET = 8;         // テスト1回の 未mastered 目標（あれば 常に これ）
+const TEST_MASTERED_MAX = 2;      // テスト1回の mastered 最大（未mastered < 8 の場合のみ追加）
+
+// 100語ごとに合流する「森のなかま」（3000語で30匹）
+const FRIEND_CAST = [
+  ["🐭","ねずみ"],   ["🐹","ハムスター"], ["🐿️","りす"],     ["🦔","はりねずみ"], ["🐦","ことり"],
+  ["🐸","かえる"],   ["🐢","かめ"],       ["🦆","かも"],      ["🐤","ひよこ"],     ["🦋","ちょう"],
+  ["🐝","はち"],     ["🐞","てんとうむし"],["🦎","とかげ"],   ["🦦","かわうそ"],   ["🦊","きつね"],
+  ["🦝","あらいぐま"],["🦫","ビーバー"],   ["🦡","あなぐま"],  ["🐇","のうさぎ"],   ["🦥","なまけもの"],
+  ["🦌","しか"],     ["🐗","いのしし"],   ["🦉","ふくろう"],  ["🦅","わし"],       ["🐺","おおかみ"],
+  ["🐼","パンダ"],   ["🐨","コアラ"],     ["🦁","ライオン"],  ["🐯","とら"],       ["🐻","くま"],
+];
+const FRIENDS = FRIEND_CAST.map(([emoji, name], i) => {
+  const need = (i + 1) * 100;          // 100, 200, … 3000
+  return { emoji, name, need, pct: (need / TARGET) * 100 };
+});
+
+/* ============================================================ */
+
+const app = document.getElementById("app");
+
+const defaultState = {
+  words: [],
+  mastered: [],        // テストで正解した単語のみ（mode:"test" 必須）
+  testWrong: [],       // テストで間違えた単語: [{ word, at }]
+  totalCorrect: 0,
+  totalAttempts: 0,
+  lastSessionDate: null,
+  streak: 0,
+  history: [],
+  srs: {},
+  images: {},
+  unlockedSeen: [],    // 解放を セレブレーション表示した バッチID
+  svgTheme: "forest",  // "forest" | "ac" — ロードマップのテーマ
+  schemaVersion: 2,
+};
+
+// ---- 間隔反復(SRS) / 成長ステージ ----
+const GROWTH = [
+  { emoji: "🌱", name: "たね" },
+  { emoji: "🌿", name: "ふたば" },
+  { emoji: "🪴", name: "なえ" },
+  { emoji: "🌳", name: "わかぎ" },
+  { emoji: "🌲", name: "大き" },
+  { emoji: "🏆", name: "マスター" },
+];
+const SRS_INTERVALS = [0, 1, 2, 4, 8, 16];   // box→次の復習までの日数
+const MAX_BOX = GROWTH.length - 1;
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return structuredClone(defaultState);
+    const parsed = JSON.parse(raw);
+    const merged = { ...structuredClone(defaultState), ...parsed };
+    // v2 マイグレーション: 旧 mastered（まなぶ起源含む）を 削除し、
+    // 以降は テストで正解した語のみ（mode:"test"）が 入る
+    if ((merged.schemaVersion || 1) < 2) {
+      merged.mastered = (merged.mastered || []).filter(m => m && m.mode === "test");
+      merged.testWrong = merged.testWrong || [];
+      merged.schemaVersion = 2;
+    }
+    return merged;
+  } catch { return structuredClone(defaultState); }
+}
+function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+let state = loadState();
+
+// ※ 以前ここに 「mode:"test" 以外を除外」する自動掃除があったが、
+//    レガシー データを 取り返しなく 消してしまうため 廃止。
+//    以降は 新規に push される エントリだけが mode:"test" を 持つ。
+
+// MY_100_WORDS から 例文/日本語訳 を 既存の state.words に 自動で 補完
+function hydrateUserWordsFromMyBank() {
+  if (!state.words || !state.words.length) return false;
+  const bank = new Map(MY_100_WORDS.map(w => [w.word.toLowerCase(), w]));
+  let changed = false;
+  for (const w of state.words) {
+    const entry = bank.get((w.word || "").toLowerCase());
+    if (!entry) continue;
+    if (!w.example) { w.example = entry.example; changed = true; }
+    if (!w.exJa)    { w.exJa    = entry.exJa;    changed = true; }
+    // 例文に単語が含まれていれば 自動で ___ 空欄化（テストの fillBlank 用）
+    if (w.example && !w.example.includes("___")) {
+      const re = new RegExp(`\\b${w.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+      if (re.test(w.example)) { w.example = w.example.replace(re, "___"); changed = true; }
+    }
+  }
+  if (changed) saveState();
+  return changed;
+}
+
+// state.words が 空のとき、MY_100_WORDS で 初期化（ワンクリックボタン用）
+function loadMy100Words() {
+  if (!confirm(`MY_100_WORDS の ${MY_100_WORDS.length}語を 単語リストとして 読み込みます。\n（いまの単語リストは 入れかわります）よろしいですか？`)) return;
+  state.words = MY_100_WORDS.map(w => ({ word: w.word, def: w.def, example: w.example, exJa: w.exJa }));
+  // 例文に ___ を 自動で 入れる
+  for (const w of state.words) {
+    if (w.example && !w.example.includes("___")) {
+      const re = new RegExp(`\\b${w.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+      if (re.test(w.example)) w.example = w.example.replace(re, "___");
+    }
+  }
+  saveState();
+  alert(`${state.words.length}語を 読み込みました！`);
+  renderMountain();
+  renderHome();
+}
+
+hydrateUserWordsFromMyBank();
+
+// ============================================================
+// 単語マスター（バッチ式ロック機構）
+// 優先順位: WORD_MASTER.batches → WORD_MASTER.words → state.words → MY_100_WORDS → STARTER_WORDS
+// ============================================================
+function getBatches() {
+  if (!window.WORD_MASTER) return [];
+  if (Array.isArray(window.WORD_MASTER.batches)) return window.WORD_MASTER.batches;
+  // 後方互換: 旧フォーマット（words配列のみ）→ 1バッチとして扱う
+  if (Array.isArray(window.WORD_MASTER.words)) {
+    return [{
+      id: "batch-1",
+      name: window.WORD_MASTER.batchName || "バッチ1",
+      words: window.WORD_MASTER.words
+    }];
+  }
+  return [];
+}
+
+// バッチが解放済みか: 最初は常に解放、それ以外は 前バッチを 全マスター すれば 解放
+function isBatchUnlocked(batchIdx) {
+  if (batchIdx === 0) return true;
+  const batches = getBatches();
+  if (batchIdx < 0 || batchIdx >= batches.length) return false;
+  const prev = batches[batchIdx - 1];
+  if (!prev || !Array.isArray(prev.words) || prev.words.length === 0) return false;
+  const mset = new Set(state.mastered.map(m => m.word.toLowerCase()));
+  return prev.words.every(w => mset.has(w.word.toLowerCase()));
+}
+
+// バッチの 進捗（覚えた / 全 / %）
+function batchProgress(batchIdx) {
+  const batches = getBatches();
+  if (batchIdx < 0 || batchIdx >= batches.length) return { mastered: 0, total: 0, pct: 0 };
+  const b = batches[batchIdx];
+  const mset = new Set(state.mastered.map(m => m.word.toLowerCase()));
+  const total = b.words.length;
+  const mastered = b.words.filter(w => mset.has(w.word.toLowerCase())).length;
+  return { mastered, total, pct: total ? Math.round((mastered/total)*100) : 0 };
+}
+
+// 現在 学習中の バッチ index（解放済みで かつ 未完了の 最初のバッチ）
+function getCurrentBatchIndex() {
+  const batches = getBatches();
+  for (let i = 0; i < batches.length; i++) {
+    if (!isBatchUnlocked(i)) return Math.max(0, i - 1);
+    const p = batchProgress(i);
+    if (p.mastered < p.total) return i;
+  }
+  return Math.max(0, batches.length - 1);
+}
+
+// 例文の ___ 化（fillBlank 用）
+function hydrateExample(w) {
+  const ww = { ...w };
+  if (ww.example && !ww.example.includes("___")) {
+    const re = new RegExp(`\\b${ww.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+    if (re.test(ww.example)) ww.example = ww.example.replace(re, "___");
+  }
+  return ww;
+}
+
+// 解放済みバッチの 全単語を 返す
+function getMasterWords() {
+  const batches = getBatches();
+  if (!batches.length) return null;
+  const out = [];
+  for (let i = 0; i < batches.length; i++) {
+    if (!isBatchUnlocked(i)) break;
+    for (const w of batches[i].words) out.push(hydrateExample(w));
+  }
+  return out.length ? out : null;
+}
+
+function getWords() {
+  const master = getMasterWords();
+  if (master) return master;
+  if (state.words && state.words.length) return state.words;
+  if (typeof MY_100_WORDS !== "undefined" && MY_100_WORDS.length) return MY_100_WORDS;
+  return STARTER_WORDS;
+}
+function usingStarter() {
+  return !getMasterWords() && !(state.words && state.words.length);
+}
+function masterVersion() {
+  return (window.WORD_MASTER && window.WORD_MASTER.version) || "未読込";
+}
+function masterBatchName() {
+  const batches = getBatches();
+  const idx = getCurrentBatchIndex();
+  if (!batches[idx]) return "（マスター 未読込）";
+  return batches[idx].name;
+}
+
+// 現在のバッチの 学習フロー: "test-first" or "learn-first"
+// 明示指定が なければ、batch-0 は test-first、batch-1+ は learn-first
+function getCurrentFlowMode() {
+  const batches = getBatches();
+  const idx = getCurrentBatchIndex();
+  const b = batches[idx];
+  if (!b) return "test-first";
+  if (b.flowMode === "test-first" || b.flowMode === "learn-first") return b.flowMode;
+  return idx === 0 ? "test-first" : "learn-first";
+}
+function masteredSet() { return new Set(state.mastered.map(m => m.word)); }
+
+const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+
+// 同じ単語が 隣り合わない ようにシャッフル（連続出題回避）
+function shuffleNoAdjacent(arr, keyFn) {
+  const out = shuffle(arr);
+  // 隣接する 同キーペアを 後方の 非マッチ要素と 入れかえる
+  for (let pass = 0; pass < 4; pass++) {
+    let fixed = false;
+    for (let i = 1; i < out.length; i++) {
+      if (keyFn(out[i]) === keyFn(out[i - 1])) {
+        let swapIdx = -1;
+        for (let j = i + 1; j < out.length; j++) {
+          if (keyFn(out[j]) !== keyFn(out[i - 1]) &&
+              (j + 1 >= out.length || keyFn(out[j]) !== keyFn(out[j + 1]))) {
+            swapIdx = j; break;
+          }
+        }
+        if (swapIdx === -1) {
+          for (let j = i + 1; j < out.length; j++) {
+            if (keyFn(out[j]) !== keyFn(out[i - 1])) { swapIdx = j; break; }
+          }
+        }
+        if (swapIdx !== -1) {
+          [out[i], out[swapIdx]] = [out[swapIdx], out[i]];
+          fixed = true;
+        }
+      }
+    }
+    if (!fixed) break;
+  }
+  return out;
+}
+
+// マスタリーループで 間違えた単語を キューに 戻すとき、両隣と 同じキーに ならない 位置に 挿入。
+// キューが 空の場合は 戻さない（同じ単語の 連続レンダリングを 防ぐ）。
+function requeueAvoidingAdjacent(queue, spec, keyFn) {
+  if (queue.length === 0) return false;
+  const key = keyFn(spec);
+  for (let i = queue.length; i >= 1; i--) {
+    const prevKey = keyFn(queue[i - 1]);
+    const nextKey = i < queue.length ? keyFn(queue[i]) : null;
+    if (prevKey !== key && nextKey !== key) {
+      queue.splice(i, 0, spec);
+      return true;
+    }
+  }
+  // どこも 衝突する → 末尾に 追加（最後の砦）
+  queue.push(spec);
+  return true;
+}
+const today = () => new Date().toISOString().slice(0,10);
+const daysBetween = (a,b) => Math.round((new Date(b) - new Date(a)) / 86400000);
+const esc = s => String(s).replace(/[&<>"']/g, c =>
+  ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+
+function parseWordList(text) {
+  const lines = text.split(/\r?\n/);
+  const out = [];
+  for (let raw of lines) {
+    const line = raw.trim();
+    if (!line) continue;
+    let word = "", def = "", example = "", exJa = "";
+    if (line.includes("\t")) {
+      const cols = line.split("\t").map(c => c.trim());
+      word = cols[0]; def = cols[1] || ""; example = cols[2] || ""; exJa = cols[3] || "";
+    } else {
+      const m = line.match(/^(.+?)\s*[,，=:：]\s*(.+)$/) ||
+                line.match(/^(.+?)\s+[-—–]\s+(.+)$/);
+      if (m) { word = m[1].trim(); def = m[2].trim(); }
+      else   { word = line; }
+    }
+    if (!word) continue;
+    // 例文に単語が含まれているが ___ が無い場合は、自動で ___ にして空欄問題を作れるようにする
+    if (example && !example.includes("___")) {
+      const re = new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+      if (re.test(example)) example = example.replace(re, "___");
+    }
+    out.push({ word, def, example, exJa });
+  }
+  const map = new Map();
+  for (const w of out) map.set(w.word.toLowerCase(), w);
+  return [...map.values()];
+}
+
+// テスト用: 未mastered を 8語 取れたら mastered は 出さない。
+//   - 未mastered ≥ 8: 8 未mastered のみ（mastered 0語）
+//   - 未mastered < 8: 全 未mastered + mastered を 最大 2語 補充
+// ※「まなぶで 今日 触れた単語」は テストから 除外（翌日以降に 出題）
+function pickSessionWords() {
+  const pool = getWords();
+  const masteredWords = new Set(state.mastered.map(m => m.word));
+  const todayStr = today();
+  const learnedToday = w => state.srs[w.word] && state.srs[w.word].learnedAt === todayStr;
+
+  // 未mastered かつ 今日まなぶで触れていない語だけ
+  const nonMastered = pool.filter(w => !masteredWords.has(w.word) && !learnedToday(w));
+  const nmDue   = nonMastered.filter(w => isDue(w.word) && !isNew(w.word))
+    .sort((a, b) => (srsOf(a.word).due || "").localeCompare(srsOf(b.word).due || ""));
+  const nmFresh = nonMastered.filter(w => isNew(w.word));
+  const nmKnown = shuffle(nonMastered.filter(w => !isDue(w.word) && !isNew(w.word)));
+
+  const mode = getCurrentFlowMode();
+  const nmOrder = mode === "learn-first"
+    ? [...nmDue, ...nmKnown, ...nmFresh]
+    : [...nmDue, ...nmFresh, ...nmKnown];
+
+  // ①未mastered を 最大 8語 取る
+  let targets = nmOrder.slice(0, TEST_NM_TARGET);
+
+  // ②未mastered が 8語に 満たない場合のみ、mastered を 最大 2語 補充
+  //   mastered からも 今日 まなぶで 触れたものは 除外
+  if (targets.length < TEST_NM_TARGET) {
+    const masteredPool = pool.filter(w => masteredWords.has(w.word) && !learnedToday(w));
+    const masteredDue   = masteredPool.filter(w => isDue(w.word))
+      .sort((a, b) => (srsOf(a.word).due || "").localeCompare(srsOf(b.word).due || ""));
+    const masteredOther = shuffle(masteredPool.filter(w => !isDue(w.word)));
+    const masteredOrder = [...masteredDue, ...masteredOther];
+    targets = [...targets, ...masteredOrder.slice(0, TEST_MASTERED_MAX)];
+  }
+  return targets;
+}
+
+function buildSession() {
+  const targets = pickSessionWords();
+  const queue = [];
+  // 1単語あたり 最大3問（意味あて・単語あて・空欄うめ）= 10語 × 3 ≒ 30問
+  for (const w of targets) {
+    queue.push({ w, type: "wordToDef" });
+    queue.push({ w, type: "defToWord" });
+    if (w.example && w.example.includes("___")) queue.push({ w, type: "fillBlank" });
+  }
+  return shuffleNoAdjacent(queue, e => e.w.word);
+}
+
+// 指定した単語からタイプ別の4択問題を作る（Learning/Testで共用）
+function buildChoiceQuestion(w, type) {
+  const pool = getWords();
+  const wrong = shuffle(pool.filter(x => x.word !== w.word)).slice(0, 3);
+
+  if (type === "fillBlank" && w.example && w.example.includes("___")) {
+    const sentence = esc(w.example).replace("___", `<span class="blank">？</span>`);
+    return { type, word: w, prompt: "空欄に入る単語は？", content: sentence,
+      choices: shuffle([w, ...wrong]).map(x => ({ key: x.word, label: esc(x.word) })), answer: w.word };
+  }
+  if (type === "defToWord") {
+    return { type, word: w, prompt: "この意味の単語は？",
+      content: `“${esc(w.def || "（意味なし）")}”`,
+      choices: shuffle([w, ...wrong]).map(x => ({ key: x.word, label: esc(x.word) })), answer: w.word };
+  }
+  // 既定: wordToDef（単語→意味）
+  return { type: "wordToDef", word: w, prompt: "この単語の意味は？",
+    content: `<span class="word">${esc(w.word)}</span>`, isWord: true,
+    choices: shuffle([w, ...wrong]).map(x => ({ key: x.word, label: esc(x.def || "（意味なし）") })),
+    answer: w.word };
+}
+
+// ---------- SRS helpers ----------
+function srsOf(word) { return state.srs[word] || { box: 0, due: null, correct: 0, wrong: 0 }; }
+function isDue(word) {
+  const s = state.srs[word];
+  if (!s) return false;            // 未学習はnew扱い
+  return !s.due || s.due <= today();
+}
+function isNew(word) { return !state.srs[word]; }
+function addDays(dateStr, n) {
+  const d = new Date(dateStr); d.setDate(d.getDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+function srsUpdate(word, correct, source) {
+  const s = srsOf(word);
+  if (correct) { s.box = Math.min(MAX_BOX, s.box + 1); s.correct++; }
+  else         { s.box = Math.max(0, s.box - 1);       s.wrong++; }
+  s.due = addDays(today(), SRS_INTERVALS[s.box]);
+  s.seenAt = today();
+  // まなぶで触れた単語は learnedAt を 今日に。テストでは 今日 learnedAt の語を 除外する。
+  if (source === "learn") s.learnedAt = today();
+  state.srs[word] = s;
+}
+function dueCount() {
+  const m = new Set(state.mastered.map(x => x.word));
+  return getWords().filter(w => !m.has(w.word) && !isNew(w.word) && isDue(w.word)).length;
+}
+function newCount() {
+  const m = new Set(state.mastered.map(x => x.word));
+  return getWords().filter(w => !m.has(w.word) && isNew(w.word)).length;
+}
+
+// ---------- audio (browser built-in, no internet) ----------
+function speak(text) {
+  try {
+    if (!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US"; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+// ロードマップ SVG テーマ切り替え（forest / ac）
+function applySvgTheme(theme) {
+  if (theme !== "forest" && theme !== "ac") theme = "forest";
+  state.svgTheme = theme;
+  saveState();
+  const tmplId = theme === "ac" ? "acSvgTemplate" : "forestSvgTemplate";
+  const tmpl = document.getElementById(tmplId);
+  const host = document.getElementById("journeySvg");
+  if (!tmpl || !host) return;
+  // テンプレートから 内側の <svg> を 取得して、その innerHTML を host にコピー
+  const innerSvg = tmpl.content.querySelector("svg");
+  host.innerHTML = innerSvg ? innerSvg.innerHTML : "";
+  // ボタンのアクティブ状態
+  const fBtn = document.getElementById("themeBtnForest");
+  const aBtn = document.getElementById("themeBtnAc");
+  if (fBtn) fBtn.classList.toggle("active", theme === "forest");
+  if (aBtn) aBtn.classList.toggle("active", theme === "ac");
+  // 再描画（軌道計算をやり直す）
+  renderMountain();
+}
+
+function renderMountain() {
+  const mastered = state.mastered.length;
+  const pct = Math.min(100, (mastered / TARGET) * 100);
+
+  document.getElementById("elevNum").innerHTML =
+    `${mastered} <small>/ <span id="elevTarget">${TARGET}</span> 語</small>`;
+  document.getElementById("elevPct").innerHTML = `${Math.round(pct)}<small>%</small>`;
+  document.getElementById("trackFill").style.width = pct + "%";
+
+  const label =
+    pct >= 100 ? "ゴール到着！ TOEFL 100" :
+    pct >= 75  ? "大きな森のおく" :
+    pct >= 50  ? "木もれ日の小道" :
+    pct >= 25  ? "草はらをぬけて" :
+    pct >  0   ? "森に入った！" :
+                 "スタート地点";
+  document.getElementById("elevLabel").textContent = label;
+
+  document.querySelectorAll("#ckLabels span").forEach(el => {
+    el.classList.toggle("passed", pct >= +el.dataset.pct);
+  });
+
+  const trail = document.getElementById("trail");
+  const climber = document.getElementById("climber");
+  if (trail && climber) {
+    const len = trail.getTotalLength();
+    const p = trail.getPointAtLength(len * (pct / 100));
+    climber.setAttribute("transform", `translate(${p.x},${p.y})`);
+
+    // 30匹 全員を 軌道上に 配置
+    // - met（出会った）: emoji大きめ + 白い背景円
+    // - next（次の1匹）: 中サイズ + やわらかい光るリング
+    // - locked（まだ）: 小さな茶色の足跡マーク
+    const nextIdx = FRIENDS.findIndex(f => mastered < f.need);
+    let svg = "";
+    FRIENDS.forEach((f, i) => {
+      const fp = trail.getPointAtLength(len * (f.pct / 100));
+      const met = mastered >= f.need;
+      const isNext = i === nextIdx;
+      // 交互に 軌道の 上/下 に 配置して 重なりを 減らす
+      const above = i % 2 === 0;
+      const oy = above ? -12 : 13;
+
+      if (met) {
+        svg += `<circle cx="${fp.x}" cy="${fp.y + oy}" r="8.5" fill="#fff" stroke="#eaa83f" stroke-width="1.4"/>`;
+        svg += `<text x="${fp.x}" y="${fp.y + oy + 4}" font-size="11" text-anchor="middle">${f.emoji}</text>`;
+      } else if (isNext) {
+        svg += `<circle class="friend-next-glow" cx="${fp.x}" cy="${fp.y + oy}" r="8" fill="#fff" stroke="#d65f48" stroke-width="1.5" stroke-dasharray="3 2"/>`;
+        svg += `<text x="${fp.x}" y="${fp.y + oy + 4}" font-size="10" text-anchor="middle" opacity="0.55">${f.emoji}</text>`;
+      } else {
+        // ロック中: 小さな茶色ドット
+        svg += `<circle cx="${fp.x}" cy="${fp.y + (above ? -8 : 9)}" r="2.2" fill="#b6a589" opacity="0.55"/>`;
+      }
+    });
+    document.getElementById("friends").innerHTML = svg;
+  }
+
+  // friends roster（30匹・100語ごと）
+  const metCount = FRIENDS.filter(f => mastered >= f.need).length;
+  const nextFriend = FRIENDS.find(f => mastered < f.need);
+  document.getElementById("rosterCount").textContent = `${metCount} / ${FRIENDS.length}`;
+
+  const nf = document.getElementById("nextFriend");
+  if (nextFriend) {
+    nf.style.display = "inline-block";
+    nf.textContent = `つぎの なかま：${nextFriend.emoji} ${nextFriend.name} まで あと ${nextFriend.need - mastered} 語`;
+  } else {
+    nf.style.display = "inline-block";
+    nf.textContent = "ぜんぶの なかまに 出会えた！🎉";
+  }
+
+  document.getElementById("rosterList").innerHTML = FRIENDS.map(f => {
+    const met = mastered >= f.need;
+    const isNext = f === nextFriend;
+    return `<div class="friend ${met ? "met" : ""} ${isNext ? "next" : ""}">
+      <div class="face">${met ? f.emoji : "❔"}</div>
+      <div class="fname">${met ? f.name : "？"}</div>
+      <div class="fneed">${met ? "なかま！" : f.need}</div>
+    </div>`;
+  }).join("");
+
+  document.getElementById("stMastered").textContent = state.mastered.length;
+  document.getElementById("stStreak").textContent = state.streak;
+  document.getElementById("stAcc").textContent = state.totalAttempts === 0
+    ? "—" : Math.round((state.totalCorrect / state.totalAttempts) * 100) + "%";
+  document.getElementById("stWords").textContent = getWords().length;
+}
+
+// 新規解放されたバッチが あれば 一度だけ ダイアログを 出す
+function checkNewlyUnlocked() {
+  const batches = getBatches();
+  if (!Array.isArray(state.unlockedSeen)) state.unlockedSeen = [];
+  for (let i = 1; i < batches.length; i++) {
+    if (isBatchUnlocked(i) && !state.unlockedSeen.includes(batches[i].id)) {
+      state.unlockedSeen.push(batches[i].id);
+      saveState();
+      setTimeout(() => {
+        alert(`🎉 おめでとう！\n\n「${batches[i].name}」 が 解放されました！\n\n新しい100語が テストに 加わります。\nまずは テストで 知らない単語を 見つけよう。`);
+      }, 200);
+      return;
+    }
+  }
+}
+
+function renderHome() {
+  checkNewlyUnlocked();
+  const remaining = Math.max(0, TARGET - state.mastered.length);
+  const wordCount = getWords().length;
+  const testHistory = state.history.filter(r => r.mode === "test");
+  const lastTest = testHistory[testHistory.length - 1];
+  const lastNote = lastTest
+    ? `前回のテストは ${lastTest.date}、${lastTest.score}/${lastTest.total} 正解（+${lastTest.climbed}語 覚えた）`
+    : `まだテストを受けていません。まずは テストで 知らない単語を 見つけよう。`;
+
+  const starterBanner = usingStarter()
+    ? `<div class="hint">いまは<strong>お試し単語 ${wordCount}語</strong>で練習できます。「単語をアップロード」から自分の単語リストを貼り付けると、それで学べます。</div>`
+    : "";
+  const canStart = wordCount >= 4;
+  const wrongCountTotal  = state.testWrong.length;
+  const wrongCountActive = state.testWrong.filter(t => (t.learnCount || 0) < LEARN_REPEAT_MAX).length;
+  const wrongCountDormant = wrongCountTotal - wrongCountActive;
+  const wrongCount = wrongCountActive;  // 以下のロジックは「まなぶに 出る数」を 基準に
+  const masteredCount = state.mastered.length;
+  const untestedCount = newCount();
+  const focusMode = wrongCountActive >= 20;
+
+  // ----- バッチ進捗 / ロック表示 -----
+  const batches = getBatches();
+  const curIdx = getCurrentBatchIndex();
+  const curBatch = batches[curIdx];
+  const curProgress = curBatch ? batchProgress(curIdx) : { mastered: 0, total: 0, pct: 0 };
+  const progressPct = curProgress.pct;
+  const nextBatchIdx = curIdx + 1;
+  const hasNextBatch = nextBatchIdx < batches.length;
+  const nextBatchUnlocked = hasNextBatch && isBatchUnlocked(nextBatchIdx);
+  const nextBatch = hasNextBatch ? batches[nextBatchIdx] : null;
+
+  const flowModeBadge = (() => {
+    const m = getCurrentFlowMode();
+    return m === "learn-first"
+      ? `<span style="background:var(--teal); color:#fff; border-radius:999px; padding:2px 8px; font-size:0.66rem; font-weight:800; margin-left:6px">🌱→📝 まなぶ先</span>`
+      : `<span style="background:var(--coral); color:#fff; border-radius:999px; padding:2px 8px; font-size:0.66rem; font-weight:800; margin-left:6px">📝→🌱 テスト先</span>`;
+  })();
+
+  const batchCardHtml = `
+    <div style="background:var(--bg-2); border-radius:14px; padding:10px 14px; margin-bottom:10px">
+      <div style="display:flex; justify-content:space-between; font-size:0.78rem; font-weight:700; color:var(--ink-soft); margin-bottom:4px">
+        <span>📚 ${esc(curBatch ? curBatch.name : "バッチ 未読込")}${flowModeBadge}</span>
+        <span><b style="color:var(--ink)">${curProgress.mastered}</b> / ${curProgress.total}語 覚えた</span>
+      </div>
+      <div style="height:8px; background:#fff; border-radius:999px; overflow:hidden">
+        <div style="width:${progressPct}%; height:100%; background:linear-gradient(90deg, var(--teal), var(--coral)); border-radius:999px"></div>
+      </div>
+      ${hasNextBatch ? (nextBatchUnlocked
+        ? `<div style="margin-top:8px; font-size:0.78rem; font-weight:800; color:var(--good)">🎉 ${esc(nextBatch.name)} 解放！</div>`
+        : `<div style="margin-top:8px; font-size:0.74rem; font-weight:700; color:var(--ink-soft)">🔒 つぎ: ${esc(nextBatch.name)} — このバッチを 全部覚えると 解放（あと ${curProgress.total - curProgress.mastered}語）</div>`)
+        : `<div style="margin-top:8px; font-size:0.74rem; color:var(--ink-soft)">これが 最新のバッチ。全部 覚えたら 次の100語を 追加できるよ。</div>`}
+    </div>`;
+
+  // ステップ式の今日のアクション（フローモードに応じて 変化）
+  const flowMode = getCurrentFlowMode();
+  const dueOnlyCount = dueCount();   // SRS due（mastered/testWrong/新規 除く）
+
+  let nextStep;
+  if (flowMode === "learn-first") {
+    // 【まなぶ → テスト】の流れ
+    if (untestedCount > 0) {
+      nextStep = { num: 1, label: `まなぶで 新しい単語 ${Math.min(untestedCount, LEARN_NEW_TARGET)}語を 学ぼう`, color: "var(--teal)", action: "learn" };
+    } else if (wrongCount > 0) {
+      nextStep = { num: 2, label: `まなぶで testWrong ${wrongCount}語を 集中復習`, color: "var(--teal)", action: "learn" };
+    } else if (dueOnlyCount > 0) {
+      nextStep = { num: 3, label: `テストで 学んだ単語を 確認しよう`, color: "var(--coral)", action: "test" };
+    } else if (masteredCount < wordCount) {
+      nextStep = { num: 3, label: `テストで 残りの 単語に ちょうせん`, color: "var(--coral)", action: "test" };
+    } else {
+      nextStep = { num: 4, label: "🎉 全部マスター！次のバッチに 進もう", color: "var(--honey)", action: "upload" };
+    }
+  } else {
+    // 【テスト → まなぶ】の流れ（test-first）
+    if (untestedCount > 0 && wrongCount < 20) {
+      nextStep = { num: 1, label: "テストで 知らない単語を 見つけよう", color: "var(--coral)", action: "test" };
+    } else if (wrongCount > 0) {
+      nextStep = { num: 2, label: `まなぶで testWrong ${wrongCount}語を 集中復習`, color: "var(--teal)", action: "learn" };
+    } else if (masteredCount < wordCount) {
+      nextStep = { num: 3, label: "テストで 残りの 単語に ちょうせん", color: "var(--coral)", action: "test" };
+    } else {
+      nextStep = { num: 4, label: "🎉 全部マスター！次のバッチに 進もう", color: "var(--honey)", action: "upload" };
+    }
+  }
+
+  const wrongBanner = wrongCountTotal
+    ? `<div style="background:var(--coral-soft); border:1px solid #f3cfc6; border-radius:14px; padding:10px 14px; margin:10px 0; font-weight:700; color:var(--coral-deep); font-size:0.92rem; display:flex; justify-content:space-between; align-items:center; gap:8px">
+         <span>❌ testWrong: <b>${wrongCountActive}語</b> まなぶ中${wrongCountDormant ? ` ・ <small>復習済み ${wrongCountDormant}語（次回テスト待ち）</small>` : ""}${focusMode ? " <small>（集中モード）</small>" : ""}</span>
+         <button class="icon-btn" onclick="showTestWrongWords()" style="white-space:nowrap">見る</button>
+       </div>`
+    : "";
+
+  app.innerHTML = `
+    <div class="card home-cta">
+      <h2>今日のがくしゅう</h2>
+
+      ${batchCardHtml}
+
+      <div style="background:#fffdf8; border:2px solid ${nextStep.color}; border-radius:14px; padding:12px 16px; margin-bottom:12px">
+        <div style="font-size:0.72rem; color:var(--ink-soft); font-weight:700; margin-bottom:2px">つぎに やること</div>
+        <div style="font-size:0.96rem; font-weight:800; color:var(--ink)">
+          <span style="color:${nextStep.color}">STEP ${nextStep.num}</span> ${nextStep.label}
+        </div>
+      </div>
+
+      <p style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:6px">
+        未テスト <b>${untestedCount}語</b> ・ 復習(testWrong) <b>${wrongCount}語</b> ・ 覚えた <b>${masteredCount}語</b>
+      </p>
+      ${wrongBanner}
+      ${starterBanner}
+
+      <div class="mode-cards">
+        <button class="mode-card learn" onclick="startLearn()"
+          ${canStart && (wrongCount > 0 || (flowMode === "learn-first" && untestedCount > 0) || dueOnlyCount > 0) ? "" : "disabled"}
+          style="${flowMode === "learn-first" ? "order:-1" : ""}">
+          <div class="mode-emoji">🌱</div>
+          <div class="mode-name">まなぶ</div>
+          <div class="mode-desc">
+            ${flowMode === "learn-first"
+              ? (untestedCount > 0
+                  ? `新規 <b>${Math.min(untestedCount, LEARN_NEW_TARGET)}語</b>を まず学ぼう`
+                  : (wrongCount > 0 ? `testWrong <b>${Math.min(20, wrongCount)}語</b>を 集中復習` : "学ぶ語が ありません"))
+              : (wrongCount > 0 ? `testWrong <b>${Math.min(20, wrongCount)}語</b>を 集中復習` : "テストで まちがえた語が<br>ここに 入るよ")}
+          </div>
+        </button>
+        <button class="mode-card test" onclick="startSession()" ${canStart ? "" : "disabled"}>
+          <div class="mode-emoji">📝</div>
+          <div class="mode-name">テスト</div>
+          <div class="mode-desc">
+            ${flowMode === "learn-first"
+              ? "学んだ単語を テストで 確認。<br>未マスター 8語が 出るよ。"
+              : "未マスター 8語が 出題。<br>全問正解で「覚えた」+8語！"}
+          </div>
+        </button>
+      </div>
+
+      <div style="background:var(--teal-soft); border:1px dashed #c9e6df; border-radius:12px; padding:10px 14px; margin-top:14px; font-size:0.78rem; color:var(--ink); line-height:1.7">
+        ${flowMode === "learn-first" ? `
+          <b>🌀 すすめ方（まなぶ → テスト）</b><br>
+          ① 🌱 <b>まなぶ</b> で 新しい単語を 覚える（であう→おもいだす→つかう）<br>
+          ② 📝 <b>テスト</b> で 学んだ単語を 確認 → 全問正解で 「覚えた語」✅<br>
+          ③ まちがえた語 (testWrong) を 🌱 まなぶで 復習<br>
+          ④ 全100語 覚えたら 次のバッチが 自動解放 🎉
+        ` : `
+          <b>🌀 すすめ方（テスト → まなぶ）</b><br>
+          ① 📝 <b>テスト</b> で 知らない単語を 見つける（10語ずつ）<br>
+          ② 🌱 <b>まなぶ</b> で まちがえた語を 集中復習<br>
+          ③ 📝 <b>再テスト</b> で 全問正解 → 覚えた語 ✅<br>
+          ④ 全100語 覚えたら 次のバッチが 自動解放 🎉
+        `}
+      </div>
+
+      <div class="home-actions" style="margin-top:14px">
+        <button class="btn small" onclick="exportProgress()" style="background:var(--honey); box-shadow:0 4px 0 #b78019, 0 8px 16px rgba(234,168,63,0.22)">📦 バックアップ</button>
+        <button class="btn ghost small" onclick="renderHistory()">記録</button>
+      </div>
+      <p style="margin-top:8px; font-size:0.72rem; color:var(--ink-soft); text-align:center">
+        マスター: <b>${esc(masterBatchName())}</b> ・ ${esc(masterVersion())}
+      </p>
+      <p style="margin-top:6px; font-size:0.82rem;">${lastNote}</p>
+    </div>
+  `;
+}
+
+let uploadParsed = [];
+
+function renderUpload() {
+  app.innerHTML = `
+    <div class="card upload">
+      <div class="section-title"><span>単語をアップロード</span><span class="sub">英単語 + 英語の定義</span></div>
+      <div class="hint">
+        <b>かんたん形式</b> — 1行に1単語、区切りは <code>,</code> <code>=</code> <code>-</code> どれでもOK<br>
+        例: <code>abandon, to leave someone completely</code><br><br>
+        <b>くわしい形式</b>（おすすめ）— タブ区切りで 例文と 日本語訳も追加<br>
+        <code>単語 [Tab] 英語の定義 [Tab] 例文 (任意) [Tab] 日本語訳 (任意)</code><br>
+        例文に単語が含まれていれば 自動で <code>___</code> 空欄に変換します。<br>
+        Excel やスプレッドシートのコピーが そのまま 使えます。
+      </div>
+      <textarea id="wordInput" placeholder="abandon, to leave someone or something completely&#10;ability, the power or skill to do something&#10;&#10;または タブ区切りで:&#10;abandon&#9;to leave someone completely&#9;She had to abandon her plan.&#9;彼女は計画をあきらめざるを得なかった。"
+        oninput="updatePreview()"></textarea>
+      <div class="preview-line" id="previewLine">貼り付けると、読み取れた語数がここに出ます。</div>
+      <div class="sample" id="sample" style="display:none"></div>
+      <div class="result-actions">
+        <button class="btn ghost small" onclick="renderHome()">← もどる</button>
+        <button class="btn ghost small" id="appendBtn" onclick="commitUpload(false)" disabled>追加する</button>
+        <button class="btn teal small" id="replaceBtn" onclick="commitUpload(true)" disabled>入れかえる</button>
+      </div>
+      <div style="margin-top:14px; padding-top:14px; border-top:1px dashed var(--line)">
+        <p style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px; font-weight:600">
+          📚 用意ずみの100語リスト（例文＋日本語訳つき）
+        </p>
+        <button class="btn ghost small wide" onclick="loadMy100Words()" style="width:100%">
+          📥 100語リストを 読み込む
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function updatePreview() {
+  const text = document.getElementById("wordInput").value;
+  uploadParsed = parseWordList(text);
+  const n = uploadParsed.length;
+  const withDef = uploadParsed.filter(w => w.def).length;
+  const withEx  = uploadParsed.filter(w => w.example).length;
+  const withJa  = uploadParsed.filter(w => w.exJa).length;
+
+  const line = document.getElementById("previewLine");
+  const sample = document.getElementById("sample");
+  const appendBtn = document.getElementById("appendBtn");
+  const replaceBtn = document.getElementById("replaceBtn");
+
+  if (n === 0) {
+    line.innerHTML = "貼り付けると、読み取れた語数がここに出ます。";
+    sample.style.display = "none";
+    appendBtn.disabled = replaceBtn.disabled = true;
+    return;
+  }
+  line.innerHTML = `<strong>${n}語</strong> 読み取りました。`
+    + (withDef < n ? ` <span style="color:var(--bad)">（定義なし ${n - withDef}語）</span>` : "")
+    + (withEx ? ` ・ 例文つき ${withEx}語` : "")
+    + (withJa ? ` ・ 日本語訳つき ${withJa}語` : "");
+  sample.style.display = "block";
+  sample.innerHTML = uploadParsed.slice(0, 6).map(w =>
+    `<div><b>${esc(w.word)}</b> — ${esc(w.def || "（定義なし）")}</div>`
+  ).join("") + (n > 6 ? `<div style="color:var(--ink-soft)">…ほか ${n - 6}語</div>` : "");
+  appendBtn.disabled = replaceBtn.disabled = false;
+}
+
+function commitUpload(replace) {
+  if (!uploadParsed.length) return;
+  if (replace) {
+    if (!confirm(`いまの単語リストを ${uploadParsed.length}語 で入れかえます。よろしいですか？`)) return;
+    state.words = uploadParsed;
+  } else {
+    const base = usingStarter() ? [] : state.words;
+    const map = new Map(base.map(w => [w.word.toLowerCase(), w]));
+    for (const w of uploadParsed) map.set(w.word.toLowerCase(), w);
+    state.words = [...map.values()];
+  }
+  saveState();
+  renderMountain();
+  alert(`単語リストを更新しました。いまは ${state.words.length}語 です。`);
+  renderHome();
+}
+
+let session = null;
+
+// ---------- session 上部バー（やめる / 学ぶ⇄テスト 切りかえ）----------
+function sessionTopBar(mode) {
+  const sw = mode === "learn"
+    ? `<button class="icon-btn switch-btn" onclick="switchMode('test')">📝 テストへ</button>`
+    : `<button class="icon-btn switch-btn" onclick="switchMode('learn')">🌱 まなぶへ</button>`;
+  return `<div class="session-bar">
+    <button class="icon-btn" onclick="exitSession()">← やめる</button>
+    ${sw}
+  </div>`;
+}
+function exitSession() {
+  if (!confirm("いまの がくしゅうを やめて ホームに もどりますか？\n（とちゅうの けっかは 記録されません）")) return;
+  session = null; learn = null;
+  renderHome();
+}
+function switchMode(to) {
+  const msg = to === "test" ? "テストに 切りかえますか？" : "まなぶに 切りかえますか？";
+  if (!confirm(msg + "\n（いまの とちゅうの けっかは 記録されません）")) return;
+  session = null; learn = null;
+  if (to === "test") startSession(); else startLearn();
+}
+
+function startSession() {
+  if (getWords().length < 4) { alert("単語が4語以上必要です。まず単語をアップロードしてください。"); return; }
+  const queue = buildSession();
+  if (queue.length === 0) {
+    alert("今日は マナブを やってね。\nテストは 明日 また チャレンジ してね 🌱");
+    return;
+  }
+  session = {
+    queue,
+    initialLen: queue.length,
+    asked: 0,
+    correct: 0,
+    newlyMastered: [],
+    wrongSet: new Set(),
+    everWrong: new Set(),
+    askedWords: new Set(),   // セッション中に出題された単語（重複なし）
+    answered: false,
+    current: null,
+  };
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const s = session;
+  const spec = s.queue[0];
+  const q = buildChoiceQuestion(spec.w, spec.type);
+  s.current = q;
+  s.answered = false;
+  const totalKnown = s.asked + s.queue.length;
+  const pct = totalKnown ? (s.asked / totalKnown) * 100 : 0;
+  const typeLabel = { wordToDef: "意味あて", defToWord: "単語あて", fillBlank: "空欄うめ" }[q.type];
+
+  app.innerHTML = `
+    <div class="card">
+      ${sessionTopBar("test")}
+      <div class="q-progress-bar"><div style="width:${pct}%"></div></div>
+      <div class="q-meta">
+        <span>問題 ${s.asked + 1}（のこり ${s.queue.length}）</span>
+        <span class="q-type-tag">${typeLabel}</span>
+      </div>
+      <div class="q-prompt">${q.prompt}</div>
+      <div class="q-content ${q.isWord ? 'word' : ''}">${q.content}</div>
+      <div class="choices" id="choices">
+        ${q.choices.map((c, i) => `
+          <button class="choice" data-key="${esc(c.key)}" onclick="answerQuestion(${i})">
+            <span class="letter">${String.fromCharCode(65 + i)}</span>${c.label}
+          </button>`).join("")}
+      </div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  `;
+}
+
+function answerQuestion(idx) {
+  const s = session;
+  if (s.answered) return;
+  s.answered = true;
+
+  const q = s.current;
+  const correct = q.choices[idx].key === q.answer;
+
+  const btns = document.querySelectorAll(".choice");
+  btns.forEach(b => { b.disabled = true; if (b.dataset.key === q.answer) b.classList.add("correct"); });
+  if (!correct) btns[idx].classList.add("wrong");
+
+  s.asked++;
+  s.askedWords.add(q.word.word);
+  state.totalAttempts++;
+  if (correct) {
+    s.correct++;
+    state.totalCorrect++;
+  } else {
+    s.wrongSet.add(q.word.word);
+    s.everWrong.add(q.word.word);
+  }
+  // テストでも 1問ごとに SRS を反映（間違えた単語はその日のうちに復習に回る）
+  // ※ mastered/testWrong の更新は セッション終了時に まとめて 行う（finishSession）
+  srsUpdate(q.word.word, correct, "test");
+  saveState();
+
+  const ex = q.word.example ? esc(q.word.example).replace("___", `<b>${esc(q.word.word)}</b>`) : "";
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback show " + (correct ? "ok" : "ng");
+  fb.innerHTML = `${correct ? "正解！" : "おしい！"}
+    <div class="word-info">${esc(q.word.word)} — ${esc(q.word.def || "")}</div>`
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
+  if (!correct) speak(q.word.word);
+
+  setTimeout(() => {
+    const spec = s.queue.shift();
+    if (!correct) requeueAvoidingAdjacent(s.queue, spec, e => e.w.word);
+    if (s.queue.length === 0) finishSession();
+    else renderQuestion();
+  }, correct ? 1100 : 1800);
+}
+
+function finishSession() {
+  const s = session;
+  const total = s.asked;
+  const acc = total ? Math.round((s.correct / total) * 100) : 0;
+
+  // セッションで 出題された 単語ごとに、mastered / testWrong を 更新
+  // 【方針】一度 mastered に 入った 語は 維持する（積み上げ式）。
+  // - 一度も 間違えていない → mastered（mode:"test"）に まだ無ければ追加。testWrong から 削除。
+  // - 一度でも 間違えた → testWrong に 追加（mastered からは 除外しない）。
+  //                       次のテストで 全問正解すれば testWrong から 抜ける。
+  const mset = masteredSet();
+  for (const wordStr of s.askedWords) {
+    const wasWrong = s.everWrong.has(wordStr);
+    if (wasWrong) {
+      const existing = state.testWrong.find(t => t.word === wordStr);
+      if (existing) {
+        existing.at = today();
+        existing.learnCount = 0;  // 再度 間違えたので まなぶカウントを リセット
+      } else {
+        state.testWrong.push({ word: wordStr, at: today(), learnCount: 0 });
+      }
+      // ※ mastered からは 削除しない（過去に覚えた実績は維持）
+    } else {
+      if (!mset.has(wordStr)) {
+        state.mastered.push({ word: wordStr, masteredAt: today(), mode: "test" });
+        s.newlyMastered.push(wordStr);
+      }
+      state.testWrong = state.testWrong.filter(t => t.word !== wordStr);
+    }
+  }
+
+  bumpStreak();
+  state.history.push({ date: today(), climbed: s.newlyMastered.length, score: s.correct, total, mode: "test" });
+  saveState();
+  autoBackup("test");
+
+  // このセッションで新しく出会った森のなかま
+  const afterCount = state.mastered.length;
+  const beforeCount = afterCount - s.newlyMastered.length;
+  const newFriends = FRIENDS.filter(f => beforeCount < f.need && f.need <= afterCount);
+
+  saveState();
+  renderMountain();
+
+  const stars = acc === 100 ? "🌟🌟🌟" : acc >= 70 ? "🌟🌟" : acc >= 40 ? "🌟" : "🌰";
+  const cheer = acc === 100 ? "パーフェクト！" : acc >= 70 ? "いい調子！" : acc >= 40 ? "ナイスファイト！" : "次はもっといける！";
+
+  const friendBanner = newFriends.length
+    ? `<div style="background:var(--honey-soft); border:1px solid #efd6a3; border-radius:14px; padding:12px; margin-bottom:14px; font-weight:800; color:var(--coral-deep)">
+         ${newFriends.map(f => `${f.emoji} ${f.name}`).join("、")} に出会った！🎉</div>`
+    : "";
+
+  const newWordsList = s.newlyMastered.length
+    ? `<p style="margin-top:8px; font-size:0.85rem; color:var(--ink-soft);">新しく覚えた: ${s.newlyMastered.map(w => `<code style="background:var(--teal-soft);padding:1px 6px;border-radius:6px;color:var(--good);font-weight:700">${esc(w)}</code>`).join(" ")}</p>`
+    : `<p style="margin-top:8px; font-size:0.85rem; color:var(--ink-soft);">今回は復習。おつかれさま。</p>`;
+
+  app.innerHTML = `
+    <div class="card result">
+      <div class="stars-burst">${stars}</div>
+      ${friendBanner}
+      <h2>テスト完了 — ${cheer}</h2>
+      <p class="summary">${total}問中 ${s.correct}問 正解（${acc}%）</p>
+      <div class="result-score">+${s.newlyMastered.length}<small> 語 覚えた</small></div>
+      <div class="result-gain">いまは ${state.mastered.length} / ${TARGET} 語</div>
+      ${newWordsList}
+      <div class="result-actions">
+        <button class="btn ghost" onclick="renderHome()">ホーム</button>
+        <button class="btn" onclick="startSession()">もう1回 →</button>
+      </div>
+    </div>
+  `;
+}
+
+// ============ LEARNING（フェーズ式: 全単語であう→全単語おもいだす→全単語つかう）============
+let learn = null;
+
+function bumpStreak() {
+  const t = today();
+  if (state.lastSessionDate) {
+    const diff = daysBetween(state.lastSessionDate, t);
+    if (diff === 0) {}
+    else if (diff === 1) state.streak += 1;
+    else state.streak = 1;
+  } else { state.streak = 1; }
+  state.lastSessionDate = t;
+}
+
+// まなぶの単語選定
+// - test-first モード: testWrong + SRS-due（新規語は テストで まず ふるいにかける）
+// - learn-first モード: testWrong + SRS-due + **新規語**（まず まなぶで 学んでから テスト）
+function pickLearnWords() {
+  const pool = getWords();
+  const masteredWords = new Set(state.mastered.map(m => m.word));
+  // testWrong から アクティブな語（learnCount < LEARN_REPEAT_MAX）のみ
+  const testWrongActive = state.testWrong.filter(t => (t.learnCount || 0) < LEARN_REPEAT_MAX);
+  const testWrongSet  = new Set(testWrongActive.map(t => t.word));
+  const mode = getCurrentFlowMode();
+
+  // テストで まちがえた単語（まだ まなぶ回数が 上限未満）
+  const testWrongItems = pool.filter(w => testWrongSet.has(w.word));
+
+  // 【ルール】アクティブな testWrong が 20語以上 → testWrong だけに 集中
+  if (testWrongItems.length >= 20) {
+    return testWrongItems.slice(0, 20);
+  }
+
+  // SRS で due な語（mastered と testWrong と 新規 は 除外）
+  const due = pool
+    .filter(w => isDue(w.word) && !isNew(w.word)
+                 && !masteredWords.has(w.word) && !testWrongSet.has(w.word))
+    .sort((a, b) => (srsOf(a.word).due || "").localeCompare(srsOf(b.word).due || ""));
+
+  if (mode === "learn-first") {
+    // 新規語も まなぶに 含める（学んでから テストで 確認する 流れ）
+    // 新規は LEARN_NEW_TARGET (10) で 上限
+    const fresh = pool.filter(w => isNew(w.word) && !masteredWords.has(w.word))
+      .slice(0, LEARN_NEW_TARGET);
+    return [...testWrongItems, ...due, ...fresh].slice(0, 20);
+  }
+
+  // test-first モード: 新規は 入れない
+  return [...testWrongItems, ...due].slice(0, 20);
+}
+
+function startLearn() {
+  if (getWords().length < 4) { alert("単語が4語以上必要です。まず単語をアップロードしてください。"); return; }
+  const items = pickLearnWords();
+  if (items.length === 0) {
+    alert("まなぶ単語が ありません。\n\nまずは テストで まちがえた語を 見つけましょう！\n（テストで まちがえた語が ここに 入ります）");
+    return;
+  }
+  learn = {
+    items,
+    phase: "encounter",       // "encounter" | "recall" | "use"
+    phaseQueue: [],           // 現フェーズの残りキュー
+    phaseTotal: 0,
+    current: null,
+    answered: false,
+    revealed: false,
+    pendingQuiz: null,
+    everWrong: new Set(),
+    newlyMastered: [],
+    startStage: {},
+    askedQs: 0,
+    correctQs: 0,
+  };
+  items.forEach(w => learn.startStage[w.word] = srsOf(w.word).box);
+  startPhase("encounter");
+}
+
+function stepBar(active) {
+  const steps = [["1", "であう"], ["2", "おもいだす"], ["3", "つかう"], ["★", "チャレンジ"]];
+  return `<div class="steps">${steps.map((s, i) => {
+    const n = i + 1;
+    const cls = n < active ? "done" : n === active ? "active" : "";
+    return `<div class="step-dot ${cls}">${n < active ? "✓" : s[0]} ${s[1]}</div>`;
+  }).join("")}</div>`;
+}
+
+const PHASE_LABEL = { encounter: "であう", recall: "おもいだす", use: "つかう", challenge: "チャレンジ" };
+const PHASE_STEPNUM = { encounter: 1, recall: 2, use: 3, challenge: 4 };
+
+function startPhase(phase) {
+  learn.phase = phase;
+  if (phase === "encounter") {
+    learn.phaseQueue = learn.items.map(w => ({ w, loop: 0 }));
+  } else if (phase === "recall") {
+    // おもいだす = 意味あて (wordToDef) + 空欄うめ (fillBlank)
+    const items = [];
+    learn.items.forEach(w => {
+      items.push({ w, qType: "wordToDef", loop: 0 });
+      if (w.example && w.example.includes("___")) {
+        items.push({ w, qType: "fillBlank", loop: 0 });
+      }
+    });
+    learn.phaseQueue = shuffleNoAdjacent(items, e => e.w.word);
+  } else if (phase === "use") {
+    // つかう = 単語あて (defToWord) 4択
+    learn.phaseQueue = shuffleNoAdjacent(learn.items.map(w => ({ w, qType: "defToWord", loop: 0 })), e => e.w.word);
+  } else if (phase === "challenge") {
+    // チャレンジ = Writing/タイピング（例文ある単語のみ）
+    learn.phaseQueue = shuffleNoAdjacent(
+      learn.items.filter(w => w.example && w.example.includes("___"))
+        .map(w => ({ w, loop: 0 })),
+      e => e.w.word
+    );
+    if (learn.phaseQueue.length === 0) { finishLearn(); return; }
+  }
+  learn.phaseTotal = learn.phaseQueue.length;
+  advancePhase();
+}
+
+function advancePhase() {
+  if (learn.phaseQueue.length === 0) {
+    // フェーズ完了 → 次フェーズ または 完了
+    if (learn.phase === "encounter") { showPhaseIntro("recall"); return; }
+    if (learn.phase === "recall")    { showPhaseIntro("use"); return; }
+    if (learn.phase === "use")       { showPhaseIntro("challenge"); return; }
+    finishLearn(); return;
+  }
+  learn.current = learn.phaseQueue[0];
+  learn.answered = false;
+  learn.revealed = false;
+  if (learn.phase === "encounter")   renderLearnCard();
+  else if (learn.phase === "recall") renderRecallQuiz();
+  else if (learn.phase === "use")    renderUseQuiz();
+  else if (learn.phase === "challenge") renderChallengeInput();
+}
+
+function nextLearnItem(wasCorrect) {
+  const entry = learn.phaseQueue.shift();
+  // であうフェーズはマスタリーなし。recall/use は 間違えたら 末尾近くに 戻す（連続出題回避）。
+  // challenge は チャレンジ問題なので 間違えても 再投入しない（submitChallengeInput が 常に true を渡す）。
+  if (learn.phase !== "encounter" && learn.phase !== "challenge"
+      && !wasCorrect && entry.loop < MAX_REVIEW_LOOPS) {
+    const requeueSpec = { ...entry, loop: entry.loop + 1 };
+    requeueAvoidingAdjacent(learn.phaseQueue, requeueSpec, e => e.w.word);
+  }
+  advancePhase();
+}
+
+function phaseProgressText() {
+  const remaining = learn.phaseQueue.length;
+  return `${PHASE_LABEL[learn.phase]}（のこり ${remaining}）`;
+}
+
+function showPhaseIntro(nextPhase) {
+  // ★ チャレンジに 到達した時点で 進捗を 保存（やらなくても 結果は 残る）
+  if (nextPhase === "challenge") {
+    commitLearnProgress();
+  }
+  const intro = {
+    recall: {
+      emoji: "🧠",
+      title: "つぎは『おもいだす』",
+      body: `さっき であった ${learn.items.length}語 の<br>意味あて＋空欄うめ で 思い出そう。<br>間ちがえても 同じ単語が もう一度 出るよ。`,
+      btn: "おもいだす を始める →",
+      skippable: false,
+    },
+    use: {
+      emoji: "🔁",
+      title: "つぎは『つかう』",
+      body: `意味を 読んで、ぴったりの 単語を 4択で えらぼう。<br>覚えた単語を 使いこなそう！`,
+      btn: "つかう を始める →",
+      skippable: false,
+    },
+    challenge: {
+      emoji: "✍️★",
+      title: "★ チャレンジ問題 ★",
+      body: `ここまでの 進捗は <b style="color:var(--good)">✅ 保存ずみ</b>！<br><br>これは おまけ問題！<br>スペルを <b>自分で 入力</b> してみよう。<br><br>できなくても <b>だいじょうぶ</b>。<br>TRY する ことが だいじだよ 💪`,
+      btn: "チャレンジしてみる →",
+      skippable: true,
+    },
+  }[nextPhase];
+
+  const skipBtn = intro.skippable
+    ? `<button class="btn ghost" onclick="finishLearn()">スキップ</button>`
+    : `<button class="btn ghost" onclick="exitSession()">やめる</button>`;
+
+  app.innerHTML = `
+    <div class="card result">
+      ${sessionTopBar("learn")}
+      ${stepBar(PHASE_STEPNUM[nextPhase])}
+      <div class="stars-burst">${intro.emoji}</div>
+      <h2>${intro.title}</h2>
+      <p class="summary">${intro.body}</p>
+      <div class="result-actions">
+        ${skipBtn}
+        <button class="btn teal" onclick="startPhase('${nextPhase}')">${intro.btn}</button>
+      </div>
+    </div>
+  `;
+}
+
+// ---------- であう (encounter) ----------
+function renderLearnCard() {
+  const w = learn.current.w;
+  const g = GROWTH[srsOf(w.word).box];
+  // 例文の英語: ___ があれば単語を埋めて bold、無ければ自動で簡単な例を作る
+  let exEn = "";
+  if (w.example) {
+    if (w.example.includes("___")) {
+      exEn = esc(w.example).replace("___", `<b>${esc(w.word)}</b>`);
+    } else {
+      // 単語が例文に含まれていれば bold、それ以外はそのまま表示
+      const re = new RegExp(`\\b${w.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+      exEn = esc(w.example).replace(re, `<b>${esc(w.word)}</b>`);
+    }
+  } else {
+    // 例文が無いときは、意味から最低限の例を自動生成（"This is the word: WORD."）
+    exEn = `This is the word <b>${esc(w.word)}</b>.`;
+  }
+  const exJa = w.exJa ? esc(w.exJa) : (w.example ? "" : `これは「${esc(w.word)}」という単語だよ。`);
+  const noExample = !w.example;
+  const done = learn.phaseTotal - learn.phaseQueue.length;
+
+  app.innerHTML = `
+    <div class="card">
+      ${sessionTopBar("learn")}
+      ${stepBar(1)}
+      <div class="q-meta">
+        <span>であう ${done + 1} / ${learn.phaseTotal}</span>
+        <span class="growth-badge">${g.emoji} ${g.name}</span>
+      </div>
+      <div class="flash-word">${esc(w.word)}</div>
+      <div style="text-align:center">
+        <button class="audio-btn" data-w="${esc(w.word)}" onclick="speak(this.dataset.w)">🔊</button>
+      </div>
+      <p style="text-align:center; font-size:0.8rem; color:var(--ink-soft); margin-bottom:12px">
+        まず 頭の中で 意味を 思い出してみよう。</p>
+      <div id="revealArea">
+        <div class="flash-meaning reveal-hidden" id="meaningBox">
+          <span class="lbl">いみ</span>${esc(w.def || "（意味なし）")}
+        </div>
+        <div class="flash-ex reveal-hidden" id="exBox">
+          <span class="lbl">📖 れいぶん（かんたんな例文）</span>
+          <div class="ex-en">${exEn}</div>
+          ${exJa ? `<div class="ex-ja">${exJa}</div>` : ""}
+          ${noExample ? `<div style="font-size:0.7rem; color:var(--ink-soft); margin-top:6px">※ この単語の くわしい例文は まだ ありません。アップロード時に 3列目に 例文を 入れると もっと くわしく 学べます。</div>` : ""}
+        </div>
+      </div>
+      <button class="btn wide" id="revealBtn" onclick="revealMeaning()">意味をみる 👀</button>
+    </div>
+  `;
+  speak(w.word);
+}
+
+function revealMeaning() {
+  learn.revealed = true;
+  document.getElementById("meaningBox")?.classList.remove("reveal-hidden");
+  document.getElementById("exBox")?.classList.remove("reveal-hidden");
+  const btn = document.getElementById("revealBtn");
+  const isLast = learn.phaseQueue.length === 1;
+  btn.textContent = isLast ? "ぜんぶ であった！ → おもいだす へ" : "つぎの単語 →";
+  btn.setAttribute("onclick", "nextLearnItem(true)");
+}
+
+// ---------- おもいだす (recall, 意味あて + 空欄うめ の 4択) ----------
+function renderRecallQuiz() {
+  const w = learn.current.w;
+  const qType = learn.current.qType || "wordToDef";
+  const q = buildChoiceQuestion(w, qType);
+  learn.pendingQuiz = q;
+  learn.answered = false;
+  const isReview = learn.current.loop > 0;
+  const typeLabel = qType === "fillBlank" ? "空欄うめ" : "意味あて";
+  const badge = isReview
+    ? `<span class="q-type-tag" style="background:var(--berry)">再復習</span>`
+    : `<span class="q-type-tag">${typeLabel}</span>`;
+
+  app.innerHTML = `
+    <div class="card">
+      ${sessionTopBar("learn")}
+      ${stepBar(2)}
+      <div class="q-meta">
+        <span>${phaseProgressText()}</span>
+        ${badge}
+      </div>
+      <div class="q-prompt">${q.prompt}</div>
+      <div class="q-content ${q.isWord ? 'word' : ''}">${q.content}</div>
+      <div class="choices" id="choices">
+        ${q.choices.map((c, i) => `
+          <button class="choice" data-key="${esc(c.key)}" onclick="answerLearn(${i})">
+            <span class="letter">${String.fromCharCode(65 + i)}</span>${c.label}
+          </button>`).join("")}
+      </div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  `;
+}
+
+// ---------- つかう (use, 単語あて 4択) ----------
+function renderUseQuiz() {
+  const w = learn.current.w;
+  const q = buildChoiceQuestion(w, "defToWord");
+  learn.pendingQuiz = q;
+  learn.answered = false;
+  const isReview = learn.current.loop > 0;
+  const badge = isReview
+    ? `<span class="q-type-tag" style="background:var(--berry)">再復習</span>`
+    : `<span class="q-type-tag">単語あて</span>`;
+
+  app.innerHTML = `
+    <div class="card">
+      ${sessionTopBar("learn")}
+      ${stepBar(3)}
+      <div class="q-meta">
+        <span>${phaseProgressText()}</span>
+        ${badge}
+      </div>
+      <div class="q-prompt">${q.prompt}</div>
+      <div class="q-content ${q.isWord ? 'word' : ''}">${q.content}</div>
+      <div class="choices" id="choices">
+        ${q.choices.map((c, i) => `
+          <button class="choice" data-key="${esc(c.key)}" onclick="answerLearn(${i})">
+            <span class="letter">${String.fromCharCode(65 + i)}</span>${c.label}
+          </button>`).join("")}
+      </div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  `;
+}
+
+function answerLearn(idx) {
+  if (learn.answered) return;
+  learn.answered = true;
+  const q = learn.pendingQuiz;
+  const correct = q.choices[idx].key === q.answer;
+
+  const btns = document.querySelectorAll(".choice");
+  btns.forEach(b => { b.disabled = true; if (b.dataset.key === q.answer) b.classList.add("correct"); });
+  if (!correct) btns[idx].classList.add("wrong");
+
+  learn.askedQs++;
+  state.totalAttempts++;
+  if (correct) {
+    learn.correctQs++;
+    state.totalCorrect++;
+    // ※ まなぶでは「覚えた」にカウントしない（テストで正解したときのみ）
+  } else {
+    learn.everWrong.add(q.word.word);
+  }
+  saveState();
+
+  const ex = q.word.example ? esc(q.word.example).replace("___", `<b>${esc(q.word.word)}</b>`) : "";
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback show " + (correct ? "ok" : "ng");
+  fb.innerHTML = (correct ? "正解！" : "ここで しっかり覚えよう 💪")
+    + `<div class="word-info">${esc(q.word.word)} — ${esc(q.word.def || "")}</div>`
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
+  if (!correct) speak(q.word.word);
+
+  setTimeout(() => nextLearnItem(correct), correct ? 1100 : 2000);
+}
+
+// ---------- ★ チャレンジ (writing/タイピング入力, スキップ可) ----------
+function renderChallengeInput() {
+  const w = learn.current.w;
+  const sentence = esc(w.example).replace("___", `<span class="blank">？？？</span>`);
+  const isReview = learn.current.loop > 0;
+  const badge = isReview
+    ? `<span class="q-type-tag" style="background:var(--berry)">再復習</span>`
+    : `<span class="q-type-tag" style="background:var(--honey)">★ チャレンジ</span>`;
+  const firstLetter = esc(w.word.charAt(0));
+  const restLen = Math.max(0, w.word.length - 1);
+  const placeholderRest = "_".repeat(restLen);
+
+  app.innerHTML = `
+    <div class="card">
+      ${sessionTopBar("learn")}
+      ${stepBar(4)}
+      <div class="q-meta">
+        <span>${phaseProgressText()}</span>
+        ${badge}
+      </div>
+      <div class="q-prompt">✍️ <b>チャレンジ</b>！スペルを 自分で 入力してみよう。<br><span style="font-size:0.74rem; color:var(--ink-soft); font-weight:600">できなくても OK。TRYが だいじ 💪</span></div>
+      <div class="q-content">${sentence}</div>
+      <div class="use-hint">
+        いみ: <b>${esc(w.def || "")}</b>
+        ${w.exJa ? `<span class="ja">${esc(w.exJa)}</span>` : ""}
+        <span class="ja">頭文字: <b>${firstLetter}</b>（${w.word.length}文字）</span>
+      </div>
+      <input type="text" id="useInput" class="use-input"
+        autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+        value="${firstLetter}"
+        placeholder="${firstLetter}${placeholderRest}"
+        onkeydown="if(event.key==='Enter') submitChallengeInput()" />
+      <div style="display:flex; gap:8px; margin-top:14px">
+        <button class="btn ghost small" onclick="skipChallenge()" style="flex:1">わからない・スキップ</button>
+        <button class="btn teal" onclick="submitChallengeInput()" style="flex:2">こたえる →</button>
+      </div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  `;
+  setTimeout(() => {
+    const inp = document.getElementById("useInput");
+    if (!inp) return;
+    inp.focus();
+    const v = inp.value;
+    try { inp.setSelectionRange(v.length, v.length); } catch (e) {}
+  }, 80);
+}
+
+// チャレンジで わからない時 → 正解を見せて 次へ（採点には影響しない）
+function skipChallenge() {
+  if (learn.answered) return;
+  learn.answered = true;
+  const w = learn.current.w;
+  const input = document.getElementById("useInput");
+  if (input) input.disabled = true;
+
+  const ex = w.example ? esc(w.example).replace("___", `<b>${esc(w.word)}</b>`) : "";
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback show ok";
+  fb.innerHTML = `スキップ OK！ こたえは <b style="color:var(--good)">${esc(w.word)}</b><br>`
+    + `<small style="font-weight:600">何度も見て、聞いて、慣れていこう 🌱</small>`
+    + `<div class="word-info">${esc(w.word)} — ${esc(w.def || "")}</div>`
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
+  speak(w.word);
+  // スキップは「間違い」扱いに しない（チャレンジは おまけ）→ nextLearnItem(true) で 次へ
+  setTimeout(() => nextLearnItem(true), 1800);
+}
+
+function submitChallengeInput() {
+  if (learn.answered) return;
+  const w = learn.current.w;
+  const input = document.getElementById("useInput");
+  if (!input) return;
+  const guess = (input.value || "").trim().toLowerCase();
+  if (!guess) { input.focus(); return; }
+  learn.answered = true;
+  const correct = guess === w.word.toLowerCase();
+  input.disabled = true;
+  input.classList.add(correct ? "ok" : "ng");
+
+  learn.askedQs++;
+  state.totalAttempts++;
+  if (correct) {
+    learn.correctQs++;
+    state.totalCorrect++;
+  }
+  // ★ チャレンジは おまけ なので、間違えても everWrong には 加えない
+  // （SRS の 降格、再復習キュー、テスト不正解扱いに ならない）
+  saveState();
+
+  const ex = w.example ? esc(w.example).replace("___", `<b>${esc(w.word)}</b>`) : "";
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback show " + (correct ? "ok" : "ng");
+  fb.innerHTML = (correct
+      ? "せいかい！🎉 すごい！"
+      : `おしい！ こたえは <b style="color:var(--good)">${esc(w.word)}</b><br><small style="font-weight:600">スペル できなくても OK。TRY できたね 💪</small>`)
+    + `<div class="word-info">${esc(w.word)} — ${esc(w.def || "")}</div>`
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
+  speak(w.word);
+
+  // チャレンジは 再復習しない（間違いでも 必ず 次へ）
+  setTimeout(() => nextLearnItem(true), correct ? 1200 : 2400);
+}
+
+// まなぶの進捗を 保存（SRS反映・履歴追加・自動バックアップ）。
+// チャレンジに 到達した時点 と finishLearn の 両方から 呼ばれるため idempotent。
+function commitLearnProgress() {
+  if (!learn || learn._committed) return;
+  learn._committed = true;
+  // セッション中に一度でも間違えた単語は SRS を下げる（=復習に回る）
+  // source: "learn" を指定して learnedAt を 今日に → テストで 今日は 出題されない
+  learn.items.forEach(w => srsUpdate(w.word, !learn.everWrong.has(w.word), "learn"));
+  // testWrong に ある語は learnCount を +1 → 上限を超えたら まなぶに 出なくなる
+  const twMap = new Map(state.testWrong.map(t => [t.word, t]));
+  learn.items.forEach(w => {
+    const e = twMap.get(w.word);
+    if (e) e.learnCount = (e.learnCount || 0) + 1;
+  });
+  bumpStreak();
+  const itemsN = learn.items.length;
+  const firstTryRight = itemsN - learn.everWrong.size;
+  state.history.push({ date: today(), climbed: learn.newlyMastered.length, score: firstTryRight, total: itemsN, mode: "learn" });
+  saveState();
+  autoBackup("learn");
+}
+
+function finishLearn() {
+  commitLearnProgress();
+  const itemsN = learn.items.length;
+
+  const grown = learn.items.map(w => ({
+    word: w.word, before: learn.startStage[w.word] ?? 0, after: srsOf(w.word).box,
+  }));
+  const grownUp = grown.filter(g => g.after > g.before);
+
+  const afterCount = state.mastered.length;
+  const beforeCount = afterCount - learn.newlyMastered.length;
+  const newFriends = FRIENDS.filter(f => beforeCount < f.need && f.need <= afterCount);
+
+  saveState();
+  renderMountain();
+
+  const plantRow = grown.map(g =>
+    `<span class="growth-badge" style="margin:2px">${GROWTH[g.after].emoji} ${esc(g.word)}</span>`
+  ).join(" ");
+  const friendBanner = newFriends.length
+    ? `<div style="background:var(--honey-soft); border:1px solid #efd6a3; border-radius:14px; padding:12px; margin-bottom:14px; font-weight:800; color:var(--coral-deep)">${newFriends.map(f => `${f.emoji} ${f.name}`).join("、")} に出会った！🎉</div>`
+    : "";
+
+  const acc = learn.askedQs ? Math.round((learn.correctQs / learn.askedQs) * 100) : 0;
+
+  app.innerHTML = `
+    <div class="card result">
+      <div class="stars-burst">🌟</div>
+      ${friendBanner}
+      <h2>がくしゅう かんりょう！</h2>
+      <p class="summary">${itemsN}語を 学習。${grownUp.length}語が せいちょうしたよ 🌿</p>
+      <div class="result-score">${learn.correctQs}<small> / ${learn.askedQs} 問 正解（${acc}%）</small></div>
+      <p style="margin-top:6px; font-size:0.86rem; color:var(--ink-soft)">
+        ※「覚えた語」は <b>テスト</b> で正解したときに カウントされるよ。<br>
+        まずは まなぶで しっかり 練習しよう 💪
+      </p>
+      <div style="margin:12px 0; text-align:center; line-height:2.1">${plantRow}</div>
+      <p style="font-size:0.8rem; color:var(--ink-soft)">この単語たちは、忘れたころ（あす以降）にまた出てくるよ 🌱</p>
+      <div class="result-actions">
+        <button class="btn ghost" onclick="renderHome()">ホーム</button>
+        <button class="btn" onclick="startSession()">テストへ →</button>
+        <button class="btn teal" onclick="startLearn()">つづける →</button>
+      </div>
+    </div>
+  `;
+}
+
+function renderHistory() {
+  const testHistory = state.history.filter(r => r.mode === "test");
+  const reversed = [...testHistory].reverse();
+  const rows = reversed.length
+    ? `<div class="hist-list">` + reversed.map(r => {
+        const pct = Math.round((r.score / r.total) * 100);
+        return `<div class="hist-row">
+          <span class="hist-date">📝 ${r.date}</span>
+          <div>
+            <div class="hist-bar"><div style="width:${pct}%"></div></div>
+            ${r.climbed ? `<span class="hist-climb">+${r.climbed}語 覚えた</span>` : ""}
+          </div>
+          <span class="hist-score">${r.score}/${r.total}</span>
+        </div>`;
+      }).join("") + `</div>`
+    : `<p class="empty-note">まだテストの記録がありません。<br>ホームからテストを始めましょう。</p>`;
+
+  const chartSvg = testHistory.length >= 2 ? renderTestChart(testHistory) : "";
+  const totalTests = testHistory.length;
+  const totalCorrectT = testHistory.reduce((s, r) => s + r.score, 0);
+  const totalAskedT   = testHistory.reduce((s, r) => s + r.total, 0);
+  const avgAcc = totalAskedT ? Math.round((totalCorrectT / totalAskedT) * 100) : 0;
+  const wrongCount = state.testWrong.length;
+
+  app.innerHTML = `
+    <div class="card">
+      <div class="section-title"><span>テストの記録</span><span class="sub">${totalTests}回 ・ 平均 ${avgAcc}%</span></div>
+      ${chartSvg}
+      ${rows}
+      <div class="result-actions" style="margin-top:16px; flex-wrap:wrap; gap:8px">
+        <button class="btn ghost small" onclick="renderHome()">ホーム</button>
+        <button class="btn ghost small" onclick="showTestWrongWords()" ${wrongCount?"":"disabled"}>❌ まちがえた単語 (${wrongCount})</button>
+        <button class="btn small" onclick="startSession()" ${getWords().length>=4?"":"disabled"}>テストを始める →</button>
+      </div>
+    </div>
+  `;
+}
+
+// テスト点数の 折れ線グラフ（直近12回）
+function renderTestChart(testHistory) {
+  const data = testHistory.slice(-12);
+  if (data.length < 2) return "";
+  const W = 560, H = 160, padL = 38, padR = 12, padT = 22, padB = 26;
+  const innerW = W - padL - padR, innerH = H - padT - padB;
+  const xs = data.map((_, i) => padL + (innerW * i) / Math.max(1, data.length - 1));
+  const pcts = data.map(r => (r.score / r.total) * 100);
+  const ys = pcts.map(p => padT + innerH - (innerH * p) / 100);
+
+  const linePath = xs.map((x, i) => `${i === 0 ? "M" : "L"}${x.toFixed(1)},${ys[i].toFixed(1)}`).join(" ");
+  // 塗りつぶし用 area path
+  const areaPath = linePath
+    + ` L${xs[xs.length-1].toFixed(1)},${(padT + innerH).toFixed(1)}`
+    + ` L${xs[0].toFixed(1)},${(padT + innerH).toFixed(1)} Z`;
+  const dots = xs.map((x, i) =>
+    `<circle cx="${x.toFixed(1)}" cy="${ys[i].toFixed(1)}" r="4.5" fill="#fff" stroke="var(--coral)" stroke-width="2.5"/>`
+  ).join("");
+  const labels = xs.map((x, i) => {
+    const pct = Math.round(pcts[i]);
+    return `<text x="${x.toFixed(1)}" y="${(ys[i] - 10).toFixed(1)}" font-size="10" text-anchor="middle" fill="var(--coral-deep)" font-weight="800">${pct}%</text>`;
+  }).join("");
+  const xLabels = data.map((r, i) => {
+    const m = (r.date || "").slice(5).replace("-", "/");
+    return `<text x="${xs[i].toFixed(1)}" y="${H - 6}" font-size="9" text-anchor="middle" fill="var(--ink-soft)">${m}</text>`;
+  }).join("");
+  const yLines = [0, 50, 100].map(pct => {
+    const y = padT + innerH - (innerH * pct) / 100;
+    return `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="var(--line)" stroke-dasharray="3 3"/>
+            <text x="${padL - 6}" y="${y + 3}" font-size="9" text-anchor="end" fill="var(--ink-soft)">${pct}%</text>`;
+  }).join("");
+
+  return `<div class="test-chart">
+    <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="var(--coral)" stop-opacity="0.28"/>
+          <stop offset="100%" stop-color="var(--coral)" stop-opacity="0.02"/>
+        </linearGradient>
+      </defs>
+      ${yLines}
+      <path d="${areaPath}" fill="url(#chartFill)"/>
+      <path d="${linePath}" fill="none" stroke="var(--coral)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      ${dots}
+      ${labels}
+      ${xLabels}
+    </svg>
+  </div>`;
+}
+
+// テストで まちがえた単語一覧
+function showTestWrongWords() {
+  const wrongs = [...state.testWrong].sort((a, b) => (b.at || "").localeCompare(a.at || ""));
+  const pool = getWords();
+  const wordMap = new Map(pool.map(w => [w.word, w]));
+  const activeCount  = wrongs.filter(t => (t.learnCount || 0) < LEARN_REPEAT_MAX).length;
+  const dormantCount = wrongs.length - activeCount;
+
+  const items = wrongs.map(t => {
+    const w = wordMap.get(t.word);
+    if (!w) return "";
+    const lc = t.learnCount || 0;
+    const active = lc < LEARN_REPEAT_MAX;
+    const badge = active
+      ? `<span style="background:var(--coral); color:#fff; padding:1px 7px; border-radius:6px; font-size:0.66rem; font-weight:800">まなぶ ${lc}/${LEARN_REPEAT_MAX}</span>`
+      : `<span style="background:var(--ink-soft); color:#fff; padding:1px 7px; border-radius:6px; font-size:0.66rem; font-weight:800">復習済 (次テスト待ち)</span>`;
+    return `<div class="wrong-word" style="${active ? "" : "opacity:0.65"}">
+      <div class="ww-head">
+        <span class="ww-word">${esc(w.word)}</span>
+        <div style="display:flex; gap:6px; align-items:center">
+          ${badge}
+          <span class="ww-date">${esc(t.at || "")}</span>
+        </div>
+      </div>
+      <div class="ww-def">${esc(w.def || "")}</div>
+    </div>`;
+  }).filter(Boolean).join("");
+
+  const back = document.createElement("div");
+  back.className = "modal-backdrop";
+  back.innerHTML = `
+    <div class="modal" onclick="event.stopPropagation()" style="max-width:520px">
+      <h3>❌ テストで まちがえた 単語（${wrongs.length}語）</h3>
+      <p style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px">
+        まなぶ中 <b style="color:var(--coral-deep)">${activeCount}語</b>${dormantCount ? ` ・ 復習済 <b>${dormantCount}語</b>（次のテストで間違えると 再復習対象）` : ""}<br>
+        <small>1語 まなぶ <b>${LEARN_REPEAT_MAX}回まで</b>。回数を超えると テストで 再判定するまで まなぶに 出ません。</small>
+      </p>
+      <div style="max-height:55vh; overflow-y:auto; padding-right:4px; margin-bottom:10px">
+        ${items || `<p class="empty-note">まちがえた 単語は ありません。</p>`}
+      </div>
+      <div class="row">
+        <button class="btn ghost small" onclick="this.closest('.modal-backdrop').remove()">閉じる</button>
+        ${activeCount ? `<button class="btn small" onclick="this.closest('.modal-backdrop').remove(); startLearn();">🌱 まなぶで 復習する</button>` : ""}
+      </div>
+    </div>
+  `;
+  back.onclick = () => back.remove();
+  document.body.appendChild(back);
+}
+
+function openSettings() {
+  const back = document.createElement("div");
+  back.className = "modal-backdrop";
+  back.innerHTML = `
+    <div class="modal" onclick="event.stopPropagation()">
+      <h3>設定</h3>
+      <p>マスター: <strong>${esc(masterBatchName())}</strong> <small style="color:var(--ink-soft)">(${esc(masterVersion())})</small><br>
+         登録単語: <strong>${getWords().length}語</strong>${usingStarter() ? "（お試し）" : ""}<br>
+         覚えた語: <strong>${state.mastered.length}</strong> / ${TARGET}<br>
+         これまで <strong>${state.totalCorrect}</strong> 正解 / <strong>${state.totalAttempts}</strong> 回回答</p>
+      <div class="row">
+        <button class="btn ghost small" onclick="this.closest('.modal-backdrop').remove(); renderUpload();">単語をアップロード</button>
+        <button class="btn small" onclick="this.closest('.modal-backdrop').remove(); showCurrentWords();">📋 単語リストを 見る</button>
+      </div>
+      <div class="row">
+        <button class="btn ghost small" onclick="this.closest('.modal-backdrop').remove(); showMasteredWords();">✅ 覚えた語を 見る (${state.mastered.length})</button>
+        <button class="btn ghost small" onclick="this.closest('.modal-backdrop').remove(); showSrsInsights();">🔍 過去の正解/間違い (SRS)</button>
+      </div>
+      <div class="row">
+        <button class="btn small" onclick="exportProgress()">📦 バックアップを 保存</button>
+        <button class="btn ghost small" onclick="importBackup()">📥 復元</button>
+      </div>
+      <div class="row">
+        <button class="btn ghost small" style="color:var(--bad)" onclick="resetProgress()">進捗をリセット</button>
+        <button class="btn small" onclick="this.closest('.modal-backdrop').remove()">閉じる</button>
+      </div>
+    </div>
+  `;
+  back.onclick = () => back.remove();
+  document.body.appendChild(back);
+}
+
+// SRS 履歴から、ありそうな「過去にうまくいった/苦戦した」語を推定して 見せる
+function showSrsInsights() {
+  const pool = getWords();
+  const wordMap = new Map(pool.map(w => [w.word, w]));
+  const entries = Object.entries(state.srs).map(([word, s]) => ({
+    word,
+    box: s.box || 0,
+    correct: s.correct || 0,
+    wrong: s.wrong || 0,
+    due: s.due || "",
+    def: (wordMap.get(word) || {}).def || "",
+  }));
+  // 並べ替え: correct 多い順 → wrong 少ない順
+  entries.sort((a, b) => (b.correct - a.correct) || (a.wrong - b.wrong));
+
+  const goodOnes = entries.filter(e => e.correct >= 2 && e.wrong === 0);   // 強い: 2回以上正解、間違いなし
+  const okOnes   = entries.filter(e => e.correct >= 1 && e.wrong === 0 && !(e.correct >= 2));
+  const struggling = entries.filter(e => e.wrong >= 1).sort((a, b) => b.wrong - a.wrong);
+
+  const rowHtml = (e, color) => `
+    <div style="background:${color}; border-radius:10px; padding:6px 12px; margin-bottom:4px; display:flex; justify-content:space-between; align-items:center; gap:10px">
+      <div style="flex:1; min-width:0">
+        <b style="font-size:0.96rem">${esc(e.word)}</b>
+        ${e.def ? `<div style="font-size:0.74rem; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis">${esc(e.def)}</div>` : ""}
+      </div>
+      <div style="font-size:0.72rem; color:var(--ink); white-space:nowrap">
+        <span style="color:var(--good)">✓${e.correct}</span> /
+        <span style="color:var(--bad)">✗${e.wrong}</span>
+        <span style="color:var(--ink-soft); margin-left:6px">box${e.box}</span>
+      </div>
+    </div>`;
+
+  const sectionHtml = (title, list, color, note) => `
+    <div style="margin-top:12px">
+      <div style="font-weight:800; font-size:0.86rem; color:var(--ink); margin-bottom:6px">${title}（${list.length}語）</div>
+      ${note ? `<div style="font-size:0.72rem; color:var(--ink-soft); margin-bottom:6px">${note}</div>` : ""}
+      ${list.length ? list.slice(0, 80).map(e => rowHtml(e, color)).join("") : `<p style="color:var(--ink-soft); font-size:0.82rem">なし</p>`}
+      ${list.length > 80 ? `<p style="color:var(--ink-soft); font-size:0.72rem; text-align:center">…ほか ${list.length - 80}語</p>` : ""}
+    </div>`;
+
+  const back = document.createElement("div");
+  back.className = "modal-backdrop";
+  back.innerHTML = `
+    <div class="modal" onclick="event.stopPropagation()" style="max-width:560px">
+      <h3>🔍 過去の正解/間違いの 推定（SRSから）</h3>
+      <p style="font-size:0.78rem; color:var(--ink-soft); margin-bottom:8px">
+        SRS の <b>correct</b> / <b>wrong</b> カウントは <b>まなぶ＋テスト 両方</b> を 集計しています。<br>
+        過去の「テスト だけ」の 結果は 分けて 保存されていなかった ため、ここでは 全体傾向 を 見せています。
+      </p>
+      <div style="max-height:55vh; overflow-y:auto; padding-right:4px">
+        ${sectionHtml("💪 つよい (2回以上 正解 ＆ 間違いなし)", goodOnes, "var(--teal-soft)",
+            "これらが「過去のテスト正解」に 最も 近い 候補です。")}
+        ${sectionHtml("⚠️ 苦戦した（間違えたことがある）", struggling, "var(--coral-soft)",
+            "これらは これまで 一度でも 間違えた ことが ある 語です。")}
+        ${sectionHtml("👌 まあまあ (1回 正解、間違いなし)", okOnes, "var(--honey-soft)", "")}
+      </div>
+      <div class="row">
+        <button class="btn ghost small" onclick="this.closest('.modal-backdrop').remove()">閉じる</button>
+      </div>
+    </div>
+  `;
+  back.onclick = () => back.remove();
+  document.body.appendChild(back);
+}
+
+function showMasteredWords() {
+  const mastered = [...state.mastered].sort((a, b) =>
+    (b.masteredAt || "").localeCompare(a.masteredAt || "")
+  );
+  const pool = getWords();
+  const wordMap = new Map(pool.map(w => [w.word, w]));
+
+  const items = mastered.map(m => {
+    const w = wordMap.get(m.word) || { word: m.word, def: "" };
+    const modeBadge = m.mode === "test"
+      ? `<span style="background:var(--teal-soft); color:var(--good); padding:1px 7px; border-radius:6px; font-size:0.66rem; font-weight:800">📝 test</span>`
+      : `<span style="background:var(--coral-soft); color:var(--bad); padding:1px 7px; border-radius:6px; font-size:0.66rem; font-weight:800">⚠ ${esc(m.mode || "no mode")}</span>`;
+    return `<div style="background:var(--teal-soft); border:1px solid #c9e6df; border-radius:12px; padding:8px 12px; margin-bottom:6px">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:8px">
+        <b style="color:var(--good); font-size:1rem">${esc(w.word)}</b>
+        <div style="display:flex; gap:6px; align-items:center">
+          ${modeBadge}
+          <span style="font-size:0.7rem; color:var(--ink-soft)">${esc(m.masteredAt || "")}</span>
+        </div>
+      </div>
+      ${w.def ? `<div style="font-size:0.8rem; color:var(--ink); margin-top:2px">${esc(w.def)}</div>` : ""}
+    </div>`;
+  }).join("");
+
+  // mode 別の集計
+  const modeCounts = {};
+  for (const m of state.mastered) {
+    const k = m.mode || "（無し）";
+    modeCounts[k] = (modeCounts[k] || 0) + 1;
+  }
+  const modeSummary = Object.entries(modeCounts)
+    .map(([k, v]) => `<b>${esc(k)}</b>: ${v}語`).join(" ・ ");
+
+  const back = document.createElement("div");
+  back.className = "modal-backdrop";
+  back.innerHTML = `
+    <div class="modal" onclick="event.stopPropagation()" style="max-width:560px">
+      <h3>✅ 覚えた語の中身（${state.mastered.length}語）</h3>
+      <p style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px">
+        ${modeSummary || "（データ なし）"}
+      </p>
+      <p style="font-size:0.78rem; color:var(--ink-soft); margin-bottom:8px">
+        mode:"test" のみが 正しい「覚えた語」です。他のラベルが あれば、レガシー データです。
+      </p>
+      <div style="max-height:55vh; overflow-y:auto; padding-right:4px">
+        ${items || `<p class="empty-note">まだ覚えた語はありません。</p>`}
+      </div>
+      <div class="row">
+        <button class="btn ghost small" onclick="this.closest('.modal-backdrop').remove()">閉じる</button>
+      </div>
+    </div>
+  `;
+  back.onclick = () => back.remove();
+  document.body.appendChild(back);
+}
+
+function showCurrentWords() {
+  const words = getWords();
+  // タブ区切り 4列（word / def / example / exJa）— アップロードに そのまま 貼り戻せる
+  const lines = words.map(w =>
+    [w.word || "", w.def || "", w.example || "", w.exJa || ""].join("\t")
+  ).join("\n");
+  // シンプル形式（word, def のみ）も用意
+  const simple = words.map(w => `${w.word}, ${w.def || ""}`).join("\n");
+
+  const back = document.createElement("div");
+  back.className = "modal-backdrop";
+  back.innerHTML = `
+    <div class="modal" onclick="event.stopPropagation()">
+      <h3>いまの単語リスト（${words.length}語）</h3>
+      <p style="font-size:0.84rem">下のテキストを <b>すべて選んで コピー</b>（Ctrl+A → Ctrl+C）してから、チャットに貼り付けると 例文を作ってもらえます。</p>
+      <textarea id="wordsArea" readonly style="width:100%; min-height:240px; font-family:monospace; font-size:0.78rem; padding:10px; border:1px solid var(--line); border-radius:10px; color:var(--ink); background:#fffdf8; resize:vertical">${esc(simple)}</textarea>
+      <div class="row" style="justify-content:space-between">
+        <span style="font-size:0.74rem; color:var(--ink-soft)">シンプル形式（単語, 定義）で表示中</span>
+        <div style="display:flex; gap:6px">
+          <button class="btn ghost small" id="copyWordsBtn" onclick="copyWordsToClipboard()">📋 コピー</button>
+          <button class="btn small" onclick="this.closest('.modal-backdrop').remove()">閉じる</button>
+        </div>
+      </div>
+    </div>
+  `;
+  back.onclick = () => back.remove();
+  document.body.appendChild(back);
+}
+
+function copyWordsToClipboard() {
+  const ta = document.getElementById("wordsArea");
+  if (!ta) return;
+  ta.select();
+  try {
+    navigator.clipboard.writeText(ta.value).then(() => {
+      const btn = document.getElementById("copyWordsBtn");
+      if (btn) { btn.textContent = "✓ コピーしました"; setTimeout(() => btn.textContent = "📋 コピー", 1800); }
+    }).catch(() => document.execCommand("copy"));
+  } catch (e) {
+    try { document.execCommand("copy"); } catch (e2) {}
+  }
+}
+
+function buildBackupPayload(auto) {
+  return {
+    exportedAt: new Date().toISOString(),
+    auto: !!auto,
+    masterVersion: masterVersion(),
+    state: state,
+  };
+}
+
+function exportProgress() {
+  const filename = `履歴バックアップ_${today()}.json`;
+  const blob = new Blob([JSON.stringify(buildBackupPayload(false), null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  a.click(); URL.revokeObjectURL(url);
+  setTimeout(() => alert(`バックアップを ダウンロードしました:\n${filename}\n\nClaudeフォルダに 移動して 保存しよう。`), 200);
+}
+
+// テスト/まなぶ 終了時に 自動で 呼ばれる無音バックアップ
+function autoBackup(label) {
+  try {
+    const now = new Date();
+    const pad = n => String(n).padStart(2, "0");
+    const ts = `${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}_${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+    const filename = `履歴_自動_${label || "session"}_${ts}.json`;
+    const blob = new Blob([JSON.stringify(buildBackupPayload(true), null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = filename;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { a.remove(); URL.revokeObjectURL(url); }, 100);
+    showBackupToast(filename);
+  } catch (e) {
+    console.warn("autoBackup failed:", e);
+  }
+}
+
+function showBackupToast(filename) {
+  // 既存のトーストを削除
+  document.querySelectorAll(".backup-toast").forEach(t => t.remove());
+  const t = document.createElement("div");
+  t.className = "backup-toast";
+  t.style.cssText = "position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--teal); color:#fff; padding:11px 18px; border-radius:14px; font-weight:700; font-size:0.86rem; box-shadow:0 6px 16px rgba(0,0,0,0.18); z-index:9999; opacity:0; transition:all 0.25s ease;";
+  t.innerHTML = `📦 自動バックアップ済み<br><small style="font-weight:600; opacity:0.85; font-size:0.72rem">${esc(filename)}</small>`;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => {
+    t.style.opacity = "1";
+    t.style.transform = "translateX(-50%) translateY(0)";
+  });
+  setTimeout(() => {
+    t.style.opacity = "0";
+    t.style.transform = "translateX(-50%) translateY(20px)";
+    setTimeout(() => t.remove(), 300);
+  }, 2400);
+}
+
+function importBackup() {
+  const inp = document.createElement("input");
+  inp.type = "file";
+  inp.accept = ".json,application/json";
+  inp.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const raw = JSON.parse(ev.target.result);
+        const importedState = raw.state || raw;   // 旧フォーマットも 受け入れる
+        if (!confirm(`バックアップ から 復元します。\n\n覚えた語: ${(importedState.mastered||[]).length}語\nテスト記録: ${(importedState.history||[]).filter(r=>r.mode==="test").length}回\nバックアップ日: ${raw.exportedAt || "不明"}\n\n現在の進捗は 上書きされます。よろしいですか？`)) return;
+        state = { ...structuredClone(defaultState), ...importedState };
+        saveState();
+        alert("復元しました！");
+        renderMountain();
+        renderHome();
+        document.querySelectorAll(".modal-backdrop").forEach(m => m.remove());
+      } catch (err) {
+        alert("ファイルの 読み込みに 失敗しました:\n" + err.message);
+      }
+    };
+    reader.readAsText(file);
+  };
+  inp.click();
+}
+
+function resetProgress() {
+  if (!confirm("すべての記録を ゼロから やり直します。\n\n・覚えた語\n・テストで まちがえた単語\n・テスト/まなぶ の 履歴\n・SRS（成長 ステージ）\n・連続日数\n\n単語リスト（100語）と 例文 は そのまま 残ります。\n\nよろしいですか？")) return;
+  state.mastered = [];
+  state.testWrong = [];
+  state.totalCorrect = 0;
+  state.totalAttempts = 0;
+  state.lastSessionDate = null;
+  state.streak = 0;
+  state.history = [];
+  state.srs = {};
+  state.images = {};
+  saveState();
+  renderMountain();
+  renderHome();
+  document.querySelector(".modal-backdrop")?.remove();
+  alert("すべて リセットしました。ゼロから 始めましょう 🌱");
+}
+
+applySvgTheme(state.svgTheme || "forest");
+renderHome();
+</script>
+</body>
+</html>

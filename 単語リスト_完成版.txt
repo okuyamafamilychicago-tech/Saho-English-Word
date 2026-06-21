@@ -1,0 +1,100 @@
+acquire	to gain something	She worked hard to acquire new skills.	彼女は 新しい スキルを みにつける ために がんばった。
+confirm	to show that something is right or correct, usually with evidence	Please confirm your name before the test.	テストの 前に なまえを かくにん してください。
+fortune	a large amount of money or things that are owned	He made a fortune by selling his invention.	彼は はつめい品を 売って 大金を 手に入れた。
+invest	to use your money to make more money (e.g. by buying stocks or rental properties)	My uncle wants to invest his money in stocks.	おじさんは お金を かぶに とうし する つもりだ。
+submit	to give something (especially a document) to someone to be approved or considered	Please submit your homework by Friday.	金よう日 までに しゅくだいを ていしゅつ してね。
+ensure	to make sure that something will be a certain way	Wear a helmet to ensure your safety.	あんぜんを まもる ために ヘルメットを かぶろう。
+bond	something that connects people or groups to each other	The bond between sisters is very strong.	しまいの きずな は とても 強い。
+crisis	a situation that needs serious attention, especially because it is dangerous	The country faced a water crisis last summer.	その国は 去年の夏 水ぶそくの きき に なった。
+define	to clearly show the outline or edge of something	Can you define the word "happiness"?	「しあわせ」 ということばを せつめい できる？
+decline	to decrease in amount or grow smaller in number	Bee numbers will decline if we do not help.	守らないと ハチの 数は へってしまう。
+principal	most important	Rice is the principal food in many countries.	米は 多くの 国で おもな 食べものだ。
+candidate	a person who is being considered for a position	She is the best candidate for class president.	彼女は クラス委員長に 一番ふさわしい こうほ だ。
+encounter	to meet someone or something without intending to	We might encounter a deer in the forest.	森で シカに であう かもしれない。
+council	a group of people who make rules or decisions about things	The city council voted to build a new park.	市の いいんかいは 新しい 公園を 作ることを 決めた。
+alternative	offering a different choice or option	Milk is a good alternative to juice.	ジュースの かわりに ミルクも いいよ。
+institute	an organization made to do a specific thing (e.g. research)	The institute studies sea life.	その けんきゅうじょは 海の 生きものを しらべている。
+expand	to get or make something bigger (in size, range, or amount)	Balloons expand when you blow air into them.	空気を 入れると 風せんは ふくらむ。
+efficient	working without wasting time, money, or energy	Electric cars are very efficient.	電気じどう車は とても こうりつ が いい。
+specific	clearly said or shown (in detail)	Please give me a specific example.	ぐたいてきな れいを 教えて。
+bury	to put something in the ground or under many things, often to hide it	Dogs love to bury bones in the yard.	犬は 庭に ほねを うめる のが 大すきだ。
+arrest	to hold someone (often a criminal) using the power of law	The police came to arrest the thief.	けいさつが どろぼうを たいほ しに 来た。
+justice	the condition of being fair in a situation	Judges work to bring justice to everyone.	さいばんかんは みんなに こうへいな せいぎを もたらすために はたらく。
+scheme	an official plan or program that is used to change something	The school started a scheme to recycle plastic.	学校は プラスチックを リサイクルする けいかくを はじめた。
+outcome	the result of an activity or process	We waited to hear the outcome of the game.	わたしたちは 試合の けっか を 聞くのを 待った。
+remote	far from other people or things	They live in a remote mountain village.	彼らは 遠く はなれた 山の 村に 住んでいる。
+emergency	an unexpected situation that requires fast action (and is usually dangerous)	Call 911 in an emergency.	きんきゅう のときは 911に 電話して。
+landscape	a piece of land that looks special	The desert landscape looked like another planet.	さばくの けしき は べつの 星のようだった。
+compete	to try to get or win something that another person is also trying to get, or to try to be better than someone else	Five teams will compete for the prize.	5つの チームが しょうきんを めざして きそう。
+convince	to get someone to believe something or agree to do something	She tried to convince me to try sushi.	彼女は わたしに おすしを 食べてみるように せっとく した。
+brilliant	great or very good	Your drawing is brilliant!	あなたの 絵は すばらしい！
+favor	to like or support something	Many kids favor chocolate over vanilla.	多くの子は バニラより チョコを このむ。
+commission	a group that has been organized and given an official job to find information or manage something	A safety commission checks the playgrounds.	あんぜんいいんかいが 公園の あそびぐを てんけん する。
+convert	to change something so you can use it in a different way	We will convert the old garage into a bedroom.	古い ガレージを しん室に つくりかえる。
+apparently	used when describing something that looks like it is true based on current information	Apparently, it will rain tomorrow.	どうやら あした 雨が ふるらしい。
+moreover	in addition to something that has already been said	She is smart; moreover, she is kind.	彼女は かしこい。さらに、やさしい。
+pursue	to try to do or get something over a period of time	He works hard to pursue his dream of being a pilot.	彼は パイロットになる ゆめを おう ために がんばっている。
+generate	to make something or cause it to be made	Solar panels generate electricity from the sun.	ソーラーパネルは 太陽から 電気を 作りだす。
+conclude	to form or say an opinion, or to decide to do something after thinking about it	After thinking, I conclude that camping is best.	よく考えた すえに キャンプが 一番だと けつろん した。
+extreme	very great in degree or intensity	The desert has extreme heat in summer.	さばくの 夏は きょくたん に 暑い。
+consequence	a result of an action or actions, especially one that is undesirable	Skipping practice has a consequence: you will lose.	練習を さぼると まける という けっかに なる。
+administration	a government or a part of government that people connect with its leader (such as a president or prime minister)	The new administration changed the rules.	新しい せいけんは ルールを かえた。
+characteristic	a special part of something that makes it different from something else	A long neck is a characteristic of giraffes.	長い 首は キリンの とくちょうだ。
+appreciate	to be thankful for something or someone	I really appreciate your help.	あなたの 助けに 本当に かんしゃ している。
+extend	to continue across a certain area, distance, or time	The beach can extend for many miles.	ビーチは 何キロも つづくことが ある。
+secure	safe and protected from something dangerous	Lock the door to keep your home secure.	ドアを しめて 家を あんぜん に たもとう。
+launch	to start or release something big or important	The company will launch a new game next month.	会社は らいげつ 新しい ゲームを はつばい する。
+conflict	a strong and often angry fight or disagreement between people	The two friends had a small conflict over a toy.	ふたりの 友だちは おもちゃを めぐって 小さな けんかを した。
+chase	to follow and try to catch someone or something	My puppy loves to chase butterflies.	うちの 子犬は ちょうちょを おいかける のが 大すきだ。
+command	to order someone to do something (in a forceful way)	The captain will command the team to march.	キャプテンは チームに こうしんせよと めいれい する。
+grant	to say someone is allowed to do or have something	The king will grant the boy three wishes.	王さまは 少年に 3つの ねがいを かなえると やくそく した。
+contribute	to give something, such as money or time, to help others	Each student will contribute a can of food.	せいとは ひとり 一つ かんづめを きふ する。
+faith	a strong belief or trust in a person or thing	She has faith that her brother will keep his promise.	彼女は 弟が やくそくを 守ると しんじている。
+predict	to say that something will or might happen in the future	The news can predict tomorrow's weather.	ニュースは あすの 天気を よそく できる。
+accompany	to happen with or at the same time as another thing	Loud thunder can accompany heavy rain.	強い 雨には かみなりが ともなう ことが ある。
+disaster	an event that happens suddenly and causes harm to many people, such as an earthquake or flood	An earthquake is a natural disaster.	じしんは しぜん さいがいだ。
+threaten	to tell someone that you will do something harmful to them or others	The bully tried to threaten me, but I was brave.	いじめっ子は わたしを おどそうとした が わたしは ゆうかんだった。
+restore	to return something to its original condition (e.g. by fixing or cleaning it)	Workers will restore the old painting.	作業員は 古い 絵を ふくげん する。
+entirely	completely and with nothing left unfinished	I am entirely sure of my answer.	わたしは 自分の 答えに かんぜんに じしんが ある。
+explore	to travel to or in a place to learn about it or find something	Let's explore the forest behind our school.	学校の 後ろの 森を たんけん しよう。
+possess	to have or own something	Owls possess very sharp eyesight.	ふくろうは とても するどい しりょくを もって いる。
+incident	something unexpected (and usually bad) that has happened	There was a small incident at the bus stop.	バス停で 小さな じけんが あった。
+appoint	to choose someone for a specific job or duty	Our teacher will appoint me as the class leader.	先生は わたしを クラスリーダーに にんめい する。
+register	to record information in a book or system so you can do something	We need to register for the soccer camp.	サッカーキャンプに もうしこむ ひつようが ある。
+pose	to ask or present a question	The teacher will pose a tricky question.	先生は むずかしい しつもんを なげかける。
+appropriate	right for the situation	Wear appropriate clothes for the snow.	雪に あった ふくを 着よう。
+conference	a meeting where many people talk about ideas or problems, usually for several days	Scientists from many countries came to the conference.	多くの国の 科学者が かいぎに 集まった。
+accurate	correct and without mistakes	Use a ruler to draw an accurate line.	じょうぎを つかって せいかくな 線を ひこう。
+occasionally	sometimes but not often	Mom occasionally bakes cookies.	ママは ときどき クッキーを 焼く。
+thread	a long, thin piece of material used for sewing	Grandma sewed the button with red thread.	おばあちゃんは 赤い いとで ボタンを ぬった。
+resource	something valuable a country has, such as oil or minerals	Water is an important natural resource.	水は たいせつな てんねん しげんだ。
+capture	to catch someone or something and hold them against their will	The hunters tried to capture the wild horse.	ハンターたちは やせいの 馬を つかまえようとした。
+preserve	to keep something how it originally was or keep it in good condition	Salt is used to preserve fish.	しおは さかなを ほぞん する ために 使われる。
+claim	to say that something is true (although others might not agree)	He likes to claim he can run faster than me.	彼は わたしより 早く 走れると しゅちょう する。
+guarantee	to promise that something is or will be a certain way	The store will guarantee the toy will work for a year.	お店は その おもちゃが 1年 うごくと ほしょう する。
+internal	being inside something	The heart is an internal organ.	心ぞうは からだの中の ぞうき（内ぞう）だ。
+sensitive	likely to cause people to feel an emotion, especially a negative one	Be careful — this is a sensitive topic.	気を つけて、これは デリケート な わだいだ。
+overcome	to succeed at doing, managing, or controlling something difficult	She tried to overcome her fear of swimming.	彼女は 水が こわい きもちを こくふく しようとした。
+emerge	to come from a hidden or unknown place or condition	A butterfly will emerge from a cocoon.	ちょうちょは まゆ から 出てくる。
+rural	of or relating to a place where people live in the countryside	Grandpa lives in a rural village.	おじいちゃんは いなかの 村に すんでいる。
+investigate	to look for information about someone or something	Detectives investigate to find clues.	たんていは てがかりを みつける ために そうさ する。
+reputation	a common opinion or knowledge that people share about someone or something	Our school has a reputation for kindness.	わたしたちの 学校は しんせつ で 知られている。
+encourage	to try to make something happen or change	Coaches encourage their players to do their best.	コーチは せん手に ベストを つくすように はげます。
+credit	a good thing that people think about someone or something	She got credit for solving the puzzle.	彼女は パズルを とけたことで ほめられた。
+cast	to direct something toward someone or something	The lamp can cast a warm light on the room.	ランプは へやに あたたかい 光を なげかける。
+output	an amount of something that is made by a person or thing	The factory's output is 1,000 cars a day.	工場の せいさんりょうは 1日 1,000台 だ。
+absolute	complete or total	I have absolute trust in my mother.	わたしは 母を かんぜんに しんじている。
+adopt	to start using a different manner or method	Our class will adopt a new way to learn math.	わたしたちの クラスは 新しい 算数の 学び方を とり入れる。
+praise	to say or write nice things about someone or something	Dad will praise me for cleaning my room.	パパは へやを そうじした わたしを ほめる。
+swallow	to move something from your mouth down to your throat and stomach	Chew your food well before you swallow.	のみこむ 前に よく かもう。
+bet	to make a guess and offer to give something (usually money,) if your guess is wrong	I bet you can not run faster than me.	わたしより 早く 走れないって かけるよ。
+deposit	an amount of money that is put in a bank account	Dad made a deposit at the bank.	パパは ぎんこうに お金を あずけた。
+facility	a building or equipment that is made for a specific use	Our school has a new sports facility.	学校に 新しい スポーツ しせつ が できた。
+sentence	a group of words that shows an idea	Write a sentence about your weekend.	しゅうまつの ことを 文で 書いて みよう。
+admire	to feel respect and approve of someone or something because of something they have done	I admire my mother for her hard work.	わたしは がんばり屋の 母を そんけい している。
+reveal	to make something known to someone for the first time	She wanted to reveal her secret hiding spot.	彼女は ひみつの かくれ場所を あかしたかった。
+approximately	used to show that something is close in amount but not exact	The trip takes approximately two hours.	そのたびは およそ 2時間 かかる。
+associate	to connect one person or thing to another when you think of it	I associate summer with the beach.	わたしは 夏 といえば 海を 思いうかべる。
+engage	to do or be involved in something	Students engage in many fun activities.	せいとは たのしい かつどうに さんかする。
+portion	one part of a bigger thing	I ate a small portion of cake.	わたしは ケーキを 少しだけ 食べた。
+commit	to do something that is against the law or hurts others	The thief might commit another crime.	どろぼうは また はんざいを おかす かもしれない。
