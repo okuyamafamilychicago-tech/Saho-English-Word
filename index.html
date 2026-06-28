@@ -2807,6 +2807,14 @@ function openSettings() {
         <button class="btn small" onclick="exportProgress()">📦 バックアップを 保存</button>
         <button class="btn ghost small" onclick="importBackup()">📥 復元</button>
       </div>
+      <hr style="border:none; border-top:1px solid var(--bg-2); margin:12px 0;">
+      <p style="font-size:0.82rem; color:var(--ink-soft); margin:0 0 8px">☁️ GitHub 自動保存</p>
+      <input id="ghTokenInput" type="password" placeholder="GitHub Token を入力" value="${esc(getGHToken())}"
+        style="width:100%; box-sizing:border-box; padding:8px 10px; border-radius:10px; border:1.5px solid var(--bg-2); background:var(--bg-1); color:var(--ink); font-size:0.85rem; margin-bottom:8px;">
+      <div class="row">
+        <button class="btn teal small" onclick="setGHToken(document.getElementById('ghTokenInput').value); showGHToast('Token を保存しました'); ">💾 Token を保存</button>
+        <button class="btn ghost small" onclick="loadFromGitHub()">☁️ GitHubから読込</button>
+      </div>
       <div class="row">
         <button class="btn ghost small" style="color:var(--bad)" onclick="resetProgress()">進捗をリセット</button>
         <button class="btn small" onclick="this.closest('.modal-backdrop').remove()">閉じる</button>
@@ -3019,6 +3027,69 @@ function autoBackup(label) {
   } catch (e) {
     console.warn("autoBackup failed:", e);
   }
+  // GitHub に自動保存
+  autoSaveToGitHub();
+}
+
+// ---- GitHub 自動保存 ----
+const GH_TOKEN_KEY = "vocabTrail_gh_token";
+const GH_OWNER = "okuyamafamilychicago-tech";
+const GH_REPO  = "Saho-English-Word";
+const GH_PATH  = "progress/progress.json";
+
+function getGHToken() { return localStorage.getItem(GH_TOKEN_KEY) || ""; }
+function setGHToken(t) { localStorage.setItem(GH_TOKEN_KEY, t); }
+
+async function autoSaveToGitHub() {
+  const token = getGHToken();
+  if (!token) return;
+  try {
+    const payload = JSON.stringify(buildBackupPayload(true), null, 2);
+    const apiUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
+    // 既存ファイルのSHAを取得
+    let sha = "";
+    const getRes = await fetch(apiUrl, { headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json" } });
+    if (getRes.ok) { const j = await getRes.json(); sha = j.sha; }
+    // ファイルを更新/作成
+    const body = { message: `自動保存 ${new Date().toLocaleString("ja-JP")}`, content: btoa(unescape(encodeURIComponent(payload))), ...(sha ? { sha } : {}) };
+    const putRes = await fetch(apiUrl, { method: "PUT", headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (putRes.ok) showGHToast("☁️ GitHubに保存しました");
+    else showGHToast("⚠️ GitHub保存に失敗しました");
+  } catch (e) {
+    console.warn("GitHub save failed:", e);
+  }
+}
+
+async function loadFromGitHub() {
+  const token = getGHToken();
+  if (!token) { alert("GitHub Tokenが設定されていません。設定から入力してください。"); return; }
+  try {
+    const apiUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
+    const res = await fetch(apiUrl, { headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json" } });
+    if (!res.ok) { alert("GitHubにデータが見つかりませんでした。"); return; }
+    const j = await res.json();
+    const text = decodeURIComponent(escape(atob(j.content)));
+    const parsed = JSON.parse(text);
+    if (parsed.state) {
+      Object.assign(state, parsed.state);
+      saveState();
+      alert(`GitHubから読み込みました！\n覚えた語: ${state.mastered.length}語`);
+      location.reload();
+    }
+  } catch (e) {
+    alert("読み込みに失敗しました: " + e.message);
+  }
+}
+
+function showGHToast(msg) {
+  document.querySelectorAll(".gh-toast").forEach(t => t.remove());
+  const t = document.createElement("div");
+  t.className = "gh-toast";
+  t.style.cssText = "position:fixed; bottom:60px; left:50%; transform:translateX(-50%) translateY(20px); background:#24292e; color:#fff; padding:11px 18px; border-radius:14px; font-weight:700; font-size:0.86rem; box-shadow:0 6px 16px rgba(0,0,0,0.18); z-index:9999; opacity:0; transition:all 0.25s ease;";
+  t.textContent = msg;
+  document.body.appendChild(t);
+  requestAnimationFrame(() => { t.style.opacity = "1"; t.style.transform = "translateX(-50%) translateY(0)"; });
+  setTimeout(() => { t.style.opacity = "0"; t.style.transform = "translateX(-50%) translateY(20px)"; setTimeout(() => t.remove(), 300); }, 2400);
 }
 
 function showBackupToast(filename) {
