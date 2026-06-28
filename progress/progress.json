@@ -1,0 +1,3303 @@
+{
+  "exportedAt": "2026-06-28T12:40:04.318Z",
+  "auto": true,
+  "masterVersion": "2026-06-06-batches-1-10",
+  "state": {
+    "words": [],
+    "mastered": [
+      {
+        "word": "define",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "bond",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "crisis",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "confirm",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "ensure",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "expand",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "efficient",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "scheme",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "specific",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "outcome",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "bury",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "compete",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "brilliant",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "emergency",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "moreover",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "convince",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "apparently",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "favor",
+        "masteredAt": "2026-06-02",
+        "mode": "test"
+      },
+      {
+        "word": "generate",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "principal",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "candidate",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "justice",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "arrest",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "conflict",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "command",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "secure",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "characteristic",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "chase",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "pose",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "resource",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "claim",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "incident",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "preserve",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "capture",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "explore",
+        "masteredAt": "2026-06-03",
+        "mode": "test"
+      },
+      {
+        "word": "restore",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "landscape",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "disaster",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "convert",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "appreciate",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "facility",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "swallow",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "adopt",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "output",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "appropriate",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "reputation",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "commission",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "extreme",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "rural",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "threaten",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "deposit",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "invest",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "pursue",
+        "masteredAt": "2026-06-04",
+        "mode": "test"
+      },
+      {
+        "word": "appoint",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "internal",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "register",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "conclude",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "accompany",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "consequence",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "sensitive",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "guarantee",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "engage",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "investigate",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "portion",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "accurate",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "submit",
+        "masteredAt": "2026-06-05",
+        "mode": "test"
+      },
+      {
+        "word": "overcome",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "thread",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "sentence",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "admire",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "encourage",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "commit",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "credit",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "emerge",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "praise",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "institute",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "predict",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "decline",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "administration",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "absolute",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "acquire",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "fortune",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "conference",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "grant",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "council",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "faith",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "alternative",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "cast",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "possess",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "bet",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "contribute",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "remote",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "extend",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "occasionally",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "encounter",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "associate",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "entirely",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "reveal",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "launch",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "approximately",
+        "masteredAt": "2026-06-06",
+        "mode": "test"
+      },
+      {
+        "word": "rescue",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "stupid",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "evaluate",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "distinguish",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "poverty",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "transaction",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "sponsor",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "revenue",
+        "masteredAt": "2026-06-07",
+        "mode": "test"
+      },
+      {
+        "word": "defeat",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "objective",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "ban",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "flexible",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "considerable",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "prospect",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "outstanding",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "alter",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "substance",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "resist",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "summary",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "grain",
+        "masteredAt": "2026-06-08",
+        "mode": "test"
+      },
+      {
+        "word": "drag",
+        "masteredAt": "2026-06-09",
+        "mode": "test"
+      },
+      {
+        "word": "bow",
+        "masteredAt": "2026-06-09",
+        "mode": "test"
+      },
+      {
+        "word": "differ",
+        "masteredAt": "2026-06-11",
+        "mode": "test"
+      },
+      {
+        "word": "proportion",
+        "masteredAt": "2026-06-11",
+        "mode": "test"
+      },
+      {
+        "word": "incredible",
+        "masteredAt": "2026-06-11",
+        "mode": "test"
+      },
+      {
+        "word": "elementary",
+        "masteredAt": "2026-06-11",
+        "mode": "test"
+      },
+      {
+        "word": "consume",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "crucial",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "quit",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "interpret",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "impose",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "reform",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "draft",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "eliminate",
+        "masteredAt": "2026-06-12",
+        "mode": "test"
+      },
+      {
+        "word": "plot",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "distribute",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "proceed",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "casual",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "phase",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "enormous",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "relevant",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "grab",
+        "masteredAt": "2026-06-13",
+        "mode": "test"
+      },
+      {
+        "word": "accomplish",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "qualify",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "congress",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "profession",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "admission",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "merit",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "curious",
+        "masteredAt": "2026-06-14",
+        "mode": "test"
+      },
+      {
+        "word": "emphasize",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "logic",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "routine",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "assure",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "breed",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "spare",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "barely",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "modify",
+        "masteredAt": "2026-06-15",
+        "mode": "test"
+      },
+      {
+        "word": "fundamental",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "primarily",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "odd",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "heal",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "conventional",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "remarkable",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "slave",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "manufacture",
+        "masteredAt": "2026-06-16",
+        "mode": "test"
+      },
+      {
+        "word": "intense",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "reverse",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "shelter",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "exceed",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "enterprise",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "frequently",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "contemporary",
+        "masteredAt": "2026-06-17",
+        "mode": "test"
+      },
+      {
+        "word": "transition",
+        "masteredAt": "2026-06-19",
+        "mode": "test"
+      },
+      {
+        "word": "nevertheless",
+        "masteredAt": "2026-06-19",
+        "mode": "test"
+      },
+      {
+        "word": "artificial",
+        "masteredAt": "2026-06-19",
+        "mode": "test"
+      },
+      {
+        "word": "external",
+        "masteredAt": "2026-06-19",
+        "mode": "test"
+      },
+      {
+        "word": "assign",
+        "masteredAt": "2026-06-19",
+        "mode": "test"
+      },
+      {
+        "word": "numerous",
+        "masteredAt": "2026-06-19",
+        "mode": "test"
+      },
+      {
+        "word": "discipline",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "era",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "estimate",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "grateful",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "transform",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "scratch",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "complicated",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "ray",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "illustrate",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "edit",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "consistent",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "greet",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "vital",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "rear",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "pile",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "confuse",
+        "masteredAt": "2026-06-21",
+        "mode": "test"
+      },
+      {
+        "word": "extensive",
+        "masteredAt": "2026-06-22",
+        "mode": "test"
+      },
+      {
+        "word": "abuse",
+        "masteredAt": "2026-06-22",
+        "mode": "test"
+      },
+      {
+        "word": "ingredient",
+        "masteredAt": "2026-06-22",
+        "mode": "test"
+      },
+      {
+        "word": "intention",
+        "masteredAt": "2026-06-22",
+        "mode": "test"
+      },
+      {
+        "word": "vice",
+        "masteredAt": "2026-06-22",
+        "mode": "test"
+      },
+      {
+        "word": "inevitable",
+        "masteredAt": "2026-06-22",
+        "mode": "test"
+      },
+      {
+        "word": "abandon",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "urge",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "burst",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "resemble",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "keen",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "continuous",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "exclude",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "resort",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "heritage",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "initially",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "ultimate",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "compose",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "literally",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "prior",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "naked",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "boundary",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "fare",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "strain",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "welfare",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "sweep",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "trace",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "leisure",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "innovation",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "legislation",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "criticize",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      },
+      {
+        "word": "lean",
+        "masteredAt": "2026-06-26",
+        "mode": "test"
+      }
+    ],
+    "testWrong": [
+      {
+        "word": "apparently",
+        "at": "2026-06-06",
+        "learnCount": 2
+      },
+      {
+        "word": "pose",
+        "at": "2026-06-06",
+        "learnCount": 2
+      },
+      {
+        "word": "cheat",
+        "at": "2026-06-26",
+        "learnCount": 0
+      },
+      {
+        "word": "disorder",
+        "at": "2026-06-26",
+        "learnCount": 0
+      }
+    ],
+    "totalCorrect": 2339,
+    "totalAttempts": 2679,
+    "lastSessionDate": "2026-06-26",
+    "streak": 2,
+    "history": [
+      {
+        "date": "2026-06-02",
+        "climbed": 7,
+        "score": 30,
+        "total": 33,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-02",
+        "climbed": 7,
+        "score": 30,
+        "total": 34,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-02",
+        "climbed": 7,
+        "score": 30,
+        "total": 33,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-03",
+        "climbed": 6,
+        "score": 30,
+        "total": 35,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-03",
+        "climbed": 6,
+        "score": 30,
+        "total": 36,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-03",
+        "climbed": 8,
+        "score": 30,
+        "total": 32,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 7,
+        "score": 30,
+        "total": 33,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 4,
+        "score": 30,
+        "total": 39,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 2,
+        "score": 30,
+        "total": 37,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 1,
+        "score": 30,
+        "total": 36,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 3,
+        "score": 30,
+        "total": 30,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 3,
+        "score": 30,
+        "total": 32,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 1,
+        "score": 30,
+        "total": 30,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-04",
+        "climbed": 0,
+        "score": 12,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-05",
+        "climbed": 8,
+        "score": 29,
+        "total": 32,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-05",
+        "climbed": 3,
+        "score": 30,
+        "total": 35,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-05",
+        "climbed": 2,
+        "score": 30,
+        "total": 31,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-05",
+        "climbed": 0,
+        "score": 14,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 2,
+        "score": 29,
+        "total": 31,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 4,
+        "score": 30,
+        "total": 32,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 2,
+        "score": 30,
+        "total": 32,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 0,
+        "score": 19,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 2,
+        "score": 30,
+        "total": 30,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 1,
+        "score": 30,
+        "total": 31,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 8,
+        "score": 30,
+        "total": 30,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 8,
+        "score": 30,
+        "total": 30,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 6,
+        "score": 30,
+        "total": 32,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-06",
+        "climbed": 1,
+        "score": 30,
+        "total": 30,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-07",
+        "climbed": 0,
+        "score": 10,
+        "total": 12,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-07",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-07",
+        "climbed": 0,
+        "score": 12,
+        "total": 12,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-07",
+        "climbed": 0,
+        "score": 11,
+        "total": 12,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-08",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-08",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-09",
+        "climbed": 0,
+        "score": 13,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-09",
+        "climbed": 2,
+        "score": 24,
+        "total": 33,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-11",
+        "climbed": 0,
+        "score": 13,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-11",
+        "climbed": 4,
+        "score": 23,
+        "total": 29,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-12",
+        "climbed": 0,
+        "score": 18,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-12",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-13",
+        "climbed": 0,
+        "score": 19,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-13",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-14",
+        "climbed": 0,
+        "score": 12,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-14",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-14",
+        "climbed": 0,
+        "score": 16,
+        "total": 19,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-15",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-15",
+        "climbed": 0,
+        "score": 13,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-16",
+        "climbed": 8,
+        "score": 23,
+        "total": 23,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-17",
+        "climbed": 0,
+        "score": 16,
+        "total": 20,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-17",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-18",
+        "climbed": 0,
+        "score": 7,
+        "total": 14,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-19",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-21",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-21",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-22",
+        "climbed": 6,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-25",
+        "climbed": 0,
+        "score": 7,
+        "total": 10,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-25",
+        "climbed": 0,
+        "score": 7,
+        "total": 13,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-06-26",
+        "climbed": 4,
+        "score": 24,
+        "total": 29,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-26",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-26",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-06-26",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
+      }
+    ],
+    "srs": {
+      "decline": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 15,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "fortune": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 13,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "invest": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 16,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "define": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "bond": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 15,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "crisis": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "confirm": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "acquire": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 16,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "ensure": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "submit": {
+        "box": 5,
+        "due": "2026-06-21",
+        "correct": 8,
+        "wrong": 1,
+        "seenAt": "2026-06-05"
+      },
+      "principal": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 7,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "candidate": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "encounter": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 13,
+        "wrong": 4,
+        "seenAt": "2026-06-06"
+      },
+      "justice": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 7,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "council": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 14,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "arrest": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 10,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "remote": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "expand": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "efficient": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "scheme": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "specific": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "institute": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 13,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "outcome": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "alternative": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 4,
+        "seenAt": "2026-06-06"
+      },
+      "bury": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 15,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "compete": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 15,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "brilliant": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "emergency": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "moreover": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "convince": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 10,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "convert": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 9,
+        "wrong": 1,
+        "seenAt": "2026-06-04"
+      },
+      "landscape": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-04"
+      },
+      "apparently": {
+        "box": 5,
+        "due": "2026-06-23",
+        "correct": 13,
+        "wrong": 1,
+        "seenAt": "2026-06-07",
+        "learnedAt": "2026-06-07"
+      },
+      "favor": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "commission": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "generate": {
+        "box": 2,
+        "due": "2026-06-24",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-22"
+      },
+      "extreme": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "consequence": {
+        "box": 4,
+        "due": "2026-06-13",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-06-05"
+      },
+      "conclude": {
+        "box": 5,
+        "due": "2026-06-21",
+        "correct": 9,
+        "wrong": 3,
+        "seenAt": "2026-06-05"
+      },
+      "pursue": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 15,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "grant": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "appreciate": {
+        "box": 4,
+        "due": "2026-06-12",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "administration": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "extend": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "characteristic": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-04"
+      },
+      "conflict": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "faith": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 12,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "predict": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 12,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "contribute": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 8,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "launch": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 11,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "command": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-22"
+      },
+      "secure": {
+        "box": 4,
+        "due": "2026-06-14",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "accompany": {
+        "box": 4,
+        "due": "2026-06-13",
+        "correct": 6,
+        "wrong": 4,
+        "seenAt": "2026-06-05"
+      },
+      "chase": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "entirely": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 15,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "restore": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "threaten": {
+        "box": 5,
+        "due": "2026-06-21",
+        "correct": 14,
+        "wrong": 2,
+        "seenAt": "2026-06-05"
+      },
+      "register": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 8,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "incident": {
+        "box": 2,
+        "due": "2026-06-24",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-06-22"
+      },
+      "appoint": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 8,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "possess": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 11,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "disaster": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 10,
+        "wrong": 1,
+        "seenAt": "2026-06-04"
+      },
+      "pose": {
+        "box": 5,
+        "due": "2026-06-23",
+        "correct": 10,
+        "wrong": 2,
+        "seenAt": "2026-06-07",
+        "learnedAt": "2026-06-07"
+      },
+      "conference": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "accurate": {
+        "box": 5,
+        "due": "2026-06-21",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-05"
+      },
+      "thread": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "occasionally": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 8,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "appropriate": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "resource": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "claim": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-22"
+      },
+      "preserve": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "capture": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "explore": {
+        "box": 5,
+        "due": "2026-06-20",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "overcome": {
+        "box": 3,
+        "due": "2026-06-10",
+        "correct": 6,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "sensitive": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "emerge": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 14,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "internal": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "credit": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 10,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "cast": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 13,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "encourage": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 5,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "guarantee": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 13,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "rural": {
+        "box": 4,
+        "due": "2026-06-12",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "output": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 7,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "praise": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "reputation": {
+        "box": 5,
+        "due": "2026-06-21",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-06-05"
+      },
+      "sentence": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 8,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "investigate": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 7,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "bet": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "absolute": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 7,
+        "wrong": 4,
+        "seenAt": "2026-06-06"
+      },
+      "facility": {
+        "box": 3,
+        "due": "2026-06-08",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "swallow": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-06"
+      },
+      "admire": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 12,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "adopt": {
+        "box": 3,
+        "due": "2026-06-08",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-04"
+      },
+      "associate": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "approximately": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 4,
+        "seenAt": "2026-06-06"
+      },
+      "reveal": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 3,
+        "seenAt": "2026-06-06"
+      },
+      "deposit": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 9,
+        "wrong": 2,
+        "seenAt": "2026-06-06"
+      },
+      "engage": {
+        "box": 4,
+        "due": "2026-06-13",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-05"
+      },
+      "portion": {
+        "box": 4,
+        "due": "2026-06-13",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-05"
+      },
+      "commit": {
+        "box": 5,
+        "due": "2026-06-22",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-06"
+      },
+      "distinguish": {
+        "box": 4,
+        "due": "2026-06-15",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-07"
+      },
+      "stupid": {
+        "box": 4,
+        "due": "2026-06-15",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-07"
+      },
+      "evaluate": {
+        "box": 4,
+        "due": "2026-06-15",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-07"
+      },
+      "rescue": {
+        "box": 4,
+        "due": "2026-06-15",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-07"
+      },
+      "defeat": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08"
+      },
+      "sponsor": {
+        "box": 3,
+        "due": "2026-06-11",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-07"
+      },
+      "transaction": {
+        "box": 3,
+        "due": "2026-06-11",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-07"
+      },
+      "poverty": {
+        "box": 4,
+        "due": "2026-06-15",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-07"
+      },
+      "prospect": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08"
+      },
+      "revenue": {
+        "box": 4,
+        "due": "2026-06-15",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-07"
+      },
+      "ban": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "considerable": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "interpret": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 9,
+        "wrong": 1,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "objective": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "flexible": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "resist": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "substance": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "alter": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "summary": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "outstanding": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "draft": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 10,
+        "wrong": 1,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "impose": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 9,
+        "wrong": 2,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "grain": {
+        "box": 4,
+        "due": "2026-06-16",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-08",
+        "learnedAt": "2026-06-07"
+      },
+      "reform": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 8,
+        "wrong": 2,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "incredible": {
+        "box": 5,
+        "due": "2026-06-27",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-11",
+        "learnedAt": "2026-06-09"
+      },
+      "qualify": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 10,
+        "wrong": 2,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "accomplish": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 9,
+        "wrong": 2,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "differ": {
+        "box": 5,
+        "due": "2026-06-27",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-11",
+        "learnedAt": "2026-06-09"
+      },
+      "elementary": {
+        "box": 5,
+        "due": "2026-06-27",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-11",
+        "learnedAt": "2026-06-09"
+      },
+      "merit": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "emphasize": {
+        "box": 4,
+        "due": "2026-06-23",
+        "correct": 5,
+        "wrong": 3,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "crucial": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 7,
+        "wrong": 0,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "congress": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 5,
+        "wrong": 3,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "quit": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "distribute": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 5,
+        "wrong": 1,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "profession": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "consume": {
+        "box": 5,
+        "due": "2026-06-28",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-12",
+        "learnedAt": "2026-06-11"
+      },
+      "phase": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 5,
+        "wrong": 1,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "intense": {
+        "box": 5,
+        "due": "2026-07-03",
+        "correct": 9,
+        "wrong": 1,
+        "seenAt": "2026-06-17",
+        "learnedAt": "2026-06-13"
+      },
+      "proceed": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 5,
+        "wrong": 1,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "contemporary": {
+        "box": 5,
+        "due": "2026-07-03",
+        "correct": 13,
+        "wrong": 7,
+        "seenAt": "2026-06-17",
+        "learnedAt": "2026-06-15"
+      },
+      "enormous": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 8,
+        "wrong": 1,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "drag": {
+        "box": 3,
+        "due": "2026-06-13",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-09"
+      },
+      "casual": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 8,
+        "wrong": 1,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "grab": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 8,
+        "wrong": 1,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "bow": {
+        "box": 3,
+        "due": "2026-06-13",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-09"
+      },
+      "relevant": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 7,
+        "wrong": 3,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "plot": {
+        "box": 5,
+        "due": "2026-06-29",
+        "correct": 7,
+        "wrong": 2,
+        "seenAt": "2026-06-13",
+        "learnedAt": "2026-06-12"
+      },
+      "proportion": {
+        "box": 3,
+        "due": "2026-06-15",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-11"
+      },
+      "admission": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 8,
+        "wrong": 1,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "curious": {
+        "box": 5,
+        "due": "2026-06-30",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-14",
+        "learnedAt": "2026-06-13"
+      },
+      "modify": {
+        "box": 5,
+        "due": "2026-07-01",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-13"
+      },
+      "barely": {
+        "box": 4,
+        "due": "2026-06-23",
+        "correct": 5,
+        "wrong": 2,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "eliminate": {
+        "box": 3,
+        "due": "2026-06-16",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-12"
+      },
+      "heal": {
+        "box": 5,
+        "due": "2026-07-02",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-14"
+      },
+      "ray": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "grateful": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "era": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-18"
+      },
+      "complicated": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "consistent": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "assure": {
+        "box": 4,
+        "due": "2026-06-23",
+        "correct": 5,
+        "wrong": 1,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "logic": {
+        "box": 3,
+        "due": "2026-06-19",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "spare": {
+        "box": 4,
+        "due": "2026-06-23",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "slave": {
+        "box": 2,
+        "due": "2026-06-18",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "illustrate": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "manufacture": {
+        "box": 3,
+        "due": "2026-06-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "vital": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "rear": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "breed": {
+        "box": 3,
+        "due": "2026-06-19",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "pile": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "edit": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "primarily": {
+        "box": 3,
+        "due": "2026-06-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "transition": {
+        "box": 3,
+        "due": "2026-06-23",
+        "correct": 5,
+        "wrong": 2,
+        "seenAt": "2026-06-19",
+        "learnedAt": "2026-06-18"
+      },
+      "greet": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "routine": {
+        "box": 3,
+        "due": "2026-06-19",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-15",
+        "learnedAt": "2026-06-14"
+      },
+      "confuse": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-17"
+      },
+      "artificial": {
+        "box": 3,
+        "due": "2026-06-23",
+        "correct": 5,
+        "wrong": 2,
+        "seenAt": "2026-06-19",
+        "learnedAt": "2026-06-18"
+      },
+      "fundamental": {
+        "box": 3,
+        "due": "2026-06-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "ingredient": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 7,
+        "wrong": 0,
+        "seenAt": "2026-06-22",
+        "learnedAt": "2026-06-17"
+      },
+      "inevitable": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-22",
+        "learnedAt": "2026-06-17"
+      },
+      "abuse": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 6,
+        "wrong": 0,
+        "seenAt": "2026-06-22",
+        "learnedAt": "2026-06-17"
+      },
+      "odd": {
+        "box": 3,
+        "due": "2026-06-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "remarkable": {
+        "box": 3,
+        "due": "2026-06-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "conventional": {
+        "box": 3,
+        "due": "2026-06-20",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-16",
+        "learnedAt": "2026-06-15"
+      },
+      "discipline": {
+        "box": 5,
+        "due": "2026-07-07",
+        "correct": 5,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-18"
+      },
+      "external": {
+        "box": 3,
+        "due": "2026-06-23",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-06-19",
+        "learnedAt": "2026-06-18"
+      },
+      "nevertheless": {
+        "box": 3,
+        "due": "2026-06-23",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-19",
+        "learnedAt": "2026-06-18"
+      },
+      "reverse": {
+        "box": 3,
+        "due": "2026-06-21",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-17"
+      },
+      "shelter": {
+        "box": 3,
+        "due": "2026-06-21",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-17"
+      },
+      "exceed": {
+        "box": 3,
+        "due": "2026-06-21",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-17"
+      },
+      "enterprise": {
+        "box": 3,
+        "due": "2026-06-21",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-17"
+      },
+      "intention": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 9,
+        "wrong": 1,
+        "seenAt": "2026-06-22",
+        "learnedAt": "2026-06-18"
+      },
+      "frequently": {
+        "box": 3,
+        "due": "2026-06-21",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-17"
+      },
+      "extensive": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 7,
+        "wrong": 2,
+        "seenAt": "2026-06-22",
+        "learnedAt": "2026-06-18"
+      },
+      "assign": {
+        "box": 4,
+        "due": "2026-06-27",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-19",
+        "learnedAt": "2026-06-18"
+      },
+      "numerous": {
+        "box": 3,
+        "due": "2026-06-23",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-19",
+        "learnedAt": "2026-06-18"
+      },
+      "transform": {
+        "box": 4,
+        "due": "2026-06-29",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-18"
+      },
+      "estimate": {
+        "box": 4,
+        "due": "2026-06-29",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-18"
+      },
+      "vice": {
+        "box": 5,
+        "due": "2026-07-08",
+        "correct": 6,
+        "wrong": 3,
+        "seenAt": "2026-06-22",
+        "learnedAt": "2026-06-18"
+      },
+      "scratch": {
+        "box": 4,
+        "due": "2026-06-29",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-21",
+        "learnedAt": "2026-06-18"
+      },
+      "literally": {
+        "box": 5,
+        "due": "2026-07-12",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "abandon": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "compose": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "keen": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "ultimate": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "initially": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "resort": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "continuous": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "heritage": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "exclude": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "strain": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26"
+      },
+      "fare": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "prior": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "boundary": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "innovation": {
+        "box": 5,
+        "due": "2026-07-12",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "sweep": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "urge": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "welfare": {
+        "box": 5,
+        "due": "2026-07-12",
+        "correct": 6,
+        "wrong": 3,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "resemble": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "naked": {
+        "box": 4,
+        "due": "2026-07-04",
+        "correct": 4,
+        "wrong": 0,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "leisure": {
+        "box": 5,
+        "due": "2026-07-12",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-06-26",
+        "learnedAt": "2026-06-25"
+      },
+      "burst": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-26"
+      },
+      "trace": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-26"
+      },
+      "cheat": {
+        "box": 2,
+        "due": "2026-06-28",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-26"
+      },
+      "legislation": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-26"
+      },
+      "disorder": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-06-26"
+      },
+      "criticize": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-26"
+      },
+      "lean": {
+        "box": 3,
+        "due": "2026-06-30",
+        "correct": 3,
+        "wrong": 0,
+        "seenAt": "2026-06-26"
+      }
+    },
+    "images": {},
+    "unlockedSeen": [
+      "batch-2",
+      "batch-3"
+    ],
+    "svgTheme": "ac",
+    "schemaVersion": 2
+  }
+}
