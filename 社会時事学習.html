@@ -642,6 +642,77 @@ function showHome(){
   cur=null;
 }
 
+function getDiag(pi,ri){
+  if(!cur) return null;
+  const D={
+    ai:[
+      [{type:"flow",color:"#4A90E2",title:"コンビニの例：自動化のパターン",steps:["セルフレジ導入","単純会計作業が減る","品質管理・接客・デリバリーへ","店舗数も増加"]},
+       {type:"compare",color:"#4A90E2",title:"ATMの逆説",left:{label:"ATM普及前",val:"銀行員が少ない",note:"窓口業務が中心だった",color:"#fee2e2"},right:{label:"ATM普及後",val:"銀行員が増加！",note:"ローン・資産運用など新サービスが拡大",color:"#dcfce7"}}],
+      [{type:"compare",color:"#ef4444",title:"AIが生み出す「時間」と「問題」",left:{label:"仕訳作業",val:"1日→30分",note:"AIで大幅短縮",color:"#dbeafe"},right:{label:"再教育コスト",val:"数百万円？",note:"45歳でAIエンジニアへ転職できる？",color:"#fee2e2"}},
+       {type:"bar",color:"#ef4444",title:"AIでコールセンターはどうなる？",items:[{label:"AIが対応",val:80,display:"約80%",color:"#3b82f6"},{label:"人間が対応",val:20,display:"約20%",color:"#f59e0b"}]}],
+      [{type:"compare",color:"#27AE60",title:"失業給付の手厚さ比較",left:{label:"🇯🇵 日本",val:"最大330日",note:"給付あり",color:"#fef3c7"},right:{label:"🇩🇰 デンマーク",val:"最大2年間",note:"前職給与の90%＋再就職支援",color:"#dcfce7"}},
+       {type:"flow",color:"#27AE60",title:"シンガポール SkillsFuture",steps:["25歳以上の全国民","¥40,000の学習クレジット支給","好きな講座を受講","スキルアップ→就職・昇給"]}]
+    ],
+    carbontax:[
+      [{type:"flow",color:"#E67E22",title:"炭素税＋気候配当のしくみ",steps:["ガソリンに炭素税","税収を政府が集める","全員に均等配布（気候配当）","EVユーザーはトク／ガソリンユーザーはコスト"]},
+       {type:"stat",color:"#16a34a",title:"スウェーデン 炭素税30年の成果",num:"−75%",unit:"CO₂排出量",desc:"1991年〜現在",note:"GDPはEU平均を上回り続けた"}],
+      [{type:"compare",color:"#E74C3C",title:"炭素税の負担は公平？",left:{label:"🚗 地方住民",val:"大きな打撃",note:"車必須・EV買えない・代替なし",color:"#fee2e2"},right:{label:"🚇 都市住民",val:"影響ほぼゼロ",note:"電車通勤・EV補助も受けやすい",color:"#dcfce7"}},
+       {type:"flow",color:"#E74C3C",title:"フランスで何が起きたか？（2018年）",steps:["ディーゼル炭素税増税","地方労働者が直撃","全国でデモ（黄色いベスト運動）","政府が政策撤回"]}],
+      [{type:"compare",color:"#8E44AD",title:"CBAMがある場合とない場合",left:{label:"炭素税のみ",val:"輸入品が有利",note:"海外製品は炭素コストゼロ→国内不利",color:"#fee2e2"},right:{label:"CBAM付き",val:"公平な競争",note:"輸入品にも同じ炭素コスト",color:"#dcfce7"}},
+       {type:"flow",color:"#8E44AD",title:"CBAMで「カーボン・リーケージ」を防ぐ",steps:["国内に炭素税（海外は無税）","CBAM導入","輸入品にも課税","フェアな競争が実現"]}]
+    ],
+    ubi:[
+      [{type:"compare",color:"#9B59B6",title:"UBIが「挑戦」を可能にする",left:{label:"UBIなし",val:"安全な企業案件のみ",note:"家賃の不安でリスクが取れない",color:"#fee2e2"},right:{label:"UBIあり",val:"創作活動に挑戦",note:"月10万円のセーフティネット",color:"#dcfce7"}},
+       {type:"stat",color:"#22c55e",title:"カナダ・オンタリオ州 UBI実験結果",num:"「働かなくなる」はウソ",unit:"就労率：変化なし",desc:"精神的健康の改善・高校中退率の低下・医療費の節約",note:"フィンランドでも同様の結果"}],
+      [{type:"compare",color:"#E74C3C",title:"UBIは「必要な人」に届く？",left:{label:"障害のある人",val:"月10万円",note:"全然足りない（医療・介護費が高額）",color:"#fee2e2"},right:{label:"富裕層",val:"月10万円",note:"不要（でも同額が届く）",color:"#fef3c7"}},
+       {type:"flow",color:"#E74C3C",title:"ニクソン政権のNIT実験が示したこと",steps:["NIT実験開始（1970年代）","女性の離婚率がわずかに上昇","「家族が崩壊する」と政治攻撃","法案廃案に"]}],
+      [{type:"compare",color:"#F39C12",title:"貧困の罠 vs 負の所得税（NIT）",left:{label:"現在の制度",val:"働くと損！",note:"収入増→手当が大きくカット",color:"#fee2e2"},right:{label:"NIT（負の所得税）",val:"働けば必ずトク",note:"収入増→手取りも必ず増える",color:"#dcfce7"}},
+       {type:"stat",color:"#22c55e",title:"アメリカのEITC（勤労所得税額控除）",num:"500万人以上",unit:"毎年、貧困線以上へ",desc:"年間1,000億ドル以上を低所得の働く人へ補助",note:"「全員に薄く」より「必要な人に厚く」の効果"}]
+    ],
+    socialmedia:[
+      [{type:"flow",color:"#E74C3C",title:"SNSアルゴリズムのしくみ",steps:["膨大なコンテンツ","アルゴリズムが選別","最も「見続けさせる」動画を優先","過激・感情的な内容が増える","精神的健康への悪影響"]},
+       {type:"compare",color:"#E74C3C",title:"Meta内部文書が認めた事実（2021年）",left:{label:"社内研究で判明",val:"10代の精神健康悪化",note:"摂食障害・うつ・自傷リスク上昇",color:"#fee2e2"},right:{label:"会社の対応",val:"放置",note:"改善すると利用時間が減るため",color:"#fef3c7"}}],
+      [{type:"compare",color:"#3498DB",title:"コンテンツ削除の「非対称性」",left:{label:"大企業・政府",val:"広報部門で対応可能",note:"異議申し立て・メディア対応の力がある",color:"#dcfce7"},right:{label:"小さなNGO",val:"打つ手なし",note:"削除されても異議申し立ての窓口がない",color:"#fee2e2"}},
+       {type:"flow",color:"#3498DB",title:"もし規制があったら？（アラブの春 2011年）",steps:["市民がSNSで抗議を組織","独裁政権が打倒された","もし「誤情報規制」があったら？","革命は起きなかったかもしれない"]}],
+      [{type:"compare",color:"#27AE60",title:"表示方法を変えると何が変わる？",left:{label:"アルゴリズム表示",val:"最も中毒性の高い動画",note:"怒り・不安を引き起こす内容が優先",color:"#fee2e2"},right:{label:"時系列表示",val:"友達の最新投稿",note:"自分が選んだ人の情報が届く",color:"#dcfce7"}},
+       {type:"flow",color:"#27AE60",title:"EUデジタル市場法（DMA）の効果",steps:["コンテンツを「規制」するのではなく","プラットフォームの構造を変える","Appleもサードパーティ許可が義務化","競争が生まれる→ユーザーに優しいサービスへ"]}]
+    ],
+    nuclear:[
+      [{type:"flow",color:"#E67E22",title:"福島後の日本が直面したこと",steps:["2011年: 全原発停止","LNG輸入急増・電気代上昇","2022年: ウクライナ戦争でガス価格急騰","エネルギー安全保障の脆弱性が露呈"]},
+       {type:"compare",color:"#E67E22",title:"脱原発 vs 原発維持（2022年）",left:{label:"🇩🇪 ドイツ（脱原発）",val:"電気代急騰",note:"石炭火力に逆戻り・CO₂が増加",color:"#fee2e2"},right:{label:"🇫🇷 フランス（原発70%）",val:"電気代が安定",note:"西欧最低水準の電気代・低CO₂",color:"#dcfce7"}}],
+      [{type:"compare",color:"#E74C3C",title:"原発：リスクと恩恵の不公平な分配",left:{label:"🎣 地元（福井県等）",val:"リスクを負う",note:"事故リスク・風評被害・土地の価値低下",color:"#fee2e2"},right:{label:"🏙 都市（東京等）",val:"恩恵を受ける",note:"安価な電力・CO₂削減効果を享受",color:"#dcfce7"}},
+       {type:"stat",color:"#dc2626",title:"核廃棄物の最終処分場問題",num:"1カ所のみ",unit:"世界で建設中（フィンランド）",desc:"日本を含む多くの国はまだ決まっていない",note:"高レベル放射性廃棄物は数万年間の管理が必要"}],
+      [{type:"flow",color:"#27AE60",title:"EVが本当に脱炭素に貢献するには",steps:["EVに充電","電力は何から？","火力発電由来→CO₂は減らない","原発・再エネ由来→CO₂ゼロ"]},
+       {type:"bar",color:"#27AE60",title:"日本の2030年電源構成目標",items:[{label:"再生可能エネルギー",val:38,display:"38%",color:"#22c55e"},{label:"原子力",val:22,display:"22%",color:"#f59e0b"},{label:"LNG等",val:20,display:"20%",color:"#6b7280"},{label:"石炭等",val:19,display:"19%",color:"#dc2626"}]}]
+    ],
+    remotework:[
+      [{type:"stat",color:"#4A90E2",title:"通勤時間を「取り戻す」と年間どれだけ？",num:"750時間",unit:"≒ 約31日分！",desc:"片道90分×往復×250日の計算",note:"家族との時間・自己学習・副業に充てられる"},
+       {type:"stat",color:"#8b5cf6",title:"開発者の希望する働き方（2023年調査）",num:"83%",unit:"がリモートorハイブリッドを希望",desc:"完全出社を希望するのはわずか17%",note:"「リモートOK」はエンジニア採用の差別化要因に"}],
+      [{type:"flow",color:"#F39C12",title:"「見て学ぶ」はZoomでは難しい",steps:["先輩の資料を横で見る","なぜこの構成？と聞ける","クライアント対応を間近で観察","1年後に一人でできるようになる"]},
+       {type:"compare",color:"#F39C12",title:"建物が違うだけで特許が25%減！（MIT研究）",left:{label:"同じ建物で働く",val:"特許 多い",note:"廊下での偶然の会話が新アイデアを生む",color:"#dcfce7"},right:{label:"別の建物で働く",val:"特許 25%少ない",note:"意図しない出会いが起きない",color:"#fee2e2"}}],
+      [{type:"flow",color:"#1ABC9C",title:"ハイブリッド勤務の設計例",steps:["月曜（出社）チームで週の計画","火・水（自宅）集中して個人作業","木曜（出社）進捗共有・問題解決","金曜（自宅）まとめ・振り返り"]},
+       {type:"compare",color:"#1ABC9C",title:"Atlassian「TEAM Anywhere」モデル",left:{label:"毎日出社",val:"人材が逃げる",note:"リモート希望の優秀な人材を失う",color:"#fee2e2"},right:{label:"定期集合あり完全リモート",val:"最良のバランス",note:"普段はどこでも＋年数回の全員集合",color:"#dcfce7"}}]
+    ],
+    healthcare:[
+      [{type:"compare",color:"#E74C3C",title:"医療費の自己負担：日本 vs アメリカ",left:{label:"🇯🇵 日本",val:"月額上限あり",note:"高額療養費制度で一定額以上は国が負担",color:"#dcfce7"},right:{label:"🇺🇸 アメリカ",val:"上限なし",note:"医療費で自己破産が年間53万件",color:"#fee2e2"}},
+       {type:"compare",color:"#E74C3C",title:"同じインスリン、なぜ価格がこんなに違う？",left:{label:"🇺🇸 アメリカ",val:"$300〜400",note:"交渉力がバラバラ（保険会社ごと）",color:"#fee2e2"},right:{label:"🇨🇦 カナダ",val:"$12",note:"国全体で価格交渉するため安くなる",color:"#dcfce7"}}],
+      [{type:"flow",color:"#F39C12",title:"日本の「ドラッグ・ラグ」問題",steps:["新薬が米国で承認","日本での審査・価格交渉","数年後に日本でも承認","その間、日本の患者は受けられない"]},
+       {type:"bar",color:"#F39C12",title:"人口100万人あたりのMRI台数",items:[{label:"🇯🇵 日本",val:55,display:"55台",color:"#f59e0b"},{label:"🇺🇸 アメリカ",val:40,display:"40台",color:"#3b82f6"},{label:"🇩🇪 ドイツ",val:35,display:"35台",color:"#22c55e"},{label:"🇬🇧 イギリス",val:7,display:"7台",color:"#9ca3af"}]}],
+      [{type:"flow",color:"#8E44AD",title:"日本の医療保険のしくみ",steps:["全員が保険に加入（強制）","複数の保険者が競争","政府が給付内容を規制","誰でも最低限の医療が受けられる"]},
+       {type:"flow",color:"#8E44AD",title:"ワシントン州の「公的選択肢」実験",steps:["ACA（医療保険改革法）成立","州が政府主導の保険プランを追加","民間保険より低い保険料を実現","競争によってコストが下がった"]}]
+    ],
+    education:[
+      [{type:"flow",color:"#8E44AD",title:"日本の就活における「学歴フィルター」",steps:["エントリーシートを提出（数千枚）","大学名で第一次選考","上位校のみ面接へ","下位校は書類審査で除外"]},
+       {type:"compare",color:"#8E44AD",title:"不況のとき、学位は守ってくれる",left:{label:"大学卒（2008年）",val:"失業率 約5%",note:"リーマンショック時のピーク",color:"#dcfce7"},right:{label:"高卒以下（2008年）",val:"失業率 約10%",note:"大学卒の約2倍のリスク",color:"#fee2e2"}}],
+      [{type:"compare",color:"#E74C3C",title:"大学 vs 職業訓練：4年間の比較",left:{label:"大学4年間",val:"数百万円の費用",note:"授業料＋生活費・就職は卒業後",color:"#fee2e2"},right:{label:"職業訓練 2年間",val:"収入を得ながら学ぶ",note:"学びながら給与をもらえる",color:"#dcfce7"}},
+       {type:"flow",color:"#E74C3C",title:"大手企業が相次いで「学位不要」に",steps:["IBM: 採用の約半数で学位要件廃止（2021年）","Google・Apple・Accentureも続く","スキル評価テストを導入","「学位＝能力の証明」が変わりつつある"]}],
+      [{type:"flow",color:"#1ABC9C",title:"「22歳で学びが終わらない」時代へ",steps:["22歳：大学卒業","30代：AIで仕事が変化","通信大学・オンラインで学び直し","新しいスキルを習得してキャリアアップ"]},
+       {type:"compare",color:"#1ABC9C",title:"同じ仕事に就くための2つの道",left:{label:"4年制大学",val:"4年間・約400万円",note:"学位取得後に就職活動",color:"#fee2e2"},right:{label:"Googleキャリア証明書",val:"6ヶ月・約3万円",note:"Google採用でも学位と同等",color:"#dcfce7"}}]
+    ]
+  };
+  return (D[cur.id]&&D[cur.id][pi]&&D[cur.id][pi][ri])?D[cur.id][pi][ri]:null;
+}
+
 function buildDiagram(d){
   if(!d) return '';
   const col=d.color||'#4A90E2';
@@ -691,7 +762,7 @@ function buildPerspHTML(p,pi){
       <div><div class="ptitle">${p.t}</div><div class="ptja">${p.tja}</div></div>
     </div>
     <div class="pstory" style="--pc:${p.col}">${p.story}
-      <div class="rel-wrap">${p.rel.map((r,i)=>`<div class="rel-item"><div class="rel-label">💡 例${i+1}</div>${buildDiagram(r.diag)}<div class="rel-ja">${r.ja}</div><div class="rel-en">${r.en}</div></div>`).join('')}</div>
+      <div class="rel-wrap">${p.rel.map((r,i)=>`<div class="rel-item"><div class="rel-label">💡 例${i+1}</div>${buildDiagram(getDiag(pi,i))}<div class="rel-ja">${r.ja}</div><div class="rel-en">${r.en}</div></div>`).join('')}</div>
     </div>
     <div class="pc-grid">
       <div class="pros-block">
