@@ -157,6 +157,7 @@ header h1{font-size:1.05rem;font-weight:600;flex:1}
   <div class="hero">
     <h2>📖 TOEFL Academic Discussion</h2>
     <p>社会時事テーマを読み、3つの視点を学び、各視点の理解度クイズに挑戦しよう</p>
+    <a href="riho-summary.html" style="display:inline-block;margin-top:12px;padding:8px 20px;background:rgba(255,255,255,.18);color:#fff;border-radius:20px;font-size:.83rem;font-weight:600;text-decoration:none;border:1.5px solid rgba(255,255,255,.35)">📊 進捗サマリーを見る</a>
   </div>
   <div class="grid" id="grid"></div>
 </div>
@@ -663,6 +664,7 @@ quiz:[
 let cur=null;
 const pState={};
 let ghQuizData={};
+let ghHistory=[];
 
 function showHome(){
   document.getElementById('home').style.display='block';
@@ -1014,7 +1016,10 @@ function updateAllCardBadges(){
 
 async function saveQuizToGitHub(tid,pi,score,total){
   if(!ghQuizData[tid])ghQuizData[tid]={};
-  ghQuizData[tid][pi+'']={done:true,score,total,picks:{...pState[pi].picks}};
+  const now=new Date().toISOString();
+  ghQuizData[tid][pi+'']={done:true,score,total,picks:{...pState[pi].picks},completedAt:now};
+  const topic=T.find(t=>t.id===tid);
+  ghHistory.push({date:now,tid,tidTitle:topic?topic.tja:'',pi,piName:topic&&topic.persp[pi]?topic.persp[pi].tja:'',score,total});
   updateCardBadge(tid);
   await pushGHData();
 }
@@ -1029,6 +1034,7 @@ async function loadEssayProgressFromGH(){
     const data=JSON.parse(decodeURIComponent(escape(atob(j.content))));
     if(data.quizzes){
       ghQuizData=data.quizzes;
+      ghHistory=data.history||[];
       updateAllCardBadges();
       showToast('☁️ 進捗を読み込みました');
     }
@@ -1038,7 +1044,7 @@ async function loadEssayProgressFromGH(){
 async function pushGHData(){
   const token=getGHToken(); if(!token)return;
   try{
-    const payload=JSON.stringify({version:1,savedAt:new Date().toISOString(),quizzes:ghQuizData},null,2);
+    const payload=JSON.stringify({version:2,savedAt:new Date().toISOString(),quizzes:ghQuizData,history:ghHistory},null,2);
     const url=`https://api.github.com/repos/${GH_ES_OWNER}/${GH_ES_REPO}/contents/${GH_ES_PATH}`;
     const hdrs={Authorization:`token ${token}`,'Content-Type':'application/json',Accept:'application/vnd.github+json'};
     let sha='';
