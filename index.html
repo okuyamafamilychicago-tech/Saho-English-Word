@@ -1244,6 +1244,32 @@ function loadMy100Words() {
 
 hydrateUserWordsFromMyBank();
 
+// 起動時にGitHubから自動読込（Tokenがあれば）
+(async function autoLoadFromGitHub() {
+  const token = getGHToken();
+  if (!token) return;
+  try {
+    const apiUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
+    const res = await fetch(apiUrl, { headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json" } });
+    if (!res.ok) return;
+    const j = await res.json();
+    const text = decodeURIComponent(escape(atob(j.content)));
+    const parsed = JSON.parse(text);
+    if (!parsed.state) return;
+    const ghMastered = (parsed.state.mastered || []).length;
+    const localMastered = (state.mastered || []).length;
+    // GitHubの方が新しければ上書き
+    if (ghMastered > localMastered) {
+      Object.assign(state, parsed.state);
+      saveState();
+      showGHToast(`☁️ GitHubから読込 (${ghMastered}語)`);
+      setTimeout(() => location.reload(), 1500);
+    }
+  } catch (e) {
+    console.warn("GitHub auto-load failed:", e);
+  }
+})();
+
 // ============================================================
 // 単語マスター（バッチ式ロック機構）
 // 優先順位: WORD_MASTER.batches → WORD_MASTER.words → state.words → MY_100_WORDS → STARTER_WORDS
