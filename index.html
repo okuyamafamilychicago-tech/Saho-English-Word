@@ -1469,8 +1469,9 @@ function pickSessionWords() {
   const todayStr = today();
   const learnedToday = w => state.srs[w.word] && state.srs[w.word].learnedAt === todayStr;
 
-  // 未mastered かつ 今日まなぶで触れていない語だけ
-  const nonMastered = pool.filter(w => !masteredWords.has(w.word) && !learnedToday(w));
+  // 未mastered かつ 今日まなぶで触れていない語 かつ まなぶに一度でも出た語だけ
+  const everLearned = w => !!(state.srs[w.word] && state.srs[w.word].everLearned);
+  const nonMastered = pool.filter(w => !masteredWords.has(w.word) && !learnedToday(w) && everLearned(w));
   const nmDue   = nonMastered.filter(w => isDue(w.word) && !isNew(w.word))
     .sort((a, b) => (srsOf(a.word).due || "").localeCompare(srsOf(b.word).due || ""));
   const nmFresh = nonMastered.filter(w => isNew(w.word));
@@ -1550,7 +1551,7 @@ function srsUpdate(word, correct, source) {
   s.due = addDays(today(), SRS_INTERVALS[s.box]);
   s.seenAt = today();
   // まなぶで触れた単語は learnedAt を 今日に。テストでは 今日 learnedAt の語を 除外する。
-  if (source === "learn") s.learnedAt = today();
+  if (source === "learn") { s.learnedAt = today(); s.everLearned = true; }
   state.srs[word] = s;
 }
 function dueCount() {
