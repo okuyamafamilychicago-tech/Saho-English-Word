@@ -540,11 +540,27 @@
 </style>
 </head>
 <body>
+<style>
+  .rnav { position: sticky; top: 0; z-index: 9000; display: flex; gap: 6px; justify-content: center;
+    padding: 8px 10px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06); margin-bottom: 4px; flex-wrap: wrap; }
+  .rnav a { display: inline-flex; align-items: center; gap: 5px; text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 0.82rem;
+    color: #5a6470; padding: 7px 14px; border-radius: 999px; border: 1.5px solid transparent;
+    transition: all 0.18s; white-space: nowrap; }
+  .rnav a:hover { background: #f0f4f8; }
+  .rnav a.active { background: linear-gradient(90deg, #4db6ac, #ff8a80); color: #fff; box-shadow: 0 3px 8px rgba(77,182,172,0.3); }
+</style>
+<nav class="rnav">
+  <a href="riho.html" class="active">📚 単語学習</a>
+  <a href="riho-essay-topic.html">✍️ Essay Learning</a>
+  <a href="riho-toefl-writing.html">📓 TOEFL Writing</a>
+</nav>
 <div class="wrap">
 
   <header>
     <div>
-      <div class="logo"><span class="mark">🐰</span> Saho English Word</div>
+      <div class="logo"><span class="mark">🐰</span> Riho English Word</div>
       <div class="tagline">3000語あつめて、めざせ TOEFL 100</div>
     </div>
     <div class="header-btns">
