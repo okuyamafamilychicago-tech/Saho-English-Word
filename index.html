@@ -2813,6 +2813,9 @@ function openSettings() {
         style="width:100%; box-sizing:border-box; padding:8px 10px; border-radius:10px; border:1.5px solid var(--bg-2); background:var(--bg-1); color:var(--ink); font-size:0.85rem; margin-bottom:8px;">
       <div class="row">
         <button class="btn teal small" onclick="setGHToken(document.getElementById('ghTokenInput').value); showGHToast('Token を保存しました'); ">💾 Token を保存</button>
+        <button class="btn small" onclick="autoSaveToGitHub()">☁️ 今すぐ保存</button>
+      </div>
+      <div class="row">
         <button class="btn ghost small" onclick="loadFromGitHub()">☁️ GitHubから読込</button>
       </div>
       <div class="row">
