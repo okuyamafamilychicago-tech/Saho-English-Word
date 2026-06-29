@@ -1,6 +1,32 @@
 {
   "version": 2,
-  "savedAt": "2026-06-28T18:31:44.381Z",
-  "quizzes": {},
-  "history": []
+  "savedAt": "2026-06-29T18:43:35.473Z",
+  "quizzes": {
+    "ai": {
+      "0": {
+        "done": true,
+        "score": 5,
+        "total": 5,
+        "picks": {
+          "0": 1,
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 2
+        },
+        "completedAt": "2026-06-29T18:43:35.472Z"
+      }
+    }
+  },
+  "history": [
+    {
+      "date": "2026-06-29T18:43:35.472Z",
+      "tid": "ai",
+      "tidTitle": "AIと働き方の未来",
+      "pi": 0,
+      "piName": "AI推進派",
+      "score": 5,
+      "total": 5
+    }
+  ]
 }
