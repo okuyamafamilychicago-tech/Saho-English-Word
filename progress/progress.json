@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-30T10:50:30.351Z",
+  "exportedAt": "2026-06-30T10:51:57.988Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1273,8 +1273,8 @@
         "learnCount": 2
       }
     ],
-    "totalCorrect": 2637,
-    "totalAttempts": 3028,
+    "totalCorrect": 2644,
+    "totalAttempts": 3036,
     "lastSessionDate": "2026-06-30",
     "streak": 3,
     "history": [
@@ -1760,6 +1760,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-06-30",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -2052,11 +2059,11 @@
         "seenAt": "2026-06-06"
       },
       "appreciate": {
-        "box": 4,
-        "due": "2026-06-12",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-16",
+        "correct": 7,
         "wrong": 0,
-        "seenAt": "2026-06-04"
+        "seenAt": "2026-06-30"
       },
       "administration": {
         "box": 5,
@@ -2277,11 +2284,11 @@
         "seenAt": "2026-06-04"
       },
       "overcome": {
-        "box": 3,
-        "due": "2026-06-10",
-        "correct": 6,
+        "box": 4,
+        "due": "2026-07-08",
+        "correct": 7,
         "wrong": 3,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-06-30"
       },
       "sensitive": {
         "box": 5,
@@ -2501,18 +2508,18 @@
         "seenAt": "2026-06-08"
       },
       "sponsor": {
-        "box": 3,
-        "due": "2026-06-11",
+        "box": 2,
+        "due": "2026-07-02",
         "correct": 3,
-        "wrong": 1,
-        "seenAt": "2026-06-07"
+        "wrong": 2,
+        "seenAt": "2026-06-30"
       },
       "transaction": {
-        "box": 3,
-        "due": "2026-06-11",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-16",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-06-07"
+        "seenAt": "2026-06-30"
       },
       "poverty": {
         "box": 4,
