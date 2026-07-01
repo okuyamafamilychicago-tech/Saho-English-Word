@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-30T15:44:10.251Z",
+  "exportedAt": "2026-07-01T08:05:40.583Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5049,7 +5049,7 @@
       },
       {
         "word": "endeavor",
-        "at": "2026-06-28",
+        "at": "2026-07-01",
         "learnCount": 0,
         "bulkInit": true
       },
@@ -5192,12 +5192,6 @@
         "bulkInit": true
       },
       {
-        "word": "prescribe",
-        "at": "2026-06-28",
-        "learnCount": 0,
-        "bulkInit": true
-      },
-      {
         "word": "prejudice",
         "at": "2026-06-28",
         "learnCount": 0,
@@ -5258,10 +5252,10 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 993,
-    "totalAttempts": 1091,
-    "lastSessionDate": "2026-06-30",
-    "streak": 3,
+    "totalCorrect": 1013,
+    "totalAttempts": 1118,
+    "lastSessionDate": "2026-07-01",
+    "streak": 4,
     "history": [
       {
         "date": "2026-06-28",
@@ -5311,6 +5305,13 @@
         "score": 19,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-01",
+        "climbed": 0,
+        "score": 6,
+        "total": 7,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -10783,11 +10784,11 @@
         "learnedAt": "2026-06-28"
       },
       "prescribe": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-07-05",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-01"
       },
       "fascinate": {
         "box": 5,
@@ -10814,11 +10815,11 @@
         "learnedAt": "2026-06-28"
       },
       "endeavor": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-06-28"
+        "box": 3,
+        "due": "2026-07-05",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-07-01"
       },
       "fierce": {
         "box": 5,
