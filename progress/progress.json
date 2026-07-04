@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-04T16:06:23.991Z",
+  "exportedAt": "2026-07-04T16:11:20.391Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1430,26 +1430,26 @@
       {
         "word": "cheat",
         "at": "2026-06-26",
-        "learnCount": 2
+        "learnCount": 3
       },
       {
         "word": "accompany",
         "at": "2026-07-01",
-        "learnCount": 1
+        "learnCount": 2
       },
       {
         "word": "engage",
         "at": "2026-07-01",
-        "learnCount": 1
+        "learnCount": 2
       },
       {
         "word": "revenue",
         "at": "2026-07-04",
-        "learnCount": 0
+        "learnCount": 1
       }
     ],
-    "totalCorrect": 2895,
-    "totalAttempts": 3320,
+    "totalCorrect": 2940,
+    "totalAttempts": 3371,
     "lastSessionDate": "2026-07-04",
     "streak": 1,
     "history": [
@@ -2040,6 +2040,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-04",
+        "climbed": 0,
+        "score": 9,
+        "total": 14,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -2410,11 +2417,11 @@
       },
       "accompany": {
         "box": 5,
-        "due": "2026-07-18",
-        "correct": 10,
+        "due": "2026-07-20",
+        "correct": 11,
         "wrong": 5,
-        "seenAt": "2026-07-02",
-        "learnedAt": "2026-07-02",
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "chase": {
@@ -2728,11 +2735,11 @@
       },
       "engage": {
         "box": 5,
-        "due": "2026-07-18",
-        "correct": 8,
+        "due": "2026-07-20",
+        "correct": 9,
         "wrong": 2,
-        "seenAt": "2026-07-02",
-        "learnedAt": "2026-07-02",
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "portion": {
@@ -2813,11 +2820,13 @@
         "seenAt": "2026-07-04"
       },
       "revenue": {
-        "box": 5,
-        "due": "2026-07-20",
+        "box": 4,
+        "due": "2026-07-12",
         "correct": 7,
-        "wrong": 1,
-        "seenAt": "2026-07-04"
+        "wrong": 2,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
       },
       "ban": {
         "box": 5,
@@ -3712,12 +3721,13 @@
         "seenAt": "2026-06-26"
       },
       "cheat": {
-        "box": 3,
-        "due": "2026-07-03",
-        "correct": 5,
+        "box": 4,
+        "due": "2026-07-12",
+        "correct": 6,
         "wrong": 2,
-        "seenAt": "2026-06-29",
-        "learnedAt": "2026-06-28"
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
       },
       "legislation": {
         "box": 3,
@@ -4216,6 +4226,96 @@
         "wrong": 0,
         "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
+        "everLearned": true
+      },
+      "suburb": {
+        "box": 1,
+        "due": "2026-07-05",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "bold": {
+        "box": 1,
+        "due": "2026-07-05",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "mess": {
+        "box": 1,
+        "due": "2026-07-05",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "margin": {
+        "box": 0,
+        "due": "2026-07-04",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "depart": {
+        "box": 1,
+        "due": "2026-07-05",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "prompt": {
+        "box": 1,
+        "due": "2026-07-05",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "quote": {
+        "box": 0,
+        "due": "2026-07-04",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "govern": {
+        "box": 0,
+        "due": "2026-07-04",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "garbage": {
+        "box": 1,
+        "due": "2026-07-05",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
+        "everLearned": true
+      },
+      "valid": {
+        "box": 0,
+        "due": "2026-07-04",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-04",
+        "learnedAt": "2026-07-04",
         "everLearned": true
       }
     },
