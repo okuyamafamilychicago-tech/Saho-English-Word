@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-02T15:13:19.687Z",
+  "exportedAt": "2026-07-04T13:10:17.439Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1354,6 +1354,31 @@
         "word": "fancy",
         "masteredAt": "2026-07-01",
         "mode": "test"
+      },
+      {
+        "word": "precise",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "acknowledge",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "attribute",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "interrupt",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "glory",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1381,12 +1406,27 @@
         "word": "engage",
         "at": "2026-07-01",
         "learnCount": 1
+      },
+      {
+        "word": "assess",
+        "at": "2026-07-04",
+        "learnCount": 0
+      },
+      {
+        "word": "asset",
+        "at": "2026-07-04",
+        "learnCount": 0
+      },
+      {
+        "word": "generous",
+        "at": "2026-07-04",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2799,
-    "totalAttempts": 3208,
-    "lastSessionDate": "2026-07-02",
-    "streak": 5,
+    "totalCorrect": 2822,
+    "totalAttempts": 3235,
+    "lastSessionDate": "2026-07-04",
+    "streak": 1,
     "history": [
       {
         "date": "2026-06-02",
@@ -1939,6 +1979,13 @@
         "climbed": 0,
         "score": 6,
         "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-04",
+        "climbed": 5,
+        "score": 23,
+        "total": 27,
         "mode": "test"
       }
     ],
@@ -4029,74 +4076,74 @@
         "everLearned": true
       },
       "acknowledge": {
-        "box": 0,
-        "due": "2026-07-02",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "attribute": {
-        "box": 0,
-        "due": "2026-07-02",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "precise": {
-        "box": 0,
-        "due": "2026-07-02",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "interrupt": {
-        "box": 1,
-        "due": "2026-07-03",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-12",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "assess": {
         "box": 0,
-        "due": "2026-07-02",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-07-02",
+        "due": "2026-07-04",
+        "correct": 2,
+        "wrong": 3,
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "asset": {
-        "box": 0,
-        "due": "2026-07-02",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-07-02",
+        "box": 3,
+        "due": "2026-07-08",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "generous": {
-        "box": 1,
-        "due": "2026-07-03",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-02",
+        "box": 3,
+        "due": "2026-07-08",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "glory": {
-        "box": 1,
-        "due": "2026-07-03",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-12",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
