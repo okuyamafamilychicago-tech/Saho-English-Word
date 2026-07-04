@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-04T13:10:17.439Z",
+  "exportedAt": "2026-07-04T13:12:27.080Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1379,6 +1379,26 @@
         "word": "glory",
         "masteredAt": "2026-07-04",
         "mode": "test"
+      },
+      {
+        "word": "fabric",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "awful",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "generous",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
+      },
+      {
+        "word": "asset",
+        "masteredAt": "2026-07-04",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1413,18 +1433,23 @@
         "learnCount": 0
       },
       {
-        "word": "asset",
+        "word": "revenue",
         "at": "2026-07-04",
         "learnCount": 0
       },
       {
-        "word": "generous",
+        "word": "regret",
+        "at": "2026-07-04",
+        "learnCount": 0
+      },
+      {
+        "word": "prime",
         "at": "2026-07-04",
         "learnCount": 0
       }
     ],
-    "totalCorrect": 2822,
-    "totalAttempts": 3235,
+    "totalCorrect": 2849,
+    "totalAttempts": 3266,
     "lastSessionDate": "2026-07-04",
     "streak": 1,
     "history": [
@@ -1986,6 +2011,13 @@
         "climbed": 5,
         "score": 23,
         "total": 27,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-04",
+        "climbed": 4,
+        "score": 27,
+        "total": 31,
         "mode": "test"
       }
     ],
@@ -2746,11 +2778,11 @@
         "seenAt": "2026-06-30"
       },
       "poverty": {
-        "box": 4,
-        "due": "2026-06-15",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-20",
+        "correct": 7,
         "wrong": 0,
-        "seenAt": "2026-06-07"
+        "seenAt": "2026-07-04"
       },
       "prospect": {
         "box": 4,
@@ -2760,11 +2792,11 @@
         "seenAt": "2026-06-08"
       },
       "revenue": {
-        "box": 4,
-        "due": "2026-06-15",
-        "correct": 4,
-        "wrong": 0,
-        "seenAt": "2026-06-07"
+        "box": 5,
+        "due": "2026-07-20",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-07-04"
       },
       "ban": {
         "box": 4,
@@ -3864,11 +3896,11 @@
         "learnedAt": "2026-06-28"
       },
       "regret": {
-        "box": 3,
-        "due": "2026-07-06",
-        "correct": 3,
-        "wrong": 1,
-        "seenAt": "2026-07-02",
+        "box": 5,
+        "due": "2026-07-20",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
@@ -3880,11 +3912,11 @@
         "seenAt": "2026-06-29"
       },
       "awful": {
-        "box": 3,
-        "due": "2026-07-06",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-20",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
@@ -4112,27 +4144,27 @@
         "everLearned": true
       },
       "assess": {
-        "box": 0,
-        "due": "2026-07-04",
-        "correct": 2,
-        "wrong": 3,
+        "box": 2,
+        "due": "2026-07-06",
+        "correct": 5,
+        "wrong": 4,
         "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "asset": {
-        "box": 3,
-        "due": "2026-07-08",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-20",
+        "correct": 6,
         "wrong": 2,
         "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "generous": {
-        "box": 3,
-        "due": "2026-07-08",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-20",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
@@ -4148,20 +4180,20 @@
         "everLearned": true
       },
       "prime": {
-        "box": 1,
-        "due": "2026-07-03",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-02",
+        "box": 3,
+        "due": "2026-07-08",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       },
       "fabric": {
-        "box": 1,
-        "due": "2026-07-03",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-12",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-02",
+        "seenAt": "2026-07-04",
         "learnedAt": "2026-07-02",
         "everLearned": true
       }
