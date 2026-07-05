@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-05T17:15:34.823Z",
+  "exportedAt": "2026-07-05T17:20:21.546Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4850,12 +4850,6 @@
         "bulkInit": true
       },
       {
-        "word": "irritate",
-        "at": "2026-06-28",
-        "learnCount": 0,
-        "bulkInit": true
-      },
-      {
         "word": "indulge",
         "at": "2026-06-28",
         "learnCount": 2,
@@ -5168,20 +5162,14 @@
         "bulkInit": true
       },
       {
-        "word": "inflict",
-        "at": "2026-06-28",
-        "learnCount": 0,
-        "bulkInit": true
-      },
-      {
         "word": "vacant",
         "at": "2026-06-28",
         "learnCount": 0,
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1206,
-    "totalAttempts": 1329,
+    "totalCorrect": 1225,
+    "totalAttempts": 1353,
     "lastSessionDate": "2026-07-05",
     "streak": 2,
     "history": [
@@ -5303,6 +5291,13 @@
         "score": 20,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -11396,18 +11391,18 @@
         "seenAt": "2026-07-05"
       },
       "irritate": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-05"
       },
       "inflict": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-05"
       },
       "lessen": {
         "box": 0,
