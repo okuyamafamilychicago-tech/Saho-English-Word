@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-04T16:11:20.391Z",
+  "exportedAt": "2026-07-05T15:08:53.824Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1414,6 +1414,46 @@
         "word": "assess",
         "masteredAt": "2026-07-04",
         "mode": "test"
+      },
+      {
+        "word": "quote",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "suburb",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "margin",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "mess",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "bold",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "govern",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "depart",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "valid",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1448,10 +1488,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2940,
-    "totalAttempts": 3371,
-    "lastSessionDate": "2026-07-04",
-    "streak": 1,
+    "totalCorrect": 2975,
+    "totalAttempts": 3410,
+    "lastSessionDate": "2026-07-05",
+    "streak": 2,
     "history": [
       {
         "date": "2026-06-02",
@@ -2047,6 +2087,13 @@
         "score": 9,
         "total": 14,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -4229,47 +4276,47 @@
         "everLearned": true
       },
       "suburb": {
-        "box": 1,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "bold": {
-        "box": 1,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "mess": {
-        "box": 1,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "margin": {
-        "box": 0,
-        "due": "2026-07-04",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-07-04",
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "depart": {
-        "box": 1,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
@@ -4283,20 +4330,20 @@
         "everLearned": true
       },
       "quote": {
-        "box": 0,
-        "due": "2026-07-04",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
       "govern": {
-        "box": 0,
-        "due": "2026-07-04",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
@@ -4310,11 +4357,11 @@
         "everLearned": true
       },
       "valid": {
-        "box": 0,
-        "due": "2026-07-04",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       }
