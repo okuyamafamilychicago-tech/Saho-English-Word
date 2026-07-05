@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-05T15:08:53.824Z",
+  "exportedAt": "2026-07-05T15:10:15.956Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1454,6 +1454,21 @@
         "word": "valid",
         "masteredAt": "2026-07-05",
         "mode": "test"
+      },
+      {
+        "word": "cheat",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "garbage",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
+      },
+      {
+        "word": "prompt",
+        "masteredAt": "2026-07-05",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1466,11 +1481,6 @@
         "word": "pose",
         "at": "2026-06-06",
         "learnCount": 2
-      },
-      {
-        "word": "cheat",
-        "at": "2026-06-26",
-        "learnCount": 3
       },
       {
         "word": "accompany",
@@ -1486,10 +1496,15 @@
         "word": "revenue",
         "at": "2026-07-04",
         "learnCount": 1
+      },
+      {
+        "word": "summary",
+        "at": "2026-07-05",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2975,
-    "totalAttempts": 3410,
+    "totalCorrect": 2990,
+    "totalAttempts": 3426,
     "lastSessionDate": "2026-07-05",
     "streak": 2,
     "history": [
@@ -2093,6 +2108,13 @@
         "climbed": 8,
         "score": 24,
         "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 3,
+        "score": 15,
+        "total": 16,
         "mode": "test"
       }
     ],
@@ -2932,19 +2954,19 @@
         "learnedAt": "2026-06-07"
       },
       "alter": {
-        "box": 4,
-        "due": "2026-06-16",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-21",
+        "correct": 7,
         "wrong": 0,
-        "seenAt": "2026-06-08",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-06-07"
       },
       "summary": {
-        "box": 4,
-        "due": "2026-06-16",
-        "correct": 4,
-        "wrong": 0,
-        "seenAt": "2026-06-08",
+        "box": 5,
+        "due": "2026-07-21",
+        "correct": 7,
+        "wrong": 1,
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-06-07"
       },
       "outstanding": {
@@ -3768,11 +3790,11 @@
         "seenAt": "2026-06-26"
       },
       "cheat": {
-        "box": 4,
-        "due": "2026-07-12",
-        "correct": 6,
+        "box": 5,
+        "due": "2026-07-21",
+        "correct": 9,
         "wrong": 2,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
@@ -4321,11 +4343,11 @@
         "everLearned": true
       },
       "prompt": {
-        "box": 1,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
@@ -4348,11 +4370,11 @@
         "everLearned": true
       },
       "garbage": {
-        "box": 1,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-04",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-07-04",
         "everLearned": true
       },
