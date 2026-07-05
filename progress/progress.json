@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-05T15:18:14.574Z",
+  "exportedAt": "2026-07-05T15:20:24.544Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1503,8 +1503,8 @@
         "learnCount": 2
       }
     ],
-    "totalCorrect": 3042,
-    "totalAttempts": 3487,
+    "totalCorrect": 3053,
+    "totalAttempts": 3500,
     "lastSessionDate": "2026-07-05",
     "streak": 2,
     "history": [
@@ -2137,6 +2137,13 @@
         "score": 4,
         "total": 4,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -2212,10 +2219,10 @@
       },
       "principal": {
         "box": 5,
-        "due": "2026-06-20",
-        "correct": 7,
+        "due": "2026-07-21",
+        "correct": 10,
         "wrong": 0,
-        "seenAt": "2026-06-04"
+        "seenAt": "2026-07-05"
       },
       "candidate": {
         "box": 5,
@@ -3324,11 +3331,11 @@
         "learnedAt": "2026-06-14"
       },
       "logic": {
-        "box": 3,
-        "due": "2026-06-19",
+        "box": 2,
+        "due": "2026-07-07",
         "correct": 4,
-        "wrong": 2,
-        "seenAt": "2026-06-15",
+        "wrong": 3,
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-06-14"
       },
       "spare": {
@@ -3340,11 +3347,11 @@
         "learnedAt": "2026-06-14"
       },
       "slave": {
-        "box": 2,
-        "due": "2026-06-18",
+        "box": 1,
+        "due": "2026-07-06",
         "correct": 3,
-        "wrong": 2,
-        "seenAt": "2026-06-16",
+        "wrong": 3,
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-06-15"
       },
       "illustrate": {
@@ -3380,11 +3387,11 @@
         "learnedAt": "2026-06-17"
       },
       "breed": {
-        "box": 3,
-        "due": "2026-06-19",
-        "correct": 3,
+        "box": 4,
+        "due": "2026-07-13",
+        "correct": 4,
         "wrong": 2,
-        "seenAt": "2026-06-15",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-06-14"
       },
       "pile": {
@@ -3428,11 +3435,11 @@
         "learnedAt": "2026-06-17"
       },
       "routine": {
-        "box": 3,
-        "due": "2026-06-19",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-21",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-06-15",
+        "seenAt": "2026-07-05",
         "learnedAt": "2026-06-14"
       },
       "confuse": {
