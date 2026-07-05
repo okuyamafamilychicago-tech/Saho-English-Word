@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-05T16:27:07.861Z",
+  "exportedAt": "2026-07-05T16:27:37.856Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4904,12 +4904,6 @@
         "bulkInit": true
       },
       {
-        "word": "invaluable",
-        "at": "2026-06-28",
-        "learnCount": 0,
-        "bulkInit": true
-      },
-      {
         "word": "successive",
         "at": "2026-06-28",
         "learnCount": 0,
@@ -4953,12 +4947,6 @@
       },
       {
         "word": "complement",
-        "at": "2026-06-28",
-        "learnCount": 0,
-        "bulkInit": true
-      },
-      {
-        "word": "trivial",
         "at": "2026-06-28",
         "learnCount": 0,
         "bulkInit": true
@@ -5192,8 +5180,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1133,
-    "totalAttempts": 1254,
+    "totalCorrect": 1139,
+    "totalAttempts": 1260,
     "lastSessionDate": "2026-07-05",
     "streak": 2,
     "history": [
@@ -5300,6 +5288,13 @@
         "climbed": 0,
         "score": 6,
         "total": 7,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       }
     ],
@@ -11350,11 +11345,11 @@
         "seenAt": "2026-07-05"
       },
       "trivial": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-05"
       },
       "imaginary": {
         "box": 5,
@@ -11365,11 +11360,11 @@
         "learnedAt": "2026-06-28"
       },
       "invaluable": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-05"
       },
       "prolong": {
         "box": 0,
