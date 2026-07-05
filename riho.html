@@ -1147,7 +1147,7 @@ const STORAGE_KEY = "vocabTrail_riho_v1";
 const LEARN_NEW_TARGET = 10;    // まなぶ: 新規語の最大（learn-firstモード時）
 const LEARN_REVIEW_MAX = 15;    // まなぶ: 復習(testWrong+SRSdue)の最大数
 const MAX_REVIEW_LOOPS = 3;     // まなぶ: 同じ単語の再復習を最大何周まで
-const LEARN_REPEAT_MAX = 2;     // testWrong 1語が まなぶに 登場できる 最大回数（次のテストまで）
+const LEARN_REPEAT_MAX = 1;     // testWrong 1語が まなぶに 登場できる 最大回数（1回のみ、超えたらテストで再判定）
 const SESSION_WORDS_TARGET = 10;  // テスト: （後方互換用 定数）
 const TEST_NM_TARGET = 8;         // テスト1回の 未mastered 目標（あれば 常に これ）
 const TEST_MASTERED_MAX = 2;      // テスト1回の mastered 最大（未mastered < 8 の場合のみ追加）
@@ -1259,6 +1259,54 @@ function loadMy100Words() {
 }
 
 hydrateUserWordsFromMyBank();
+
+// ----------------------------------------------------------
+// Riho 初期進捗: バッチ1-8 の 800語を マスター済みに（不足分を自動補完）
+// → batch-9 (801-900) が 自動解放される
+// ※カウントベースで idempotent。既に800以上ある場合は何もしない。
+// ----------------------------------------------------------
+(function rihoBulkInit800() {
+  if (!window.WORD_MASTER || !Array.isArray(window.WORD_MASTER.batches)) {
+    console.warn("[Riho初期化] WORD_MASTER.batches が 読み込まれていない");
+    return;
+  }
+  const batches = window.WORD_MASTER.batches;
+  if (batches.length < 8) {
+    console.warn(`[Riho初期化] バッチが 8個 揃っていない（現在 ${batches.length}個）`);
+    return;
+  }
+  if (!Array.isArray(state.mastered)) state.mastered = [];
+  // 既に 800語以上 マスター済みなら 何もしない
+  if (state.mastered.length >= 800) {
+    console.log(`[Riho初期化] スキップ: 既に ${state.mastered.length}語 マスター済み`);
+    return;
+  }
+  const todayStr = new Date().toISOString().slice(0,10);
+  const masteredSet = new Set(state.mastered.map(m => (m.word || "").toLowerCase()));
+  let added = 0;
+  for (let i = 0; i < 8; i++) {
+    for (const w of batches[i].words) {
+      const key = (w.word || "").toLowerCase();
+      if (!masteredSet.has(key)) {
+        state.mastered.push({
+          word: w.word,
+          masteredAt: todayStr,
+          mode: "test",
+          bulkInit: true
+        });
+        masteredSet.add(key);
+        added++;
+      }
+    }
+  }
+  saveState();
+  console.log(`[Riho初期化] +${added}語を マスター済みに 設定（合計 ${state.mastered.length}語）`);
+  if (added > 0) {
+    setTimeout(() => {
+      alert(`Riho の進捗を 800語マスター済みに 設定しました 🎉\n\n+${added}語を 一括追加（合計 ${state.mastered.length}語）。\nバッチ9 (801-900) が 解放されました！`);
+    }, 600);
+  }
+})();
 
 // 起動時にGitHubから自動読込（Tokenがあれば）
 (async function autoLoadFromGitHub() {
@@ -2099,7 +2147,9 @@ function finishSession() {
       const existing = state.testWrong.find(t => t.word === wordStr);
       if (existing) {
         existing.at = today();
-        existing.learnCount = 0;  // 再度 間違えたので まなぶカウントを リセット
+        // ※ learnCount は リセットしない: まなぶ復習は 初回1回のみ の ルール。
+        //   すでに 1回 まなぶで 復習した語は、以後 テストで再間違い しても
+        //   まなぶには 戻らず、テストで 再判定するのみ。
       } else {
         state.testWrong.push({ word: wordStr, at: today(), learnCount: 0 });
       }
@@ -2812,8 +2862,8 @@ function showTestWrongWords() {
     <div class="modal" onclick="event.stopPropagation()" style="max-width:520px">
       <h3>❌ テストで まちがえた 単語（${wrongs.length}語）</h3>
       <p style="font-size:0.82rem; color:var(--ink-soft); margin-bottom:8px">
-        まなぶ中 <b style="color:var(--coral-deep)">${activeCount}語</b>${dormantCount ? ` ・ 復習済 <b>${dormantCount}語</b>（次のテストで間違えると 再復習対象）` : ""}<br>
-        <small>1語 まなぶ <b>${LEARN_REPEAT_MAX}回まで</b>。回数を超えると テストで 再判定するまで まなぶに 出ません。</small>
+        まなぶ中 <b style="color:var(--coral-deep)">${activeCount}語</b>${dormantCount ? ` ・ 復習済 <b>${dormantCount}語</b>（以後は テスト のみで 再判定）` : ""}<br>
+        <small>1語 まなぶ <b>${LEARN_REPEAT_MAX}回まで</b>。復習済の 語は 以後 テストで 再間違い しても まなぶ には 戻らず、テスト で 再判定されます。</small>
       </p>
       <div style="max-height:55vh; overflow-y:auto; padding-right:4px; margin-bottom:10px">
         ${items || `<p class="empty-note">まちがえた 単語は ありません。</p>`}
