@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-05T15:16:40.622Z",
+  "exportedAt": "2026-07-05T15:18:14.574Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1500,11 +1500,11 @@
       {
         "word": "summary",
         "at": "2026-07-05",
-        "learnCount": 1
+        "learnCount": 2
       }
     ],
-    "totalCorrect": 3030,
-    "totalAttempts": 3475,
+    "totalCorrect": 3042,
+    "totalAttempts": 3487,
     "lastSessionDate": "2026-07-05",
     "streak": 2,
     "history": [
@@ -2130,6 +2130,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 0,
+        "score": 4,
+        "total": 4,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -2978,7 +2985,7 @@
       "summary": {
         "box": 5,
         "due": "2026-07-21",
-        "correct": 8,
+        "correct": 9,
         "wrong": 1,
         "seenAt": "2026-07-05",
         "learnedAt": "2026-07-05",
@@ -4403,9 +4410,9 @@
         "everLearned": true
       },
       "restrict": {
-        "box": 0,
-        "due": "2026-07-05",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-06",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-05",
         "learnedAt": "2026-07-05",
@@ -4421,9 +4428,9 @@
         "everLearned": true
       },
       "dedicate": {
-        "box": 0,
-        "due": "2026-07-05",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-06",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-05",
         "learnedAt": "2026-07-05",
@@ -4448,9 +4455,9 @@
         "everLearned": true
       },
       "companion": {
-        "box": 0,
-        "due": "2026-07-05",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-06",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-05",
         "learnedAt": "2026-07-05",
