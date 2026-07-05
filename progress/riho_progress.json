@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-04T16:26:00.167Z",
+  "exportedAt": "2026-07-05T16:27:07.861Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5049,7 +5049,7 @@
       },
       {
         "word": "condemn",
-        "at": "2026-06-28",
+        "at": "2026-07-05",
         "learnCount": 0,
         "bulkInit": true
       },
@@ -5168,12 +5168,6 @@
         "bulkInit": true
       },
       {
-        "word": "altitude",
-        "at": "2026-06-28",
-        "learnCount": 0,
-        "bulkInit": true
-      },
-      {
         "word": "census",
         "at": "2026-06-28",
         "learnCount": 0,
@@ -5198,10 +5192,10 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1117,
-    "totalAttempts": 1236,
-    "lastSessionDate": "2026-07-04",
-    "streak": 1,
+    "totalCorrect": 1133,
+    "totalAttempts": 1254,
+    "lastSessionDate": "2026-07-05",
+    "streak": 2,
     "history": [
       {
         "date": "2026-06-28",
@@ -5300,6 +5294,13 @@
         "score": 13,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-05",
+        "climbed": 0,
+        "score": 6,
+        "total": 7,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -11319,11 +11320,11 @@
         "everLearned": true
       },
       "altitude": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-05"
       },
       "litter": {
         "box": 5,
@@ -11342,11 +11343,11 @@
         "learnedAt": "2026-06-28"
       },
       "condemn": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-06-28"
+        "box": 3,
+        "due": "2026-07-09",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-07-05"
       },
       "trivial": {
         "box": 0,
