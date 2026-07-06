@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-06T13:04:20.841Z",
+  "exportedAt": "2026-07-06T13:09:47.200Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1538,8 +1538,8 @@
         "learnCount": 2
       }
     ],
-    "totalCorrect": 3092,
-    "totalAttempts": 3542,
+    "totalCorrect": 3121,
+    "totalAttempts": 3573,
     "lastSessionDate": "2026-07-06",
     "streak": 3,
     "history": [
@@ -2193,6 +2193,13 @@
         "score": 12,
         "total": 12,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-06",
+        "climbed": 0,
+        "score": 8,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -4527,12 +4534,103 @@
         "seenAt": "2026-07-06",
         "learnedAt": "2026-07-05",
         "everLearned": true
+      },
+      "outlook": {
+        "box": 0,
+        "due": "2026-07-06",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "peer": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "rob": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "alien": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "stake": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "prominent": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "strive": {
+        "box": 0,
+        "due": "2026-07-06",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "await": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "crush": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "scenery": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       }
     },
     "images": {},
     "unlockedSeen": [
       "batch-2",
-      "batch-3"
+      "batch-3",
+      "batch-4"
     ],
     "svgTheme": "ac",
     "schemaVersion": 2
