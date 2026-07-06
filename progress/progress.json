@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-06T13:09:47.200Z",
+  "exportedAt": "2026-07-06T13:13:33.289Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1538,8 +1538,8 @@
         "learnCount": 2
       }
     ],
-    "totalCorrect": 3121,
-    "totalAttempts": 3573,
+    "totalCorrect": 3132,
+    "totalAttempts": 3588,
     "lastSessionDate": "2026-07-06",
     "streak": 3,
     "history": [
@@ -2200,6 +2200,13 @@
         "score": 8,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-06",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -2359,10 +2366,10 @@
       },
       "outcome": {
         "box": 5,
-        "due": "2026-06-20",
-        "correct": 6,
+        "due": "2026-07-22",
+        "correct": 9,
         "wrong": 0,
-        "seenAt": "2026-06-04"
+        "seenAt": "2026-07-06"
       },
       "alternative": {
         "box": 5,
@@ -2394,10 +2401,10 @@
       },
       "emergency": {
         "box": 5,
-        "due": "2026-06-20",
-        "correct": 6,
+        "due": "2026-07-22",
+        "correct": 9,
         "wrong": 0,
-        "seenAt": "2026-06-04"
+        "seenAt": "2026-07-06"
       },
       "moreover": {
         "box": 5,
