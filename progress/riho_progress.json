@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-06T06:01:01.165Z",
+  "exportedAt": "2026-07-06T06:01:58.927Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4833,7 +4833,7 @@
       },
       {
         "word": "testify",
-        "at": "2026-06-28",
+        "at": "2026-07-06",
         "learnCount": 0,
         "bulkInit": true
       },
@@ -5127,13 +5127,13 @@
       },
       {
         "word": "ample",
-        "at": "2026-06-28",
+        "at": "2026-07-06",
         "learnCount": 0,
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1246,
-    "totalAttempts": 1378,
+    "totalCorrect": 1252,
+    "totalAttempts": 1386,
     "lastSessionDate": "2026-07-06",
     "streak": 3,
     "history": [
@@ -5282,6 +5282,13 @@
         "climbed": 0,
         "score": 6,
         "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-06",
+        "climbed": 0,
+        "score": 6,
+        "total": 8,
         "mode": "test"
       }
     ],
@@ -11594,11 +11601,11 @@
         "learnedAt": "2026-06-28"
       },
       "ample": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-06-28"
+        "box": 3,
+        "due": "2026-07-10",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-07-06"
       },
       "predecessor": {
         "box": 5,
@@ -11609,11 +11616,11 @@
         "learnedAt": "2026-06-28"
       },
       "testify": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-06-28"
+        "box": 3,
+        "due": "2026-07-10",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-07-06"
       },
       "inquire": {
         "box": 5,
