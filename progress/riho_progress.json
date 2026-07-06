@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-06T11:58:34.521Z",
+  "exportedAt": "2026-07-06T12:02:44.378Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4988,12 +4988,6 @@
         "bulkInit": true
       },
       {
-        "word": "possess",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "adhere",
         "at": "2026-06-30",
         "learnCount": 2,
@@ -5066,12 +5060,6 @@
         "bulkInit": true
       },
       {
-        "word": "compensate",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "attain",
         "at": "2026-06-28",
         "learnCount": 2,
@@ -5132,8 +5120,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1314,
-    "totalAttempts": 1453,
+    "totalCorrect": 1327,
+    "totalAttempts": 1472,
     "lastSessionDate": "2026-07-06",
     "streak": 3,
     "history": [
@@ -5297,6 +5285,13 @@
         "score": 18,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-06",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -5773,11 +5768,11 @@
         "learnedAt": "2026-06-28"
       },
       "possess": {
-        "box": 1,
-        "due": "2026-07-01",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-14",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-06-30",
+        "seenAt": "2026-07-06",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -9731,11 +9726,11 @@
         "learnedAt": "2026-06-28"
       },
       "compensate": {
-        "box": 0,
-        "due": "2026-06-30",
-        "correct": 2,
+        "box": 3,
+        "due": "2026-07-10",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-06-30",
+        "seenAt": "2026-07-06",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
