@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-06T06:01:58.927Z",
+  "exportedAt": "2026-07-06T11:58:34.521Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4810,7 +4810,7 @@
       {
         "word": "deceive",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -4834,7 +4834,7 @@
       {
         "word": "testify",
         "at": "2026-07-06",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -4870,7 +4870,7 @@
       {
         "word": "apparatus",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -4882,19 +4882,19 @@
       {
         "word": "lessen",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
         "word": "amend",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
         "word": "supposedly",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -4906,19 +4906,19 @@
       {
         "word": "comprehend",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
         "word": "curse",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
         "word": "prolong",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -5020,7 +5020,7 @@
       {
         "word": "condemn",
         "at": "2026-07-05",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -5032,7 +5032,7 @@
       {
         "word": "warrant",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -5056,7 +5056,7 @@
       {
         "word": "pledge",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
@@ -5122,18 +5122,18 @@
       {
         "word": "raid",
         "at": "2026-06-28",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       },
       {
         "word": "ample",
         "at": "2026-07-06",
-        "learnCount": 0,
+        "learnCount": 1,
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1252,
-    "totalAttempts": 1386,
+    "totalCorrect": 1314,
+    "totalAttempts": 1453,
     "lastSessionDate": "2026-07-06",
     "streak": 3,
     "history": [
@@ -5290,6 +5290,13 @@
         "score": 6,
         "total": 8,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-06",
+        "climbed": 0,
+        "score": 18,
+        "total": 20,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -11332,11 +11339,13 @@
         "learnedAt": "2026-06-28"
       },
       "condemn": {
-        "box": 3,
-        "due": "2026-07-09",
-        "correct": 4,
+        "box": 4,
+        "due": "2026-07-14",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-05"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "trivial": {
         "box": 3,
@@ -11361,11 +11370,13 @@
         "seenAt": "2026-07-05"
       },
       "prolong": {
-        "box": 1,
-        "due": "2026-07-06",
-        "correct": 2,
+        "box": 2,
+        "due": "2026-07-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-05"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "utter": {
         "box": 5,
@@ -11376,11 +11387,13 @@
         "learnedAt": "2026-06-28"
       },
       "raid": {
-        "box": 1,
+        "box": 0,
         "due": "2026-07-06",
         "correct": 2,
-        "wrong": 1,
-        "seenAt": "2026-07-05"
+        "wrong": 2,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "irritate": {
         "box": 3,
@@ -11397,11 +11410,13 @@
         "seenAt": "2026-07-05"
       },
       "lessen": {
-        "box": 0,
-        "due": "2026-07-05",
-        "correct": 1,
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 2,
         "wrong": 2,
-        "seenAt": "2026-07-05"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "damp": {
         "box": 5,
@@ -11429,8 +11444,10 @@
         "box": 0,
         "due": "2026-07-06",
         "correct": 1,
-        "wrong": 2,
-        "seenAt": "2026-07-06"
+        "wrong": 3,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "generalization": {
         "box": 5,
@@ -11449,18 +11466,22 @@
         "learnedAt": "2026-06-28"
       },
       "apparatus": {
+        "box": 2,
+        "due": "2026-07-08",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "deceive": {
         "box": 1,
         "due": "2026-07-07",
         "correct": 2,
-        "wrong": 1,
-        "seenAt": "2026-07-06"
-      },
-      "deceive": {
-        "box": 0,
-        "due": "2026-07-06",
-        "correct": 1,
         "wrong": 2,
-        "seenAt": "2026-07-06"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "rubbish": {
         "box": 5,
@@ -11487,11 +11508,13 @@
         "learnedAt": "2026-06-28"
       },
       "curse": {
-        "box": 0,
-        "due": "2026-07-06",
-        "correct": 2,
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-07-06"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "selfish": {
         "box": 5,
@@ -11502,11 +11525,13 @@
         "learnedAt": "2026-06-28"
       },
       "amend": {
-        "box": 1,
-        "due": "2026-07-07",
-        "correct": 2,
+        "box": 2,
+        "due": "2026-07-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-06"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "successive": {
         "box": 3,
@@ -11601,11 +11626,13 @@
         "learnedAt": "2026-06-28"
       },
       "ample": {
-        "box": 3,
-        "due": "2026-07-10",
-        "correct": 4,
+        "box": 4,
+        "due": "2026-07-14",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-06"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "predecessor": {
         "box": 5,
@@ -11616,11 +11643,13 @@
         "learnedAt": "2026-06-28"
       },
       "testify": {
-        "box": 3,
-        "due": "2026-07-10",
-        "correct": 4,
+        "box": 4,
+        "due": "2026-07-14",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-06"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "inquire": {
         "box": 5,
@@ -11663,25 +11692,31 @@
         "learnedAt": "2026-06-28"
       },
       "supposedly": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 2,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "comprehend": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 2,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "warrant": {
-        "box": 0,
-        "due": "2026-06-28",
-        "correct": 1,
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 2,
         "wrong": 1,
-        "seenAt": "2026-06-28"
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       },
       "splendid": {
         "box": 5,
@@ -11690,6 +11725,60 @@
         "wrong": 0,
         "seenAt": "2026-06-28",
         "learnedAt": "2026-06-28"
+      },
+      "greed": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "selective": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "imaginative": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "despise": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "applaud": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "mourn": {
+        "box": 1,
+        "due": "2026-07-07",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-06",
+        "learnedAt": "2026-07-06",
+        "everLearned": true
       }
     },
     "images": {},
@@ -11703,7 +11792,7 @@
       "batch-8",
       "batch-9"
     ],
-    "svgTheme": "ac",
+    "svgTheme": "forest",
     "schemaVersion": 2,
     "rihoBulk800Done": true
   }
