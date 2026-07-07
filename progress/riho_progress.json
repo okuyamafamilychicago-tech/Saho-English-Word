@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-07T12:06:11.635Z",
+  "exportedAt": "2026-07-07T12:06:43.483Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4964,12 +4964,6 @@
         "bulkInit": true
       },
       {
-        "word": "implication",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "render",
         "at": "2026-06-28",
         "learnCount": 2,
@@ -5084,12 +5078,6 @@
         "bulkInit": true
       },
       {
-        "word": "stimulate",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "corrupt",
         "at": "2026-06-28",
         "learnCount": 2,
@@ -5108,8 +5096,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1373,
-    "totalAttempts": 1519,
+    "totalCorrect": 1379,
+    "totalAttempts": 1525,
     "lastSessionDate": "2026-07-07",
     "streak": 4,
     "history": [
@@ -5300,6 +5288,13 @@
         "climbed": 6,
         "score": 24,
         "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-07",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       },
       {
@@ -8823,11 +8818,11 @@
         "learnedAt": "2026-06-28"
       },
       "stimulate": {
-        "box": 2,
-        "due": "2026-07-02",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-23",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-06-30",
+        "seenAt": "2026-07-07",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -9368,11 +9363,11 @@
         "learnedAt": "2026-06-28"
       },
       "implication": {
-        "box": 2,
-        "due": "2026-07-02",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-23",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-06-30",
+        "seenAt": "2026-07-07",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
