@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-07T12:07:38.258Z",
+  "exportedAt": "2026-07-07T12:23:43.392Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1570,16 +1570,16 @@
       {
         "word": "outlook",
         "at": "2026-07-07",
-        "learnCount": 0
+        "learnCount": 1
       },
       {
         "word": "prominent",
         "at": "2026-07-07",
-        "learnCount": 0
+        "learnCount": 1
       }
     ],
-    "totalCorrect": 3156,
-    "totalAttempts": 3616,
+    "totalCorrect": 3195,
+    "totalAttempts": 3662,
     "lastSessionDate": "2026-07-07",
     "streak": 4,
     "history": [
@@ -2254,6 +2254,13 @@
         "score": 23,
         "total": 25,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-07",
+        "climbed": 0,
+        "score": 9,
+        "total": 13,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -4590,12 +4597,12 @@
         "everLearned": true
       },
       "outlook": {
-        "box": 3,
-        "due": "2026-07-11",
-        "correct": 3,
+        "box": 4,
+        "due": "2026-07-15",
+        "correct": 4,
         "wrong": 3,
         "seenAt": "2026-07-07",
-        "learnedAt": "2026-07-06",
+        "learnedAt": "2026-07-07",
         "everLearned": true
       },
       "peer": {
@@ -4635,12 +4642,12 @@
         "everLearned": true
       },
       "prominent": {
-        "box": 3,
-        "due": "2026-07-11",
-        "correct": 4,
+        "box": 4,
+        "due": "2026-07-15",
+        "correct": 5,
         "wrong": 1,
         "seenAt": "2026-07-07",
-        "learnedAt": "2026-07-06",
+        "learnedAt": "2026-07-07",
         "everLearned": true
       },
       "strive": {
@@ -4671,12 +4678,102 @@
         "everLearned": true
       },
       "scenery": {
+        "box": 2,
+        "due": "2026-07-09",
+        "correct": 2,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "grave": {
         "box": 1,
-        "due": "2026-07-07",
+        "due": "2026-07-08",
         "correct": 1,
         "wrong": 0,
-        "seenAt": "2026-07-06",
-        "learnedAt": "2026-07-06",
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "seemingly": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "insert": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "collapse": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "monument": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "tackle": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "thorough": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "loyal": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "yell": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "sacred": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
         "everLearned": true
       }
     },
