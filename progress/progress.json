@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-07T12:23:43.392Z",
+  "exportedAt": "2026-07-07T12:27:26.583Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1534,6 +1534,11 @@
         "word": "peer",
         "masteredAt": "2026-07-07",
         "mode": "test"
+      },
+      {
+        "word": "await",
+        "masteredAt": "2026-07-07",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1578,8 +1583,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3195,
-    "totalAttempts": 3662,
+    "totalCorrect": 3210,
+    "totalAttempts": 3684,
     "lastSessionDate": "2026-07-07",
     "streak": 4,
     "history": [
@@ -2261,6 +2266,13 @@
         "score": 9,
         "total": 13,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-07",
+        "climbed": 1,
+        "score": 9,
+        "total": 9,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -2469,10 +2481,10 @@
       },
       "convince": {
         "box": 5,
-        "due": "2026-06-20",
-        "correct": 10,
+        "due": "2026-07-23",
+        "correct": 13,
         "wrong": 0,
-        "seenAt": "2026-06-04"
+        "seenAt": "2026-07-07"
       },
       "convert": {
         "box": 5,
@@ -2483,10 +2495,10 @@
       },
       "landscape": {
         "box": 5,
-        "due": "2026-06-20",
-        "correct": 6,
+        "due": "2026-07-23",
+        "correct": 9,
         "wrong": 1,
-        "seenAt": "2026-06-04"
+        "seenAt": "2026-07-07"
       },
       "apparently": {
         "box": 5,
@@ -4660,9 +4672,9 @@
         "everLearned": true
       },
       "await": {
-        "box": 2,
-        "due": "2026-07-09",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-07-23",
+        "correct": 5,
         "wrong": 0,
         "seenAt": "2026-07-07",
         "learnedAt": "2026-07-06",
