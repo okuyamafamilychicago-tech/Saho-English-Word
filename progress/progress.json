@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-07T12:27:26.583Z",
+  "exportedAt": "2026-07-07T16:51:46.068Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1583,8 +1583,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3210,
-    "totalAttempts": 3684,
+    "totalCorrect": 3259,
+    "totalAttempts": 3743,
     "lastSessionDate": "2026-07-07",
     "streak": 4,
     "history": [
@@ -2273,6 +2273,13 @@
         "score": 9,
         "total": 9,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-07",
+        "climbed": 0,
+        "score": 9,
+        "total": 14,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -4708,18 +4715,18 @@
         "everLearned": true
       },
       "seemingly": {
-        "box": 0,
-        "due": "2026-07-07",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-07",
         "learnedAt": "2026-07-07",
         "everLearned": true
       },
       "insert": {
-        "box": 0,
-        "due": "2026-07-07",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-07",
         "learnedAt": "2026-07-07",
@@ -4738,7 +4745,7 @@
         "box": 0,
         "due": "2026-07-07",
         "correct": 0,
-        "wrong": 1,
+        "wrong": 2,
         "seenAt": "2026-07-07",
         "learnedAt": "2026-07-07",
         "everLearned": true
@@ -4762,9 +4769,9 @@
         "everLearned": true
       },
       "loyal": {
-        "box": 0,
-        "due": "2026-07-07",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-07",
         "learnedAt": "2026-07-07",
@@ -4780,6 +4787,96 @@
         "everLearned": true
       },
       "sacred": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "exceptional": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "regulate": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "motivate": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "shortage": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "accommodate": {
+        "box": 0,
+        "due": "2026-07-07",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "evil": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "moderate": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "disadvantage": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "concrete": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "shield": {
         "box": 1,
         "due": "2026-07-08",
         "correct": 1,
