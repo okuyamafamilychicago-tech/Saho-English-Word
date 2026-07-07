@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-07T12:06:43.483Z",
+  "exportedAt": "2026-07-07T12:11:03.096Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4976,12 +4976,6 @@
         "bulkInit": true
       },
       {
-        "word": "deficit",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "confess",
         "at": "2026-06-28",
         "learnCount": 2,
@@ -5002,12 +4996,6 @@
       {
         "word": "endeavor",
         "at": "2026-07-01",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
-        "word": "conceive",
-        "at": "2026-06-28",
         "learnCount": 2,
         "bulkInit": true
       },
@@ -5096,8 +5084,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1379,
-    "totalAttempts": 1525,
+    "totalCorrect": 1415,
+    "totalAttempts": 1561,
     "lastSessionDate": "2026-07-07",
     "streak": 4,
     "history": [
@@ -5303,6 +5291,20 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-07",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-07",
+        "climbed": 0,
+        "score": 10,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -9445,11 +9447,11 @@
         "learnedAt": "2026-06-28"
       },
       "deficit": {
-        "box": 2,
-        "due": "2026-07-02",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-23",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-06-30",
+        "seenAt": "2026-07-07",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -9510,11 +9512,11 @@
         "learnedAt": "2026-06-28"
       },
       "conceive": {
-        "box": 2,
-        "due": "2026-07-02",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-23",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-06-30",
+        "seenAt": "2026-07-07",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -11784,6 +11786,96 @@
         "wrong": 0,
         "seenAt": "2026-07-07",
         "learnedAt": "2026-07-06",
+        "everLearned": true
+      },
+      "naive": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "discriminate": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "devastating": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "bankrupt": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "proficient": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "worsen": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "defective": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "flatter": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "esteem": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
+        "everLearned": true
+      },
+      "roar": {
+        "box": 1,
+        "due": "2026-07-08",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-07",
+        "learnedAt": "2026-07-07",
         "everLearned": true
       }
     },
