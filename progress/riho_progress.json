@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-08T18:39:51.212Z",
+  "exportedAt": "2026-07-09T13:19:28.212Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4884,6 +4884,46 @@
         "word": "esteem",
         "masteredAt": "2026-07-08",
         "mode": "test"
+      },
+      {
+        "word": "liberate",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "uneasy",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "fuss",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "weep",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "prestige",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "tremble",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "terrify",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "prudent",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5116,10 +5156,10 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1534,
-    "totalAttempts": 1684,
-    "lastSessionDate": "2026-07-08",
-    "streak": 5,
+    "totalCorrect": 1566,
+    "totalAttempts": 1717,
+    "lastSessionDate": "2026-07-09",
+    "streak": 6,
     "history": [
       {
         "date": "2026-06-28",
@@ -5372,6 +5412,13 @@
         "score": 10,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-09",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -11946,74 +11993,74 @@
         "everLearned": true
       },
       "tremble": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "fuss": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "prestige": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "prudent": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "liberate": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "weep": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "terrify": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "uneasy": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
