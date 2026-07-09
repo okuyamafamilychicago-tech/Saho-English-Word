@@ -136,6 +136,55 @@ header h1{font-size:1.05rem;font-weight:600;flex:1}
 .card-gh-badge{display:none;font-size:.68rem;font-weight:700;color:#16a34a;margin-top:6px}
 .card-gh-badge.visible{display:block}
 .card.card-all-done{box-shadow:0 0 0 2px #22c55e}
+/* Basics dialogue (fixed cast) */
+.basics-intro{background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:12px;padding:13px 16px;margin-bottom:16px;font-size:.85rem;line-height:1.7;color:#78350f}
+.basics-intro b{color:#92400e}
+.cast-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:10px 0 16px}
+.cast-chip{display:flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:700}
+.cast-chip .ce{font-size:1.05rem}
+.cc-k{background:#eff6ff;border:1.5px solid #bfdbfe;color:#1d4ed8}
+.cc-m{background:#fdf2f8;border:1.5px solid #fbcfe8;color:#be185d}
+.cc-t{background:#f0fdf4;border:1.5px solid #a7f3d0;color:#047857}
+.dlg{display:flex;flex-direction:column;gap:11px;margin:6px 0}
+.turn{display:flex;gap:9px;align-items:flex-start;max-width:90%}
+.turn .av{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.turn .who{font-size:.63rem;font-weight:700;margin-bottom:3px;letter-spacing:.3px}
+.turn .bub{padding:9px 13px;border-radius:14px;font-size:.85rem;line-height:1.65}
+.turn .bub b{font-weight:700}
+.turn.k{align-self:flex-start}
+.turn.k .av{background:#dbeafe}
+.turn.k .who{color:#1d4ed8}
+.turn.k .bub{background:#eff6ff;border:1.5px solid #bfdbfe;border-top-left-radius:4px}
+.turn.k .bub b{color:#1d4ed8}
+.turn.m{align-self:flex-end;flex-direction:row-reverse}
+.turn.m .av{background:#fce7f3}
+.turn.m .who{color:#be185d;text-align:right}
+.turn.m .bub{background:#fdf2f8;border:1.5px solid #fbcfe8;border-top-right-radius:4px}
+.turn.m .bub b{color:#be185d}
+.turn.t{align-self:stretch;max-width:100%;background:#f0fdf4;border:1.5px solid #a7f3d0;border-radius:12px;padding:9px 12px}
+.turn.t .av{background:#d1fae5}
+.turn.t .who{color:#047857}
+.turn.t .bub{background:none;border:none;padding:0}
+.turn.t .bub b{color:#047857}
+.dlg-note{background:#fffbeb;border:1px dashed #f59e0b;border-radius:10px;padding:10px 13px;margin:3px 0;font-size:.8rem;line-height:1.6;color:#92400e}
+.dlg-note .nt-h{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#b45309;margin-bottom:4px}
+.dlg-note b{color:#b45309}
+.basics-facts{margin-top:20px;padding-top:6px;border-top:2px dashed var(--bdr)}
+.bf-h{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin:10px 0 6px}
+.debate-head{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:var(--pc,#4A90E2);text-align:center;margin:2px 0 14px;padding:7px;border-radius:8px;background:#f8fafc;border:1.5px solid var(--bdr)}
+/* Basics quiz (question format) */
+.bq{background:var(--sur);border:1px solid var(--bdr);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.bq-q{font-size:.85rem;font-weight:600;line-height:1.5;margin-bottom:9px}
+.bq-n{display:inline-block;background:var(--ac);color:#fff;font-size:.64rem;font-weight:700;border-radius:5px;padding:1px 6px;margin-right:6px}
+.bq-opts{display:flex;flex-direction:column;gap:6px}
+.bq-opt{text-align:left;padding:8px 12px;border:1.5px solid var(--bdr);border-radius:8px;background:#fff;font-size:.82rem;line-height:1.4;cursor:pointer;font-family:inherit;color:var(--txt);transition:border-color .15s,background .15s}
+.bq-opt:hover{border-color:var(--ac);background:#f0f4ff}
+.bq.answered .bq-opt{cursor:default}
+.bq-opt.bq-correct{border-color:#16a34a;background:#f0fdf4;color:#15803d;font-weight:600}
+.bq-opt.bq-wrong{border-color:#dc2626;background:#fff5f5;color:#b91c1c}
+.bq-exp{display:none;margin-top:9px;padding:9px 12px;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;font-size:.79rem;line-height:1.55;color:#92400e}
+.bq-exp.show{display:block}
+.bq-exp b{color:#b45309}
 </style>
 </head>
 <body>
@@ -185,7 +234,8 @@ header h1{font-size:1.05rem;font-weight:600;flex:1}
     <div class="dtja" id="dtja"></div>
   </div>
   <div class="tabs" id="tabs"></div>
-  <div class="tc active" id="tc-summary"></div>
+  <div class="tc active" id="tc-basics"></div>
+  <div class="tc" id="tc-summary"></div>
 </div>
 <script>
 const T=[
@@ -701,7 +751,7 @@ function getDiag(pi,ri){
       [{type:"compare",color:"#27AE60",title:"失業給付の手厚さ比較",left:{label:"🇯🇵 日本",val:"最大330日",note:"給付あり",color:"#fef3c7"},right:{label:"🇩🇰 デンマーク",val:"最大2年間",note:"前職給与の90%＋再就職支援",color:"#dcfce7"}},
        {type:"flow",color:"#27AE60",title:"シンガポール SkillsFuture",steps:["25歳以上の全国民","¥40,000の学習クレジット支給","好きな講座を受講","スキルアップ→就職・昇給"]}]
     ],
-    carbontax:[
+    climate:[
       [{type:"flow",color:"#E67E22",title:"炭素税＋気候配当のしくみ",steps:["ガソリンに炭素税","税収を政府が集める","全員に均等配布（気候配当）","EVユーザーはトク／ガソリンユーザーはコスト"]},
        {type:"stat",color:"#16a34a",title:"スウェーデン 炭素税30年の成果",num:"−75%",unit:"CO₂排出量",desc:"1991年〜現在",note:"GDPはEU平均を上回り続けた"}],
       [{type:"compare",color:"#E74C3C",title:"炭素税の負担は公平？",left:{label:"🚗 地方住民",val:"大きな打撃",note:"車必須・EV買えない・代替なし",color:"#fee2e2"},right:{label:"🚇 都市住民",val:"影響ほぼゼロ",note:"電車通勤・EV補助も受けやすい",color:"#dcfce7"}},
@@ -733,7 +783,7 @@ function getDiag(pi,ri){
       [{type:"flow",color:"#27AE60",title:"EVが本当に脱炭素に貢献するには",steps:["EVに充電","電力は何から？","火力発電由来→CO₂は減らない","原発・再エネ由来→CO₂ゼロ"]},
        {type:"bar",color:"#27AE60",title:"日本の2030年電源構成目標",items:[{label:"再生可能エネルギー",val:38,display:"38%",color:"#22c55e"},{label:"原子力",val:22,display:"22%",color:"#f59e0b"},{label:"LNG等",val:20,display:"20%",color:"#6b7280"},{label:"石炭等",val:19,display:"19%",color:"#dc2626"}]}]
     ],
-    remotework:[
+    remote:[
       [{type:"stat",color:"#4A90E2",title:"通勤時間を「取り戻す」と年間どれだけ？",num:"750時間",unit:"≒ 約31日分！",desc:"片道90分×往復×250日の計算",note:"家族との時間・自己学習・副業に充てられる"},
        {type:"stat",color:"#8b5cf6",title:"開発者の希望する働き方（2023年調査）",num:"83%",unit:"がリモートorハイブリッドを希望",desc:"完全出社を希望するのはわずか17%",note:"「リモートOK」はエンジニア採用の差別化要因に"}],
       [{type:"flow",color:"#F39C12",title:"「見て学ぶ」はZoomでは難しい",steps:["先輩の資料を横で見る","なぜこの構成？と聞ける","クライアント対応を間近で観察","1年後に一人でできるようになる"]},
@@ -809,8 +859,7 @@ function buildPerspHTML(p,pi){
       <div class="pnum" style="background:${p.col}">${pi+1}</div>
       <div><div class="ptitle">${p.t}</div><div class="ptja">${p.tja}</div></div>
     </div>
-    <div class="pstory" style="--pc:${p.col}">${p.story}
-      <div class="rel-wrap">${p.rel.map((r,i)=>`<div class="rel-item"><div class="rel-label">💡 例${i+1}</div>${buildDiagram(getDiag(pi,i))}<div class="rel-ja">${r.ja}</div><div class="rel-en">${r.en}</div></div>`).join('')}</div>
+    <div class="pstory" style="--pc:${p.col}">${(typeof DEBATE!=='undefined'&&DEBATE[cur.id]&&DEBATE[cur.id][pi])?renderDebate(DEBATE[cur.id][pi],pi):p.story+`<div class="rel-wrap">${p.rel.map((r,i)=>`<div class="rel-item"><div class="rel-label">💡 例${i+1}</div>${buildDiagram(getDiag(pi,i))}<div class="rel-ja">${r.ja}</div><div class="rel-en">${r.en}</div></div>`).join('')}</div>`}
     </div>
     <div class="pc-grid">
       <div class="pros-block">
@@ -848,6 +897,532 @@ function buildPerspHTML(p,pi){
   </div>`;
 }
 
+// ─── 基礎知識：固定キャラの会話 ───────────────────────
+const CAST={
+  k:{name:'ケン（賛成）',av:'👦'},
+  m:{name:'ミオ（反対）',av:'👧'},
+  t:{name:'先生（中立）',av:'🧑‍🏫'}
+};
+const BASICS={
+ai:[
+{s:'t',t:`Today, our topic is "AI and the Future of Work." Ken, Mio — first, can either of you explain what <b>AI (Artificial Intelligence)</b> actually is?`},
+{s:'k',t:`It is a computer that thinks like a human, right? Like ChatGPT, or the tools that generate pictures automatically!`},
+{s:'m',t:`But it is not really "thinking," is it? I heard it is just doing math very fast.`},
+{s:'t',t:`Sharp point, Mio. To be precise, AI is <b>a system that learns patterns from huge amounts of data</b>. Show it millions of cat photos, and it teaches itself what "cat-ness" looks like. We call this <b>machine learning</b>. It does not "understand" a cat the way you do — it recognizes statistical patterns.`},
+{s:'m',t:`So the AI enemy in a video game and ChatGPT are the same thing?`},
+{s:'t',t:`Great question. There are two broad kinds. <b>Narrow AI</b> does one job — recommend a video, filter spam, aim in a game. <b>Generative AI</b> creates brand-new text, images, or code. ChatGPT is generative, and that is exactly why this moment feels so different from before.`},
+{s:'k',t:`Hold on — where do I actually meet AI in real life? It still sounds like science fiction to me.`},
+{s:'t',t:`You already meet it dozens of times a day without noticing! When YouTube or TikTok picks your next video — that is AI. When Google Translate turns Japanese into English, when your phone unlocks by seeing your face, when your email quietly hides spam — all AI. And when ChatGPT writes an essay draft in ten seconds, that is the newest and most powerful kind.`},
+{s:'m',t:`Okay, those feel helpful and harmless. So when exactly does AI start taking away people's jobs?`},
+{s:'t',t:`Let me give you the clearest real example: <b>computer programming</b>, also called <b>coding</b>. Coding means writing the exact instructions that make every app, game, and website work. Until recently, it could only be done by trained engineers, typing it out line by line.`},
+{note:`What is happening RIGHT NOW: coding`,body:`A few years ago, building a big new software feature might take a <b>team of 10 programmers several months</b>. Today, one skilled programmer using an AI assistant (such as <b>GitHub Copilot</b>) can describe the goal in plain English, and the AI writes most of the code instantly. In 2024, Google said that <b>more than 25% of all new code at Google is now written by AI</b>. Work that once needed ten people can increasingly be done by one.`},
+{s:'m',t:`Wait, sorry — what exactly is "GitHub Copilot"? I keep hearing that name.`},
+{s:'t',t:`Good to ask, Mio! <b>GitHub</b> is the world's most popular website where programmers store and share their code. <b>Copilot</b> is an AI built into it that suggests or even writes code as you type — like autocomplete, but for whole programs. The name means it sits <em>beside</em> you like a co-pilot in a plane, helping you fly, not replacing you.`},
+{s:'k',t:`Whoa — so that one programmer basically became ten times more powerful! They can build so much more now.`},
+{s:'m',t:`But wait… what happened to the other nine programmers? That is my whole worry, right there in a single example.`},
+{s:'t',t:`And that, in one small story, <b>IS the entire debate</b>. Ken sees one person doing the work of ten — a huge leap in productivity. Mio asks where the other nine went. Both of you are staring at the <em>exact same fact</em>. To judge who is right, we have to zoom out to history.`},
+{note:`A short history of AI`,body:`The term "AI" was born in <b>1956</b> at the Dartmouth Conference. For decades, progress was slow — a period researchers even call the "AI winter." But in the 2010s a method called <b>deep learning</b> made AI dramatically smarter. Then in <b>2022</b>, ChatGPT reached 100 million users in just two months, and the age of AI that anyone can use began.`},
+{s:'k',t:`So if AI can already help doctors read X-rays and write software, surely it just makes life easier for everyone!`},
+{s:'m',t:`But "helping" and "replacing" can be the same thing — we just saw it with the ten programmers.`},
+{s:'t',t:`That tension is actually <b>200 years old</b>. The worry that machines will steal human jobs — the fear of <b>automation</b> — has repeated again and again throughout history.`},
+{note:`The Luddites (1811, England)`,body:`During the Industrial Revolution, weavers who feared losing their jobs to the new <b>power loom</b> smashed the machines. This became known as the <b>Luddite movement</b>. Yet in the end, cloth became so cheap that demand exploded — and the number of textile workers actually <b>grew</b>. Even today, "Luddite" means someone who resists new technology. It is one of history's most famous lessons about automation.`},
+{s:'k',t:`See! Jobs increased even after the machines arrived. So AI will create new jobs too. There is even a famous modern example — the ATM.`},
+{s:'t',t:`Yes — when cash machines spread, people predicted bank tellers would vanish. Instead banks opened more branches and teller jobs actually rose for two decades. Ken loves that story. But Mio, you look unconvinced.`},
+{s:'m',t:`Because this time may be different. Old machines replaced <b>physical</b> work — muscles. AI replaces <b>cognitive labor</b> — the thinking jobs like lawyers, accountants, even programmers. And the change is happening far faster than 200 years.`},
+{s:'t',t:`Both of you are pointing at real evidence. Let me put some numbers on the table so this is not just opinion.`},
+{note:`The numbers everyone argues about`,body:`The <b>World Economic Forum</b> (a global organization where world leaders and company bosses meet each year) estimated in 2023 that AI could <b>displace 83 million jobs</b> worldwide by 2027, while <b>creating 69 million</b> — a net loss of about 14 million. <b>Goldman Sachs</b>, a major investment bank, estimated 300 million jobs could be affected, with about 18% of work tasks automatable. Notice: the same technology can be called a "job-killer" or a "job-creator" depending on which number you emphasize.`},
+{s:'k',t:`See, 69 million new jobs! People will move into new roles, like they always have.`},
+{s:'m',t:`But who gets the money in the meantime? When one company automates, the profit goes to shareholders — not to the worker who lost their job and cannot instantly become an AI engineer.`},
+{s:'t',t:`That points to a real issue: the <b>speed</b> of change and who benefits. This is why governments are stepping in. The <b>EU AI Act (2024)</b> is the world's first major AI law — it bans the riskiest uses and demands transparency. Others, like Denmark, focus on retraining workers, an idea called <b>reskilling</b>.`},
+{s:'t',t:`So here is the map of the debate. <b>Ken's side (Pro-AI)</b>: embrace it — AI creates more than it destroys. <b>Mio's side (Skeptic)</b>: slow down — this time is too fast and too unequal. And <b>my neutral view</b>: the outcome depends not on the technology itself, but on <b>the policies society chooses</b>.`},
+{s:'t',t:`Before we hear the full debate, test yourself on the key facts below. Then open the three perspective tabs — each one is a real debate between Ken, Mio, and me, Model-UN style. You be the judge!`}
+],
+climate:[
+{s:'t',t:`Today's topic: the <b>carbon tax</b>. Ken, Mio — what do you think a "carbon tax" even means?`},
+{s:'m',t:`You pay money if you release carbon dioxide? Like... a tax on pollution?`},
+{s:'k',t:`But why should anyone pay for the air? That sounds strange.`},
+{s:'t',t:`Let us start from the basics. When we burn <b>fossil fuels</b> — oil, coal, gas — we release <b>carbon dioxide (CO2)</b>, which traps heat and warms the planet. That is <b>global warming</b>. A carbon tax simply puts a price tag on each ton of CO2.`},
+{note:`Why scientists worry`,body:`Since the Industrial Revolution, Earth's average temperature has risen about <b>1.1°C</b>. That sounds tiny, but it already means fiercer heatwaves, floods, and storms. CO2 from burning fuel is the main cause, and it can linger in the air for over a century.`},
+{s:'k',t:`Okay, but a tax raises the price of gasoline and electricity. Everyone would suffer!`},
+{s:'m',t:`And if we do NOT cut CO2, the floods and heatwaves get worse. So which pain is worse?`},
+{s:'t',t:`That is the trade-off. The clever idea behind a carbon tax is this: if polluting <em>costs money</em>, people and companies choose cleaner options by themselves — no government order needed. Economists call it "putting a price on carbon."`},
+{s:'m',t:`But will poor families not be hit hardest? They cannot just buy a new electric car.`},
+{s:'t',t:`Excellent point — that is called a <b>regressive</b> effect, when a tax hurts low-income people more. One popular fix is a <b>carbon dividend</b>: the government collects the tax, then hands the money back to every citizen equally.`},
+{s:'k',t:`Oh, so a family that pollutes less could actually come out ahead?`},
+{s:'t',t:`Exactly. Sweden shows it can work at scale.`},
+{note:`Sweden's 30-year experiment (since 1991)`,body:`Sweden created one of the world's first carbon taxes in 1991, now the highest on Earth. Over 30+ years, CO2 emissions <b>fell about 27%</b> while the economy <b>grew about 75%</b> — the strongest evidence that cutting carbon need not make a country poorer.`},
+{s:'m',t:`Still, in 2018 France tried a fuel tax and people protested in the streets. So it is not that simple.`},
+{s:'t',t:`Right. And there is one more trap: if only one country taxes carbon, its factories may just move abroad — the pollution does not stop, it relocates. That is called <b>carbon leakage</b>.`},
+{s:'t',t:`So the debate splits three ways. <b>Ken (Pro-tax / market)</b>: price carbon now and let the market cut it. <b>Mio (Fairness first)</b>: protect ordinary people or the policy collapses. And <b>my neutral view</b>: it only works if countries cooperate. Take the quiz, then judge the debate!`}
+],
+ubi:[
+{s:'t',t:`Today's topic: <b>Universal Basic Income</b>, or <b>UBI</b>. Ken, have you heard of it?`},
+{s:'k',t:`Is that the idea where the government gives everyone money? Even if you do not work?`},
+{s:'m',t:`Would people not just stop working, then?`},
+{s:'t',t:`Great questions. UBI means <b>the government pays every citizen a regular sum of money, with no conditions</b>. Rich or poor, working or not — everyone gets the same amount.`},
+{note:`Where the idea comes from`,body:`The idea is old — the thinker <b>Thomas Paine</b> proposed a version in the 1790s. In the 1970s, US President Nixon nearly passed a related plan. Recently, real experiments have run in <b>Finland, Kenya, Canada, and the US city of Stockton</b>.`},
+{s:'k',t:`But why would we even want this? It sounds expensive.`},
+{s:'t',t:`One big reason is the fear we met with AI: if machines take many jobs, UBI could guarantee everyone a basic living. Supporters also say it removes the constant stress of poverty.`},
+{s:'m',t:`So where does all that money come from? Taxes, right? It must be a huge amount.`},
+{s:'t',t:`Sharp. In the US, giving every adult 1,000 dollars a month would cost roughly <b>3 trillion dollars a year</b> — a giant share of the whole national budget. That cost is the number-one objection.`},
+{s:'k',t:`And in the real experiments — did people stop working?`},
+{s:'t',t:`Surprisingly, no. In Finland and in Stockton, employment stayed the same or even <b>rose</b>, and mental health improved. The "everyone gets lazy" prediction did not appear.`},
+{s:'m',t:`But paying the same amount to a billionaire and to a struggling parent feels wasteful.`},
+{s:'t',t:`That is the strongest counter-argument, and it points to a middle path — more for those who need it, less for those who do not. That version can be built like a <b>negative income tax</b>: the help shrinks slowly as your income rises, so working more always leaves you better off.`},
+{s:'t',t:`So: <b>Ken (Pro-UBI)</b> — freedom and security for all. <b>Mio (Anti-UBI)</b> — too costly and better spent on those in real need. <b>My neutral view</b> — target it to the people who need it most. Quiz first, then the debate!`}
+],
+socialmedia:[
+{s:'t',t:`Today's topic: <b>regulating social media</b>. Do you two use it?`},
+{s:'k',t:`Every day — TikTok, Instagram, YouTube.`},
+{s:'m',t:`Same. But sometimes I scroll so long I cannot sleep.`},
+{s:'t',t:`Then you already know its power. Social media lets anyone post and share instantly. The tricky part is the hidden <b>algorithm</b> — the program that decides what you see next.`},
+{s:'m',t:`Wait, what exactly is an "algorithm"?`},
+{s:'t',t:`Good to ask! An <b>algorithm</b> here is just a set of rules a computer follows to pick content. Social media algorithms are tuned to <b>keep you watching as long as possible</b>, because more watching means more advertising money.`},
+{note:`Why false news spreads`,body:`A famous MIT study found that <b>false news spreads about 6 times faster</b> than true news on social media, because shocking or angry posts get more clicks. The algorithm never asks "is this true?" — only "will this keep people scrolling?"`},
+{s:'k',t:`So the app shows the most exciting stuff, even if it is harmful?`},
+{s:'m',t:`That worries me — especially for younger kids.`},
+{note:`The Facebook whistleblower (2021)`,body:`A former employee, <b>Frances Haugen</b>, leaked Facebook's own research showing the company knew <b>Instagram made body-image worse for about 1 in 3 teenage girls</b> — yet did little, because fixing it would cut engagement. A "whistleblower" is an insider who reveals wrongdoing.`},
+{s:'k',t:`Then the government should just step in and regulate them!`},
+{s:'m',t:`But who decides what counts as "harmful"? Is it not dangerous to let a government remove posts? What about free speech?`},
+{s:'t',t:`And that is the whole debate. <b>Ken (Regulate now)</b> — the harm is proven, act. <b>Mio (Free speech first)</b> — government control of speech is the bigger danger. <b>My neutral view</b> — do not censor content; change the <b>business model</b> that rewards outrage. Quiz, then debate!`}
+],
+nuclear:[
+{s:'t',t:`Today: the future of <b>nuclear power</b>. Do you know how a nuclear plant makes electricity?`},
+{s:'k',t:`It uses uranium, right? Some kind of huge energy.`},
+{s:'m',t:`But it feels dangerous. Like Fukushima.`},
+{s:'t',t:`Both true. A nuclear plant splits uranium atoms — called <b>nuclear fission</b> — and the heat boils water into steam that spins a turbine. Its special feature: it makes <b>huge, steady electricity with almost no CO2</b>.`},
+{note:`A short history`,body:`Peaceful nuclear power began in the 1950s. <b>France</b> now makes about 70% of its electricity this way. But two huge accidents — <b>Chernobyl (1986)</b> and <b>Fukushima (2011)</b> — made much of the world cautious, and Germany chose to shut all its plants.`},
+{s:'k',t:`No CO2? Then it is perfect for fighting climate change!`},
+{s:'m',t:`But if an accident happens, whole towns become unlivable. And the waste stays dangerous for tens of thousands of years.`},
+{s:'t',t:`So nuclear is kind to the climate but carries accident and waste risks. That is the core tension.`},
+{s:'m',t:`Where does that radioactive waste even go?`},
+{note:`Finland's Onkalo`,body:`For 60+ years no country had a permanent home for high-level nuclear waste. Finland is building the first: <b>Onkalo</b>, a vault 400 meters underground meant to seal the waste safely for <b>100,000 years</b>. Most other countries, including Japan, still have no final site.`},
+{s:'k',t:`The climate crisis is now, though. We should use nuclear to cut carbon fast.`},
+{s:'m',t:`I would rather build solar and wind — they have become incredibly cheap.`},
+{s:'t',t:`So: <b>Ken (Pro-nuclear)</b> — climate urgency demands it. <b>Mio (Anti-nuclear)</b> — risks and cost outweigh the benefits. <b>My neutral view</b> — keep today's plants running but be careful about building new ones. Quiz, then debate!`}
+],
+remote:[
+{s:'t',t:`Today: <b>remote work</b> versus the office. Do you know why working from home suddenly spread?`},
+{s:'k',t:`COVID! Everyone had to work from home.`},
+{s:'m',t:`Even school went online.`},
+{s:'t',t:`Exactly. <b>Remote work</b> means doing your job from home instead of going to an office. When COVID hit in 2020, the world ran the biggest work-from-home experiment in history — almost overnight.`},
+{note:`What the experiment showed`,body:`By mid-2020, about <b>60% of US office workers</b> were remote. The surprise: for many companies, output did <b>not</b> fall. That result launched the whole "do we even need the office?" debate.`},
+{s:'k',t:`No commute, more freedom — sounds perfect!`},
+{s:'m',t:`But what about new employees? If you cannot watch your seniors work, how do you learn?`},
+{s:'t',t:`A real concern. Research suggests remote work suits <b>experienced</b> people but can slow the growth of <b>beginners</b>, who learn a lot just by being near others.`},
+{note:`The "watercooler effect"`,body:`An MIT study of 20,000 inventors found people in the <b>same building</b> filed about <b>25% more patents together</b> than colleagues in different buildings. Chance hallway chats — the "watercooler effect" — spark ideas that scheduled video calls often miss.`},
+{s:'k',t:`Still, a three-hour daily commute is a huge waste of life.`},
+{s:'m',t:`Maybe the answer is not fully remote, but meeting up sometimes.`},
+{s:'t',t:`So: <b>Ken (Pro-remote)</b> — flexibility is the future. <b>Mio (Pro-office)</b> — being together builds skills and trust. <b>My neutral view</b> — a <b>hybrid</b> mix of both. Quiz, then debate!`}
+],
+healthcare:[
+{s:'t',t:`Today: <b>universal healthcare</b>. In Japan, seeing a doctor is cheap. Do you know why?`},
+{s:'k',t:`You show your insurance card and only pay 30%?`},
+{s:'m',t:`Is that not normal everywhere?`},
+{s:'t',t:`Actually, no! Japan has <b>universal health coverage</b> — everyone joins an insurance system and shares the cost together. But the United States has no nationwide system that covers everyone.`},
+{note:`The US puzzle`,body:`The US spends about <b>twice as much per person</b> on healthcare as Japan, yet <b>25 to 30 million Americans have no insurance</b>. A simple treatment can bring a bill of thousands of dollars, and medical debt is a leading cause of personal bankruptcy there.`},
+{s:'k',t:`Twice as much money but millions uninsured? Then just cover everyone!`},
+{s:'m',t:`But if the government pays for everything, taxes rise a lot, right?`},
+{s:'t',t:`That is the heart of it: <b>is healthcare a right the state must guarantee, or a service you buy in a market?</b> Different countries answer differently.`},
+{note:`Three models`,body:`<b>Single-payer</b> (UK, Canada): the government pays for care. <b>Regulated multi-payer</b> (Germany, France): insurance is required but run by many funds. <b>Mostly market</b> (US): private insurance with gaps. Japan is close to single-payer, with a 30% co-payment and a monthly cap.`},
+{s:'k',t:`Health is about life itself — surely the country should protect it.`},
+{s:'m',t:`But without competition, might hospitals get slow? I hear UK waiting lists are months long.`},
+{s:'t',t:`So: <b>Ken (Universal coverage)</b> — healthcare is a right. <b>Mio (Market-based)</b> — competition drives quality and innovation. <b>My neutral view</b> — fix the worst failures pragmatically. Quiz, then debate!`}
+],
+education:[
+{s:'t',t:`Our last topic: <b>is a college degree worth it?</b> Do you two want to go to university?`},
+{s:'k',t:`Definitely! A degree gets you a better job, right?`},
+{s:'m',t:`But tuition is so expensive, and some graduates still cannot find work.`},
+{s:'t',t:`A perfect disagreement. For decades, a <b>degree</b> was seen as the ticket to a good career — and on average, graduates really do earn more over a lifetime.`},
+{note:`The "degree premium"`,body:`In the US, a typical college graduate earns roughly <b>one million dollars more</b> over a lifetime than someone with only a high-school diploma. Economists call this gap the <b>degree premium</b> — the single strongest argument for going to college.`},
+{s:'k',t:`See? Everyone should go to university!`},
+{s:'m',t:`But many students borrow huge amounts — <b>student loans</b> — and start adult life deep in debt. And in tech, some people succeed with no degree at all.`},
+{s:'t',t:`True — and recently big companies like <b>Google, Apple, and IBM</b> began dropping the degree requirement for many jobs. They now say: show us the skills.`},
+{s:'k',t:`Skills instead of a diploma? How do you prove that without a degree?`},
+{note:`New alternatives`,body:`Programs like <b>Google Career Certificates</b> teach job skills in about 6 months for a few hundred dollars — far cheaper and faster than a 4-year degree. Some employers now accept them as equal to a degree for certain roles.`},
+{s:'m',t:`But not everyone can even afford good schooling in the first place. That feels unfair.`},
+{s:'t',t:`So: <b>Ken (Yes, degrees pay off)</b>. <b>Mio (No, the system is broken and alternatives work)</b>. <b>My neutral view</b> — the real fix is cost and fairness, not the degree itself. Quiz, then debate!`}
+]
+};
+// 基礎知識クイズ（Key Facts を問題形式に）
+const BASICS_QUIZ={
+ai:[
+{q:`In what year — and at what event — was the term "Artificial Intelligence" first coined?`,opts:[`1956, at the Dartmouth Conference`,`1811, during the Luddite movement`,`2022, when ChatGPT was released`,`1990, at the founding of the internet`],ans:0,exp:`The term "AI" was coined in 1956 at the Dartmouth Conference. Real-world usable AI, however, only exploded after deep learning (2010s) and ChatGPT (2022).`},
+{q:`In the coding example, what is AI doing to software work — and why is it "the whole debate in miniature"?`,opts:[`AI made coding impossible, so no new software is written`,`Work that once took a team of ~10 programmers can now be done by ~1 using AI — optimists see productivity, skeptics ask where the other 9 went`,`AI made programmers take 10 times longer than before`,`Coding is unchanged; AI only affects factory jobs`],ans:1,exp:`With assistants like GitHub Copilot, one programmer can do what took a team of ten — Google said over 25% of its new code was AI-written in 2024. The same fact looks like a win (Pro-AI) or a threat (Skeptic) depending on your view.`},
+{q:`According to the World Economic Forum's 2023 estimate, what is the projected NET effect of AI on global jobs by 2027?`,opts:[`A net gain of 83 million jobs`,`Roughly 83 million displaced but 69 million created — a net loss of about 14 million`,`No change at all`,`A net loss of 300 million jobs`],ans:1,exp:`The WEF estimated ~83 million jobs displaced and ~69 million created — a net loss of about 14 million. Goldman Sachs separately estimated 300 million jobs could be affected (not necessarily lost).`},
+{q:`What is the key LESSON of the Luddite movement (1811) that the Pro-AI side loves to cite?`,opts:[`Smashing machines successfully stopped the Industrial Revolution`,`New technology always destroys more jobs than it creates`,`Cheaper cloth raised demand so much that textile jobs actually grew`,`Governments should ban new machines to protect workers`],ans:2,exp:`Though workers smashed the looms, cheaper cloth caused demand to explode and textile employment grew. Pro-AI advocates use this to argue automation expands the economy and creates new work.`},
+{q:`Why do skeptics argue that AI is different from PAST waves of automation?`,opts:[`AI is slower to develop than earlier machines`,`AI only affects factory and physical labor`,`AI targets cognitive (thinking) work and is changing far faster than earlier revolutions`,`AI has no effect on high-skilled professions`],ans:2,exp:`Earlier machines replaced physical labor over ~80–100 years. AI targets cognitive labor — lawyers, accountants, coders — and could transform work in 10–15 years, leaving less time for society to adapt.`},
+{q:`What does the EU AI Act (2024) represent in this debate?`,opts:[`A law requiring every company to adopt AI`,`The world's first major law regulating AI — banning the riskiest uses and demanding transparency`,`A ban on all artificial intelligence in Europe`,`A tax that funds universal basic income`],ans:1,exp:`The EU AI Act (2024) is the first major AI regulation. It bans high-risk uses and requires transparency — an example of the "neutral" view that policy, not the technology alone, shapes the outcome.`}
+],
+climate:[
+{q:`What is a carbon tax?`,opts:[`A fee charged on the carbon (CO2) content of fossil fuels`,`A tax only on electric cars`,`A payment given to oil companies`,`A tax on breathing`],ans:0,exp:`A carbon tax puts a price on each ton of CO2 released by burning fossil fuels, so cleaner choices become cheaper by comparison.`},
+{q:`Sweden has taxed carbon since 1991. What happened to its emissions and economy?`,opts:[`Both emissions and GDP fell`,`Emissions fell about 27% while GDP grew about 75%`,`Emissions rose but GDP fell`,`Nothing changed`],ans:1,exp:`Sweden cut emissions ~27% while its economy grew ~75% — strong evidence that cutting carbon need not make a country poorer.`},
+{q:`What triggered France's 2018 "Yellow Vest" protests?`,opts:[`A ban on electric cars`,`A fuel tax increase that hit rural drivers hardest`,`Closing all nuclear plants`,`Free public transport`],ans:1,exp:`A fuel tax meant as climate policy hit rural workers who had no train alternative. The backlash forced the government to cancel it — showing why fairness matters.`},
+{q:`What does "carbon leakage" mean?`,opts:[`CO2 leaking from a pipe`,`Industries moving to countries with no carbon price, so emissions relocate instead of falling`,`Tax money being stolen`,`Carbon dissolving in the ocean`],ans:1,exp:`If only one country prices carbon, its factories may move abroad. Global emissions do not drop — they just happen elsewhere. This is why coordination (and tools like CBAM) matter.`},
+{q:`What is a "carbon dividend"?`,opts:[`A bonus paid to oil companies`,`Returning the carbon-tax money back to citizens equally`,`A discount on gasoline`,`A tax on dividends`],ans:1,exp:`With a carbon dividend, the tax is collected then handed back equally to everyone. Since low-income households pollute less, most of them come out ahead financially.`}
+],
+ubi:[
+{q:`What is Universal Basic Income (UBI)?`,opts:[`Money paid only to unemployed people`,`Regular, unconditional money paid by the government to every citizen`,`A loan you must repay`,`A tax on the rich`],ans:1,exp:`UBI gives every citizen a regular sum with no conditions — working or not, rich or poor, everyone receives the same.`},
+{q:`Roughly how much would a $1,000/month UBI for all US adults cost per year?`,opts:[`About $30 billion`,`About $300 billion`,`About $3 trillion`,`About $300 trillion`],ans:2,exp:`Around $3 trillion a year — a huge share of the entire US budget. This cost is the main objection to full universal UBI.`},
+{q:`In real UBI experiments (Finland, Stockton), what happened to employment?`,opts:[`Almost everyone stopped working`,`Employment stayed the same or even rose, and wellbeing improved`,`Employment collapsed within a year`,`Only rich people benefited`],ans:1,exp:`The "everyone gets lazy" prediction did not appear. Employment held steady or rose, and mental health improved.`},
+{q:`Why do critics say universal UBI can be "wasteful"?`,opts:[`It pays the same amount to billionaires and to struggling families`,`It is illegal in most countries`,`It only helps the government`,`It gives too little to anyone`],ans:0,exp:`Paying everyone equally means less is left for those in real need. Critics prefer targeting help to the people who need it most.`},
+{q:`What is a "negative income tax," the middle-path version of UBI?`,opts:[`A tax that only rich people pay`,`Benefits that shrink slowly as income rises, so working more always pays`,`A fine for not working`,`A tax refund for companies`],ans:1,exp:`A negative income tax tops up low incomes and phases out gradually — so earning more always leaves you better off, avoiding the "poverty trap."`}
+],
+socialmedia:[
+{q:`What is an "algorithm" on social media?`,opts:[`A type of computer virus`,`A set of rules the app uses to choose what content to show you`,`A government censor`,`A kind of advertisement`],ans:1,exp:`The algorithm decides your feed. Social media algorithms are tuned to maximize watch time — because more watching means more ad revenue.`},
+{q:`According to a famous study, how does false news spread compared to true news?`,opts:[`Much slower`,`At the same speed`,`About 6 times faster`,`It does not spread at all`],ans:2,exp:`False news spreads about 6x faster, because shocking content gets more clicks. The algorithm rewards engagement, not truth.`},
+{q:`What did whistleblower Frances Haugen reveal about Facebook in 2021?`,opts:[`Facebook had no effect on teenagers`,`Facebook knew Instagram harmed about 1 in 3 teen girls' body image but did little`,`Facebook had already fixed all its problems`,`Facebook planned to shut down`],ans:1,exp:`Leaked internal research showed the company knew about the harm to teen girls but hesitated to act, because fixes would reduce engagement.`},
+{q:`What is the main free-speech worry about regulating social media?`,opts:[`Regulation is too cheap`,`Governments deciding what is "harmful" could silence legitimate speech`,`Users would post more`,`Companies would earn less money`],ans:1,exp:`Whoever holds the power to remove "harmful" content can misuse it. Movements like the Arab Spring relied on speech that those in power disliked.`},
+{q:`What is the "reform the business model" (neutral) approach?`,opts:[`Ban social media entirely`,`Let the government approve every post`,`Change the profit incentive that rewards outrage — without censoring content`,`Do nothing at all`],ans:2,exp:`Instead of judging content, change what is profitable — for example with data portability or a chronological feed — so platforms stop being rewarded for amplifying outrage.`}
+],
+nuclear:[
+{q:`How does a nuclear power plant make electricity?`,opts:[`By burning uranium like coal`,`By splitting uranium atoms (fission); the heat makes steam that spins a turbine`,`By using sunlight on uranium panels`,`By burning natural gas`],ans:1,exp:`Nuclear fission releases heat, which boils water into steam to spin a turbine — producing steady electricity with almost no CO2.`},
+{q:`Which country makes about 70% of its electricity from nuclear power?`,opts:[`Germany`,`Japan`,`France`,`Australia`],ans:2,exp:`France gets ~70% of its electricity from nuclear and has one of Europe's lowest-carbon grids — the go-to example for the pro-nuclear side.`},
+{q:`What are the two main risks that worry the anti-nuclear side?`,opts:[`Noise and traffic`,`Accidents (like Fukushima) and radioactive waste that lasts tens of thousands of years`,`Too much CO2`,`Using too little land`],ans:1,exp:`A serious accident can make whole areas unlivable, and high-level waste stays dangerous for tens of thousands of years with few permanent storage sites.`},
+{q:`What is Finland's "Onkalo"?`,opts:[`A new type of reactor`,`The world's first permanent deep-underground store for nuclear waste`,`A solar power farm`,`A nuclear accident`],ans:1,exp:`Onkalo is being built to seal high-level waste 400m underground for 100,000 years — the first permanent repository, answering "where does the waste go?"`},
+{q:`What is the neutral "conditional" position on nuclear?`,opts:[`Build as many new plants as fast as possible`,`Shut every plant immediately`,`Keep existing plants running but be cautious about building new ones`,`Ban all energy research`],ans:2,exp:`The conditional view: closing working plants too early forces a return to fossil fuels, but new plants are slow and costly — so keep current ones while scaling up renewables.`}
+],
+remote:[
+{q:`Why did remote work suddenly spread in 2020?`,opts:[`A new law required it`,`The COVID pandemic forced the largest work-from-home experiment in history`,`Offices became illegal`,`The internet was invented`],ans:1,exp:`COVID pushed roughly 60% of US office workers home almost overnight — and output often did not fall, launching the remote-vs-office debate.`},
+{q:`What did the MIT study of 20,000 inventors find about being in the same building?`,opts:[`It made no difference`,`People in the same building co-filed about 25% more patents`,`It reduced patents by half`,`Only managers benefited`],ans:1,exp:`Physical proximity produced ~25% more joint patents — evidence for the "watercooler effect," where chance encounters spark ideas remote tools miss.`},
+{q:`According to research, remote work tends to help whom the most?`,opts:[`Brand-new employees`,`Experienced workers doing focused individual tasks`,`Only managers`,`No one at all`],ans:1,exp:`Experienced workers gain from fewer interruptions, while beginners can lose the informal, "learn by watching" mentorship that offices provide.`},
+{q:`What is the neutral "hybrid" position?`,opts:[`Everyone must be fully remote`,`Everyone must be fully in-office`,`A deliberate mix — office for collaboration, home for focused work`,`Work only on weekends`],ans:2,exp:`Hybrid intentionally matches place to task: office days for collaboration and mentoring, home days for deep focused work.`},
+{q:`Why do pro-office voices worry about fully remote work?`,opts:[`It uses too much electricity`,`New hires miss informal mentorship and teams build trust less easily`,`Remote workers earn too much`,`It is against the law`],ans:1,exp:`The biggest hidden cost falls on junior staff, who learn culture and skills by being around experienced colleagues in person.`}
+],
+healthcare:[
+{q:`What does "universal healthcare" mean?`,opts:[`Only rich people get care`,`Everyone is covered, sharing costs so all can access care`,`Healthcare is free of any cost anywhere`,`Only emergencies are covered`],ans:1,exp:`Universal coverage means everyone is insured and shares the cost. Japan does this; the US has no nationwide system covering everyone.`},
+{q:`How does US healthcare spending and coverage compare to peer countries?`,opts:[`It spends less and covers everyone`,`It spends about twice as much per person, yet 25-30 million remain uninsured`,`It spends the same and covers everyone`,`It spends nothing`],ans:1,exp:`The US spends roughly double per person, yet tens of millions are uninsured and medical debt is a top cause of bankruptcy — the puzzle at the debate's center.`},
+{q:`In a "single-payer" system (like the UK or Canada), who pays for care?`,opts:[`Only private insurance companies`,`The government pays for all care`,`Only the patient`,`Employers only`],ans:1,exp:`In single-payer systems the government funds care for everyone. Germany and France instead use required insurance run by many funds.`},
+{q:`What is a common criticism of government-run universal systems?`,opts:[`They are too cheap`,`Without competition they can develop long waiting lists`,`They cover too many people`,`They spend too little`],ans:1,exp:`The UK's NHS, for example, has faced waiting lists of millions — the market-based side argues competition drives faster, higher-quality care.`},
+{q:`What is the neutral "pragmatic reform" position?`,opts:[`Copy one country exactly`,`Abolish all insurance`,`Fix the worst failures step by step rather than replacing the whole system`,`Do nothing`],ans:2,exp:`Pragmatic reform targets the biggest problems — coverage gaps, drug prices, admin waste — instead of demanding one all-or-nothing model.`}
+],
+education:[
+{q:`What is the "degree premium"?`,opts:[`A fee you pay to enter college`,`The extra lifetime earnings a graduate makes vs. a non-graduate`,`A scholarship for top students`,`The cost of textbooks`],ans:1,exp:`In the US, graduates earn roughly $1 million more over a lifetime than high-school-only workers. This gap is the strongest case for college.`},
+{q:`What recent change did companies like Google, Apple, and IBM make?`,opts:[`They require two degrees now`,`They dropped the degree requirement for many jobs, focusing on skills`,`They stopped hiring entirely`,`They only hire PhDs`],ans:1,exp:`Several major firms removed the four-year-degree requirement for many roles, judging candidates on demonstrated skills instead.`},
+{q:`What are "Google Career Certificates"?`,opts:[`Four-year university degrees`,`Short (about 6-month) skill programs costing a few hundred dollars`,`Free college scholarships`,`A type of student loan`],ans:1,exp:`They teach job-ready skills in months for a fraction of a degree's cost, and some employers now accept them as equivalent for certain roles.`},
+{q:`What is the main worry about relying on student loans?`,opts:[`Graduates start adult life with heavy debt`,`Loans are illegal`,`Loans make college free`,`Loans guarantee a job`],ans:0,exp:`Large student loans can leave graduates in years of debt, which distorts whether a degree truly "pays off" for each individual.`},
+{q:`What is the neutral "reform" position in this debate?`,opts:[`Abolish all universities`,`Force everyone to attend college`,`Fix cost and access (and add alternatives) rather than arguing degrees are all-good or all-bad`,`Ignore the problem`],ans:2,exp:`Reformers say both extremes miss the point: countries like Germany and Finland show affordable, high-quality higher education is possible — the real issue is cost and fairness.`}
+]
+};
+// Model UN 形式のディベート（各視点＝会話）
+const DEBATE={
+ai:[
+[
+{s:'t',t:`Order, please. Our first position is <b>Pro-AI: Embrace the Change</b>. Ken, you have the floor for your opening statement.`},
+{s:'k',t:`Thank you, Chair. History is on my side. Every time a machine took over a task, humans moved up to better work. When ATMs spread, bank teller jobs did not vanish — banks opened more branches and teller numbers <b>rose</b> for twenty years. Let me show the panel exactly what I mean.`},
+{ex:1},
+{s:'k',t:`The same pattern shows up in everyday automation — like the self-checkout at a convenience store.`},
+{ex:0},
+{s:'k',t:`And in medicine today, at UCSF an AI reads mammograms with fewer misses — but it did not fire the radiologists. It freed them for complex cases, patient counseling, and research. AI plus human beats either one alone.`},
+{s:'m',t:`Point of challenge, Chair. That works for a highly-trained radiologist. But what about a 47-year-old truck driver? When self-driving trucks arrive, he cannot simply "move up" to become an AI engineer. The skill gap is years wide.`},
+{s:'k',t:`Fair, but the economy grows overall. GitHub's Copilot makes programmers <b>55% faster</b>, and yet developer hiring went <b>up</b>, not down. A bigger economic pie funds entirely new industries we cannot even name yet.`},
+{s:'m',t:`But who eats that pie? The productivity gains flow to shareholders, not to the displaced worker.`},
+{s:'k',t:`Long term, cheaper goods and new services reach everyone — just like cheap cloth once did. Optimism has been right for 200 years.`},
+{s:'t',t:`Thank you both. So the Pro-AI <b>strength</b>: history and current data show automation expanding total employment. The <b>weakness</b> Mio exposed: it can take decades, and the displaced individual suffers now. Let us hear the opposing bench.`}
+],
+[
+{s:'t',t:`We now recognize the second position: <b>Skeptic: The Risks Are Underestimated</b>. Mio, the floor is yours.`},
+{s:'m',t:`Thank you, Chair. My argument is simple: <b>this time is different</b>. Past automation replaced muscles. AI replaces minds. In 2023, <b>GPT-4</b> — the powerful AI engine behind ChatGPT — passed the bar exam, the test to become a lawyer, in the top 10%. Think about an ordinary office worker, like a bookkeeper.`},
+{ex:0},
+{s:'m',t:`And the <b>speed</b> is the real danger. The Industrial Revolution unfolded over 80 to 100 years — enough time for a whole generation to adapt. AI could transform cognitive work in just 10 to 15 years. Look at what is already happening in call centers.`},
+{ex:1},
+{s:'k',t:`Point of challenge. Every generation predicts doom, and every time the pessimists were wrong. Why trust the prediction now?`},
+{s:'m',t:`Because the evidence is new, not recycled fear. Goldman Sachs — one of the world's biggest banks — estimates <b>300 million jobs</b> could be affected. And look where the money goes: Nvidia's revenue grew <b>265%</b> in one year, while ordinary workers' wages have barely moved in decades.`},
+{s:'k',t:`Point of information, Chair — what is Nvidia?`},
+{s:'t',t:`Fair question, Ken. <b>Nvidia</b> is an American company that makes the special computer chips — called <b>GPUs</b> — that AI needs to run. When AI demand exploded, Nvidia's sales did too, and it briefly became one of the most valuable companies on Earth. That is exactly Mio's point: the profits flow to a handful of tech firms, not to everyday workers.`},
+{s:'k',t:`Still — if we over-regulate out of fear, we could lose AI's benefits in medicine, science, and education.`},
+{s:'m',t:`I am not saying ban it. I am saying do not sleepwalk into it. Concentrated gains plus displaced workers is a recipe for real social damage.`},
+{s:'t',t:`Noted. The Skeptic <b>strength</b>: correctly names the speed and the inequality of who pays. The <b>weakness</b> Ken raised: history keeps proving automation pessimism wrong in the long run. Now, my own turn.`}
+],
+[
+{s:'t',t:`As Chair I have stayed neutral, but this third position is mine to argue: <b>Pragmatist: Policy Determines Outcomes</b>. My claim is that Ken and Mio are both partly right — and the deciding factor is what society <em>does</em>.`},
+{s:'k',t:`What do you mean, exactly? The same AI, different results?`},
+{s:'t',t:`Exactly. Consider two countries with the identical technology. Denmark uses <b>flexicurity</b>: companies can hire and fire freely, but a laid-off worker gets up to 90% of their salary for two years plus retraining. Compare that safety net to Japan's.`},
+{ex:0},
+{s:'t',t:`Now compare America's Rust Belt in the 1980s: 26 weeks of unemployment, then workers were left on their own. Whole cities — Youngstown, Gary — never recovered. Same automation. Opposite outcomes. The difference was <b>policy</b>, not technology.`},
+{s:'m',t:`But policy is slow. AI changes in months; laws take years. Is that not a fatal gap?`},
+{s:'t',t:`A real risk, yes. But look at Singapore's <b>SkillsFuture</b>: every adult gets annual training credits to keep learning new skills.`},
+{ex:1},
+{s:'t',t:`Some economists even propose a "robot tax," so the companies that capture AI's gains help fund the workers it displaces.`},
+{s:'k',t:`That still requires enormous political trust and cooperation, though.`},
+{s:'t',t:`It does — that is the honest weakness of my position. But here is the point I want you both to leave with: AI is neither hero nor villain by itself. Denmark and the United States hold the same tool. What they build with it is a <b>choice</b>. Court is adjourned — now go read the quizzes and decide for yourselves.`}
+]
+],
+climate:[
+[
+{s:'t',t:`Order. First position: <b>Market Solution — Tax Carbon Now</b>. Ken, your opening.`},
+{s:'k',t:`Thank you, Chair. The cleanest fix is to put a price on carbon and let the market find the cheapest cuts. British Columbia in Canada did exactly this — and returned the money to citizens.`},
+{ex:0},
+{s:'k',t:`And it does not wreck the economy. Sweden has taxed carbon since 1991, at the highest rate on Earth, and still grew rich.`},
+{ex:1},
+{s:'m',t:`Point of challenge — a flat carbon tax hits poor families hardest. Not everyone can buy an electric car.`},
+{s:'k',t:`That is why the dividend matters: since low-income homes pollute less, about <b>80%</b> of them get back more than they pay. It can actually be progressive.`},
+{s:'t',t:`Noted. <b>Strength</b>: markets cut emissions efficiently, and Sweden proves growth can continue. <b>Weakness</b>: politically fragile if people feel the price at the pump. Next bench.`}
+],
+[
+{s:'t',t:`Second position: <b>Social Justice First</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. I am not against climate action — I am against making the poorest pay for it. Picture someone in the countryside with no train.`},
+{ex:0},
+{s:'m',t:`Ignore fairness, and the policy dies. France learned this the hard way in 2018.`},
+{ex:1},
+{s:'k',t:`But the planet cannot wait. Delay is dangerous too.`},
+{s:'m',t:`Agreed — so design it fairly from the start: invest in public transit, help low-income homes, and protect workers in fossil-fuel towns. A policy that gets repealed cuts zero emissions.`},
+{s:'t',t:`<b>Strength</b>: keeps climate policy politically alive and morally fair. <b>Weakness</b>: added complexity can slow urgent action. My turn.`}
+],
+[
+{s:'t',t:`My position as Chair-turned-delegate: <b>Global Coordination Is Essential</b>. If only one country prices carbon, factories just move abroad — remember carbon leakage.`},
+{s:'k',t:`So how do you stop the leakage?`},
+{s:'t',t:`With a border tool. Think about cheap imported goods made with lots of CO2.`},
+{ex:0},
+{s:'m',t:`Point of information — what is "CBAM"?`},
+{s:'t',t:`<b>CBAM</b> stands for Carbon Border Adjustment Mechanism. The EU charges imports the same carbon cost its own producers pay, so foreign goods cannot dodge the price. It protects domestic industry while cutting global emissions.`},
+{ex:1},
+{s:'t',t:`<b>Strength</b>: fixes leakage, the flaw that dooms lone-country taxes. <b>Weakness</b>: needs global cooperation that is hard to achieve. Court adjourned — take the quiz and decide.`}
+]
+],
+ubi:[
+[
+{s:'t',t:`Order. First position: <b>Pro-UBI: Freedom and Security</b>. Ken.`},
+{s:'k',t:`Thank you, Chair. A guaranteed floor lets people take good risks instead of clinging to any job out of fear. Imagine a young artist.`},
+{ex:0},
+{s:'k',t:`And the fear that people quit working? The experiments say otherwise.`},
+{ex:1},
+{s:'m',t:`Point of challenge — those pilots are small and short. A whole country paying forever is different, and hugely expensive.`},
+{s:'k',t:`Fair, but a basic floor removes the constant stress of poverty, which studies show actually improves people's decisions and health.`},
+{s:'t',t:`<b>Strength</b>: real data contradicts the "laziness" fear, and it ends the poverty trap. <b>Weakness</b>: the cost of a true universal payment is enormous. Next.`}
+],
+[
+{s:'t',t:`Second position: <b>Anti-UBI: Costly and Counterproductive</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. Why send the same cheque to a billionaire and to a struggling parent? Universality spreads the money too thin.`},
+{ex:0},
+{s:'m',t:`And big cash programs can cause changes we do not expect. History gives a warning.`},
+{ex:1},
+{s:'k',t:`Point of challenge — but the pilots showed people did not stop working.`},
+{s:'m',t:`Short pilots, yes. My worry is the <b>3-trillion-dollar</b> price tag, and the fact that someone truly disabled needs far more than a flat payment. Targeted help serves them better.`},
+{s:'t',t:`<b>Strength</b>: names the real fiscal cost and defends those with the greatest needs. <b>Weakness</b>: the "people quit working" fear keeps failing in the data. My turn.`}
+],
+[
+{s:'t',t:`My position: <b>Targeted Basic Income — the Middle Path</b>. Give more to those who need it, less to those who do not.`},
+{s:'k',t:`How do you avoid punishing people for working, though?`},
+{s:'t',t:`With a <b>negative income tax</b> design: benefits shrink slowly as income rises, so earning more always leaves you ahead.`},
+{ex:0},
+{s:'m',t:`Does anything like that already exist?`},
+{s:'t',t:`Yes — the US <b>Earned Income Tax Credit</b> tops up the pay of low-income workers and lifts millions above the poverty line each year.`},
+{ex:1},
+{s:'t',t:`<b>Strength</b>: affordable and focused on real need. <b>Weakness</b>: means-testing adds paperwork and may not be enough if AI eliminates jobs at massive scale. Adjourned — take the quiz.`}
+]
+],
+socialmedia:[
+[
+{s:'t',t:`Order. First position: <b>Regulate Now: The Harm Is Clear</b>. Ken.`},
+{s:'k',t:`Thank you, Chair. These apps are tuned to maximize screen time, not wellbeing — and children pay the price.`},
+{ex:0},
+{s:'k',t:`This is not a guess. Facebook's own research proved harm to teenagers.`},
+{ex:1},
+{s:'m',t:`Point of challenge — but who defines "harmful"? Rules can be abused.`},
+{s:'k',t:`We can target the <b>algorithm</b>, not the speech: require platforms to check and reduce harm to minors, like the EU's Digital Services Act, with fines up to 6% of global revenue.`},
+{s:'t',t:`<b>Strength</b>: the harm is documented and self-regulation has failed. <b>Weakness</b>: any rule risks catching some legitimate speech. Next.`}
+],
+[
+{s:'t',t:`Second position: <b>Free Speech Above All</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. Give a government power to delete "harmful" posts, and small, powerless voices lose first.`},
+{ex:0},
+{s:'m',t:`And history shows social media empowering movements the powerful wanted silenced.`},
+{ex:1},
+{s:'k',t:`Point of challenge — so we just accept the harm to teens?`},
+{s:'m',t:`No — but at 2 billion users, even a 0.001% error means 20,000 wrongful removals a day. Better tools and media literacy beat handing anyone the power to define truth.`},
+{s:'t',t:`<b>Strength</b>: guards against censorship and protects the weakest speakers. <b>Weakness</b>: it leans on voluntary action that has repeatedly failed. My turn.`}
+],
+[
+{s:'t',t:`My position: <b>Reform the Business Model</b>. Do not censor content — change what is profitable.`},
+{s:'k',t:`What would that look like in practice?`},
+{s:'t',t:`Give users a plain time-order feed instead of an outrage-maximizing one.`},
+{ex:0},
+{s:'m',t:`And that avoids anyone judging speech?`},
+{s:'t',t:`Exactly. The EU's <b>Digital Markets Act</b> forces big platforms to allow competition and data portability — structural change, no content judgments.`},
+{ex:1},
+{s:'t',t:`<b>Strength</b>: attacks the root cause with no free-speech cost. <b>Weakness</b>: structural reform is slow while harms happen now. Adjourned.`}
+]
+],
+nuclear:[
+[
+{s:'t',t:`Order. First position: <b>Pro-Nuclear: Climate Urgency Demands It</b>. Ken.`},
+{s:'k',t:`Thank you, Chair. Nuclear is low-carbon and steady. When Japan switched it off after Fukushima, look what happened.`},
+{ex:0},
+{s:'k',t:`France versus Germany makes the point even clearer.`},
+{ex:1},
+{s:'m',t:`Point of challenge — but one accident can poison a region for decades.`},
+{s:'k',t:`Yet per unit of energy, nuclear is about <b>800 times safer than coal</b>, even counting Chernobyl and Fukushima. Coal quietly kills far more through pollution.`},
+{s:'t',t:`<b>Strength</b>: steady zero-carbon power and a strong safety record per unit. <b>Weakness</b>: new plants are slow and very expensive. Next.`}
+],
+[
+{s:'t',t:`Second position: <b>Anti-Nuclear: Risks Outweigh Benefits</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. The people who host the risk are not the ones who enjoy the electricity.`},
+{ex:0},
+{s:'m',t:`And we still have almost nowhere to put waste that stays deadly for tens of thousands of years.`},
+{ex:1},
+{s:'k',t:`Point of challenge — but shutting plants means burning more coal now.`},
+{s:'m',t:`Then build renewables, which are now the cheaper choice: solar costs fell about <b>90%</b> since 2010, and a solar farm takes months, not a decade.`},
+{s:'t',t:`<b>Strength</b>: highlights accident risk, waste, and plunging renewable costs. <b>Weakness</b>: renewables still need storage that nuclear can cover today. My turn.`}
+],
+[
+{s:'t',t:`My position: <b>Conditional Support — keep today's plants, be careful with new ones</b>.`},
+{s:'k',t:`Why keep the old ones at all if renewables are coming?`},
+{s:'t',t:`Because timing matters. If your electricity is dirty, even an electric car does not cut much carbon.`},
+{ex:0},
+{s:'m',t:`So it is a bridge, not a destination?`},
+{s:'t',t:`Exactly — a low-carbon bridge while renewables scale up. Japan's 2030 energy plan mixes nuclear and renewables for that reason.`},
+{ex:1},
+{s:'t',t:`<b>Strength</b>: avoids the carbon spike Germany suffered while renewables grow. <b>Weakness</b>: new nuclear may waste money better spent on cheaper renewables. Adjourned.`}
+]
+],
+remote:[
+[
+{s:'t',t:`Order. First position: <b>Pro-Remote: Flexibility Is the Future</b>. Ken.`},
+{s:'k',t:`Thank you, Chair. A long daily commute is pure lost life. Remote work gives that time back.`},
+{ex:0},
+{s:'k',t:`And skilled workers now expect it — companies that refuse lose talent.`},
+{ex:1},
+{s:'m',t:`Point of challenge — but beginners learn by watching seniors in person.`},
+{s:'k',t:`Experienced staff are actually more productive at home, with fewer interruptions. Airbnb went "work from anywhere" and got record job applications.`},
+{s:'t',t:`<b>Strength</b>: saves huge commute time and widens the talent pool. <b>Weakness</b>: junior mentorship suffers. Next.`}
+],
+[
+{s:'t',t:`Second position: <b>Pro-Office: Collaboration Needs Presence</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. So much learning is invisible — you absorb it just by being in the room.`},
+{ex:0},
+{s:'m',t:`And proximity even measurably boosts innovation.`},
+{ex:1},
+{s:'k',t:`Point of challenge — Amazon forced everyone back and some top people quit.`},
+{s:'m',t:`True, mandates have costs. But for new hires and team trust, being together builds what video calls cannot.`},
+{s:'t',t:`<b>Strength</b>: proximity drives mentoring and creative collisions. <b>Weakness</b>: rigid office mandates can drive talent away. My turn.`}
+],
+[
+{s:'t',t:`My position: <b>Hybrid — the evidence-based middle ground</b>.`},
+{s:'k',t:`Is there real proof hybrid works?`},
+{s:'t',t:`Yes — a randomized trial at Trip.com found hybrid cut quitting by 35% with no drop in output. The key is designing the week on purpose.`},
+{ex:0},
+{s:'m',t:`So the office is for some things, home for others?`},
+{s:'t',t:`Right — and even fully distributed firms like Atlassian gather in person a few times a year to build trust.`},
+{ex:1},
+{s:'t',t:`<b>Strength</b>: keeps flexibility and in-person benefits, backed by the cleanest experiment. <b>Weakness</b>: coordinating who comes in when is genuinely tricky. Adjourned.`}
+]
+],
+healthcare:[
+[
+{s:'t',t:`Order. First position: <b>Universal Coverage: Healthcare Is a Right</b>. Ken.`},
+{s:'k',t:`Thank you, Chair. In a rich country, no one should go bankrupt just for getting sick.`},
+{ex:0},
+{s:'k',t:`And people are rationing medicine they cannot afford — with deadly results.`},
+{ex:1},
+{s:'m',t:`Point of challenge — but does not government care mean long waits?`},
+{s:'k',t:`Sometimes, yes. But single-payer systems spend far less on paperwork — about <b>12%</b> versus <b>34%</b> in the US — and can negotiate much cheaper drug prices.`},
+{s:'t',t:`<b>Strength</b>: covers everyone, cuts admin waste, ends medical bankruptcy. <b>Weakness</b>: can create waiting lists and needs higher taxes. Next.`}
+],
+[
+{s:'t',t:`Second position: <b>Market-Based: Competition Drives Quality</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. Competition and strong rewards push innovation — and speed.`},
+{ex:0},
+{s:'m',t:`Market systems also invest heavily in equipment and access.`},
+{ex:1},
+{s:'k',t:`Point of challenge — yet the US spends double and still has worse average health.`},
+{s:'m',t:`A fair hit. My point is that prices reward the research that invents new cures — which the whole world then uses. But yes, pure markets fail in emergencies.`},
+{s:'t',t:`<b>Strength</b>: drives innovation and fast access to new treatments. <b>Weakness</b>: high spending with worse average outcomes, and markets fail in true emergencies. My turn.`}
+],
+[
+{s:'t',t:`My position: <b>Pragmatic Reform — fix the worst failures</b>, not the whole system at once.`},
+{s:'k',t:`What does a realistic fix look like?`},
+{s:'t',t:`Guarantee a basic floor for all, then patch the biggest gaps. Japan blends required insurance with a 30% co-pay and a monthly cap.`},
+{ex:0},
+{s:'m',t:`Can you add choice without going fully government-run?`},
+{s:'t',t:`Yes — Washington State added a public insurance option beside private plans, using competition to push prices down.`},
+{ex:1},
+{s:'t',t:`<b>Strength</b>: achievable, and targets real problems like drug prices and coverage gaps. <b>Weakness</b>: half-measures may leave the deeper problems unsolved. Adjourned.`}
+]
+],
+education:[
+[
+{s:'t',t:`Order. First position: <b>Yes — the Degree Still Pays Off</b>. Ken.`},
+{s:'k',t:`Thank you, Chair. On average, graduates earn far more — and in Japan the degree still opens the first door.`},
+{ex:0},
+{s:'k',t:`And in hard times, a degree is a shield.`},
+{ex:1},
+{s:'m',t:`Point of challenge — averages hide the students buried in debt with no good job.`},
+{s:'k',t:`True for some, but the <b>degree premium</b> — about a million dollars over a lifetime in the US — is still very real.`},
+{s:'t',t:`<b>Strength</b>: strong average earnings and protection in downturns. <b>Weakness</b>: averages hide heavy debt and failed outcomes for many. Next.`}
+],
+[
+{s:'t',t:`Second position: <b>No — the System Is Broken, Alternatives Work</b>. Mio.`},
+{s:'m',t:`Thank you, Chair. Four years and huge debt is not the only path to a good job.`},
+{ex:0},
+{s:'m',t:`And employers are already changing the rules.`},
+{ex:1},
+{s:'k',t:`Point of challenge — but a university teaches more than job skills.`},
+{s:'m',t:`It can — but not if it leaves you in years of debt for a degree the market no longer requires. Skills and certificates can cost far less.`},
+{s:'t',t:`<b>Strength</b>: names the debt problem and real, cheaper alternatives. <b>Weakness</b>: alternatives are still uneven and unproven for many careers. My turn.`}
+],
+[
+{s:'t',t:`My position: <b>Reform — fix cost and access, not the degree itself</b>.`},
+{s:'k',t:`So you are not against college?`},
+{s:'t',t:`Not at all. Learning should not stop at 22 — people will retrain for life as jobs change.`},
+{ex:0},
+{s:'t',t:`And a cheaper, faster credential can do the same job as a degree for some roles.`},
+{ex:1},
+{s:'m',t:`So the real problem is the price and who can get in?`},
+{s:'t',t:`Exactly. Germany and Finland show high-quality higher education can be affordable for all. <b>Strength</b>: reframes the fight around fairness. <b>Weakness</b>: big reforms need political will and take years. Adjourned.`}
+]
+]
+};
+function renderDebate(turns,pi){
+  const rel=(cur.persp[pi]&&cur.persp[pi].rel)||[];
+  const body=turns.map(x=>{
+    if(x.note) return `<div class="dlg-note"><div class="nt-h">📜 ${x.note}</div>${x.body}</div>`;
+    if(typeof x.ex==='number'){
+      const r=rel[x.ex]||{ja:'',en:''};
+      return `<div class="rel-item dlg-ex"><div class="rel-label">💡 具体例 Example ${x.ex+1}</div>${buildDiagram(getDiag(pi,x.ex))}<div class="rel-ja">${r.ja}</div><div class="rel-en">${r.en}</div></div>`;
+    }
+    const c=CAST[x.s];
+    return `<div class="turn ${x.s}"><div class="av">${c.av}</div><div><div class="who">${c.name}</div><div class="bub">${x.t}</div></div></div>`;
+  }).join('');
+  return `<div class="debate-head">🏛️ Model UN Debate</div><div class="dlg">${body}</div>`;
+}
+function bqPick(qi,oi){
+  const box=document.getElementById('bq'+qi);
+  if(!box||box.classList.contains('answered'))return;
+  box.classList.add('answered');
+  const correct=BASICS_QUIZ[cur.id][qi].ans;
+  document.getElementById('bqo'+qi+'_'+correct).classList.add('bq-correct');
+  if(oi!==correct)document.getElementById('bqo'+qi+'_'+oi).classList.add('bq-wrong');
+  document.getElementById('bqe'+qi).classList.add('show');
+}
+function renderBasicsQuiz(id){
+  const arr=BASICS_QUIZ[id];
+  if(!arr)return `<div class="basics-facts"><div class="bf-h">📊 Key Facts & Background</div><div class="stext">${cur.summary}</div></div>`;
+  const qs=arr.map((q,qi)=>`
+    <div class="bq" id="bq${qi}">
+      <div class="bq-q"><span class="bq-n">Q${qi+1}</span>${q.q}</div>
+      <div class="bq-opts">${q.opts.map((o,oi)=>`<button class="bq-opt" id="bqo${qi}_${oi}" onclick="bqPick(${qi},${oi})">${o}</button>`).join('')}</div>
+      <div class="bq-exp" id="bqe${qi}"><b>💡</b> ${q.exp}</div>
+    </div>`).join('');
+  return `<div class="basics-facts"><div class="bf-h">🧠 Check Your Understanding — Key Facts & Background</div><div style="font-size:.78rem;color:var(--muted);margin-bottom:10px">Tap an answer to check it instantly.</div>${qs}</div>`;
+}
+function renderBasics(id){
+  const arr=BASICS[id];
+  if(!arr) return `<div class="stext">${cur.summary}</div>`;
+  const intro=`<div class="basics-intro">💬 <b>Ken</b> (a boy who tends to agree) and <b>Mio</b> (a girl who tends to disagree) discuss "${cur.title}" with their <b>teacher</b> (always neutral). First, let us learn <b>what this topic really is</b> — starting from its history!</div>
+  <div class="cast-row">
+    <span class="cast-chip cc-k"><span class="ce">👦</span>Ken · Agree</span>
+    <span class="cast-chip cc-m"><span class="ce">👧</span>Mio · Disagree</span>
+    <span class="cast-chip cc-t"><span class="ce">🧑‍🏫</span>Teacher · Neutral</span>
+  </div>`;
+  const body=arr.map(x=>{
+    if(x.note) return `<div class="dlg-note"><div class="nt-h">📜 ${x.note}</div>${x.body}</div>`;
+    const c=CAST[x.s];
+    return `<div class="turn ${x.s}"><div class="av">${c.av}</div><div><div class="who">${c.name}</div><div class="bub">${x.t}</div></div></div>`;
+  }).join('');
+  return intro+`<div class="dlg">${body}</div>`+renderBasicsQuiz(id);
+}
+
 function showTopic(id){
   cur=T.find(t=>t.id===id); if(!cur)return;
   document.getElementById('home').style.display='none';
@@ -864,14 +1439,18 @@ function showTopic(id){
   document.querySelectorAll('#detail>.tc').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('#detail .tc-persp').forEach(e=>e.remove());
   // Build tabs dynamically
+  const hasBasics=!!BASICS[cur.id];
   document.getElementById('tabs').innerHTML=
-    `<div class="tab active" onclick="switchTab('summary',this)">📄 Summary</div>`+
+    (hasBasics
+      ? `<div class="tab active" onclick="switchTab('basics',this)">🌱 Basics & Overview</div>`
+      : `<div class="tab active" onclick="switchTab('summary',this)">📄 Overview</div>`)+
     cur.persp.map((p,pi)=>
       `<div class="tab" data-pi="${pi}" style="--ptab:${p.col}" onclick="switchTab('p${pi}',this)"><span class="tab-pnum" style="background:${p.col}">${pi+1}</span>${p.tja}</div>`
     ).join('');
-  // Fill summary
-  document.getElementById('tc-summary').innerHTML=`<div class="stext">${cur.summary}</div>`;
-  document.getElementById('tc-summary').classList.add('active');
+  // Fill combined basics+overview (or fall back to plain overview)
+  document.getElementById('tc-basics').innerHTML=hasBasics?renderBasics(cur.id):'';
+  document.getElementById('tc-summary').innerHTML=hasBasics?'':`<div class="stext">${cur.summary}</div>`;
+  document.getElementById(hasBasics?'tc-basics':'tc-summary').classList.add('active');
   // Build perspective content divs
   const detail=document.getElementById('detail');
   cur.persp.forEach((p,pi)=>{
