@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-09T13:26:58.374Z",
+  "exportedAt": "2026-07-09T13:32:36.728Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5210,8 +5210,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1641,
-    "totalAttempts": 1793,
+    "totalCorrect": 1677,
+    "totalAttempts": 1831,
     "lastSessionDate": "2026-07-09",
     "streak": 6,
     "history": [
@@ -5487,6 +5487,13 @@
         "score": 21,
         "total": 21,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-09",
+        "climbed": 0,
+        "score": 10,
+        "total": 10,
+        "mode": "learn"
       },
       {
         "date": "2026-07-09",
@@ -12329,6 +12336,96 @@
         "everLearned": true
       },
       "amuse": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "unify": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "intellect": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "frown": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "magnify": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "doom": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "mock": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "cram": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "dim": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "secondhand": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "restless": {
         "box": 1,
         "due": "2026-07-10",
         "correct": 1,
