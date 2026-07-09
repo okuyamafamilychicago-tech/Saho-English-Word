@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-09T13:19:28.212Z",
+  "exportedAt": "2026-07-09T13:21:46.184Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -4924,6 +4924,41 @@
         "word": "prudent",
         "masteredAt": "2026-07-09",
         "mode": "test"
+      },
+      {
+        "word": "underline",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "contaminate",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "pave",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "subtract",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "underlie",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "vow",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
+      },
+      {
+        "word": "persecute",
+        "masteredAt": "2026-07-09",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5154,10 +5189,15 @@
         "at": "2026-07-06",
         "learnCount": 1,
         "bulkInit": true
+      },
+      {
+        "word": "aspire",
+        "at": "2026-07-09",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 1566,
-    "totalAttempts": 1717,
+    "totalCorrect": 1590,
+    "totalAttempts": 1742,
     "lastSessionDate": "2026-07-09",
     "streak": 6,
     "history": [
@@ -5418,6 +5458,13 @@
         "climbed": 8,
         "score": 24,
         "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-09",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
         "mode": "test"
       }
     ],
@@ -12065,74 +12112,74 @@
         "everLearned": true
       },
       "pave": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "underlie": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "underline": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "persecute": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "aspire": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-08",
+        "box": 3,
+        "due": "2026-07-13",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "subtract": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "contaminate": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
       "vow": {
-        "box": 1,
-        "due": "2026-07-09",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-17",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-08",
+        "seenAt": "2026-07-09",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
