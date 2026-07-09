@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-09T13:34:56.754Z",
+  "exportedAt": "2026-07-09T14:39:47.675Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5210,8 +5210,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1693,
-    "totalAttempts": 1847,
+    "totalCorrect": 1723,
+    "totalAttempts": 1879,
     "lastSessionDate": "2026-07-09",
     "streak": 6,
     "history": [
@@ -5508,6 +5508,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-09",
+        "climbed": 0,
+        "score": 8,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -12433,6 +12440,96 @@
         "everLearned": true
       },
       "restless": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "exclaim": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "stereotype": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "blink": {
+        "box": 0,
+        "due": "2026-07-09",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "dread": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "exile": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "refrain": {
+        "box": 0,
+        "due": "2026-07-09",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "fertile": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "disguise": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "bathe": {
+        "box": 1,
+        "due": "2026-07-10",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-09",
+        "learnedAt": "2026-07-09",
+        "everLearned": true
+      },
+      "adore": {
         "box": 1,
         "due": "2026-07-10",
         "correct": 1,
