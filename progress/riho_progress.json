@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-10T05:46:36.745Z",
+  "exportedAt": "2026-07-10T05:47:15.510Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5360,8 +5360,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1841,
-    "totalAttempts": 2002,
+    "totalCorrect": 1847,
+    "totalAttempts": 2008,
     "lastSessionDate": "2026-07-10",
     "streak": 7,
     "history": [
@@ -5692,6 +5692,13 @@
         "climbed": 7,
         "score": 27,
         "total": 27,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-10",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       },
       {
@@ -11291,11 +11298,11 @@
         "seenAt": "2026-07-10"
       },
       "constraint": {
-        "box": 3,
-        "due": "2026-07-05",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 7,
         "wrong": 1,
-        "seenAt": "2026-07-01"
+        "seenAt": "2026-07-10"
       },
       "acquaintance": {
         "box": 5,
@@ -11314,11 +11321,11 @@
         "learnedAt": "2026-06-28"
       },
       "coincide": {
-        "box": 3,
-        "due": "2026-07-05",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 7,
         "wrong": 1,
-        "seenAt": "2026-07-01"
+        "seenAt": "2026-07-10"
       },
       "summon": {
         "box": 3,
