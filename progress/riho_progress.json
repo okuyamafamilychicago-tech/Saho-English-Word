@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-10T05:47:15.510Z",
+  "exportedAt": "2026-07-10T05:50:54.683Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5360,8 +5360,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1847,
-    "totalAttempts": 2008,
+    "totalCorrect": 1876,
+    "totalAttempts": 2038,
     "lastSessionDate": "2026-07-10",
     "streak": 7,
     "history": [
@@ -5707,6 +5707,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-10",
+        "climbed": 0,
+        "score": 9,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -12729,6 +12736,96 @@
         "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
         "everLearned": true
+      },
+      "compulsory": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "witty": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "diplomacy": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "pollute": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "envy": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "intelligible": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "contradict": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "contempt": {
+        "box": 0,
+        "due": "2026-07-10",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "reconstruct": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "betray": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
       }
     },
     "images": {},
@@ -12742,7 +12839,7 @@
       "batch-8",
       "batch-9"
     ],
-    "svgTheme": "forest",
+    "svgTheme": "ac",
     "schemaVersion": 2,
     "rihoBulk800Done": true
   }
