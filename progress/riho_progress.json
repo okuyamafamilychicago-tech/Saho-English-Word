@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-10T05:45:24.001Z",
+  "exportedAt": "2026-07-10T05:46:36.745Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5360,8 +5360,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1832,
-    "totalAttempts": 1990,
+    "totalCorrect": 1841,
+    "totalAttempts": 2002,
     "lastSessionDate": "2026-07-10",
     "streak": 7,
     "history": [
@@ -5692,6 +5692,13 @@
         "climbed": 7,
         "score": 27,
         "total": 27,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-10",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       }
     ],
@@ -11080,11 +11087,11 @@
         "learnedAt": "2026-06-28"
       },
       "alternate": {
-        "box": 3,
-        "due": "2026-07-04",
+        "box": 2,
+        "due": "2026-07-12",
         "correct": 4,
-        "wrong": 1,
-        "seenAt": "2026-06-30"
+        "wrong": 2,
+        "seenAt": "2026-07-10"
       },
       "wicked": {
         "box": 5,
@@ -11167,11 +11174,11 @@
         "learnedAt": "2026-06-28"
       },
       "prescribe": {
-        "box": 3,
-        "due": "2026-07-05",
-        "correct": 4,
-        "wrong": 1,
-        "seenAt": "2026-07-01"
+        "box": 4,
+        "due": "2026-07-18",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-07-10"
       },
       "fascinate": {
         "box": 5,
@@ -11224,10 +11231,10 @@
       },
       "prejudice": {
         "box": 3,
-        "due": "2026-07-05",
-        "correct": 4,
-        "wrong": 1,
-        "seenAt": "2026-07-01"
+        "due": "2026-07-14",
+        "correct": 5,
+        "wrong": 2,
+        "seenAt": "2026-07-10"
       },
       "omit": {
         "box": 5,
@@ -11262,11 +11269,11 @@
         "learnedAt": "2026-06-28"
       },
       "means": {
-        "box": 3,
-        "due": "2026-07-05",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 7,
         "wrong": 1,
-        "seenAt": "2026-07-01"
+        "seenAt": "2026-07-10"
       },
       "due": {
         "box": 5,
@@ -11277,11 +11284,11 @@
         "learnedAt": "2026-06-28"
       },
       "confine": {
-        "box": 3,
-        "due": "2026-07-05",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 7,
         "wrong": 1,
-        "seenAt": "2026-07-01"
+        "seenAt": "2026-07-10"
       },
       "constraint": {
         "box": 3,
