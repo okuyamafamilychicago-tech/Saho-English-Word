@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-10T15:11:42.840Z",
+  "exportedAt": "2026-07-10T15:14:49.538Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1714,6 +1714,41 @@
         "word": "interfere",
         "masteredAt": "2026-07-10",
         "mode": "test"
+      },
+      {
+        "word": "donate",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
+      },
+      {
+        "word": "motivate",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
+      },
+      {
+        "word": "excessive",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
+      },
+      {
+        "word": "steep",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
+      },
+      {
+        "word": "prohibit",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
+      },
+      {
+        "word": "entitle",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
+      },
+      {
+        "word": "concrete",
+        "masteredAt": "2026-07-10",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1748,28 +1783,13 @@
         "learnCount": 2
       },
       {
-        "word": "motivate",
-        "at": "2026-07-09",
-        "learnCount": 1
-      },
-      {
-        "word": "concrete",
-        "at": "2026-07-09",
-        "learnCount": 0
-      },
-      {
         "word": "charm",
-        "at": "2026-07-10",
-        "learnCount": 0
-      },
-      {
-        "word": "excessive",
         "at": "2026-07-10",
         "learnCount": 0
       }
     ],
-    "totalCorrect": 3520,
-    "totalAttempts": 4054,
+    "totalCorrect": 3544,
+    "totalAttempts": 4079,
     "lastSessionDate": "2026-07-10",
     "streak": 7,
     "history": [
@@ -2520,6 +2540,13 @@
         "climbed": 6,
         "score": 24,
         "total": 26,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-10",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
         "mode": "test"
       }
     ],
@@ -5055,11 +5082,11 @@
         "everLearned": true
       },
       "motivate": {
-        "box": 4,
-        "due": "2026-07-17",
-        "correct": 7,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 10,
         "wrong": 3,
-        "seenAt": "2026-07-09",
+        "seenAt": "2026-07-10",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
@@ -5109,11 +5136,11 @@
         "everLearned": true
       },
       "concrete": {
-        "box": 4,
-        "due": "2026-07-17",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 8,
         "wrong": 1,
-        "seenAt": "2026-07-09",
+        "seenAt": "2026-07-10",
         "learnedAt": "2026-07-08",
         "everLearned": true
       },
@@ -5145,29 +5172,29 @@
         "everLearned": true
       },
       "entitle": {
-        "box": 2,
-        "due": "2026-07-11",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-09",
+        "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
         "everLearned": true
       },
       "steep": {
-        "box": 2,
-        "due": "2026-07-11",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-09",
+        "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
         "everLearned": true
       },
       "prohibit": {
-        "box": 2,
-        "due": "2026-07-11",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-09",
+        "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
         "everLearned": true
       },
@@ -5208,11 +5235,11 @@
         "everLearned": true
       },
       "donate": {
-        "box": 2,
-        "due": "2026-07-11",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-09",
+        "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
         "everLearned": true
       },
@@ -5244,10 +5271,10 @@
         "everLearned": true
       },
       "charm": {
-        "box": 3,
-        "due": "2026-07-14",
-        "correct": 4,
-        "wrong": 1,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 7,
+        "wrong": 2,
         "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
         "everLearned": true
@@ -5262,9 +5289,9 @@
         "everLearned": true
       },
       "excessive": {
-        "box": 3,
-        "due": "2026-07-14",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-26",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-10",
         "learnedAt": "2026-07-09",
