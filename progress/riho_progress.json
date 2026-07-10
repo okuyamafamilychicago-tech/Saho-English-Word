@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-10T05:50:54.683Z",
+  "exportedAt": "2026-07-10T16:08:16.660Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5360,8 +5360,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 1876,
-    "totalAttempts": 2038,
+    "totalCorrect": 1913,
+    "totalAttempts": 2077,
     "lastSessionDate": "2026-07-10",
     "streak": 7,
     "history": [
@@ -5713,6 +5713,13 @@
         "climbed": 0,
         "score": 9,
         "total": 10,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-07-10",
+        "climbed": 0,
+        "score": 10,
+        "total": 11,
         "mode": "learn"
       }
     ],
@@ -12801,9 +12808,9 @@
         "everLearned": true
       },
       "contempt": {
-        "box": 0,
-        "due": "2026-07-10",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-10",
         "learnedAt": "2026-07-10",
@@ -12823,6 +12830,96 @@
         "due": "2026-07-11",
         "correct": 1,
         "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "overtake": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "embarrass": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "nourish": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "oblige": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "inclination": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "utmost": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "stern": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "dwell": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "tame": {
+        "box": 1,
+        "due": "2026-07-11",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-10",
+        "learnedAt": "2026-07-10",
+        "everLearned": true
+      },
+      "stubborn": {
+        "box": 0,
+        "due": "2026-07-10",
+        "correct": 0,
+        "wrong": 1,
         "seenAt": "2026-07-10",
         "learnedAt": "2026-07-10",
         "everLearned": true
