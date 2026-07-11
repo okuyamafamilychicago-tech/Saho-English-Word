@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:18:32.395Z",
+  "exportedAt": "2026-07-11T17:19:09.084Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5320,8 +5320,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2172,
-    "totalAttempts": 2358,
+    "totalCorrect": 2178,
+    "totalAttempts": 2364,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5856,6 +5856,13 @@
         "score": 2,
         "total": 2,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       },
       {
         "date": "2026-07-11",
@@ -10806,10 +10813,10 @@
       },
       "grief": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-28"
       },
       "verbal": {
@@ -12075,10 +12082,10 @@
       },
       "haunt": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-28"
       },
       "cuisine": {
