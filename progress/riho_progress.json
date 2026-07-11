@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:10:28.537Z",
+  "exportedAt": "2026-07-11T17:11:05.668Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5256,18 +5256,6 @@
         "bulkInit": true
       },
       {
-        "word": "liable",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
-        "word": "indulge",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "apparatus",
         "at": "2026-06-28",
         "learnCount": 1,
@@ -5376,8 +5364,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2082,
-    "totalAttempts": 2260,
+    "totalCorrect": 2088,
+    "totalAttempts": 2266,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5813,6 +5801,13 @@
         "climbed": 0,
         "score": 6,
         "total": 7,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       },
       {
@@ -11829,20 +11824,20 @@
         "learnedAt": "2026-06-28"
       },
       "liable": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
       "indulge": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
