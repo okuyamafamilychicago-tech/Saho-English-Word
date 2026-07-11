@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:04:40.864Z",
+  "exportedAt": "2026-07-11T17:07:27.670Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5328,12 +5328,6 @@
         "bulkInit": true
       },
       {
-        "word": "concise",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "reap",
         "at": "2026-06-28",
         "learnCount": 2,
@@ -5354,12 +5348,6 @@
       {
         "word": "endeavor",
         "at": "2026-07-01",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
-        "word": "precaution",
-        "at": "2026-06-28",
         "learnCount": 2,
         "bulkInit": true
       },
@@ -5430,8 +5418,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2045,
-    "totalAttempts": 2217,
+    "totalCorrect": 2052,
+    "totalAttempts": 2225,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5840,6 +5828,13 @@
         "score": 5,
         "total": 5,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -11765,11 +11760,11 @@
         "learnedAt": "2026-06-28"
       },
       "concise": {
-        "box": 1,
-        "due": "2026-07-06",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
@@ -11807,11 +11802,11 @@
         "learnedAt": "2026-06-28"
       },
       "precaution": {
-        "box": 1,
-        "due": "2026-07-06",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
