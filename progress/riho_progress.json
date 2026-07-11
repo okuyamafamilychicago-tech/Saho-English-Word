@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:11:31.749Z",
+  "exportedAt": "2026-07-11T17:11:51.812Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5262,19 +5262,7 @@
         "bulkInit": true
       },
       {
-        "word": "supposedly",
-        "at": "2026-06-28",
-        "learnCount": 1,
-        "bulkInit": true
-      },
-      {
         "word": "comprehend",
-        "at": "2026-06-28",
-        "learnCount": 1,
-        "bulkInit": true
-      },
-      {
-        "word": "curse",
         "at": "2026-06-28",
         "learnCount": 1,
         "bulkInit": true
@@ -5352,8 +5340,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2094,
-    "totalAttempts": 2272,
+    "totalCorrect": 2100,
+    "totalAttempts": 2278,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5789,6 +5777,13 @@
         "climbed": 0,
         "score": 6,
         "total": 7,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       },
       {
@@ -12029,11 +12024,11 @@
         "learnedAt": "2026-06-28"
       },
       "curse": {
-        "box": 1,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 6,
         "wrong": 2,
-        "seenAt": "2026-07-06",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-06",
         "everLearned": true
       },
@@ -12213,11 +12208,11 @@
         "learnedAt": "2026-06-28"
       },
       "supposedly": {
-        "box": 1,
-        "due": "2026-07-07",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-07-06",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-06",
         "everLearned": true
       },
