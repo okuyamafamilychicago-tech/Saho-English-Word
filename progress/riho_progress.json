@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T06:52:58.947Z",
+  "exportedAt": "2026-07-11T17:02:38.611Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5280,21 +5280,9 @@
         "bulkInit": true
       },
       {
-        "word": "conserve",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "apparatus",
         "at": "2026-06-28",
         "learnCount": 1,
-        "bulkInit": true
-      },
-      {
-        "word": "deprive",
-        "at": "2026-06-28",
-        "learnCount": 2,
         "bulkInit": true
       },
       {
@@ -5442,8 +5430,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2024,
-    "totalAttempts": 2196,
+    "totalCorrect": 2030,
+    "totalAttempts": 2202,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5838,6 +5826,13 @@
         "score": 9,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -11670,20 +11665,20 @@
         "everLearned": true
       },
       "deprive": {
-        "box": 1,
-        "due": "2026-07-06",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
       "conserve": {
-        "box": 1,
-        "due": "2026-07-06",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 5,
         "wrong": 2,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
