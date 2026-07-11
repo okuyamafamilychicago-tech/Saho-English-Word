@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:12:23.529Z",
+  "exportedAt": "2026-07-11T17:12:44.094Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5250,12 +5250,6 @@
         "bulkInit": true
       },
       {
-        "word": "apparatus",
-        "at": "2026-06-28",
-        "learnCount": 1,
-        "bulkInit": true
-      },
-      {
         "word": "amend",
         "at": "2026-06-28",
         "learnCount": 1,
@@ -5264,12 +5258,6 @@
       {
         "word": "comprehend",
         "at": "2026-07-11",
-        "learnCount": 1,
-        "bulkInit": true
-      },
-      {
-        "word": "prolong",
-        "at": "2026-06-28",
         "learnCount": 1,
         "bulkInit": true
       },
@@ -5334,8 +5322,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2105,
-    "totalAttempts": 2284,
+    "totalCorrect": 2111,
+    "totalAttempts": 2290,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5812,6 +5800,13 @@
         "date": "2026-07-11",
         "climbed": 0,
         "score": 5,
+        "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
         "total": 6,
         "mode": "test"
       }
@@ -11887,11 +11882,11 @@
         "seenAt": "2026-07-05"
       },
       "prolong": {
-        "box": 2,
-        "due": "2026-07-08",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-06",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-06",
         "everLearned": true
       },
@@ -11983,11 +11978,11 @@
         "learnedAt": "2026-06-28"
       },
       "apparatus": {
-        "box": 2,
-        "due": "2026-07-08",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-06",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-06",
         "everLearned": true
       },
