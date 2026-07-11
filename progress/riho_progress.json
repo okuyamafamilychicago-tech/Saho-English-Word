@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:09:40.557Z",
+  "exportedAt": "2026-07-11T17:10:03.690Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5244,12 +5244,6 @@
         "bulkInit": true
       },
       {
-        "word": "reckon",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "subsidy",
         "at": "2026-07-11",
         "learnCount": 2,
@@ -5301,12 +5295,6 @@
         "word": "supposedly",
         "at": "2026-06-28",
         "learnCount": 1,
-        "bulkInit": true
-      },
-      {
-        "word": "deliberate",
-        "at": "2026-06-28",
-        "learnCount": 2,
         "bulkInit": true
       },
       {
@@ -5400,8 +5388,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2070,
-    "totalAttempts": 2248,
+    "totalCorrect": 2076,
+    "totalAttempts": 2254,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5837,6 +5825,13 @@
         "climbed": 0,
         "score": 6,
         "total": 7,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       }
     ],
@@ -11721,20 +11716,20 @@
         "learnedAt": "2026-06-28"
       },
       "reckon": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
       "deliberate": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
