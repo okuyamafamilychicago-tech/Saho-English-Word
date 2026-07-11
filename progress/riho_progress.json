@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:17:16.659Z",
+  "exportedAt": "2026-07-11T17:18:12.427Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5320,8 +5320,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2159,
-    "totalAttempts": 2342,
+    "totalCorrect": 2166,
+    "totalAttempts": 2352,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5856,6 +5856,13 @@
         "score": 2,
         "total": 2,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       },
       {
         "date": "2026-07-11",
@@ -6852,11 +6859,11 @@
         "learnedAt": "2026-06-28"
       },
       "reform": {
-        "box": 3,
-        "due": "2026-07-11",
+        "box": 2,
+        "due": "2026-07-13",
         "correct": 4,
-        "wrong": 1,
-        "seenAt": "2026-07-07",
+        "wrong": 2,
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -7126,10 +7133,10 @@
       },
       "era": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-28"
       },
       "complicated": {
@@ -10670,11 +10677,11 @@
         "learnedAt": "2026-06-28"
       },
       "consensus": {
-        "box": 5,
-        "due": "2026-07-25",
-        "correct": 6,
-        "wrong": 1,
-        "seenAt": "2026-07-09",
+        "box": 4,
+        "due": "2026-07-19",
+        "correct": 7,
+        "wrong": 2,
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -11059,11 +11066,11 @@
         "seenAt": "2026-07-10"
       },
       "dumb": {
-        "box": 5,
-        "due": "2026-07-14",
+        "box": 4,
+        "due": "2026-07-19",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "wrong": 1,
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-28"
       },
       "prevail": {
@@ -12053,10 +12060,10 @@
       },
       "rubbish": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-06-28"
       },
       "haunt": {
