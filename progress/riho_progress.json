@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:10:03.690Z",
+  "exportedAt": "2026-07-11T17:10:28.537Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5268,12 +5268,6 @@
         "bulkInit": true
       },
       {
-        "word": "pressing",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "apparatus",
         "at": "2026-06-28",
         "learnCount": 1,
@@ -5358,12 +5352,6 @@
         "bulkInit": true
       },
       {
-        "word": "peculiar",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "pledge",
         "at": "2026-07-11",
         "learnCount": 1,
@@ -5388,8 +5376,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2076,
-    "totalAttempts": 2254,
+    "totalCorrect": 2082,
+    "totalAttempts": 2260,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5825,6 +5813,13 @@
         "climbed": 0,
         "score": 6,
         "total": 7,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
         "mode": "test"
       },
       {
@@ -11783,11 +11778,11 @@
         "learnedAt": "2026-06-28"
       },
       "pressing": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
@@ -11817,11 +11812,11 @@
         "learnedAt": "2026-06-28"
       },
       "peculiar": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
