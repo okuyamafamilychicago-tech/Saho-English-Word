@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:07:54.702Z",
+  "exportedAt": "2026-07-11T17:08:40.746Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5329,7 +5329,7 @@
       },
       {
         "word": "reap",
-        "at": "2026-06-28",
+        "at": "2026-07-11",
         "learnCount": 2,
         "bulkInit": true
       },
@@ -5382,12 +5382,6 @@
         "bulkInit": true
       },
       {
-        "word": "speculate",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "pledge",
         "at": "2026-07-11",
         "learnCount": 1,
@@ -5412,8 +5406,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2058,
-    "totalAttempts": 2232,
+    "totalCorrect": 2064,
+    "totalAttempts": 2241,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5835,6 +5829,13 @@
         "climbed": 0,
         "score": 6,
         "total": 7,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
+        "total": 9,
         "mode": "test"
       }
     ],
@@ -11591,11 +11592,11 @@
         "everLearned": true
       },
       "speculate": {
-        "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-05",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
@@ -11610,10 +11611,10 @@
       },
       "reap": {
         "box": 2,
-        "due": "2026-07-07",
-        "correct": 3,
-        "wrong": 1,
-        "seenAt": "2026-07-05",
+        "due": "2026-07-13",
+        "correct": 6,
+        "wrong": 4,
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
