@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:12:44.094Z",
+  "exportedAt": "2026-07-11T17:13:06.458Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5250,12 +5250,6 @@
         "bulkInit": true
       },
       {
-        "word": "amend",
-        "at": "2026-06-28",
-        "learnCount": 1,
-        "bulkInit": true
-      },
-      {
         "word": "comprehend",
         "at": "2026-07-11",
         "learnCount": 1,
@@ -5322,8 +5316,8 @@
         "bulkInit": true
       }
     ],
-    "totalCorrect": 2111,
-    "totalAttempts": 2290,
+    "totalCorrect": 2117,
+    "totalAttempts": 2296,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5800,6 +5794,13 @@
         "date": "2026-07-11",
         "climbed": 0,
         "score": 5,
+        "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 6,
         "total": 6,
         "mode": "test"
       },
@@ -11828,11 +11829,11 @@
         "everLearned": true
       },
       "altitude": {
-        "box": 3,
-        "due": "2026-07-09",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 7,
         "wrong": 1,
-        "seenAt": "2026-07-05"
+        "seenAt": "2026-07-11"
       },
       "litter": {
         "box": 5,
@@ -12037,11 +12038,11 @@
         "learnedAt": "2026-06-28"
       },
       "amend": {
-        "box": 2,
-        "due": "2026-07-08",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-07-27",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-07-06",
+        "seenAt": "2026-07-11",
         "learnedAt": "2026-07-06",
         "everLearned": true
       },
