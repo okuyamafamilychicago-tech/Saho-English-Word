@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:15:46.045Z",
+  "exportedAt": "2026-07-11T17:16:20.258Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5312,16 +5312,16 @@
       {
         "word": "trivial",
         "at": "2026-07-11",
-        "learnCount": 0
+        "learnCount": 1
       },
       {
         "word": "compensate",
         "at": "2026-07-11",
-        "learnCount": 0
+        "learnCount": 1
       }
     ],
-    "totalCorrect": 2147,
-    "totalAttempts": 2328,
+    "totalCorrect": 2153,
+    "totalAttempts": 2334,
     "lastSessionDate": "2026-07-11",
     "streak": 8,
     "history": [
@@ -5849,6 +5849,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-11",
+        "climbed": 0,
+        "score": 2,
+        "total": 2,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -10285,10 +10292,10 @@
       "compensate": {
         "box": 5,
         "due": "2026-07-27",
-        "correct": 8,
+        "correct": 9,
         "wrong": 3,
         "seenAt": "2026-07-11",
-        "learnedAt": "2026-06-30",
+        "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "frankly": {
@@ -11902,9 +11909,11 @@
       "trivial": {
         "box": 5,
         "due": "2026-07-27",
-        "correct": 7,
+        "correct": 8,
         "wrong": 2,
-        "seenAt": "2026-07-11"
+        "seenAt": "2026-07-11",
+        "learnedAt": "2026-07-11",
+        "everLearned": true
       },
       "imaginary": {
         "box": 5,
