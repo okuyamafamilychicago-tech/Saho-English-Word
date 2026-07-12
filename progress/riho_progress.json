@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-12T10:38:12.504Z",
+  "exportedAt": "2026-07-12T10:42:59.932Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5390,8 +5390,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2230,
-    "totalAttempts": 2418,
+    "totalCorrect": 2260,
+    "totalAttempts": 2448,
     "lastSessionDate": "2026-07-12",
     "streak": 9,
     "history": [
@@ -5975,6 +5975,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-12",
+        "climbed": 0,
+        "score": 10,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -13304,6 +13311,96 @@
         "wrong": 0,
         "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
+        "everLearned": true
+      },
+      "obedient": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "odds": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "detach": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "superstition": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "eccentric": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "extinguish": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "well-being": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "vocation": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "arouse": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
+        "everLearned": true
+      },
+      "gloomy": {
+        "box": 1,
+        "due": "2026-07-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-12",
+        "learnedAt": "2026-07-12",
         "everLearned": true
       }
     },
