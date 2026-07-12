@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-11T17:19:09.084Z",
+  "exportedAt": "2026-07-12T10:35:07.955Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5234,6 +5234,36 @@
         "word": "dwell",
         "masteredAt": "2026-07-11",
         "mode": "test"
+      },
+      {
+        "word": "slap",
+        "masteredAt": "2026-07-12",
+        "mode": "test"
+      },
+      {
+        "word": "ascend",
+        "masteredAt": "2026-07-12",
+        "mode": "test"
+      },
+      {
+        "word": "shrug",
+        "masteredAt": "2026-07-12",
+        "mode": "test"
+      },
+      {
+        "word": "analogy",
+        "masteredAt": "2026-07-12",
+        "mode": "test"
+      },
+      {
+        "word": "nuisance",
+        "masteredAt": "2026-07-12",
+        "mode": "test"
+      },
+      {
+        "word": "prosper",
+        "masteredAt": "2026-07-12",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5318,12 +5348,22 @@
         "word": "compensate",
         "at": "2026-07-11",
         "learnCount": 1
+      },
+      {
+        "word": "disgust",
+        "at": "2026-07-12",
+        "learnCount": 0
+      },
+      {
+        "word": "mortal",
+        "at": "2026-07-12",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2178,
-    "totalAttempts": 2364,
-    "lastSessionDate": "2026-07-11",
-    "streak": 8,
+    "totalCorrect": 2201,
+    "totalAttempts": 2389,
+    "lastSessionDate": "2026-07-12",
+    "streak": 9,
     "history": [
       {
         "date": "2026-06-28",
@@ -5883,6 +5923,13 @@
         "climbed": 0,
         "score": 6,
         "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-12",
+        "climbed": 6,
+        "score": 23,
+        "total": 25,
         "mode": "test"
       }
     ],
@@ -13090,74 +13137,74 @@
         "everLearned": true
       },
       "analogy": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-20",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "mortal": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-11",
+        "box": 3,
+        "due": "2026-07-16",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "ascend": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-20",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "slap": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-20",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "nuisance": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-20",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "disgust": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-11",
+        "box": 2,
+        "due": "2026-07-14",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "shrug": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-20",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
       "prosper": {
-        "box": 1,
-        "due": "2026-07-12",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-20",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-12",
         "learnedAt": "2026-07-11",
         "everLearned": true
       },
