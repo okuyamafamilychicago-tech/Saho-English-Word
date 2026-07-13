@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-13T14:18:46.155Z",
+  "exportedAt": "2026-07-13T14:19:24.217Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5399,6 +5399,11 @@
         "word": "immigrate",
         "masteredAt": "2026-07-13",
         "mode": "test"
+      },
+      {
+        "word": "censor",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5471,15 +5476,10 @@
         "word": "compensate",
         "at": "2026-07-11",
         "learnCount": 1
-      },
-      {
-        "word": "censor",
-        "at": "2026-07-13",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 2365,
-    "totalAttempts": 2561,
+    "totalCorrect": 2374,
+    "totalAttempts": 2570,
     "lastSessionDate": "2026-07-13",
     "streak": 10,
     "history": [
@@ -6097,6 +6097,13 @@
         "climbed": 6,
         "score": 27,
         "total": 28,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-13",
+        "climbed": 1,
+        "score": 9,
+        "total": 9,
         "mode": "test"
       }
     ],
@@ -8153,10 +8160,10 @@
       },
       "fade": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-06-28"
       },
       "bind": {
@@ -12118,10 +12125,10 @@
       },
       "altitude": {
         "box": 5,
-        "due": "2026-07-27",
-        "correct": 7,
+        "due": "2026-07-29",
+        "correct": 10,
         "wrong": 1,
-        "seenAt": "2026-07-11"
+        "seenAt": "2026-07-13"
       },
       "litter": {
         "box": 5,
@@ -13601,9 +13608,9 @@
         "everLearned": true
       },
       "censor": {
-        "box": 3,
-        "due": "2026-07-17",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-29",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
