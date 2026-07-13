@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-12T10:48:00.029Z",
+  "exportedAt": "2026-07-13T14:13:34.697Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5304,6 +5304,41 @@
         "word": "precedent",
         "masteredAt": "2026-07-12",
         "mode": "test"
+      },
+      {
+        "word": "superstition",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "well-being",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "detach",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "odds",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "obedient",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "extinguish",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "vocation",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5388,12 +5423,17 @@
         "word": "compensate",
         "at": "2026-07-11",
         "learnCount": 1
+      },
+      {
+        "word": "eccentric",
+        "at": "2026-07-13",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2290,
-    "totalAttempts": 2478,
-    "lastSessionDate": "2026-07-12",
-    "streak": 9,
+    "totalCorrect": 2314,
+    "totalAttempts": 2505,
+    "lastSessionDate": "2026-07-13",
+    "streak": 10,
     "history": [
       {
         "date": "2026-06-28",
@@ -5989,6 +6029,13 @@
         "score": 10,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-13",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -13321,74 +13368,74 @@
         "everLearned": true
       },
       "obedient": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 3,
+        "due": "2026-07-17",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "odds": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "detach": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "superstition": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "eccentric": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 3,
+        "due": "2026-07-17",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "extinguish": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "well-being": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 3,
+        "due": "2026-07-17",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "vocation": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
