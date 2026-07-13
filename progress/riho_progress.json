@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-13T14:16:17.249Z",
+  "exportedAt": "2026-07-13T14:18:46.155Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5369,6 +5369,36 @@
         "word": "arouse",
         "masteredAt": "2026-07-13",
         "mode": "test"
+      },
+      {
+        "word": "audible",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "savage",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "oppress",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "eccentric",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "obsess",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "immigrate",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5388,12 +5418,6 @@
         "word": "comprehend",
         "at": "2026-07-11",
         "learnCount": 1,
-        "bulkInit": true
-      },
-      {
-        "word": "reap",
-        "at": "2026-07-11",
-        "learnCount": 2,
         "bulkInit": true
       },
       {
@@ -5433,12 +5457,6 @@
         "bulkInit": true
       },
       {
-        "word": "reform",
-        "at": "2026-06-28",
-        "learnCount": 2,
-        "bulkInit": true
-      },
-      {
         "word": "ample",
         "at": "2026-07-06",
         "learnCount": 1,
@@ -5455,23 +5473,13 @@
         "learnCount": 1
       },
       {
-        "word": "eccentric",
-        "at": "2026-07-13",
-        "learnCount": 0
-      },
-      {
-        "word": "savage",
-        "at": "2026-07-13",
-        "learnCount": 0
-      },
-      {
-        "word": "oppress",
+        "word": "censor",
         "at": "2026-07-13",
         "learnCount": 0
       }
     ],
-    "totalCorrect": 2338,
-    "totalAttempts": 2533,
+    "totalCorrect": 2365,
+    "totalAttempts": 2561,
     "lastSessionDate": "2026-07-13",
     "streak": 10,
     "history": [
@@ -6082,6 +6090,13 @@
         "climbed": 6,
         "score": 24,
         "total": 27,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-13",
+        "climbed": 6,
+        "score": 27,
+        "total": 28,
         "mode": "test"
       }
     ],
@@ -7072,11 +7087,11 @@
         "learnedAt": "2026-06-28"
       },
       "reform": {
-        "box": 2,
-        "due": "2026-07-13",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-29",
+        "correct": 7,
         "wrong": 2,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
@@ -11856,11 +11871,11 @@
         "everLearned": true
       },
       "reap": {
-        "box": 2,
-        "due": "2026-07-13",
-        "correct": 6,
+        "box": 5,
+        "due": "2026-07-29",
+        "correct": 9,
         "wrong": 4,
-        "seenAt": "2026-07-11",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-05",
         "everLearned": true
       },
@@ -13451,9 +13466,9 @@
         "everLearned": true
       },
       "eccentric": {
-        "box": 3,
-        "due": "2026-07-17",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-29",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
@@ -13514,9 +13529,9 @@
         "everLearned": true
       },
       "oppress": {
-        "box": 2,
-        "due": "2026-07-15",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-29",
+        "correct": 7,
         "wrong": 2,
         "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
@@ -13532,9 +13547,9 @@
         "everLearned": true
       },
       "savage": {
-        "box": 3,
-        "due": "2026-07-17",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-07-29",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
@@ -13559,38 +13574,38 @@
         "everLearned": true
       },
       "audible": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "obsess": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "immigrate": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "censor": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 3,
+        "due": "2026-07-17",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       }
