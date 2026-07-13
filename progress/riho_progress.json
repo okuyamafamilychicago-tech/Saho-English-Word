@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-13T14:13:34.697Z",
+  "exportedAt": "2026-07-13T14:16:17.249Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5339,6 +5339,36 @@
         "word": "vocation",
         "masteredAt": "2026-07-13",
         "mode": "test"
+      },
+      {
+        "word": "traitor",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "gloomy",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "subordinate",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "mumble",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "epoch",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
+      },
+      {
+        "word": "arouse",
+        "masteredAt": "2026-07-13",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5428,10 +5458,20 @@
         "word": "eccentric",
         "at": "2026-07-13",
         "learnCount": 0
+      },
+      {
+        "word": "savage",
+        "at": "2026-07-13",
+        "learnCount": 0
+      },
+      {
+        "word": "oppress",
+        "at": "2026-07-13",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2314,
-    "totalAttempts": 2505,
+    "totalCorrect": 2338,
+    "totalAttempts": 2533,
     "lastSessionDate": "2026-07-13",
     "streak": 10,
     "history": [
@@ -6035,6 +6075,13 @@
         "climbed": 7,
         "score": 24,
         "total": 25,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-13",
+        "climbed": 6,
+        "score": 24,
+        "total": 27,
         "mode": "test"
       }
     ],
@@ -13440,74 +13487,74 @@
         "everLearned": true
       },
       "arouse": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "gloomy": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "epoch": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "oppress": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 2,
+        "due": "2026-07-15",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "traitor": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "savage": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 3,
+        "due": "2026-07-17",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "mumble": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-21",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-12",
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
       "subordinate": {
-        "box": 1,
-        "due": "2026-07-13",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-12",
+        "box": 3,
+        "due": "2026-07-17",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-13",
         "learnedAt": "2026-07-12",
         "everLearned": true
       },
