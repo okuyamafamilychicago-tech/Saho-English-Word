@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-13T14:27:08.333Z",
+  "exportedAt": "2026-07-15T05:13:08.925Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5404,6 +5404,41 @@
         "word": "censor",
         "masteredAt": "2026-07-13",
         "mode": "test"
+      },
+      {
+        "word": "irresistible",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
+      },
+      {
+        "word": "mischief",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
+      },
+      {
+        "word": "soothe",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
+      },
+      {
+        "word": "wither",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
+      },
+      {
+        "word": "sentimental",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
+      },
+      {
+        "word": "outdated",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
+      },
+      {
+        "word": "foresee",
+        "masteredAt": "2026-07-15",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5476,12 +5511,17 @@
         "word": "compensate",
         "at": "2026-07-11",
         "learnCount": 1
+      },
+      {
+        "word": "dismay",
+        "at": "2026-07-15",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2410,
-    "totalAttempts": 2607,
-    "lastSessionDate": "2026-07-13",
-    "streak": 10,
+    "totalCorrect": 2434,
+    "totalAttempts": 2632,
+    "lastSessionDate": "2026-07-15",
+    "streak": 1,
     "history": [
       {
         "date": "2026-06-28",
@@ -6119,6 +6159,13 @@
         "score": 9,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-15",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -13631,74 +13678,74 @@
         "everLearned": true
       },
       "soothe": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-23",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "outdated": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-23",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "dismay": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-13",
+        "box": 3,
+        "due": "2026-07-19",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "irresistible": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-23",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "foresee": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-23",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "wither": {
-        "box": 0,
-        "due": "2026-07-13",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-19",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "sentimental": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-23",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
       "mischief": {
-        "box": 1,
-        "due": "2026-07-14",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-23",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-13",
+        "seenAt": "2026-07-15",
         "learnedAt": "2026-07-13",
         "everLearned": true
       },
