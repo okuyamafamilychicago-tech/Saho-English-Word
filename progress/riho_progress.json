@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-16T05:43:28.212Z",
+  "exportedAt": "2026-07-16T05:45:38.034Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5514,6 +5514,46 @@
         "word": "murmur",
         "masteredAt": "2026-07-16",
         "mode": "test"
+      },
+      {
+        "word": "scorn",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "scant",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "ingenious",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "imaginable",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "spectacle",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "sanitation",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "eloquent",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "timid",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5591,30 +5631,10 @@
         "word": "acquire",
         "at": "2026-07-15",
         "learnCount": 1
-      },
-      {
-        "word": "scant",
-        "at": "2026-07-16",
-        "learnCount": 0
-      },
-      {
-        "word": "eloquent",
-        "at": "2026-07-16",
-        "learnCount": 0
-      },
-      {
-        "word": "scorn",
-        "at": "2026-07-16",
-        "learnCount": 0
-      },
-      {
-        "word": "timid",
-        "at": "2026-07-16",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 2561,
-    "totalAttempts": 2766,
+    "totalCorrect": 2585,
+    "totalAttempts": 2790,
     "lastSessionDate": "2026-07-16",
     "streak": 2,
     "history": [
@@ -6295,6 +6315,13 @@
         "climbed": 6,
         "score": 24,
         "total": 26,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-16",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
         "mode": "test"
       }
     ],
@@ -13944,9 +13971,9 @@
         "everLearned": true
       },
       "eloquent": {
-        "box": 3,
-        "due": "2026-07-20",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-08-01",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
@@ -13989,18 +14016,18 @@
         "everLearned": true
       },
       "timid": {
-        "box": 3,
-        "due": "2026-07-20",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-08-01",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "scorn": {
-        "box": 3,
-        "due": "2026-07-20",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-08-01",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
@@ -14034,47 +14061,47 @@
         "everLearned": true
       },
       "ingenious": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "imaginable": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "scant": {
-        "box": 3,
-        "due": "2026-07-20",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-08-01",
+        "correct": 6,
         "wrong": 2,
         "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "spectacle": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "sanitation": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       }
