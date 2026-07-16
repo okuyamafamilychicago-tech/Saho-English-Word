@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-16T05:41:37.521Z",
+  "exportedAt": "2026-07-16T05:43:28.212Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5484,6 +5484,36 @@
         "word": "insistent",
         "masteredAt": "2026-07-16",
         "mode": "test"
+      },
+      {
+        "word": "renounce",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "recollect",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "sob",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "shiver",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "rot",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
+      },
+      {
+        "word": "murmur",
+        "masteredAt": "2026-07-16",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5571,10 +5601,20 @@
         "word": "eloquent",
         "at": "2026-07-16",
         "learnCount": 0
+      },
+      {
+        "word": "scorn",
+        "at": "2026-07-16",
+        "learnCount": 0
+      },
+      {
+        "word": "timid",
+        "at": "2026-07-16",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2537,
-    "totalAttempts": 2740,
+    "totalCorrect": 2561,
+    "totalAttempts": 2766,
     "lastSessionDate": "2026-07-16",
     "streak": 2,
     "history": [
@@ -6242,6 +6282,13 @@
         "score": 9,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-16",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
       },
       {
         "date": "2026-07-16",
@@ -13915,74 +13962,74 @@
         "everLearned": true
       },
       "renounce": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "rot": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "sob": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "timid": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-15",
+        "box": 3,
+        "due": "2026-07-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "scorn": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-15",
+        "box": 3,
+        "due": "2026-07-20",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "shiver": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "recollect": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "murmur": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-24",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-16",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
