@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-16T05:51:47.545Z",
+  "exportedAt": "2026-07-16T05:55:23.104Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5633,8 +5633,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2617,
-    "totalAttempts": 2823,
+    "totalCorrect": 2646,
+    "totalAttempts": 2853,
     "lastSessionDate": "2026-07-16",
     "streak": 2,
     "history": [
@@ -6328,6 +6328,13 @@
         "date": "2026-07-16",
         "climbed": 0,
         "score": 10,
+        "total": 10,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-07-16",
+        "climbed": 0,
+        "score": 9,
         "total": 10,
         "mode": "learn"
       }
@@ -14194,6 +14201,96 @@
         "everLearned": true
       },
       "menace": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "endangered": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "humiliate": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "cosmopolitan": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "ruthless": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "perilous": {
+        "box": 0,
+        "due": "2026-07-16",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "meditate": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "industrialize": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "amenity": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "hardship": {
+        "box": 1,
+        "due": "2026-07-17",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-16",
+        "learnedAt": "2026-07-16",
+        "everLearned": true
+      },
+      "monotonous": {
         "box": 1,
         "due": "2026-07-17",
         "correct": 1,
