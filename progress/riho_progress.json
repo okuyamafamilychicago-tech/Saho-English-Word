@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-17T06:00:10.137Z",
+  "exportedAt": "2026-07-17T06:10:55.195Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5594,6 +5594,36 @@
         "word": "devour",
         "masteredAt": "2026-07-17",
         "mode": "test"
+      },
+      {
+        "word": "humiliate",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "cosmopolitan",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "incomprehensible",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "perilous",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "ruthless",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "scrutinize",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5671,10 +5701,20 @@
         "word": "acquire",
         "at": "2026-07-15",
         "learnCount": 1
+      },
+      {
+        "word": "menace",
+        "at": "2026-07-17",
+        "learnCount": 0
+      },
+      {
+        "word": "endangered",
+        "at": "2026-07-17",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 2748,
-    "totalAttempts": 2957,
+    "totalCorrect": 2772,
+    "totalAttempts": 2983,
     "lastSessionDate": "2026-07-17",
     "streak": 3,
     "history": [
@@ -6411,6 +6451,13 @@
         "climbed": 8,
         "score": 24,
         "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-17",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
         "mode": "test"
       }
     ],
@@ -14258,74 +14305,74 @@
         "everLearned": true
       },
       "scrutinize": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "incomprehensible": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "menace": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-16",
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "endangered": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-16",
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "humiliate": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "cosmopolitan": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "ruthless": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "perilous": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
