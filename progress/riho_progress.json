@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-16T17:36:22.878Z",
+  "exportedAt": "2026-07-17T06:00:10.137Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5554,6 +5554,46 @@
         "word": "timid",
         "masteredAt": "2026-07-16",
         "mode": "test"
+      },
+      {
+        "word": "resent",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "hasty",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "aptitude",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "deserve",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "coward",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "solemn",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "hereditary",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "devour",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5633,10 +5673,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2724,
-    "totalAttempts": 2933,
-    "lastSessionDate": "2026-07-16",
-    "streak": 2,
+    "totalCorrect": 2748,
+    "totalAttempts": 2957,
+    "lastSessionDate": "2026-07-17",
+    "streak": 3,
     "history": [
       {
         "date": "2026-06-28",
@@ -6364,6 +6404,13 @@
         "climbed": 0,
         "score": 6,
         "total": 6,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-17",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
         "mode": "test"
       }
     ],
@@ -14148,65 +14195,65 @@
         "everLearned": true
       },
       "resent": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "solemn": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "deserve": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "hasty": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "aptitude": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "hereditary": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "devour": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
@@ -14499,11 +14546,11 @@
         "everLearned": true
       },
       "coward": {
-        "box": 0,
-        "due": "2026-07-16",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-16",
         "everLearned": true
       }
