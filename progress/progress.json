@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-15T05:35:55.388Z",
+  "exportedAt": "2026-07-17T05:40:14.975Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -1754,6 +1754,41 @@
         "word": "charm",
         "masteredAt": "2026-07-10",
         "mode": "test"
+      },
+      {
+        "word": "instruct",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "assemble",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "remark",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "pretend",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "devote",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "exaggerate",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
+      },
+      {
+        "word": "neglect",
+        "masteredAt": "2026-07-17",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1786,11 +1821,16 @@
         "word": "summary",
         "at": "2026-07-05",
         "learnCount": 2
+      },
+      {
+        "word": "perceive",
+        "at": "2026-07-17",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3684,
-    "totalAttempts": 4241,
-    "lastSessionDate": "2026-07-15",
+    "totalCorrect": 3722,
+    "totalAttempts": 4286,
+    "lastSessionDate": "2026-07-17",
     "streak": 1,
     "history": [
       {
@@ -2583,6 +2623,13 @@
         "score": 15,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-17",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -5432,47 +5479,47 @@
         "everLearned": true
       },
       "assemble": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "instruct": {
-        "box": 0,
-        "due": "2026-07-15",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "neglect": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "pretend": {
-        "box": 1,
-        "due": "2026-07-16",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-25",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "devote": {
-        "box": 0,
-        "due": "2026-07-15",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
@@ -5486,11 +5533,11 @@
         "everLearned": true
       },
       "exaggerate": {
-        "box": 0,
-        "due": "2026-07-15",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
@@ -5504,20 +5551,20 @@
         "everLearned": true
       },
       "remark": {
-        "box": 0,
-        "due": "2026-07-15",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-15",
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
       "perceive": {
-        "box": 0,
-        "due": "2026-07-15",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-07-15",
+        "box": 3,
+        "due": "2026-07-21",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-07-17",
         "learnedAt": "2026-07-15",
         "everLearned": true
       },
