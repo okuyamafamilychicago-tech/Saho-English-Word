@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-18T06:37:02.890Z",
+  "exportedAt": "2026-07-18T18:24:16.194Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5624,6 +5624,36 @@
         "word": "scrutinize",
         "masteredAt": "2026-07-17",
         "mode": "test"
+      },
+      {
+        "word": "astonish",
+        "masteredAt": "2026-07-18",
+        "mode": "test"
+      },
+      {
+        "word": "bribe",
+        "masteredAt": "2026-07-18",
+        "mode": "test"
+      },
+      {
+        "word": "solitude",
+        "masteredAt": "2026-07-18",
+        "mode": "test"
+      },
+      {
+        "word": "sane",
+        "masteredAt": "2026-07-18",
+        "mode": "test"
+      },
+      {
+        "word": "horrify",
+        "masteredAt": "2026-07-18",
+        "mode": "test"
+      },
+      {
+        "word": "glare",
+        "masteredAt": "2026-07-18",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5713,8 +5743,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2831,
-    "totalAttempts": 3044,
+    "totalCorrect": 2859,
+    "totalAttempts": 3072,
     "lastSessionDate": "2026-07-18",
     "streak": 4,
     "history": [
@@ -6466,6 +6496,13 @@
         "score": 18,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-18",
+        "climbed": 6,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -6552,18 +6589,18 @@
       },
       "principal": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-06-28"
       },
       "candidate": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-06-28"
       },
       "encounter": {
@@ -14546,56 +14583,56 @@
         "everLearned": true
       },
       "sane": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-26",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "horrify": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-26",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "solitude": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-26",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "bribe": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-26",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "astonish": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-26",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
       "glare": {
-        "box": 1,
-        "due": "2026-07-17",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-26",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-16",
+        "seenAt": "2026-07-18",
         "learnedAt": "2026-07-16",
         "everLearned": true
       },
