@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-18T18:34:01.562Z",
+  "exportedAt": "2026-07-19T07:44:58.844Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5654,6 +5654,46 @@
         "word": "glare",
         "masteredAt": "2026-07-18",
         "mode": "test"
+      },
+      {
+        "word": "diligent",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "habitual",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "enchant",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "conspicuous",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "cynical",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "industrialize",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "temperate",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "assimilate",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5743,10 +5783,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2901,
-    "totalAttempts": 3116,
-    "lastSessionDate": "2026-07-18",
-    "streak": 4,
+    "totalCorrect": 2925,
+    "totalAttempts": 3140,
+    "lastSessionDate": "2026-07-19",
+    "streak": 5,
     "history": [
       {
         "date": "2026-06-28",
@@ -6517,6 +6557,13 @@
         "score": 10,
         "total": 12,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-19",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -14444,11 +14491,11 @@
         "everLearned": true
       },
       "industrialize": {
-        "box": 1,
-        "due": "2026-07-19",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-27",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
@@ -14588,11 +14635,11 @@
         "everLearned": true
       },
       "assimilate": {
-        "box": 1,
-        "due": "2026-07-19",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-07-27",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
@@ -14660,47 +14707,47 @@
         "everLearned": true
       },
       "diligent": {
-        "box": 1,
-        "due": "2026-07-19",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
       "conspicuous": {
-        "box": 1,
-        "due": "2026-07-19",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
       "cynical": {
-        "box": 0,
-        "due": "2026-07-18",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-23",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
       "temperate": {
-        "box": 1,
-        "due": "2026-07-19",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
       "habitual": {
-        "box": 1,
-        "due": "2026-07-19",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-27",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
@@ -14732,11 +14779,11 @@
         "everLearned": true
       },
       "enchant": {
-        "box": 0,
-        "due": "2026-07-18",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-23",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
