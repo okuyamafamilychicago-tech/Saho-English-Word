@@ -1919,6 +1919,7 @@ function renderHome() {
       <div class="home-actions" style="margin-top:14px">
         <button class="btn small" onclick="exportProgress()" style="background:var(--honey); box-shadow:0 4px 0 #b78019, 0 8px 16px rgba(234,168,63,0.22)">📦 バックアップ</button>
         <button class="btn ghost small" onclick="renderHistory()">記録</button>
+        <button class="btn small" onclick="startReview()" style="background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)">🔄 復習</button>
       </div>
       <p style="margin-top:8px; font-size:0.72rem; color:var(--ink-soft); text-align:center">
         マスター: <b>${esc(masterBatchName())}</b> ・ ${esc(masterVersion())}
@@ -3234,6 +3235,163 @@ function resetProgress() {
   renderHome();
   document.querySelector(".modal-backdrop")?.remove();
   alert("すべて リセットしました。ゼロから 始めましょう 🌱");
+}
+
+// ============================================================
+// 🔄 復習モード (裏道) — 既存の まなぶ/テスト に 影響を 与えない
+// 学んだ全単語をランダム順・1問だけ・形式ランダム。間違ったら testWrong に記録。
+// mastered/SRS/history は 触らない（testWrong だけ更新）
+// ============================================================
+let review = null;
+
+function pickReviewWords() {
+  const pool = getWords();
+  // 学んだ = SRS エントリーがある か mastered にある 単語
+  const masteredSet = new Set(state.mastered.map(m => m.word));
+  return pool.filter(w => !isNew(w.word) || masteredSet.has(w.word));
+}
+
+function startReview() {
+  const words = pickReviewWords();
+  if (words.length === 0) {
+    alert("復習できる単語が ありません。\nまず まなぶ か テスト を してから 使ってね 🌱");
+    return;
+  }
+  // 各語に ランダム形式を 割り当てて シャッフル
+  const items = words.map(w => {
+    const formats = ["wordToDef", "defToWord"];
+    if (w.example && w.example.includes("___")) formats.push("fillBlank");
+    const type = formats[Math.floor(Math.random() * formats.length)];
+    return { w, type };
+  });
+  const queue = shuffleNoAdjacent(items, e => e.w.word);
+  review = {
+    queue,
+    total: queue.length,
+    asked: 0,
+    correct: 0,
+    wrongSet: new Set(),
+    answered: false,
+    current: null,
+  };
+  renderReviewQuestion();
+}
+
+function reviewTopBar() {
+  return `<div class="session-bar">
+    <button class="icon-btn" onclick="exitReview()">← やめる</button>
+    <span style="font-size:0.72rem; color:var(--berry); font-weight:800">🔄 復習モード</span>
+  </div>`;
+}
+
+function renderReviewQuestion() {
+  const r = review;
+  const spec = r.queue[0];
+  const q = buildChoiceQuestion(spec.w, spec.type);
+  r.current = q;
+  r.answered = false;
+  const pct = r.total ? (r.asked / r.total) * 100 : 0;
+  const typeLabel = { wordToDef: "意味あて", defToWord: "単語あて", fillBlank: "空欄うめ" }[q.type];
+
+  app.innerHTML = `
+    <div class="card">
+      ${reviewTopBar()}
+      <div class="q-progress-bar"><div style="width:${pct}%"></div></div>
+      <div class="q-meta">
+        <span>復習 ${r.asked + 1} / ${r.total}</span>
+        <span class="q-type-tag" style="background:var(--berry)">${typeLabel}</span>
+      </div>
+      <div class="q-prompt">${q.prompt}</div>
+      <div class="q-content ${q.isWord ? 'word' : ''}">${q.content}</div>
+      <div class="choices" id="choices">
+        ${q.choices.map((c, i) => `
+          <button class="choice" data-key="${esc(c.key)}" onclick="answerReview(${i})">
+            <span class="letter">${String.fromCharCode(65 + i)}</span>${c.label}
+          </button>`).join("")}
+      </div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  `;
+}
+
+function answerReview(idx) {
+  const r = review;
+  if (r.answered) return;
+  r.answered = true;
+  const q = r.current;
+  const correct = q.choices[idx].key === q.answer;
+
+  const btns = document.querySelectorAll(".choice");
+  btns.forEach(b => { b.disabled = true; if (b.dataset.key === q.answer) b.classList.add("correct"); });
+  if (!correct) btns[idx].classList.add("wrong");
+
+  r.asked++;
+  if (correct) r.correct++;
+  else r.wrongSet.add(q.word.word);
+
+  const ex = q.word.example ? esc(q.word.example).replace("___", `<b>${esc(q.word.word)}</b>`) : "";
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback show " + (correct ? "ok" : "ng");
+  fb.innerHTML = `${correct ? "せいかい！" : "おしい！"}
+    <div class="word-info">${esc(q.word.word)} — ${esc(q.word.def || "")}</div>`
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
+  if (!correct) speak(q.word.word);
+
+  setTimeout(() => {
+    r.queue.shift();
+    if (r.queue.length === 0) finishReview();
+    else renderReviewQuestion();
+  }, correct ? 1000 : 1600);
+}
+
+function exitReview() {
+  if (!confirm("復習を やめて ホームに もどりますか？\n（ここまでの まちがい語は testWrong に 記録されます）")) return;
+  finalizeReviewWrong();
+  review = null;
+  renderHome();
+}
+
+// wrong を testWrong に 追加（既存ルールに従う）
+function finalizeReviewWrong() {
+  if (!review) return;
+  const todayStr = today();
+  for (const wordStr of review.wrongSet) {
+    const existing = state.testWrong.find(t => t.word === wordStr);
+    if (existing) {
+      existing.at = todayStr;
+      // ※ learnCount は リセットしない（1回ルール）
+    } else {
+      state.testWrong.push({ word: wordStr, at: todayStr, learnCount: 0, reviewSource: true });
+    }
+  }
+  saveState();
+  autoBackup("review");
+}
+
+function finishReview() {
+  finalizeReviewWrong();
+  const total = review.asked;
+  const correct = review.correct;
+  const wrongCount = review.wrongSet.size;
+  const acc = total ? Math.round((correct / total) * 100) : 0;
+  const stars = acc === 100 ? "🌟🌟🌟" : acc >= 90 ? "🌟🌟" : acc >= 70 ? "🌟" : "🌰";
+  const cheer = acc === 100 ? "パーフェクト！" : acc >= 90 ? "とても いい！" : acc >= 70 ? "いい調子！" : "また 復習しよう！";
+
+  app.innerHTML = `
+    <div class="card result">
+      <div class="stars-burst">${stars}</div>
+      <h2>🔄 復習 完了！— ${cheer}</h2>
+      <p class="summary">${total}問中 ${correct}問 正解（${acc}%）</p>
+      ${wrongCount ? `<div style="background:var(--coral-soft); border:1px solid #f3cfc6; border-radius:14px; padding:12px 14px; margin:14px 0; color:var(--coral-deep); font-weight:800; font-size:0.94rem">
+        ❌ ${wrongCount}語を testWrong に 追加しました。<br>
+        <small style="font-weight:600; font-size:0.82rem">次のテストで もう一度 出ます。</small>
+      </div>` : `<p style="color:var(--good); font-weight:800; margin-top:10px">全問正解！ 完璧です 🎉</p>`}
+      <div class="result-actions">
+        <button class="btn ghost" onclick="renderHome()">ホーム</button>
+        <button class="btn teal" onclick="review = null; startReview()">もう1回 →</button>
+      </div>
+    </div>
+  `;
 }
 
 applySvgTheme(state.svgTheme || "forest");
