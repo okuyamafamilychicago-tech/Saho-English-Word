@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-19T07:49:20.285Z",
+  "exportedAt": "2026-07-19T07:51:53.557Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-10",
   "state": {
@@ -5774,6 +5774,36 @@
         "word": "menace",
         "masteredAt": "2026-07-19",
         "mode": "test"
+      },
+      {
+        "word": "slender",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "punctual",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "hardship",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "monotonous",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "startle",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
+      },
+      {
+        "word": "indifferent",
+        "masteredAt": "2026-07-19",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5853,8 +5883,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 2972,
-    "totalAttempts": 3187,
+    "totalCorrect": 2996,
+    "totalAttempts": 3211,
     "lastSessionDate": "2026-07-19",
     "streak": 5,
     "history": [
@@ -6648,6 +6678,13 @@
         "score": 23,
         "total": 23,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-19",
+        "climbed": 6,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -6766,18 +6803,18 @@
       },
       "alternative": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-06-28"
       },
       "institute": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-06-28"
       },
       "expand": {
@@ -14593,20 +14630,20 @@
         "everLearned": true
       },
       "hardship": {
-        "box": 2,
-        "due": "2026-07-20",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
       "monotonous": {
-        "box": 2,
-        "due": "2026-07-20",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
@@ -14647,20 +14684,20 @@
         "everLearned": true
       },
       "indifferent": {
-        "box": 2,
-        "due": "2026-07-20",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
       "punctual": {
-        "box": 2,
-        "due": "2026-07-20",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
@@ -14683,11 +14720,11 @@
         "everLearned": true
       },
       "slender": {
-        "box": 2,
-        "due": "2026-07-20",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
@@ -14710,11 +14747,11 @@
         "everLearned": true
       },
       "startle": {
-        "box": 2,
-        "due": "2026-07-20",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-07-18",
+        "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
         "everLearned": true
       },
