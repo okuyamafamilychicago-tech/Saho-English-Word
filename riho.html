@@ -3253,16 +3253,36 @@ function pickReviewWords() {
 
 const REVIEW_BATCH_SIZE = 50;   // 復習: 1セッションの問題数
 
+// state.testWrong から 過去の reviewSource エントリーを reviewWrong に移す（1回限りマイグレーション）
+(function migrateReviewSource() {
+  if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
+  if (!Array.isArray(state.testWrong)) return;
+  const legacy = state.testWrong.filter(t => t.reviewSource);
+  if (legacy.length === 0) return;
+  state.testWrong = state.testWrong.filter(t => !t.reviewSource);
+  for (const t of legacy) {
+    if (!state.reviewWrong.find(r => r.word === t.word)) {
+      state.reviewWrong.push({ word: t.word, at: t.at || today(), count: 1 });
+    }
+  }
+  saveState();
+  console.log(`[Migration] ${legacy.length} reviewSource entries を testWrong から reviewWrong に 移動`);
+})();
+
 function startReview() {
+  if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
   const allWords = pickReviewWords();
   if (allWords.length === 0) {
     alert("復習できる単語が ありません。\nまず まなぶ か テスト を してから 使ってね 🌱");
     return;
   }
-  // 学んだ 全単語から ランダムに 最大 50語を ピック
-  const picked = shuffle(allWords).slice(0, REVIEW_BATCH_SIZE);
+  // 優先順: 復習で間違えた reviewWrong 語 → その他 学んだ 語
+  const reviewWrongSet = new Set(state.reviewWrong.map(t => t.word));
+  const wrongFirst = allWords.filter(w => reviewWrongSet.has(w.word));
+  const others = shuffle(allWords.filter(w => !reviewWrongSet.has(w.word)));
+  const combined = [...wrongFirst, ...others].slice(0, REVIEW_BATCH_SIZE);
   // 各語に ランダム形式を 割り当てて シャッフル
-  const items = picked.map(w => {
+  const items = combined.map(w => {
     const formats = ["wordToDef", "defToWord"];
     if (w.example && w.example.includes("___")) formats.push("fillBlank");
     const type = formats[Math.floor(Math.random() * formats.length)];
@@ -3275,6 +3295,7 @@ function startReview() {
     asked: 0,
     correct: 0,
     wrongSet: new Set(),
+    correctSet: new Set(),
     answered: false,
     current: null,
   };
@@ -3330,8 +3351,12 @@ function answerReview(idx) {
   if (!correct) btns[idx].classList.add("wrong");
 
   r.asked++;
-  if (correct) r.correct++;
-  else r.wrongSet.add(q.word.word);
+  if (correct) {
+    r.correct++;
+    r.correctSet.add(q.word.word);
+  } else {
+    r.wrongSet.add(q.word.word);
+  }
 
   const ex = q.word.example ? esc(q.word.example).replace("___", `<b>${esc(q.word.word)}</b>`) : "";
   const fb = document.getElementById("feedback");
@@ -3349,23 +3374,30 @@ function answerReview(idx) {
 }
 
 function exitReview() {
-  if (!confirm("復習を やめて ホームに もどりますか？\n（ここまでの まちがい語は testWrong に 記録されます）")) return;
-  finalizeReviewWrong();
+  if (!confirm("復習を やめて ホームに もどりますか？\n（ここまでの まちがい語は 次の 復習 で 出題されます）")) return;
+  finalizeReview();
   review = null;
   renderHome();
 }
 
-// wrong を testWrong に 追加（既存ルールに従う）
-function finalizeReviewWrong() {
+// wrong → state.reviewWrong に 追加（テスト・まなぶ には 影響しない）
+// correct → state.reviewWrong から 削除
+function finalizeReview() {
   if (!review) return;
+  if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
   const todayStr = today();
+  // ①正解した語は reviewWrong から 削除
+  if (review.correctSet && review.correctSet.size > 0) {
+    state.reviewWrong = state.reviewWrong.filter(t => !review.correctSet.has(t.word));
+  }
+  // ②間違えた語は reviewWrong に 追加/更新
   for (const wordStr of review.wrongSet) {
-    const existing = state.testWrong.find(t => t.word === wordStr);
+    const existing = state.reviewWrong.find(t => t.word === wordStr);
     if (existing) {
       existing.at = todayStr;
-      // ※ learnCount は リセットしない（1回ルール）
+      existing.count = (existing.count || 1) + 1;
     } else {
-      state.testWrong.push({ word: wordStr, at: todayStr, learnCount: 0, reviewSource: true });
+      state.reviewWrong.push({ word: wordStr, at: todayStr, count: 1 });
     }
   }
   saveState();
@@ -3373,23 +3405,25 @@ function finalizeReviewWrong() {
 }
 
 function finishReview() {
-  finalizeReviewWrong();
+  finalizeReview();
   const total = review.asked;
   const correct = review.correct;
   const wrongCount = review.wrongSet.size;
   const acc = total ? Math.round((correct / total) * 100) : 0;
   const stars = acc === 100 ? "🌟🌟🌟" : acc >= 90 ? "🌟🌟" : acc >= 70 ? "🌟" : "🌰";
   const cheer = acc === 100 ? "パーフェクト！" : acc >= 90 ? "とても いい！" : acc >= 70 ? "いい調子！" : "また 復習しよう！";
+  const pendingCount = (state.reviewWrong || []).length;
 
   app.innerHTML = `
     <div class="card result">
       <div class="stars-burst">${stars}</div>
       <h2>🔄 復習 完了！— ${cheer}</h2>
       <p class="summary">${total}問中 ${correct}問 正解（${acc}%）</p>
-      ${wrongCount ? `<div style="background:var(--coral-soft); border:1px solid #f3cfc6; border-radius:14px; padding:12px 14px; margin:14px 0; color:var(--coral-deep); font-weight:800; font-size:0.94rem">
-        ❌ ${wrongCount}語を testWrong に 追加しました。<br>
-        <small style="font-weight:600; font-size:0.82rem">次のテストで もう一度 出ます。</small>
+      ${wrongCount ? `<div style="background:var(--berry-soft); border:1px solid #e6c4d4; border-radius:14px; padding:12px 14px; margin:14px 0; color:var(--berry); font-weight:800; font-size:0.94rem">
+        ❌ ${wrongCount}語を <b>復習リスト</b> に 記録しました。<br>
+        <small style="font-weight:600; font-size:0.82rem">🔄 次の 復習 で もう一度 出ます（まなぶ・テスト には 影響しません）。</small>
       </div>` : `<p style="color:var(--good); font-weight:800; margin-top:10px">全問正解！ 完璧です 🎉</p>`}
+      ${pendingCount > 0 ? `<p style="font-size:0.78rem; color:var(--ink-soft); margin-top:6px">復習リスト 全体: <b>${pendingCount}語</b></p>` : ""}
       <div class="result-actions">
         <button class="btn ghost" onclick="renderHome()">ホーム</button>
         <button class="btn teal" onclick="review = null; startReview()">もう1回 →</button>
