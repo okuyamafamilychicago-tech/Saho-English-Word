@@ -3251,14 +3251,18 @@ function pickReviewWords() {
   return pool.filter(w => !isNew(w.word) || masteredSet.has(w.word));
 }
 
+const REVIEW_BATCH_SIZE = 50;   // 復習: 1セッションの問題数
+
 function startReview() {
-  const words = pickReviewWords();
-  if (words.length === 0) {
+  const allWords = pickReviewWords();
+  if (allWords.length === 0) {
     alert("復習できる単語が ありません。\nまず まなぶ か テスト を してから 使ってね 🌱");
     return;
   }
+  // 学んだ 全単語から ランダムに 最大 50語を ピック
+  const picked = shuffle(allWords).slice(0, REVIEW_BATCH_SIZE);
   // 各語に ランダム形式を 割り当てて シャッフル
-  const items = words.map(w => {
+  const items = picked.map(w => {
     const formats = ["wordToDef", "defToWord"];
     if (w.example && w.example.includes("___")) formats.push("fillBlank");
     const type = formats[Math.floor(Math.random() * formats.length)];
