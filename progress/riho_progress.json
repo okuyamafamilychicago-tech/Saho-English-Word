@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-20T07:56:03.708Z",
+  "exportedAt": "2026-07-20T08:01:21.231Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -5888,8 +5888,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3042,
-    "totalAttempts": 3259,
+    "totalCorrect": 3075,
+    "totalAttempts": 3294,
     "lastSessionDate": "2026-07-20",
     "streak": 6,
     "history": [
@@ -6718,6 +6718,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-20",
+        "climbed": 0,
+        "score": 9,
+        "total": 11,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -15015,9 +15022,9 @@
         "everLearned": true
       },
       "ultimately": {
-        "box": 0,
-        "due": "2026-07-20",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-20",
         "learnedAt": "2026-07-20",
@@ -15037,6 +15044,96 @@
         "due": "2026-07-21",
         "correct": 1,
         "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "parameter": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "retain": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "integrate": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "array": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "ongoing": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "exclusive": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "compliance": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "entity": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "execute": {
+        "box": 0,
+        "due": "2026-07-20",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "expertise": {
+        "box": 0,
+        "due": "2026-07-20",
+        "correct": 0,
+        "wrong": 1,
         "seenAt": "2026-07-20",
         "learnedAt": "2026-07-20",
         "everLearned": true
