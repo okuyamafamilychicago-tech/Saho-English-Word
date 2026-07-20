@@ -1,7 +1,7 @@
 {
-  "exportedAt": "2026-07-19T07:53:13.783Z",
+  "exportedAt": "2026-07-20T07:47:59.786Z",
   "auto": true,
-  "masterVersion": "2026-06-06-batches-1-10",
+  "masterVersion": "2026-06-06-batches-1-11",
   "state": {
     "words": [],
     "mastered": [
@@ -5888,8 +5888,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3005,
-    "totalAttempts": 3221,
+    "totalCorrect": 3006,
+    "totalAttempts": 3222,
     "lastSessionDate": "2026-07-19",
     "streak": 5,
     "history": [
@@ -14948,10 +14948,12 @@
       "batch-7",
       "batch-8",
       "batch-9",
-      "batch-10"
+      "batch-10",
+      "batch-11"
     ],
     "svgTheme": "forest",
     "schemaVersion": 2,
-    "rihoBulk800Done": true
+    "rihoBulk800Done": true,
+    "reviewWrong": []
   }
 }
