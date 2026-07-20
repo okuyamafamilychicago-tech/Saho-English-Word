@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-20T07:47:59.786Z",
+  "exportedAt": "2026-07-20T07:53:29.515Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -5888,10 +5888,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3006,
-    "totalAttempts": 3222,
-    "lastSessionDate": "2026-07-19",
-    "streak": 5,
+    "totalCorrect": 3036,
+    "totalAttempts": 3253,
+    "lastSessionDate": "2026-07-20",
+    "streak": 6,
     "history": [
       {
         "date": "2026-06-28",
@@ -6703,6 +6703,13 @@
         "climbed": 0,
         "score": 1,
         "total": 1,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-07-20",
+        "climbed": 0,
+        "score": 9,
+        "total": 10,
         "mode": "learn"
       }
     ],
@@ -14935,6 +14942,96 @@
         "wrong": 0,
         "seenAt": "2026-07-19",
         "learnedAt": "2026-07-18",
+        "everLearned": true
+      },
+      "fuel": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "implement": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "enhance": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "specify": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "eligible": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "incorporate": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "comprehensive": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "ultimately": {
+        "box": 0,
+        "due": "2026-07-20",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "configuration": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "mortgage": {
+        "box": 1,
+        "due": "2026-07-21",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-20",
+        "learnedAt": "2026-07-20",
         "everLearned": true
       }
     },
