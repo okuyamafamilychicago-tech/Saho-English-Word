@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-20T08:01:21.231Z",
+  "exportedAt": "2026-07-21T06:52:35.203Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -5804,6 +5804,46 @@
         "word": "indifferent",
         "masteredAt": "2026-07-19",
         "mode": "test"
+      },
+      {
+        "word": "incorporate",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "eligible",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "execute",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "expertise",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "implement",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "enhance",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "specify",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "fuel",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5888,10 +5928,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3075,
-    "totalAttempts": 3294,
-    "lastSessionDate": "2026-07-20",
-    "streak": 6,
+    "totalCorrect": 3099,
+    "totalAttempts": 3318,
+    "lastSessionDate": "2026-07-21",
+    "streak": 7,
     "history": [
       {
         "date": "2026-06-28",
@@ -6725,6 +6765,13 @@
         "score": 9,
         "total": 11,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-21",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -14959,56 +15006,56 @@
         "everLearned": true
       },
       "fuel": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "implement": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "enhance": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "specify": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "eligible": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "incorporate": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
@@ -15121,20 +15168,20 @@
         "everLearned": true
       },
       "execute": {
-        "box": 0,
-        "due": "2026-07-20",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-25",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "expertise": {
-        "box": 0,
-        "due": "2026-07-20",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-25",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       }
