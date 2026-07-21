@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-21T06:58:47.042Z",
+  "exportedAt": "2026-07-21T07:02:14.091Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -5988,8 +5988,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3150,
-    "totalAttempts": 3370,
+    "totalCorrect": 3180,
+    "totalAttempts": 3400,
     "lastSessionDate": "2026-07-21",
     "streak": 7,
     "history": [
@@ -6853,6 +6853,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-21",
+        "climbed": 0,
+        "score": 10,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -15264,6 +15271,96 @@
         "wrong": 1,
         "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
+        "everLearned": true
+      },
+      "venue": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "verify": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "stunning": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "liability": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "equity": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "enroll": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "protocol": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "wage": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "excel": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
+        "everLearned": true
+      },
+      "premium": {
+        "box": 1,
+        "due": "2026-07-22",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-21",
+        "learnedAt": "2026-07-21",
         "everLearned": true
       }
     },
