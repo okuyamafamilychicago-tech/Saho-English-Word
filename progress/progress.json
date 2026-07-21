@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-20T18:02:27.527Z",
+  "exportedAt": "2026-07-21T06:53:57.540Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -1854,6 +1854,46 @@
         "word": "perceive",
         "masteredAt": "2026-07-20",
         "mode": "test"
+      },
+      {
+        "word": "genuine",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "accordingly",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "boost",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "cite",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "arise",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "genetic",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "sustain",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "glance",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -1893,10 +1933,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3865,
-    "totalAttempts": 4444,
-    "lastSessionDate": "2026-07-20",
-    "streak": 1,
+    "totalCorrect": 3898,
+    "totalAttempts": 4485,
+    "lastSessionDate": "2026-07-21",
+    "streak": 2,
     "history": [
       {
         "date": "2026-06-02",
@@ -2737,6 +2777,13 @@
         "score": 14,
         "total": 15,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-21",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -5705,83 +5752,83 @@
         "everLearned": true
       },
       "cite": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "scent": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 2,
+        "due": "2026-07-23",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "arise": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "genuine": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "accordingly": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "sustain": {
-        "box": 0,
-        "due": "2026-07-20",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-07-25",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "genetic": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "boost": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-20",
+        "box": 3,
+        "due": "2026-07-25",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "glance": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
