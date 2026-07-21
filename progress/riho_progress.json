@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-21T06:52:35.203Z",
+  "exportedAt": "2026-07-21T06:56:12.554Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -5844,6 +5844,41 @@
         "word": "fuel",
         "masteredAt": "2026-07-21",
         "mode": "test"
+      },
+      {
+        "word": "integrate",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "ultimately",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "parameter",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "mortgage",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "comprehensive",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "array",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
+      },
+      {
+        "word": "retain",
+        "masteredAt": "2026-07-21",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -5926,10 +5961,15 @@
         "word": "efficient",
         "at": "2026-07-19",
         "learnCount": 1
+      },
+      {
+        "word": "configuration",
+        "at": "2026-07-21",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3099,
-    "totalAttempts": 3318,
+    "totalCorrect": 3123,
+    "totalAttempts": 3343,
     "lastSessionDate": "2026-07-21",
     "streak": 7,
     "history": [
@@ -6771,6 +6811,13 @@
         "climbed": 8,
         "score": 24,
         "total": 24,
+        "mode": "test"
+      },
+      {
+        "date": "2026-07-21",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
         "mode": "test"
       }
     ],
@@ -15060,74 +15107,74 @@
         "everLearned": true
       },
       "comprehensive": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "ultimately": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "configuration": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-20",
+        "box": 3,
+        "due": "2026-07-25",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "mortgage": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "parameter": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "retain": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "integrate": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
       "array": {
-        "box": 1,
-        "due": "2026-07-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-29",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-20",
+        "seenAt": "2026-07-21",
         "learnedAt": "2026-07-20",
         "everLearned": true
       },
