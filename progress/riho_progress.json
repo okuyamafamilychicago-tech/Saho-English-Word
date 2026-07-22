@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-22T07:50:34.711Z",
+  "exportedAt": "2026-07-22T07:52:41.577Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -5939,6 +5939,41 @@
         "word": "venue",
         "masteredAt": "2026-07-22",
         "mode": "test"
+      },
+      {
+        "word": "recipient",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
+      },
+      {
+        "word": "diagnose",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
+      },
+      {
+        "word": "premium",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
+      },
+      {
+        "word": "excel",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
+      },
+      {
+        "word": "embrace",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
+      },
+      {
+        "word": "trigger",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
+      },
+      {
+        "word": "wage",
+        "masteredAt": "2026-07-22",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6026,10 +6061,15 @@
         "word": "comprise",
         "at": "2026-07-22",
         "learnCount": 0
+      },
+      {
+        "word": "facilitate",
+        "at": "2026-07-22",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3234,
-    "totalAttempts": 3457,
+    "totalCorrect": 3258,
+    "totalAttempts": 3482,
     "lastSessionDate": "2026-07-22",
     "streak": 8,
     "history": [
@@ -6907,6 +6947,13 @@
         "score": 9,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-22",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       },
       {
         "date": "2026-07-22",
@@ -15391,74 +15438,74 @@
         "everLearned": true
       },
       "wage": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "excel": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "premium": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "facilitate": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-21",
+        "box": 3,
+        "due": "2026-07-26",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "diagnose": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "recipient": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "embrace": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
       "trigger": {
-        "box": 1,
-        "due": "2026-07-22",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-07-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-21",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
       },
