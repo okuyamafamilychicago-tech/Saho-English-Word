@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-22T07:57:17.838Z",
+  "exportedAt": "2026-07-22T08:02:52.895Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -6093,8 +6093,8 @@
         "learnCount": 0
       }
     ],
-    "totalCorrect": 3296,
-    "totalAttempts": 3526,
+    "totalCorrect": 3297,
+    "totalAttempts": 3528,
     "lastSessionDate": "2026-07-22",
     "streak": 8,
     "history": [
@@ -7246,19 +7246,19 @@
         "learnedAt": "2026-06-28"
       },
       "favor": {
-        "box": 5,
-        "due": "2026-07-14",
+        "box": 4,
+        "due": "2026-07-30",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "wrong": 1,
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-06-28"
       },
       "commission": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-07",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-22",
         "learnedAt": "2026-06-28"
       },
       "convert": {
@@ -15610,6 +15610,47 @@
     "svgTheme": "forest",
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "ethical",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "impulse",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "conflict",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "stray",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "enchant",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "legacy",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "diminish",
+        "at": "2026-07-22",
+        "count": 1
+      },
+      {
+        "word": "scare",
+        "at": "2026-07-22",
+        "count": 1
+      }
+    ]
   }
 }
