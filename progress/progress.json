@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-22T13:22:00.486Z",
+  "exportedAt": "2026-07-23T07:48:25.660Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -2043,10 +2043,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4036,
-    "totalAttempts": 4647,
-    "lastSessionDate": "2026-07-22",
-    "streak": 3,
+    "totalCorrect": 4068,
+    "totalAttempts": 4684,
+    "lastSessionDate": "2026-07-23",
+    "streak": 4,
     "history": [
       {
         "date": "2026-06-02",
@@ -2936,6 +2936,13 @@
         "score": 21,
         "total": 21,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-23",
+        "climbed": 0,
+        "score": 7,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -6172,13 +6179,104 @@
         "seenAt": "2026-07-22",
         "learnedAt": "2026-07-21",
         "everLearned": true
+      },
+      "instinct": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "leak": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "alert": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "virtue": {
+        "box": 0,
+        "due": "2026-07-23",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "discourage": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "shed": {
+        "box": 0,
+        "due": "2026-07-23",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "influential": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "sew": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "descend": {
+        "box": 0,
+        "due": "2026-07-23",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
+      },
+      "invade": {
+        "box": 1,
+        "due": "2026-07-24",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-23",
+        "learnedAt": "2026-07-23",
+        "everLearned": true
       }
     },
     "images": {},
     "unlockedSeen": [
       "batch-2",
       "batch-3",
-      "batch-4"
+      "batch-4",
+      "batch-5"
     ],
     "svgTheme": "forest",
     "schemaVersion": 2,
