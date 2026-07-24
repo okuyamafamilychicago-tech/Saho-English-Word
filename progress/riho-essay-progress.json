@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "savedAt": "2026-07-09T06:09:03.527Z",
+  "savedAt": "2026-07-24T11:05:20.084Z",
   "quizzes": {
     "ai": {
       "0": {
@@ -123,6 +123,20 @@
         },
         "completedAt": "2026-07-09T06:09:03.527Z"
       }
+    },
+    "socialmedia": {
+      "0": {
+        "done": true,
+        "score": 2,
+        "total": 5,
+        "picks": {
+          "0": 0,
+          "1": 2,
+          "3": 2,
+          "4": 3
+        },
+        "completedAt": "2026-07-24T11:05:20.083Z"
+      }
     }
   },
   "history": [
@@ -205,6 +219,15 @@
       "pi": 2,
       "piName": "ハイブリッド派",
       "score": 3,
+      "total": 5
+    },
+    {
+      "date": "2026-07-24T11:05:20.083Z",
+      "tid": "socialmedia",
+      "tidTitle": "SNS規制",
+      "pi": 0,
+      "piName": "規制強化派",
+      "score": 2,
       "total": 5
     }
   ]
