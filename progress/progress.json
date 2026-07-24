@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-24T08:38:22.939Z",
+  "exportedAt": "2026-07-24T08:44:13.217Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -2039,6 +2039,41 @@
         "word": "instinct",
         "masteredAt": "2026-07-24",
         "mode": "test"
+      },
+      {
+        "word": "descend",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
+      },
+      {
+        "word": "shed",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
+      },
+      {
+        "word": "influential",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
+      },
+      {
+        "word": "invade",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
+      },
+      {
+        "word": "sew",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
+      },
+      {
+        "word": "offend",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
+      },
+      {
+        "word": "scary",
+        "masteredAt": "2026-07-24",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2081,10 +2116,15 @@
         "word": "provision",
         "at": "2026-07-24",
         "learnCount": 0
+      },
+      {
+        "word": "fulfill",
+        "at": "2026-07-24",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4142,
-    "totalAttempts": 4775,
+    "totalCorrect": 4166,
+    "totalAttempts": 4800,
     "lastSessionDate": "2026-07-24",
     "streak": 5,
     "history": [
@@ -2990,6 +3030,13 @@
         "score": 10,
         "total": 13,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-24",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       },
       {
         "date": "2026-07-24",
@@ -6280,56 +6327,56 @@
         "everLearned": true
       },
       "shed": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
       "influential": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
       "sew": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
       "descend": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
       "invade": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
       "offend": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
@@ -6343,20 +6390,20 @@
         "everLearned": true
       },
       "fulfill": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-23",
+        "box": 3,
+        "due": "2026-07-28",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
       "scary": {
-        "box": 1,
-        "due": "2026-07-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-01",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-23",
+        "seenAt": "2026-07-24",
         "learnedAt": "2026-07-23",
         "everLearned": true
       },
