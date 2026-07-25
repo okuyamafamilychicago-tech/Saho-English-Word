@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-25T07:26:20.115Z",
+  "exportedAt": "2026-07-25T07:28:11.310Z",
   "auto": true,
   "masterVersion": "2026-06-06-batches-1-11",
   "state": {
@@ -6134,6 +6134,26 @@
         "word": "spouse",
         "masteredAt": "2026-07-25",
         "mode": "test"
+      },
+      {
+        "word": "undergo",
+        "masteredAt": "2026-07-25",
+        "mode": "test"
+      },
+      {
+        "word": "tactic",
+        "masteredAt": "2026-07-25",
+        "mode": "test"
+      },
+      {
+        "word": "integrity",
+        "masteredAt": "2026-07-25",
+        "mode": "test"
+      },
+      {
+        "word": "divine",
+        "masteredAt": "2026-07-25",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6221,20 +6241,10 @@
         "word": "compete",
         "at": "2026-07-22",
         "learnCount": 1
-      },
-      {
-        "word": "integrity",
-        "at": "2026-07-24",
-        "learnCount": 1
-      },
-      {
-        "word": "undergo",
-        "at": "2026-07-24",
-        "learnCount": 1
       }
     ],
-    "totalCorrect": 3499,
-    "totalAttempts": 3736,
+    "totalCorrect": 3517,
+    "totalAttempts": 3754,
     "lastSessionDate": "2026-07-25",
     "streak": 11,
     "history": [
@@ -7189,6 +7199,13 @@
         "score": 24,
         "total": 24,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-25",
+        "climbed": 4,
+        "score": 18,
+        "total": 18,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7469,18 +7486,18 @@
       },
       "moreover": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-10",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-25",
         "learnedAt": "2026-06-28"
       },
       "pursue": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-10",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-25",
         "learnedAt": "2026-06-28"
       },
       "generate": {
@@ -15937,20 +15954,20 @@
         "everLearned": true
       },
       "undergo": {
-        "box": 4,
-        "due": "2026-08-01",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-08-10",
+        "correct": 8,
         "wrong": 1,
-        "seenAt": "2026-07-24",
+        "seenAt": "2026-07-25",
         "learnedAt": "2026-07-24",
         "everLearned": true
       },
       "integrity": {
-        "box": 4,
-        "due": "2026-08-01",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-08-10",
+        "correct": 8,
         "wrong": 1,
-        "seenAt": "2026-07-24",
+        "seenAt": "2026-07-25",
         "learnedAt": "2026-07-24",
         "everLearned": true
       },
@@ -16036,20 +16053,20 @@
         "everLearned": true
       },
       "divine": {
-        "box": 1,
-        "due": "2026-07-25",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-02",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-24",
+        "seenAt": "2026-07-25",
         "learnedAt": "2026-07-24",
         "everLearned": true
       },
       "tactic": {
-        "box": 1,
-        "due": "2026-07-25",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-02",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-24",
+        "seenAt": "2026-07-25",
         "learnedAt": "2026-07-24",
         "everLearned": true
       }
