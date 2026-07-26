@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-26T09:32:08.212Z",
+  "exportedAt": "2026-07-26T09:36:32.268Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6243,8 +6243,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3548,
-    "totalAttempts": 3786,
+    "totalCorrect": 3581,
+    "totalAttempts": 3821,
     "lastSessionDate": "2026-07-26",
     "streak": 12,
     "history": [
@@ -7212,6 +7212,13 @@
         "climbed": 0,
         "score": 9,
         "total": 10,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-07-26",
+        "climbed": 0,
+        "score": 9,
+        "total": 11,
         "mode": "learn"
       }
     ],
@@ -16132,9 +16139,9 @@
         "everLearned": true
       },
       "extract": {
-        "box": 0,
-        "due": "2026-07-26",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
         "wrong": 1,
         "seenAt": "2026-07-26",
         "learnedAt": "2026-07-26",
@@ -16159,6 +16166,96 @@
         "everLearned": true
       },
       "forge": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "authentic": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "oversee": {
+        "box": 0,
+        "due": "2026-07-26",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "habitat": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "expire": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "trait": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "collaborate": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "enforce": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "regime": {
+        "box": 0,
+        "due": "2026-07-26",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "tremendous": {
+        "box": 1,
+        "due": "2026-07-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-26",
+        "learnedAt": "2026-07-26",
+        "everLearned": true
+      },
+      "static": {
         "box": 1,
         "due": "2026-07-27",
         "correct": 1,
