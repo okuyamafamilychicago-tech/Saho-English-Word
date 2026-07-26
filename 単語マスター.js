@@ -1841,6 +1841,7 @@ window.WORD_MASTER = {
       flowMode: "learn-first",
       words: [
         {word:`ambiguous`,      def:`able to be understood in more than one way, and therefore unclear, uncertain, or difficult to understand`, example:`His answer was ambiguous.`,                          exJa:`かれの こたえは あいまい だった。`},
+        {word:`lineage`,        def:`people who were in someone's family in the past`,                                      example:`She traced her lineage to Ireland.`,               exJa:`かのじょは じぶんの けっとう を アイルランド まで さかのぼった。`},
         {word:`monumental`,     def:`very important`,                                                                       example:`This is a monumental day.`,                        exJa:`きょうは きねん てき な ひ だ。`},
         {word:`maneuver`,       def:`to move or turn something in a careful way, especially something large and heavy`,     example:`He maneuvered the car into a spot.`,               exJa:`かれは くるまを ちゅうしゃくうかん に そうじゅう した。`},
         {word:`synthesize`,     def:`to make something new by combining different things`,                                  example:`Chemists synthesize new drugs.`,                   exJa:`かがくしゃは あたらしい くすりを ごうせい する。`},
