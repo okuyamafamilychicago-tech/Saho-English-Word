@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-26T09:41:32.429Z",
+  "exportedAt": "2026-07-26T09:42:29.426Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6243,8 +6243,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3617,
-    "totalAttempts": 3857,
+    "totalCorrect": 3623,
+    "totalAttempts": 3863,
     "lastSessionDate": "2026-07-26",
     "streak": 12,
     "history": [
@@ -7227,6 +7227,13 @@
         "score": 12,
         "total": 12,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-26",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7531,18 +7538,18 @@
       },
       "conclude": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-11",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-26",
         "learnedAt": "2026-06-28"
       },
       "extreme": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-11",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-26",
         "learnedAt": "2026-06-28"
       },
       "consequence": {
