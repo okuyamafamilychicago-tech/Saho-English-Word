@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-27T07:34:46.239Z",
+  "exportedAt": "2026-07-27T07:36:43.984Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2139,6 +2139,16 @@
         "word": "appliance",
         "masteredAt": "2026-07-27",
         "mode": "test"
+      },
+      {
+        "word": "cease",
+        "masteredAt": "2026-07-27",
+        "mode": "test"
+      },
+      {
+        "word": "supplement",
+        "masteredAt": "2026-07-27",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2183,8 +2193,8 @@
         "learnCount": 0
       }
     ],
-    "totalCorrect": 4277,
-    "totalAttempts": 4922,
+    "totalCorrect": 4292,
+    "totalAttempts": 4938,
     "lastSessionDate": "2026-07-27",
     "streak": 8,
     "history": [
@@ -3132,6 +3142,13 @@
         "score": 24,
         "total": 25,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-27",
+        "climbed": 2,
+        "score": 15,
+        "total": 16,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -3249,10 +3266,10 @@
       },
       "remote": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 10,
+        "due": "2026-08-12",
+        "correct": 13,
         "wrong": 1,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-07-27"
       },
       "expand": {
         "box": 5,
@@ -3270,10 +3287,10 @@
       },
       "scheme": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 6,
+        "due": "2026-08-12",
+        "correct": 9,
         "wrong": 0,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-07-27"
       },
       "specific": {
         "box": 5,
@@ -6595,10 +6612,10 @@
         "everLearned": true
       },
       "inspect": {
-        "box": 3,
-        "due": "2026-07-31",
-        "correct": 4,
-        "wrong": 1,
+        "box": 5,
+        "due": "2026-08-12",
+        "correct": 7,
+        "wrong": 2,
         "seenAt": "2026-07-27",
         "learnedAt": "2026-07-26",
         "everLearned": true
@@ -6622,20 +6639,20 @@
         "everLearned": true
       },
       "cease": {
-        "box": 1,
-        "due": "2026-07-27",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-26",
+        "seenAt": "2026-07-27",
         "learnedAt": "2026-07-26",
         "everLearned": true
       },
       "supplement": {
-        "box": 1,
-        "due": "2026-07-27",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-26",
+        "seenAt": "2026-07-27",
         "learnedAt": "2026-07-26",
         "everLearned": true
       }
