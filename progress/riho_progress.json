@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-27T07:08:21.833Z",
+  "exportedAt": "2026-07-27T07:08:44.364Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6390,11 +6390,11 @@
       {
         "word": "dismiss",
         "at": "2026-07-27",
-        "learnCount": 0
+        "learnCount": 1
       }
     ],
-    "totalCorrect": 3720,
-    "totalAttempts": 3962,
+    "totalCorrect": 3723,
+    "totalAttempts": 3965,
     "lastSessionDate": "2026-07-27",
     "streak": 13,
     "history": [
@@ -7412,6 +7412,13 @@
         "score": 24,
         "total": 25,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-27",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -16529,12 +16536,12 @@
         "everLearned": true
       },
       "dismiss": {
-        "box": 3,
-        "due": "2026-07-31",
-        "correct": 4,
+        "box": 4,
+        "due": "2026-08-04",
+        "correct": 5,
         "wrong": 1,
         "seenAt": "2026-07-27",
-        "learnedAt": "2026-07-26",
+        "learnedAt": "2026-07-27",
         "everLearned": true
       },
       "toxic": {
