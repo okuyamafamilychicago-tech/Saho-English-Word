@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-27T07:08:44.364Z",
+  "exportedAt": "2026-07-27T07:10:43.170Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6391,10 +6391,15 @@
         "word": "dismiss",
         "at": "2026-07-27",
         "learnCount": 1
+      },
+      {
+        "word": "extend",
+        "at": "2026-07-27",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3723,
-    "totalAttempts": 3965,
+    "totalCorrect": 3730,
+    "totalAttempts": 3974,
     "lastSessionDate": "2026-07-27",
     "streak": 13,
     "history": [
@@ -7419,6 +7424,13 @@
         "score": 1,
         "total": 1,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-27",
+        "climbed": 0,
+        "score": 5,
+        "total": 6,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7754,35 +7766,35 @@
         "learnedAt": "2026-06-28"
       },
       "characteristic": {
-        "box": 5,
-        "due": "2026-07-14",
+        "box": 4,
+        "due": "2026-08-04",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "wrong": 1,
+        "seenAt": "2026-07-27",
         "learnedAt": "2026-06-28"
       },
       "appreciate": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-12",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-27",
         "learnedAt": "2026-06-28"
       },
       "extend": {
-        "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "box": 4,
+        "due": "2026-08-04",
+        "correct": 3,
+        "wrong": 1,
+        "seenAt": "2026-07-27",
         "learnedAt": "2026-06-28"
       },
       "secure": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-12",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-27",
         "learnedAt": "2026-06-28"
       },
       "launch": {
