@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "savedAt": "2026-07-24T11:05:20.084Z",
+  "savedAt": "2026-07-28T09:17:17.593Z",
   "quizzes": {
     "ai": {
       "0": {
@@ -127,15 +127,14 @@
     "socialmedia": {
       "0": {
         "done": true,
-        "score": 2,
+        "score": 3,
         "total": 5,
         "picks": {
-          "0": 0,
+          "0": 1,
           "1": 2,
-          "3": 2,
-          "4": 3
+          "3": 2
         },
-        "completedAt": "2026-07-24T11:05:20.083Z"
+        "completedAt": "2026-07-28T09:17:17.592Z"
       }
     }
   },
@@ -228,6 +227,15 @@
       "pi": 0,
       "piName": "規制強化派",
       "score": 2,
+      "total": 5
+    },
+    {
+      "date": "2026-07-28T09:17:17.592Z",
+      "tid": "socialmedia",
+      "tidTitle": "SNS規制",
+      "pi": 0,
+      "piName": "規制強化派",
+      "score": 3,
       "total": 5
     }
   ]
