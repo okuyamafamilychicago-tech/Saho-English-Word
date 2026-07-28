@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-27T07:36:43.984Z",
+  "exportedAt": "2026-07-28T09:05:50.026Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2149,6 +2149,11 @@
         "word": "supplement",
         "masteredAt": "2026-07-27",
         "mode": "test"
+      },
+      {
+        "word": "inspect",
+        "masteredAt": "2026-07-28",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2186,17 +2191,12 @@
         "word": "reverse",
         "at": "2026-07-20",
         "learnCount": 1
-      },
-      {
-        "word": "inspect",
-        "at": "2026-07-27",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 4292,
-    "totalAttempts": 4938,
-    "lastSessionDate": "2026-07-27",
-    "streak": 8,
+    "totalCorrect": 4301,
+    "totalAttempts": 4947,
+    "lastSessionDate": "2026-07-28",
+    "streak": 9,
     "history": [
       {
         "date": "2026-06-02",
@@ -3149,6 +3149,13 @@
         "score": 15,
         "total": 16,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-28",
+        "climbed": 1,
+        "score": 9,
+        "total": 9,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -3329,17 +3336,17 @@
       },
       "compete": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 15,
+        "due": "2026-08-13",
+        "correct": 18,
         "wrong": 0,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-07-28"
       },
       "brilliant": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 9,
+        "due": "2026-08-13",
+        "correct": 12,
         "wrong": 0,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-07-28"
       },
       "emergency": {
         "box": 5,
@@ -6613,10 +6620,10 @@
       },
       "inspect": {
         "box": 5,
-        "due": "2026-08-12",
-        "correct": 7,
+        "due": "2026-08-13",
+        "correct": 10,
         "wrong": 2,
-        "seenAt": "2026-07-27",
+        "seenAt": "2026-07-28",
         "learnedAt": "2026-07-26",
         "everLearned": true
       },
