@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-27T07:11:03.518Z",
+  "exportedAt": "2026-07-28T09:04:37.657Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6299,6 +6299,11 @@
         "word": "extract",
         "masteredAt": "2026-07-27",
         "mode": "test"
+      },
+      {
+        "word": "dismiss",
+        "masteredAt": "2026-07-28",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6388,20 +6393,20 @@
         "learnCount": 1
       },
       {
-        "word": "dismiss",
+        "word": "extend",
         "at": "2026-07-27",
         "learnCount": 1
       },
       {
-        "word": "extend",
-        "at": "2026-07-27",
-        "learnCount": 1
+        "word": "conflict",
+        "at": "2026-07-28",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3733,
-    "totalAttempts": 3977,
-    "lastSessionDate": "2026-07-27",
-    "streak": 13,
+    "totalCorrect": 3742,
+    "totalAttempts": 3987,
+    "lastSessionDate": "2026-07-28",
+    "streak": 14,
     "history": [
       {
         "date": "2026-06-28",
@@ -7438,6 +7443,13 @@
         "score": 1,
         "total": 1,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-28",
+        "climbed": 1,
+        "score": 9,
+        "total": 10,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7807,18 +7819,18 @@
       },
       "launch": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-13",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-28",
         "learnedAt": "2026-06-28"
       },
       "conflict": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "due": "2026-08-13",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-28",
         "learnedAt": "2026-06-28"
       },
       "chase": {
@@ -16556,11 +16568,11 @@
         "everLearned": true
       },
       "dismiss": {
-        "box": 4,
-        "due": "2026-08-04",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-08-13",
+        "correct": 8,
         "wrong": 1,
-        "seenAt": "2026-07-27",
+        "seenAt": "2026-07-28",
         "learnedAt": "2026-07-27",
         "everLearned": true
       },
