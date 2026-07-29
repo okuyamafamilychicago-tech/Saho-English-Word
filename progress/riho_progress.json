@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-28T09:32:39.634Z",
+  "exportedAt": "2026-07-29T09:25:09.508Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6304,6 +6304,46 @@
         "word": "dismiss",
         "masteredAt": "2026-07-28",
         "mode": "test"
+      },
+      {
+        "word": "relieve",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "conviction",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "depict",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "drain",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "fraction",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "leverage",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "niche",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "bias",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6403,10 +6443,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3814,
-    "totalAttempts": 4060,
-    "lastSessionDate": "2026-07-28",
-    "streak": 14,
+    "totalCorrect": 3838,
+    "totalAttempts": 4084,
+    "lastSessionDate": "2026-07-29",
+    "streak": 15,
     "history": [
       {
         "date": "2026-06-28",
@@ -7471,6 +7511,13 @@
         "score": 11,
         "total": 11,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-29",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -16608,74 +16655,74 @@
         "everLearned": true
       },
       "bias": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "leverage": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "fraction": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "depict": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "conviction": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "drain": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "relieve": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "niche": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
