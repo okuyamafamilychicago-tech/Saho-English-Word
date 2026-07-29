@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T09:39:01.706Z",
+  "exportedAt": "2026-07-29T09:40:02.982Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6399,6 +6399,11 @@
         "word": "petition",
         "masteredAt": "2026-07-29",
         "mode": "test"
+      },
+      {
+        "word": "subsidiary",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6496,15 +6501,10 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
-      },
-      {
-        "word": "subsidiary",
-        "at": "2026-07-29",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 3880,
-    "totalAttempts": 4127,
+    "totalCorrect": 3889,
+    "totalAttempts": 4136,
     "lastSessionDate": "2026-07-29",
     "streak": 15,
     "history": [
@@ -7592,6 +7592,13 @@
         "score": 18,
         "total": 19,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-29",
+        "climbed": 1,
+        "score": 9,
+        "total": 9,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -8010,18 +8017,18 @@
       },
       "faith": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-14",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-06-28"
       },
       "predict": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-14",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-06-28"
       },
       "accompany": {
@@ -16882,9 +16889,9 @@
         "everLearned": true
       },
       "subsidiary": {
-        "box": 3,
-        "due": "2026-08-02",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-08-14",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
