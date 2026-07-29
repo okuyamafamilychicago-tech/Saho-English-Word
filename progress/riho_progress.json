@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T09:35:36.307Z",
+  "exportedAt": "2026-07-29T09:39:01.706Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6384,6 +6384,21 @@
         "word": "incur",
         "masteredAt": "2026-07-29",
         "mode": "test"
+      },
+      {
+        "word": "transparent",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "disposal",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
+      },
+      {
+        "word": "petition",
+        "masteredAt": "2026-07-29",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6481,10 +6496,15 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
+      },
+      {
+        "word": "subsidiary",
+        "at": "2026-07-29",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3862,
-    "totalAttempts": 4108,
+    "totalCorrect": 3880,
+    "totalAttempts": 4127,
     "lastSessionDate": "2026-07-29",
     "streak": 15,
     "history": [
@@ -7565,6 +7585,13 @@
         "score": 24,
         "total": 24,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-29",
+        "climbed": 3,
+        "score": 18,
+        "total": 19,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7967,18 +7994,18 @@
       },
       "grant": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-14",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-06-28"
       },
       "contribute": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-14",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-06-28"
       },
       "faith": {
@@ -16846,38 +16873,38 @@
         "everLearned": true
       },
       "petition": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "subsidiary": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-28",
+        "box": 3,
+        "due": "2026-08-02",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "disposal": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       },
       "transparent": {
-        "box": 1,
-        "due": "2026-07-29",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-06",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-28",
+        "seenAt": "2026-07-29",
         "learnedAt": "2026-07-28",
         "everLearned": true
       }
