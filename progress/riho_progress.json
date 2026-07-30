@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-30T07:27:32.885Z",
+  "exportedAt": "2026-07-30T07:29:25.563Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6439,6 +6439,21 @@
         "word": "velocity",
         "masteredAt": "2026-07-30",
         "mode": "test"
+      },
+      {
+        "word": "repository",
+        "masteredAt": "2026-07-30",
+        "mode": "test"
+      },
+      {
+        "word": "milestone",
+        "masteredAt": "2026-07-30",
+        "mode": "test"
+      },
+      {
+        "word": "migration",
+        "masteredAt": "2026-07-30",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6536,15 +6551,10 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
-      },
-      {
-        "word": "milestone",
-        "at": "2026-07-30",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 3943,
-    "totalAttempts": 4194,
+    "totalCorrect": 3960,
+    "totalAttempts": 4212,
     "lastSessionDate": "2026-07-30",
     "streak": 16,
     "history": [
@@ -7653,6 +7663,13 @@
         "score": 24,
         "total": 25,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-30",
+        "climbed": 3,
+        "score": 15,
+        "total": 15,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -8086,35 +8103,35 @@
         "learnedAt": "2026-06-28"
       },
       "accompany": {
-        "box": 5,
-        "due": "2026-07-14",
+        "box": 4,
+        "due": "2026-08-07",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "wrong": 1,
+        "seenAt": "2026-07-30",
         "learnedAt": "2026-06-28"
       },
       "disaster": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-15",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-30",
         "learnedAt": "2026-06-28"
       },
       "threaten": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-15",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-30",
         "learnedAt": "2026-06-28"
       },
       "restore": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-15",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-30",
         "learnedAt": "2026-06-28"
       },
       "entirely": {
@@ -17015,18 +17032,18 @@
         "everLearned": true
       },
       "repository": {
-        "box": 1,
-        "due": "2026-07-30",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-07",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-29",
+        "seenAt": "2026-07-30",
         "learnedAt": "2026-07-29",
         "everLearned": true
       },
       "milestone": {
-        "box": 2,
-        "due": "2026-08-01",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-08-15",
+        "correct": 7,
         "wrong": 2,
         "seenAt": "2026-07-30",
         "learnedAt": "2026-07-29",
@@ -17051,11 +17068,11 @@
         "everLearned": true
       },
       "migration": {
-        "box": 1,
-        "due": "2026-07-30",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-07",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-29",
+        "seenAt": "2026-07-30",
         "learnedAt": "2026-07-29",
         "everLearned": true
       }
