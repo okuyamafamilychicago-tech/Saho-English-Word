@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-30T07:29:58.770Z",
+  "exportedAt": "2026-07-30T07:47:22.282Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6553,8 +6553,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 3966,
-    "totalAttempts": 4218,
+    "totalCorrect": 3996,
+    "totalAttempts": 4253,
     "lastSessionDate": "2026-07-30",
     "streak": 16,
     "history": [
@@ -7677,6 +7677,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-30",
+        "climbed": 0,
+        "score": 5,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -17081,6 +17088,96 @@
         "wrong": 0,
         "seenAt": "2026-07-30",
         "learnedAt": "2026-07-29",
+        "everLearned": true
+      },
+      "adverse": {
+        "box": 0,
+        "due": "2026-07-30",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "allocate": {
+        "box": 1,
+        "due": "2026-07-31",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "integral": {
+        "box": 1,
+        "due": "2026-07-31",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "projection": {
+        "box": 0,
+        "due": "2026-07-30",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "manipulate": {
+        "box": 0,
+        "due": "2026-07-30",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "deficiency": {
+        "box": 0,
+        "due": "2026-07-30",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "tribute": {
+        "box": 0,
+        "due": "2026-07-30",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "buffer": {
+        "box": 1,
+        "due": "2026-07-31",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "foster": {
+        "box": 1,
+        "due": "2026-07-31",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "norm": {
+        "box": 1,
+        "due": "2026-07-31",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-30",
+        "learnedAt": "2026-07-30",
         "everLearned": true
       }
     },
