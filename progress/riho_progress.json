@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-30T07:47:22.282Z",
+  "exportedAt": "2026-07-31T08:41:43.843Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6454,6 +6454,36 @@
         "word": "migration",
         "masteredAt": "2026-07-30",
         "mode": "test"
+      },
+      {
+        "word": "adverse",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "tribute",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "buffer",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "allocate",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "projection",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "manipulate",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6551,12 +6581,22 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
+      },
+      {
+        "word": "deficiency",
+        "at": "2026-07-31",
+        "learnCount": 0
+      },
+      {
+        "word": "integral",
+        "at": "2026-07-31",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 3996,
-    "totalAttempts": 4253,
-    "lastSessionDate": "2026-07-30",
-    "streak": 16,
+    "totalCorrect": 4020,
+    "totalAttempts": 4279,
+    "lastSessionDate": "2026-07-31",
+    "streak": 17,
     "history": [
       {
         "date": "2026-06-28",
@@ -7684,6 +7724,13 @@
         "score": 5,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-07-31",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -17091,74 +17138,74 @@
         "everLearned": true
       },
       "adverse": {
-        "box": 0,
-        "due": "2026-07-30",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-08-04",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "allocate": {
-        "box": 1,
-        "due": "2026-07-31",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "integral": {
-        "box": 1,
-        "due": "2026-07-31",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-30",
+        "box": 3,
+        "due": "2026-08-04",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "projection": {
-        "box": 0,
-        "due": "2026-07-30",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-08-04",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "manipulate": {
-        "box": 0,
-        "due": "2026-07-30",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-08-04",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "deficiency": {
-        "box": 0,
-        "due": "2026-07-30",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-07-30",
+        "box": 2,
+        "due": "2026-08-02",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "tribute": {
-        "box": 0,
-        "due": "2026-07-30",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-08-04",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "buffer": {
-        "box": 1,
-        "due": "2026-07-31",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
