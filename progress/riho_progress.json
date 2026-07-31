@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T08:41:43.843Z",
+  "exportedAt": "2026-07-31T09:48:10.219Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6484,6 +6484,26 @@
         "word": "manipulate",
         "masteredAt": "2026-07-31",
         "mode": "test"
+      },
+      {
+        "word": "deficiency",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "foster",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "integral",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
+      },
+      {
+        "word": "norm",
+        "masteredAt": "2026-07-31",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6581,20 +6601,10 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
-      },
-      {
-        "word": "deficiency",
-        "at": "2026-07-31",
-        "learnCount": 0
-      },
-      {
-        "word": "integral",
-        "at": "2026-07-31",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 4020,
-    "totalAttempts": 4279,
+    "totalCorrect": 4038,
+    "totalAttempts": 4297,
     "lastSessionDate": "2026-07-31",
     "streak": 17,
     "history": [
@@ -7731,6 +7741,13 @@
         "score": 24,
         "total": 26,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-31",
+        "climbed": 4,
+        "score": 18,
+        "total": 18,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -8212,20 +8229,20 @@
         "learnedAt": "2026-06-28"
       },
       "possess": {
-        "box": 4,
-        "due": "2026-07-14",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-08-16",
+        "correct": 8,
         "wrong": 2,
-        "seenAt": "2026-07-06",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-06-30",
         "everLearned": true
       },
       "incident": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-08-16",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-06-28"
       },
       "appoint": {
@@ -17156,9 +17173,9 @@
         "everLearned": true
       },
       "integral": {
-        "box": 3,
-        "due": "2026-08-04",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-08-16",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
@@ -17183,9 +17200,9 @@
         "everLearned": true
       },
       "deficiency": {
-        "box": 2,
-        "due": "2026-08-02",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-08-16",
+        "correct": 6,
         "wrong": 2,
         "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
@@ -17210,20 +17227,20 @@
         "everLearned": true
       },
       "foster": {
-        "box": 1,
-        "due": "2026-07-31",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       },
       "norm": {
-        "box": 1,
-        "due": "2026-07-31",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-08-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-30",
+        "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
         "everLearned": true
       }
