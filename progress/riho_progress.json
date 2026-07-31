@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T09:48:35.050Z",
+  "exportedAt": "2026-07-31T09:53:37.020Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6603,8 +6603,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4044,
-    "totalAttempts": 4303,
+    "totalCorrect": 4074,
+    "totalAttempts": 4336,
     "lastSessionDate": "2026-07-31",
     "streak": 17,
     "history": [
@@ -7755,6 +7755,13 @@
         "score": 6,
         "total": 6,
         "mode": "test"
+      },
+      {
+        "date": "2026-07-31",
+        "climbed": 0,
+        "score": 7,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -17249,6 +17256,96 @@
         "wrong": 0,
         "seenAt": "2026-07-31",
         "learnedAt": "2026-07-30",
+        "everLearned": true
+      },
+      "discretion": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "compelling": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "sheer": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "sibling": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "induce": {
+        "box": 0,
+        "due": "2026-07-31",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "surveillance": {
+        "box": 0,
+        "due": "2026-07-31",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "collision": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "ramp": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "intimate": {
+        "box": 0,
+        "due": "2026-07-31",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
+        "everLearned": true
+      },
+      "exploit": {
+        "box": 1,
+        "due": "2026-08-01",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-07-31",
+        "learnedAt": "2026-07-31",
         "everLearned": true
       }
     },
