@@ -3475,18 +3475,22 @@ function exitReview() {
   renderHome();
 }
 
-// wrong → state.reviewWrong に 追加（テスト・まなぶ には 影響しない）
-// correct → state.reviewWrong から 削除
+// 間違い優先ルール:
+//  ・1問でも 間違えた語 → reviewWrong に 残る／追加、count +1
+//  ・両方 正解 (correctSet ∧ ¬wrongSet) → reviewWrong から 消える
 function finalizeReview() {
   if (!review) return;
   if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
   const todayStr = today();
-  // ①正解した語は reviewWrong から 削除
-  if (review.correctSet && review.correctSet.size > 0) {
-    state.reviewWrong = state.reviewWrong.filter(t => !review.correctSet.has(t.word));
+  const wrongSet = review.wrongSet || new Set();
+  const correctSet = review.correctSet || new Set();
+  // ①「全問正解」= correctSet に あり、かつ wrongSet に ない 語だけ 削除
+  const fullyCorrect = new Set([...correctSet].filter(w => !wrongSet.has(w)));
+  if (fullyCorrect.size > 0) {
+    state.reviewWrong = state.reviewWrong.filter(t => !fullyCorrect.has(t.word));
   }
-  // ②間違えた語は reviewWrong に 追加/更新
-  for (const wordStr of review.wrongSet) {
+  // ②間違えた語は reviewWrong に 追加/更新 (count +1)
+  for (const wordStr of wrongSet) {
     const existing = state.reviewWrong.find(t => t.word === wordStr);
     if (existing) {
       existing.at = todayStr;
