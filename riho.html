@@ -3266,7 +3266,7 @@ function pickReviewWords(batchIdx) {
   return pool.filter(w => !isNew(w.word) || masteredSet.has(w.word));
 }
 
-const REVIEW_BATCH_SIZE = 50;   // 復習: 1セッションの問題数
+const REVIEW_BATCH_SIZE = 25;   // 復習: 1セッションの語数（1語=2問なので 合計 約50問）
 
 // バッチ選択モーダル: 全部 or バッチごとに 復習を 始める
 function openReviewBatchPicker() {
@@ -3368,13 +3368,17 @@ function startReview(batchIdx) {
   const scopeLabel = batchIdx === "wrongOnly" ? "まちがえ集中"
                    : (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}`
                    : "全部";
-  // 各語に ランダム形式を 割り当てて シャッフル
-  const items = combined.map(w => {
-    const formats = ["wordToDef", "defToWord"];
-    if (w.example && w.example.includes("___")) formats.push("fillBlank");
-    const type = formats[Math.floor(Math.random() * formats.length)];
-    return { w, type };
-  });
+  // 各語に 2形式ずつ 割り当て:
+  //  ①意味あて (wordToDef) は必ず
+  //  ②単語あて (defToWord) か 空欄うめ (fillBlank) から ランダムで もう1つ
+  const items = [];
+  for (const w of combined) {
+    items.push({ w, type: "wordToDef" });
+    const secondary = ["defToWord"];
+    if (w.example && w.example.includes("___")) secondary.push("fillBlank");
+    const type = secondary[Math.floor(Math.random() * secondary.length)];
+    items.push({ w, type });
+  }
   const queue = shuffleNoAdjacent(items, e => e.w.word);
   review = {
     queue,
