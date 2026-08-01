@@ -1855,7 +1855,7 @@ function renderHome() {
       <div class="home-actions" style="margin-top:14px">
         <button class="btn small" onclick="exportProgress()" style="background:var(--honey); box-shadow:0 4px 0 #b78019, 0 8px 16px rgba(234,168,63,0.22)">📦 バックアップ</button>
         <button class="btn ghost small" onclick="renderHistory()">記録</button>
-        <button class="btn small" onclick="startReview()" style="background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)">🔄 復習</button>
+        <button class="btn small" onclick="openReviewBatchPicker()" style="background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)">🔄 復習</button>
       </div>
       <p style="margin-top:8px; font-size:0.72rem; color:var(--ink-soft); text-align:center">
         マスター: <b>${esc(masterBatchName())}</b> ・ ${esc(masterVersion())}
@@ -3180,14 +3180,73 @@ function resetProgress() {
 // ============================================================
 let review = null;
 
-function pickReviewWords() {
-  const pool = getWords();
+function pickReviewWords(batchIdx) {
+  let pool;
+  if (typeof batchIdx === "number") {
+    const batches = getBatches();
+    const b = batches[batchIdx];
+    if (!b || !Array.isArray(b.words)) return [];
+    pool = b.words.map(hydrateExample);
+  } else {
+    pool = getWords();
+  }
   // 学んだ = SRS エントリーがある か mastered にある 単語
   const masteredSet = new Set(state.mastered.map(m => m.word));
   return pool.filter(w => !isNew(w.word) || masteredSet.has(w.word));
 }
 
 const REVIEW_BATCH_SIZE = 50;   // 復習: 1セッションの問題数
+
+// バッチ選択モーダル: 全部 or バッチごとに 復習を 始める
+function openReviewBatchPicker() {
+  const batches = getBatches();
+  const rows = [];
+  rows.push(`
+    <button class="btn small" style="width:100%; background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22); margin-bottom:8px"
+      onclick="closeReviewPicker(); startReview()">
+      🌍 全部から（学んだ語 まとめて）
+    </button>
+  `);
+  for (let i = 0; i < batches.length; i++) {
+    if (!isBatchUnlocked(i)) continue;
+    const b = batches[i];
+    const p = batchProgress(i);
+    const rangeFrom = i * 100 + 1;
+    const rangeTo = i * 100 + b.words.length;
+    const label = `バッチ${i + 1}: ${rangeFrom}-${rangeTo}語`;
+    const sub = esc(b.name || "");
+    rows.push(`
+      <button class="btn ghost small" style="width:100%; text-align:left; margin-bottom:6px; padding:10px 12px; line-height:1.3"
+        onclick="closeReviewPicker(); startReview(${i})">
+        <div style="font-weight:800">${label}</div>
+        <div style="font-size:0.72rem; color:var(--ink-soft); font-weight:600; margin-top:2px">${sub}</div>
+        <div style="font-size:0.68rem; color:var(--teal); font-weight:700; margin-top:2px">覚えた ${p.mastered}/${p.total} (${p.pct}%)</div>
+      </button>
+    `);
+  }
+  const modal = document.createElement("div");
+  modal.className = "modal-backdrop";
+  modal.id = "reviewPickerModal";
+  modal.innerHTML = `
+    <div class="modal" style="max-width:420px">
+      <h3 style="margin:0 0 12px 0">🔄 復習: どこから やる？</h3>
+      <p style="font-size:0.78rem; color:var(--ink-soft); margin:0 0 12px 0">
+        バッチを えらぶと そのバッチの 学んだ語 だけ 復習。<br>
+        まちがい は 復習リストに 記録（まなぶ・テストには 影響なし）。
+      </p>
+      ${rows.join("")}
+      <div style="text-align:center; margin-top:10px">
+        <button class="btn ghost small" onclick="closeReviewPicker()">とじる</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+function closeReviewPicker() {
+  const m = document.getElementById("reviewPickerModal");
+  if (m) m.remove();
+}
 
 // state.testWrong から 過去の reviewSource エントリーを reviewWrong に移す（1回限りマイグレーション）
 (function migrateReviewSource() {
@@ -3205,9 +3264,9 @@ const REVIEW_BATCH_SIZE = 50;   // 復習: 1セッションの問題数
   console.log(`[Migration] ${legacy.length} reviewSource entries を testWrong から reviewWrong に 移動`);
 })();
 
-function startReview() {
+function startReview(batchIdx) {
   if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
-  const allWords = pickReviewWords();
+  const allWords = pickReviewWords(batchIdx);
   if (allWords.length === 0) {
     alert("復習できる単語が ありません。\nまず まなぶ か テスト を してから 使ってね 🌱");
     return;
@@ -3217,6 +3276,7 @@ function startReview() {
   const wrongFirst = allWords.filter(w => reviewWrongSet.has(w.word));
   const others = shuffle(allWords.filter(w => !reviewWrongSet.has(w.word)));
   const combined = [...wrongFirst, ...others].slice(0, REVIEW_BATCH_SIZE);
+  const scopeLabel = (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}` : "全部";
   const items = combined.map(w => {
     const formats = ["wordToDef", "defToWord"];
     if (w.example && w.example.includes("___")) formats.push("fillBlank");
@@ -3233,14 +3293,17 @@ function startReview() {
     correctSet: new Set(),
     answered: false,
     current: null,
+    scope: scopeLabel,
+    batchIdx: (typeof batchIdx === "number") ? batchIdx : null,
   };
   renderReviewQuestion();
 }
 
 function reviewTopBar() {
+  const scope = review && review.scope ? ` — ${review.scope}` : "";
   return `<div class="session-bar">
     <button class="icon-btn" onclick="exitReview()">← やめる</button>
-    <span style="font-size:0.72rem; color:var(--berry); font-weight:800">🔄 復習モード</span>
+    <span style="font-size:0.72rem; color:var(--berry); font-weight:800">🔄 復習モード${scope}</span>
   </div>`;
 }
 
@@ -3361,7 +3424,7 @@ function finishReview() {
       ${pendingCount > 0 ? `<p style="font-size:0.78rem; color:var(--ink-soft); margin-top:6px">復習リスト 全体: <b>${pendingCount}語</b></p>` : ""}
       <div class="result-actions">
         <button class="btn ghost" onclick="renderHome()">ホーム</button>
-        <button class="btn teal" onclick="review = null; startReview()">もう1回 →</button>
+        <button class="btn teal" onclick="(function(){const b=review&&review.batchIdx; review=null; if(typeof b==='number') startReview(b); else openReviewBatchPicker();})()">もう1回 →</button>
       </div>
     </div>
   `;
