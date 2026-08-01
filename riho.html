@@ -3245,7 +3245,13 @@ function resetProgress() {
 let review = null;
 
 function pickReviewWords(batchIdx) {
-  // batchIdx が 数値なら そのバッチの語だけ、undefined なら 全部（既存挙動）
+  // batchIdx: 数値=そのバッチ / "wrongOnly"=reviewWrongに 溜まった語だけ / undefined=全部
+  if (batchIdx === "wrongOnly") {
+    const rw = Array.isArray(state.reviewWrong) ? state.reviewWrong : [];
+    const allPool = getWords();
+    const rwSet = new Set(rw.map(r => r.word));
+    return allPool.filter(w => rwSet.has(w.word));
+  }
   let pool;
   if (typeof batchIdx === "number") {
     const batches = getBatches();
@@ -3266,6 +3272,22 @@ const REVIEW_BATCH_SIZE = 50;   // 復習: 1セッションの問題数
 function openReviewBatchPicker() {
   const batches = getBatches();
   const rows = [];
+  const wrongCount = Array.isArray(state.reviewWrong) ? state.reviewWrong.length : 0;
+  // ❌ 復習で間違えた語だけ
+  if (wrongCount > 0) {
+    rows.push(`
+      <button class="btn small" style="width:100%; background:var(--coral); box-shadow:0 4px 0 #b03a3a, 0 8px 16px rgba(220,80,80,0.22); margin-bottom:8px"
+        onclick="closeReviewPicker(); startReview('wrongOnly')">
+        ❌ 間違えた語だけ 復習（${wrongCount}語）
+      </button>
+    `);
+  } else {
+    rows.push(`
+      <div style="background:var(--cream); border:1px dashed #d9c9a5; border-radius:12px; padding:10px 12px; margin-bottom:10px; font-size:0.78rem; color:var(--ink-soft); text-align:center">
+        ❌ 間違えた語: <b>0</b> — まだ 復習の まちがい は ないよ
+      </div>
+    `);
+  }
   // 全部から
   rows.push(`
     <button class="btn small" style="width:100%; background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22); margin-bottom:8px"
@@ -3343,7 +3365,9 @@ function startReview(batchIdx) {
   const wrongFirst = allWords.filter(w => reviewWrongSet.has(w.word));
   const others = shuffle(allWords.filter(w => !reviewWrongSet.has(w.word)));
   const combined = [...wrongFirst, ...others].slice(0, REVIEW_BATCH_SIZE);
-  const scopeLabel = (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}` : "全部";
+  const scopeLabel = batchIdx === "wrongOnly" ? "まちがえ集中"
+                   : (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}`
+                   : "全部";
   // 各語に ランダム形式を 割り当てて シャッフル
   const items = combined.map(w => {
     const formats = ["wordToDef", "defToWord"];
@@ -3363,6 +3387,7 @@ function startReview(batchIdx) {
     current: null,
     scope: scopeLabel,
     batchIdx: (typeof batchIdx === "number") ? batchIdx : null,
+    mode: batchIdx === "wrongOnly" ? "wrongOnly" : (typeof batchIdx === "number" ? "batch" : "all"),
   };
   renderReviewQuestion();
 }
@@ -3492,7 +3517,7 @@ function finishReview() {
       ${pendingCount > 0 ? `<p style="font-size:0.78rem; color:var(--ink-soft); margin-top:6px">復習リスト 全体: <b>${pendingCount}語</b></p>` : ""}
       <div class="result-actions">
         <button class="btn ghost" onclick="renderHome()">ホーム</button>
-        <button class="btn teal" onclick="(function(){const b=review&&review.batchIdx; review=null; if(typeof b==='number') startReview(b); else openReviewBatchPicker();})()">もう1回 →</button>
+        <button class="btn teal" onclick="(function(){const m=review&&review.mode; const b=review&&review.batchIdx; review=null; if(m==='wrongOnly') startReview('wrongOnly'); else if(typeof b==='number') startReview(b); else openReviewBatchPicker();})()">もう1回 →</button>
       </div>
     </div>
   `;
