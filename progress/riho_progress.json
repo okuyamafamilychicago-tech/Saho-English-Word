@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T08:01:12.413Z",
+  "exportedAt": "2026-08-02T08:06:46.717Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17391,6 +17391,66 @@
         "word": "diminish",
         "at": "2026-08-02",
         "count": 2
+      },
+      {
+        "word": "mourn",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "contempt",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "esteem",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "disgust",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "compulsory",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "contaminate",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "precedent",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "persecute",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "intellect",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "oblige",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "naive",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "mortal",
+        "at": "2026-08-02",
+        "count": 1
       }
     ]
   }
