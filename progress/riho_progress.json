@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T08:22:59.789Z",
+  "exportedAt": "2026-08-02T08:24:35.187Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17470,7 +17470,7 @@
       {
         "word": "resent",
         "at": "2026-08-02",
-        "count": 1
+        "count": 2
       },
       {
         "word": "scrutinize",
