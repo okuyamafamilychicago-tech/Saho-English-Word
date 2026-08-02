@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T07:59:09.534Z",
+  "exportedAt": "2026-08-02T08:01:12.413Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17368,44 +17368,29 @@
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "ethical",
-        "at": "2026-07-22",
-        "count": 1
-      },
-      {
         "word": "impulse",
-        "at": "2026-07-22",
-        "count": 1
-      },
-      {
-        "word": "conflict",
-        "at": "2026-07-22",
-        "count": 1
+        "at": "2026-08-02",
+        "count": 2
       },
       {
         "word": "stray",
-        "at": "2026-07-22",
-        "count": 1
+        "at": "2026-08-02",
+        "count": 2
       },
       {
         "word": "enchant",
-        "at": "2026-07-22",
-        "count": 1
+        "at": "2026-08-02",
+        "count": 2
       },
       {
         "word": "legacy",
-        "at": "2026-07-22",
-        "count": 1
+        "at": "2026-08-02",
+        "count": 2
       },
       {
         "word": "diminish",
-        "at": "2026-07-22",
-        "count": 1
-      },
-      {
-        "word": "scare",
-        "at": "2026-07-22",
-        "count": 1
+        "at": "2026-08-02",
+        "count": 2
       }
     ]
   }
