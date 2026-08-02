@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T08:20:44.882Z",
+  "exportedAt": "2026-08-02T08:22:59.789Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17375,12 +17375,12 @@
       {
         "word": "stray",
         "at": "2026-08-02",
-        "count": 2
+        "count": 3
       },
       {
         "word": "enchant",
         "at": "2026-08-02",
-        "count": 2
+        "count": 3
       },
       {
         "word": "legacy",
@@ -17464,6 +17464,71 @@
       },
       {
         "word": "pursue",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "resent",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "scrutinize",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "accustomed",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "zeal",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "sane",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "solemn",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "barren",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "extinguish",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "amenity",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "vocation",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "insistent",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "superstition",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "considerate",
         "at": "2026-08-02",
         "count": 1
       }
