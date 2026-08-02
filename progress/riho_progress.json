@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T08:19:05.670Z",
+  "exportedAt": "2026-08-02T08:20:44.882Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17449,6 +17449,21 @@
       },
       {
         "word": "mortal",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "credit",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "pose",
+        "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "pursue",
         "at": "2026-08-02",
         "count": 1
       }
