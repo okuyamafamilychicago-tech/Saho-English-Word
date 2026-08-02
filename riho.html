@@ -1181,25 +1181,48 @@ const FRIENDS = FRIEND_CAST.map(([emoji, name], i) => {
 });
 
 // ============================================================
-// 🌟 隠れキャラ（ひみつの なかま）— 復習を コンプリート すると 1体ずつ 発見
+// 🌟 隠れキャラ（ひみつの なかま）— 30体、バッチと 1対1
+// バッチNの 100語 ぜんぶを 復習で 正解 すると HIDDEN_CAST[N-1] を 発見。
 // 絵(viewBox 600x196)の 中の 決まった 場所に 住みつく。軌道(trail)を 避けた 座標。
+// 一度 見つけた なかまは ずっと 残る（あとで まちがえても 消えない）。
 // ============================================================
 const HIDDEN_CAST = [
-  { emoji:"🦄", name:"ユニコーン",   x: 96,  y: 46,  hint:"空の むこう" },
-  { emoji:"🧚", name:"ようせい",     x: 252, y: 40,  hint:"雲の そば" },
-  { emoji:"🍄", name:"きのこの せい", x: 118, y: 124, hint:"木の ねもと" },
-  { emoji:"🐉", name:"ドラゴン",     x: 508, y: 34,  hint:"山の いただき" },
-  { emoji:"🦕", name:"きょうりゅう", x: 186, y: 104, hint:"森の おく" },
-  { emoji:"👻", name:"おばけ",       x: 412, y: 52,  hint:"高い ところ" },
-  { emoji:"🦩", name:"フラミンゴ",   x: 332, y: 42,  hint:"空の まんなか" },
-  { emoji:"🦚", name:"くじゃく",     x: 58,  y: 104, hint:"はじっこの 木" },
-  { emoji:"🐳", name:"くじら",       x: 470, y: 146, hint:"川の ほう" },
-  { emoji:"🔮", name:"まほうの たま", x: 268, y: 100, hint:"森の まんなか" },
-  { emoji:"🌈", name:"にじ",         x: 176, y: 34,  hint:"空の はし" },
-  { emoji:"⭐", name:"きらぼし",     x: 566, y: 128, hint:"いちばん おく" },
+  // バッチ1-3: 左下（スタートの ちかく）
+  { emoji:"🦄", name:"ユニコーン",     x: 52,  y: 128 },
+  { emoji:"🧚", name:"ようせい",       x: 105, y: 128 },
+  { emoji:"🍄", name:"きのこの せい",   x: 158, y: 128 },
+  // バッチ4-8: 左〜中の 森
+  { emoji:"🐉", name:"ドラゴン",       x: 60,  y: 92  },
+  { emoji:"🦕", name:"きょうりゅう",   x: 128, y: 92  },
+  { emoji:"👻", name:"おばけ",         x: 196, y: 92  },
+  { emoji:"🔮", name:"まほうの たま",   x: 264, y: 92  },
+  { emoji:"🌈", name:"にじ",           x: 320, y: 92  },
+  // バッチ9-16: 中そらの 高さ
+  { emoji:"⭐", name:"きらぼし",       x: 86,  y: 50  },
+  { emoji:"🌙", name:"みかづき",       x: 149, y: 50  },
+  { emoji:"☄️", name:"ほうきぼし",     x: 212, y: 50  },
+  { emoji:"🪐", name:"わくせい",       x: 275, y: 50  },
+  { emoji:"🧙", name:"まほうつかい",   x: 338, y: 50  },
+  { emoji:"🧞", name:"ランプの せい",   x: 401, y: 50  },
+  { emoji:"🐲", name:"りゅうの こ",     x: 464, y: 50  },
+  { emoji:"🦖", name:"ティラノ",       x: 520, y: 50  },
+  // バッチ17-24: いちばん上の 空
+  { emoji:"🧜", name:"にんぎょ",       x: 55,  y: 26  },
+  { emoji:"🦩", name:"フラミンゴ",     x: 118, y: 26  },
+  { emoji:"🦚", name:"くじゃく",       x: 181, y: 26  },
+  { emoji:"🦢", name:"はくちょう",     x: 244, y: 26  },
+  { emoji:"🦜", name:"オウム",         x: 307, y: 26  },
+  { emoji:"🐧", name:"ペンギン",       x: 370, y: 26  },
+  { emoji:"🦭", name:"あざらし",       x: 433, y: 26  },
+  { emoji:"🐬", name:"いるか",         x: 496, y: 26  },
+  // バッチ25-30: 右下（ゴールの ちかく・川のほう）
+  { emoji:"🐳", name:"くじら",         x: 385, y: 148 },
+  { emoji:"🐙", name:"たこ",           x: 440, y: 148 },
+  { emoji:"🦀", name:"かに",           x: 495, y: 148 },
+  { emoji:"🐠", name:"ねったいぎょ",   x: 550, y: 148 },
+  { emoji:"🍀", name:"よつばの クローバー", x: 415, y: 176 },
+  { emoji:"🌸", name:"さくらの せい",   x: 505, y: 176 },
 ];
-const HIDDEN_REVIEW_MIN_Q  = 10;   // これ未満の 問題数の セッションでは 発見しない
-const HIDDEN_REVIEW_MIN_ACC = 70;  // 正答率 70%以上 で 発見
 
 /* ============================================================ */
 
@@ -1218,7 +1241,8 @@ const defaultState = {
   images: {},
   unlockedSeen: [],    // 解放を セレブレーション表示した バッチID
   svgTheme: "forest",  // "forest" | "ac" — ロードマップのテーマ
-  hiddenFound: [],     // 🌟 発見した 隠れキャラの index: [0, 1, ...]
+  hiddenFound: [],     // 🌟 発見した 隠れキャラの index（= バッチ index）
+  reviewOk: [],        // 🔄 復習で 正解した 単語（間違えると 外れる）
   reviewDone: 0,       // 復習を コンプリートした 回数
   schemaVersion: 2,
 };
@@ -1824,6 +1848,46 @@ function renderHiddenFriends(newIdx) {
   }).join("");
 }
 
+// 復習で 正解ずみ の 単語セット
+function reviewOkSet() {
+  if (!Array.isArray(state.reviewOk)) state.reviewOk = [];
+  return new Set(state.reviewOk);
+}
+
+// バッチの 復習クリア 進捗（ok / total）
+function batchReviewProgress(batchIdx, okSet) {
+  const batches = getBatches();
+  const b = batches[batchIdx];
+  if (!b || !Array.isArray(b.words)) return { ok: 0, total: 0 };
+  const set = okSet || reviewOkSet();
+  const total = b.words.length;
+  const ok = b.words.filter(w => set.has(w.word)).length;
+  return { ok, total };
+}
+
+// バッチの 100語 ぜんぶ 復習OK に なった なかまを 開放する
+// 戻り値: 新しく 見つけた [{ idx, emoji, name }]（なければ 空配列）
+function checkHiddenUnlocks() {
+  if (!Array.isArray(state.hiddenFound)) state.hiddenFound = [];
+  const batches = getBatches();
+  const okSet = reviewOkSet();
+  const limit = Math.min(batches.length, HIDDEN_CAST.length);
+  const newly = [];
+  for (let i = 0; i < limit; i++) {
+    if (state.hiddenFound.includes(i)) continue;   // 一度 見つけたら ずっと 残る
+    const p = batchReviewProgress(i, okSet);
+    if (p.total > 0 && p.ok >= p.total) {
+      state.hiddenFound.push(i);
+      newly.push({ idx: i, emoji: HIDDEN_CAST[i].emoji, name: HIDDEN_CAST[i].name });
+    }
+  }
+  if (newly.length) {
+    _justFoundHidden = newly[newly.length - 1].idx;   // ホームに 戻ったとき ポップ演出
+    saveState();
+  }
+  return newly;
+}
+
 // なかま一覧の 上に 隠れキャラ コレクションを 出す
 function renderHiddenRoster() {
   const listEl = document.getElementById("rosterList");
@@ -1837,11 +1901,19 @@ function renderHiddenRoster() {
     listEl.parentNode.insertBefore(box, listEl);
   }
   const found = hiddenFound();
+  const okSet = reviewOkSet();
+  const batches = getBatches();
   const cells = HIDDEN_CAST.map((h, i) => {
     const got = found.includes(i);
-    return `<div style="text-align:center; opacity:${got ? 1 : 0.45}">
+    const unlocked = i < batches.length && isBatchUnlocked(i);
+    const p = batchReviewProgress(i, okSet);
+    let sub;
+    if (got)            sub = h.name;
+    else if (!unlocked) sub = `バッチ${i + 1}`;
+    else                sub = `${p.ok}/${p.total}`;
+    return `<div style="text-align:center; opacity:${got ? 1 : (unlocked ? 0.7 : 0.35)}">
       <div style="font-size:1.25rem; line-height:1.2">${got ? h.emoji : "❔"}</div>
-      <div style="font-size:0.56rem; font-weight:700; color:${got ? "var(--berry)" : "var(--ink-soft)"}; margin-top:1px; line-height:1.2">${got ? h.name : h.hint}</div>
+      <div style="font-size:0.55rem; font-weight:700; color:${got ? "var(--berry)" : (unlocked ? "var(--teal)" : "var(--ink-soft)")}; margin-top:1px; line-height:1.2">${sub}</div>
     </div>`;
   }).join("");
   box.innerHTML = `
@@ -1851,25 +1923,9 @@ function renderHiddenRoster() {
     </div>
     <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px 4px">${cells}</div>
     <div style="margin-top:8px; font-size:0.66rem; color:var(--ink-soft); line-height:1.5">
-      🔄 <b>復習</b>を さいごまで やって 正答率 <b>${HIDDEN_REVIEW_MIN_ACC}%</b> いじょう で 1体 発見！<br>
-      見つけた なかまは 上の 絵の 中に すみつくよ 🌲
+      🔄 <b>復習</b>で バッチの <b>100語 ぜんぶ 正解</b> すると、そのバッチの なかまを 1体 発見！<br>
+      数字は「復習で 正解ずみ / 全語」。見つけた なかまは 上の 絵に すみつくよ 🌲
     </div>`;
-}
-
-// 復習コンプリート時に 隠れキャラを 1体 発見する（できなければ null）
-// 戻り値: { idx, emoji, name } or null
-function awardHiddenFriend(asked, correct) {
-  if (!Array.isArray(state.hiddenFound)) state.hiddenFound = [];
-  const acc = asked ? Math.round((correct / asked) * 100) : 0;
-  if (asked < HIDDEN_REVIEW_MIN_Q) return null;
-  if (acc < HIDDEN_REVIEW_MIN_ACC) return null;
-  const next = HIDDEN_CAST.findIndex((_, i) => !state.hiddenFound.includes(i));
-  if (next === -1) return null;         // ぜんぶ 発見ずみ
-  state.hiddenFound.push(next);
-  _justFoundHidden = next;              // ホームに 戻ったとき ポップ演出
-  saveState();
-  const h = HIDDEN_CAST[next];
-  return { idx: next, emoji: h.emoji, name: h.name };
 }
 
 // 新規解放されたバッチが あれば 一度だけ ダイアログを 出す
@@ -3439,12 +3495,21 @@ function openReviewBatchPicker() {
     const rangeTo = i * 100 + b.words.length;
     const label = `バッチ${i + 1}: ${rangeFrom}-${rangeTo}語`;
     const sub = esc(b.name || "");
+    // 🌟 隠れキャラの 進捗
+    const got = hiddenFound().includes(i);
+    const rp = batchReviewProgress(i);
+    const h = HIDDEN_CAST[i];
+    const hiddenLine = !h ? ""
+      : got
+      ? `<div style="font-size:0.68rem; color:var(--berry); font-weight:800; margin-top:2px">${h.emoji} ${h.name} げっと！</div>`
+      : `<div style="font-size:0.68rem; color:var(--berry); font-weight:700; margin-top:2px">🌟 復習クリア ${rp.ok}/${rp.total} — あと ${rp.total - rp.ok}語 で なかま</div>`;
     rows.push(`
       <button class="btn ghost small" style="width:100%; text-align:left; margin-bottom:6px; padding:10px 12px; line-height:1.3"
         onclick="closeReviewPicker(); startReview(${i}, _rs())">
         <div style="font-weight:800">${label}</div>
         <div style="font-size:0.72rem; color:var(--ink-soft); font-weight:600; margin-top:2px">${sub}</div>
         <div style="font-size:0.68rem; color:var(--teal); font-weight:700; margin-top:2px">覚えた ${p.mastered}/${p.total} (${p.pct}%)</div>
+        ${hiddenLine}
       </button>
     `);
   }
@@ -3714,6 +3779,15 @@ function finalizeReview() {
       state.reviewWrong.push({ word: wordStr, at: todayStr, count: 1 });
     }
   }
+  // ③🌟 reviewOk（隠れキャラ用の 復習クリア 記録）を 更新
+  //    全問正解の語 → 追加 ／ 1問でも 間違えた語 → 外す
+  if (!Array.isArray(state.reviewOk)) state.reviewOk = [];
+  if (wrongSet.size > 0) {
+    state.reviewOk = state.reviewOk.filter(w => !wrongSet.has(w));
+  }
+  for (const wordStr of fullyCorrect) {
+    if (!state.reviewOk.includes(wordStr)) state.reviewOk.push(wordStr);
+  }
   saveState();
   autoBackup("review");
 }
@@ -3728,31 +3802,49 @@ function finishReview() {
   const cheer = acc === 100 ? "パーフェクト！" : acc >= 90 ? "とても いい！" : acc >= 70 ? "いい調子！" : "また 復習しよう！";
   const pendingCount = (state.reviewWrong || []).length;
 
-  // 🌟 復習コンプリート → 隠れキャラを 1体 発見
+  // 🌟 バッチの 全語が 復習OK に なったら 隠れキャラを 発見
   state.reviewDone = (state.reviewDone || 0) + 1;
-  const found = awardHiddenFriend(total, correct);
+  const newly = checkHiddenUnlocks();
   const foundCount = hiddenFound().length;
-  const allFound = foundCount >= HIDDEN_CAST.length;
   saveState();
 
-  const hiddenBlock = found
+  // このセッションで さわった バッチの 進捗（あと何語で なかま？）
+  const okSet = reviewOkSet();
+  const batches = getBatches();
+  const touched = new Set();
+  for (const w of [...review.correctSet, ...review.wrongSet]) {
+    for (let i = 0; i < batches.length; i++) {
+      if (state.hiddenFound.includes(i)) continue;
+      if (batches[i].words.some(x => x.word === w)) { touched.add(i); break; }
+    }
+  }
+  const nearest = [...touched]
+    .map(i => ({ i, ...batchReviewProgress(i, okSet) }))
+    .filter(p => p.total > 0)
+    .sort((a, b) => (b.ok / b.total) - (a.ok / a.total))[0];
+
+  const hiddenBlock = newly.length
     ? `<div class="hidden-pop" style="background:linear-gradient(135deg,#f7f0fa,#fff6e8); border:2px solid #c9a3d8; border-radius:18px; padding:16px 14px; margin:16px 0; text-align:center">
          <div style="font-size:0.8rem; font-weight:800; color:var(--berry); letter-spacing:0.04em">✨ ひみつの なかま 発見！ ✨</div>
-         <div style="font-size:3rem; line-height:1.25; margin:6px 0">${found.emoji}</div>
-         <div style="font-size:1.05rem; font-weight:800; color:var(--berry)">${found.name}</div>
+         ${newly.map(f => `
+           <div style="margin:8px 0">
+             <div style="font-size:3rem; line-height:1.2">${f.emoji}</div>
+             <div style="font-size:1.05rem; font-weight:800; color:var(--berry)">${f.name}</div>
+             <div style="font-size:0.68rem; color:var(--ink-soft); font-weight:700">バッチ${f.idx + 1} を 復習で ぜんぶ 正解！</div>
+           </div>`).join("")}
          <div style="font-size:0.74rem; color:var(--ink-soft); font-weight:600; margin-top:6px">
            上の 絵の 中に すみついたよ 🌲　（${foundCount} / ${HIDDEN_CAST.length}）
          </div>
        </div>`
-    : allFound
+    : foundCount >= HIDDEN_CAST.length
     ? `<div style="background:var(--cream); border:1.5px solid #e3d0ec; border-radius:14px; padding:11px 13px; margin:14px 0; text-align:center; font-size:0.8rem; font-weight:800; color:var(--berry)">
          🌟 ひみつの なかま は ぜんぶ 見つけたよ！（${HIDDEN_CAST.length}／${HIDDEN_CAST.length}）
        </div>`
     : `<div style="background:var(--cream); border:1px dashed #d9c9a5; border-radius:14px; padding:11px 13px; margin:14px 0; text-align:center; font-size:0.76rem; color:var(--ink-soft); font-weight:700; line-height:1.6">
-         🌟 ひみつの なかま は <b>正答率 ${HIDDEN_REVIEW_MIN_ACC}%</b> いじょう で 発見！<br>
-         ${total < HIDDEN_REVIEW_MIN_Q
-            ? `（${HIDDEN_REVIEW_MIN_Q}問 いじょう の 復習が ひつよう だよ）`
-            : `いまは ${acc}% — つぎは いけるよ！`}
+         🌟 バッチの <b>ぜんぶの 語</b> を 復習で 正解 すると なかまを 1体 発見！<br>
+         ${nearest
+            ? `バッチ${nearest.i + 1}: <b style="color:var(--teal)">${nearest.ok} / ${nearest.total}</b> 語 クリア — あと <b>${nearest.total - nearest.ok}</b> 語！`
+            : ""}
          　いま <b>${foundCount} / ${HIDDEN_CAST.length}</b>
        </div>`;
 
