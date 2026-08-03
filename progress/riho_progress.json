@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T08:25:43.814Z",
+  "exportedAt": "2026-08-03T09:34:03.867Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17364,6 +17364,20 @@
       "batch-12"
     ],
     "svgTheme": "forest",
+    "hiddenFound": [],
+    "reviewOk": [
+      "poke",
+      "greed",
+      "shrug",
+      "stubborn",
+      "bathe",
+      "mortal",
+      "intelligible",
+      "chore",
+      "esteem",
+      "nourish"
+    ],
+    "reviewDone": 0,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17394,63 +17408,53 @@
       },
       {
         "word": "mourn",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "contempt",
-        "at": "2026-08-02",
-        "count": 1
-      },
-      {
-        "word": "esteem",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "disgust",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "compulsory",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "contaminate",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "precedent",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "persecute",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "intellect",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "oblige",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "naive",
-        "at": "2026-08-02",
-        "count": 1
-      },
-      {
-        "word": "mortal",
-        "at": "2026-08-02",
-        "count": 1
+        "at": "2026-08-03",
+        "count": 2
       },
       {
         "word": "credit",
@@ -17530,6 +17534,31 @@
       {
         "word": "considerate",
         "at": "2026-08-02",
+        "count": 1
+      },
+      {
+        "word": "infamous",
+        "at": "2026-08-03",
+        "count": 1
+      },
+      {
+        "word": "prestige",
+        "at": "2026-08-03",
+        "count": 1
+      },
+      {
+        "word": "prosper",
+        "at": "2026-08-03",
+        "count": 1
+      },
+      {
+        "word": "pave",
+        "at": "2026-08-03",
+        "count": 1
+      },
+      {
+        "word": "doom",
+        "at": "2026-08-03",
         "count": 1
       }
     ]
