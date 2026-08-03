@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-03T09:34:03.867Z",
+  "exportedAt": "2026-08-03T09:40:37.552Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17375,9 +17375,32 @@
       "intelligible",
       "chore",
       "esteem",
-      "nourish"
+      "nourish",
+      "aspire",
+      "naive",
+      "pave",
+      "doom",
+      "contaminate",
+      "prosper",
+      "addict",
+      "oblige",
+      "prestige",
+      "betray",
+      "persecute",
+      "disgust",
+      "applaud",
+      "infamous",
+      "intellect",
+      "unify",
+      "compulsory",
+      "precedent",
+      "mourn",
+      "secondhand",
+      "congratulate",
+      "contempt",
+      "orphan"
     ],
-    "reviewDone": 0,
+    "reviewDone": 1,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17404,56 +17427,6 @@
       {
         "word": "diminish",
         "at": "2026-08-02",
-        "count": 2
-      },
-      {
-        "word": "mourn",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "contempt",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "disgust",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "compulsory",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "contaminate",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "precedent",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "persecute",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "intellect",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "oblige",
-        "at": "2026-08-03",
-        "count": 2
-      },
-      {
-        "word": "naive",
-        "at": "2026-08-03",
         "count": 2
       },
       {
@@ -17537,27 +17510,7 @@
         "count": 1
       },
       {
-        "word": "infamous",
-        "at": "2026-08-03",
-        "count": 1
-      },
-      {
-        "word": "prestige",
-        "at": "2026-08-03",
-        "count": 1
-      },
-      {
-        "word": "prosper",
-        "at": "2026-08-03",
-        "count": 1
-      },
-      {
-        "word": "pave",
-        "at": "2026-08-03",
-        "count": 1
-      },
-      {
-        "word": "doom",
+        "word": "nuisance",
         "at": "2026-08-03",
         "count": 1
       }
