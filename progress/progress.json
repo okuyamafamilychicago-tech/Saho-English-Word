@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-03T08:05:16.950Z",
+  "exportedAt": "2026-08-03T08:09:18.669Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6872,23 +6872,31 @@
       "thread",
       "appreciate",
       "remote",
-      "accompany"
+      "accompany",
+      "guarantee",
+      "claim",
+      "emergency",
+      "approximately",
+      "adopt",
+      "bond",
+      "capture",
+      "conflict",
+      "secure",
+      "engage",
+      "commission",
+      "entirely",
+      "favor",
+      "encourage",
+      "resource",
+      "emerge",
+      "commit",
+      "launch"
     ],
     "reviewDone": 1,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "approximately",
-        "at": "2026-08-03",
-        "count": 1
-      },
-      {
-        "word": "commit",
-        "at": "2026-08-03",
-        "count": 1
-      },
-      {
-        "word": "encourage",
+        "word": "administration",
         "at": "2026-08-03",
         "count": 1
       }
