@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-03T08:09:18.669Z",
+  "exportedAt": "2026-08-03T08:13:23.500Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6890,16 +6890,25 @@
       "resource",
       "emerge",
       "commit",
-      "launch"
+      "launch",
+      "bury",
+      "alternative",
+      "administration",
+      "arrest",
+      "submit",
+      "appropriate",
+      "possess",
+      "bet",
+      "extreme",
+      "output",
+      "brilliant",
+      "contribute",
+      "convince",
+      "grant",
+      "apparently"
     ],
-    "reviewDone": 1,
+    "reviewDone": 2,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "administration",
-        "at": "2026-08-03",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
