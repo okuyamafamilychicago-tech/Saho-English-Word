@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-03T08:04:21.476Z",
+  "exportedAt": "2026-08-03T08:05:01.623Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6871,13 +6871,19 @@
       "rural",
       "thread",
       "appreciate",
-      "remote"
+      "remote",
+      "accompany"
     ],
     "reviewDone": 1,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "approximately",
+        "at": "2026-08-03",
+        "count": 1
+      },
+      {
+        "word": "commit",
         "at": "2026-08-03",
         "count": 1
       }
