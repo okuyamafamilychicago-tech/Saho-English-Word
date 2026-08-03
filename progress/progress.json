@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-03T08:13:23.500Z",
+  "exportedAt": "2026-08-03T08:18:10.639Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6905,9 +6905,17 @@
       "contribute",
       "convince",
       "grant",
-      "apparently"
+      "apparently",
+      "institute",
+      "admire",
+      "expand",
+      "command",
+      "consequence",
+      "sensitive",
+      "overcome",
+      "justice"
     ],
-    "reviewDone": 2,
+    "reviewDone": 3,
     "schemaVersion": 2,
     "reviewWrong": []
   }
