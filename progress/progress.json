@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T09:53:38.109Z",
+  "exportedAt": "2026-08-03T05:01:12.896Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2248,8 +2248,8 @@
         "learnCount": 0
       }
     ],
-    "totalCorrect": 4381,
-    "totalAttempts": 5046,
+    "totalCorrect": 4408,
+    "totalAttempts": 5082,
     "lastSessionDate": "2026-07-31",
     "streak": 1,
     "history": [
@@ -6845,6 +6845,9 @@
       "batch-5"
     ],
     "svgTheme": "forest",
+    "hiddenFound": [],
+    "reviewOk": [],
+    "reviewDone": 0,
     "schemaVersion": 2,
     "reviewWrong": []
   }
