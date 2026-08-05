@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-03T09:33:26.615Z",
+  "exportedAt": "2026-08-05T14:19:57.299Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6913,7 +6913,15 @@
       "consequence",
       "sensitive",
       "overcome",
-      "justice"
+      "justice",
+      "confirm",
+      "faith",
+      "internal",
+      "landscape",
+      "restore",
+      "reveal",
+      "reputation",
+      "incident"
     ],
     "reviewDone": 4,
     "schemaVersion": 2,
