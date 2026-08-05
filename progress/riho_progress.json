@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-04T07:56:46.284Z",
+  "exportedAt": "2026-08-05T12:54:13.155Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17402,9 +17402,15 @@
       "extinguish",
       "pose",
       "credit",
-      "stray"
+      "stray",
+      "coward",
+      "sane",
+      "foresee",
+      "detach",
+      "temperate",
+      "audible"
     ],
-    "reviewDone": 2,
+    "reviewDone": 3,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17415,8 +17421,8 @@
       },
       {
         "word": "enchant",
-        "at": "2026-08-04",
-        "count": 4
+        "at": "2026-08-05",
+        "count": 5
       },
       {
         "word": "legacy",
@@ -17435,68 +17441,93 @@
       },
       {
         "word": "resent",
-        "at": "2026-08-04",
-        "count": 3
+        "at": "2026-08-05",
+        "count": 4
       },
       {
         "word": "scrutinize",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "accustomed",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "zeal",
-        "at": "2026-08-04",
-        "count": 2
-      },
-      {
-        "word": "sane",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "solemn",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "barren",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "amenity",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "vocation",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "insistent",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "superstition",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "considerate",
-        "at": "2026-08-04",
-        "count": 2
+        "at": "2026-08-05",
+        "count": 3
       },
       {
         "word": "nuisance",
         "at": "2026-08-04",
         "count": 2
+      },
+      {
+        "word": "startle",
+        "at": "2026-08-05",
+        "count": 1
+      },
+      {
+        "word": "scorn",
+        "at": "2026-08-05",
+        "count": 1
+      },
+      {
+        "word": "affluent",
+        "at": "2026-08-05",
+        "count": 1
+      },
+      {
+        "word": "devour",
+        "at": "2026-08-05",
+        "count": 1
+      },
+      {
+        "word": "diligent",
+        "at": "2026-08-05",
+        "count": 1
+      },
+      {
+        "word": "indifferent",
+        "at": "2026-08-05",
+        "count": 1
       }
     ]
   }
