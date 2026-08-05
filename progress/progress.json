@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-05T14:19:57.299Z",
+  "exportedAt": "2026-08-05T14:24:07.797Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6921,9 +6921,12 @@
       "restore",
       "reveal",
       "reputation",
-      "incident"
+      "incident",
+      "principal",
+      "fortune",
+      "invest"
     ],
-    "reviewDone": 4,
+    "reviewDone": 5,
     "schemaVersion": 2,
     "reviewWrong": []
   }
