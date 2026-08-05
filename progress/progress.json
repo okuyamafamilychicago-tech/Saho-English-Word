@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-05T14:24:07.797Z",
+  "exportedAt": "2026-08-05T14:28:13.212Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6924,10 +6924,18 @@
       "incident",
       "principal",
       "fortune",
-      "invest"
+      "invest",
+      "candidate",
+      "moreover"
     ],
-    "reviewDone": 5,
+    "reviewDone": 6,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "convert",
+        "at": "2026-08-05",
+        "count": 1
+      }
+    ]
   }
 }
