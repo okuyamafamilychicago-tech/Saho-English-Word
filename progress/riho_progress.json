@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-06T11:16:43.077Z",
+  "exportedAt": "2026-08-06T11:17:53.409Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17445,7 +17445,13 @@
       "subtract",
       "frown",
       "wrinkle",
-      "mock"
+      "mock",
+      "astonish",
+      "pursue",
+      "diligent",
+      "legacy",
+      "diminish",
+      "conspicuous"
     ],
     "reviewDone": 6,
     "schemaVersion": 2,
@@ -17454,37 +17460,7 @@
       {
         "word": "impulse",
         "at": "2026-08-06",
-        "count": 4
-      },
-      {
-        "word": "legacy",
-        "at": "2026-08-04",
-        "count": 3
-      },
-      {
-        "word": "diminish",
-        "at": "2026-08-04",
-        "count": 3
-      },
-      {
-        "word": "pursue",
-        "at": "2026-08-04",
-        "count": 2
-      },
-      {
-        "word": "diligent",
-        "at": "2026-08-05",
-        "count": 2
-      },
-      {
-        "word": "conspicuous",
-        "at": "2026-08-05",
-        "count": 1
-      },
-      {
-        "word": "astonish",
-        "at": "2026-08-05",
-        "count": 1
+        "count": 5
       }
     ]
   }
