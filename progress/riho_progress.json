@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-05T13:00:11.892Z",
+  "exportedAt": "2026-08-06T11:15:48.755Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17429,9 +17429,25 @@
       "scrutinize",
       "solemn",
       "zeal",
-      "vocation"
+      "vocation",
+      "disguise",
+      "dim",
+      "nuisance",
+      "ascend",
+      "refrain",
+      "dwell",
+      "stern",
+      "selective",
+      "embarrass",
+      "flatter",
+      "witty",
+      "despise",
+      "subtract",
+      "frown",
+      "wrinkle",
+      "mock"
     ],
-    "reviewDone": 4,
+    "reviewDone": 5,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17452,11 +17468,6 @@
       },
       {
         "word": "pursue",
-        "at": "2026-08-04",
-        "count": 2
-      },
-      {
-        "word": "nuisance",
         "at": "2026-08-04",
         "count": 2
       },
