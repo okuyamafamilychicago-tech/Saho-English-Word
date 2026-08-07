@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T05:09:04.266Z",
+  "exportedAt": "2026-08-07T07:38:25.494Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6903,7 +6903,6 @@
       "grant",
       "apparently",
       "institute",
-      "admire",
       "expand",
       "command",
       "consequence",
@@ -6931,10 +6930,24 @@
       "commit",
       "approximately",
       "ensure",
-      "preserve"
+      "preserve",
+      "disaster",
+      "pursue",
+      "generate"
     ],
-    "reviewDone": 11,
+    "reviewDone": 12,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "admire",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "efficient",
+        "at": "2026-08-07",
+        "count": 1
+      }
+    ]
   }
 }
