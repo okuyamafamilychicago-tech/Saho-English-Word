@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T05:08:30.794Z",
+  "exportedAt": "2026-08-07T05:09:04.266Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6927,31 +6927,14 @@
       "sentence",
       "register",
       "acquire",
-      "occasionally"
+      "occasionally",
+      "commit",
+      "approximately",
+      "ensure",
+      "preserve"
     ],
-    "reviewDone": 10,
+    "reviewDone": 11,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "commit",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "approximately",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "ensure",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "preserve",
-        "at": "2026-08-07",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
