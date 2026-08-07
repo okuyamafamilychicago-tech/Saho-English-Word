@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T09:23:22.906Z",
+  "exportedAt": "2026-08-07T09:27:23.135Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17465,7 +17465,27 @@
       "perfume",
       "industrialize",
       "furnish",
-      "splendid"
+      "splendid",
+      "altitude",
+      "abolish",
+      "queue",
+      "temper",
+      "comprehend",
+      "deceive",
+      "emit",
+      "glimpse",
+      "summon",
+      "trivial",
+      "forthcoming",
+      "coincide",
+      "fragile",
+      "curse",
+      "restrain",
+      "starve",
+      "furious",
+      "surrender",
+      "straightforward",
+      "supposedly"
     ],
     "reviewDone": 8,
     "schemaVersion": 2,
@@ -17514,6 +17534,26 @@
       {
         "word": "parameter",
         "at": "2026-08-06",
+        "count": 1
+      },
+      {
+        "word": "successive",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "generalization",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "warrant",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "pledge",
+        "at": "2026-08-07",
         "count": 1
       }
     ]
