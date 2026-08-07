@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T05:07:11.672Z",
+  "exportedAt": "2026-08-07T05:08:30.794Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6852,7 +6852,6 @@
       "conference",
       "outcome",
       "cast",
-      "preserve",
       "swallow",
       "chase",
       "deposit",
@@ -6875,7 +6874,6 @@
       "guarantee",
       "claim",
       "emergency",
-      "approximately",
       "adopt",
       "bond",
       "capture",
@@ -6888,7 +6886,6 @@
       "encourage",
       "resource",
       "emerge",
-      "commit",
       "launch",
       "bury",
       "alternative",
@@ -6929,10 +6926,32 @@
       "convert",
       "sentence",
       "register",
-      "acquire"
+      "acquire",
+      "occasionally"
     ],
-    "reviewDone": 9,
+    "reviewDone": 10,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "commit",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "approximately",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "ensure",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "preserve",
+        "at": "2026-08-07",
+        "count": 1
+      }
+    ]
   }
 }
