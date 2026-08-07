@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T07:40:45.043Z",
+  "exportedAt": "2026-08-07T07:42:09.949Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6923,24 +6923,43 @@
       "acquire",
       "occasionally",
       "commit",
-      "approximately",
       "ensure",
       "disaster",
       "pursue",
       "generate",
-      "efficient",
       "admire",
       "threaten",
       "accurate",
       "institute",
       "define",
       "associate",
-      "praise",
       "output",
-      "preserve"
+      "extend",
+      "explore"
     ],
-    "reviewDone": 15,
+    "reviewDone": 16,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "approximately",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "efficient",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "praise",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "preserve",
+        "at": "2026-08-07",
+        "count": 1
+      }
+    ]
   }
 }
