@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T07:40:23.404Z",
+  "exportedAt": "2026-08-07T07:40:45.043Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6931,41 +6931,16 @@
       "efficient",
       "admire",
       "threaten",
-      "accurate"
+      "accurate",
+      "institute",
+      "define",
+      "associate",
+      "praise",
+      "output",
+      "preserve"
     ],
-    "reviewDone": 14,
+    "reviewDone": 15,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "preserve",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "praise",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "define",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "associate",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "output",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "institute",
-        "at": "2026-08-07",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
