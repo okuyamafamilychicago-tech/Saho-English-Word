@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T09:33:49.507Z",
+  "exportedAt": "2026-08-07T09:37:57.369Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17517,9 +17517,28 @@
       "outcome",
       "arrest",
       "investigate",
-      "thread"
+      "thread",
+      "efficient",
+      "specific",
+      "convince",
+      "absolute",
+      "sensitive",
+      "brilliant",
+      "reputation",
+      "candidate",
+      "contribute",
+      "characteristic",
+      "encourage",
+      "appropriate",
+      "extreme",
+      "crisis",
+      "cast",
+      "swallow",
+      "emerge",
+      "deposit",
+      "adopt"
     ],
-    "reviewDone": 10,
+    "reviewDone": 11,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17609,14 +17628,9 @@
         "count": 1
       },
       {
-        "word": "convince",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
         "word": "credit",
         "at": "2026-08-07",
-        "count": 1
+        "count": 2
       }
     ]
   }
