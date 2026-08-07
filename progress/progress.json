@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T07:38:25.494Z",
+  "exportedAt": "2026-08-07T07:38:44.804Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6933,21 +6933,12 @@
       "preserve",
       "disaster",
       "pursue",
-      "generate"
+      "generate",
+      "efficient",
+      "admire"
     ],
-    "reviewDone": 12,
+    "reviewDone": 13,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "admire",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "efficient",
-        "at": "2026-08-07",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
