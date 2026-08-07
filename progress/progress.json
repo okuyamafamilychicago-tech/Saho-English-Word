@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T07:39:16.524Z",
+  "exportedAt": "2026-08-07T07:40:23.404Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6848,7 +6848,6 @@
     "hiddenFound": [],
     "reviewOk": [
       "crisis",
-      "praise",
       "conference",
       "outcome",
       "cast",
@@ -6862,7 +6861,6 @@
       "appoint",
       "council",
       "specific",
-      "associate",
       "portion",
       "facility",
       "rural",
@@ -6895,13 +6893,11 @@
       "possess",
       "bet",
       "extreme",
-      "output",
       "brilliant",
       "contribute",
       "convince",
       "grant",
       "apparently",
-      "institute",
       "expand",
       "command",
       "consequence",
@@ -6929,18 +6925,44 @@
       "commit",
       "approximately",
       "ensure",
-      "preserve",
       "disaster",
       "pursue",
       "generate",
       "efficient",
-      "admire"
+      "admire",
+      "threaten",
+      "accurate"
     ],
     "reviewDone": 14,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "accurate",
+        "word": "preserve",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "praise",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "define",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "associate",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "output",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "institute",
         "at": "2026-08-07",
         "count": 1
       }
