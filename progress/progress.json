@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T05:03:26.162Z",
+  "exportedAt": "2026-08-07T05:06:34.469Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6860,7 +6860,6 @@
       "credit",
       "accurate",
       "absolute",
-      "acquire",
       "investigate",
       "appoint",
       "council",
@@ -6927,10 +6926,22 @@
       "invest",
       "candidate",
       "moreover",
-      "convert"
+      "convert",
+      "sentence"
     ],
     "reviewDone": 8,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "acquire",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "register",
+        "at": "2026-08-07",
+        "count": 1
+      }
+    ]
   }
 }
