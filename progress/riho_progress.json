@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T09:27:23.135Z",
+  "exportedAt": "2026-08-07T09:30:01.172Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17485,9 +17485,20 @@
       "furious",
       "surrender",
       "straightforward",
-      "supposedly"
+      "supposedly",
+      "selfish",
+      "inquire",
+      "haunt",
+      "reckon",
+      "ripe",
+      "successive",
+      "bully",
+      "multitude",
+      "fasten",
+      "damp",
+      "generalization"
     ],
-    "reviewDone": 8,
+    "reviewDone": 9,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17537,22 +17548,42 @@
         "count": 1
       },
       {
-        "word": "successive",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
-        "word": "generalization",
-        "at": "2026-08-07",
-        "count": 1
-      },
-      {
         "word": "warrant",
         "at": "2026-08-07",
-        "count": 1
+        "count": 2
       },
       {
         "word": "pledge",
+        "at": "2026-08-07",
+        "count": 2
+      },
+      {
+        "word": "pest",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "raid",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "predecessor",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "peculiar",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "conceal",
+        "at": "2026-08-07",
+        "count": 1
+      },
+      {
+        "word": "census",
         "at": "2026-08-07",
         "count": 1
       }
