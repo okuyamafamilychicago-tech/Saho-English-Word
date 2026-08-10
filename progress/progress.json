@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-10T19:25:59.149Z",
+  "exportedAt": "2026-08-10T19:30:07.896Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6905,7 +6905,6 @@
       "overcome",
       "justice",
       "confirm",
-      "faith",
       "internal",
       "landscape",
       "restore",
@@ -6926,7 +6925,6 @@
       "ensure",
       "disaster",
       "pursue",
-      "generate",
       "admire",
       "threaten",
       "accurate",
@@ -6941,10 +6939,24 @@
       "characteristic",
       "extend",
       "output",
-      "conclude"
+      "conclude",
+      "decline",
+      "predict",
+      "pose"
     ],
-    "reviewDone": 20,
+    "reviewDone": 21,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "generate",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "faith",
+        "at": "2026-08-10",
+        "count": 1
+      }
+    ]
   }
 }
