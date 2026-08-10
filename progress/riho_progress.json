@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T09:37:57.369Z",
+  "exportedAt": "2026-08-10T19:20:03.172Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17431,10 +17431,8 @@
       "vocation",
       "disguise",
       "dim",
-      "nuisance",
       "ascend",
       "refrain",
-      "dwell",
       "stern",
       "selective",
       "embarrass",
@@ -17536,9 +17534,19 @@
       "swallow",
       "emerge",
       "deposit",
-      "adopt"
+      "adopt",
+      "tumble",
+      "pollute",
+      "sovereign",
+      "contradict",
+      "bankrupt",
+      "restless",
+      "terrify",
+      "tame",
+      "adore",
+      "inclination"
     ],
-    "reviewDone": 11,
+    "reviewDone": 12,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17574,11 +17582,6 @@
       },
       {
         "word": "immense",
-        "at": "2026-08-06",
-        "count": 1
-      },
-      {
-        "word": "sovereign",
         "at": "2026-08-06",
         "count": 1
       },
@@ -17631,6 +17634,26 @@
         "word": "credit",
         "at": "2026-08-07",
         "count": 2
+      },
+      {
+        "word": "nuisance",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "disregard",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "dwell",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "utmost",
+        "at": "2026-08-10",
+        "count": 1
       }
     ]
   }
