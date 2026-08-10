@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-10T19:34:18.418Z",
+  "exportedAt": "2026-08-10T19:35:56.882Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6945,9 +6945,10 @@
       "pose",
       "faith",
       "scheme",
-      "generate"
+      "generate",
+      "compete"
     ],
-    "reviewDone": 24,
+    "reviewDone": 25,
     "schemaVersion": 2,
     "reviewWrong": []
   }
