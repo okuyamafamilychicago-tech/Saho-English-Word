@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-10T19:20:23.164Z",
+  "exportedAt": "2026-08-10T19:26:06.798Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17425,7 +17425,6 @@
       "resent",
       "indifferent",
       "amenity",
-      "scrutinize",
       "solemn",
       "zeal",
       "vocation",
@@ -17445,7 +17444,6 @@
       "mock",
       "astonish",
       "pursue",
-      "diligent",
       "legacy",
       "diminish",
       "conspicuous",
@@ -17544,7 +17542,18 @@
       "terrify",
       "tame",
       "adore",
-      "inclination"
+      "inclination",
+      "solitude",
+      "humiliate",
+      "assimilate",
+      "sentimental",
+      "perilous",
+      "endangered",
+      "horrify",
+      "bribe",
+      "epoch",
+      "innumerable",
+      "glare"
     ],
     "reviewDone": 13,
     "schemaVersion": 2,
@@ -17557,13 +17566,8 @@
       },
       {
         "word": "soothe",
-        "at": "2026-08-06",
-        "count": 1
-      },
-      {
-        "word": "sentimental",
-        "at": "2026-08-06",
-        "count": 1
+        "at": "2026-08-10",
+        "count": 2
       },
       {
         "word": "buffer",
@@ -17572,11 +17576,6 @@
       },
       {
         "word": "tribute",
-        "at": "2026-08-06",
-        "count": 1
-      },
-      {
-        "word": "perilous",
         "at": "2026-08-06",
         "count": 1
       },
@@ -17652,6 +17651,36 @@
       },
       {
         "word": "utmost",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "scrutinize",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "savage",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "pessimistic",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "diligent",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "resurgence",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "traitor",
         "at": "2026-08-10",
         "count": 1
       }
