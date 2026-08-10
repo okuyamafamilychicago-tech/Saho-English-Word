@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T07:42:24.365Z",
+  "exportedAt": "2026-08-10T19:21:50.834Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6933,16 +6933,26 @@
       "institute",
       "define",
       "associate",
-      "output",
-      "extend",
       "explore",
       "efficient",
       "preserve",
       "approximately",
-      "praise"
+      "praise",
+      "characteristic"
     ],
-    "reviewDone": 17,
+    "reviewDone": 18,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "output",
+        "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "extend",
+        "at": "2026-08-10",
+        "count": 1
+      }
+    ]
   }
 }
