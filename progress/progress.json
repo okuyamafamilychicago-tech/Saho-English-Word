@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-10T19:22:15.108Z",
+  "exportedAt": "2026-08-10T19:25:59.149Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6940,9 +6940,10 @@
       "praise",
       "characteristic",
       "extend",
-      "output"
+      "output",
+      "conclude"
     ],
-    "reviewDone": 19,
+    "reviewDone": 20,
     "schemaVersion": 2,
     "reviewWrong": []
   }
