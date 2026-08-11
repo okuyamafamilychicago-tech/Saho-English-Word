@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-10T19:26:06.798Z",
+  "exportedAt": "2026-08-11T15:28:05.664Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17377,7 +17377,6 @@
       "esteem",
       "nourish",
       "aspire",
-      "naive",
       "pave",
       "doom",
       "contaminate",
@@ -17555,7 +17554,7 @@
       "innumerable",
       "glare"
     ],
-    "reviewDone": 13,
+    "reviewDone": 14,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17682,6 +17681,11 @@
       {
         "word": "traitor",
         "at": "2026-08-10",
+        "count": 1
+      },
+      {
+        "word": "naive",
+        "at": "2026-08-11",
         "count": 1
       }
     ]
