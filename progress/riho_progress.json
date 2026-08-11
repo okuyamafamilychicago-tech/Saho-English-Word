@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-11T15:30:40.074Z",
+  "exportedAt": "2026-08-11T15:35:27.871Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17553,16 +17553,37 @@
       "glare",
       "pest",
       "cuisine",
-      "vacant"
+      "vacant",
+      "irony",
+      "naive",
+      "nuisance",
+      "subsidy",
+      "conceal",
+      "credit",
+      "disregard",
+      "despair",
+      "abolish",
+      "utmost",
+      "dwell",
+      "testify",
+      "predecessor",
+      "console",
+      "raid",
+      "warrant",
+      "reassure",
+      "amend",
+      "traitor",
+      "census",
+      "comprehend"
     ],
-    "reviewDone": 14,
+    "reviewDone": 15,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "impulse",
-        "at": "2026-08-06",
-        "count": 6
+        "at": "2026-08-11",
+        "count": 7
       },
       {
         "word": "soothe",
@@ -17581,8 +17602,8 @@
       },
       {
         "word": "immense",
-        "at": "2026-08-06",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 2
       },
       {
         "word": "parameter",
@@ -17590,64 +17611,14 @@
         "count": 1
       },
       {
-        "word": "warrant",
-        "at": "2026-08-11",
-        "count": 3
-      },
-      {
         "word": "pledge",
         "at": "2026-08-11",
-        "count": 3
-      },
-      {
-        "word": "raid",
-        "at": "2026-08-11",
-        "count": 2
-      },
-      {
-        "word": "predecessor",
-        "at": "2026-08-11",
-        "count": 2
+        "count": 4
       },
       {
         "word": "peculiar",
         "at": "2026-08-11",
-        "count": 2
-      },
-      {
-        "word": "conceal",
-        "at": "2026-08-11",
-        "count": 2
-      },
-      {
-        "word": "census",
-        "at": "2026-08-11",
-        "count": 2
-      },
-      {
-        "word": "credit",
-        "at": "2026-08-07",
-        "count": 2
-      },
-      {
-        "word": "nuisance",
-        "at": "2026-08-10",
-        "count": 1
-      },
-      {
-        "word": "disregard",
-        "at": "2026-08-10",
-        "count": 1
-      },
-      {
-        "word": "dwell",
-        "at": "2026-08-10",
-        "count": 1
-      },
-      {
-        "word": "utmost",
-        "at": "2026-08-10",
-        "count": 1
+        "count": 3
       },
       {
         "word": "scrutinize",
@@ -17672,61 +17643,6 @@
       {
         "word": "resurgence",
         "at": "2026-08-10",
-        "count": 1
-      },
-      {
-        "word": "traitor",
-        "at": "2026-08-10",
-        "count": 1
-      },
-      {
-        "word": "naive",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "abolish",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "irony",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "comprehend",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "testify",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "despair",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "reassure",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "subsidy",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "amend",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "console",
-        "at": "2026-08-11",
         "count": 1
       }
     ]
