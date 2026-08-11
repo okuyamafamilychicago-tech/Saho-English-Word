@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-11T15:41:13.488Z",
+  "exportedAt": "2026-08-11T15:41:48.660Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17573,7 +17573,7 @@
       "slap",
       "underline"
     ],
-    "reviewDone": 16,
+    "reviewDone": 17,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17680,7 +17680,7 @@
       {
         "word": "analogy",
         "at": "2026-08-11",
-        "count": 1
+        "count": 2
       },
       {
         "word": "overtake",
