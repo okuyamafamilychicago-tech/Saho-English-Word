@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-11T15:28:05.664Z",
+  "exportedAt": "2026-08-11T15:30:40.074Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17461,10 +17461,8 @@
       "furnish",
       "splendid",
       "altitude",
-      "abolish",
       "queue",
       "temper",
-      "comprehend",
       "deceive",
       "emit",
       "glimpse",
@@ -17552,7 +17550,10 @@
       "bribe",
       "epoch",
       "innumerable",
-      "glare"
+      "glare",
+      "pest",
+      "cuisine",
+      "vacant"
     ],
     "reviewDone": 14,
     "schemaVersion": 2,
@@ -17590,43 +17591,38 @@
       },
       {
         "word": "warrant",
-        "at": "2026-08-07",
-        "count": 2
+        "at": "2026-08-11",
+        "count": 3
       },
       {
         "word": "pledge",
-        "at": "2026-08-07",
-        "count": 2
-      },
-      {
-        "word": "pest",
-        "at": "2026-08-07",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 3
       },
       {
         "word": "raid",
-        "at": "2026-08-07",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 2
       },
       {
         "word": "predecessor",
-        "at": "2026-08-07",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 2
       },
       {
         "word": "peculiar",
-        "at": "2026-08-07",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 2
       },
       {
         "word": "conceal",
-        "at": "2026-08-07",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 2
       },
       {
         "word": "census",
-        "at": "2026-08-07",
-        "count": 1
+        "at": "2026-08-11",
+        "count": 2
       },
       {
         "word": "credit",
@@ -17685,6 +17681,51 @@
       },
       {
         "word": "naive",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "abolish",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "irony",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "comprehend",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "testify",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "despair",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "reassure",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "subsidy",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "amend",
+        "at": "2026-08-11",
+        "count": 1
+      },
+      {
+        "word": "console",
         "at": "2026-08-11",
         "count": 1
       }
