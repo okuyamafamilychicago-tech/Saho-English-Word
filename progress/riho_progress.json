@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-12T13:28:37.653Z",
+  "exportedAt": "2026-08-12T13:32:39.087Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17439,7 +17439,6 @@
       "pursue",
       "legacy",
       "diminish",
-      "conspicuous",
       "urgent",
       "odds",
       "sew",
@@ -17575,7 +17574,23 @@
       "imaginable",
       "slender",
       "soothe",
-      "well-being"
+      "well-being",
+      "astonish",
+      "spectacle",
+      "obedient",
+      "renounce",
+      "cosmopolitan",
+      "eminent",
+      "cynical",
+      "intrude",
+      "obsess",
+      "murmur",
+      "resurgence",
+      "scrutinize",
+      "recede",
+      "amenity",
+      "pessimistic",
+      "outdated"
     ],
     "reviewDone": 18,
     "schemaVersion": 2,
@@ -17615,21 +17630,6 @@
         "word": "peculiar",
         "at": "2026-08-11",
         "count": 3
-      },
-      {
-        "word": "scrutinize",
-        "at": "2026-08-12",
-        "count": 2
-      },
-      {
-        "word": "pessimistic",
-        "at": "2026-08-12",
-        "count": 2
-      },
-      {
-        "word": "resurgence",
-        "at": "2026-08-12",
-        "count": 2
       },
       {
         "word": "contradict",
@@ -17677,42 +17677,7 @@
         "count": 1
       },
       {
-        "word": "spectacle",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "cynical",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "recede",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "renounce",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "amenity",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "astonish",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "intrude",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "obedient",
+        "word": "conspicuous",
         "at": "2026-08-12",
         "count": 1
       }
