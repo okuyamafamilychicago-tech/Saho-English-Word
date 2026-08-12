@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-12T13:33:03.317Z",
+  "exportedAt": "2026-08-12T14:36:17.596Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17405,7 +17405,6 @@
       "audible",
       "insistent",
       "startle",
-      "eccentric",
       "accustomed",
       "considerate",
       "barren",
@@ -17582,14 +17581,23 @@
       "eminent",
       "cynical",
       "intrude",
-      "obsess",
       "murmur",
       "resurgence",
       "scrutinize",
       "recede",
       "amenity",
       "pessimistic",
-      "outdated"
+      "outdated",
+      "rot",
+      "timid",
+      "obedient",
+      "hasty",
+      "mumble",
+      "sob",
+      "conspicuous",
+      "punctual",
+      "meditate",
+      "subordinate"
     ],
     "reviewDone": 19,
     "schemaVersion": 2,
@@ -17676,12 +17684,12 @@
         "count": 1
       },
       {
-        "word": "conspicuous",
+        "word": "eccentric",
         "at": "2026-08-12",
         "count": 1
       },
       {
-        "word": "obedient",
+        "word": "obsess",
         "at": "2026-08-12",
         "count": 1
       }
