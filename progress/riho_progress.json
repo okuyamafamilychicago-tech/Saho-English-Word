@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-12T13:32:39.087Z",
+  "exportedAt": "2026-08-12T13:33:03.317Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17577,7 +17577,6 @@
       "well-being",
       "astonish",
       "spectacle",
-      "obedient",
       "renounce",
       "cosmopolitan",
       "eminent",
@@ -17592,7 +17591,7 @@
       "pessimistic",
       "outdated"
     ],
-    "reviewDone": 18,
+    "reviewDone": 19,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17678,6 +17677,11 @@
       },
       {
         "word": "conspicuous",
+        "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "obedient",
         "at": "2026-08-12",
         "count": 1
       }
