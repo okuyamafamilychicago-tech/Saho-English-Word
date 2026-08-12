@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-11T19:14:49.408Z",
+  "exportedAt": "2026-08-12T13:24:39.779Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17571,7 +17571,8 @@
       "census",
       "comprehend",
       "slap",
-      "underline"
+      "underline",
+      "diligent"
     ],
     "reviewDone": 17,
     "schemaVersion": 2,
@@ -17629,11 +17630,6 @@
       },
       {
         "word": "pessimistic",
-        "at": "2026-08-10",
-        "count": 1
-      },
-      {
-        "word": "diligent",
         "at": "2026-08-10",
         "count": 1
       },
