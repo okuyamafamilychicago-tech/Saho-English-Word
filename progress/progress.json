@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-12T10:51:41.563Z",
+  "exportedAt": "2026-08-12T10:51:55.468Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6972,16 +6972,11 @@
       "nevertheless",
       "fundamental",
       "abuse",
-      "slave"
+      "slave",
+      "inevitable"
     ],
-    "reviewDone": 27,
+    "reviewDone": 28,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "inevitable",
-        "at": "2026-08-12",
-        "count": 2
-      }
-    ]
+    "reviewWrong": []
   }
 }
