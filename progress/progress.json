@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-10T19:35:56.882Z",
+  "exportedAt": "2026-08-12T10:49:44.761Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6845,7 +6845,9 @@
       "batch-5"
     ],
     "svgTheme": "forest",
-    "hiddenFound": [],
+    "hiddenFound": [
+      0
+    ],
     "reviewOk": [
       "crisis",
       "conference",
@@ -6946,10 +6948,60 @@
       "faith",
       "scheme",
       "generate",
-      "compete"
+      "compete",
+      "shelter",
+      "casual",
+      "evaluate",
+      "contemporary",
+      "rescue",
+      "discipline",
+      "confuse",
+      "manufacture",
+      "summary",
+      "reverse",
+      "proportion",
+      "intention",
+      "artificial",
+      "enormous",
+      "vital",
+      "qualify",
+      "consume",
+      "breed",
+      "pile"
     ],
-    "reviewDone": 25,
+    "reviewDone": 26,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "remarkable",
+        "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "fundamental",
+        "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "abuse",
+        "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "inevitable",
+        "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "slave",
+        "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "nevertheless",
+        "at": "2026-08-12",
+        "count": 1
+      }
+    ]
   }
 }
