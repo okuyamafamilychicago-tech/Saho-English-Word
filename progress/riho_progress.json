@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T07:26:00.913Z",
+  "exportedAt": "2026-08-13T07:30:04.102Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17375,14 +17375,10 @@
       "intelligible",
       "chore",
       "esteem",
-      "aspire",
       "pave",
       "doom",
-      "contaminate",
       "addict",
-      "oblige",
       "betray",
-      "persecute",
       "disgust",
       "applaud",
       "infamous",
@@ -17546,7 +17542,6 @@
       "vacant",
       "irony",
       "naive",
-      "nuisance",
       "subsidy",
       "conceal",
       "credit",
@@ -17641,6 +17636,46 @@
       },
       {
         "word": "prestige",
+        "at": "2026-08-13",
+        "count": 2
+      },
+      {
+        "word": "cram",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "fertile",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "aspire",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "nuisance",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "oblige",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "persecute",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "contaminate",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "exile",
         "at": "2026-08-13",
         "count": 1
       }
