@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T12:47:48.350Z",
+  "exportedAt": "2026-08-13T12:47:58.767Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17639,17 +17639,12 @@
       "mourn",
       "proficient",
       "vow",
-      "blink"
+      "blink",
+      "liberate"
     ],
-    "reviewDone": 32,
+    "reviewDone": 33,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "liberate",
-        "at": "2026-08-13",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
