@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T07:19:37.873Z",
+  "exportedAt": "2026-08-13T07:21:16.373Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17616,56 +17616,24 @@
       "invalid",
       "imaginative",
       "contradict",
-      "reunion"
+      "reunion",
+      "tribute",
+      "pledge",
+      "impulse",
+      "peculiar",
+      "obsess",
+      "eccentric",
+      "parameter",
+      "buffer"
     ],
-    "reviewDone": 21,
+    "reviewDone": 22,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "impulse",
-        "at": "2026-08-11",
-        "count": 7
-      },
-      {
-        "word": "buffer",
-        "at": "2026-08-06",
-        "count": 1
-      },
-      {
-        "word": "tribute",
-        "at": "2026-08-06",
-        "count": 1
-      },
-      {
         "word": "immense",
-        "at": "2026-08-11",
-        "count": 2
-      },
-      {
-        "word": "parameter",
-        "at": "2026-08-06",
-        "count": 1
-      },
-      {
-        "word": "pledge",
-        "at": "2026-08-11",
-        "count": 4
-      },
-      {
-        "word": "peculiar",
-        "at": "2026-08-11",
+        "at": "2026-08-13",
         "count": 3
-      },
-      {
-        "word": "eccentric",
-        "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "obsess",
-        "at": "2026-08-12",
-        "count": 1
       }
     ]
   }
