@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T12:42:03.398Z",
+  "exportedAt": "2026-08-13T12:44:48.697Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17385,7 +17385,6 @@
       "intellect",
       "unify",
       "precedent",
-      "mourn",
       "secondhand",
       "congratulate",
       "orphan",
@@ -17638,9 +17637,15 @@
       "magnify",
       "tremble"
     ],
-    "reviewDone": 27,
+    "reviewDone": 28,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "mourn",
+        "at": "2026-08-13",
+        "count": 1
+      }
+    ]
   }
 }
