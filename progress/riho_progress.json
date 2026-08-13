@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T07:09:23.103Z",
+  "exportedAt": "2026-08-13T07:19:37.873Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17608,9 +17608,17 @@
       "analogy",
       "nourish",
       "prosper",
-      "underlie"
+      "underlie",
+      "prudent",
+      "exclaim",
+      "roar",
+      "devastating",
+      "invalid",
+      "imaginative",
+      "contradict",
+      "reunion"
     ],
-    "reviewDone": 20,
+    "reviewDone": 21,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17650,16 +17658,6 @@
         "count": 3
       },
       {
-        "word": "contradict",
-        "at": "2026-08-13",
-        "count": 2
-      },
-      {
-        "word": "exclaim",
-        "at": "2026-08-13",
-        "count": 2
-      },
-      {
         "word": "eccentric",
         "at": "2026-08-12",
         "count": 1
@@ -17667,16 +17665,6 @@
       {
         "word": "obsess",
         "at": "2026-08-12",
-        "count": 1
-      },
-      {
-        "word": "reunion",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "prudent",
-        "at": "2026-08-13",
         "count": 1
       }
     ]
