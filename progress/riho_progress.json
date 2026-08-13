@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T12:46:34.755Z",
+  "exportedAt": "2026-08-13T12:46:46.670Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17637,17 +17637,12 @@
       "magnify",
       "tremble",
       "mourn",
-      "proficient"
+      "proficient",
+      "vow"
     ],
-    "reviewDone": 30,
+    "reviewDone": 31,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "vow",
-        "at": "2026-08-13",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
