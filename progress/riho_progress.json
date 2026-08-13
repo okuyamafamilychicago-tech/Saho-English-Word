@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-12T14:36:17.596Z",
+  "exportedAt": "2026-08-13T07:09:23.103Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17597,9 +17597,20 @@
       "conspicuous",
       "punctual",
       "meditate",
-      "subordinate"
+      "subordinate",
+      "fuss",
+      "overtake",
+      "stereotype",
+      "compulsory",
+      "envy",
+      "earnest",
+      "contempt",
+      "analogy",
+      "nourish",
+      "prosper",
+      "underlie"
     ],
-    "reviewDone": 19,
+    "reviewDone": 20,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17640,48 +17651,13 @@
       },
       {
         "word": "contradict",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "contempt",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "exclaim",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "envy",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "compulsory",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "nourish",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "prosper",
-        "at": "2026-08-11",
-        "count": 1
-      },
-      {
-        "word": "analogy",
-        "at": "2026-08-11",
+        "at": "2026-08-13",
         "count": 2
       },
       {
-        "word": "overtake",
-        "at": "2026-08-11",
-        "count": 1
+        "word": "exclaim",
+        "at": "2026-08-13",
+        "count": 2
       },
       {
         "word": "eccentric",
@@ -17691,6 +17667,16 @@
       {
         "word": "obsess",
         "at": "2026-08-12",
+        "count": 1
+      },
+      {
+        "word": "reunion",
+        "at": "2026-08-13",
+        "count": 1
+      },
+      {
+        "word": "prudent",
+        "at": "2026-08-13",
         "count": 1
       }
     ]
