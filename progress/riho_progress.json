@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T07:22:16.231Z",
+  "exportedAt": "2026-08-13T07:25:48.132Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17381,7 +17381,6 @@
       "contaminate",
       "addict",
       "oblige",
-      "prestige",
       "betray",
       "persecute",
       "disgust",
@@ -17624,7 +17623,12 @@
       "obsess",
       "eccentric",
       "parameter",
-      "buffer"
+      "buffer",
+      "diplomacy",
+      "reconstruct",
+      "defective",
+      "discriminate",
+      "uneasy"
     ],
     "reviewDone": 23,
     "schemaVersion": 2,
@@ -17636,12 +17640,7 @@
         "count": 3
       },
       {
-        "word": "defective",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "discriminate",
+        "word": "prestige",
         "at": "2026-08-13",
         "count": 1
       }
