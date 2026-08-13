@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T07:30:04.102Z",
+  "exportedAt": "2026-08-13T12:33:28.693Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17623,9 +17623,17 @@
       "reconstruct",
       "defective",
       "discriminate",
-      "uneasy"
+      "uneasy",
+      "fertile",
+      "contaminate",
+      "exile",
+      "marvelous",
+      "nuisance",
+      "aspire",
+      "persecute",
+      "cram"
     ],
-    "reviewDone": 24,
+    "reviewDone": 25,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17637,47 +17645,12 @@
       {
         "word": "prestige",
         "at": "2026-08-13",
-        "count": 2
-      },
-      {
-        "word": "cram",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "fertile",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "aspire",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "nuisance",
-        "at": "2026-08-13",
-        "count": 1
+        "count": 3
       },
       {
         "word": "oblige",
         "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "persecute",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "contaminate",
-        "at": "2026-08-13",
-        "count": 1
-      },
-      {
-        "word": "exile",
-        "at": "2026-08-13",
-        "count": 1
+        "count": 2
       }
     ]
   }
