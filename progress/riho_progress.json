@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T12:33:28.693Z",
+  "exportedAt": "2026-08-13T12:34:58.831Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17631,27 +17631,14 @@
       "nuisance",
       "aspire",
       "persecute",
-      "cram"
+      "cram",
+      "oblige",
+      "immense",
+      "prestige"
     ],
-    "reviewDone": 25,
+    "reviewDone": 26,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "immense",
-        "at": "2026-08-13",
-        "count": 3
-      },
-      {
-        "word": "prestige",
-        "at": "2026-08-13",
-        "count": 3
-      },
-      {
-        "word": "oblige",
-        "at": "2026-08-13",
-        "count": 2
-      }
-    ]
+    "reviewWrong": []
   }
 }
