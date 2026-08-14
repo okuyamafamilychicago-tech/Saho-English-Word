@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-14T12:59:06.864Z",
+  "exportedAt": "2026-08-14T13:56:02.165Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17449,11 +17449,9 @@
       "altitude",
       "queue",
       "temper",
-      "deceive",
       "emit",
       "glimpse",
       "summon",
-      "trivial",
       "forthcoming",
       "coincide",
       "fragile",
@@ -17610,7 +17608,6 @@
       "contradict",
       "reunion",
       "tribute",
-      "pledge",
       "impulse",
       "peculiar",
       "obsess",
@@ -17642,9 +17639,16 @@
       "amuse",
       "worsen",
       "compel",
-      "weep"
+      "weep",
+      "litter",
+      "irritate",
+      "deprive",
+      "fetch",
+      "creep",
+      "outgoing",
+      "clash"
     ],
-    "reviewDone": 39,
+    "reviewDone": 40,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17660,6 +17664,46 @@
       },
       {
         "word": "discriminate",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "apparatus",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "trivial",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "deceive",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "pledge",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "reign",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "speculate",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "complement",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "lessen",
         "at": "2026-08-14",
         "count": 1
       }
