@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-14T13:56:02.165Z",
+  "exportedAt": "2026-08-14T13:57:16.198Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17646,67 +17646,22 @@
       "fetch",
       "creep",
       "outgoing",
-      "clash"
+      "clash",
+      "deceive",
+      "complement",
+      "pledge",
+      "lessen",
+      "speculate",
+      "trivial",
+      "reign",
+      "discriminate",
+      "sanction",
+      "apparatus",
+      "sovereign"
     ],
-    "reviewDone": 40,
+    "reviewDone": 41,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "sanction",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "sovereign",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "discriminate",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "apparatus",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "trivial",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "deceive",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "pledge",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "reign",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "speculate",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "complement",
-        "at": "2026-08-14",
-        "count": 1
-      },
-      {
-        "word": "lessen",
-        "at": "2026-08-14",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
