@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-14T13:57:16.198Z",
+  "exportedAt": "2026-08-14T13:59:40.201Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17657,11 +17657,36 @@
       "discriminate",
       "sanction",
       "apparatus",
-      "sovereign"
+      "sovereign",
+      "cooperate",
+      "pity",
+      "pierce",
+      "liable"
     ],
-    "reviewDone": 41,
+    "reviewDone": 42,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "indulge",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "absurd",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "refuge",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "ample",
+        "at": "2026-08-14",
+        "count": 1
+      }
+    ]
   }
 }
