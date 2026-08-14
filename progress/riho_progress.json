@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T12:51:53.095Z",
+  "exportedAt": "2026-08-14T12:59:06.864Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17518,7 +17518,6 @@
       "adopt",
       "tumble",
       "pollute",
-      "sovereign",
       "bankrupt",
       "restless",
       "terrify",
@@ -17621,7 +17620,6 @@
       "diplomacy",
       "reconstruct",
       "defective",
-      "discriminate",
       "uneasy",
       "fertile",
       "contaminate",
@@ -17646,9 +17644,25 @@
       "compel",
       "weep"
     ],
-    "reviewDone": 38,
+    "reviewDone": 39,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "sanction",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "sovereign",
+        "at": "2026-08-14",
+        "count": 1
+      },
+      {
+        "word": "discriminate",
+        "at": "2026-08-14",
+        "count": 1
+      }
+    ]
   }
 }
