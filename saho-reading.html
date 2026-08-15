@@ -264,6 +264,18 @@
   .empty { text-align: center; color: var(--ink-soft); font-size: 0.8rem; padding: 22px 0; font-weight: 300; }
   .scroll-x { overflow-x: auto; }
 
+  /* ---------- いつも上にある学習メニュー（4か所） ---------- */
+  .rnav { position: sticky; top: 0; z-index: 9000; display: flex; gap: 6px; justify-content: center;
+    padding: 8px 10px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06); flex-wrap: wrap;
+    margin: -18px -16px 14px; }
+  .rnav a { display: inline-flex; align-items: center; gap: 5px; text-decoration: none;
+    font-family: inherit; font-weight: 500; font-size: 0.82rem;
+    color: #5a6470; padding: 7px 14px; border-radius: 999px; border: 1.5px solid transparent;
+    transition: all 0.18s; white-space: nowrap; }
+  .rnav a:hover { background: #f0f4f8; }
+  .rnav a.active { background: linear-gradient(90deg, #4db6ac, #ff8a80); color: #fff; box-shadow: 0 3px 8px rgba(77,182,172,0.3); }
+
   .hint { font-size: 0.7rem; color: var(--ink-soft); line-height: 1.75; font-weight: 300; }
   .mt { margin-top: 11px; }
   [hidden] { display: none !important; }
@@ -4194,6 +4206,22 @@ function resetAll() {
 document.getElementById("brandMark").textContent = ME.mark;
 document.getElementById("brandName").textContent = ME.name;
 document.title = `${ME.name} English Reading — 星座をあつめよう`;
+
+/* ---------- いつも上にある学習メニュー（Riho は4か所） ---------- */
+(() => {
+  const links = USER === "riho"
+    ? [["riho.html", "📚 単語学習"],
+       ["saho-reading.html?user=riho", "📖 長文リーディング", true],
+       ["riho-essay-topic.html", "✍️ Essay Learning"],
+       ["riho-toefl-writing.html", "📓 TOEFL Learning"]]
+    : [["index.html", "📚 単語学習"],
+       ["saho-reading.html?user=saho", "📖 長文リーディング", true]];
+  const nav = document.createElement("nav");
+  nav.className = "rnav";
+  nav.innerHTML = links.map(([href, label, on]) =>
+    `<a href="${href}"${on ? ' class="active"' : ""}>${label}</a>`).join("");
+  document.body.insertBefore(nav, document.body.firstChild);
+})();
 (() => {
   const other = USER === "saho" ? "riho" : "saho";
   const b = document.createElement("button");
