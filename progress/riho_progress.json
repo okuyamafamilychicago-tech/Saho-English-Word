@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-15T06:33:21.601Z",
+  "exportedAt": "2026-08-15T06:34:10.032Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17663,32 +17663,15 @@
       "pierce",
       "liable",
       "refuge",
-      "perish"
+      "perish",
+      "famine",
+      "absurd",
+      "ample",
+      "indulge"
     ],
-    "reviewDone": 47,
+    "reviewDone": 48,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "indulge",
-        "at": "2026-08-15",
-        "count": 3
-      },
-      {
-        "word": "absurd",
-        "at": "2026-08-15",
-        "count": 3
-      },
-      {
-        "word": "ample",
-        "at": "2026-08-15",
-        "count": 3
-      },
-      {
-        "word": "famine",
-        "at": "2026-08-15",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
