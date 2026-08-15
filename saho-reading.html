@@ -7145,6 +7145,212 @@ const READINGS = {
       ["detect","感知する"],["flock","群れ"],["entire","全体の"],["behavior","ふるまい"],
     ],
   },
+  /* ===== 1000-12 ===== */
+  {
+    title: "The Hydrologic Cycle",
+    titleJa: "水の循環",
+    source: "Lexile 1000–1050 / ノンフィクション（理科・地学）",
+    paras: [
+      { en:`<mark data-q="1 5">The hydrologic cycle involves the continuous circulation of water in the Earth-Atmosphere system. At its core, the water cycle is the motion of the water from the ground to the atmosphere and back again.</mark> <mark data-q="2">Of the many processes involved in the hydrologic cycle, the most important are evaporation, transpiration, condensation, precipitation, and runoff.</mark>`,
+        ja:`水循環（hydrologic cycle）とは、地球と大気のしくみの中で水がたえずめぐりつづけることをいいます。その中心にあるのは、水が地面から大気へ、そしてまた地面へともどってくる動きです。水循環に関わる多くの過程のうち、もっとも重要なのは、蒸発、蒸散、凝結、降水、そして流出です。` },
+      { h:"Evaporation（蒸発）",
+        en:`Evaporation is the change of state in a substance from a liquid to a gas. In meteorology, the substance we are concerned about the most is water. For evaporation to take place, energy is required. The energy can come from any source: the sun, the atmosphere, the earth, or objects on the earth such as humans. Everyone has experienced evaporation personally. When the body heats up due to the air temperature or through exercise, the body sweats, secreting water onto the skin. The purpose is to cause the body to use its heat to evaporate the liquid, thereby removing heat and cooling the body. It is the same effect that can be seen when you step out of a shower or swimming pool.`,
+        ja:`蒸発とは、ある物質が液体から気体へと状態を変えることです。気象学でいちばん問題になる物質は水です。蒸発が起こるには、エネルギーが必要です。そのエネルギーは、どんなものから来てもかまいません。太陽、大気、大地、あるいは人間のような地上のものからでもよいのです。だれもが蒸発を自分の体で経験しています。気温や運動によって体が熱くなると、体は汗をかき、皮ふの上に水を出します。そのねらいは、体の熱を使ってその液体を蒸発させ、そうすることで熱をうばい、体を冷やすことです。シャワーやプールから出たときに感じるのと同じはたらきです。` },
+      { h:"Transpiration（蒸散）",
+        en:`Transpiration is the evaporation of water from plants through stomata. Stomata are small openings found on the underside of leaves that are connected to vascular plant tissues. In most plants, transpiration is a passive process largely controlled by the humidity of the atmosphere and the moisture content of the soil. Of the transpired water passing through a plant only 1% is used in the growth process of the plant. The remaining 99% is passed into the atmosphere.`,
+        ja:`蒸散とは、気孔（stomata）を通して植物から水が蒸発することです。気孔とは、葉の裏側にある小さな穴で、植物の維管束の組織につながっています。ほとんどの植物では、蒸散は受け身の過程で、おもに大気の湿度と土にふくまれる水分の量によって決まります。植物を通りぬける蒸散の水のうち、植物の成長に使われるのはわずか1パーセントです。残りの99パーセントは、大気へと出ていきます。` },
+      { h:"Condensation（凝結）",
+        en:`Condensation is the process whereby water vapor in the atmosphere is changed into a liquid state. In the atmosphere condensation may appear as clouds or dew. Condensation is the process whereby water appears on the side of an uninsulated cold drink can or bottle. Condensation is not a matter of one particular temperature but of a difference between two temperatures; the air temperature and the dew point temperature. Condensation is the opposite of evaporation. Since water vapor has a higher energy level than that of liquid water, when condensation occurs, the excess energy in the form of heat energy is released. This release of heat aids in the formation of hurricanes.`,
+        ja:`凝結とは、大気中の水蒸気が液体の状態に変わる過程のことです。大気中では、凝結は雲や露（つゆ）として現れます。断熱していない冷たい飲み物の缶やびんの側面に水がつくのも、凝結です。凝結は、ある一つの温度で決まるものではなく、二つの温度の差で決まります。空気の温度と、露点温度です。凝結は蒸発の反対です。水蒸気は液体の水よりも高いエネルギーの状態にあるので、凝結が起こると、余ったエネルギーが熱のかたちで放出されます。この熱の放出が、ハリケーンができるのを助けます。` },
+      { h:"Precipitation（降水）",
+        en:`Precipitation is the result when the tiny condensation particles grow too large, through collision and coalescence, for the rising air to support, and thus fall to the earth. Precipitation can be in the form of rain, hail, snow or sleet. <mark data-q="4">Precipitation is the primary way we receive fresh water in earth.</mark> On average, the world receives about 38&frac12; inches (980 mm) each year over both the oceans and land masses.`,
+        ja:`降水は、凝結してできた小さな粒が、ぶつかり合い、くっつき合って大きくなりすぎ、上昇する空気では支えきれなくなって地上に落ちてくる結果です。降水は、雨、ひょう、雪、みぞれのかたちをとります。降水は、地球上でわたしたちが真水（淡水）を得るいちばんの方法です。平均すると、世界では海と陸を合わせて毎年およそ38.5インチ（980ミリ）の降水があります。` },
+      { h:"Runoff（流出）",
+        en:`<mark data-q="3">Runoff occurs when there is excessive precipitation and the ground is saturated (cannot absorb any more water). Rivers and lakes are results of runoff. There is some evaporation from runoff into the atmosphere but for the most part water in rivers and lakes return to the oceans.</mark> If runoff water flows into the lake only (with no outlet for water to flow out of the lake), then evaporation is the only means for water to return to the atmosphere. <mark data-q="4">With evaporation only pure water is evaporated, and therefore any contaminates and salts are left behind.</mark> The result is the lake becomes salty as in the case of the Great Salt Lake in Utah or Dead Sea in Israel. <mark data-q="5">Evaporation of this runoff into the atmosphere begins the hydrologic cycle over again.</mark>`,
+        ja:`流出は、降水が多すぎて地面が飽和した（もうこれ以上水を吸えなくなった）ときに起こります。川や湖は、流出の結果できるものです。流出した水の一部は大気へ蒸発しますが、大部分は川や湖の水として海へもどっていきます。もし流出した水が湖に流れこむだけで、そこから流れ出る出口がなければ、水が大気へもどる手段は蒸発だけになります。蒸発では純粋な水だけが蒸発するので、汚れや塩はあとに残されます。その結果、湖は塩からくなります。ユタ州のグレートソルト湖や、イスラエルの死海がその例です。この流出した水が大気へ蒸発することで、水の循環はまた最初から始まるのです。` },
+    ],
+    questions: [
+      { stem:"What is the hydrologic cycle?",
+        choices:[
+          "process whereby water vapor in the atmosphere is changed into a liquid state",
+          "evaporation of water from plants through stomata",
+          "change of state in a substance from liquid to a gas",
+          "continuous circulation of water in the Earth-Atmosphere system" ],
+        ans:3,
+        keyEn:"The hydrologic cycle involves the continuous circulation of water in the Earth-Atmosphere system.",
+        keyJa:"水循環とは、地球と大気のしくみの中で水がたえずめぐりつづけること。",
+        why:"いちばん最初の一文が定義です。ほかの3つは、この循環に<b>ふくまれる一つ一つの過程</b>の説明。全体と部分を区別しましょう。",
+        others:[
+          "水蒸気が液体になる → 凝結の定義です。",
+          "気孔から水が蒸発する → 蒸散の定義です。",
+          "液体から気体へ変わる → 蒸発の定義です。" ] },
+
+      { stem:"What does the text list?",
+        choices:[
+          "the most important processes involved in the hydrologic cycle",
+          "the least important processes involved in the hydrologic cycle",
+          "the reasons why the hydrologic cycle is important",
+          "the reasons why the hydrologic cycle is not important" ],
+        ans:0,
+        keyEn:"Of the many processes involved in the hydrologic cycle, the most important are evaporation, transpiration, condensation, precipitation, and runoff.",
+        keyJa:"水循環に関わる多くの過程のうち、もっとも重要なのは、蒸発、蒸散、凝結、降水、流出だ。",
+        why:"the most important are（もっとも重要なのは〜だ）のあとに5つが並び、そのまま小見出しになっています。<b>一覧と小見出しの対応</b>を確かめると、文章の組み立てが見えます。",
+        others:[
+          "もっとも重要でない過程 → most と least を入れかえたワナです。",
+          "重要な理由／重要でない理由 → 並んでいるのは<b>過程の名前</b>であって、理由ではありません。" ] },
+
+      { stem:"Some of the hydrologic cycle processes are connected. What evidence from the text supports this conclusion?",
+        choices:[
+          "&ldquo;Precipitation is the primary way we receive fresh water in earth. On average, the world receives about 38&frac12; inches each year&hellip;&rdquo;",
+          "&ldquo;Condensation is the process whereby water vapor in the atmosphere is changed into a liquid state. In the atmosphere condensation may appear as clouds or dew&hellip;&rdquo;",
+          "&ldquo;Runoff occurs when there is excessive precipitation and the ground is saturated. &hellip; There is some evaporation from runoff into the atmosphere but for the most part water in rivers and lakes return to the oceans.&rdquo;",
+          "&ldquo;Evaporation is the change of state in a substance from a liquid to a gas. In meteorology, the substance we are concerned about the most is water.&rdquo;" ],
+        ans:2,
+        keyEn:"Runoff occurs when there is excessive precipitation &hellip; There is some evaporation from runoff into the atmosphere",
+        keyJa:"流出は、降水が多すぎて地面が飽和したときに起こる。…流出した水の一部は大気へ蒸発する。",
+        why:"connected（つながっている）証拠をさがします。この引用だけが<b>3つの過程（降水・流出・蒸発）を一度に</b>ふくんでいます。ほかの3つは、一つの過程を単独で説明しているだけです。",
+        others:[
+          "降水の量・凝結の定義・蒸発の定義 → どれも<b>一つの過程だけ</b>の説明。つながりを示していません。" ] },
+
+      { stem:"What can you infer about water in the air?",
+        quote:`&ldquo;Precipitation is the result when the tiny condensation particles grow too large . . . and thus fall to the earth. . . . Precipitation is the primary way we receive fresh water in earth. [. . .] With evaporation only pure water is evaporated, and therefore any contaminates and salts are left behind.&rdquo;`,
+        choices:[
+          "Water in the air contains contaminates.",
+          "Water in the air does not have contaminates.",
+          "Water in the air is very large.",
+          "Water in the air is very salty." ],
+        ans:1,
+        keyEn:"With evaporation only pure water is evaporated, and therefore any contaminates and salts are left behind.",
+        keyJa:"蒸発では純粋な水だけが蒸発するので、汚れや塩はあとに残される。",
+        why:"only pure water（純粋な水だけ）が決め手です。上がっていくのは水だけで、汚れや塩は下に残る。だから空気中の水はきれいで、降ってくる雨は fresh water（真水）なのです。",
+        others:[
+          "汚れをふくむ → left behind（あとに残される）と正反対です。",
+          "とても大きい → 粒は tiny（とても小さい）。大きくなったら落ちてきます。",
+          "とても塩からい → 塩は残されるので、空気中の水に塩はありません。塩からくなるのは<b>湖のほう</b>です。" ] },
+
+      { stem:"What is the main idea of this text?",
+        choices:[
+          "Water changes from a liquid to a gas in a process called evaporation, which requires energy.",
+          "Water vapor changes into clouds or dew in the atmosphere through a process called condensation.",
+          "Water on Earth moves in a cycle from the ground to the atmosphere and back again through many processes.",
+          "We get fresh water through the process of precipitation, which can be in the form of rain, hail, snow, or sleet." ],
+        ans:2,
+        keyEn:"At its core, the water cycle is the motion of the water from the ground to the atmosphere and back again. &hellip; Evaporation of this runoff into the atmosphere begins the hydrologic cycle over again.",
+        keyJa:"その中心にあるのは、水が地面から大気へ、そしてまた地面へともどる動きだ。…流出した水が大気へ蒸発することで、循環はまた最初から始まる。",
+        why:"文章は最初に全体像を示し、最後に「また最初から始まる」ともどってきます。この<b>ぐるりと一周する形</b>そのものが要旨です。5つの過程はその一部分にすぎません。",
+        others:[
+          "蒸発・凝結・降水の説明 → どれも<b>循環の中の一過程</b>。一つだけでは全体になりません。" ] },
+    ],
+    vocab: [
+      ["hydrologic cycle","水循環"],["continuous","たえまない"],["circulation","めぐること、循環"],["atmosphere","大気"],
+      ["evaporation","蒸発"],["transpiration","蒸散"],["condensation","凝結"],["precipitation","降水"],
+      ["runoff","流出（水）"],["substance","物質"],["meteorology","気象学"],["require","必要とする"],
+      ["secrete","分泌する、出す"],["stomata","気孔"],["humidity","湿度"],["moisture","水分"],
+      ["water vapor","水蒸気"],["dew","露（つゆ）"],["dew point","露点"],["release","放出する"],
+      ["particle","粒"],["hail","ひょう"],["sleet","みぞれ"],["saturated","飽和した"],
+      ["absorb","吸収する"],["outlet","出口"],["contaminate","汚染物質"],["pure","純粋な"],
+    ],
+  },
+
+  /* ===== 1000-13 ===== */
+  {
+    title: "Amazing Trees Help Us Breathe",
+    titleJa: "すごい木々が、わたしたちの呼吸を助けている",
+    source: "Lexile 1000–1050 / ノンフィクション（理科・環境）",
+    paras: [
+      { en:`<mark data-q="1">When you look at trees from the ground up, you can identify four parts: the roots, the trunk, the branches, and the leaves.</mark> All four parts are vital to the health of the tree. <mark data-q="5">What might be harder to see is just how important trees are to the health of the earth and all of us people!</mark> Here are some of the many ways that trees help us all.`,
+        ja:`木を地面の側から上へと見ていくと、四つの部分が見分けられます。根、幹、枝、そして葉です。この四つはどれも、木の健康にとって欠かせません。もっと見えにくいのは、木が地球の健康とわたしたち人間すべてにとって、どれほど大切かということです！ ここでは、木がわたしたちみんなを助けている数多くの方法のうち、いくつかを紹介します。` },
+      { en:`<mark data-q="2">The roots of trees help prevent erosion, which makes streams and rivers healthier by keeping soil where it is supposed to be.</mark> If topsoil washes into streams and rivers during heavy rains, it can lower oxygen levels in the water and hurt fish. Soil and sediment can form layers in areas that cause other problems, like changing the water depth.`,
+        ja:`木の根は浸食（しんしょく）をふせぐのに役立ち、土をあるべき場所にとどめることで、小川や川をより健康にします。大雨のときに表土が小川や川へ流れこむと、水の中の酸素の量を下げ、魚を傷つけることがあります。土や堆積物は場所によって層をつくり、水の深さが変わるなど、ほかの問題も引き起こします。` },
+      { en:`Trees also help us breathe! Tree trunks transport water and nutrients from the roots to the branches, which hold the leaves. Leaves are like tiny chemistry laboratories. They use water from the roots, the sun&rsquo;s energy, and carbon dioxide &mdash; one of the gases in the air &mdash; in a process called photosynthesis, which creates sugars to feed the tree. While making their own food and absorbing carbon dioxide, trees discard oxygen, which is the gas in the air that animals (including people) breathe. One large tree can provide a day&rsquo;s supply of oxygen for up to four people!`,
+        ja:`木はまた、わたしたちが呼吸するのも助けています！ 木の幹は、水と栄養分を根から枝へ運び、その枝が葉をささえています。葉は、小さな化学の実験室のようなものです。葉は、根から来た水、太陽のエネルギー、そして空気中の気体の一つである二酸化炭素を使って、「光合成」とよばれる過程を行い、木を養う糖をつくります。自分の食べ物をつくり、二酸化炭素を吸収するあいだに、木は酸素を外に出します。酸素は、動物（人間もふくめて）が呼吸する空気中の気体です。大きな木は1本で、最大4人分の1日の酸素をまかなえるのです！` },
+      { en:`Trees also store carbon dioxide in their fibers, which are found in the roots, trunk, branches, stems, and leaves. Carbon dioxide in the atmosphere helps keep the earth warm through a process called the greenhouse effect, which traps heat from the sun. <mark data-q="3 4">Too much carbon dioxide makes the earth heat up too much, causing strong storms and sea-level rise. Since trees absorb carbon dioxide, they can help reduce the greenhouse effect.</mark> One mature tree absorbs about 48 pounds of carbon dioxide from the atmosphere each year.`,
+        ja:`木はまた、二酸化炭素を自分の繊維の中にたくわえます。繊維は根、幹、枝、茎、葉のどこにもあります。大気中の二酸化炭素は、太陽からの熱をとじこめる「温室効果」というはたらきによって、地球をあたたかくたもつのに役立っています。しかし二酸化炭素が多すぎると、地球はあたたまりすぎ、強い嵐や海面の上昇を引き起こします。木は二酸化炭素を吸収するので、温室効果をやわらげる助けになります。じゅうぶんに育った木は1本で、毎年およそ48ポンド（約22kg）の二酸化炭素を大気から吸収します。` },
+      { en:`<mark data-q="5">Now that people understand how important trees are, groups are getting together to plant more trees and help forests in other ways.</mark> Arborists and forestry specialists study trees, tree diseases, and ways to keep trees healthy. They work with community groups to promote healthy forests. Some people help support the health of natural forests by removing dead brush to prevent bad wildfires. They may remove smaller trees to open up space that helps other trees grow larger. There are even groups in cities that focus on planting trees to provide shade for recreation, food for wildlife and people, and carbon absorption to help cities cool down in summer months. You can help the earth and people, too, by planting more amazing trees.`,
+        ja:`木がどれほど大切かを人々が理解するようになった今、より多くの木を植え、ほかの方法でも森を助けようと、いくつもの団体が集まって活動しています。樹木医や林業の専門家は、木や木の病気、木を健康にたもつ方法を研究します。かれらは地域の団体と協力して、健康な森づくりを進めます。ひどい山火事をふせぐために枯れた低木を取りのぞいて、自然の森の健康を支える人たちもいます。ほかの木が大きく育つ場所をあけるために、小さめの木を間引くこともあります。都市の中にも、木を植えることに力を入れる団体があります。休息のための日かげ、野生生物や人のための食べ物、そして夏に街を涼しくする炭素の吸収をもたらすためです。あなたも、すごい木をもっと植えることで、地球と人々を助けることができます。` },
+    ],
+    questions: [
+      { stem:"What four parts of a tree can you identify by looking at a tree from the ground up?",
+        choices:[
+          "head, shoulders, legs, and feet",
+          "back, side, front, and top",
+          "roots, trunk, branches, and leaves",
+          "fruit, flowers, vegetables, and bark" ],
+        ans:2,
+        keyEn:"you can identify four parts: the roots, the trunk, the branches, and the leaves.",
+        keyJa:"四つの部分が見分けられる。根、幹、枝、そして葉だ。",
+        why:"コロン（:）のあとに4つがそのまま並んでいます。<b>コロンは「これから並べます」という合図</b>です。この4つは、そのあとの説明でもくり返し出てきます。",
+        others:[
+          "頭・肩など → 人の体の部分です。",
+          "後ろ・横など → 位置を表す言葉です。",
+          "果実・花・野菜・樹皮 → 木に関わる言葉ですが、本文の4つとはちがいます。" ] },
+
+      { stem:"What effect do trees have on streams and rivers?",
+        choices:[
+          "They make streams and rivers healthier by keeping soil where it&rsquo;s supposed to be.",
+          "They make streams and rivers dirtier when branches break off and fall in.",
+          "They make streams and rivers shallower by blocking off the flow of water.",
+          "They make streams and rivers less photogenic by blocking sun from the water." ],
+        ans:0,
+        keyEn:"The roots of trees help prevent erosion, which makes streams and rivers healthier by keeping soil where it is supposed to be.",
+        keyJa:"木の根は浸食をふせぐのに役立ち、土をあるべき場所にとどめることで、小川や川をより健康にする。",
+        why:"which（それは）が前の内容を受けて、結果を説明しています。根が土をとどめる → 土が流れこまない → 川が健康、という流れです。",
+        others:[
+          "枝が落ちて汚す → 本文にありません。",
+          "浅くする → 浅くするのは<b>流れこんだ土</b>のほう。木は逆にそれをふせいでいます。原因のとりちがえです。",
+          "写真うつりが悪くなる → 本文にありません。" ] },
+
+      { stem:"Trees play an important role in making sure our atmosphere doesn&rsquo;t get too hot. What evidence from the passage supports this idea?",
+        choices:[
+          "&ldquo;Arborists and forestry specialists study trees, tree diseases, and ways to keep trees healthy.&rdquo;",
+          "&ldquo;If topsoil washes into streams and rivers during heavy rains, it can lower oxygen levels in the water and hurt fish.&rdquo;",
+          "&ldquo;Too much carbon dioxide makes the earth heat up too much, causing strong storms and sea-level rise. Since trees absorb carbon dioxide, they can help reduce the greenhouse effect.&rdquo;",
+          "&ldquo;The roots of trees help prevent erosion, which makes streams and rivers healthier by keeping soil where it is supposed to be.&rdquo;" ],
+        ans:2,
+        keyEn:"Too much carbon dioxide makes the earth heat up too much &hellip; Since trees absorb carbon dioxide, they can help reduce the greenhouse effect.",
+        keyJa:"二酸化炭素が多すぎると地球はあたたまりすぎる。…木は二酸化炭素を吸収するので、温室効果をやわらげる助けになる。",
+        why:"「暑くなりすぎないようにする」証拠をさがします。heat up（あたたまる）と reduce（やわらげる）が入っているのはこれだけ。ほかは<b>水や森の管理</b>の話です。",
+        others:[
+          "樹木医の研究・表土の流出・根と浸食 → どれも木の大切さを示しますが、<b>気温</b>とは別の話です。" ] },
+
+      { stem:"Based on the information in the text, how would a healthy forest impact the earth&rsquo;s atmosphere?",
+        choices:[
+          "By creating more wood to burn, a healthy forest would make the atmosphere smokier.",
+          "By blocking sunlight, a healthy forest would make the atmosphere too cold.",
+          "By absorbing too much carbon dioxide, a healthy forest would make the atmosphere thin.",
+          "By absorbing more carbon dioxide, a healthy forest would help the atmosphere not get too hot." ],
+        ans:3,
+        keyEn:"Since trees absorb carbon dioxide, they can help reduce the greenhouse effect. One mature tree absorbs about 48 pounds of carbon dioxide from the atmosphere each year.",
+        keyJa:"木は二酸化炭素を吸収するので、温室効果をやわらげる助けになる。育った木1本で、毎年およそ48ポンドを吸収する。",
+        why:"1本で48ポンド → 健康な森なら木がたくさんある → 吸収量も多い。<b>1本あたりの数を森全体に広げて</b>考えます。",
+        others:[
+          "煙が多くなる → 木は燃やすためのものではありません。",
+          "寒くなりすぎる → 温室効果を「やわらげる」のであって、なくすのではありません。",
+          "大気がうすくなる → 二酸化炭素を吸っても大気がうすくなるとは書かれていません。too much（吸いすぎ）という言い方にも注意。" ] },
+
+      { stem:"What is the main idea of this text?",
+        choices:[
+          "Trees are very important for the earth&rsquo;s atmosphere and living things, and many people are working together to make sure that trees are healthy.",
+          "Trees discard oxygen, which is the gas in the air that helps people breathe, and one large tree can provide oxygen for four people for a whole day.",
+          "Photosynthesis is the process by which trees use water from their roots, the energy from the sun, and carbon dioxide to make sugars to feed the tree.",
+          "Trees process carbon dioxide in two ways: by using it to make sugars in photosynthesis, and by storing it in their fibers." ],
+        ans:0,
+        keyEn:"What might be harder to see is just how important trees are to the health of the earth and all of us people! &hellip; Now that people understand how important trees are, groups are getting together to plant more trees&hellip;",
+        keyJa:"もっと見えにくいのは、木が地球とわたしたち人間にとってどれほど大切かということだ。…木の大切さを理解した今、人々は木を植えようと集まっている。",
+        why:"要旨は<b>大切さ</b>（土・酸素・二酸化炭素）＋<b>人の取り組み</b>（植える・森を守る）の両方。最後の段落がまるごと取り組みの話なので、そこを落とさない選択肢をえらびます。",
+        others:[
+          "酸素を出す・光合成・二酸化炭素の二つの扱い方 → すべて<b>大切さの中の一つ</b>の説明です。" ] },
+    ],
+    vocab: [
+      ["identify","見分ける"],["root","根"],["trunk","幹"],["branch","枝"],
+      ["vital","欠かせない"],["prevent","ふせぐ"],["erosion","浸食"],["soil","土"],
+      ["topsoil","表土"],["oxygen","酸素"],["sediment","堆積物"],["layer","層"],
+      ["depth","深さ"],["transport","運ぶ"],["nutrient","栄養分"],["laboratory","実験室"],
+      ["carbon dioxide","二酸化炭素"],["photosynthesis","光合成"],["absorb","吸収する"],["discard","外に出す、捨てる"],
+      ["supply","供給（量）"],["fiber","繊維"],["greenhouse effect","温室効果"],["mature","じゅうぶんに育った"],
+      ["arborist","樹木医"],["forestry","林業"],["promote","進める"],["brush","低木、やぶ"],
+    ],
+  },
     /*__NEXT_1000__*/
   ],
 
