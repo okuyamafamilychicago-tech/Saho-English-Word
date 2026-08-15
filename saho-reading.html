@@ -7638,6 +7638,328 @@ const READINGS = {
       ["invasive","外来の"],["replace","置きかえる"],["penetrate","入りこむ"],["erosion","浸食"],
     ],
   },
+  /* ===== 1000-17 ===== */
+  {
+    title: "Life in the City and the Country",
+    titleJa: "都市の暮らしと田舎の暮らし（ベトナム）",
+    source: "Lexile 1000–1050 / ノンフィクション（社会・世界の文化）",
+    paras: [
+      { en:`<mark data-q="1 5">In Vietnam, people live in both the city and the country.</mark> <mark data-q="3">The most populated cities in Vietnam are Hanoi and Ho Chi Minh City. To get around in these busy cities, many people ride motorbikes. The streets can be very small and crowded, so motorbikes are the best option for traveling.</mark> Many streets also have food carts, which often serve famous Vietnamese dishes like pho soup and banh mi sandwiches.`,
+        ja:`ベトナムでは、人々は都市にも田舎にも住んでいます。ベトナムでもっとも人口の多い都市は、ハノイとホーチミン市です。このにぎやかな都市を移動するために、多くの人がバイクに乗ります。通りはとても狭く、こみ合っていることがあるので、移動にはバイクがいちばん良い選択肢なのです。多くの通りには屋台もあり、フォー（スープ）やバインミー（サンドイッチ）といった有名なベトナム料理を出しています。` },
+      { en:`<mark data-q="3">In the country, there is a lot of open space.</mark> The climate in Vietnam is warm and wet, which is great for growing rice. With the open space and the warm climate, rice farming is a large part of country life. <mark data-q="4">Many people grow and harvest rice to make money.</mark> The non la, or rice hats, are often worn by farmers to protect their heads from the sun. Because so many farmers wear non la, they have become a symbol of Vietnam.`,
+        ja:`田舎には、広々とした土地がたくさんあります。ベトナムの気候はあたたかく湿っていて、米を育てるのにとても向いています。広い土地とあたたかい気候のおかげで、稲作は田舎の暮らしの大きな部分をしめています。多くの人が、お金を得るために米を育て、収穫します。ノンラー（すげ笠）は、太陽から頭を守るために農家の人がよくかぶるものです。とても多くの農家がノンラーをかぶるので、これはベトナムの象徴になりました。` },
+    ],
+    questions: [
+      { stem:"Where do people in Vietnam live?",
+        choices:["in the city and the country","in caves and near volcanoes","in deserts and in mountains"],
+        ans:0,
+        keyEn:"In Vietnam, people live in both the city and the country.",
+        keyJa:"ベトナムでは、人々は都市にも田舎にも住んでいる。",
+        why:"いちばん最初の一文が答えです。この文はタイトルとも同じ内容で、文章全体の枠組みになっています。",
+        others:[
+          "ほら穴や火山の近く・砂漠や山 → 本文に出てきません。" ] },
+
+      { stem:"What does the text compare?",
+        choices:[
+          "different ways people get around in the cities of Vietnam",
+          "different ways farmers grow rice in the Vietnamese countryside",
+          "life in the country and life in the city in Vietnam" ],
+        ans:2,
+        keyEn:"In Vietnam, people live in both the city and the country. &hellip; In the country, there is a lot of open space.",
+        keyJa:"ベトナムでは都市にも田舎にも人が住んでいる。…田舎には広々とした土地がたくさんある。",
+        why:"compare（くらべる）を問う問題。段落が2つあり、<b>1段落目は都市、2段落目は田舎</b>。この組み立てそのものが「くらべている」ことを示しています。",
+        others:[
+          "移動の方法・米の育て方 → どちらも<b>片方の段落の中の一部</b>です。文章全体が何と何をくらべているかを見ます。" ] },
+
+      { stem:"What can be concluded about the country and cities in Vietnam based on this information?",
+        quote:`&ldquo;The most populated cities in Vietnam are Hanoi and Ho Chi Minh City. To get around in these busy cities, many people ride motorbikes. The streets can be very small and crowded, so motorbikes are the best option for traveling&hellip;In the country, there is a lot of open space.&rdquo;`,
+        choices:[
+          "The cities are less crowded than the country in Vietnam.",
+          "The country is less crowded than the cities in Vietnam.",
+          "The cities and the country in Vietnam are both very crowded." ],
+        ans:1,
+        keyEn:"The streets can be very small and crowded &hellip; In the country, there is a lot of open space.",
+        keyJa:"通りはとても狭く、こみ合っていることがある。…田舎には広々とした土地がたくさんある。",
+        why:"2つの言葉を向かい合わせます。都市＝crowded（こみ合っている）、田舎＝open space（広々とした場所）。<b>反対の言葉</b>が出てきたら、それが比べどころです。",
+        others:[
+          "都市のほうがすいている → 逆です。",
+          "両方こみ合っている → 田舎は open space と書かれています。" ] },
+
+      { stem:"Based on the text, why is rice farming so important to people who live in the countryside of Vietnam?",
+        choices:[
+          "Many of them grow and harvest rice to give away to others.",
+          "Many of them grow and harvest rice to play with.",
+          "Many of them grow and harvest rice to make money." ],
+        ans:2,
+        keyEn:"Many people grow and harvest rice to make money.",
+        keyJa:"多くの人が、お金を得るために米を育て、収穫する。",
+        why:"to make money（お金を得るために）が、そのまま理由です。to + 動詞の形は「〜するために」＝目的を表します。",
+        others:[
+          "人にあげるため・遊ぶため → 本文にありません。稲作は<b>暮らしを支える仕事</b>として書かれています。" ] },
+
+      { stem:"What is the main idea of this text?",
+        choices:[
+          "In Vietnam, people live in both the city and the country. Being in the city is quite different from being in the country.",
+          "The most populated cities in Vietnam are Hanoi and Ho Chi Minh City. In order to get around in these busy cities, many people ride motorbikes.",
+          "In Vietnam, farmers often wear non la, or rice hats, to protect their heads from the sun. These hats have become a symbol for Vietnam." ],
+        ans:0,
+        keyEn:"In Vietnam, people live in both the city and the country. &hellip; With the open space and the warm climate, rice farming is a large part of country life.",
+        keyJa:"ベトナムでは都市にも田舎にも人が住んでいる。…広い土地とあたたかい気候のおかげで、稲作は田舎の暮らしの大きな部分をしめている。",
+        why:"要旨は<b>両方にふれている</b>ものをえらびます。都市だけ、田舎だけの選択肢は、文章の半分しか表していません。",
+        others:[
+          "バイクの話 → 都市の段落の一部です。",
+          "ノンラーの話 → 田舎の段落の一部です。" ] },
+    ],
+    vocab: [
+      ["populated","人口の多い"],["get around","移動する"],["crowded","こみ合った"],["option","選択肢"],
+      ["cart","屋台、荷車"],["dish","料理"],["open space","広々とした土地"],["climate","気候"],
+      ["grow","育てる"],["harvest","収穫する"],["protect","守る"],["symbol","象徴"],
+    ],
+  },
+
+  /* ===== 1000-18 ===== */
+  {
+    title: "A Good Night",
+    titleJa: "よい夜を ― ねむれないときに",
+    source: "Lexile 1000–1050 / ノンフィクション（生活・健康）",
+    paras: [
+      { en:`It happens every night&mdash;bedtime. But what if you&rsquo;re not sleepy? Should you still go to bed if you are just going to lie there with your eyes wide open? <mark data-q="1 4">It&rsquo;s a problem that has been around as long as there have been people trying to sleep.</mark>`,
+        ja:`それは毎晩やってきます——寝る時間です。でも、ねむくなかったらどうしましょう。目をぱっちり開けたまま横になっているだけなら、それでもベッドに入るべきでしょうか。これは、ねむろうとする人がいるかぎりずっと前からある問題です。` },
+      { en:`For many, thinking about sleeping only keeps them awake. You might be excited by everything you did that day. You might be excited for what you know you&rsquo;re going to do the day after. <mark data-q="3 7">Maybe you can&rsquo;t sleep because you don&rsquo;t like sleeping all alone in your room. Maybe you have a nightmare that keeps coming back every time you close your eyes.</mark> All of these feelings are normal.`,
+        ja:`多くの人にとって、ねむることを考えるのは、かえって目をさえさせるだけです。その日にしたことすべてに、わくわくしているのかもしれません。あるいは、次の日にすると分かっていることに、わくわくしているのかもしれません。自分の部屋でひとりでねむるのが好きではないから、ねむれないのかもしれません。目を閉じるたびに、くり返し出てくるこわい夢があるのかもしれません。こうした気持ちは、どれもふつうのことです。` },
+      { en:`One thing that can help is talking to a parent about what you&rsquo;re thinking about. If you&rsquo;re nervous about taking a test or upset about being teased at school, it can really help to tell somebody. Knowing that somebody has heard you can help your thoughts rest so that you can, too. <mark data-q="3 4">There&rsquo;s not just one reason why kids can&rsquo;t fall asleep, though. There are also different solutions.</mark>`,
+        ja:`役に立つことの一つは、自分が考えていることを親に話すことです。テストを受けるのが不安だったり、学校でからかわれて気持ちが沈んでいたりするなら、だれかに話すことは本当に助けになります。だれかが自分の話を聞いてくれたと分かるだけで、心の中の考えが休まり、そうすれば自分も休めるのです。とはいえ、子どもがねむれない理由は一つだけではありません。解決の方法もいろいろあります。` },
+      { en:`If there&rsquo;s anything near you that makes you feel uncomfortable at night, be sure to ask your parents if they can help you solve the problem. For example, if a picture looks strange in the dark or a leaky faucet&rsquo;s drops are noisy, maybe your parents can help move the picture or fix the leaky faucet. It may not even make sense why something bothers you, but if it&rsquo;s keeping you from sleeping, it should be changed.`,
+        ja:`夜に落ち着かない気持ちにさせるものが近くにあるなら、必ず親にたのんで、その問題を解決する手助けをしてもらいましょう。たとえば、暗いところで絵が変な形に見えたり、水もれする蛇口のしずくの音がうるさかったりするなら、親が絵を動かしたり、蛇口を直したりしてくれるかもしれません。なぜそれが気になるのか、自分でも筋が通らないように思えるかもしれません。それでも、それが原因でねむれないなら、変えるべきなのです。` },
+      { en:`<mark data-q="2">Another idea could be getting ready for bed earlier than usual. Try to take more time to wind down by taking a warm bath or listening to a bedtime story at least 30 minutes before you want to go to sleep.</mark> <mark data-q="6">It also helps to keep your bedtime routine and time the same every night. By keeping it the same, your body will get the message that it&rsquo;s almost time to sleep. Your body will know to start feeling tired.</mark>`,
+        ja:`もう一つの考えは、いつもより早く寝じたくを始めることです。ねむりたい時間の少なくとも30分前から、あたたかいおふろに入ったり、寝る前のお話を聞いたりして、気持ちを落ち着ける時間をもっと取ってみましょう。毎晩、寝る前の決まった手順（ルーティン）と時間を同じにしておくことも役に立ちます。同じにしておくことで、体は「もうすぐねむる時間だ」という合図を受け取ります。体が、そろそろねむくなろうと分かるようになるのです。` },
+      { en:`If you don&rsquo;t want to wake up anyone but are still having trouble falling asleep, you can try to close your eyes and notice your breath. Are you breathing deep breaths, or are they short and shallow? If you are breathing short breaths, stay focused on your breath and remind yourself that you can control how you breathe. Concentrate on taking deep breaths. <mark data-q="4 5">It&rsquo;s important not to give up just because one solution didn&rsquo;t work and you&rsquo;re still awake. There are many different solutions you can try! It may be difficult for you to sleep some nights, but you likely also have some restful and good nights.</mark>`,
+        ja:`だれかを起こしたくはないけれど、まだねむれないというときは、目を閉じて自分の呼吸に気づいてみましょう。深い呼吸をしていますか。それとも短くて浅い呼吸でしょうか。もし短い呼吸なら、呼吸に意識を向けたまま、自分は呼吸の仕方を自分で決められるのだと思い出してください。そして深い呼吸をすることに集中しましょう。一つの方法がうまくいかず、まだ目がさえているというだけで、あきらめないことが大切です。ためせる方法はほかにもたくさんあります！ ねむりにくい夜もあるでしょう。でもきっと、ゆっくり休めるよい夜もあるはずです。` },
+    ],
+    questions: [
+      { stem:"What can be difficult for people at bedtime?",
+        choices:["falling asleep","moving a picture","talking to a parent","taking a warm bath"],
+        ans:0,
+        keyEn:"It&rsquo;s a problem that has been around as long as there have been people trying to sleep.",
+        keyJa:"これは、ねむろうとする人がいるかぎりずっと前からある問題だ。",
+        why:"文章全体の問題は「ねむれないこと」です。ほかの3つは、その問題を<b>解決するための方法</b>として出てきます。問題と解決策を取りちがえないように。",
+        others:[
+          "絵を動かす・親に話す・おふろに入る → どれも解決策のほうです。" ] },
+
+      { stem:"A problem described in the text is being unable to fall asleep. What is one solution?",
+        choices:[
+          "not talking to anyone about something that is bothering you",
+          "staring at a picture that looks strange in the dark",
+          "going to bed at a different time every night",
+          "taking more time to wind down before bedtime" ],
+        ans:3,
+        keyEn:"Try to take more time to wind down by taking a warm bath or listening to a bedtime story at least 30 minutes before you want to go to sleep.",
+        keyJa:"ねむりたい時間の少なくとも30分前から、おふろに入ったりお話を聞いたりして、気持ちを落ち着ける時間をもっと取ってみよう。",
+        why:"wind down（気持ちを落ち着ける）が、この段落の中心です。ほかの3つは、本文で<b>すすめられていることの逆</b>になっています。",
+        others:[
+          "だれにも話さない → 「話すことが助けになる」の逆です。",
+          "変な絵を見つめる → 動かしてもらう、が本文の助言です。",
+          "毎晩ちがう時間に寝る → 「同じにする」の逆です。<b>反対にしただけの選択肢</b>に注意。" ] },
+
+      { stem:"What can be concluded from this information?",
+        quote:`&ldquo;Maybe you can&rsquo;t sleep because you don&rsquo;t like sleeping all alone in your room. Maybe you have a nightmare that keeps coming back every time you close your eyes.&rdquo;`,
+        choices:[
+          "All kids have trouble sleeping for the same reason.",
+          "There is more than one reason that kids can have trouble sleeping.",
+          "Some kids like listening to stories at bedtime more than taking a warm bath.",
+          "Some kids like taking a warm bath more than listening to stories at bedtime." ],
+        ans:1,
+        keyEn:"Maybe you can&rsquo;t sleep because &hellip; Maybe you have a nightmare &hellip; There&rsquo;s not just one reason why kids can&rsquo;t fall asleep, though.",
+        keyJa:"…かもしれない。…かもしれない。…子どもがねむれない理由は一つだけではない。",
+        why:"Maybe（かもしれない）が<b>2回くり返されて、ちがう理由</b>が並んでいます。理由が並べられている＝理由は一つではない、という結論になります。",
+        others:[
+          "みんな同じ理由 → 引用が2つの理由を挙げているので合いません。",
+          "おふろとお話のどちらが好きか → 引用に出てきません。" ] },
+
+      { stem:"How can the problem of falling asleep be described?",
+        choices:[
+          "The problem of falling asleep is due to one reason for everyone.",
+          "The problem of falling asleep happens every night at the same time.",
+          "The problem of falling asleep has been around for a long time and affects many people.",
+          "The problem of falling asleep only affects people who share a bedroom with someone else." ],
+        ans:2,
+        keyEn:"It&rsquo;s a problem that has been around as long as there have been people trying to sleep. &hellip; There&rsquo;s not just one reason why kids can&rsquo;t fall asleep, though.",
+        keyJa:"ねむろうとする人がいるかぎりずっと前からある問題だ。…理由は一つだけではない。",
+        why:"文章の最初と途中から、<b>昔からある</b>ことと<b>多くの人に起こる</b>ことの両方が読み取れます。この2つを合わせた選択肢が答えです。",
+        others:[
+          "理由は一つ → 「一つではない」と書かれています。",
+          "毎晩同じ時間に起こる → そうは書かれていません。",
+          "<b>相部屋の人だけ</b>（only）→ 逆に「ひとりでねむるのがいや」という理由が挙がっています。" ] },
+
+      { stem:"What is the text mostly about?",
+        choices:[
+          "why kids have trouble falling asleep and what they can do about it",
+          "some different stories that parents like reading to their children before bedtime",
+          "why some people get more nervous than others about tests in school",
+          "different daytime activities that make kids too excited to fall asleep at night" ],
+        ans:0,
+        keyEn:"There&rsquo;s not just one reason why kids can&rsquo;t fall asleep, though. There are also different solutions. &hellip; There are many different solutions you can try!",
+        keyJa:"子どもがねむれない理由は一つだけではない。解決の方法もいろいろある。…ためせる方法はたくさんある！",
+        why:"文章は<b>理由</b>（わくわく、ひとりがこわい、こわい夢）と<b>方法</b>（話す、環境を変える、早く準備、呼吸）の二本立てです。両方が入った選択肢が答えです。",
+        others:[
+          "寝る前のお話 → 方法の一つです。",
+          "テストの不安 → 例の一つです。",
+          "昼の活動 → 理由の一つにふれているだけです。" ] },
+
+      { stem:"What does the word &ldquo;routine&rdquo; mean in the sentences?",
+        quote:`&ldquo;It also helps to keep your bedtime routine and time the same every night. By keeping it the same, your body will get the message that it&rsquo;s almost time to sleep.&rdquo;`,
+        choices:[
+          "something that a person has never done before",
+          "something that is likely to cause harm",
+          "something that people do with others",
+          "something done over and over" ],
+        ans:3,
+        keyEn:"keep your bedtime routine and time the same every night. By keeping it the same&hellip;",
+        keyJa:"毎晩、寝る前のルーティンと時間を同じにしておく。同じにしておくことで…",
+        why:"same every night（毎晩同じ）と keeping it the same（同じにしておく）がくり返されています。<b>毎回同じことをする</b>ものだから、routine は「くり返し行うこと」です。",
+        others:[
+          "したことがないこと → every night とは正反対です。",
+          "害になりそうなこと・人といっしょにすること → 文の流れに合いません。" ] },
+
+      { stem:"Choose the answer that best completes the sentence below.<br>Kids can have trouble sleeping for a variety of reasons, _______ feeling excited and being alone in a room.",
+        choices:["never","although","including","in conclusion"],
+        ans:2,
+        keyEn:"You might be excited by everything you did that day. &hellip; Maybe you can&rsquo;t sleep because you don&rsquo;t like sleeping all alone in your room.",
+        keyJa:"その日にしたことにわくわくしているのかもしれない。…部屋でひとりでねむるのが好きではないのかもしれない。",
+        why:"「いろいろな理由」→ その<b>例</b>として2つを挙げています。全体から例を示すのは including（〜をふくめて）です。",
+        others:[
+          "never（けっして〜ない）→ 否定の言葉です。",
+          "although（〜だけれども）→ 反対のことをつなぎます。",
+          "in conclusion（結論として）→ まとめのときに使います。" ] },
+    ],
+    vocab: [
+      ["bedtime","寝る時間"],["sleepy","ねむい"],["lie","横になる"],["awake","目がさめて"],
+      ["nightmare","こわい夢"],["normal","ふつうの"],["nervous","不安な"],["tease","からかう"],
+      ["solution","解決の方法"],["uncomfortable","落ち着かない"],["leaky","水もれする"],["faucet","蛇口"],
+      ["bother","気になる、なやませる"],["wind down","気持ちを落ち着ける"],["routine","決まった手順"],["breath","呼吸"],
+      ["shallow","浅い"],["concentrate","集中する"],["give up","あきらめる"],["restful","ゆっくり休める"],
+    ],
+  },
+
+  /* ===== 1000-19 ===== */
+  {
+    title: "From City to Farm",
+    titleJa: "都会から農場へ",
+    source: "Lexile 1000–1050 / ノンフィクション（人物・仕事）",
+    paras: [
+      { en:`<mark data-q="1 2 6">Jason Detzel was bored with his work as a psychologist for the United States Air Force, and he was tired of spending all day in an office.</mark> Many people enjoy working in an office environment with computers, but Dr. Detzel felt that in the city he was losing touch with something important. <mark data-q="2 5">So the Richmond, Virginia, resident quit his job and started a farm.</mark>`,
+        ja:`ジェイソン・デッツェルは、アメリカ空軍の心理学者としての仕事にあきていました。そして、一日中オフィスですごすことにもうんざりしていました。多くの人はコンピューターのあるオフィスで働くのを楽しみますが、デッツェル博士は、都会にいると何か大切なものとのつながりを失っていくように感じていました。そこでこのバージニア州リッチモンドの住人は、仕事をやめて農場を始めたのです。` },
+      { en:`He and his business partner found 80 acres of available land in a small town called Claverack, N.Y., and signed a 10-year lease. They bought hammers, crowbars, nails, and wood. While some farms used a lot of machinery, they decided they wanted to do as much as possible with their own hands. They built a corral for the cows so that the cows would stay inside the pasture where they could move around and graze. They built pig shelters where the pigs could be protected from the weather in the winter. They built a house for the chickens where the hens could lay eggs and Dr. Detzel could collect them.`,
+        ja:`彼と共同経営者は、ニューヨーク州クラベラックという小さな町で80エーカーの空いた土地を見つけ、10年の借地契約を結びました。二人はハンマー、バール、くぎ、そして木材を買いました。機械をたくさん使う農場もありますが、二人はできるかぎり自分たちの手で作ろうと決めました。牛が牧草地の中にとどまり、動き回って草を食べられるように、囲い（コラル）を作りました。豚が冬の天気から守られるように、豚小屋も作りました。めんどりが卵を産み、デッツェル博士がそれを集められるように、にわとり小屋も作りました。` },
+      { en:`After almost a year and a half, Diamond Hills Farm had grown to include 10 pigs and 20 cows, including a baby calf that Dr. Detzel was feeding with a bottle. The farm was also home to 100 laying hens, which provided eggs, and 100 other chickens that would be used for their meat. After many months of growth, Dr. Detzel felt like he&rsquo;d already made something important&mdash;both for himself and for the land he and his partner owned. <mark data-q="3 4">&ldquo;I&rsquo;m definitely happier being out in the fields with my animals. Even if there are bad days, I&rsquo;m still happy,&rdquo; Dr. Detzel said. &ldquo;When you&rsquo;re inside all day, you don&rsquo;t get to see nature working.&rdquo;</mark>`,
+        ja:`1年半ほどたつと、ダイヤモンド・ヒルズ農場は、10頭の豚と20頭の牛をかかえるまでに育っていました。その中には、デッツェル博士がほ乳びんでミルクをあげていた子牛もいました。農場にはまた、卵を産む100羽のめんどりと、肉のために育てられる別の100羽のにわとりもいました。何か月もかけて育てたあと、デッツェル博士は、自分にとっても、自分たちが持つ土地にとっても、すでに大切なものを作り上げたと感じていました。「動物たちといっしょに野原に出ているほうが、まちがいなく幸せです。うまくいかない日があっても、それでも幸せです」とデッツェル博士は言いました。「一日中室内にいると、自然が働いているところを見ることができませんから。」` },
+      { en:`<mark data-q="4">After starting the farm, Dr. Detzel began seeing many aspects of nature at work. Instead of driving around the farm, he usually walked, and he could feel the texture of the earth beneath his boots. In the winter, the farm became a blinding sea of white. In the summer, it turned into a lush sea of green.</mark> Dr. Detzel&rsquo;s work didn&rsquo;t bore him anymore. <mark data-q="7">&ldquo;The job is different every day on the farm. It&rsquo;s amazing,&rdquo; he said. &ldquo;You&rsquo;re a farmer. You&rsquo;re a veterinarian. You&rsquo;re a plumber. You&rsquo;re definitely a carpenter a lot. With animal husbandry, all that stuff is different every day on the farm. You&rsquo;re a jack of all trades, master of none. That&rsquo;s what I like about it.&rdquo;</mark>`,
+        ja:`農場を始めてから、デッツェル博士は自然が働くさまざまな面を目にするようになりました。農場を車で回るかわりに、たいてい歩き、ブーツの下に土の感触を感じました。冬には、農場は目もくらむような白い海になりました。夏には、みずみずしい緑の海に変わりました。デッツェル博士の仕事は、もう彼を退屈させませんでした。「農場では、仕事が毎日ちがいます。すばらしいですよ」と彼は言います。「あなたは農家です。獣医です。配管工です。しょっちゅう大工にもなります。家畜を育てる仕事では、そういうことが農場で毎日ちがってくるのです。何でも屋で、どれも極めてはいない。そこが気に入っているんです。」` },
+      { en:`As a farmer focusing on raising animals, one of Dr. Detzel&rsquo;s most important tasks was to grow a lot of healthy grass for the animals to eat. Each morning, he rang a bell to let the cows know it was time to move to another section of the corral in another part of the pasture where there was plenty to eat. The droppings, left by the cows and chickens that followed behind them, helped grow more green grass to replace what the cows had eaten. Learning how to manage the animals had been one of the biggest challenges of starting the farm, Dr. Detzel said. He learned that it was important to stick to a routine. That&rsquo;s why he rang the same bell and called to the cows in the same way each day. The routine helped keep the cows calm and cooperative.`,
+        ja:`動物を育てることに力を入れる農家として、デッツェル博士のもっとも大切な仕事の一つは、動物が食べる健康な草をたくさん育てることでした。毎朝、彼は鐘を鳴らして、牧草地の別の場所にある、たっぷり食べ物のある囲いへ移る時間だと牛たちに知らせました。牛と、そのあとをついていくにわとりが残すふんは、牛が食べた分を補う緑の草をさらに育てるのに役立ちました。動物の扱い方を覚えることは、農場を始めるうえでもっとも大きな課題の一つだった、とデッツェル博士は言います。彼は、決まったやり方を守ることが大切だと学びました。だからこそ、毎日同じ鐘を鳴らし、同じやり方で牛に呼びかけたのです。この決まりごとが、牛を落ち着かせ、協力的にたもつのに役立ちました。` },
+      { en:`&ldquo;They weigh much more than I do, and they could push through much, much bigger things than I could ever build,&rdquo; he said of his animals. &ldquo;So it&rsquo;s a matter of keeping them where you want them by keeping them happy.&rdquo; The cows were most happy, he knew, if they were someplace with lots of good water and plenty of healthy grass. It wasn&rsquo;t easy for Dr. Detzel to be accepted by the other farmers in his community. When he started the farm he was in his early 30s, while most other farmers were older. There weren&rsquo;t many young people starting farms, because it had become harder and harder for small family farms to make much income.`,
+        ja:`「牛はわたしよりずっと重いし、わたしが作れるどんなものよりも、はるかに大きなものを押し破ることができます」と彼は自分の動物たちについて語ります。「だから、彼らを機嫌よくしておくことで、いてほしい場所にいてもらう——そういうことなんです。」牛がいちばん機嫌がよいのは、良い水がたくさんあり、健康な草がじゅうぶんにある場所にいるときだと、彼は知っていました。地域のほかの農家に受け入れてもらうのは、デッツェル博士にとってかんたんではありませんでした。農場を始めたとき彼は30代前半で、ほかの農家のほとんどはもっと年上だったからです。農業を始める若い人はあまりいませんでした。小さな家族経営の農場が十分な収入を得るのは、どんどんむずかしくなっていたからです。` },
+      { en:`Dr. Detzel said that had begun to change when more people became locavores. A locavore is someone who tries to eat food grown and raised nearby. By shopping at their local farmers market, many locavores hope to reduce the amount of energy used to ship food long distances. Many locavores like knowing where their food comes from and being able to talk to the farmers about what chemicals were used and how the animals were treated. Some locavores say food that travels less and spends less time in storage tastes much better. Dr. Detzel likes his new job, but it&rsquo;s much harder to make money. As of July 2013, he was working two jobs&mdash;40 hours a week at a local deli and 35 hours or so each week on the farm. But he says it&rsquo;s worth it. <mark data-q="3">&ldquo;I&rsquo;m much happier,&rdquo; he said.</mark>`,
+        ja:`しかしそれは、「ロカボア（locavore）」になる人がふえて変わりはじめた、とデッツェル博士は言います。ロカボアとは、近くで育てられ、飼育された食べ物を食べようとする人のことです。地元の農産物市場で買うことで、多くのロカボアは、食べ物を長い距離運ぶのに使われるエネルギーを減らしたいと考えています。多くのロカボアは、自分の食べ物がどこから来たのかを知り、どんな薬品が使われ、動物がどう扱われたのかを農家に直接たずねられることを気に入っています。運ばれる距離が短く、保管される時間も短い食べ物のほうが、ずっとおいしいと言うロカボアもいます。デッツェル博士は新しい仕事を気に入っていますが、お金をかせぐのははるかに大変です。2013年7月の時点で、彼は二つの仕事をしていました。地元の総菜店で週40時間、そして農場で週35時間ほどです。それでも、その価値はあると彼は言います。「ずっと幸せですから」と。` },
+    ],
+    questions: [
+      { stem:"What does Jason Detzel become after being a psychologist?",
+        choices:["Jason Detzel becomes a chef.","Jason Detzel becomes a farmer.","Jason Detzel becomes a singer.","Jason Detzel becomes a policeman."],
+        ans:1,
+        keyEn:"So the Richmond, Virginia, resident quit his job and started a farm.",
+        keyJa:"そこでこのバージニア州リッチモンドの住人は、仕事をやめて農場を始めた。",
+        why:"タイトルが「都会から農場へ」。第1段落の最後に、心理学者をやめて農場を始めたと書かれています。<b>タイトルは要旨の手がかり</b>になります。",
+        others:[
+          "料理人・歌手・警官 → 本文に出てきません。彼が「獣医にも配管工にも大工にもなる」と言っているのは、農場の仕事の幅広さのたとえです。" ] },
+
+      { stem:"Jason Detzel had a problem. His problem was that he was bored with his job. How did he solve his problem?",
+        choices:[
+          "He quit his job and started a farm.",
+          "He got rid of his old computer and bought a new one.",
+          "He stopped eating food raised far away.",
+          "He started working at a local deli." ],
+        ans:0,
+        keyEn:"Jason Detzel was bored with his work as a psychologist &hellip; So the Richmond, Virginia, resident quit his job and started a farm.",
+        keyJa:"デッツェルは心理学者の仕事にあきていた。…そこで彼は仕事をやめて農場を始めた。",
+        why:"So（そこで）が、問題と解決をつないでいます。あきていた → だから仕事を変えた、という流れです。",
+        others:[
+          "パソコンを買いかえた → 本文にありません。",
+          "遠くの食べ物をやめた → ロカボアの説明で、彼自身の解決ではありません。",
+          "総菜店で働きはじめた → 農場のお金を補うための<b>あとの</b>仕事です。" ] },
+
+      { stem:"Jason Detzel likes working on a farm. What evidence from the passage supports this statement?",
+        choices:[
+          "&ldquo;There weren&rsquo;t many young people starting farms, because it had become harder and harder for small family farms to make much income.&rdquo;",
+          "&ldquo;By shopping at their local farmers market, many locavores hope to reduce the amount of energy used to ship food long distances.&rdquo;",
+          "&ldquo;&lsquo;I&rsquo;m definitely happier being out in the fields with my animals. Even if there are bad days, I&rsquo;m still happy,&rsquo; Dr. Detzel said.&rdquo;",
+          "&ldquo;Learning how to manage the animals had been one of the biggest challenges of starting the farm, Dr. Detzel said.&rdquo;" ],
+        ans:2,
+        keyEn:"&ldquo;I&rsquo;m definitely happier being out in the fields with my animals. Even if there are bad days, I&rsquo;m still happy,&rdquo; Dr. Detzel said.",
+        keyJa:"「動物たちと野原に出ているほうが、まちがいなく幸せです。うまくいかない日があっても、それでも幸せです。」",
+        why:"「好きだ」という証拠は、<b>本人の言葉</b>にいちばんはっきり出ます。happier（より幸せ）が2回もくり返されています。",
+        others:[
+          "若い人が少ない・ロカボアの説明 → 農業をめぐる事情の話です。",
+          "動物の扱いが課題だった → <b>大変だった</b>話。好きだという証拠にはなりません。" ] },
+
+      { stem:"What is a big difference between Jason Detzel&rsquo;s work as a psychologist and his work as a farmer?",
+        choices:[
+          "As a psychologist, he raised animals; as a farmer, he works with computers.",
+          "As a psychologist, he did something different every day; as a farmer, he does the same things every day.",
+          "As a psychologist, he worked in a pasture; as a farmer, he works in an office.",
+          "As a psychologist, he worked indoors; as a farmer, he gets to work outside." ],
+        ans:3,
+        keyEn:"he was tired of spending all day in an office. &hellip; &ldquo;When you&rsquo;re inside all day, you don&rsquo;t get to see nature working.&rdquo; &hellip; Instead of driving around the farm, he usually walked, and he could feel the texture of the earth beneath his boots.",
+        keyJa:"一日中オフィスですごすことにうんざりしていた。…「一日中室内にいると、自然が働くところを見られません。」…彼はたいてい歩き、ブーツの下に土の感触を感じた。",
+        why:"ちがいを問う問題は、<b>前と後を並べて</b>確かめます。前＝室内（office、inside all day）、後＝屋外（out in the fields、beneath his boots）。",
+        others:[
+          "前後を入れかえた選択肢が3つあります。<b>どちらがどちらか</b>を必ず確認しましょう。とくに「毎日ちがう」のは農場のほうです（The job is different every day on the farm）。" ] },
+
+      { stem:"What is this passage mainly about?",
+        choices:[
+          "the job of a psychologist",
+          "a man who becomes a farmer",
+          "why few young people start farms",
+          "the locavore movement" ],
+        ans:1,
+        keyEn:"So the Richmond, Virginia, resident quit his job and started a farm. &hellip; &ldquo;I&rsquo;m much happier,&rdquo; he said.",
+        keyJa:"そこで彼は仕事をやめて農場を始めた。…「ずっと幸せですから」と彼は言った。",
+        why:"文章は最初から最後まで<b>一人の人物</b>を追いかけています。心理学者もロカボアも、その物語の背景として出てくるだけです。",
+        others:[
+          "心理学者の仕事 → 前の仕事の説明です。",
+          "若い人が農業を始めない理由・ロカボア → 背景の説明です。" ] },
+
+      { stem:"What does the word &ldquo;bored&rdquo; mean?",
+        quote:`&ldquo;Jason Detzel was bored with his work as a psychologist for the United States Air Force, and he was tired of spending all day in an office.&rdquo;`,
+        choices:["hardworking","lazy","not interested","very interested"],
+        ans:2,
+        keyEn:"was bored with his work &hellip; and he was tired of spending all day in an office. &hellip; Dr. Detzel&rsquo;s work didn&rsquo;t bore him anymore.",
+        keyJa:"仕事にあきていた…一日中オフィスですごすことにうんざりしていた。…彼の仕事は、もう彼を退屈させなかった。",
+        why:"and でつながれた tired of（うんざりして）が、同じ気持ちを言いかえています。<b>and でつながる語は似た意味</b>のことが多いので手がかりになります。",
+        others:[
+          "very interested（とても興味がある）→ 正反対です。",
+          "hardworking（よく働く）・lazy（なまけ者）→ 人がらの話であって、気持ちの話ではありません。" ] },
+
+      { stem:"Choose the answer that best completes the sentence below.<br>Jason Detzel likes doing something different every day; ______, he likes being outside.",
+        choices:["also","instead","in summary","initially"],
+        ans:0,
+        keyEn:"&ldquo;The job is different every day on the farm. It&rsquo;s amazing.&rdquo; &hellip; &ldquo;I&rsquo;m definitely happier being out in the fields with my animals.&rdquo;",
+        keyJa:"「農場では仕事が毎日ちがう。すばらしい。」…「動物たちと野原に出ているほうが、まちがいなく幸せだ。」",
+        why:"前後はどちらも<b>彼が好きなこと</b>です。同じ方向の内容をつけ加えるので also（〜も）が入ります。",
+        others:[
+          "instead（そのかわりに）→ 一方をやめて別のことをするときに使います。",
+          "in summary（要するに）→ まとめのときの言葉です。",
+          "initially（最初は）→ 時間の話になります。" ] },
+    ],
+    vocab: [
+      ["psychologist","心理学者"],["bored","あきた、退屈した"],["resident","住人"],["quit","やめる"],
+      ["available","空いている、手に入る"],["lease","借地契約"],["machinery","機械"],["corral","囲い"],
+      ["pasture","牧草地"],["graze","草を食べる"],["shelter","小屋、避難場所"],["lay eggs","卵を産む"],
+      ["calf","子牛"],["aspect","面、側面"],["texture","感触"],["lush","みずみずしい"],
+      ["veterinarian","獣医"],["plumber","配管工"],["carpenter","大工"],["animal husbandry","家畜を育てること"],
+      ["jack of all trades","何でも屋"],["droppings","ふん"],["stick to","守り通す"],["cooperative","協力的な"],
+      ["income","収入"],["locavore","地元の食べ物を食べる人"],["ship","運ぶ"],["storage","保管"],
+    ],
+  },
     /*__NEXT_1000__*/
   ],
 
