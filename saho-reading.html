@@ -297,10 +297,7 @@
   .rnav a:hover { background: #f0f4f8; }
   .rnav a.active { background: linear-gradient(90deg, #4db6ac, #ff8a80); color: #fff; box-shadow: 0 3px 8px rgba(77,182,172,0.3); }
 </style>
-<nav class="rnav">
-  <a href="index.html">📚 単語学習</a>
-  <a href="saho-reading.html" class="active">📖 長文読解</a>
-</nav>
+<!-- 学習メニュー（.rnav）は、だれが使っているかに合わせて JS が最後に差しこみます -->
 <div class="wrap">
 
   <header>
@@ -3616,8 +3613,14 @@ const USERS = {
 };
 const USER_KEY = "saho-reading-user";
 const USER = (() => {
+  // ① URL の ?user= がいちばん強い
   const q = new URLSearchParams(location.search).get("user");
   if (USERS[q]) { lsSet(USER_KEY, q); return q; }
+  // ② どのページから来たかで判断（?user= が落ちても Riho のページから来たら Riho）
+  const ref = (document.referrer || "").toLowerCase();
+  if (ref.indexOf("riho") >= 0) { lsSet(USER_KEY, "riho"); return "riho"; }
+  if (ref.indexOf("index.html") >= 0) { lsSet(USER_KEY, "saho"); return "saho"; }
+  // ③ 前に使った人をおぼえておく
   const saved = lsGet(USER_KEY);
   return USERS[saved] ? saved : "saho";
 })();
@@ -4211,7 +4214,7 @@ document.title = `${ME.name} English Reading — 星座をあつめよう`;
 (() => {
   const links = USER === "riho"
     ? [["riho.html", "📚 単語学習"],
-       ["saho-reading.html?user=riho", "📖 長文リーディング", true],
+       ["riho-reading.html", "📖 長文リーディング", true],
        ["riho-essay-topic.html", "✍️ Essay Learning"],
        ["riho-toefl-writing.html", "📓 TOEFL Learning"]]
     : [["index.html", "📚 単語学習"],
