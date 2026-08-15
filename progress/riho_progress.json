@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-15T06:31:39.194Z",
+  "exportedAt": "2026-08-15T06:33:21.601Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17665,7 +17665,7 @@
       "refuge",
       "perish"
     ],
-    "reviewDone": 46,
+    "reviewDone": 47,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17683,6 +17683,11 @@
         "word": "ample",
         "at": "2026-08-15",
         "count": 3
+      },
+      {
+        "word": "famine",
+        "at": "2026-08-15",
+        "count": 1
       }
     ]
   }
