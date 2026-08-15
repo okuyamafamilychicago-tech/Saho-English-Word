@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-15T06:30:34.706Z",
+  "exportedAt": "2026-08-15T06:31:19.247Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17661,9 +17661,11 @@
       "cooperate",
       "pity",
       "pierce",
-      "liable"
+      "liable",
+      "refuge",
+      "perish"
     ],
-    "reviewDone": 45,
+    "reviewDone": 46,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17678,19 +17680,9 @@
         "count": 2
       },
       {
-        "word": "refuge",
-        "at": "2026-08-14",
-        "count": 2
-      },
-      {
         "word": "ample",
         "at": "2026-08-14",
         "count": 2
-      },
-      {
-        "word": "perish",
-        "at": "2026-08-15",
-        "count": 1
       }
     ]
   }
