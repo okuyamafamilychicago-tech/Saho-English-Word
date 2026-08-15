@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-14T14:02:08.529Z",
+  "exportedAt": "2026-08-15T06:30:34.706Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17663,7 +17663,7 @@
       "pierce",
       "liable"
     ],
-    "reviewDone": 44,
+    "reviewDone": 45,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17686,6 +17686,11 @@
         "word": "ample",
         "at": "2026-08-14",
         "count": 2
+      },
+      {
+        "word": "perish",
+        "at": "2026-08-15",
+        "count": 1
       }
     ]
   }
