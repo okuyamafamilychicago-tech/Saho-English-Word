@@ -9420,7 +9420,80 @@ function wordCount(p) {
 }
 const fmtWords = n => n.toLocaleString("en-US");
 
+/* =====================================================================
+   読む順（おすすめ）
+   ・短くて具体的なものから、長くて抽象的なものへ
+   ・関係のある題材をならべて、前で読んだことが次で効くようにする
+   ・設問の型（筆者の目的・討論・口調）は、慣れてから出てくるようにする
+   ここに書いていない長文は、自動的にいちばんうしろに回ります。
+   ※ 記録は「もとの並び順の番号」で保存しているので、ここを書きかえても
+     これまでの履歴は消えません。表示の順だけが変わります。
+   ===================================================================== */
+const READ_ORDER = {
+  850: [
+    "Return of the Bear", "Ice City", "Recycle", "Spider Webs &amp; Glass",
+    "The Motion of Baseball", "The Namib Beetle &amp; Fog Nets",
+    "Reducing the Impact of Flooding", "Caretaking Our World&rsquo;s Water",
+    "Melting Ice: Arctic Shrinkage", "The Hawaiian Petrel",
+    "Chimamanda Ngozi Adichie", "The Wheelchair Stunt Master",
+    "Daisy Bates and the Fight for Desegregation", "Democracy of Ancient Athens",
+    "The Historical Medina of Fes, Morocco", "How to Find Fish without Seeing Them",
+    "Preserving Grasslands", "Rising Water: How Climate Is Affecting Coastal Areas",
+    "Saving the Flying Mammal", "The Precious Metals",
+    "Discoveries in the Deep: Losing Alvin", "What a Dump!",
+    "Mari Copeny Takes Action to Save Her City",
+    "The Navajo, the Apache, and the Comanche in the American Southwest",
+    "Responding to Natural Disasters: Hurricanes and Tornadoes",
+    "Houston Affects the Earth", "What Is Happening in the Ocean?",
+    "How Do We Know the Climate Is Changing?",
+    "Solar Absorbers and the Future of Electricity", "World&rsquo;s Best Skateboarder",
+  ],
+  900: [
+    "Aliens Invade!", "Snake, Rattle, and Roll", "Honest Abe&rsquo;s Museum",
+    "Viking Voyages", "Kyle Maynard: Living the &ldquo;No Excuses&rdquo; Lifestyle",
+    "The Shortest Path", "Studying Coral Reefs Helps the Land, Too",
+    "How to Band Birds", "Farmers Care for the Land",
+    "Saving the World from Smallpox", "Syrian Refugees in the United States",
+  ],
+  950: [
+    "Safe Ride?", "Peary&rsquo;s North Pole Expedition", "Tossing Around Dodgeball",
+    "Cleaning Up Ocean Pollution: Collecting &ldquo;Ghost&rdquo; Fishing Gear",
+    "Old-Time Operations", "Olympic Legend, Jackie Joyner-Kersee",
+    "Can the Amazon Be Saved?", "Condoleezza Rice, Politician and Educator",
+    "White Out", "Discoveries in the Deep: Plate Tectonics",
+    "Earth&rsquo;s Dynamic Machine: Basics of Plate Tectonics",
+  ],
+  1000: [
+    "Life in the City and the Country", "The Making of a President", "Stinky Job",
+    "Safe at Home?", "Rain Forest Rescue", "Recess at Risk",
+    "Amazing Trees Help Us Breathe", "Drone Delivery of Special Treats",
+    "Tracking Birds Using Tiny Tags", "Planting Grasses to Clean a River",
+    "Quilting and Politics", "Quilts and the Digital Age",
+    "Building a Community with Quilts", "A Good Night",
+    "The Hydrologic Cycle", "The Transfer of Heat Energy", "The Heat Is On",
+    "Greta Thunberg Is Worried About the Future",
+    "News Debate: Virtual Ed", "Lincoln and the 13th Amendment to End Slavery",
+    "News Debate: Spouting Off", "Healthy Eating, Healthy Planet",
+    "From City to Farm", "Buzz Off", "The Problem Solvers",
+  ],
+  1050: [
+    "Banding Together", "Butterfly Conservation", "Sailing Into History",
+    "How Do Airplanes Fly?", "Satellites and Gravity",
+    "When the Space Age Came to Florida", "Designing from Scratch",
+  ],
+};
+
 const listOf    = lex => READINGS[lex] || [];              // その Lexile の長文リスト
+/* 読む順にならべた [{ p: 長文, i: もとの番号 }, ...] を返す */
+function orderedList(lex) {
+  const ord = READ_ORDER[lex] || [];
+  return listOf(lex).map((p, i) => ({ p, i })).sort((a, b) => {
+    const ia = ord.indexOf(a.p.title), ib = ord.indexOf(b.p.title);
+    return (ia < 0 ? 9999 + a.i : ia) - (ib < 0 ? 9999 + b.i : ib);
+  });
+}
+/* もとの番号 → 読む順の番号（1 から） */
+const readOrderNo = (lex, i) => orderedList(lex).findIndex(x => x.i === i) + 1;
 const passageOf = (lex,i) => listOf(lex)[i] || null;
 const lvOf      = lex => state.levels[lex] || null;
 const isCleared = lex => !!(lvOf(lex) && lvOf(lex).cleared);
@@ -9694,7 +9767,7 @@ function renderHistory() {
 
   // 読んだことのある長文（Lexile, index）の一覧
   const psgs = [];
-  SKY.forEach(c => listOf(c.lex).forEach((p, i) => {
+  SKY.forEach(c => orderedList(c.lex).forEach(({ p, i }) => {
     const hs = histPsg(c.lex, i);
     if (hs.length) psgs.push({ c, p, i, hs });
   }));
@@ -9777,14 +9850,18 @@ function renderLevel(lex) {
     </div>
     <div class="card">
       <h2>📚 長文をえらぶ（${readInLex(lex)} / ${list.length} 本 読んだ）</h2>
-      <div class="hint" style="margin-bottom:9px">どれから読んでもOK。1本読むごとに記録がたまります。</div>
+      <div class="hint" style="margin-bottom:9px">
+        番号は<b>おすすめの読む順</b>です。上から順に、短くやさしいものから
+        長く手ごわいものへならんでいます。となり合った長文はつながりのある題材なので、
+        順に読むと前で覚えたことが次で効いてきます。もちろん、どれから読んでもOK。
+      </div>
       <div class="plist">
-        ${list.map((p, i) => {
+        ${orderedList(lex).map(({ p, i }, n) => {
           const hs = histPsg(lex, i), avg = avgRate(hs);
           return `<button class="pitem ${hs.length ? "read" : ""}" onclick="startReading(${lex},${i})">
-            <div class="pno">${hs.length ? "✔" : i+1}</div>
+            <div class="pno">${n+1}</div>
             <div class="pt">
-              <b>${p.title}</b>
+              <b>${hs.length ? "✔ " : ""}${p.title}</b>
               <span>${p.titleJa}　/　約${fmtWords(wordCount(p))}語　/　${p.questions.length}問${hs.length ? `　・${hs.length}回読んだ` : ""}</span>
             </div>
             <div class="pr">${avg !== null ? `<span class="rate ${rateCls(avg)}">${avg}%</span>` : `<span class="hint">みどく</span>`}</div>
@@ -9818,7 +9895,7 @@ function renderReading() {
         <div class="inner">
           <div class="passage-title">${r.title}</div>
           <div class="passage-title-ja">${r.titleJa}</div>
-          <div class="src">${r.source}　/　約${fmtWords(wordCount(r))}語　/　${r.questions.length}問</div>
+          <div class="src">${many ? `読む順 ${readOrderNo(lex, i)} / ${listOf(lex).length}　·　` : ""}${r.source}　/　約${fmtWords(wordCount(r))}語　/　${r.questions.length}問</div>
           ${r.photo ? `<figure class="photo">
             <img src="${r.photo}" alt="${r.photoAlt || ""}" referrerpolicy="no-referrer"
                  ${r.photoContain ? 'style="object-fit:contain;background:#fff;padding:6px"' : ""}
