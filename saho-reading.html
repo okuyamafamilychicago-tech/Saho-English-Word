@@ -10043,10 +10043,13 @@ const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
 const lsDel = k => { try { localStorage.removeItem(k); } catch (e) {} };
 
 /* ---------- 使う人（Saho / Riho）ごとに記録を分ける ---------- */
+/* startLex … その人が「ここから読みはじめる」Lexile。
+   これより下の帯は、はじめから星座を獲得ずみ（CLEAR）としてあつかい、
+   「読んだ本数 / 全体」の数え方からも外します。読みたければ読めます。 */
 const USERS = {
-  saho: { name:"Saho", mark:"✦", key:"saho-reading-v1",
+  saho: { name:"Saho", mark:"✦", key:"saho-reading-v1", startLex: 850,
           tokenKey:"vocabTrail_gh_token",      ghPath:"progress/reading_progress.json",      wordApp:"index.html" },
-  riho: { name:"Riho", mark:"✧", key:"riho-reading-v1",
+  riho: { name:"Riho", mark:"✧", key:"riho-reading-v1", startLex: 1000,
           tokenKey:"vocabTrail_riho_gh_token", ghPath:"progress/riho_reading_progress.json", wordApp:"riho.html" },
 };
 const USER_KEY = "saho-reading-user";
@@ -10084,6 +10087,22 @@ function loadState() {
 }
 let state = loadState();
 const save = () => lsSet(KEY, JSON.stringify(state));
+
+/* startLex より下の帯を「獲得ずみ」にしておく（記録を読みこんだあとにも呼ぶ） */
+const START_LEX = ME.startLex || 850;
+const inRange = lex => lex >= START_LEX;
+function seedStartLevels() {
+  let changed = false;
+  SKY.forEach(c => {
+    if (c.lex >= START_LEX) return;
+    const lv = state.levels[c.lex];
+    if (lv && lv.cleared) return;
+    state.levels[c.lex] = Object.assign({ best: 0, total: 0 }, lv, { cleared: true, granted: true });
+    changed = true;
+  });
+  if (changed) save();
+}
+seedStartLevels();
 
 /* 本文の語数をかぞえる（タグと HTML 実体参照を取りのぞいてから数える） */
 function wordCount(p) {
@@ -10179,8 +10198,10 @@ const lvOf      = lex => state.levels[lex] || null;
 const isCleared = lex => !!(lvOf(lex) && lvOf(lex).cleared);
 const unlocked  = i   => i === 0 || isCleared(SKY[i-1].lex);
 const hkey      = h   => h.lex + "#" + (h.i || 0);
-const readCount = ()  => new Set(state.history.map(hkey)).size;   // 読んだ長文の本数
-const totalReadings = () => Object.values(READINGS).reduce((s,a) => s + a.length, 0);
+// 読んだ長文の本数（startLex より下の帯は数えない）
+const readCount = ()  => new Set(state.history.filter(h => inRange(h.lex)).map(hkey)).size;
+const totalReadings = () => Object.keys(READINGS)
+  .reduce((s,k) => s + (inRange(+k) ? READINGS[k].length : 0), 0);
 const clearedCount  = () => SKY.filter(c => isCleared(c.lex)).length;
 const histLex   = lex => state.history.filter(h => h.lex === lex);
 const histPsg   = (lex,i) => state.history.filter(h => h.lex === lex && (h.i || 0) === i);
@@ -10302,6 +10323,7 @@ async function ghLoad(silent) {
     const parsed = JSON.parse(decodeURIComponent(escape(atob(j.content))));
     if (parsed && parsed.state) {
       state = { levels: parsed.state.levels || {}, history: parsed.state.history || [] };
+      seedStartLevels();
       save();
       lsSet(GH_LAST, new Date().toISOString());
       if (silent) ghToast("☁️ GitHubから記録を読み込みました");
@@ -10401,7 +10423,12 @@ function renderHome() {
       <h2>🗺️ 課題をえらぶ</h2>
       <div class="hint" style="margin-bottom:9px">
         1課題は「長文＋問題」（問題数は課題によってちがいます）。<b>最後まで答え合わせをすればクリア</b> → 星座がひかって、次の Lexile が開きます。正答率は記録に残ります。
-      </div>
+      </div>${START_LEX > 850 ? `
+      <div class="hint" style="margin-bottom:9px">
+        ${ME.name} は <b>Lexile ${START_LEX} から</b>はじめます。それより下の帯（${ME.mark} 獲得ずみ）の星座は、
+        もう持っているあつかいです。「読んだ本数」も ${START_LEX} 以上だけを数えます。
+        もちろん、下の帯を読んでもかまいません。
+      </div>` : ""}
       <div class="lv-list">
         ${SKY.map((c, i) => {
           const list = listOf(c.lex), n = list.length;
@@ -10421,8 +10448,8 @@ function renderHome() {
               <div class="lv-sub">${c.name}・${sub}</div>
             </div>
             <div class="lv-right">
-              <div class="lv-rate ${rate !== null ? "rate " + rateCls(rate) : ""}">${rate !== null ? rate + "%" : (open && n ? "—" : "🔒")}</div>
-              <div class="lv-state">${done ? "CLEAR" : (open && n ? "CHALLENGE" : "LOCKED")}</div>
+              <div class="lv-rate ${rate !== null ? "rate " + rateCls(rate) : ""}">${rate !== null ? rate + "%" : (!inRange(c.lex) ? ME.mark : (open && n ? "—" : "🔒"))}</div>
+              <div class="lv-state">${!inRange(c.lex) ? "獲得ずみ" : (done ? "CLEAR" : (open && n ? "CHALLENGE" : "LOCKED"))}</div>
             </div>
           </button>`;
         }).join("")}
