@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-15T06:34:10.032Z",
+  "exportedAt": "2026-08-15T06:58:29.556Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17363,8 +17363,10 @@
       "batch-11",
       "batch-12"
     ],
-    "svgTheme": "forest",
-    "hiddenFound": [],
+    "svgTheme": "ac",
+    "hiddenFound": [
+      8
+    ],
     "reviewOk": [
       "poke",
       "greed",
@@ -17398,7 +17400,6 @@
       "temperate",
       "audible",
       "insistent",
-      "startle",
       "accustomed",
       "considerate",
       "barren",
@@ -17524,9 +17525,7 @@
       "inclination",
       "solitude",
       "humiliate",
-      "assimilate",
       "sentimental",
-      "perilous",
       "endangered",
       "horrify",
       "bribe",
@@ -17569,14 +17568,10 @@
       "renounce",
       "cosmopolitan",
       "eminent",
-      "cynical",
       "intrude",
       "murmur",
-      "resurgence",
       "scrutinize",
-      "recede",
       "amenity",
-      "pessimistic",
       "outdated",
       "rot",
       "timid",
@@ -17667,11 +17662,59 @@
       "famine",
       "absurd",
       "ample",
-      "indulge"
+      "indulge",
+      "dread",
+      "irresistible",
+      "scant",
+      "hardship",
+      "trifle",
+      "clumsy",
+      "recede"
     ],
-    "reviewDone": 48,
+    "reviewDone": 53,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "assimilate",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "mischief",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "resurgence",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "startle",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "cynical",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "oppress",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "perilous",
+        "at": "2026-08-15",
+        "count": 1
+      },
+      {
+        "word": "pessimistic",
+        "at": "2026-08-15",
+        "count": 1
+      }
+    ]
   }
 }
