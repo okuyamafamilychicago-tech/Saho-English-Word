@@ -293,8 +293,8 @@
 
   <header>
     <div>
-      <div class="logo"><span class="mark">✦</span>Saho English Reading</div>
-      <div class="tagline">長文を読んで、星座をあつめよう</div>
+      <div class="logo"><span class="mark" id="brandMark">✦</span><span id="brandName">Saho</span>&nbsp;English Reading</div>
+      <div class="tagline" id="brandTag">長文を読んで、星座をあつめよう</div>
     </div>
     <div class="nav">
       <button class="btn ghost small" id="navHome" onclick="renderHome()">星空マップ</button>
@@ -3590,7 +3590,32 @@ const READINGS = {
 /* =====================================================================
    4. 進行データ
    ===================================================================== */
-const KEY = "saho-reading-v1";
+/* localStorage が使えない環境（プライベートモード等）でも止まらないようにする */
+const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+const lsDel = k => { try { localStorage.removeItem(k); } catch (e) {} };
+
+/* ---------- 使う人（Saho / Riho）ごとに記録を分ける ---------- */
+const USERS = {
+  saho: { name:"Saho", mark:"✦", key:"saho-reading-v1",
+          tokenKey:"vocabTrail_gh_token",      ghPath:"progress/reading_progress.json",      wordApp:"index.html" },
+  riho: { name:"Riho", mark:"✧", key:"riho-reading-v1",
+          tokenKey:"vocabTrail_riho_gh_token", ghPath:"progress/riho_reading_progress.json", wordApp:"riho.html" },
+};
+const USER_KEY = "saho-reading-user";
+const USER = (() => {
+  const q = new URLSearchParams(location.search).get("user");
+  if (USERS[q]) { lsSet(USER_KEY, q); return q; }
+  const saved = lsGet(USER_KEY);
+  return USERS[saved] ? saved : "saho";
+})();
+const ME = USERS[USER];
+function switchUser(u) {
+  if (!USERS[u] || u === USER) return;
+  location.href = location.pathname + "?user=" + u;
+}
+
+const KEY = ME.key;
 // クリア条件：正答率に関係なく、課題を最後まで（答え合わせまで）やればクリア
 
 function loadState() {
@@ -3605,7 +3630,7 @@ function loadState() {
   return s;
 }
 let state = loadState();
-const save = () => localStorage.setItem(KEY, JSON.stringify(state));
+const save = () => lsSet(KEY, JSON.stringify(state));
 
 const listOf    = lex => READINGS[lex] || [];              // その Lexile の長文リスト
 const passageOf = (lex,i) => listOf(lex)[i] || null;
@@ -3690,12 +3715,12 @@ function setNav(which) {
 /* =====================================================================
    GitHub に記録を保存 / 読み込み（単語アプリと同じ方式・同じトークン）
    ===================================================================== */
-const GH_TOKEN_KEY = "vocabTrail_gh_token";      // 単語アプリと共通。1回入れれば両方で使えます
+const GH_TOKEN_KEY = ME.tokenKey;   // 単語アプリと共通のキー。1回入れれば両方で使えます
 const GH_OWNER = "okuyamafamilychicago-tech";
 const GH_REPO  = "Saho-English-Word";
-const GH_PATH  = "progress/reading_progress.json";
-const GH_LAST  = "saho-reading-lastsync";
-const ghToken  = () => localStorage.getItem(GH_TOKEN_KEY) || "";
+const GH_PATH  = ME.ghPath;         // Saho と Riho で保存先ファイルを分ける
+const GH_LAST  = KEY + "-lastsync";
+const ghToken  = () => lsGet(GH_TOKEN_KEY) || "";
 const ghApi    = () => `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
 const ghHead   = () => ({ Authorization: `token ${ghToken()}`, Accept: "application/vnd.github+json" });
 
@@ -3721,7 +3746,7 @@ async function ghSave(silent) {
                    content: btoa(unescape(encodeURIComponent(payload))), ...(sha ? { sha } : {}) };
     const r = await fetch(ghApi(), { method: "PUT",
       headers: { ...ghHead(), "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    if (r.ok) { localStorage.setItem(GH_LAST, new Date().toISOString()); ghToast("☁️ GitHubに保存しました"); return true; }
+    if (r.ok) { lsSet(GH_LAST, new Date().toISOString()); ghToast("☁️ GitHubに保存しました"); return true; }
     ghToast("⚠️ GitHub保存に失敗しました");
   } catch (e) { ghToast("⚠️ 保存に失敗: " + e.message); }
   return false;
@@ -3737,7 +3762,7 @@ async function ghLoad(silent) {
     if (parsed && parsed.state) {
       state = { levels: parsed.state.levels || {}, history: parsed.state.history || [] };
       save();
-      localStorage.setItem(GH_LAST, new Date().toISOString());
+      lsSet(GH_LAST, new Date().toISOString());
       if (silent) ghToast("☁️ GitHubから記録を読み込みました");
       else alert(`GitHubから読み込みました！\n読んだ長文 ${readCount()} 本 / 記録 ${state.history.length} 件`);
       renderHome();
@@ -3749,21 +3774,22 @@ async function ghLoad(silent) {
 
 function saveToken() {
   const v = document.getElementById("ghTokenInput").value.trim();
-  if (v) localStorage.setItem(GH_TOKEN_KEY, v); else localStorage.removeItem(GH_TOKEN_KEY);
+  if (v) lsSet(GH_TOKEN_KEY, v); else lsDel(GH_TOKEN_KEY);
   ghToast(v ? "トークンを保存しました" : "トークンを消しました");
   renderSync();
 }
 
 function renderSync() {
   session = null; setNav("sync");
-  const last = localStorage.getItem(GH_LAST);
+  const last = lsGet(GH_LAST);
   const tok = ghToken();
   app.innerHTML = `
     <div class="card">
-      <h2>☁️ GitHubに記録を保存する</h2>
+      <h2>☁️ ${ME.name} の記録をGitHubに保存する</h2>
       <div class="hint">
         答え合わせをするたびに、読んだ記録が自動でGitHubに保存されます。<br>
-        べつの端末（iPad・パソコン）で開いたときは「GitHubから読み込む」でいつでも呼び出せます。
+        べつの端末（iPad・パソコン）で開いたときは「GitHubから読み込む」でいつでも呼び出せます。<br>
+        <b>${USERS.saho.name} と ${USERS.riho.name} の記録は別のファイル</b>に保存されるので、混ざりません。
       </div>
       <div class="stats-row mt">
         <div class="stat"><div class="v">${tok ? "設定ずみ" : "未設定"}</div><div class="l">トークン</div></div>
@@ -3780,7 +3806,7 @@ function renderSync() {
     <div class="card">
       <h2>🔑 GitHub トークン</h2>
       <div class="hint">
-        単語アプリ（Saho English Word）と<b>同じトークン</b>を使います。単語アプリで設定ずみなら、そのまま使えます。<br>
+        単語アプリ（${ME.name} English Word）と<b>同じトークン</b>を使います。そちらで設定ずみなら、そのまま使えます。<br>
         保存先：<code>${GH_OWNER}/${GH_REPO}</code> の <code>${GH_PATH}</code>
       </div>
       <input id="ghTokenInput" type="password" value="${tok}" placeholder="ghp_ から始まるトークン"
@@ -3790,10 +3816,10 @@ function renderSync() {
 
     <div class="card">
       <h2>📚 ほかのアプリ</h2>
-      <div class="hint" style="margin-bottom:9px">同じ記録用トークンで動いています。</div>
+      <div class="hint" style="margin-bottom:9px">単語アプリと同じトークンで動いています。</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button class="btn ghost" onclick="location.href='index.html'">🐰 Saho English Word（単語）</button>
-        <button class="btn ghost" onclick="location.href='riho.html'">🐰 Riho English Word（単語）</button>
+        <button class="btn ghost" onclick="location.href='${ME.wordApp}'">🐰 ${ME.name} English Word（単語）</button>
+        <button class="btn ghost" onclick="switchUser('${USER === "saho" ? "riho" : "saho"}')">${USER === "saho" ? USERS.riho.name : USERS.saho.name} の記録に切りかえ</button>
       </div>
     </div>`;
   window.scrollTo(0, 0);
@@ -3863,10 +3889,9 @@ function renderHome() {
     </div>
 
     <div class="card">
-      <h2>📚 ほかのアプリ・記録</h2>
+      <h2>📚 ${ME.name} のほかのアプリ・記録</h2>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button class="btn ghost" onclick="location.href='index.html'">🐰 Saho English Word</button>
-        <button class="btn ghost" onclick="location.href='riho.html'">🐰 Riho English Word</button>
+        <button class="btn ghost" onclick="location.href='${ME.wordApp}'">🐰 ${ME.name} English Word（単語）</button>
         <button class="btn ghost" onclick="renderSync()">☁️ 記録の保存・読み込み</button>
       </div>
     </div>`;
@@ -4164,6 +4189,20 @@ function resetAll() {
   if (!confirm("読んだ記録・星座・履歴をぜんぶ消します。よろしいですか？")) return;
   state = { levels:{}, history:[] }; save(); renderHome();
 }
+
+/* ---------- だれの記録かを画面に出す ---------- */
+document.getElementById("brandMark").textContent = ME.mark;
+document.getElementById("brandName").textContent = ME.name;
+document.title = `${ME.name} English Reading — 星座をあつめよう`;
+(() => {
+  const other = USER === "saho" ? "riho" : "saho";
+  const b = document.createElement("button");
+  b.className = "btn ghost small";
+  b.textContent = USERS[other].name + "に切りかえ";
+  b.title = "記録は " + USERS[other].name + " のものに切りかわります";
+  b.onclick = () => switchUser(other);
+  document.querySelector(".nav").appendChild(b);
+})();
 
 renderHome();
 // 端末をかえたときのために、ローカルが空でトークンがあれば GitHub から自動で呼び出す
