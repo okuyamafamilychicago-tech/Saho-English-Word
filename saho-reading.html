@@ -12706,15 +12706,16 @@ function renderHome() {
           const cls = done ? "lv done" : (!n ? "lv soon" : "lv");
           const dis = (!open || !n) ? "disabled" : "";
           const title = !n ? "準備中" : (n === 1 ? list[0].title : `長文 ${n} 本`);
+          // 読んだ本数は右側（正答率のとなり）に出すので、ここでは出さない
           const sub = !open ? "🔒 前のレベルをクリアすると開きます"
                     : !n   ? "長文を追加すると読めるようになります"
-                    : `${read} / ${n} 本 読んだ`;
+                    : "";
           return `<button class="${cls}" ${dis} onclick="openLevel(${c.lex})">
             <div class="lv-badge">${constSVG(c, 0, { box:46, on:done, all:true })}</div>
             <div class="lv-main">
               <span class="lv-lex">Lexile ${c.lex}–${c.lex+50}</span>
               <div class="lv-title">${title}</div>
-              <div class="lv-sub">${c.icon} ${c.name}・${sub}</div>
+              <div class="lv-sub">${c.icon} ${c.name}${sub ? "・" + sub : ""}</div>
             </div>
             <div class="lv-right">
               <div class="lv-rate ${rate !== null ? "rate " + rateCls(rate) : ""}">${rate !== null ? rate + "%" : (!inRange(c.lex) ? ME.mark : (open && n ? "—" : "🔒"))}</div>
