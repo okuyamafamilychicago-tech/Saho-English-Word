@@ -276,6 +276,12 @@
   .result-actions .btn { min-width: 130px; }
 
   /* ---------- 和訳 ---------- */
+  /* 答え合わせのあと、英文のすぐ下に出す訳（それまでは隠しておく） */
+  .ja-under { display: none; }
+  #passage.show-ja .ja-under { display: block;
+    font-size: 0.8rem; line-height: 1.8; font-weight: 300; color: var(--ink-soft);
+    margin-top: 5px; padding: 7px 10px; border-left: 3px solid var(--teal);
+    background: rgba(216,239,233,0.34); border-radius: 0 8px 8px 0; }
   .ja-title { font-weight: 500; font-size: 0.86rem; margin-bottom: 7px; }
   .ja-p { font-size: 0.84rem; line-height: 1.85; margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--line); font-weight: 400; }
   .ja-p:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
@@ -12220,10 +12226,8 @@ const USER = (() => {
   return USERS[saved] ? saved : "saho";
 })();
 const ME = USERS[USER];
-function switchUser(u) {
-  if (!USERS[u] || u === USER) return;
-  location.href = location.pathname + "?user=" + u;
-}
+// Saho と Riho の記録は完全に別。アプリの中から相手の記録へは行けない。
+// （入口は index.html / riho-reading.html それぞれのリンクだけ）
 
 const KEY = ME.key;
 // クリア条件：正答率に関係なく、課題を最後まで（答え合わせまで）やればクリア
@@ -12384,6 +12388,24 @@ const bestRate  = hs => hs.length ? Math.max(...hs.map(x => Math.round(x.c / x.t
 const rateOf    = lex => avgRate(histLex(lex));            // その Lexile の平均正答率
 const overallRate = () => avgRate(state.history);
 const rateCls = r => r >= 80 ? "hi" : r >= 60 ? "mid" : "lo";
+
+/* 星座（cleared）を履歴から数えなおす。
+   以前は「1本読んだらクリア」だったので、古い記録には
+   1本しか読んでいないのに cleared になっている帯がある。
+   起動時と、GitHub から読みこんだあとに、必ずここで正しくしなおす。
+   granted（Riho の下の帯）は、はじめから持っているあつかいなので手をつけない。 */
+function syncClearedFlags() {
+  let changed = false;
+  SKY.forEach(c => {
+    const lv = state.levels[c.lex];
+    if (!lv || lv.granted) return;
+    const list = listOf(c.lex);
+    const should = list.length > 0 && readInLex(c.lex) >= list.length;
+    if (!!lv.cleared !== should) { lv.cleared = should; changed = true; }
+  });
+  if (changed) save();
+}
+syncClearedFlags();
 function fmtDate(ts) {
   const d = new Date(ts), p = n => String(n).padStart(2, "0");
   return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${p(d.getHours())}:${p(d.getMinutes())}`;
@@ -12525,6 +12547,7 @@ async function ghLoad(silent) {
     if (parsed && parsed.state) {
       state = { levels: parsed.state.levels || {}, history: parsed.state.history || [] };
       seedStartLevels();
+      syncClearedFlags();
       save();
       lsSet(GH_LAST, new Date().toISOString());
       if (silent) ghToast("☁️ GitHubから記録を読み込みました");
@@ -12583,8 +12606,8 @@ function renderSync() {
       <div class="hint" style="margin-bottom:9px">単語アプリと同じトークンで動いています。</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <button class="btn ghost" onclick="location.href='${ME.wordApp}'">🐰 ${ME.name} English Word（単語）</button>
-        <button class="btn ghost" onclick="switchUser('${USER === "saho" ? "riho" : "saho"}')">${USER === "saho" ? USERS.riho.name : USERS.saho.name} の記録に切りかえ</button>
       </div>
+      <div class="hint mt">この画面は <b>${ME.name} 専用</b>です。記録はほかの人とは完全に分かれています。</div>
     </div>`;
   window.scrollTo(0, 0);
 }
@@ -12665,7 +12688,9 @@ function renderHome() {
     <div class="card">
       <h2>🗺️ 課題をえらぶ</h2>
       <div class="hint" style="margin-bottom:9px">
-        1課題は「長文＋問題」（問題数は課題によってちがいます）。<b>最後まで答え合わせをすればクリア</b> → 星座がひかって、次の Lexile が開きます。正答率は記録に残ります。
+        1課題は「長文＋問題」（問題数は課題によってちがいます）。
+        その Lexile の長文を<b>ぜんぶ読み終えると</b>クリア → 星座がひかって、次の Lexile が開きます。
+        正答率は問いません（まちがえても、読み終えれば1本ぶんです）。
       </div>${START_LEX > 850 ? `
       <div class="hint" style="margin-bottom:9px">
         ${ME.name} は <b>Lexile ${START_LEX} から</b>はじめます。それより下の帯（${ME.mark} 獲得ずみ）の星座は、
@@ -12804,6 +12829,8 @@ function renderLevel(lex) {
         番号は<b>おすすめの読む順</b>です。上から順に、短くやさしいものから
         長く手ごわいものへならんでいます。となり合った長文はつながりのある題材なので、
         順に読むと前で覚えたことが次で効いてきます。もちろん、どれから読んでもOK。
+        <b>${list.length} 本ぜんぶ読み終えると</b>、${c.icon} ${c.name} がもらえます
+        （あと ${Math.max(0, list.length - readInLex(lex))} 本）。
       </div>
       <div class="plist">
         ${orderedList(lex).map(({ p, i }, n) => {
@@ -12852,7 +12879,7 @@ function renderReading() {
                  onerror="photoFallback(this,'${r.fallback || ""}')">
             <figcaption>${r.photoCap || ""}<span class="credit">${r.photoCredit || ""}</span></figcaption>
           </figure>` : ""}
-          ${r.paras.map(p => `${p.h ? `<div class="para-h">${p.h}</div>` : ""}<div class="para">${p.en}</div>`).join("")}
+          ${r.paras.map(p => `${p.h ? `<div class="para-h">${p.h}</div>` : ""}<div class="para">${p.en}</div><div class="ja-under">${p.ja}</div>`).join("")}
         </div>
       </div>
 
@@ -12906,6 +12933,10 @@ function grade() {
   session.graded = true;
   let correct = 0;
 
+  // 答え合わせをしたら、英文の段落のすぐ下に和訳を出す
+  const psg = document.getElementById("passage");
+  if (psg) psg.classList.add("show-ja");
+
   r.questions.forEach((q, qi) => {
     const my = pick[qi], ok = my === q.ans;
     if (ok) correct++;
@@ -12939,12 +12970,21 @@ function grade() {
     if (qs.some(n => wrong.includes(n))) m.classList.add("lit");
   });
 
-  // 記録
-  const prev = state.levels[lex] || { best:0, cleared:false };
-  state.levels[lex] = { best: Math.max(prev.best, correct), total: r.questions.length,
-                        cleared: true };   // 正答率に関係なく、やりきったらクリア
+  // 記録（先に履歴を足してから、この帯を読み終えたかを数える）
   state.history.unshift({ lex, i: session.i, ts: Date.now(), c: correct, t: r.questions.length });
   if (state.history.length > 300) state.history.pop();
+
+  const prev = state.levels[lex] || { best:0, cleared:false };
+  const list = listOf(lex);
+  // 星座がもらえるのは、その Lexile の長文を「ぜんぶ」読み終えたとき。
+  // 正答率は問わない（1本でも未読なら、まだクリアではない）。
+  const allRead = list.length > 0 && readInLex(lex) >= list.length;
+  session.wasCleared = !!prev.cleared;
+  state.levels[lex] = Object.assign({}, prev, {
+    best: Math.max(prev.best || 0, correct),
+    total: r.questions.length,
+    cleared: !!prev.granted || allRead,
+  });
   save();
 
   document.getElementById("gradeBtn").remove();
@@ -12963,18 +13003,32 @@ function renderAfter(correct) {
   const comment = rt === 100 ? "パーフェクト！ ぜんぶ正解です。"
                 : wrong === 0 ? "よくできました。"
                 : rt >= 75 ? `まちがえた${wrong}問の解説を読んでおこう。`
-                : `まちがえた${wrong}問の解説と全文の和訳をじっくり読んで、もう一度読んでみよう。`;
+                : `まちがえた${wrong}問の解説と、本文の下に出た和訳をじっくり読んで、もう一度読んでみよう。`;
+
+  // 星座がもらえるのは、この Lexile をぜんぶ読み終えたとき
+  const done = isCleared(lex), justNow = done && !session.wasCleared;
+  const read = readInLex(lex), left = list.length - read;
+  const head = justNow
+    ? `<h2>🎉 ${c.icon} ${c.name}をゲット！</h2>
+       <p>${comment}<br>Lexile ${lex}–${lex+50} の ${list.length} 本を、ぜんぶ読み終えました。
+       ${next ? `つぎは Lexile ${next.lex}–${next.lex+50}（${next.icon} ${next.name}）が開きました。` : "ぜんぶの星座をあつめました！"}</p>`
+    : done
+    ? `<h2>${c.icon} ${c.name}（ゲットずみ）</h2><p>${comment}</p>`
+    : `<h2>📖 1本読めました（${read} / ${list.length} 本）</h2>
+       <p>${comment}<br><b>あと ${left} 本</b>読むと、${c.icon} ${c.name} がもらえます。</p>
+       <div class="track" style="max-width:320px;margin:9px auto 0">
+         <div style="width:${Math.round(read / list.length * 100)}%"></div>
+       </div>`;
 
   document.getElementById("after").innerHTML = `
     <div class="card result pop">
       <div class="result-score">${correct}<small> / ${n}</small></div>
       <div class="result-rate">正答率 <span class="rate ${rateCls(rt)}">${rt}%</span>　／　このLexileの平均 ${avg}%</div>
-      <h2>🎉 クリア！ ${c.icon} ${c.name}をゲット！</h2>
-      <p>${comment}<br>${next ? `つぎは Lexile ${next.lex}–${next.lex+50}（${next.name}）が開きました。` : "ぜんぶの星座をあつめました！"}</p>
-      <div class="const-won">
+      ${head}
+      ${justNow ? `<div class="const-won">
         ${constSVG(c, 0, { on:true, all:true, box:100 })}
         <div class="const-name">${c.icon} ${c.name}　${c.en}</div>
-      </div>
+      </div>` : ""}
       <div class="result-actions">
         <button class="btn ghost" onclick="startReading(${lex},${i})">もう一回</button>
         ${ni !== null
@@ -12985,10 +13039,13 @@ function renderAfter(correct) {
     </div>
 
     <div class="card">
-      <h2>🇯🇵 全文の和訳</h2>
-      <div class="ja-title">${r.title}<br><span style="font-weight:300;color:var(--ink-soft)">${r.titleJa}</span></div>
-      ${r.paras.map(p => `${p.h ? `<div class="para-h">${p.h}</div>` : ""}<div class="ja-p">${p.ja}</div>`).join("")}
-      <div class="hint mt">※ まちがえた問題のカギの文は、本文中で <mark style="background:#fdeaa8">黄色</mark> にしてあります。</div>
+      <h2>🇯🇵 和訳は本文の下に出ました</h2>
+      <div class="hint">
+        上の本文にもどると、<b>英語の段落のすぐ下に和訳</b>がならんでいます。
+        1段落ずつ、英語 → 日本語 の順に読みなおしてみましょう。
+        まちがえた問題のカギの文は、本文中で <mark style="background:#fdeaa8">黄色</mark> にしてあります。
+      </div>
+      <button class="btn ghost small mt" onclick="document.getElementById('passage').scrollIntoView({behavior:'smooth'})">↑ 本文と和訳を読みなおす</button>
     </div>
 
     <div class="card">
@@ -13026,16 +13083,6 @@ document.title = `${ME.name} English Reading — 星座をあつめよう`;
     `<a href="${href}"${on ? ' class="active"' : ""}>${label}</a>`).join("");
   document.body.insertBefore(nav, document.body.firstChild);
 })();
-(() => {
-  const other = USER === "saho" ? "riho" : "saho";
-  const b = document.createElement("button");
-  b.className = "btn ghost small";
-  b.textContent = USERS[other].name + "に切りかえ";
-  b.title = "記録は " + USERS[other].name + " のものに切りかわります";
-  b.onclick = () => switchUser(other);
-  document.querySelector(".nav").appendChild(b);
-})();
-
 renderHome();
 // 端末をかえたときのために、ローカルが空でトークンがあれば GitHub から自動で呼び出す
 if (ghToken() && !state.history.length) ghLoad(true);
