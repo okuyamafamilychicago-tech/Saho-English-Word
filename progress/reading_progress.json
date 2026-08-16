@@ -1,0 +1,22 @@
+{
+  "app": "saho-reading",
+  "savedAt": "2026-08-16T16:18:42.597Z",
+  "state": {
+    "levels": {
+      "850": {
+        "best": 2,
+        "total": 4,
+        "cleared": true
+      }
+    },
+    "history": [
+      {
+        "lex": 850,
+        "i": 16,
+        "ts": 1786897122595,
+        "c": 2,
+        "t": 4
+      }
+    ]
+  }
+}
