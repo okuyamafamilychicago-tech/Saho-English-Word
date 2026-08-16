@@ -154,6 +154,7 @@
   .lv-sub { font-size: 0.64rem; color: var(--ink-soft); font-weight: 300; }
   .lv-right { flex: none; text-align: right; }
   .lv-rate { font-size: 0.82rem; font-weight: 500; color: var(--teal); }
+  .lv-read { font-size: 0.62rem; color: var(--teal); font-weight: 500; margin-top: 1px; white-space: nowrap; }
   .lv-state { font-size: 0.56rem; color: var(--ink-soft); letter-spacing: .04em; }
 
   /* ゲットした星座のコレクション棚 */
@@ -12717,6 +12718,7 @@ function renderHome() {
             </div>
             <div class="lv-right">
               <div class="lv-rate ${rate !== null ? "rate " + rateCls(rate) : ""}">${rate !== null ? rate + "%" : (!inRange(c.lex) ? ME.mark : (open && n ? "—" : "🔒"))}</div>
+              <div class="lv-read">${n ? `${read} / ${n} 本` : "—"}</div>
               <div class="lv-state">${!inRange(c.lex) ? "獲得ずみ" : (done ? "CLEAR" : (open && n ? "CHALLENGE" : "LOCKED"))}</div>
             </div>
           </button>`;
@@ -13023,7 +13025,8 @@ function renderAfter(correct) {
   document.getElementById("after").innerHTML = `
     <div class="card result pop">
       <div class="result-score">${correct}<small> / ${n}</small></div>
-      <div class="result-rate">正答率 <span class="rate ${rateCls(rt)}">${rt}%</span>　／　このLexileの平均 ${avg}%</div>
+      <div class="result-rate">正答率 <span class="rate ${rateCls(rt)}">${rt}%</span>　／　このLexileの平均 ${avg}%<br>
+        <span style="font-size:0.76rem">Lexile ${lex}–${lex+50}：<b>${read} / ${list.length} 本</b> 読んだ　／　ぜんぶで <b>${readCount()} / ${totalReadings()} 本</b></span></div>
       ${head}
       ${justNow ? `<div class="const-won">
         ${constSVG(c, 0, { on:true, all:true, box:100 })}
