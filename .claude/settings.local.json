@@ -18,7 +18,13 @@
       "Read(//c/c/Users/okuya/OneDrive/デスクトップ/Claude/**)",
       "WebFetch(domain:www.toeflresources.com)",
       "PowerShell($content = Get-Content \"C:\\\\Users\\\\okuya\\\\OneDrive\\\\デスクトップ\\\\Claude\\\\社会時事学習.html\" -Raw; $totalLines = \\($content -split \"`n\"\\).Count; Write-Output \"Total lines: $totalLines\")",
-      "PowerShell(gh auth status)"
+      "PowerShell(gh auth status)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" \"https://okuyamafamilychicago-tech.github.io/toefl-writing-notebook/\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" \"https://github.com/okuyamafamilychicago-tech/toefl-writing-notebook\")",
+      "Bash(curl -s \"https://okuyamafamilychicago-tech.github.io/toefl-writing-notebook/\")"
     ]
   }
 }
