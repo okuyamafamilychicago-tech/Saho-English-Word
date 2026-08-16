@@ -138,6 +138,26 @@
   .lv-right { flex: none; text-align: right; }
   .lv-rate { font-size: 0.82rem; font-weight: 500; color: var(--teal); }
   .lv-state { font-size: 0.56rem; color: var(--ink-soft); letter-spacing: .04em; }
+
+  /* ゲットした星座のコレクション棚 */
+  .badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; }
+  .badge { background: var(--night); border-radius: 12px; padding: 9px 4px 8px; text-align: center;
+           position: relative; transition: transform .12s ease; }
+  .badge svg { width: 56px; height: 56px; display: block; margin: 0 auto; }
+  .badge .bn { font-size: 0.67rem; font-weight: 500; color: #ffd977; margin-top: 4px;
+               white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .badge .be { font-size: 0.55rem; font-weight: 300; color: #8d94bd; letter-spacing: .03em; }
+  .badge .bl { font-size: 0.52rem; font-weight: 300; color: #6f7699; margin-top: 1px; }
+  .badge.off { opacity: .38; }
+  .badge.off .bn { color: #8d94bd; }
+  .badge .btag { position: absolute; top: 5px; right: 6px; font-size: 0.5rem; color: #8d94bd; }
+  .badge .bicon { position: absolute; top: 4px; left: 5px; font-size: 0.95rem; line-height: 1;
+                  filter: drop-shadow(0 0 5px rgba(255,217,119,.55)); }
+  .badge.off .bicon { filter: grayscale(1); opacity: .5; }
+  .cicon { font-size: 0.95rem; margin-right: 3px; }
+  /* 履歴の表にならべる小さい星座 */
+  .cmini { display: inline-block; width: 22px; height: 22px; vertical-align: -6px; margin-right: 4px; }
+  .cmini svg { width: 22px; height: 22px; display: block; }
   .lv.done { background: linear-gradient(180deg, #fffdf8, var(--honey-soft)); border-color: #efd6a3; }
   .lv.soon .lv-badge { background: #cfc6b6; }
 
@@ -321,58 +341,58 @@
    ===================================================================== */
 /* 位置は index から自動計算（1行7つのヘビ型）。増減しても自動でならびます */
 const SKY = [
-  { lex:850,  name:"オリオン座",       en:"Orion",
+  { lex:850,  name:"オリオン座",       en:"Orion", icon:"🗡️",
     pts:[[22,12],[76,18],[38,48],[52,52],[66,50],[74,88],[24,84]],
     lines:[[0,2],[1,4],[2,3],[3,4],[2,6],[4,5],[5,6]] },
-  { lex:900,  name:"北斗七星",         en:"Big Dipper",
+  { lex:900,  name:"北斗七星",         en:"Big Dipper", icon:"🥄",
     pts:[[8,34],[24,24],[40,28],[56,40],[64,62],[82,70],[96,50]],
     lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,3]] },
-  { lex:950,  name:"カシオペヤ座",     en:"Cassiopeia",
+  { lex:950,  name:"カシオペヤ座",     en:"Cassiopeia", icon:"👑",
     pts:[[6,22],[26,64],[50,26],[72,66],[94,24]],
     lines:[[0,1],[1,2],[2,3],[3,4]] },
-  { lex:1000, name:"はくちょう座",     en:"Cygnus",
+  { lex:1000, name:"はくちょう座",     en:"Cygnus", icon:"🦢",
     pts:[[50,6],[50,38],[50,74],[12,44],[88,40],[50,96]],
     lines:[[0,1],[1,2],[2,5],[3,1],[1,4]] },
-  { lex:1050, name:"こと座",           en:"Lyra",
+  { lex:1050, name:"こと座",           en:"Lyra", icon:"🎵",
     pts:[[50,6],[32,34],[68,38],[36,74],[64,76]],
     lines:[[0,1],[0,2],[1,2],[1,3],[2,4],[3,4]] },
-  { lex:1100, name:"さそり座",         en:"Scorpius",
+  { lex:1100, name:"さそり座",         en:"Scorpius", icon:"🦂",
     pts:[[14,10],[30,26],[24,48],[40,66],[60,76],[80,66],[88,44]],
     lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6]] },
-  { lex:1150, name:"しし座",           en:"Leo",
+  { lex:1150, name:"しし座",           en:"Leo", icon:"🦁",
     pts:[[16,18],[8,38],[22,54],[44,58],[64,42],[88,64],[62,76]],
     lines:[[0,1],[1,2],[2,3],[3,4],[4,0],[3,6],[6,5],[5,4]] },
-  { lex:1200, name:"ペガスス座",       en:"Pegasus",
+  { lex:1200, name:"ペガスス座",       en:"Pegasus", icon:"🐎",
     pts:[[20,22],[80,22],[80,80],[20,80],[6,6]],
     lines:[[0,1],[1,2],[2,3],[3,0],[0,4]] },
-  { lex:1250, name:"おうし座",         en:"Taurus",
+  { lex:1250, name:"おうし座",         en:"Taurus", icon:"🐂",
     pts:[[10,14],[30,40],[50,58],[70,40],[90,14],[50,86]],
     lines:[[0,1],[1,2],[2,3],[3,4],[2,5]] },
-  { lex:1300, name:"わし座",           en:"Aquila",
+  { lex:1300, name:"わし座",           en:"Aquila", icon:"🦅",
     pts:[[50,14],[50,44],[50,76],[16,54],[84,50]],
     lines:[[0,1],[1,2],[3,1],[1,4]] },
-  { lex:1350, name:"ふたご座",         en:"Gemini",
+  { lex:1350, name:"ふたご座",         en:"Gemini", icon:"👯",
     pts:[[30,10],[62,12],[32,34],[62,36],[28,58],[58,60],[24,84],[56,86]],
     lines:[[0,2],[1,3],[2,3],[2,4],[3,5],[4,6],[5,7]] },
-  { lex:1400, name:"おおいぬ座",       en:"Canis Major",
+  { lex:1400, name:"おおいぬ座",       en:"Canis Major", icon:"🐕",
     pts:[[38,26],[20,10],[58,14],[46,52],[30,70],[62,72],[50,90]],
     lines:[[1,0],[0,2],[0,3],[3,4],[3,5],[4,6],[5,6]] },
-  { lex:1450, name:"ぎょしゃ座",       en:"Auriga",
+  { lex:1450, name:"ぎょしゃ座",       en:"Auriga", icon:"🛞",
     pts:[[50,8],[84,34],[72,74],[28,76],[16,36]],
     lines:[[0,1],[1,2],[2,3],[3,4],[4,0]] },
-  { lex:1500, name:"おとめ座",         en:"Virgo",
+  { lex:1500, name:"おとめ座",         en:"Virgo", icon:"🌾",
     pts:[[18,16],[44,26],[70,18],[52,48],[38,70],[64,80],[26,92]],
     lines:[[0,1],[1,2],[1,3],[3,4],[3,5],[4,6]] },
-  { lex:1550, name:"いて座",           en:"Sagittarius",
+  { lex:1550, name:"いて座",           en:"Sagittarius", icon:"🏹",
     pts:[[18,44],[34,24],[52,40],[70,26],[84,48],[66,68],[34,66]],
     lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,0]] },
-  { lex:1600, name:"ケフェウス座",     en:"Cepheus",
+  { lex:1600, name:"ケフェウス座",     en:"Cepheus", icon:"🤴",
     pts:[[50,8],[24,38],[76,38],[30,80],[70,80]],
     lines:[[0,1],[0,2],[1,3],[2,4],[3,4]] },
-  { lex:1650, name:"こぐま座",         en:"Ursa Minor",
+  { lex:1650, name:"こぐま座",         en:"Ursa Minor", icon:"🐻",
     pts:[[88,16],[74,30],[60,40],[44,50],[30,42],[22,62],[38,72]],
     lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,3]] },
-  { lex:1700, name:"みなみじゅうじ座", en:"Crux",
+  { lex:1700, name:"みなみじゅうじ座", en:"Crux", icon:"🧭",
     pts:[[50,8],[50,50],[50,92],[16,46],[84,44]],
     lines:[[0,1],[1,2],[3,1],[1,4]] },
 ];
@@ -10420,6 +10440,28 @@ function renderHome() {
     </div>
 
     <div class="card">
+      <h2>✨ ゲットした星座（${clearedCount()} / ${SKY.length}）</h2>
+      <div class="hint" style="margin-bottom:9px">
+        ${clearedCount() ? "ひかっているのが、これまでにゲットした星座です。" : "課題をクリアすると、ここに星座がひかってならびます。"}
+        うすいものは、これからゲットする星座。
+      </div>
+      <div class="badge-grid">
+        ${SKY.map(c => {
+          const got = isCleared(c.lex);
+          const granted = got && !inRange(c.lex);
+          return `<div class="badge ${got ? "" : "off"}" title="Lexile ${c.lex}–${c.lex+50}　${c.name}（${c.en}）">
+            ${granted ? `<span class="btag">${ME.mark}</span>` : ""}
+            <span class="bicon">${c.icon}</span>
+            ${constSVG(c, 0, { box:56, on:got, all:true })}
+            <div class="bn">${got ? c.name : "？？？"}</div>
+            <div class="be">${got ? c.en : ""}</div>
+            <div class="bl">${c.lex}–${c.lex+50}</div>
+          </div>`;
+        }).join("")}
+      </div>
+    </div>
+
+    <div class="card">
       <h2>🗺️ 課題をえらぶ</h2>
       <div class="hint" style="margin-bottom:9px">
         1課題は「長文＋問題」（問題数は課題によってちがいます）。<b>最後まで答え合わせをすればクリア</b> → 星座がひかって、次の Lexile が開きます。正答率は記録に残ります。
@@ -10445,7 +10487,7 @@ function renderHome() {
             <div class="lv-main">
               <span class="lv-lex">Lexile ${c.lex}–${c.lex+50}</span>
               <div class="lv-title">${title}</div>
-              <div class="lv-sub">${c.name}・${sub}</div>
+              <div class="lv-sub">${c.icon} ${c.name}・${sub}</div>
             </div>
             <div class="lv-right">
               <div class="lv-rate ${rate !== null ? "rate " + rateCls(rate) : ""}">${rate !== null ? rate + "%" : (!inRange(c.lex) ? ME.mark : (open && n ? "—" : "🔒"))}</div>
@@ -10489,7 +10531,7 @@ function renderHistory() {
           const hs = histLex(c.lex), avg = avgRate(hs);
           return `<tr>
             <td>${c.lex}–${c.lex+50}</td>
-            <td>${c.name}</td>
+            <td><span class="cmini">${constSVG(c, 0, { box:22, on:isCleared(c.lex), all:true })}</span><span class="cicon">${c.icon}</span>${c.name}</td>
             <td class="num">${readInLex(c.lex)} / ${listOf(c.lex).length} 本</td>
             <td class="num">${hs.length} 回</td>
             <td class="num"><span class="rate ${rateCls(avg)}">${avg}%</span><div class="bar" style="margin-left:auto"><div style="width:${avg}%"></div></div></td>
@@ -10553,7 +10595,7 @@ function renderLevel(lex) {
   app.innerHTML = `
     <div class="topbar">
       <button class="btn ghost small" onclick="renderHome()">← 星空マップ</button>
-      <div class="ttl">Lexile ${lex}–${lex+50}　${c.name}</div>
+      <div class="ttl">Lexile ${lex}–${lex+50}　${c.icon} ${c.name}</div>
     </div>
     <div class="card">
       <h2>📚 長文をえらぶ（${readInLex(lex)} / ${list.length} 本 読んだ）</h2>
@@ -10594,7 +10636,7 @@ function renderReading() {
   app.innerHTML = `
     <div class="topbar">
       <button class="btn ghost small" onclick="${many ? `renderLevel(${lex})` : "renderHome()"}">← もどる</button>
-      <div class="ttl">${c.name}をめざす（Lexile ${lex}–${lex+50}）</div>
+      <div class="ttl">${c.icon} ${c.name}をめざす（Lexile ${lex}–${lex+50}）</div>
     </div>
 
     <div class="read-grid">
@@ -10726,11 +10768,11 @@ function renderAfter(correct) {
     <div class="card result pop">
       <div class="result-score">${correct}<small> / ${n}</small></div>
       <div class="result-rate">正答率 <span class="rate ${rateCls(rt)}">${rt}%</span>　／　このLexileの平均 ${avg}%</div>
-      <h2>🎉 クリア！ ${c.name}をゲット！</h2>
+      <h2>🎉 クリア！ ${c.icon} ${c.name}をゲット！</h2>
       <p>${comment}<br>${next ? `つぎは Lexile ${next.lex}–${next.lex+50}（${next.name}）が開きました。` : "ぜんぶの星座をあつめました！"}</p>
       <div class="const-won">
         ${constSVG(c, 0, { on:true, all:true, box:100 })}
-        <div class="const-name">${c.name}　${c.en}</div>
+        <div class="const-name">${c.icon} ${c.name}　${c.en}</div>
       </div>
       <div class="result-actions">
         <button class="btn ghost" onclick="startReading(${lex},${i})">もう一回</button>
