@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:19:10.484Z",
+  "exportedAt": "2026-08-17T07:45:17.915Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7170,7 +7170,6 @@
       "summary",
       "proportion",
       "intention",
-      "artificial",
       "enormous",
       "vital",
       "qualify",
@@ -7179,7 +7178,6 @@
       "pile",
       "remarkable",
       "nevertheless",
-      "fundamental",
       "abuse",
       "slave",
       "inevitable",
@@ -7200,10 +7198,46 @@
       "reverse",
       "considerable",
       "frequently",
-      "assure"
+      "assure",
+      "transform",
+      "eliminate",
+      "outstanding",
+      "crucial",
+      "rear"
     ],
-    "reviewDone": 31,
+    "reviewDone": 32,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "distinguish",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "fundamental",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "reform",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "artificial",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "extensive",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "revenue",
+        "at": "2026-08-17",
+        "count": 1
+      }
+    ]
   }
 }
