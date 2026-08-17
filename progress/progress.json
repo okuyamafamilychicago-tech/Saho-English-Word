@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:45:17.915Z",
+  "exportedAt": "2026-08-17T07:45:35.761Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7203,41 +7203,16 @@
       "eliminate",
       "outstanding",
       "crucial",
-      "rear"
+      "rear",
+      "artificial",
+      "distinguish",
+      "revenue",
+      "extensive",
+      "fundamental",
+      "reform"
     ],
-    "reviewDone": 32,
+    "reviewDone": 33,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "distinguish",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "fundamental",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "reform",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "artificial",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "extensive",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "revenue",
-        "at": "2026-08-17",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
