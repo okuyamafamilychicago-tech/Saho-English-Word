@@ -1,0 +1,40 @@
+{
+  "app": "saho-reading",
+  "savedAt": "2026-08-17T07:46:09.500Z",
+  "state": {
+    "levels": {
+      "850": {
+        "best": 0,
+        "total": 0,
+        "cleared": true,
+        "granted": true
+      },
+      "900": {
+        "best": 0,
+        "total": 0,
+        "cleared": true,
+        "granted": true
+      },
+      "950": {
+        "best": 0,
+        "total": 0,
+        "cleared": true,
+        "granted": true
+      },
+      "1000": {
+        "best": 5,
+        "cleared": false,
+        "total": 5
+      }
+    },
+    "history": [
+      {
+        "lex": 1000,
+        "i": 8,
+        "ts": 1786952769498,
+        "c": 5,
+        "t": 5
+      }
+    ]
+  }
+}
