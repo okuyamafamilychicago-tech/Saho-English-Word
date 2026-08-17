@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:45:35.761Z",
+  "exportedAt": "2026-08-17T07:46:41.788Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7160,7 +7160,6 @@
       "generate",
       "compete",
       "shelter",
-      "casual",
       "evaluate",
       "contemporary",
       "rescue",
@@ -7190,7 +7189,6 @@
       "exceed",
       "impose",
       "logic",
-      "conventional",
       "assign",
       "transaction",
       "relevant",
@@ -7209,10 +7207,37 @@
       "revenue",
       "extensive",
       "fundamental",
-      "reform"
+      "reform",
+      "intense",
+      "era",
+      "flexible",
+      "bow",
+      "phase",
+      "prospect"
     ],
-    "reviewDone": 33,
+    "reviewDone": 34,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "differ",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "conventional",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "casual",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "emphasize",
+        "at": "2026-08-17",
+        "count": 1
+      }
+    ]
   }
 }
