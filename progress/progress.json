@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:46:41.788Z",
+  "exportedAt": "2026-08-17T07:46:53.716Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7213,31 +7213,14 @@
       "flexible",
       "bow",
       "phase",
-      "prospect"
+      "prospect",
+      "differ",
+      "emphasize",
+      "conventional",
+      "casual"
     ],
-    "reviewDone": 34,
+    "reviewDone": 35,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "differ",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "conventional",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "casual",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "emphasize",
-        "at": "2026-08-17",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
