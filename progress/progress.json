@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-13T07:23:21.947Z",
+  "exportedAt": "2026-08-17T07:07:08.240Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2248,8 +2248,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4496,
-    "totalAttempts": 5188,
+    "totalCorrect": 4501,
+    "totalAttempts": 5200,
     "lastSessionDate": "2026-08-13",
     "streak": 1,
     "history": [
@@ -7187,6 +7187,12 @@
     ],
     "reviewDone": 29,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "considerable",
+        "at": "2026-08-17",
+        "count": 1
+      }
+    ]
   }
 }
