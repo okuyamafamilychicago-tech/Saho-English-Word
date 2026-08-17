@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-15T06:58:29.556Z",
+  "exportedAt": "2026-08-17T07:50:48.432Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17669,50 +17669,28 @@
       "hardship",
       "trifle",
       "clumsy",
-      "recede"
+      "recede",
+      "pessimistic",
+      "startle",
+      "perilous",
+      "cynical",
+      "mischief",
+      "assimilate",
+      "oppress",
+      "immigrate"
     ],
-    "reviewDone": 53,
+    "reviewDone": 54,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "assimilate",
-        "at": "2026-08-15",
-        "count": 1
-      },
-      {
-        "word": "mischief",
-        "at": "2026-08-15",
-        "count": 1
-      },
-      {
         "word": "resurgence",
-        "at": "2026-08-15",
-        "count": 1
+        "at": "2026-08-17",
+        "count": 2
       },
       {
-        "word": "startle",
-        "at": "2026-08-15",
-        "count": 1
-      },
-      {
-        "word": "cynical",
-        "at": "2026-08-15",
-        "count": 1
-      },
-      {
-        "word": "oppress",
-        "at": "2026-08-15",
-        "count": 1
-      },
-      {
-        "word": "perilous",
-        "at": "2026-08-15",
-        "count": 1
-      },
-      {
-        "word": "pessimistic",
-        "at": "2026-08-15",
+        "word": "quarrel",
+        "at": "2026-08-17",
         "count": 1
       }
     ]
