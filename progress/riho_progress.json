@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:50:48.432Z",
+  "exportedAt": "2026-08-17T07:54:43.484Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17677,22 +17677,16 @@
       "mischief",
       "assimilate",
       "oppress",
-      "immigrate"
+      "immigrate",
+      "ruthless",
+      "deserve",
+      "quarrel",
+      "resurgence",
+      "sanitation"
     ],
-    "reviewDone": 54,
+    "reviewDone": 55,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "resurgence",
-        "at": "2026-08-17",
-        "count": 2
-      },
-      {
-        "word": "quarrel",
-        "at": "2026-08-17",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
