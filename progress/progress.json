@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:07:08.240Z",
+  "exportedAt": "2026-08-17T07:18:16.245Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7168,7 +7168,6 @@
       "confuse",
       "manufacture",
       "summary",
-      "reverse",
       "proportion",
       "intention",
       "artificial",
@@ -7183,13 +7182,42 @@
       "fundamental",
       "abuse",
       "slave",
-      "inevitable"
+      "inevitable",
+      "quit",
+      "routine",
+      "estimate",
+      "edit",
+      "odd",
+      "greet",
+      "exceed",
+      "impose",
+      "logic",
+      "conventional",
+      "assign",
+      "transaction",
+      "relevant",
+      "complicated"
     ],
     "reviewDone": 29,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "considerable",
+        "at": "2026-08-17",
+        "count": 2
+      },
+      {
+        "word": "frequently",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "assure",
+        "at": "2026-08-17",
+        "count": 1
+      },
+      {
+        "word": "reverse",
         "at": "2026-08-17",
         "count": 1
       }
