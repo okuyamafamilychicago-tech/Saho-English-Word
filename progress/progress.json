@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:18:16.245Z",
+  "exportedAt": "2026-08-17T07:18:56.943Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7196,30 +7196,18 @@
       "assign",
       "transaction",
       "relevant",
-      "complicated"
+      "complicated",
+      "reverse",
+      "considerable",
+      "frequently"
     ],
-    "reviewDone": 29,
+    "reviewDone": 30,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "considerable",
-        "at": "2026-08-17",
-        "count": 2
-      },
-      {
-        "word": "frequently",
-        "at": "2026-08-17",
-        "count": 1
-      },
-      {
         "word": "assure",
         "at": "2026-08-17",
-        "count": 1
-      },
-      {
-        "word": "reverse",
-        "at": "2026-08-17",
-        "count": 1
+        "count": 2
       }
     ]
   }
