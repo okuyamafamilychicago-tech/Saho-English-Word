@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-18T14:07:55.406Z",
+  "exportedAt": "2026-08-18T14:12:03.460Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17558,7 +17558,6 @@
       "slap",
       "underline",
       "diligent",
-      "savage",
       "imaginable",
       "slender",
       "soothe",
@@ -17685,14 +17684,24 @@
       "sanitation",
       "vulgar",
       "hereditary",
-      "sober"
+      "sober",
+      "arouse",
+      "menace",
+      "monotonous",
+      "censor",
+      "gloomy"
     ],
-    "reviewDone": 56,
+    "reviewDone": 57,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "arouse",
+        "word": "savage",
+        "at": "2026-08-18",
+        "count": 1
+      },
+      {
+        "word": "dismay",
         "at": "2026-08-18",
         "count": 1
       }
