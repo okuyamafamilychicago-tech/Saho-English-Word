@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-18T14:16:38.258Z",
+  "exportedAt": "2026-08-18T14:29:03.109Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17473,7 +17473,6 @@
       "multitude",
       "fasten",
       "damp",
-      "generalization",
       "facility",
       "reveal",
       "sentence",
@@ -17692,14 +17691,38 @@
       "savage",
       "dismay",
       "incomprehensible",
-      "shiver"
+      "shiver",
+      "faint",
+      "illuminate",
+      "informative",
+      "biography"
     ],
-    "reviewDone": 62,
+    "reviewDone": 63,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "epoch",
+        "at": "2026-08-18",
+        "count": 1
+      },
+      {
+        "word": "concise",
+        "at": "2026-08-18",
+        "count": 1
+      },
+      {
+        "word": "pastime",
+        "at": "2026-08-18",
+        "count": 1
+      },
+      {
+        "word": "generalization",
+        "at": "2026-08-18",
+        "count": 1
+      },
+      {
+        "word": "correspondence",
         "at": "2026-08-18",
         "count": 1
       }
