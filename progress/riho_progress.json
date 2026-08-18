@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:54:43.484Z",
+  "exportedAt": "2026-08-18T14:07:55.406Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17682,11 +17682,20 @@
       "deserve",
       "quarrel",
       "resurgence",
-      "sanitation"
+      "sanitation",
+      "vulgar",
+      "hereditary",
+      "sober"
     ],
-    "reviewDone": 55,
+    "reviewDone": 56,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "arouse",
+        "at": "2026-08-18",
+        "count": 1
+      }
+    ]
   }
 }
