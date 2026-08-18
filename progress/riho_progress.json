@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-18T14:14:32.525Z",
+  "exportedAt": "2026-08-18T14:15:42.763Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17692,9 +17692,10 @@
       "gloomy",
       "savage",
       "dismay",
-      "incomprehensible"
+      "incomprehensible",
+      "shiver"
     ],
-    "reviewDone": 60,
+    "reviewDone": 61,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": []
