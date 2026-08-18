@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-18T14:12:03.460Z",
+  "exportedAt": "2026-08-18T14:12:30.922Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17689,22 +17689,13 @@
       "menace",
       "monotonous",
       "censor",
-      "gloomy"
+      "gloomy",
+      "savage",
+      "dismay"
     ],
-    "reviewDone": 57,
+    "reviewDone": 58,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "savage",
-        "at": "2026-08-18",
-        "count": 1
-      },
-      {
-        "word": "dismay",
-        "at": "2026-08-18",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
