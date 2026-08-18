@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-18T14:15:42.763Z",
+  "exportedAt": "2026-08-18T14:16:38.258Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17529,7 +17529,6 @@
       "endangered",
       "horrify",
       "bribe",
-      "epoch",
       "innumerable",
       "glare",
       "pest",
@@ -17695,9 +17694,15 @@
       "incomprehensible",
       "shiver"
     ],
-    "reviewDone": 61,
+    "reviewDone": 62,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "epoch",
+        "at": "2026-08-18",
+        "count": 1
+      }
+    ]
   }
 }
