@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-19T09:26:32.861Z",
+  "exportedAt": "2026-08-19T09:27:53.814Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17662,7 +17662,6 @@
       "indulge",
       "dread",
       "irresistible",
-      "scant",
       "hardship",
       "trifle",
       "clumsy",
@@ -17720,7 +17719,7 @@
       "ingenious",
       "eloquent"
     ],
-    "reviewDone": 71,
+    "reviewDone": 72,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17751,6 +17750,11 @@
       },
       {
         "word": "textile",
+        "at": "2026-08-19",
+        "count": 1
+      },
+      {
+        "word": "scant",
         "at": "2026-08-19",
         "count": 1
       }
