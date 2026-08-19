@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-18T14:29:03.109Z",
+  "exportedAt": "2026-08-19T09:16:59.447Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17695,37 +17695,16 @@
       "faint",
       "illuminate",
       "informative",
-      "biography"
+      "biography",
+      "generalization",
+      "concise",
+      "correspondence",
+      "epoch",
+      "pastime"
     ],
-    "reviewDone": 63,
+    "reviewDone": 64,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "epoch",
-        "at": "2026-08-18",
-        "count": 1
-      },
-      {
-        "word": "concise",
-        "at": "2026-08-18",
-        "count": 1
-      },
-      {
-        "word": "pastime",
-        "at": "2026-08-18",
-        "count": 1
-      },
-      {
-        "word": "generalization",
-        "at": "2026-08-18",
-        "count": 1
-      },
-      {
-        "word": "correspondence",
-        "at": "2026-08-18",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
