@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-19T09:41:25.030Z",
+  "exportedAt": "2026-08-19T09:47:37.456Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17720,9 +17720,10 @@
       "eloquent",
       "scant",
       "paralyze",
-      "wither"
+      "wither",
+      "aptitude"
     ],
-    "reviewDone": 87,
+    "reviewDone": 88,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
