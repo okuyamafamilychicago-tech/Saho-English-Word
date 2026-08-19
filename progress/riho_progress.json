@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-19T09:27:53.814Z",
+  "exportedAt": "2026-08-19T09:28:20.846Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17717,46 +17717,42 @@
       "forbid",
       "supervise",
       "ingenious",
-      "eloquent"
+      "eloquent",
+      "scant"
     ],
-    "reviewDone": 72,
+    "reviewDone": 73,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "rational",
         "at": "2026-08-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "inhabit",
         "at": "2026-08-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "eternal",
         "at": "2026-08-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "prevail",
         "at": "2026-08-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "rigid",
         "at": "2026-08-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "textile",
         "at": "2026-08-19",
-        "count": 1
-      },
-      {
-        "word": "scant",
-        "at": "2026-08-19",
-        "count": 1
+        "count": 2
       }
     ]
   }
