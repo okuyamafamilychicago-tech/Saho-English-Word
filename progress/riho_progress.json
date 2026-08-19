@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-19T09:20:34.504Z",
+  "exportedAt": "2026-08-19T09:22:40.415Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17700,11 +17700,58 @@
       "concise",
       "correspondence",
       "epoch",
-      "pastime"
+      "pastime",
+      "grind",
+      "tense",
+      "erase",
+      "migrate",
+      "hatred",
+      "celebrity",
+      "linguistic",
+      "viewpoint",
+      "rage",
+      "plead",
+      "doctrine",
+      "due",
+      "prescribe",
+      "devise",
+      "forbid",
+      "supervise"
     ],
-    "reviewDone": 67,
+    "reviewDone": 68,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "rational",
+        "at": "2026-08-19",
+        "count": 1
+      },
+      {
+        "word": "inhabit",
+        "at": "2026-08-19",
+        "count": 1
+      },
+      {
+        "word": "eternal",
+        "at": "2026-08-19",
+        "count": 1
+      },
+      {
+        "word": "prevail",
+        "at": "2026-08-19",
+        "count": 1
+      },
+      {
+        "word": "rigid",
+        "at": "2026-08-19",
+        "count": 1
+      },
+      {
+        "word": "textile",
+        "at": "2026-08-19",
+        "count": 1
+      }
+    ]
   }
 }
