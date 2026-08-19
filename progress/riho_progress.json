@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-19T09:25:45.497Z",
+  "exportedAt": "2026-08-19T09:26:32.861Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17717,9 +17717,10 @@
       "devise",
       "forbid",
       "supervise",
-      "ingenious"
+      "ingenious",
+      "eloquent"
     ],
-    "reviewDone": 70,
+    "reviewDone": 71,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17750,11 +17751,6 @@
       },
       {
         "word": "textile",
-        "at": "2026-08-19",
-        "count": 1
-      },
-      {
-        "word": "eloquent",
         "at": "2026-08-19",
         "count": 1
       }
