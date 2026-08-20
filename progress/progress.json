@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-20T07:11:43.641Z",
+  "exportedAt": "2026-08-20T07:12:54.103Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7178,7 +7178,6 @@
       "remarkable",
       "nevertheless",
       "abuse",
-      "slave",
       "inevitable",
       "quit",
       "routine",
@@ -7186,7 +7185,6 @@
       "edit",
       "odd",
       "greet",
-      "exceed",
       "impose",
       "logic",
       "assign",
@@ -7202,9 +7200,7 @@
       "outstanding",
       "crucial",
       "rear",
-      "artificial",
       "distinguish",
-      "revenue",
       "extensive",
       "fundamental",
       "reform",
@@ -7217,10 +7213,51 @@
       "differ",
       "emphasize",
       "conventional",
-      "casual"
+      "casual",
+      "illustrate",
+      "transition",
+      "ray",
+      "spare",
+      "grab",
+      "accomplish",
+      "consistent",
+      "congress",
+      "proceed",
+      "poverty"
     ],
     "reviewDone": 36,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "interpret",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "exceed",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "artificial",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "revenue",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "slave",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "resist",
+        "at": "2026-08-20",
+        "count": 1
+      }
+    ]
   }
 }
