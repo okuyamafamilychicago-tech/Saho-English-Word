@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T07:46:53.716Z",
+  "exportedAt": "2026-08-20T07:11:43.641Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7219,7 +7219,7 @@
       "conventional",
       "casual"
     ],
-    "reviewDone": 35,
+    "reviewDone": 36,
     "schemaVersion": 2,
     "reviewWrong": []
   }
