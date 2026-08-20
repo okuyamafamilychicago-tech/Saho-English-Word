@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-20T07:12:54.103Z",
+  "exportedAt": "2026-08-20T07:14:00.652Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7168,7 +7168,6 @@
       "manufacture",
       "summary",
       "proportion",
-      "intention",
       "enormous",
       "vital",
       "qualify",
@@ -7176,7 +7175,6 @@
       "breed",
       "pile",
       "remarkable",
-      "nevertheless",
       "abuse",
       "inevitable",
       "quit",
@@ -7221,40 +7219,65 @@
       "grab",
       "accomplish",
       "consistent",
-      "congress",
       "proceed",
-      "poverty"
+      "poverty",
+      "primarily",
+      "grateful",
+      "external",
+      "incredible",
+      "ingredient",
+      "ban"
     ],
-    "reviewDone": 36,
+    "reviewDone": 37,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "interpret",
         "at": "2026-08-20",
-        "count": 1
+        "count": 2
       },
       {
         "word": "exceed",
         "at": "2026-08-20",
-        "count": 1
+        "count": 2
       },
       {
         "word": "artificial",
         "at": "2026-08-20",
-        "count": 1
+        "count": 2
       },
       {
         "word": "revenue",
         "at": "2026-08-20",
-        "count": 1
+        "count": 2
       },
       {
         "word": "slave",
         "at": "2026-08-20",
-        "count": 1
+        "count": 2
       },
       {
         "word": "resist",
+        "at": "2026-08-20",
+        "count": 2
+      },
+      {
+        "word": "nevertheless",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "substance",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "congress",
+        "at": "2026-08-20",
+        "count": 1
+      },
+      {
+        "word": "intention",
         "at": "2026-08-20",
         "count": 1
       }
