@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-21T05:45:13.410Z",
+  "exportedAt": "2026-08-21T05:46:43.059Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17725,9 +17725,15 @@
       "aptitude",
       "prolong",
       "cling",
-      "transplant"
+      "transplant",
+      "commit",
+      "predict",
+      "accurate",
+      "convert",
+      "secure",
+      "decline"
     ],
-    "reviewDone": 89,
+    "reviewDone": 90,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17763,6 +17769,11 @@
       },
       {
         "word": "vain",
+        "at": "2026-08-21",
+        "count": 1
+      },
+      {
+        "word": "apparently",
         "at": "2026-08-21",
         "count": 1
       }
