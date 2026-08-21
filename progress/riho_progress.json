@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-19T09:47:37.456Z",
+  "exportedAt": "2026-08-21T05:45:13.410Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17365,7 +17365,8 @@
     ],
     "svgTheme": "ac",
     "hiddenFound": [
-      8
+      8,
+      9
     ],
     "reviewOk": [
       "poke",
@@ -17721,9 +17722,12 @@
       "scant",
       "paralyze",
       "wither",
-      "aptitude"
+      "aptitude",
+      "prolong",
+      "cling",
+      "transplant"
     ],
-    "reviewDone": 88,
+    "reviewDone": 89,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17756,6 +17760,11 @@
         "word": "textile",
         "at": "2026-08-19",
         "count": 2
+      },
+      {
+        "word": "vain",
+        "at": "2026-08-21",
+        "count": 1
       }
     ]
   }
