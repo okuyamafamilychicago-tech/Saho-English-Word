@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T14:12:07.884Z",
+  "exportedAt": "2026-08-22T14:13:12.362Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3267,6 +3267,16 @@
         "score": 6,
         "total": 12,
         "mode": "learn"
+      },
+      {
+        "date": "2026-08-22",
+        "climbed": 0,
+        "score": 8,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "flash",
+        "found": 0
       }
     ],
     "srs": {
@@ -7196,7 +7206,6 @@
       "outstanding",
       "crucial",
       "rear",
-      "extensive",
       "fundamental",
       "reform",
       "intense",
@@ -7221,93 +7230,84 @@
       "ingredient",
       "ban",
       "stupid",
-      "nevertheless"
+      "nevertheless",
+      "objective",
+      "remarkable",
+      "numerous",
+      "revenue",
+      "congress",
+      "artificial"
     ],
-    "reviewDone": 38,
+    "reviewDone": 39,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "interpret",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "exceed",
         "at": "2026-08-22",
-        "count": 3
-      },
-      {
-        "word": "artificial",
-        "at": "2026-08-22",
-        "count": 3
-      },
-      {
-        "word": "revenue",
-        "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "slave",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "resist",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "substance",
         "at": "2026-08-22",
-        "count": 2
-      },
-      {
-        "word": "congress",
-        "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "intention",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "external",
         "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "remarkable",
-        "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "proceed",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "conventional",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "admission",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "distinguish",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "differ",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "frequently",
+        "at": "2026-08-22",
+        "count": 2
+      },
+      {
+        "word": "extensive",
         "at": "2026-08-22",
         "count": 1
       }
