@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:45:25.670Z",
+  "exportedAt": "2026-08-22T06:45:35.468Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7780,6 +7780,16 @@
         "total": 14,
         "mode": "review",
         "scope": "まちがえ集中",
+        "style": "flash",
+        "found": 0
+      },
+      {
+        "date": "2026-08-22",
+        "climbed": 0,
+        "score": 16,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ8",
         "style": "flash",
         "found": 0
       }
@@ -17758,7 +17768,7 @@
       "textile",
       "stroll"
     ],
-    "reviewDone": 93,
+    "reviewDone": 94,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17805,7 +17815,7 @@
       {
         "word": "conceal",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "reap",
