@@ -13194,7 +13194,7 @@ function renderLevel(lex) {
       <div class="hint" style="margin-bottom:9px">
         番号は<b>おすすめの読む順</b>です。上から順に、短くやさしいものから
         長く手ごわいものへならんでいます。となり合った長文はつながりのある題材なので、
-        順に読むと前で覚えたことが次で効いてきます。もちろん、どれから読んでもOK。
+        順に読むと前で覚えたことが次で効いてきます。もちろん、どれから読んでもOK。<br>一度解いた長文（✔）をおすと、そのときの答案と解説がそのまま出ます。
         <b>${list.length} 本ぜんぶ読み終えると</b>、${c.icon} ${c.name} がもらえます
         （あと ${Math.max(0, list.length - readInLex(lex))} 本）。
       </div>
@@ -13216,10 +13216,24 @@ function renderLevel(lex) {
 }
 
 /* ---------- 読解 ---------- */
-function startReading(lex, i) {
+/* その長文を前に解いた記録（答案つきで、いちばん新しいもの）をさがす */
+function lastAttempt(lex, i) {
+  return state.history.find(h => h.lex === lex && (h.i || 0) === i && Array.isArray(h.picks)) || null;
+}
+
+function startReading(lex, i, fresh) {
   const r = passageOf(lex, i);
   if (!r) return;
   setNav("home");
+  const past = fresh ? null : lastAttempt(lex, i);
+  if (past && past.picks.length === r.questions.length) {
+    // 一度解いた長文は、そのときの答案・解説・和訳をそのまま出す
+    session = { lex, i, r, pick: past.picks.slice(), graded: true,
+                replay: true, wasCleared: isCleared(lex) };
+    renderReading();
+    renderAfter(applyGrading(), past.ts);
+    return;
+  }
   session = { lex, i, r, pick: new Array(r.questions.length).fill(null), graded: false };
   renderReading();
 }
@@ -13294,12 +13308,14 @@ function pick(qi, ci) {
 }
 
 /* ---------- 採点 ---------- */
-function grade() {
-  const { lex, r, pick } = session;
-  session.graded = true;
+/* 採点の見た目を反映する（記録は書かない）。
+   答え合わせのときにも、あとから開き直したときにも、同じものが出るようにするため
+   grade() から切り出してある。 */
+function applyGrading() {
+  const { r, pick } = session;
   let correct = 0;
 
-  // 答え合わせをしたら、英文の段落のすぐ下に和訳を出す
+  // 英文の段落のすぐ下に和訳を出す
   const psg = document.getElementById("passage");
   if (psg) psg.classList.add("show-ja");
 
@@ -13308,14 +13324,17 @@ function grade() {
     if (ok) correct++;
     q.choices.forEach((_, ci) => {
       const el = document.getElementById(`c${qi}_${ci}`);
+      if (!el) return;
       el.disabled = true; el.classList.remove("sel");
       if (ci === q.ans) el.classList.add("correct");
       else if (ci === my) el.classList.add("miss");
     });
-    document.getElementById(`q${qi}`).classList.add(ok ? "ok" : "ng");
+    const qEl = document.getElementById(`q${qi}`);
+    if (qEl) qEl.classList.add(ok ? "ok" : "ng");
 
     // 解説は「まちがえた問題」だけ
-    document.getElementById(`fb${qi}`).innerHTML = ok
+    const fb = document.getElementById(`fb${qi}`);
+    if (fb) fb.innerHTML = ok
       ? `<div class="verdict">✔ せいかい！</div>`
       : `<div class="expl">
            <span class="lbl">せいかいは</span>
@@ -13330,14 +13349,26 @@ function grade() {
   });
 
   // まちがえた問題のカギの文を本文でハイライト
-  const wrong = r.questions.map((q, i) => (pick[i] === q.ans ? null : i + 1)).filter(Boolean);
+  const wrong = r.questions.map((q, n) => (pick[n] === q.ans ? null : n + 1)).filter(Boolean);
   document.querySelectorAll("#passage mark").forEach(m => {
     const qs = (m.dataset.q || "").split(/\s+/).map(Number);
     if (qs.some(n => wrong.includes(n))) m.classList.add("lit");
   });
 
+  const btn = document.getElementById("gradeBtn");
+  if (btn) btn.remove();
+  return correct;
+}
+
+function grade() {
+  const { lex, r, pick } = session;
+  session.graded = true;
+  const correct = applyGrading();
+
   // 記録（先に履歴を足してから、この帯を読み終えたかを数える）
-  state.history.unshift({ lex, i: session.i, ts: Date.now(), c: correct, t: r.questions.length });
+  // picks も残しておく。あとで開き直したときに、そのときの答案を出すため。
+  state.history.unshift({ lex, i: session.i, ts: Date.now(),
+                          c: correct, t: r.questions.length, picks: pick.slice() });
   if (state.history.length > 300) state.history.pop();
 
   const prev = state.levels[lex] || { best:0, cleared:false };
@@ -13353,12 +13384,11 @@ function grade() {
   });
   save();
 
-  document.getElementById("gradeBtn").remove();
   ghSave(true);              // 1回終わるごとに GitHub へ自動保存
   renderAfter(correct);
 }
 
-function renderAfter(correct) {
+function renderAfter(correct, pastTs) {
   const { lex, i, r } = session;
   const c = SKY.find(x => x.lex === lex);
   const list = listOf(lex), ni = i + 1 < list.length ? i + 1 : null;
@@ -13374,7 +13404,11 @@ function renderAfter(correct) {
   // 星座がもらえるのは、この Lexile をぜんぶ読み終えたとき
   const done = isCleared(lex), justNow = done && !session.wasCleared;
   const read = readInLex(lex), left = list.length - read;
-  const head = justNow
+  const head = session.replay
+    ? `<h2>📄 まえに解いたときの答案です</h2>
+       <p>${pastTs ? fmtDate(pastTs) + " に読みました。" : ""}選んだ答え・解説・和訳は、そのときのままです。<br>
+       もう一度はじめから解くときは、下の「もう一度ときなおす」を押してください。</p>`
+    : justNow
     ? `<h2>🎉 ${c.icon} ${c.name}をゲット！</h2>
        <p>${comment}<br>Lexile ${lex}–${lex+50} の ${list.length} 本を、ぜんぶ読み終えました。
        ${next ? `つぎは Lexile ${next.lex}–${next.lex+50}（${next.icon} ${next.name}）が開きました。` : "ぜんぶの星座をあつめました！"}</p>`
@@ -13397,7 +13431,7 @@ function renderAfter(correct) {
         <div class="const-name">${c.icon} ${c.name}　${c.en}</div>
       </div>` : ""}
       <div class="result-actions">
-        <button class="btn ghost" onclick="startReading(${lex},${i})">もう一回</button>
+        <button class="btn ghost" onclick="startReading(${lex},${i},true)">もう一度ときなおす</button>
         ${ni !== null
           ? `<button class="btn" onclick="startReading(${lex},${ni})">次の長文へ →</button>`
           : `<button class="btn ghost" onclick="renderHistory()">履歴を見る</button>`}
