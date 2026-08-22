@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:45:35.468Z",
+  "exportedAt": "2026-08-22T06:46:22.347Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17766,7 +17766,9 @@
       "eternal",
       "apparently",
       "textile",
-      "stroll"
+      "stroll",
+      "cruel",
+      "racial"
     ],
     "reviewDone": 94,
     "schemaVersion": 2,
@@ -17834,6 +17836,26 @@
       },
       {
         "word": "indulge",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "hence",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "render",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "consensus",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "realm",
         "at": "2026-08-22",
         "count": 1
       }
