@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:46:22.347Z",
+  "exportedAt": "2026-08-22T06:50:47.204Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17768,7 +17768,20 @@
       "textile",
       "stroll",
       "cruel",
-      "racial"
+      "racial",
+      "feast",
+      "herd",
+      "insult",
+      "fascinate",
+      "fluent",
+      "frighten",
+      "sigh",
+      "worthwhile",
+      "postpone",
+      "prejudice",
+      "preliminary",
+      "chill",
+      "pedestrian"
     ],
     "reviewDone": 94,
     "schemaVersion": 2,
@@ -17777,22 +17790,22 @@
       {
         "word": "rational",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "inhabit",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "prevail",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "rigid",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "inflict",
@@ -17856,6 +17869,21 @@
       },
       {
         "word": "realm",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "adhere",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "deed",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "dignity",
         "at": "2026-08-22",
         "count": 1
       }
