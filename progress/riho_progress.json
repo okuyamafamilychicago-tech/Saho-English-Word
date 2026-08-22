@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:41:59.736Z",
+  "exportedAt": "2026-08-22T06:43:13.883Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17744,7 +17744,10 @@
       "abnormal",
       "precaution",
       "souvenir",
-      "speculate"
+      "speculate",
+      "eternal",
+      "apparently",
+      "textile"
     ],
     "reviewDone": 92,
     "schemaVersion": 2,
@@ -17752,73 +17755,58 @@
     "reviewWrong": [
       {
         "word": "rational",
-        "at": "2026-08-19",
-        "count": 2
+        "at": "2026-08-22",
+        "count": 3
       },
       {
         "word": "inhabit",
-        "at": "2026-08-19",
-        "count": 2
-      },
-      {
-        "word": "eternal",
-        "at": "2026-08-19",
-        "count": 2
+        "at": "2026-08-22",
+        "count": 3
       },
       {
         "word": "prevail",
-        "at": "2026-08-19",
-        "count": 2
+        "at": "2026-08-22",
+        "count": 3
       },
       {
         "word": "rigid",
-        "at": "2026-08-19",
-        "count": 2
-      },
-      {
-        "word": "textile",
-        "at": "2026-08-19",
-        "count": 2
-      },
-      {
-        "word": "apparently",
-        "at": "2026-08-21",
-        "count": 1
+        "at": "2026-08-22",
+        "count": 3
       },
       {
         "word": "inflict",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "ample",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "deliberate",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "lessen",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "conceal",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "reap",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "complement",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       }
     ]
   }
