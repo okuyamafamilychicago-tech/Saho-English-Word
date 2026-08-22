@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T14:13:12.362Z",
+  "exportedAt": "2026-08-22T14:15:11.406Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3272,6 +3272,16 @@
         "date": "2026-08-22",
         "climbed": 0,
         "score": 8,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "flash",
+        "found": 0
+      },
+      {
+        "date": "2026-08-22",
+        "climbed": 0,
+        "score": 11,
         "total": 25,
         "mode": "review",
         "scope": "バッチ2",
@@ -7192,7 +7202,6 @@
       "edit",
       "odd",
       "greet",
-      "impose",
       "logic",
       "assign",
       "transaction",
@@ -7236,78 +7245,87 @@
       "numerous",
       "revenue",
       "congress",
-      "artificial"
+      "slave",
+      "frequently",
+      "differ",
+      "elementary",
+      "exceed"
     ],
-    "reviewDone": 39,
+    "reviewDone": 40,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "interpret",
         "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "exceed",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "slave",
-        "at": "2026-08-22",
-        "count": 4
+        "count": 5
       },
       {
         "word": "resist",
         "at": "2026-08-22",
-        "count": 4
+        "count": 5
       },
       {
         "word": "substance",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "intention",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "external",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "proceed",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "conventional",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "admission",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "distinguish",
         "at": "2026-08-22",
-        "count": 2
-      },
-      {
-        "word": "differ",
-        "at": "2026-08-22",
-        "count": 2
-      },
-      {
-        "word": "frequently",
-        "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "extensive",
+        "at": "2026-08-22",
+        "count": 2
+      },
+      {
+        "word": "vice",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "merit",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "impose",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "artificial",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "alter",
         "at": "2026-08-22",
         "count": 1
       }
