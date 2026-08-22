@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:38:39.118Z",
+  "exportedAt": "2026-08-22T06:41:46.767Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17537,7 +17537,6 @@
       "irony",
       "naive",
       "subsidy",
-      "conceal",
       "credit",
       "disregard",
       "despair",
@@ -17641,9 +17640,7 @@
       "outgoing",
       "clash",
       "deceive",
-      "complement",
       "pledge",
-      "lessen",
       "trivial",
       "reign",
       "discriminate",
@@ -17735,7 +17732,9 @@
       "vain",
       "riot",
       "abnormal",
-      "precaution"
+      "precaution",
+      "souvenir",
+      "speculate"
     ],
     "reviewDone": 91,
     "schemaVersion": 2,
@@ -17779,20 +17778,35 @@
       {
         "word": "inflict",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "ample",
         "at": "2026-08-22",
-        "count": 1
+        "count": 2
       },
       {
         "word": "deliberate",
         "at": "2026-08-22",
+        "count": 2
+      },
+      {
+        "word": "lessen",
+        "at": "2026-08-22",
         "count": 1
       },
       {
-        "word": "speculate",
+        "word": "conceal",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "reap",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "complement",
         "at": "2026-08-22",
         "count": 1
       }
