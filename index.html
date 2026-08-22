@@ -2874,38 +2874,70 @@ function finishLearn() {
   `;
 }
 
+let _histFilter = "all";   // "all" | "test" | "review"
+function setHistFilter(f) { _histFilter = f; renderHistory(); }
+
 function renderHistory() {
-  const testHistory = state.history.filter(r => r.mode === "test");
-  const reversed = [...testHistory].reverse();
+  const testHistory   = state.history.filter(r => r.mode === "test");
+  const reviewHistory = state.history.filter(r => r.mode === "review");
+
+  const shown = _histFilter === "test"   ? testHistory
+              : _histFilter === "review" ? reviewHistory
+              : state.history.filter(r => r.mode === "test" || r.mode === "review");
+  const reversed = [...shown].reverse();
+
   const rows = reversed.length
     ? `<div class="hist-list">` + reversed.map(r => {
-        const pct = Math.round((r.score / r.total) * 100);
+        const pct = r.total ? Math.round((r.score / r.total) * 100) : 0;
+        const isRev = r.mode === "review";
+        const barCol = isRev ? "background:var(--berry)" : "";
+        // 復習の 行は 出題範囲と 形式、なかま発見を 出す
+        const note = isRev
+          ? `<span class="hist-climb" style="color:var(--berry)">${r.style === "flash" ? "🃏" : "🎯"} ${esc(r.scope || "復習")}${r.found ? ` ・ 🌟${r.found}体` : ""}</span>`
+          : (r.climbed ? `<span class="hist-climb">+${r.climbed}語 覚えた</span>` : "");
         return `<div class="hist-row">
-          <span class="hist-date">📝 ${r.date}</span>
+          <span class="hist-date">${isRev ? "🔄" : "📝"} ${r.date}</span>
           <div>
-            <div class="hist-bar"><div style="width:${pct}%"></div></div>
-            ${r.climbed ? `<span class="hist-climb">+${r.climbed}語 覚えた</span>` : ""}
+            <div class="hist-bar"><div style="width:${pct}%; ${barCol}"></div></div>
+            ${note}
           </div>
           <span class="hist-score">${r.score}/${r.total}</span>
         </div>`;
       }).join("") + `</div>`
-    : `<p class="empty-note">まだテストの記録がありません。<br>ホームからテストを始めましょう。</p>`;
+    : `<p class="empty-note">${
+        _histFilter === "review"
+          ? "まだ復習の記録がありません。<br>ホームの 🔄 復習 から 始めましょう。"
+          : "まだテストの記録がありません。<br>ホームからテストを始めましょう。"
+      }</p>`;
 
+  // グラフは テストのみ（復習は 問題数も 形式も ちがうので 混ぜない）
   const chartSvg = testHistory.length >= 2 ? renderTestChart(testHistory) : "";
-  const totalTests = testHistory.length;
-  const totalCorrectT = testHistory.reduce((s, r) => s + r.score, 0);
-  const totalAskedT   = testHistory.reduce((s, r) => s + r.total, 0);
-  const avgAcc = totalAskedT ? Math.round((totalCorrectT / totalAskedT) * 100) : 0;
+
+  const avg = h => {
+    const c = h.reduce((s, r) => s + r.score, 0);
+    const a = h.reduce((s, r) => s + r.total, 0);
+    return a ? Math.round((c / a) * 100) : 0;
+  };
   const wrongCount = state.testWrong.length;
+  const tab = (key, label) => `<button class="btn ghost small" onclick="setHistFilter('${key}')"
+      style="padding:6px 12px; font-size:0.76rem; ${_histFilter === key
+        ? "background:var(--teal); color:#fff; border-color:var(--teal)" : ""}">${label}</button>`;
 
   app.innerHTML = `
     <div class="card">
-      <div class="section-title"><span>テストの記録</span><span class="sub">${totalTests}回 ・ 平均 ${avgAcc}%</span></div>
-      ${chartSvg}
+      <div class="section-title">
+        <span>学習の記録</span>
+        <span class="sub">📝 ${testHistory.length}回 平均 ${avg(testHistory)}% ・ 🔄 ${reviewHistory.length}回 平均 ${avg(reviewHistory)}%</span>
+      </div>
+      <div style="display:flex; gap:6px; margin:0 0 12px">
+        ${tab("all", "ぜんぶ")}${tab("test", "📝 テスト")}${tab("review", "🔄 復習")}
+      </div>
+      ${chartSvg ? `<div style="font-size:0.7rem; color:var(--ink-soft); font-weight:700; margin-bottom:4px">📝 テストの点数（直近12回）</div>${chartSvg}` : ""}
       ${rows}
       <div class="result-actions" style="margin-top:16px; flex-wrap:wrap; gap:8px">
         <button class="btn ghost small" onclick="renderHome()">ホーム</button>
         <button class="btn ghost small" onclick="showTestWrongWords()" ${wrongCount?"":"disabled"}>❌ まちがえた単語 (${wrongCount})</button>
+        <button class="btn ghost small" onclick="openReviewBatchPicker()">🔄 復習 →</button>
         <button class="btn small" onclick="startSession()" ${getWords().length>=4?"":"disabled"}>テストを始める →</button>
       </div>
     </div>
@@ -3519,10 +3551,10 @@ function startReview(batchIdx, style) {
   const wrongFirst = allWords.filter(w => reviewWrongSet.has(w.word));
   const others = shuffle(allWords.filter(w => !reviewWrongSet.has(w.word)));
   const combined = [...wrongFirst, ...others].slice(0, REVIEW_BATCH_SIZE);
-  const scopeLabel = (batchIdx === "wrongOnly" ? "まちがえ集中"
-                     : (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}`
-                     : "全部")
-                   + (reviewStyle === "flash" ? " · 🃏フラッシュ" : "");
+  const scopeBase = batchIdx === "wrongOnly" ? "まちがえ集中"
+                  : (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}`
+                  : "全部";
+  const scopeLabel = scopeBase + (reviewStyle === "flash" ? " · 🃏フラッシュ" : "");
   let queue;
   if (reviewStyle === "flash") {
     const items = combined.map(w => ({ w, type: "flashcard" }));
@@ -3548,6 +3580,7 @@ function startReview(batchIdx, style) {
     answered: false,
     current: null,
     scope: scopeLabel,
+    scopeBase,
     batchIdx: (typeof batchIdx === "number") ? batchIdx : null,
     mode: batchIdx === "wrongOnly" ? "wrongOnly" : (typeof batchIdx === "number" ? "batch" : "all"),
     style: reviewStyle,
@@ -3751,6 +3784,15 @@ function finishReview() {
   state.reviewDone = (state.reviewDone || 0) + 1;
   const newly = checkHiddenUnlocks();
   const foundCount = hiddenFound().length;
+
+  // 📊 記録に 残す（mode:"review"）。mastered・testWrong・SRS・streak には 触らない。
+  state.history.push({
+    date: today(), climbed: 0, score: correct, total,
+    mode: "review",
+    scope: review.scopeBase || review.scope || "",
+    style: review.style || "quiz",
+    found: newly.length,
+  });
   saveState();
 
   // このセッションで さわった バッチの 進捗（あと何語で なかま？）
