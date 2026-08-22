@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 更新がすぐ届くように。ブラウザに毎回サーバへ確認させる -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Saho English Reading — 星座をあつめよう</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12580,6 +12584,7 @@ const USERS = {
   riho: { name:"Riho", mark:"✧", key:"riho-reading-v1", startLex: 1000, grade: 6,
           tokenKey:"vocabTrail_riho_gh_token", ghPath:"progress/riho_reading_progress.json", wordApp:"riho.html" },
 };
+const BUILD = "2026-08-22 a";   // 更新のたびに変える。画面の下に出るので、届いたか確かめられる
 const USER_KEY = "saho-reading-user";
 const USER = (() => {
   // ① URL の ?user= がいちばん強い
@@ -13035,7 +13040,7 @@ function renderSync() {
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <button class="btn ghost" onclick="location.href='${ME.wordApp}'">🐰 ${ME.name} English Word（単語）</button>
       </div>
-      <div class="hint mt">この画面は <b>${ME.name} 専用</b>です。記録はほかの人とは完全に分かれています。</div>
+      <div class="hint mt">この画面は <b>${ME.name} 専用</b>です。記録はほかの人とは完全に分かれています。<br>ばんごう <b>${BUILD}</b>（この番号が新しくなっていれば、更新がとどいています）</div>
     </div>`;
   window.scrollTo(0, 0);
 }
