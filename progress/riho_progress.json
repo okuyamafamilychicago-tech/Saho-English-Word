@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:50:47.204Z",
+  "exportedAt": "2026-08-22T06:54:26.627Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7790,6 +7790,16 @@
         "total": 25,
         "mode": "review",
         "scope": "バッチ8",
+        "style": "flash",
+        "found": 0
+      },
+      {
+        "date": "2026-08-22",
+        "climbed": 0,
+        "score": 18,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ7",
         "style": "flash",
         "found": 0
       }
@@ -17781,9 +17791,11 @@
       "prejudice",
       "preliminary",
       "chill",
-      "pedestrian"
+      "pedestrian",
+      "prevail",
+      "erect"
     ],
-    "reviewDone": 94,
+    "reviewDone": 95,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17794,11 +17806,6 @@
       },
       {
         "word": "inhabit",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "prevail",
         "at": "2026-08-22",
         "count": 4
       },
@@ -17884,6 +17891,11 @@
       },
       {
         "word": "dignity",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "tease",
         "at": "2026-08-22",
         "count": 1
       }
