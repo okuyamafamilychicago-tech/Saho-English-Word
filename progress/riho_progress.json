@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-21T05:46:43.059Z",
+  "exportedAt": "2026-08-22T06:37:47.048Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17644,7 +17644,6 @@
       "complement",
       "pledge",
       "lessen",
-      "speculate",
       "trivial",
       "reign",
       "discriminate",
@@ -17659,7 +17658,6 @@
       "perish",
       "famine",
       "absurd",
-      "ample",
       "indulge",
       "dread",
       "irresistible",
@@ -17731,7 +17729,13 @@
       "accurate",
       "convert",
       "secure",
-      "decline"
+      "decline",
+      "utter",
+      "conserve",
+      "vain",
+      "riot",
+      "abnormal",
+      "precaution"
     ],
     "reviewDone": 90,
     "schemaVersion": 2,
@@ -17768,13 +17772,28 @@
         "count": 2
       },
       {
-        "word": "vain",
+        "word": "apparently",
         "at": "2026-08-21",
         "count": 1
       },
       {
-        "word": "apparently",
-        "at": "2026-08-21",
+        "word": "inflict",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "ample",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "deliberate",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "speculate",
+        "at": "2026-08-22",
         "count": 1
       }
     ]
