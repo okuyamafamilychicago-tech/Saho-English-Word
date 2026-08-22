@@ -150,6 +150,10 @@
   .lv-badge svg { width: 36px; height: 36px; }
   .lv-main { flex: 1; min-width: 0; }
   .lv-lex { font-size: 0.62rem; font-weight: 400; color: #fff; background: var(--berry); border-radius: 999px; padding: 1px 9px; display: inline-block; }
+  .lv-rank, .lv-gen { font-size: 0.58rem; font-weight: 400; border-radius: 999px; padding: 1px 8px;
+    display: inline-block; margin-left: 4px; white-space: nowrap; }
+  .lv-rank { color: var(--teal); background: var(--teal-soft); }
+  .lv-gen  { color: var(--coral-deep); background: var(--coral-soft); }
   .lv-title { font-weight: 500; font-size: 0.86rem; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .lv-sub { font-size: 0.64rem; color: var(--ink-soft); font-weight: 300; }
   .lv-right { flex: none; text-align: right; }
@@ -12571,9 +12575,9 @@ const lsDel = k => { try { localStorage.removeItem(k); } catch (e) {} };
    これより下の帯は、はじめから星座を獲得ずみ（CLEAR）としてあつかい、
    「読んだ本数 / 全体」の数え方からも外します。読みたければ読めます。 */
 const USERS = {
-  saho: { name:"Saho", mark:"✦", key:"saho-reading-v1", startLex: 850,
+  saho: { name:"Saho", mark:"✦", key:"saho-reading-v1", startLex: 850, grade: 3,
           tokenKey:"vocabTrail_gh_token",      ghPath:"progress/reading_progress.json",      wordApp:"index.html" },
-  riho: { name:"Riho", mark:"✧", key:"riho-reading-v1", startLex: 1000,
+  riho: { name:"Riho", mark:"✧", key:"riho-reading-v1", startLex: 1000, grade: 6,
           tokenKey:"vocabTrail_riho_gh_token", ghPath:"progress/riho_reading_progress.json", wordApp:"riho.html" },
 };
 const USER_KEY = "saho-reading-user";
@@ -12590,6 +12594,66 @@ const USER = (() => {
   return USERS[saved] ? saved : "saho";
 })();
 const ME = USERS[USER];
+
+/* =====================================================================
+   アメリカのネイティブの読解力（Lexile）の学年ごとの分布
+   MetaMetrics が公表している「学年べつの標準的な読み手のレンジ」
+   （25パーセンタイル〜75パーセンタイル）をもとにした目安。
+   これを正規分布とみなして、ある Lexile が学年の中でどのあたりかを出す。
+   ※ あくまで目安。学校のテストの結果とは別物。
+   ===================================================================== */
+const GRADE_NORMS = {
+  1:[165,570],   2:[425,795],   3:[645,985],   4:[850,1080],
+  5:[950,1155],  6:[1030,1215], 7:[1095,1265], 8:[1155,1310],
+  9:[1205,1355], 10:[1250,1390], 11:[1295,1425], 12:[1295,1425],
+};
+const gradeMid = g => (GRADE_NORMS[g][0] + GRADE_NORMS[g][1]) / 2;
+const gradeSd  = g => (GRADE_NORMS[g][1] - GRADE_NORMS[g][0]) / 1.349;   // IQR から標準偏差へ
+
+/* 正規分布の累積（Zelen & Severo の近似） */
+function normCdf(z) {
+  const t = 1 / (1 + 0.2316419 * Math.abs(z));
+  const d = 0.3989423 * Math.exp(-z * z / 2);
+  const p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
+  return z > 0 ? 1 - p : p;
+}
+/* その Lexile が、学年 g の中で下から何％の位置か */
+const pctInGrade = (lex, g) => Math.round(normCdf((lex - gradeMid(g)) / gradeSd(g)) * 1000) / 10;
+
+/* ① 自分の学年の中でどのくらいか */
+function rankInMyGrade(lex) {
+  const p = pctInGrade(lex, ME.grade);
+  if (p >= 99) return "上位1%";
+  if (p >= 95) return "上位5%";
+  if (p >= 90) return "上位10%";
+  if (p >= 80) return "上位20%";
+  if (p >= 65) return "平均より上";
+  if (p >= 35) return "平均くらい";
+  if (p >= 20) return "平均より下";
+  if (p >= 10) return "下位20%";
+  return "下位10%";
+}
+/* ② 一般には何年生あたりの読解力か */
+function gradeEquivalent(lex) {
+  // Grade 12 の平均より上なら、いちばん上の学年で表す
+  let best = 12;
+  if (lex < gradeMid(12)) {
+    let diff = Infinity;
+    for (let g = 1; g <= 12; g++) {
+      const d = Math.abs(pctInGrade(lex, g) - 50);
+      if (d < diff) { diff = d; best = g; }
+    }
+  }
+  const p = pctInGrade(lex, best);
+  const name = best >= 11 ? "Grade 11–12" : "Grade " + best;
+  if (p >= 99) return name + " 上位1%";
+  if (p >= 95) return name + " 上位5%";
+  if (p >= 90) return name + " 上位10%";
+  if (p >= 80) return name + " 上位20%";
+  if (p <= 10) return name + " 下位10%";
+  if (p <= 20) return name + " 下位20%";
+  return name + " 平均";
+}
 // Saho と Riho の記録は完全に別。アプリの中から相手の記録へは行けない。
 // （入口は index.html / riho-reading.html それぞれのリンクだけ）
 
@@ -13054,7 +13118,10 @@ function renderHome() {
       <div class="hint" style="margin-bottom:9px">
         1課題は「長文＋問題」（問題数は課題によってちがいます）。
         その Lexile の長文を<b>ぜんぶ読み終えると</b>クリア → 星座がひかって、次の Lexile が開きます。
-        正答率は問いません（まちがえても、読み終えれば1本ぶんです）。
+        正答率は問いません（まちがえても、読み終えれば1本ぶんです）。<br>
+        紫のとなりの2つの札は、その Lexile が<b>アメリカのネイティブの中でどのくらいか</b>の目安です。
+        <span class="lv-rank">緑</span>＝${ME.name}（Grade ${ME.grade}）と同じ学年の中での位置、
+        <span class="lv-gen">赤</span>＝一般には何年生あたりか。
       </div>${START_LEX > 850 ? `
       <div class="hint" style="margin-bottom:9px">
         ${ME.name} は <b>Lexile ${START_LEX} から</b>はじめます。それより下の帯（${ME.mark} 獲得ずみ）の星座は、
@@ -13077,6 +13144,8 @@ function renderHome() {
             <div class="lv-badge">${constSVG(c, 0, { box:46, on:done, all:true })}</div>
             <div class="lv-main">
               <span class="lv-lex">Lexile ${c.lex}–${c.lex+50}</span>
+              <span class="lv-rank">${ME.name} の学年で ${rankInMyGrade(c.lex + 25)}</span>
+              <span class="lv-gen">${gradeEquivalent(c.lex + 25)}</span>
               <div class="lv-title">${title}</div>
               <div class="lv-sub">${c.icon} ${c.name}${sub ? "・" + sub : ""}</div>
             </div>
