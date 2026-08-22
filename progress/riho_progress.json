@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:43:13.883Z",
+  "exportedAt": "2026-08-22T06:45:25.670Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7770,6 +7770,16 @@
         "total": 25,
         "mode": "review",
         "scope": "バッチ8",
+        "style": "flash",
+        "found": 0
+      },
+      {
+        "date": "2026-08-22",
+        "climbed": 0,
+        "score": 3,
+        "total": 14,
+        "mode": "review",
+        "scope": "まちがえ集中",
         "style": "flash",
         "found": 0
       }
@@ -17557,7 +17567,6 @@
       "predecessor",
       "console",
       "raid",
-      "warrant",
       "reassure",
       "amend",
       "traitor",
@@ -17665,7 +17674,6 @@
       "perish",
       "famine",
       "absurd",
-      "indulge",
       "dread",
       "irresistible",
       "hardship",
@@ -17747,9 +17755,10 @@
       "speculate",
       "eternal",
       "apparently",
-      "textile"
+      "textile",
+      "stroll"
     ],
-    "reviewDone": 92,
+    "reviewDone": 93,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17776,37 +17785,47 @@
       {
         "word": "inflict",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "ample",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "deliberate",
         "at": "2026-08-22",
-        "count": 3
+        "count": 4
       },
       {
         "word": "lessen",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "conceal",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "reap",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
       },
       {
         "word": "complement",
         "at": "2026-08-22",
-        "count": 2
+        "count": 3
+      },
+      {
+        "word": "warrant",
+        "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "indulge",
+        "at": "2026-08-22",
+        "count": 1
       }
     ]
   }
