@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:41:46.767Z",
+  "exportedAt": "2026-08-22T06:41:59.736Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7762,6 +7762,16 @@
         "score": 7,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-08-22",
+        "climbed": 0,
+        "score": 18,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ8",
+        "style": "flash",
+        "found": 0
       }
     ],
     "srs": {
@@ -17736,7 +17746,7 @@
       "souvenir",
       "speculate"
     ],
-    "reviewDone": 91,
+    "reviewDone": 92,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
