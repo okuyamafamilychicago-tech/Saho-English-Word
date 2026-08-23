@@ -3480,7 +3480,10 @@ function pickReviewWords(batchIdx) {
   return pool.filter(w => !isNew(w.word) || masteredSet.has(w.word));
 }
 
-const REVIEW_BATCH_SIZE = 25;   // 復習: 1セッションの語数（1語=2問なので 合計 約50問）
+// 復習の 出題数
+//  ・バッチ / まちがえ集中 … 上限なし（絞り込み方式: 100語 → まちがい 全部 → その まちがい 全部 …）
+//  ・全部から          … サンプリングなので 上限あり
+const REVIEW_ALL_CAP = 50;      // 「全部から」1セッションの 語数上限
 
 // バッチ選択モーダル: 全部 or バッチごとに 復習を 始める
 let _reviewPickerStyle = "quiz";  // "quiz" or "flash"
@@ -3496,7 +3499,9 @@ function _rs() { return _reviewPickerStyle; }
 function openReviewBatchPicker() {
   const batches = getBatches();
   const rows = [];
-  const wrongCount = Array.isArray(state.reviewWrong) ? state.reviewWrong.length : 0;
+  if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
+  const rwSet = new Set(state.reviewWrong.map(t => t.word));
+  const wrongCount = state.reviewWrong.length;
   // ❌ 復習で間違えた語だけ
   if (wrongCount > 0) {
     rows.push(`
@@ -3536,12 +3541,21 @@ function openReviewBatchPicker() {
       : got
       ? `<div style="font-size:0.68rem; color:var(--berry); font-weight:800; margin-top:2px">${h.emoji} ${h.name} げっと！</div>`
       : `<div style="font-size:0.68rem; color:var(--berry); font-weight:700; margin-top:2px">🌟 復習クリア ${rp.ok}/${rp.total} — あと ${rp.total - rp.ok}語 で なかま</div>`;
+    // 🔁 つぎの 復習で 何語 出るか（絞り込み方式）
+    const learned = pickReviewWords(i);
+    const wrongN  = learned.filter(w => rwSet.has(w.word)).length;
+    const nextLine = learned.length === 0
+      ? `<div style="font-size:0.68rem; color:var(--ink-soft); font-weight:700; margin-top:2px">つぎ: まだ 学んだ語が ないよ</div>`
+      : wrongN > 0
+      ? `<div style="font-size:0.68rem; color:var(--coral); font-weight:800; margin-top:2px">🔁 つぎ: まちがい <b>${wrongN}語</b></div>`
+      : `<div style="font-size:0.68rem; color:var(--teal); font-weight:800; margin-top:2px">🔁 つぎ: ぜんぶ <b>${learned.length}語</b></div>`;
     rows.push(`
       <button class="btn ghost small" style="width:100%; text-align:left; margin-bottom:6px; padding:10px 12px; line-height:1.3"
         onclick="closeReviewPicker(); startReview(${i}, _rs())">
         <div style="font-weight:800">${label}</div>
         <div style="font-size:0.72rem; color:var(--ink-soft); font-weight:600; margin-top:2px">${sub}</div>
         <div style="font-size:0.68rem; color:var(--teal); font-weight:700; margin-top:2px">覚えた ${p.mastered}/${p.total} (${p.pct}%)</div>
+        ${nextLine}
         ${hiddenLine}
       </button>
     `);
@@ -3557,9 +3571,10 @@ function openReviewBatchPicker() {
         <button data-style="flash" onclick="setReviewStyle('flash')" style="flex:1; padding:8px 10px; border:none; border-radius:9px; font-weight:800; font-size:0.82rem; cursor:pointer; background:var(--cream); color:var(--ink-soft)">🃏 フラッシュ (自分で)</button>
       </div>
       <p style="font-size:0.72rem; color:var(--ink-soft); margin:0 0 10px 0; line-height:1.5">
-        <b>クイズ</b>: 各語 2問 (意味あて + 単語あて/空欄うめ)。<br>
+        <b>クイズ</b>: 1語1問。意味あて / 単語あて / 空欄うめ から ランダム。<br>
         <b>フラッシュ</b>: 単語 → 意味をみる → 自分で ✅ / ❌。<br>
-        どちらも まちがい は 復習リストに (テスト・まなぶ には 影響なし)。
+        🔁 バッチは <b>1周目 = ぜんぶ</b> → <b>2周目 = まちがいだけ</b> → その まちがいだけ…と せまくなります。<br>
+        まちがい は 復習リストに (テスト・まなぶ には 影響なし)。
       </p>
       ${rows.join("")}
       <div style="text-align:center; margin-top:10px">
@@ -3600,32 +3615,42 @@ function startReview(batchIdx, style) {
     return;
   }
   const reviewStyle = (style === "flash") ? "flash" : "quiz";
-  // 優先順: 復習で間違えた reviewWrong 語 → その他 学んだ 語
   const reviewWrongSet = new Set(state.reviewWrong.map(t => t.word));
-  const wrongFirst = allWords.filter(w => reviewWrongSet.has(w.word));
-  const others = shuffle(allWords.filter(w => !reviewWrongSet.has(w.word)));
-  const combined = [...wrongFirst, ...others].slice(0, REVIEW_BATCH_SIZE);
+
+  // 出題する語を きめる
+  let combined, roundNote = "";
+  if (typeof batchIdx === "number") {
+    // 🔁 バッチ: 絞り込み方式
+    //    まちがいが 0 → そのバッチ 全部（1周目）
+    //    まちがいが ある → その まちがい 全部（2周目 以降）
+    const wrong = allWords.filter(w => reviewWrongSet.has(w.word));
+    if (wrong.length > 0) { combined = shuffle(wrong);    roundNote = `まちがい ${wrong.length}語`; }
+    else                  { combined = shuffle(allWords); roundNote = `ぜんぶ ${allWords.length}語`; }
+  } else if (batchIdx === "wrongOnly") {
+    // ❌ まちがえ集中: たまった まちがい 全部
+    combined = shuffle(allWords);
+  } else {
+    // 🌍 全部から: まちがい 優先 ＋ 残りシャッフル、上限あり
+    const wrong  = shuffle(allWords.filter(w =>  reviewWrongSet.has(w.word)));
+    const others = shuffle(allWords.filter(w => !reviewWrongSet.has(w.word)));
+    combined = [...wrong, ...others].slice(0, REVIEW_ALL_CAP);
+  }
+
   const scopeBase = batchIdx === "wrongOnly" ? "まちがえ集中"
                   : (typeof batchIdx === "number") ? `バッチ${batchIdx + 1}`
                   : "全部";
-  const scopeLabel = scopeBase + (reviewStyle === "flash" ? " · 🃏フラッシュ" : "");
-  let queue;
-  if (reviewStyle === "flash") {
-    // フラッシュ: 1語 = 1カード (自己採点)
-    const items = combined.map(w => ({ w, type: "flashcard" }));
-    queue = shuffle(items);
-  } else {
-    // クイズ: 1語 = 2問 (意味あて必須 + 単語あて/空欄うめ)
-    const items = [];
-    for (const w of combined) {
-      items.push({ w, type: "wordToDef" });
-      const secondary = ["defToWord"];
-      if (w.example && w.example.includes("___")) secondary.push("fillBlank");
-      const type = secondary[Math.floor(Math.random() * secondary.length)];
-      items.push({ w, type });
-    }
-    queue = shuffleNoAdjacent(items, e => e.w.word);
-  }
+  const scopeLabel = scopeBase
+                   + (roundNote ? ` · ${roundNote}` : "")
+                   + (reviewStyle === "flash" ? " · 🃏フラッシュ" : "");
+
+  // 1語 = 1問。形式は 意味あて / 単語あて / 空欄うめ から ランダム
+  const items = combined.map(w => {
+    if (reviewStyle === "flash") return { w, type: "flashcard" };
+    const formats = ["wordToDef", "defToWord"];
+    if (w.example && w.example.includes("___")) formats.push("fillBlank");
+    return { w, type: formats[Math.floor(Math.random() * formats.length)] };
+  });
+  const queue = shuffle(items);
   review = {
     queue,
     total: queue.length,
