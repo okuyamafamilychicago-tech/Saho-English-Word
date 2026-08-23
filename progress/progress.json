@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-23T15:27:32.083Z",
+  "exportedAt": "2026-08-23T19:03:51.886Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3296,6 +3296,16 @@
         "mode": "review",
         "scope": "バッチ2",
         "style": "flash",
+        "found": 0
+      },
+      {
+        "date": "2026-08-23",
+        "climbed": 0,
+        "score": 24,
+        "total": 30,
+        "mode": "review",
+        "scope": "まちがえ集中",
+        "style": "quiz",
         "found": 0
       }
     ],
@@ -7270,7 +7280,7 @@
       "admission",
       "extensive"
     ],
-    "reviewDone": 41,
+    "reviewDone": 42,
     "schemaVersion": 2,
     "reviewWrong": [
       {
