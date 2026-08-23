@@ -1244,6 +1244,7 @@ const defaultState = {
   svgTheme: "forest",  // "forest" | "ac" — ロードマップのテーマ
   hiddenFound: [],     // 🌟 発見した 隠れキャラの index（= バッチ index）
   reviewOk: [],        // 🔄 復習で 正解した 単語（間違えると 外れる）
+  reviewRound: {},     // 🔁 バッチごとの 周回数 { "0": 3, "2": 1, ... }。まちがい 0 で 1周目に もどる
   reviewDone: 0,       // 復習を コンプリートした 回数
   schemaVersion: 2,
 };
@@ -2942,7 +2943,7 @@ function renderHistory() {
         const barCol = isRev ? "background:var(--berry)" : "";
         // 復習の 行は 出題範囲と 形式、なかま発見を 出す
         const note = isRev
-          ? `<span class="hist-climb" style="color:var(--berry)">${r.style === "flash" ? "🃏" : "🎯"} ${esc(r.scope || "復習")}${r.found ? ` ・ 🌟${r.found}体` : ""}</span>`
+          ? `<span class="hist-climb" style="color:var(--berry)">${r.style === "flash" ? "🃏" : "🎯"} ${esc(r.scope || "復習")}${r.round ? ` ・ ${r.round}周目` : ""}${r.found ? ` ・ 🌟${r.found}体` : ""}</span>`
           : (r.climbed ? `<span class="hist-climb">+${r.climbed}語 覚えた</span>` : "");
         return `<div class="hist-row">
           <span class="hist-date">${isRev ? "🔄" : "📝"} ${r.date}</span>
@@ -3544,11 +3545,12 @@ function openReviewBatchPicker() {
     // 🔁 つぎの 復習で 何語 出るか（絞り込み方式）
     const learned = pickReviewWords(i);
     const wrongN  = learned.filter(w => rwSet.has(w.word)).length;
+    const rd = (state.reviewRound && state.reviewRound[String(i)]) || 1;
     const nextLine = learned.length === 0
       ? `<div style="font-size:0.68rem; color:var(--ink-soft); font-weight:700; margin-top:2px">つぎ: まだ 学んだ語が ないよ</div>`
       : wrongN > 0
-      ? `<div style="font-size:0.68rem; color:var(--coral); font-weight:800; margin-top:2px">🔁 つぎ: まちがい <b>${wrongN}語</b></div>`
-      : `<div style="font-size:0.68rem; color:var(--teal); font-weight:800; margin-top:2px">🔁 つぎ: ぜんぶ <b>${learned.length}語</b></div>`;
+      ? `<div style="font-size:0.68rem; color:var(--coral); font-weight:800; margin-top:2px">🔁 つぎ: <b>${Math.max(2, rd)}周目</b> — まちがい <b>${wrongN}語</b></div>`
+      : `<div style="font-size:0.68rem; color:var(--teal); font-weight:800; margin-top:2px">🔁 つぎ: <b>1周目</b> — ぜんぶ <b>${learned.length}語</b></div>`;
     rows.push(`
       <button class="btn ghost small" style="width:100%; text-align:left; margin-bottom:6px; padding:10px 12px; line-height:1.3"
         onclick="closeReviewPicker(); startReview(${i}, _rs())">
@@ -3618,14 +3620,24 @@ function startReview(batchIdx, style) {
   const reviewWrongSet = new Set(state.reviewWrong.map(t => t.word));
 
   // 出題する語を きめる
-  let combined, roundNote = "";
+  let combined, roundNote = "", round = null, roundKey = null;
   if (typeof batchIdx === "number") {
-    // 🔁 バッチ: 絞り込み方式
-    //    まちがいが 0 → そのバッチ 全部（1周目）
-    //    まちがいが ある → その まちがい 全部（2周目 以降）
+    // 🔁 バッチ: 絞り込み方式（周回数を カウント）
+    //    まちがいが 0 → そのバッチ 全部（1周目に もどる）
+    //    まちがいが ある → その まちがい 全部（2周目、3周目 …）
+    if (!state.reviewRound || typeof state.reviewRound !== "object") state.reviewRound = {};
+    roundKey = String(batchIdx);
     const wrong = allWords.filter(w => reviewWrongSet.has(w.word));
-    if (wrong.length > 0) { combined = shuffle(wrong);    roundNote = `まちがい ${wrong.length}語`; }
-    else                  { combined = shuffle(allWords); roundNote = `ぜんぶ ${allWords.length}語`; }
+    if (wrong.length > 0) {
+      round = Math.max(2, state.reviewRound[roundKey] || 2);
+      combined = shuffle(wrong);
+      roundNote = `${round}周目 · まちがい ${wrong.length}語`;
+    } else {
+      round = 1;
+      state.reviewRound[roundKey] = 1;
+      combined = shuffle(allWords);
+      roundNote = `1周目 · ぜんぶ ${allWords.length}語`;
+    }
   } else if (batchIdx === "wrongOnly") {
     // ❌ まちがえ集中: たまった まちがい 全部
     combined = shuffle(allWords);
@@ -3662,6 +3674,8 @@ function startReview(batchIdx, style) {
     current: null,
     scope: scopeLabel,
     scopeBase,
+    round,
+    roundKey,
     batchIdx: (typeof batchIdx === "number") ? batchIdx : null,
     mode: batchIdx === "wrongOnly" ? "wrongOnly" : (typeof batchIdx === "number" ? "batch" : "all"),
     style: reviewStyle,
@@ -3866,12 +3880,25 @@ function finishReview() {
   const newly = checkHiddenUnlocks();
   const foundCount = hiddenFound().length;
 
+  // 🔁 周回数を すすめる（まちがいが 0 に なったら 1周目に もどる）
+  let nextRound = null, clearedRound = false;
+  if (review.roundKey != null) {
+    if (!state.reviewRound || typeof state.reviewRound !== "object") state.reviewRound = {};
+    const rwSet2 = new Set(state.reviewWrong.map(t => t.word));
+    const stillWrong = pickReviewWords(Number(review.roundKey))
+      .filter(w => rwSet2.has(w.word)).length;
+    clearedRound = stillWrong === 0;
+    nextRound = clearedRound ? 1 : (review.round || 1) + 1;
+    state.reviewRound[review.roundKey] = nextRound;
+  }
+
   // 📊 記録に 残す（mode:"review"）。mastered・testWrong・SRS・streak には 触らない。
   state.history.push({
     date: today(), climbed: 0, score: correct, total,
     mode: "review",
     scope: review.scopeBase || review.scope || "",
     style: review.style || "quiz",
+    round: review.round || null,
     found: newly.length,
   });
   saveState();
@@ -3916,11 +3943,23 @@ function finishReview() {
          　いま <b>${foundCount} / ${HIDDEN_CAST.length}</b>
        </div>`;
 
+  // 🔁 周回の 案内（バッチ復習のときだけ）
+  const roundBlock = review.round == null ? "" : clearedRound
+    ? `<div style="background:var(--teal-soft); border:1.5px solid var(--teal); border-radius:14px; padding:11px 13px; margin:12px 0; text-align:center; font-size:0.82rem; font-weight:800; color:var(--teal)">
+         🔁 ${review.round}周目で <b>まちがい ゼロ</b>！ ${esc(review.scopeBase)} は クリア 🎉<br>
+         <small style="font-weight:700; font-size:0.72rem; color:var(--ink-soft)">つぎは また <b>1周目（ぜんぶ）</b> から</small>
+       </div>`
+    : `<div style="background:var(--coral-soft); border:1px solid #f0c4bb; border-radius:14px; padding:11px 13px; margin:12px 0; text-align:center; font-size:0.82rem; font-weight:800; color:var(--coral-deep)">
+         🔁 ${review.round}周目 おわり — つぎは <b>${nextRound}周目</b><br>
+         <small style="font-weight:700; font-size:0.72rem; color:var(--ink-soft)">まちがい <b>${wrongCount}語</b> だけ 出ます</small>
+       </div>`;
+
   app.innerHTML = `
     <div class="card result">
       <div class="stars-burst">${stars}</div>
       <h2>🔄 復習 完了！— ${cheer}</h2>
       <p class="summary">${total}問中 ${correct}問 正解（${acc}%）</p>
+      ${roundBlock}
       ${hiddenBlock}
       ${wrongCount ? `<div style="background:var(--berry-soft); border:1px solid #e6c4d4; border-radius:14px; padding:12px 14px; margin:14px 0; color:var(--berry); font-weight:800; font-size:0.94rem">
         ❌ ${wrongCount}語を <b>復習リスト</b> に 記録しました。<br>
