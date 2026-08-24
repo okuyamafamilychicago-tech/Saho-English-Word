@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-24T17:04:14.294Z",
+  "exportedAt": "2026-08-24T17:14:31.101Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7801,6 +7801,17 @@
         "mode": "review",
         "scope": "バッチ7",
         "style": "flash",
+        "found": 0
+      },
+      {
+        "date": "2026-08-24",
+        "climbed": 0,
+        "score": 9,
+        "total": 9,
+        "mode": "review",
+        "scope": "バッチ8",
+        "style": "quiz",
+        "round": 2,
         "found": 0
       }
     ],
@@ -17677,7 +17688,6 @@
       "fetch",
       "creep",
       "outgoing",
-      "clash",
       "deceive",
       "pledge",
       "trivial",
@@ -17802,10 +17812,21 @@
       "warrant",
       "inflict",
       "conceal",
-      "ample"
+      "ample",
+      "tidy",
+      "corrupt",
+      "invaluable",
+      "imaginary",
+      "ornament",
+      "pressing",
+      "anecdote",
+      "hierarchy",
+      "rubbish"
     ],
-    "reviewRound": {},
-    "reviewDone": 95,
+    "reviewRound": {
+      "7": 1
+    },
+    "reviewDone": 96,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17862,6 +17883,16 @@
       {
         "word": "tease",
         "at": "2026-08-22",
+        "count": 1
+      },
+      {
+        "word": "condemn",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "clash",
+        "at": "2026-08-24",
         "count": 1
       }
     ]
