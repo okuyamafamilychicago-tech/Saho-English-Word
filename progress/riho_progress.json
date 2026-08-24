@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-22T06:54:32.424Z",
+  "exportedAt": "2026-08-24T17:04:14.294Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17793,8 +17793,18 @@
       "chill",
       "pedestrian",
       "prevail",
-      "erect"
+      "erect",
+      "indulge",
+      "reap",
+      "lessen",
+      "deliberate",
+      "complement",
+      "warrant",
+      "inflict",
+      "conceal",
+      "ample"
     ],
+    "reviewRound": {},
     "reviewDone": 95,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
@@ -17813,51 +17823,6 @@
         "word": "rigid",
         "at": "2026-08-22",
         "count": 4
-      },
-      {
-        "word": "inflict",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "ample",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "deliberate",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "lessen",
-        "at": "2026-08-22",
-        "count": 3
-      },
-      {
-        "word": "conceal",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "reap",
-        "at": "2026-08-22",
-        "count": 3
-      },
-      {
-        "word": "complement",
-        "at": "2026-08-22",
-        "count": 3
-      },
-      {
-        "word": "warrant",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "indulge",
-        "at": "2026-08-22",
-        "count": 1
       },
       {
         "word": "hence",
