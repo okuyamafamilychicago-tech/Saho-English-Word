@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-24T05:09:28.076Z",
+  "exportedAt": "2026-08-24T05:09:59.101Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7278,41 +7278,25 @@
       "proceed",
       "artificial",
       "admission",
-      "extensive"
+      "extensive",
+      "distinguish",
+      "external",
+      "conventional",
+      "resist"
     ],
     "reviewRound": {},
     "reviewDone": 42,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "resist",
-        "at": "2026-08-23",
-        "count": 6
-      },
-      {
-        "word": "external",
-        "at": "2026-08-23",
-        "count": 4
-      },
-      {
-        "word": "conventional",
-        "at": "2026-08-23",
-        "count": 4
-      },
-      {
-        "word": "distinguish",
-        "at": "2026-08-23",
-        "count": 4
-      },
-      {
         "word": "impose",
-        "at": "2026-08-23",
-        "count": 2
+        "at": "2026-08-24",
+        "count": 3
       },
       {
         "word": "alter",
-        "at": "2026-08-23",
-        "count": 2
+        "at": "2026-08-24",
+        "count": 3
       }
     ]
   }
