@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-24T05:10:32.926Z",
+  "exportedAt": "2026-08-24T16:26:19.202Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7223,96 +7223,275 @@
       "compete",
       "shelter",
       "evaluate",
-      "contemporary",
       "rescue",
-      "discipline",
       "confuse",
-      "manufacture",
-      "summary",
-      "proportion",
       "enormous",
-      "vital",
       "qualify",
       "consume",
-      "breed",
       "pile",
-      "abuse",
-      "inevitable",
       "quit",
       "routine",
       "estimate",
       "edit",
       "odd",
       "greet",
-      "logic",
       "assign",
-      "transaction",
-      "relevant",
       "complicated",
       "reverse",
       "considerable",
-      "assure",
       "transform",
       "eliminate",
       "outstanding",
-      "crucial",
       "rear",
-      "fundamental",
-      "reform",
       "intense",
       "era",
       "flexible",
       "bow",
-      "phase",
-      "prospect",
-      "emphasize",
-      "casual",
       "illustrate",
       "transition",
       "ray",
       "spare",
       "grab",
       "accomplish",
-      "consistent",
       "poverty",
       "primarily",
       "grateful",
       "incredible",
       "ingredient",
-      "ban",
       "stupid",
       "nevertheless",
-      "objective",
       "remarkable",
       "numerous",
-      "revenue",
-      "congress",
-      "slave",
-      "frequently",
       "differ",
       "elementary",
-      "exceed",
-      "merit",
-      "substance",
-      "vice",
-      "intention",
-      "interpret",
       "proceed",
-      "artificial",
       "admission",
-      "extensive",
       "distinguish",
       "external",
-      "conventional",
       "resist",
-      "impose",
-      "alter"
+      "alter",
+      "enterprise",
+      "plot",
+      "curious",
+      "draft",
+      "profession",
+      "defeat",
+      "grain",
+      "heal",
+      "scratch",
+      "barely"
     ],
     "reviewRound": {
       "1": 1
     },
     "reviewDone": 44,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "fundamental",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "casual",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "crucial",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "emphasize",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "logic",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "artificial",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "revenue",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "merit",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "objective",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "inevitable",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "reform",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "congress",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "impose",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "frequently",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "abuse",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "vice",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "transaction",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "intention",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "slave",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "interpret",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "summary",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "modify",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "contemporary",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "substance",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "consistent",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "extensive",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "prospect",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "proportion",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "exceed",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "drag",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "vital",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "manufacture",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "conventional",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "distribute",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "discipline",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "ban",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "assure",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "phase",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "breed",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "relevant",
+        "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "sponsor",
+        "at": "2026-08-24",
+        "count": 1
+      }
+    ]
   }
 }
