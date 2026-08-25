@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-25T14:47:30.198Z",
+  "exportedAt": "2026-08-25T14:48:01.210Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7834,6 +7834,17 @@
         "scope": "バッチ8",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-08-25",
+        "climbed": 0,
+        "score": 9,
+        "total": 12,
+        "mode": "review",
+        "scope": "まちがえ集中",
+        "style": "quiz",
+        "round": null,
         "found": 0
       }
     ],
@@ -17858,14 +17869,14 @@
     "reviewRound": {
       "7": 3
     },
-    "reviewDone": 98,
+    "reviewDone": 99,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "render",
         "at": "2026-08-25",
-        "count": 2
+        "count": 3
       },
       {
         "word": "consensus",
@@ -17875,7 +17886,7 @@
       {
         "word": "condemn",
         "at": "2026-08-25",
-        "count": 3
+        "count": 4
       }
     ]
   }
