@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-25T14:45:27.231Z",
+  "exportedAt": "2026-08-25T14:47:30.198Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7823,6 +7823,17 @@
         "scope": "バッチ8",
         "style": "quiz",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-08-25",
+        "climbed": 0,
+        "score": 1,
+        "total": 2,
+        "mode": "review",
+        "scope": "バッチ8",
+        "style": "quiz",
+        "round": 2,
         "found": 0
       }
     ],
@@ -17833,74 +17844,38 @@
       "anecdote",
       "hierarchy",
       "rubbish",
-      "clash"
+      "clash",
+      "hence",
+      "realm",
+      "tease",
+      "rational",
+      "inhabit",
+      "dignity",
+      "rigid",
+      "adhere",
+      "deed"
     ],
     "reviewRound": {
-      "7": 2
+      "7": 3
     },
-    "reviewDone": 97,
+    "reviewDone": 98,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "rational",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "inhabit",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "rigid",
-        "at": "2026-08-22",
-        "count": 4
-      },
-      {
-        "word": "hence",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
         "word": "render",
-        "at": "2026-08-22",
-        "count": 1
+        "at": "2026-08-25",
+        "count": 2
       },
       {
         "word": "consensus",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "realm",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "adhere",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "deed",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "dignity",
-        "at": "2026-08-22",
-        "count": 1
-      },
-      {
-        "word": "tease",
-        "at": "2026-08-22",
-        "count": 1
+        "at": "2026-08-25",
+        "count": 2
       },
       {
         "word": "condemn",
         "at": "2026-08-25",
-        "count": 2
+        "count": 3
       }
     ]
   }
