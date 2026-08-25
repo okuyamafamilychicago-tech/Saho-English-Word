@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-25T14:48:01.210Z",
+  "exportedAt": "2026-08-25T15:10:16.242Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17833,7 +17833,6 @@
       "postpone",
       "prejudice",
       "preliminary",
-      "chill",
       "pedestrian",
       "prevail",
       "erect",
@@ -17864,9 +17863,59 @@
       "dignity",
       "rigid",
       "adhere",
-      "deed"
+      "deed",
+      "exotic",
+      "token",
+      "glow",
+      "hypothesis",
+      "omit",
+      "literacy",
+      "humble",
+      "spacious",
+      "outbreak",
+      "grief",
+      "wicked",
+      "constraint",
+      "aesthetic",
+      "subscribe",
+      "hospitality",
+      "metropolitan",
+      "rotate",
+      "heap",
+      "flourish",
+      "fierce",
+      "primitive",
+      "imitate",
+      "infinite",
+      "ignorant",
+      "brutal",
+      "thereby",
+      "dumb",
+      "inferior",
+      "manuscript",
+      "likelihood",
+      "competent",
+      "enrich",
+      "endeavor",
+      "merchandise",
+      "accelerate",
+      "minimal",
+      "economical",
+      "optimistic",
+      "affection",
+      "verbal",
+      "commute",
+      "formulate",
+      "alternate",
+      "gratitude",
+      "penetrate",
+      "means",
+      "ethical",
+      "compliment",
+      "revive"
     ],
     "reviewRound": {
+      "6": 1,
       "7": 3
     },
     "reviewDone": 99,
@@ -17887,6 +17936,46 @@
         "word": "condemn",
         "at": "2026-08-25",
         "count": 4
+      },
+      {
+        "word": "revenge",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "terrific",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "persist",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "gradual",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "acquaintance",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "rally",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "confine",
+        "at": "2026-08-25",
+        "count": 1
+      },
+      {
+        "word": "chill",
+        "at": "2026-08-25",
+        "count": 1
       }
     ]
   }
