@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-24T16:26:19.202Z",
+  "exportedAt": "2026-08-26T05:20:35.539Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3328,6 +3328,17 @@
         "scope": "バッチ2",
         "style": "quiz",
         "round": 3,
+        "found": 0
+      },
+      {
+        "date": "2026-08-24",
+        "climbed": 0,
+        "score": 59,
+        "total": 100,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "flash",
+        "round": 1,
         "found": 0
       }
     ],
@@ -7279,12 +7290,14 @@
       "grain",
       "heal",
       "scratch",
-      "barely"
+      "barely",
+      "script"
     ],
     "reviewRound": {
-      "1": 1
+      "1": 2,
+      "2": 1
     },
-    "reviewDone": 44,
+    "reviewDone": 45,
     "schemaVersion": 2,
     "reviewWrong": [
       {
