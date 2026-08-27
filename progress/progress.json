@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T14:37:15.804Z",
+  "exportedAt": "2026-08-27T14:37:44.175Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3339,6 +3339,17 @@
         "scope": "バッチ2",
         "style": "flash",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-08-27",
+        "climbed": 0,
+        "score": 0,
+        "total": 4,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "flash",
+        "round": 2,
         "found": 0
       },
       {
@@ -7312,16 +7323,20 @@
       "margin",
       "trace",
       "initially",
-      "ultimate"
+      "ultimate",
+      "urge",
+      "resemble",
+      "generous",
+      "luxury"
     ],
     "reviewRound": {
       "1": 2,
-      "2": 2,
+      "2": 3,
       "3": 1
     },
     "reviewSweep": {
       "2": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       },
       "3": {
@@ -7430,7 +7445,7 @@
         ]
       }
     },
-    "reviewDone": 46,
+    "reviewDone": 47,
     "schemaVersion": 2,
     "reviewWrong": [
       {
@@ -7637,26 +7652,6 @@
         "word": "sponsor",
         "at": "2026-08-24",
         "count": 1
-      },
-      {
-        "word": "resemble",
-        "at": "2026-08-27",
-        "count": 3
-      },
-      {
-        "word": "urge",
-        "at": "2026-08-27",
-        "count": 3
-      },
-      {
-        "word": "generous",
-        "at": "2026-08-27",
-        "count": 3
-      },
-      {
-        "word": "luxury",
-        "at": "2026-08-27",
-        "count": 3
       }
     ]
   }
