@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T15:22:01.100Z",
+  "exportedAt": "2026-08-27T15:23:24.440Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18015,7 +18015,21 @@
       "tolerate",
       "distract",
       "whisper",
-      "vanish"
+      "vanish",
+      "accumulate",
+      "ridiculous",
+      "mercy",
+      "substitute",
+      "narrative",
+      "sensible",
+      "decay",
+      "infect",
+      "assert",
+      "mold",
+      "resign",
+      "profound",
+      "dump",
+      "fatigue"
     ],
     "reviewRound": {
       "0": 1,
@@ -18132,34 +18146,19 @@
         "round": 1,
         "remaining": [
           "bore",
-          "infect",
-          "mold",
-          "sensible",
           "crawl",
           "bleed",
-          "fatigue",
-          "accumulate",
           "conceive",
-          "resign",
           "idle",
           "sorrow",
           "reluctant",
           "stumble",
           "designate",
-          "durable",
-          "narrative",
-          "mercy",
           "compensate",
-          "ridiculous",
           "desperate",
-          "dump",
-          "profound",
           "jealous",
           "frustrate",
-          "substitute",
           "cruel",
-          "decay",
-          "assert",
           "portray",
           "consensus",
           "voyage"
@@ -18249,6 +18248,11 @@
       },
       {
         "word": "voluntary",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "durable",
         "at": "2026-08-27",
         "count": 1
       }
