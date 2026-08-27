@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-25T15:10:16.242Z",
+  "exportedAt": "2026-08-27T15:07:28.982Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7845,6 +7845,17 @@
         "scope": "まちがえ集中",
         "style": "quiz",
         "round": null,
+        "found": 0
+      },
+      {
+        "date": "2026-08-25",
+        "climbed": 0,
+        "score": 92,
+        "total": 100,
+        "mode": "review",
+        "scope": "バッチ7",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -17912,13 +17923,20 @@
       "means",
       "ethical",
       "compliment",
-      "revive"
+      "revive",
+      "condemn"
     ],
     "reviewRound": {
-      "6": 1,
-      "7": 3
+      "6": 2,
+      "7": 2
     },
-    "reviewDone": 99,
+    "reviewSweep": {
+      "7": {
+        "round": 2,
+        "remaining": []
+      }
+    },
+    "reviewDone": 100,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17931,11 +17949,6 @@
         "word": "consensus",
         "at": "2026-08-25",
         "count": 2
-      },
-      {
-        "word": "condemn",
-        "at": "2026-08-25",
-        "count": 4
       },
       {
         "word": "revenge",
