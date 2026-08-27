@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T14:37:54.360Z",
+  "exportedAt": "2026-08-27T14:41:24.320Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7328,18 +7328,47 @@
       "harvest",
       "depart",
       "garbage",
-      "govern",
       "continuous",
       "scare",
       "margin",
       "trace",
-      "initially",
-      "ultimate",
-      "urge",
-      "resemble",
-      "generous",
-      "luxury",
-      "funeral"
+      "funeral",
+      "burst",
+      "aggressive",
+      "wander",
+      "gross",
+      "fare",
+      "interrupt",
+      "strip",
+      "grocery",
+      "limitation",
+      "altogether",
+      "rub",
+      "mess",
+      "fade",
+      "flame",
+      "certificate",
+      "literally",
+      "accuse",
+      "silly",
+      "harsh",
+      "fabric",
+      "quote",
+      "clue",
+      "forgive",
+      "equip",
+      "sweep",
+      "prime",
+      "fancy",
+      "naked",
+      "exclude",
+      "glory",
+      "stir",
+      "cheat",
+      "bold",
+      "neat",
+      "awful",
+      "lean"
     ],
     "reviewRound": {
       "1": 2,
@@ -7349,107 +7378,7 @@
     "reviewSweep": {
       "2": {
         "round": 1,
-        "remaining": [
-          "literally",
-          "abandon",
-          "compose",
-          "keen",
-          "ultimate",
-          "initially",
-          "resort",
-          "continuous",
-          "heritage",
-          "exclude",
-          "fare",
-          "prior",
-          "boundary",
-          "innovation",
-          "sweep",
-          "urge",
-          "welfare",
-          "strain",
-          "resemble",
-          "naked",
-          "leisure",
-          "cheat",
-          "criticize",
-          "legislation",
-          "trace",
-          "burst",
-          "disorder",
-          "lean",
-          "notion",
-          "fame",
-          "mature",
-          "certificate",
-          "grocery",
-          "stir",
-          "silly",
-          "aggressive",
-          "altogether",
-          "reliable",
-          "imply",
-          "wander",
-          "cruise",
-          "equip",
-          "justify",
-          "yield",
-          "withdraw",
-          "gross",
-          "venture",
-          "script",
-          "specialize",
-          "forgive",
-          "sin",
-          "initiative",
-          "awful",
-          "regret",
-          "harvest",
-          "fade",
-          "bind",
-          "strip",
-          "clue",
-          "substantial",
-          "dominate",
-          "extraordinary",
-          "fortunate",
-          "storage",
-          "scare",
-          "harsh",
-          "anxious",
-          "flame",
-          "whereas",
-          "evolve",
-          "luxury",
-          "fancy",
-          "acknowledge",
-          "attribute",
-          "precise",
-          "interrupt",
-          "assess",
-          "asset",
-          "generous",
-          "glory",
-          "prime",
-          "fabric",
-          "suburb",
-          "bold",
-          "mess",
-          "margin",
-          "depart",
-          "prompt",
-          "quote",
-          "govern",
-          "garbage",
-          "valid",
-          "restrict",
-          "rub",
-          "dedicate",
-          "neat",
-          "accuse",
-          "companion",
-          "limitation"
-        ]
+        "remaining": []
       },
       "3": {
         "round": 1,
@@ -7763,6 +7692,281 @@
       {
         "word": "sponsor",
         "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "sin",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "criticize",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "initially",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "reliable",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "resort",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "justify",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "fame",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "imply",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "notion",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "keen",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "restrict",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "companion",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "precise",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "yield",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "fortunate",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "compose",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "initiative",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "regret",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "govern",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "acknowledge",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "bind",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "ultimate",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "evolve",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "urge",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "whereas",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "welfare",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "withdraw",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "innovation",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "venture",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "dedicate",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "extraordinary",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "luxury",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "valid",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "boundary",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "prompt",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "disorder",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "attribute",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "generous",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "storage",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "prior",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "leisure",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "resemble",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "strain",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "specialize",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "substantial",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "heritage",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "legislation",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "cruise",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "dominate",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "anxious",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "suburb",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "assess",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "abandon",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "asset",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "mature",
+        "at": "2026-08-27",
         "count": 1
       }
     ]
