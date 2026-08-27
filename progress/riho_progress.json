@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T15:23:24.440Z",
+  "exportedAt": "2026-08-27T15:24:30.032Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18029,7 +18029,14 @@
       "resign",
       "profound",
       "dump",
-      "fatigue"
+      "fatigue",
+      "bore",
+      "conceive",
+      "compensate",
+      "designate",
+      "jealous",
+      "voyage",
+      "crawl"
     ],
     "reviewRound": {
       "0": 1,
@@ -18145,23 +18152,13 @@
       "5": {
         "round": 1,
         "remaining": [
-          "bore",
-          "crawl",
           "bleed",
-          "conceive",
           "idle",
-          "sorrow",
           "reluctant",
           "stumble",
-          "designate",
-          "compensate",
-          "desperate",
-          "jealous",
           "frustrate",
           "cruel",
-          "portray",
-          "consensus",
-          "voyage"
+          "consensus"
         ]
       },
       "6": {
@@ -18253,6 +18250,21 @@
       },
       {
         "word": "durable",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "portray",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "sorrow",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "desperate",
         "at": "2026-08-27",
         "count": 1
       }
