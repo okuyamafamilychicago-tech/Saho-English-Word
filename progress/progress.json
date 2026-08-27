@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T03:52:44.107Z",
+  "exportedAt": "2026-08-27T03:53:00.801Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7518,22 +7518,22 @@
       {
         "word": "resemble",
         "at": "2026-08-27",
-        "count": 1
+        "count": 2
       },
       {
         "word": "urge",
         "at": "2026-08-27",
-        "count": 1
+        "count": 2
       },
       {
         "word": "generous",
         "at": "2026-08-27",
-        "count": 1
+        "count": 2
       },
       {
         "word": "luxury",
         "at": "2026-08-27",
-        "count": 1
+        "count": 2
       }
     ]
   }
