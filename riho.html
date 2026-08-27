@@ -1244,7 +1244,9 @@ const defaultState = {
   svgTheme: "forest",  // "forest" | "ac" — ロードマップのテーマ
   hiddenFound: [],     // 🌟 発見した 隠れキャラの index（= バッチ index）
   reviewOk: [],        // 🔄 復習で 正解した 単語（間違えると 外れる）
-  reviewRound: {},     // 🔁 バッチごとの 周回数 { "0": 3, "2": 1, ... }。まちがい 0 で 1周目に もどる
+  reviewRound: {},     // 🔁 (旧) バッチごとの 周回数。いまは reviewSweep が 本体
+  reviewSweep: {},     // 🔁 バッチごとの 今の周 { "0": { round: 2, remaining: ["word", ...] } }
+                       //    remaining = その周で まだ 出していない語。途中で やめても のこる
   reviewDone: 0,       // 復習を コンプリートした 回数
   schemaVersion: 2,
 };
@@ -3542,15 +3544,15 @@ function openReviewBatchPicker() {
       : got
       ? `<div style="font-size:0.68rem; color:var(--berry); font-weight:800; margin-top:2px">${h.emoji} ${h.name} げっと！</div>`
       : `<div style="font-size:0.68rem; color:var(--berry); font-weight:700; margin-top:2px">🌟 復習クリア ${rp.ok}/${rp.total} — あと ${rp.total - rp.ok}語 で なかま</div>`;
-    // 🔁 つぎの 復習で 何語 出るか（絞り込み方式）
-    const learned = pickReviewWords(i);
-    const wrongN  = learned.filter(w => rwSet.has(w.word)).length;
-    const rd = (state.reviewRound && state.reviewRound[String(i)]) || 1;
-    const nextLine = learned.length === 0
+    // 🔁 つぎの 復習で 何語 出るか（startReview と 同じ reviewPlan で 決める）
+    const plan = reviewPlan(i);
+    const nextLine = plan.batchTotal === 0
       ? `<div style="font-size:0.68rem; color:var(--ink-soft); font-weight:700; margin-top:2px">つぎ: まだ 学んだ語が ないよ</div>`
-      : wrongN > 0
-      ? `<div style="font-size:0.68rem; color:var(--coral); font-weight:800; margin-top:2px">🔁 つぎ: <b>${Math.max(2, rd)}周目</b> — まちがい <b>${wrongN}語</b></div>`
-      : `<div style="font-size:0.68rem; color:var(--teal); font-weight:800; margin-top:2px">🔁 つぎ: <b>1周目</b> — ぜんぶ <b>${learned.length}語</b></div>`;
+      : plan.resumed
+      ? `<div style="font-size:0.68rem; color:var(--honey); font-weight:800; margin-top:2px">🔁 つぎ: <b>${plan.round}周目の つづき</b> — のこり <b>${plan.words.length}語</b></div>`
+      : plan.round === 1
+      ? `<div style="font-size:0.68rem; color:var(--teal); font-weight:800; margin-top:2px">🔁 つぎ: <b>1周目</b> — ぜんぶ <b>${plan.words.length}語</b></div>`
+      : `<div style="font-size:0.68rem; color:var(--coral); font-weight:800; margin-top:2px">🔁 つぎ: <b>${plan.round}周目</b> — まちがい <b>${plan.words.length}語</b></div>`;
     rows.push(`
       <button class="btn ghost small" style="width:100%; text-align:left; margin-bottom:6px; padding:10px 12px; line-height:1.3"
         onclick="closeReviewPicker(); startReview(${i}, _rs())">
@@ -3609,6 +3611,33 @@ function closeReviewPicker() {
   console.log(`[Migration] ${legacy.length} reviewSource entries を testWrong から reviewWrong に 移動`);
 })();
 
+// 🔁 バッチの「つぎの 復習で 何が 出るか」を 決める（状態は 変えない・読むだけ）
+//   ・その周の のこりが あれば → のこりを 続きから（途中で やめても 消えない）
+//   ・のこり 0 で まちがいが ある → つぎの周（まちがい 全部）
+//   ・のこり 0 で まちがいも 0    → 1周目（ぜんぶ）
+function reviewPlan(batchIdx) {
+  const allWords = pickReviewWords(batchIdx);
+  const learnedSet = new Set(allWords.map(w => w.word));
+  const rwSet = new Set((state.reviewWrong || []).map(t => t.word));
+  const prev = (state.reviewSweep || {})[String(batchIdx)];
+  const prevRound = (prev && prev.round) || 1;
+
+  // 前回の のこり（いま 学習対象で なくなった語は 除く）
+  const remainingSet = new Set(
+    (prev && Array.isArray(prev.remaining) ? prev.remaining : []).filter(w => learnedSet.has(w))
+  );
+  if (remainingSet.size > 0) {
+    return { round: prevRound, words: allWords.filter(w => remainingSet.has(w.word)),
+             resumed: true, batchTotal: allWords.length };
+  }
+  const wrong = allWords.filter(w => rwSet.has(w.word));
+  if (wrong.length > 0) {
+    return { round: Math.max(2, prevRound + 1), words: wrong,
+             resumed: false, batchTotal: allWords.length };
+  }
+  return { round: 1, words: allWords, resumed: false, batchTotal: allWords.length };
+}
+
 function startReview(batchIdx, style) {
   if (!Array.isArray(state.reviewWrong)) state.reviewWrong = [];
   const allWords = pickReviewWords(batchIdx);
@@ -3622,22 +3651,21 @@ function startReview(batchIdx, style) {
   // 出題する語を きめる
   let combined, roundNote = "", round = null, roundKey = null;
   if (typeof batchIdx === "number") {
-    // 🔁 バッチ: 絞り込み方式（周回数を カウント）
-    //    まちがいが 0 → そのバッチ 全部（1周目に もどる）
-    //    まちがいが ある → その まちがい 全部（2周目、3周目 …）
+    // 🔁 バッチ: 絞り込み方式（周回数を カウント・途中で やめても のこりが 残る）
+    if (!state.reviewSweep || typeof state.reviewSweep !== "object") state.reviewSweep = {};
     if (!state.reviewRound || typeof state.reviewRound !== "object") state.reviewRound = {};
     roundKey = String(batchIdx);
-    const wrong = allWords.filter(w => reviewWrongSet.has(w.word));
-    if (wrong.length > 0) {
-      round = Math.max(2, state.reviewRound[roundKey] || 2);
-      combined = shuffle(wrong);
-      roundNote = `${round}周目 · まちがい ${wrong.length}語`;
-    } else {
-      round = 1;
-      state.reviewRound[roundKey] = 1;
-      combined = shuffle(allWords);
-      roundNote = `1周目 · ぜんぶ ${allWords.length}語`;
-    }
+    const plan = reviewPlan(batchIdx);
+    round = plan.round;
+    combined = shuffle(plan.words);
+    // この周の のこり を 記録（途中で やめても 次に 続きが 出る）
+    state.reviewSweep[roundKey] = { round, remaining: plan.words.map(w => w.word) };
+    state.reviewRound[roundKey] = round;
+    roundNote = plan.resumed
+      ? `${round}周目 · のこり ${plan.words.length}語`
+      : round === 1
+      ? `1周目 · ぜんぶ ${plan.words.length}語`
+      : `${round}周目 · まちがい ${plan.words.length}語`;
   } else if (batchIdx === "wrongOnly") {
     // ❌ まちがえ集中: たまった まちがい 全部
     combined = shuffle(allWords);
@@ -3822,7 +3850,7 @@ function answerReview(idx) {
 }
 
 function exitReview() {
-  if (!confirm("復習を やめて ホームに もどりますか？\n（ここまでの まちがい語は 次の 復習 で 出題されます）")) return;
+  if (!confirm("復習を やめて ホームに もどりますか？\n（まだ 出ていない語と まちがえた語は、次の 復習 で つづきから 出ます）")) return;
   finalizeReview();
   review = null;
   renderHome();
@@ -3861,6 +3889,13 @@ function finalizeReview() {
   for (const wordStr of fullyCorrect) {
     if (!state.reviewOk.includes(wordStr)) state.reviewOk.push(wordStr);
   }
+  // ④🔁 この周の「のこり」から 答えた語を 引く
+  //    途中で やめた ときも ここを 通るので、残りは 次のセッションに 持ちこされる
+  if (review.roundKey != null && state.reviewSweep && state.reviewSweep[review.roundKey]) {
+    const answered = new Set([...correctSet, ...wrongSet]);
+    const sw = state.reviewSweep[review.roundKey];
+    sw.remaining = (sw.remaining || []).filter(w => !answered.has(w));
+  }
   saveState();
   autoBackup("review");
 }
@@ -3880,15 +3915,15 @@ function finishReview() {
   const newly = checkHiddenUnlocks();
   const foundCount = hiddenFound().length;
 
-  // 🔁 周回数を すすめる（まちがいが 0 に なったら 1周目に もどる）
-  let nextRound = null, clearedRound = false;
+  // 🔁 つぎの周を 見とおす（finalizeReview で のこりは すでに 引かれている）
+  let nextRound = null, nextCount = 0, clearedRound = false;
   if (review.roundKey != null) {
+    const plan = reviewPlan(Number(review.roundKey));
+    nextRound = plan.round;
+    nextCount = plan.words.length;
+    // この周を 出しきって、まちがいも 0 → バッチ クリア（つぎは 1周目）
+    clearedRound = (plan.round === 1 && !plan.resumed);
     if (!state.reviewRound || typeof state.reviewRound !== "object") state.reviewRound = {};
-    const rwSet2 = new Set(state.reviewWrong.map(t => t.word));
-    const stillWrong = pickReviewWords(Number(review.roundKey))
-      .filter(w => rwSet2.has(w.word)).length;
-    clearedRound = stillWrong === 0;
-    nextRound = clearedRound ? 1 : (review.round || 1) + 1;
     state.reviewRound[review.roundKey] = nextRound;
   }
 
@@ -3951,7 +3986,7 @@ function finishReview() {
        </div>`
     : `<div style="background:var(--coral-soft); border:1px solid #f0c4bb; border-radius:14px; padding:11px 13px; margin:12px 0; text-align:center; font-size:0.82rem; font-weight:800; color:var(--coral-deep)">
          🔁 ${review.round}周目 おわり — つぎは <b>${nextRound}周目</b><br>
-         <small style="font-weight:700; font-size:0.72rem; color:var(--ink-soft)">まちがい <b>${wrongCount}語</b> だけ 出ます</small>
+         <small style="font-weight:700; font-size:0.72rem; color:var(--ink-soft)"><b>${nextCount}語</b> 出ます</small>
        </div>`;
 
   app.innerHTML = `
