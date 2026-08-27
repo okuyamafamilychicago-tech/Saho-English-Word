@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-26T05:20:35.539Z",
+  "exportedAt": "2026-08-27T03:52:44.107Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7291,7 +7291,17 @@
       "heal",
       "scratch",
       "barely",
-      "script"
+      "script",
+      "harvest",
+      "depart",
+      "garbage",
+      "govern",
+      "continuous",
+      "scare",
+      "margin",
+      "trace",
+      "initially",
+      "ultimate"
     ],
     "reviewRound": {
       "1": 2,
@@ -7503,6 +7513,26 @@
       {
         "word": "sponsor",
         "at": "2026-08-24",
+        "count": 1
+      },
+      {
+        "word": "resemble",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "urge",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "generous",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "luxury",
+        "at": "2026-08-27",
         "count": 1
       }
     ]
