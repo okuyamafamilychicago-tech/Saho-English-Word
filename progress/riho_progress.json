@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T15:08:57.185Z",
+  "exportedAt": "2026-08-27T15:09:35.101Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17952,13 +17952,20 @@
       "chill",
       "acquaintance",
       "persist",
-      "revenge"
+      "revenge",
+      "render",
+      "consensus"
     ],
     "reviewRound": {
+      "5": 2,
       "6": 3,
       "7": 1
     },
     "reviewSweep": {
+      "5": {
+        "round": 2,
+        "remaining": []
+      },
       "6": {
         "round": 3,
         "remaining": [
@@ -17976,16 +17983,6 @@
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
-      {
-        "word": "render",
-        "at": "2026-08-25",
-        "count": 3
-      },
-      {
-        "word": "consensus",
-        "at": "2026-08-25",
-        "count": 2
-      },
       {
         "word": "terrific",
         "at": "2026-08-27",
