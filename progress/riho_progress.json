@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T15:07:28.982Z",
+  "exportedAt": "2026-08-27T15:08:25.093Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7857,6 +7857,17 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-08-27",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ8",
+        "style": "quiz",
+        "round": 2,
+        "found": 1
       }
     ],
     "srs": {
@@ -17461,7 +17472,8 @@
     "svgTheme": "ac",
     "hiddenFound": [
       8,
-      9
+      9,
+      7
     ],
     "reviewOk": [
       "poke",
@@ -17924,19 +17936,28 @@
       "ethical",
       "compliment",
       "revive",
-      "condemn"
+      "condemn",
+      "rally",
+      "chill",
+      "acquaintance",
+      "persist",
+      "revenge"
     ],
     "reviewRound": {
       "6": 2,
-      "7": 2
+      "7": 1
     },
     "reviewSweep": {
+      "6": {
+        "round": 2,
+        "remaining": []
+      },
       "7": {
         "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 100,
+    "reviewDone": 101,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -17951,44 +17972,19 @@
         "count": 2
       },
       {
-        "word": "revenge",
-        "at": "2026-08-25",
-        "count": 1
-      },
-      {
         "word": "terrific",
-        "at": "2026-08-25",
-        "count": 1
-      },
-      {
-        "word": "persist",
-        "at": "2026-08-25",
-        "count": 1
+        "at": "2026-08-27",
+        "count": 2
       },
       {
         "word": "gradual",
-        "at": "2026-08-25",
-        "count": 1
-      },
-      {
-        "word": "acquaintance",
-        "at": "2026-08-25",
-        "count": 1
-      },
-      {
-        "word": "rally",
-        "at": "2026-08-25",
-        "count": 1
+        "at": "2026-08-27",
+        "count": 2
       },
       {
         "word": "confine",
-        "at": "2026-08-25",
-        "count": 1
-      },
-      {
-        "word": "chill",
-        "at": "2026-08-25",
-        "count": 1
+        "at": "2026-08-27",
+        "count": 2
       }
     ]
   }
