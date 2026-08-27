@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T15:20:45.308Z",
+  "exportedAt": "2026-08-27T15:22:01.100Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17865,7 +17865,6 @@
       "textile",
       "stroll",
       "cruel",
-      "racial",
       "feast",
       "herd",
       "insult",
@@ -18004,7 +18003,19 @@
       "expedition",
       "frankly",
       "amaze",
-      "annoy"
+      "annoy",
+      "bounce",
+      "confess",
+      "illusion",
+      "implication",
+      "segment",
+      "sour",
+      "cautious",
+      "publicity",
+      "tolerate",
+      "distract",
+      "whisper",
+      "vanish"
     ],
     "reviewRound": {
       "0": 1,
@@ -18120,41 +18131,27 @@
       "5": {
         "round": 1,
         "remaining": [
-          "voluntary",
-          "vanish",
-          "segment",
-          "implication",
           "bore",
           "infect",
-          "illusion",
           "mold",
           "sensible",
           "crawl",
-          "tolerate",
           "bleed",
           "fatigue",
           "accumulate",
-          "bounce",
           "conceive",
           "resign",
           "idle",
           "sorrow",
           "reluctant",
           "stumble",
-          "cautious",
           "designate",
-          "racial",
-          "confess",
           "durable",
           "narrative",
           "mercy",
           "compensate",
-          "whisper",
           "ridiculous",
-          "publicity",
-          "hence",
           "desperate",
-          "sour",
           "dump",
           "profound",
           "jealous",
@@ -18163,8 +18160,6 @@
           "cruel",
           "decay",
           "assert",
-          "comply",
-          "distract",
           "portray",
           "consensus",
           "voyage"
@@ -18239,6 +18234,21 @@
       },
       {
         "word": "cater",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "racial",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "comply",
+        "at": "2026-08-27",
+        "count": 1
+      },
+      {
+        "word": "voluntary",
         "at": "2026-08-27",
         "count": 1
       }
