@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T14:41:24.320Z",
+  "exportedAt": "2026-08-27T14:41:36.503Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3372,6 +3372,17 @@
         "scope": "バッチ3",
         "style": "flash",
         "round": 3,
+        "found": 0
+      },
+      {
+        "date": "2026-08-27",
+        "climbed": 0,
+        "score": 44,
+        "total": 99,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "flash",
+        "round": 1,
         "found": 0
       }
     ],
@@ -7372,13 +7383,69 @@
     ],
     "reviewRound": {
       "1": 2,
-      "2": 1,
+      "2": 2,
       "3": 1
     },
     "reviewSweep": {
       "2": {
-        "round": 1,
-        "remaining": []
+        "round": 2,
+        "remaining": [
+          "abandon",
+          "compose",
+          "keen",
+          "ultimate",
+          "initially",
+          "resort",
+          "heritage",
+          "prior",
+          "boundary",
+          "innovation",
+          "urge",
+          "welfare",
+          "strain",
+          "resemble",
+          "leisure",
+          "criticize",
+          "legislation",
+          "disorder",
+          "notion",
+          "fame",
+          "mature",
+          "reliable",
+          "imply",
+          "cruise",
+          "justify",
+          "yield",
+          "withdraw",
+          "venture",
+          "specialize",
+          "sin",
+          "initiative",
+          "regret",
+          "bind",
+          "substantial",
+          "dominate",
+          "extraordinary",
+          "fortunate",
+          "storage",
+          "anxious",
+          "whereas",
+          "evolve",
+          "luxury",
+          "acknowledge",
+          "attribute",
+          "precise",
+          "assess",
+          "asset",
+          "generous",
+          "suburb",
+          "prompt",
+          "govern",
+          "valid",
+          "restrict",
+          "dedicate",
+          "companion"
+        ]
       },
       "3": {
         "round": 1,
@@ -7486,7 +7553,7 @@
         ]
       }
     },
-    "reviewDone": 48,
+    "reviewDone": 49,
     "schemaVersion": 2,
     "reviewWrong": [
       {
