@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T05:00:56.169Z",
+  "exportedAt": "2026-08-27T14:36:53.787Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7316,7 +7316,18 @@
     ],
     "reviewRound": {
       "1": 2,
-      "2": 3
+      "2": 2
+    },
+    "reviewSweep": {
+      "2": {
+        "round": 2,
+        "remaining": [
+          "urge",
+          "resemble",
+          "luxury",
+          "generous"
+        ]
+      }
     },
     "reviewDone": 46,
     "schemaVersion": 2,
