@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T14:37:04.196Z",
+  "exportedAt": "2026-08-27T14:37:15.804Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7322,12 +7322,7 @@
     "reviewSweep": {
       "2": {
         "round": 2,
-        "remaining": [
-          "urge",
-          "resemble",
-          "luxury",
-          "generous"
-        ]
+        "remaining": []
       },
       "3": {
         "round": 1,
@@ -7646,22 +7641,22 @@
       {
         "word": "resemble",
         "at": "2026-08-27",
-        "count": 2
+        "count": 3
       },
       {
         "word": "urge",
         "at": "2026-08-27",
-        "count": 2
+        "count": 3
       },
       {
         "word": "generous",
         "at": "2026-08-27",
-        "count": 2
+        "count": 3
       },
       {
         "word": "luxury",
         "at": "2026-08-27",
-        "count": 2
+        "count": 3
       }
     ]
   }
