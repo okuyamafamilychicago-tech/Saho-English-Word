@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T03:53:00.801Z",
+  "exportedAt": "2026-08-27T03:53:04.951Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3339,6 +3339,17 @@
         "scope": "バッチ2",
         "style": "flash",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-08-27",
+        "climbed": 0,
+        "score": 0,
+        "total": 4,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "flash",
+        "round": 2,
         "found": 0
       }
     ],
@@ -7305,9 +7316,9 @@
     ],
     "reviewRound": {
       "1": 2,
-      "2": 1
+      "2": 3
     },
-    "reviewDone": 45,
+    "reviewDone": 46,
     "schemaVersion": 2,
     "reviewWrong": [
       {
