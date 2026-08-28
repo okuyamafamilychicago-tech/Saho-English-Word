@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:26:12.768Z",
+  "exportedAt": "2026-08-28T15:29:28.499Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7901,6 +7901,17 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-08-28",
+        "climbed": 0,
+        "score": 3,
+        "total": 3,
+        "mode": "review",
+        "scope": "バッチ7",
+        "style": "quiz",
+        "round": 3,
+        "found": 1
       }
     ],
     "srs": {
@@ -17506,7 +17517,8 @@
     "hiddenFound": [
       8,
       9,
-      7
+      7,
+      6
     ],
     "reviewOk": [
       "poke",
@@ -18055,12 +18067,25 @@
       "stumble",
       "terrific",
       "confine",
-      "gradual"
+      "gradual",
+      "abundant",
+      "sorrow",
+      "bulk",
+      "worship",
+      "disclose",
+      "comply",
+      "magnificent",
+      "racial",
+      "voluntary",
+      "cultivate",
+      "portray",
+      "correspond",
+      "durable"
     ],
     "reviewRound": {
       "0": 1,
       "5": 2,
-      "6": 3,
+      "6": 1,
       "7": 1
     },
     "reviewSweep": {
@@ -18169,7 +18194,7 @@
         ]
       },
       "5": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       },
       "6": {
@@ -18181,84 +18206,19 @@
         "remaining": []
       }
     },
-    "reviewDone": 104,
+    "reviewDone": 105,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "bulk",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "abundant",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "disclose",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "worship",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "correspond",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "cultivate",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "magnificent",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
         "word": "cater",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "racial",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "comply",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "voluntary",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "durable",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "portray",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "sorrow",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-28",
+        "count": 2
       },
       {
         "word": "desperate",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-28",
+        "count": 2
       }
     ]
   }
