@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:36:15.362Z",
+  "exportedAt": "2026-08-28T15:37:29.073Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18116,7 +18116,18 @@
       "scary",
       "influential",
       "discourage",
-      "delete"
+      "delete",
+      "isolate",
+      "divorce",
+      "leak",
+      "violate",
+      "appliance",
+      "beast",
+      "fossil",
+      "dense",
+      "weave",
+      "offend",
+      "acute"
     ],
     "reviewRound": {
       "0": 1,
@@ -18233,26 +18244,20 @@
       "4": {
         "round": 1,
         "remaining": [
-          "leak",
           "virtue",
           "shed",
           "sew",
           "descend",
-          "offend",
           "ethnic",
           "fulfill",
-          "fossil",
           "pioneer",
           "outlet",
-          "acute",
           "privilege",
           "evident",
-          "appliance",
           "inspect",
           "retreat",
           "saint",
           "originate",
-          "violate",
           "constitute",
           "given",
           "uncover",
@@ -18272,8 +18277,6 @@
           "shallow",
           "quest",
           "agenda",
-          "beast",
-          "dense",
           "renew",
           "profitable",
           "commodity",
@@ -18283,14 +18286,10 @@
           "passive",
           "enthusiastic",
           "bump",
-          "isolate",
           "soak",
           "accidentally",
           "sympathy",
           "leap",
-          "transmit",
-          "divorce",
-          "weave",
           "remedy",
           "cough",
           "navigate",
@@ -18341,6 +18340,11 @@
       },
       {
         "word": "provision",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "transmit",
         "at": "2026-08-28",
         "count": 1
       }
