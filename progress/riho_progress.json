@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:29:28.499Z",
+  "exportedAt": "2026-08-28T15:35:03.373Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7912,6 +7912,17 @@
         "style": "quiz",
         "round": 3,
         "found": 1
+      },
+      {
+        "date": "2026-08-28",
+        "climbed": 0,
+        "score": 13,
+        "total": 15,
+        "mode": "review",
+        "scope": "バッチ6",
+        "style": "quiz",
+        "round": 2,
+        "found": 0
       }
     ],
     "srs": {
@@ -18080,11 +18091,25 @@
       "cultivate",
       "portray",
       "correspond",
-      "durable"
+      "durable",
+      "invade",
+      "probable",
+      "demanding",
+      "scatter",
+      "instinct",
+      "suspend",
+      "alert",
+      "sole",
+      "overwhelming",
+      "appetite",
+      "lease",
+      "premise",
+      "supplement"
     ],
     "reviewRound": {
       "0": 1,
-      "5": 2,
+      "4": 1,
+      "5": 3,
       "6": 1,
       "7": 1
     },
@@ -18193,6 +18218,96 @@
           "commit"
         ]
       },
+      "4": {
+        "round": 1,
+        "remaining": [
+          "leak",
+          "virtue",
+          "discourage",
+          "shed",
+          "influential",
+          "sew",
+          "descend",
+          "offend",
+          "ethnic",
+          "fulfill",
+          "scary",
+          "fossil",
+          "pioneer",
+          "outlet",
+          "acute",
+          "privilege",
+          "evident",
+          "drown",
+          "appliance",
+          "inspect",
+          "retreat",
+          "saint",
+          "originate",
+          "violate",
+          "likewise",
+          "drift",
+          "constitute",
+          "given",
+          "uncover",
+          "dye",
+          "stimulate",
+          "flee",
+          "swell",
+          "decent",
+          "ally",
+          "sophisticated",
+          "literary",
+          "terror",
+          "nasty",
+          "tender",
+          "exhaust",
+          "namely",
+          "swear",
+          "inherit",
+          "shallow",
+          "quest",
+          "agenda",
+          "beast",
+          "progressive",
+          "dense",
+          "renew",
+          "profitable",
+          "consequently",
+          "commodity",
+          "modest",
+          "abstract",
+          "endure",
+          "passive",
+          "enthusiastic",
+          "bump",
+          "isolate",
+          "soak",
+          "accidentally",
+          "sympathy",
+          "delete",
+          "leap",
+          "transmit",
+          "divorce",
+          "weave",
+          "remedy",
+          "cough",
+          "navigate",
+          "sue",
+          "convey",
+          "undertake",
+          "noble",
+          "awkward",
+          "interact",
+          "reproduce",
+          "classify",
+          "span",
+          "domain",
+          "boast",
+          "sensation",
+          "chaos"
+        ]
+      },
       "5": {
         "round": 2,
         "remaining": []
@@ -18206,7 +18321,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 105,
+    "reviewDone": 106,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18219,6 +18334,16 @@
         "word": "desperate",
         "at": "2026-08-28",
         "count": 2
+      },
+      {
+        "word": "cease",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "provision",
+        "at": "2026-08-28",
+        "count": 1
       }
     ]
   }
