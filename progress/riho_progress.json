@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:37:29.073Z",
+  "exportedAt": "2026-08-28T15:38:44.924Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18127,7 +18127,15 @@
       "dense",
       "weave",
       "offend",
-      "acute"
+      "acute",
+      "given",
+      "remedy",
+      "outlet",
+      "uncover",
+      "agenda",
+      "swear",
+      "span",
+      "bump"
     ],
     "reviewRound": {
       "0": 1,
@@ -18249,9 +18257,7 @@
           "sew",
           "descend",
           "ethnic",
-          "fulfill",
           "pioneer",
-          "outlet",
           "privilege",
           "evident",
           "inspect",
@@ -18259,10 +18265,7 @@
           "saint",
           "originate",
           "constitute",
-          "given",
-          "uncover",
           "stimulate",
-          "flee",
           "swell",
           "decent",
           "ally",
@@ -18272,35 +18275,28 @@
           "tender",
           "exhaust",
           "namely",
-          "swear",
           "inherit",
           "shallow",
           "quest",
-          "agenda",
           "renew",
           "profitable",
           "commodity",
           "modest",
           "abstract",
           "endure",
-          "passive",
           "enthusiastic",
-          "bump",
           "soak",
           "accidentally",
           "sympathy",
           "leap",
-          "remedy",
           "cough",
           "navigate",
           "sue",
           "convey",
           "undertake",
-          "awkward",
           "interact",
           "reproduce",
           "classify",
-          "span",
           "domain",
           "boast",
           "sensation"
@@ -18345,6 +18341,26 @@
       },
       {
         "word": "transmit",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "awkward",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "passive",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "flee",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "fulfill",
         "at": "2026-08-28",
         "count": 1
       }
