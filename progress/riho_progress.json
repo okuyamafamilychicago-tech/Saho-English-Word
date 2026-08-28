@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T15:25:25.267Z",
+  "exportedAt": "2026-08-28T15:26:12.768Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7889,6 +7889,17 @@
         "scope": "バッチ6",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-08-27",
+        "climbed": 0,
+        "score": 7,
+        "total": 7,
+        "mode": "review",
+        "scope": "バッチ6",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -18041,11 +18052,14 @@
       "frustrate",
       "reluctant",
       "idle",
-      "stumble"
+      "stumble",
+      "terrific",
+      "confine",
+      "gradual"
     ],
     "reviewRound": {
       "0": 1,
-      "5": 1,
+      "5": 2,
       "6": 3,
       "7": 1
     },
@@ -18160,36 +18174,17 @@
       },
       "6": {
         "round": 3,
-        "remaining": [
-          "terrific",
-          "gradual",
-          "confine"
-        ]
+        "remaining": []
       },
       "7": {
         "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 103,
+    "reviewDone": 104,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
-      {
-        "word": "terrific",
-        "at": "2026-08-27",
-        "count": 2
-      },
-      {
-        "word": "gradual",
-        "at": "2026-08-27",
-        "count": 2
-      },
-      {
-        "word": "confine",
-        "at": "2026-08-27",
-        "count": 2
-      },
       {
         "word": "bulk",
         "at": "2026-08-27",
