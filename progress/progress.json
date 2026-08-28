@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:48:47.025Z",
+  "exportedAt": "2026-08-28T15:49:58.264Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7429,31 +7429,7 @@
     "reviewSweep": {
       "1": {
         "round": 4,
-        "remaining": [
-          "sponsor",
-          "prospect",
-          "revenue",
-          "interpret",
-          "objective",
-          "substance",
-          "impose",
-          "reform",
-          "emphasize",
-          "casual",
-          "relevant",
-          "proportion",
-          "modify",
-          "consistent",
-          "assure",
-          "logic",
-          "artificial",
-          "fundamental",
-          "inevitable",
-          "abuse",
-          "conventional",
-          "frequently",
-          "extensive"
-        ]
+        "remaining": []
       },
       "2": {
         "round": 2,
@@ -7627,117 +7603,117 @@
       {
         "word": "fundamental",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "casual",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "emphasize",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "logic",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "artificial",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "revenue",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "objective",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "inevitable",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "reform",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "impose",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "frequently",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "abuse",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "interpret",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "modify",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "substance",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "consistent",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "extensive",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "prospect",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "proportion",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "conventional",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "assure",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "relevant",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "sponsor",
         "at": "2026-08-28",
-        "count": 3
+        "count": 4
       },
       {
         "word": "sin",
