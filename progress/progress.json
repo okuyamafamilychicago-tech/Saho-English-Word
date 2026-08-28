@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-27T14:41:36.503Z",
+  "exportedAt": "2026-08-28T15:44:23.084Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7387,6 +7387,52 @@
       "3": 1
     },
     "reviewSweep": {
+      "1": {
+        "round": 2,
+        "remaining": [
+          "sponsor",
+          "transaction",
+          "prospect",
+          "revenue",
+          "ban",
+          "interpret",
+          "objective",
+          "substance",
+          "summary",
+          "impose",
+          "reform",
+          "merit",
+          "emphasize",
+          "crucial",
+          "congress",
+          "distribute",
+          "phase",
+          "casual",
+          "drag",
+          "relevant",
+          "contemporary",
+          "proportion",
+          "modify",
+          "consistent",
+          "assure",
+          "logic",
+          "slave",
+          "manufacture",
+          "vital",
+          "breed",
+          "artificial",
+          "fundamental",
+          "inevitable",
+          "abuse",
+          "conventional",
+          "discipline",
+          "frequently",
+          "exceed",
+          "intention",
+          "extensive",
+          "vice"
+        ]
+      },
       "2": {
         "round": 2,
         "remaining": [
