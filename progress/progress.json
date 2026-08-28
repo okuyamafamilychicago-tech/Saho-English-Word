@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:48:16.301Z",
+  "exportedAt": "2026-08-28T15:48:47.025Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3394,6 +3394,17 @@
         "scope": "バッチ2",
         "style": "flash",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-08-28",
+        "climbed": 0,
+        "score": 8,
+        "total": 31,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "flash",
+        "round": 3,
         "found": 0
       }
     ],
@@ -7411,14 +7422,38 @@
       "summary"
     ],
     "reviewRound": {
-      "1": 3,
+      "1": 4,
       "2": 2,
       "3": 1
     },
     "reviewSweep": {
       "1": {
-        "round": 3,
-        "remaining": []
+        "round": 4,
+        "remaining": [
+          "sponsor",
+          "prospect",
+          "revenue",
+          "interpret",
+          "objective",
+          "substance",
+          "impose",
+          "reform",
+          "emphasize",
+          "casual",
+          "relevant",
+          "proportion",
+          "modify",
+          "consistent",
+          "assure",
+          "logic",
+          "artificial",
+          "fundamental",
+          "inevitable",
+          "abuse",
+          "conventional",
+          "frequently",
+          "extensive"
+        ]
       },
       "2": {
         "round": 2,
@@ -7586,7 +7621,7 @@
         ]
       }
     },
-    "reviewDone": 50,
+    "reviewDone": 51,
     "schemaVersion": 2,
     "reviewWrong": [
       {
