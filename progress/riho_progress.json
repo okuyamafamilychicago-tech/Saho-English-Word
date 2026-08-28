@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:38:44.924Z",
+  "exportedAt": "2026-08-28T15:40:23.513Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18135,7 +18135,17 @@
       "agenda",
       "swear",
       "span",
-      "bump"
+      "bump",
+      "shed",
+      "interact",
+      "sophisticated",
+      "evident",
+      "renew",
+      "stimulate",
+      "abstract",
+      "originate",
+      "saint",
+      "namely"
     ],
     "reviewRound": {
       "0": 1,
@@ -18253,36 +18263,25 @@
         "round": 1,
         "remaining": [
           "virtue",
-          "shed",
           "sew",
           "descend",
           "ethnic",
           "pioneer",
           "privilege",
-          "evident",
           "inspect",
           "retreat",
-          "saint",
-          "originate",
           "constitute",
-          "stimulate",
           "swell",
           "decent",
           "ally",
-          "sophisticated",
-          "literary",
-          "nasty",
           "tender",
           "exhaust",
-          "namely",
           "inherit",
           "shallow",
           "quest",
-          "renew",
           "profitable",
           "commodity",
           "modest",
-          "abstract",
           "endure",
           "enthusiastic",
           "soak",
@@ -18290,11 +18289,9 @@
           "sympathy",
           "leap",
           "cough",
-          "navigate",
           "sue",
           "convey",
           "undertake",
-          "interact",
           "reproduce",
           "classify",
           "domain",
@@ -18361,6 +18358,21 @@
       },
       {
         "word": "fulfill",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "literary",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "navigate",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "nasty",
         "at": "2026-08-28",
         "count": 1
       }
