@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:40:23.513Z",
+  "exportedAt": "2026-08-28T15:43:29.134Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18145,7 +18145,34 @@
       "abstract",
       "originate",
       "saint",
-      "namely"
+      "namely",
+      "tender",
+      "sympathy",
+      "inherit",
+      "virtue",
+      "retreat",
+      "cough",
+      "ethnic",
+      "domain",
+      "soak",
+      "quest",
+      "shallow",
+      "enthusiastic",
+      "accidentally",
+      "privilege",
+      "profitable",
+      "classify",
+      "sensation",
+      "leap",
+      "inspect",
+      "swell",
+      "exhaust",
+      "commodity",
+      "reproduce",
+      "ally",
+      "descend",
+      "boast",
+      "modest"
     ],
     "reviewRound": {
       "0": 1,
@@ -18261,43 +18288,7 @@
       },
       "4": {
         "round": 1,
-        "remaining": [
-          "virtue",
-          "sew",
-          "descend",
-          "ethnic",
-          "pioneer",
-          "privilege",
-          "inspect",
-          "retreat",
-          "constitute",
-          "swell",
-          "decent",
-          "ally",
-          "tender",
-          "exhaust",
-          "inherit",
-          "shallow",
-          "quest",
-          "profitable",
-          "commodity",
-          "modest",
-          "endure",
-          "enthusiastic",
-          "soak",
-          "accidentally",
-          "sympathy",
-          "leap",
-          "cough",
-          "sue",
-          "convey",
-          "undertake",
-          "reproduce",
-          "classify",
-          "domain",
-          "boast",
-          "sensation"
-        ]
+        "remaining": []
       },
       "5": {
         "round": 2,
@@ -18373,6 +18364,41 @@
       },
       {
         "word": "nasty",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "convey",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "pioneer",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "constitute",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "decent",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "undertake",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "sue",
+        "at": "2026-08-28",
+        "count": 1
+      },
+      {
+        "word": "endure",
         "at": "2026-08-28",
         "count": 1
       }
