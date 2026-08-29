@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T13:18:23.397Z",
+  "exportedAt": "2026-08-29T14:07:55.008Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7430,7 +7430,28 @@
       "intention",
       "vice",
       "merit",
-      "summary"
+      "summary",
+      "fortunate",
+      "urge",
+      "suburb",
+      "assess",
+      "anxious",
+      "dominate",
+      "ultimate",
+      "abandon",
+      "extraordinary",
+      "acknowledge",
+      "yield",
+      "cruise",
+      "criticize",
+      "reliable",
+      "initially",
+      "valid",
+      "resemble",
+      "boundary",
+      "attribute",
+      "innovation",
+      "resort"
     ],
     "reviewRound": {
       "1": 5,
@@ -7467,63 +7488,7 @@
       },
       "2": {
         "round": 2,
-        "remaining": [
-          "abandon",
-          "compose",
-          "keen",
-          "ultimate",
-          "initially",
-          "resort",
-          "heritage",
-          "prior",
-          "boundary",
-          "innovation",
-          "urge",
-          "welfare",
-          "strain",
-          "resemble",
-          "leisure",
-          "criticize",
-          "legislation",
-          "disorder",
-          "notion",
-          "fame",
-          "mature",
-          "reliable",
-          "imply",
-          "cruise",
-          "justify",
-          "yield",
-          "withdraw",
-          "venture",
-          "specialize",
-          "sin",
-          "initiative",
-          "regret",
-          "bind",
-          "substantial",
-          "dominate",
-          "extraordinary",
-          "fortunate",
-          "storage",
-          "anxious",
-          "whereas",
-          "evolve",
-          "luxury",
-          "acknowledge",
-          "attribute",
-          "precise",
-          "assess",
-          "asset",
-          "generous",
-          "suburb",
-          "prompt",
-          "govern",
-          "valid",
-          "restrict",
-          "dedicate",
-          "companion"
-        ]
+        "remaining": []
       },
       "3": {
         "round": 1,
@@ -7751,278 +7716,173 @@
       },
       {
         "word": "sin",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "criticize",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "initially",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "reliable",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "resort",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "justify",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "fame",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "imply",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "notion",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "keen",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "restrict",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "companion",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "precise",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "yield",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "fortunate",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "compose",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "initiative",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "regret",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "govern",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "acknowledge",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "bind",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "ultimate",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "evolve",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "urge",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "whereas",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "welfare",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "withdraw",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "innovation",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "venture",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "dedicate",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "extraordinary",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "luxury",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "valid",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "boundary",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "prompt",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "disorder",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "attribute",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "generous",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "storage",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "prior",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "leisure",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "resemble",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "strain",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "specialize",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "substantial",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "heritage",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "legislation",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "cruise",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "dominate",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "anxious",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "suburb",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "assess",
-        "at": "2026-08-27",
-        "count": 1
-      },
-      {
-        "word": "abandon",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "asset",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "mature",
-        "at": "2026-08-27",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       }
     ]
   }
