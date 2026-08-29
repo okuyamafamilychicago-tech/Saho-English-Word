@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:20:01.288Z",
+  "exportedAt": "2026-08-29T06:23:49.101Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7945,6 +7945,17 @@
         "style": "quiz",
         "round": 3,
         "found": 1
+      },
+      {
+        "date": "2026-08-29",
+        "climbed": 0,
+        "score": 14,
+        "total": 17,
+        "mode": "review",
+        "scope": "バッチ5",
+        "style": "quiz",
+        "round": 2,
+        "found": 0
       }
     ],
     "srs": {
@@ -17590,7 +17601,6 @@
       "accustomed",
       "considerate",
       "barren",
-      "superstition",
       "enchant",
       "roam",
       "scorn",
@@ -17621,7 +17631,6 @@
       "legacy",
       "diminish",
       "urgent",
-      "odds",
       "sew",
       "delight",
       "integrate",
@@ -17709,7 +17718,6 @@
       "adore",
       "inclination",
       "solitude",
-      "humiliate",
       "sentimental",
       "endangered",
       "horrify",
@@ -17745,7 +17753,6 @@
       "soothe",
       "well-being",
       "astonish",
-      "spectacle",
       "renounce",
       "cosmopolitan",
       "eminent",
@@ -17859,7 +17866,6 @@
       "sanitation",
       "vulgar",
       "hereditary",
-      "sober",
       "arouse",
       "menace",
       "monotonous",
@@ -17895,7 +17901,6 @@
       "forbid",
       "supervise",
       "ingenious",
-      "eloquent",
       "scant",
       "paralyze",
       "wither",
@@ -18215,10 +18220,11 @@
     ],
     "reviewRound": {
       "0": 1,
-      "4": 2,
+      "4": 3,
       "5": 1,
       "6": 1,
-      "7": 1
+      "7": 1,
+      "9": 1
     },
     "reviewSweep": {
       "0": {
@@ -18340,9 +18346,71 @@
       "7": {
         "round": 2,
         "remaining": []
+      },
+      "9": {
+        "round": 1,
+        "remaining": [
+          "obedient",
+          "eccentric",
+          "extinguish",
+          "well-being",
+          "vocation",
+          "arouse",
+          "gloomy",
+          "oppress",
+          "censor",
+          "outdated",
+          "dismay",
+          "irresistible",
+          "wither",
+          "sentimental",
+          "paralyze",
+          "quarrel",
+          "insistent",
+          "innumerable",
+          "zeal",
+          "sob",
+          "scorn",
+          "recollect",
+          "ingenious",
+          "imaginable",
+          "sanitation",
+          "solemn",
+          "deserve",
+          "hasty",
+          "aptitude",
+          "hereditary",
+          "menace",
+          "endangered",
+          "amenity",
+          "monotonous",
+          "eminent",
+          "pessimistic",
+          "barren",
+          "indifferent",
+          "punctual",
+          "vulgar",
+          "accustomed",
+          "slender",
+          "affluent",
+          "clumsy",
+          "assimilate",
+          "horrify",
+          "solitude",
+          "astonish",
+          "glare",
+          "coward",
+          "diligent",
+          "cynical",
+          "temperate",
+          "intrude",
+          "resurgence",
+          "stray",
+          "trifle"
+        ]
       }
     },
-    "reviewDone": 108,
+    "reviewDone": 109,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18360,6 +18428,36 @@
         "word": "constitute",
         "at": "2026-08-29",
         "count": 2
+      },
+      {
+        "word": "eloquent",
+        "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "odds",
+        "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "spectacle",
+        "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "humiliate",
+        "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "superstition",
+        "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "sober",
+        "at": "2026-08-29",
+        "count": 1
       }
     ]
   }
