@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:43:29.134Z",
+  "exportedAt": "2026-08-29T06:18:00.621Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7922,6 +7922,17 @@
         "scope": "バッチ6",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-08-28",
+        "climbed": 0,
+        "score": 28,
+        "total": 35,
+        "mode": "review",
+        "scope": "バッチ5",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -18172,11 +18183,13 @@
       "ally",
       "descend",
       "boast",
-      "modest"
+      "modest",
+      "desperate",
+      "cater"
     ],
     "reviewRound": {
       "0": 1,
-      "4": 1,
+      "4": 2,
       "5": 3,
       "6": 1,
       "7": 1
@@ -18291,7 +18304,7 @@
         "remaining": []
       },
       "5": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       },
       "6": {
@@ -18303,20 +18316,10 @@
         "remaining": []
       }
     },
-    "reviewDone": 106,
+    "reviewDone": 107,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
-      {
-        "word": "cater",
-        "at": "2026-08-28",
-        "count": 2
-      },
-      {
-        "word": "desperate",
-        "at": "2026-08-28",
-        "count": 2
-      },
       {
         "word": "cease",
         "at": "2026-08-28",
