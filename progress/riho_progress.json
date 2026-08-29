@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:23:49.101Z",
+  "exportedAt": "2026-08-29T06:24:35.338Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18216,7 +18216,13 @@
       "transmit",
       "endure",
       "sue",
-      "navigate"
+      "navigate",
+      "spectacle",
+      "odds",
+      "superstition",
+      "humiliate",
+      "sober",
+      "fulfill"
     ],
     "reviewRound": {
       "0": 1,
@@ -18417,47 +18423,17 @@
       {
         "word": "cease",
         "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "fulfill",
-        "at": "2026-08-29",
-        "count": 2
+        "count": 3
       },
       {
         "word": "constitute",
         "at": "2026-08-29",
-        "count": 2
+        "count": 3
       },
       {
         "word": "eloquent",
         "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "odds",
-        "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "spectacle",
-        "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "humiliate",
-        "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "superstition",
-        "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "sober",
-        "at": "2026-08-29",
-        "count": 1
+        "count": 2
       }
     ]
   }
