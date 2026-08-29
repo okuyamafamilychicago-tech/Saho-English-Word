@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:27:32.651Z",
+  "exportedAt": "2026-08-29T06:29:19.083Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18365,32 +18365,7 @@
       },
       "9": {
         "round": 1,
-        "remaining": [
-          "obedient",
-          "extinguish",
-          "well-being",
-          "vocation",
-          "outdated",
-          "dismay",
-          "irresistible",
-          "paralyze",
-          "quarrel",
-          "sob",
-          "solemn",
-          "deserve",
-          "aptitude",
-          "hereditary",
-          "amenity",
-          "punctual",
-          "slender",
-          "affluent",
-          "solitude",
-          "glare",
-          "diligent",
-          "cynical",
-          "temperate",
-          "resurgence"
-        ]
+        "remaining": []
       }
     },
     "reviewDone": 110,
