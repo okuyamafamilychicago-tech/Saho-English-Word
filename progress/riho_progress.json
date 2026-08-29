@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:18:00.621Z",
+  "exportedAt": "2026-08-29T06:20:01.288Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7934,6 +7934,17 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-08-29",
+        "climbed": 0,
+        "score": 2,
+        "total": 2,
+        "mode": "review",
+        "scope": "バッチ6",
+        "style": "quiz",
+        "round": 3,
+        "found": 1
       }
     ],
     "srs": {
@@ -17540,7 +17551,8 @@
       8,
       9,
       7,
-      6
+      6,
+      5
     ],
     "reviewOk": [
       "poke",
@@ -18185,12 +18197,26 @@
       "boast",
       "modest",
       "desperate",
-      "cater"
+      "cater",
+      "provision",
+      "undertake",
+      "decent",
+      "awkward",
+      "passive",
+      "nasty",
+      "literary",
+      "flee",
+      "convey",
+      "pioneer",
+      "transmit",
+      "endure",
+      "sue",
+      "navigate"
     ],
     "reviewRound": {
       "0": 1,
       "4": 2,
-      "5": 3,
+      "5": 1,
       "6": 1,
       "7": 1
     },
@@ -18300,7 +18326,7 @@
         ]
       },
       "4": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       },
       "5": {
@@ -18316,94 +18342,24 @@
         "remaining": []
       }
     },
-    "reviewDone": 107,
+    "reviewDone": 108,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "cease",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "provision",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "transmit",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "awkward",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "passive",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "flee",
-        "at": "2026-08-28",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "fulfill",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "literary",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "navigate",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "nasty",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "convey",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "pioneer",
-        "at": "2026-08-28",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       },
       {
         "word": "constitute",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "decent",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "undertake",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "sue",
-        "at": "2026-08-28",
-        "count": 1
-      },
-      {
-        "word": "endure",
-        "at": "2026-08-28",
-        "count": 1
+        "at": "2026-08-29",
+        "count": 2
       }
     ]
   }
