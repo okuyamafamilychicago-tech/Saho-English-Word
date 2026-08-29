@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:24:35.338Z",
+  "exportedAt": "2026-08-29T06:26:39.124Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7955,6 +7955,17 @@
         "scope": "バッチ5",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-08-29",
+        "climbed": 0,
+        "score": 6,
+        "total": 9,
+        "mode": "review",
+        "scope": "まちがえ集中",
+        "style": "quiz",
+        "round": null,
         "found": 0
       }
     ],
@@ -17864,7 +17875,6 @@
       "quarrel",
       "resurgence",
       "sanitation",
-      "vulgar",
       "hereditary",
       "arouse",
       "menace",
@@ -18357,50 +18367,33 @@
         "round": 1,
         "remaining": [
           "obedient",
-          "eccentric",
           "extinguish",
           "well-being",
           "vocation",
           "arouse",
-          "gloomy",
-          "oppress",
-          "censor",
           "outdated",
           "dismay",
           "irresistible",
-          "wither",
           "sentimental",
           "paralyze",
           "quarrel",
           "insistent",
-          "innumerable",
-          "zeal",
           "sob",
-          "scorn",
-          "recollect",
-          "ingenious",
           "imaginable",
-          "sanitation",
           "solemn",
           "deserve",
           "hasty",
           "aptitude",
           "hereditary",
-          "menace",
-          "endangered",
           "amenity",
           "monotonous",
           "eminent",
           "pessimistic",
-          "barren",
-          "indifferent",
           "punctual",
-          "vulgar",
           "accustomed",
           "slender",
           "affluent",
           "clumsy",
-          "assimilate",
           "horrify",
           "solitude",
           "astonish",
@@ -18409,14 +18402,11 @@
           "diligent",
           "cynical",
           "temperate",
-          "intrude",
-          "resurgence",
-          "stray",
-          "trifle"
+          "resurgence"
         ]
       }
     },
-    "reviewDone": 109,
+    "reviewDone": 110,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18434,6 +18424,11 @@
         "word": "eloquent",
         "at": "2026-08-29",
         "count": 2
+      },
+      {
+        "word": "vulgar",
+        "at": "2026-08-29",
+        "count": 1
       }
     ]
   }
