@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-28T15:49:58.264Z",
+  "exportedAt": "2026-08-29T13:03:15.299Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3405,6 +3405,17 @@
         "scope": "バッチ2",
         "style": "flash",
         "round": 3,
+        "found": 0
+      },
+      {
+        "date": "2026-08-28",
+        "climbed": 0,
+        "score": 0,
+        "total": 23,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "flash",
+        "round": 4,
         "found": 0
       }
     ],
@@ -7422,14 +7433,37 @@
       "summary"
     ],
     "reviewRound": {
-      "1": 4,
+      "1": 5,
       "2": 2,
       "3": 1
     },
     "reviewSweep": {
       "1": {
-        "round": 4,
-        "remaining": []
+        "round": 5,
+        "remaining": [
+          "sponsor",
+          "prospect",
+          "revenue",
+          "interpret",
+          "objective",
+          "substance",
+          "impose",
+          "reform",
+          "emphasize",
+          "casual",
+          "relevant",
+          "proportion",
+          "modify",
+          "consistent",
+          "assure",
+          "logic",
+          "artificial",
+          "inevitable",
+          "abuse",
+          "conventional",
+          "frequently",
+          "extensive"
+        ]
       },
       "2": {
         "round": 2,
@@ -7597,13 +7631,13 @@
         ]
       }
     },
-    "reviewDone": 51,
+    "reviewDone": 52,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "fundamental",
-        "at": "2026-08-28",
-        "count": 4
+        "at": "2026-08-29",
+        "count": 5
       },
       {
         "word": "casual",
