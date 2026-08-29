@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:33:51.240Z",
+  "exportedAt": "2026-08-29T06:39:06.923Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17589,7 +17589,6 @@
     ],
     "reviewOk": [
       "poke",
-      "greed",
       "shrug",
       "stubborn",
       "bathe",
@@ -18028,7 +18027,6 @@
       "minimal",
       "economical",
       "optimistic",
-      "affection",
       "verbal",
       "commute",
       "formulate",
@@ -18243,7 +18241,28 @@
       "superstition",
       "humiliate",
       "sober",
-      "fulfill"
+      "fulfill",
+      "conviction",
+      "curious",
+      "vulgar",
+      "rear",
+      "eloquent",
+      "grab",
+      "ancestor",
+      "excel",
+      "vital",
+      "constitute",
+      "cease",
+      "acquire",
+      "complicated",
+      "niche",
+      "institute",
+      "output",
+      "bet",
+      "resource",
+      "bias",
+      "await",
+      "fraction"
     ],
     "reviewRound": {
       "0": 1,
@@ -18384,22 +18403,22 @@
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "cease",
+        "word": "chronic",
         "at": "2026-08-29",
-        "count": 3
+        "count": 1
       },
       {
-        "word": "constitute",
+        "word": "affection",
         "at": "2026-08-29",
-        "count": 3
+        "count": 1
       },
       {
-        "word": "eloquent",
+        "word": "claim",
         "at": "2026-08-29",
-        "count": 2
+        "count": 1
       },
       {
-        "word": "vulgar",
+        "word": "greed",
         "at": "2026-08-29",
         "count": 1
       }
