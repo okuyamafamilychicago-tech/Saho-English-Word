@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T06:39:06.923Z",
+  "exportedAt": "2026-08-30T09:21:06.975Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7978,6 +7978,17 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-08-29",
+        "climbed": 0,
+        "score": 46,
+        "total": 50,
+        "mode": "review",
+        "scope": "全部",
+        "style": "quiz",
+        "round": null,
+        "found": 1
       }
     ],
     "srs": {
@@ -17579,13 +17590,14 @@
       "batch-11",
       "batch-12"
     ],
-    "svgTheme": "ac",
+    "svgTheme": "forest",
     "hiddenFound": [
       8,
       9,
       7,
       6,
-      5
+      5,
+      4
     ],
     "reviewOk": [
       "poke",
@@ -18262,7 +18274,8 @@
       "resource",
       "bias",
       "await",
-      "fraction"
+      "fraction",
+      "chronic"
     ],
     "reviewRound": {
       "0": 1,
@@ -18270,7 +18283,8 @@
       "5": 1,
       "6": 1,
       "7": 1,
-      "9": 2
+      "9": 2,
+      "10": 2
     },
     "reviewSweep": {
       "0": {
@@ -18396,17 +18410,16 @@
       "9": {
         "round": 1,
         "remaining": []
+      },
+      "10": {
+        "round": 2,
+        "remaining": []
       }
     },
-    "reviewDone": 111,
+    "reviewDone": 112,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
-      {
-        "word": "chronic",
-        "at": "2026-08-29",
-        "count": 1
-      },
       {
         "word": "affection",
         "at": "2026-08-29",
