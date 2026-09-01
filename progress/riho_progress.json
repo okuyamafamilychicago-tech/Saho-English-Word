@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-01T15:13:57.005Z",
+  "exportedAt": "2026-09-01T15:25:45.680Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17677,7 +17677,6 @@
       "urgent",
       "sew",
       "delight",
-      "integrate",
       "terror",
       "projection",
       "gaze",
@@ -18292,7 +18291,71 @@
       "divine",
       "fuel",
       "wage",
-      "extract"
+      "extract",
+      "equivalent",
+      "protocol",
+      "venue",
+      "implement",
+      "trigger",
+      "authentic",
+      "enforce",
+      "dividend",
+      "merge",
+      "swap",
+      "dispute",
+      "spouse",
+      "ultimately",
+      "extended",
+      "recipient",
+      "footage",
+      "deem",
+      "subsequent",
+      "execute",
+      "virtually",
+      "cluster",
+      "juvenile",
+      "stunning",
+      "oversee",
+      "resume",
+      "anonymous",
+      "entrepreneur",
+      "entity",
+      "enhance",
+      "specify",
+      "deploy",
+      "habitat",
+      "incentive",
+      "identical",
+      "vibrant",
+      "incorporate",
+      "mentor",
+      "enroll",
+      "thrive",
+      "integrity",
+      "tier",
+      "advocate",
+      "administer",
+      "expertise",
+      "compatible",
+      "mortgage",
+      "reminder",
+      "ongoing",
+      "verify",
+      "comprehensive",
+      "exclusive",
+      "diagnose",
+      "intake",
+      "trait",
+      "assault",
+      "tremendous",
+      "fraud",
+      "dual",
+      "expire",
+      "toxic",
+      "duration",
+      "static",
+      "configuration",
+      "dismiss"
     ],
     "reviewRound": {
       "0": 1,
@@ -18430,100 +18493,7 @@
       },
       "10": {
         "round": 1,
-        "remaining": [
-          "implement",
-          "enhance",
-          "specify",
-          "eligible",
-          "incorporate",
-          "comprehensive",
-          "ultimately",
-          "configuration",
-          "mortgage",
-          "retain",
-          "integrate",
-          "array",
-          "ongoing",
-          "exclusive",
-          "compliance",
-          "entity",
-          "execute",
-          "expertise",
-          "venue",
-          "verify",
-          "stunning",
-          "liability",
-          "equity",
-          "enroll",
-          "protocol",
-          "excel",
-          "premium",
-          "facilitate",
-          "diagnose",
-          "recipient",
-          "embrace",
-          "trigger",
-          "legacy",
-          "hub",
-          "dual",
-          "compatible",
-          "intake",
-          "chronic",
-          "spell",
-          "deploy",
-          "fraud",
-          "equivalent",
-          "anonymous",
-          "extended",
-          "virtually",
-          "duration",
-          "assault",
-          "derive",
-          "subsequent",
-          "entrepreneur",
-          "administer",
-          "undergo",
-          "integrity",
-          "dispute",
-          "incentive",
-          "spouse",
-          "deem",
-          "vulnerable",
-          "adequate",
-          "compile",
-          "subtle",
-          "reminder",
-          "tactic",
-          "dividend",
-          "jurisdiction",
-          "advocate",
-          "patent",
-          "identical",
-          "cluster",
-          "versatile",
-          "tier",
-          "forge",
-          "authentic",
-          "oversee",
-          "habitat",
-          "expire",
-          "trait",
-          "collaborate",
-          "enforce",
-          "regime",
-          "tremendous",
-          "static",
-          "thrive",
-          "swap",
-          "footage",
-          "merge",
-          "vibrant",
-          "juvenile",
-          "mentor",
-          "resume",
-          "dismiss",
-          "toxic"
-        ]
+        "remaining": []
       }
     },
     "reviewDone": 113,
@@ -18547,6 +18517,126 @@
       },
       {
         "word": "maximize",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "versatile",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "adequate",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "tactic",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "embrace",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "premium",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "integrate",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "undergo",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "compile",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "jurisdiction",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "vulnerable",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "equity",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "forge",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "eligible",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "regime",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "derive",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "facilitate",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "compliance",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "collaborate",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "subtle",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "retain",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "array",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "spell",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "patent",
+        "at": "2026-09-01",
+        "count": 1
+      },
+      {
+        "word": "hub",
         "at": "2026-09-01",
         "count": 1
       }
