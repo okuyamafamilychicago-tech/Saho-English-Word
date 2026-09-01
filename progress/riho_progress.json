@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T09:21:37.078Z",
+  "exportedAt": "2026-09-01T15:13:57.005Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18289,7 +18289,10 @@
       "chronic",
       "sustainable",
       "comprise",
-      "divine"
+      "divine",
+      "fuel",
+      "wage",
+      "extract"
     ],
     "reviewRound": {
       "0": 1,
@@ -18428,7 +18431,6 @@
       "10": {
         "round": 1,
         "remaining": [
-          "fuel",
           "implement",
           "enhance",
           "specify",
@@ -18454,7 +18456,6 @@
           "equity",
           "enroll",
           "protocol",
-          "wage",
           "excel",
           "premium",
           "facilitate",
@@ -18471,7 +18472,6 @@
           "spell",
           "deploy",
           "fraud",
-          "maximize",
           "equivalent",
           "anonymous",
           "extended",
@@ -18500,7 +18500,6 @@
           "patent",
           "identical",
           "cluster",
-          "extract",
           "versatile",
           "tier",
           "forge",
@@ -18544,6 +18543,11 @@
       {
         "word": "greed",
         "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "maximize",
+        "at": "2026-09-01",
         "count": 1
       }
     ]
