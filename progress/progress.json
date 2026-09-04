@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-03T14:49:33.399Z",
+  "exportedAt": "2026-09-04T16:05:30.092Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2204,6 +2204,31 @@
         "word": "suspend",
         "masteredAt": "2026-07-29",
         "mode": "test"
+      },
+      {
+        "word": "namely",
+        "masteredAt": "2026-09-04",
+        "mode": "test"
+      },
+      {
+        "word": "sophisticated",
+        "masteredAt": "2026-09-04",
+        "mode": "test"
+      },
+      {
+        "word": "progressive",
+        "masteredAt": "2026-09-04",
+        "mode": "test"
+      },
+      {
+        "word": "agenda",
+        "masteredAt": "2026-09-04",
+        "mode": "test"
+      },
+      {
+        "word": "inherit",
+        "masteredAt": "2026-09-04",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2246,12 +2271,27 @@
         "word": "favor",
         "at": "2026-07-29",
         "learnCount": 1
+      },
+      {
+        "word": "decent",
+        "at": "2026-09-04",
+        "learnCount": 0
+      },
+      {
+        "word": "renew",
+        "at": "2026-09-04",
+        "learnCount": 0
+      },
+      {
+        "word": "quest",
+        "at": "2026-09-04",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4566,
-    "totalAttempts": 5283,
-    "lastSessionDate": "2026-09-03",
-    "streak": 1,
+    "totalCorrect": 4602,
+    "totalAttempts": 5330,
+    "lastSessionDate": "2026-09-04",
+    "streak": 2,
     "history": [
       {
         "date": "2026-06-02",
@@ -3435,6 +3475,13 @@
         "score": 12,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-04",
+        "climbed": 5,
+        "score": 24,
+        "total": 27,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7053,11 +7100,11 @@
         "everLearned": true
       },
       "decent": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-09-03",
+        "box": 2,
+        "due": "2026-09-06",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
@@ -7071,11 +7118,11 @@
         "everLearned": true
       },
       "sophisticated": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 3,
         "wrong": 3,
-        "seenAt": "2026-09-03",
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
@@ -7125,11 +7172,11 @@
         "everLearned": true
       },
       "namely": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-09-03",
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
@@ -7143,11 +7190,11 @@
         "everLearned": true
       },
       "inherit": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-09-03",
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
@@ -7161,20 +7208,20 @@
         "everLearned": true
       },
       "quest": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-09-03",
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
       "agenda": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-09-03",
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
@@ -7188,11 +7235,11 @@
         "everLearned": true
       },
       "progressive": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-09-03",
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       },
@@ -7206,11 +7253,11 @@
         "everLearned": true
       },
       "renew": {
-        "box": 0,
-        "due": "2026-09-03",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-09-03",
+        "box": 3,
+        "due": "2026-09-08",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-09-04",
         "learnedAt": "2026-09-03",
         "everLearned": true
       }
