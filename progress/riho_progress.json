@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-01T15:25:45.680Z",
+  "exportedAt": "2026-09-04T16:17:03.282Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7999,6 +7999,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-09-01",
+        "climbed": 0,
+        "score": 68,
+        "total": 92,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -18355,7 +18366,21 @@
       "duration",
       "static",
       "configuration",
-      "dismiss"
+      "dismiss",
+      "adequate",
+      "facilitate",
+      "embrace",
+      "vulnerable",
+      "patent",
+      "compile",
+      "hub",
+      "spell",
+      "eligible",
+      "collaborate",
+      "integrate",
+      "jurisdiction",
+      "maximize",
+      "subtle"
     ],
     "reviewRound": {
       "0": 1,
@@ -18364,7 +18389,7 @@
       "6": 1,
       "7": 1,
       "9": 2,
-      "10": 1
+      "10": 2
     },
     "reviewSweep": {
       "0": {
@@ -18492,11 +18517,11 @@
         "remaining": []
       },
       "10": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 113,
+    "reviewDone": 114,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18516,129 +18541,59 @@
         "count": 1
       },
       {
-        "word": "maximize",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
         "word": "versatile",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "adequate",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "tactic",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "embrace",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "premium",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "integrate",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "undergo",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "compile",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "jurisdiction",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "vulnerable",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "equity",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "forge",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "eligible",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "regime",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "derive",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "facilitate",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "compliance",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "collaborate",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "subtle",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "retain",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       },
       {
         "word": "array",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "spell",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "patent",
-        "at": "2026-09-01",
-        "count": 1
-      },
-      {
-        "word": "hub",
-        "at": "2026-09-01",
-        "count": 1
+        "at": "2026-09-04",
+        "count": 2
       }
     ]
   }
