@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-05T06:38:21.895Z",
+  "exportedAt": "2026-09-05T06:50:25.075Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8021,6 +8021,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-09-05",
+        "climbed": 0,
+        "score": 10,
+        "total": 11,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 3,
         "found": 0
       }
     ],
@@ -18410,7 +18421,7 @@
       "6": 1,
       "7": 1,
       "9": 2,
-      "10": 3
+      "10": 4
     },
     "reviewSweep": {
       "0": {
@@ -18538,11 +18549,11 @@
         "remaining": []
       },
       "10": {
-        "round": 3,
+        "round": 4,
         "remaining": []
       }
     },
-    "reviewDone": 115,
+    "reviewDone": 116,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18564,7 +18575,7 @@
       {
         "word": "forge",
         "at": "2026-09-05",
-        "count": 3
+        "count": 4
       }
     ]
   }
