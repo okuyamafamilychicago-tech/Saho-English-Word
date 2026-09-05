@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-04T16:17:03.282Z",
+  "exportedAt": "2026-09-05T06:38:21.895Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8010,6 +8010,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-09-04",
+        "climbed": 0,
+        "score": 14,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 2,
         "found": 0
       }
     ],
@@ -18380,7 +18391,17 @@
       "integrate",
       "jurisdiction",
       "maximize",
-      "subtle"
+      "subtle",
+      "undergo",
+      "regime",
+      "array",
+      "equity",
+      "compliance",
+      "premium",
+      "tactic",
+      "derive",
+      "retain",
+      "versatile"
     ],
     "reviewRound": {
       "0": 1,
@@ -18389,7 +18410,7 @@
       "6": 1,
       "7": 1,
       "9": 2,
-      "10": 2
+      "10": 3
     },
     "reviewSweep": {
       "0": {
@@ -18517,11 +18538,11 @@
         "remaining": []
       },
       "10": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       }
     },
-    "reviewDone": 114,
+    "reviewDone": 115,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18541,59 +18562,9 @@
         "count": 1
       },
       {
-        "word": "versatile",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "tactic",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "premium",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "undergo",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "equity",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
         "word": "forge",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "regime",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "derive",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "compliance",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "retain",
-        "at": "2026-09-04",
-        "count": 2
-      },
-      {
-        "word": "array",
-        "at": "2026-09-04",
-        "count": 2
+        "at": "2026-09-05",
+        "count": 3
       }
     ]
   }
