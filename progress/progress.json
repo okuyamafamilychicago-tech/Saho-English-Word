@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-06T17:15:11.363Z",
+  "exportedAt": "2026-09-06T17:34:06.829Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2288,8 +2288,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4712,
-    "totalAttempts": 5462,
+    "totalCorrect": 4713,
+    "totalAttempts": 5467,
     "lastSessionDate": "2026-09-06",
     "streak": 1,
     "history": [
@@ -7665,7 +7665,10 @@
       "boundary",
       "attribute",
       "innovation",
-      "resort"
+      "resort",
+      "casual",
+      "consistent",
+      "inevitable"
     ],
     "reviewRound": {
       "1": 5,
@@ -7684,16 +7687,11 @@
           "substance",
           "impose",
           "reform",
-          "emphasize",
-          "casual",
           "relevant",
           "proportion",
           "modify",
-          "consistent",
-          "assure",
           "logic",
           "artificial",
-          "inevitable",
           "abuse",
           "conventional",
           "frequently",
@@ -7819,14 +7817,9 @@
         "count": 5
       },
       {
-        "word": "casual",
-        "at": "2026-08-28",
-        "count": 4
-      },
-      {
         "word": "emphasize",
-        "at": "2026-08-28",
-        "count": 4
+        "at": "2026-09-06",
+        "count": 5
       },
       {
         "word": "logic",
@@ -7845,11 +7838,6 @@
       },
       {
         "word": "objective",
-        "at": "2026-08-28",
-        "count": 4
-      },
-      {
-        "word": "inevitable",
         "at": "2026-08-28",
         "count": 4
       },
@@ -7889,11 +7877,6 @@
         "count": 4
       },
       {
-        "word": "consistent",
-        "at": "2026-08-28",
-        "count": 4
-      },
-      {
         "word": "extensive",
         "at": "2026-08-28",
         "count": 4
@@ -7915,8 +7898,8 @@
       },
       {
         "word": "assure",
-        "at": "2026-08-28",
-        "count": 4
+        "at": "2026-09-06",
+        "count": 5
       },
       {
         "word": "relevant",
