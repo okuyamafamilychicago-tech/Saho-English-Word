@@ -3693,6 +3693,7 @@ function renderReviewQuestion() {
           </button>`).join("")}
       </div>
       <div class="feedback" id="feedback"></div>
+      <div id="reviewNext" style="margin-top:12px"></div>
     </div>
   `;
 }
@@ -3755,11 +3756,7 @@ function answerReviewFlash(correct) {
   r.asked++;
   if (correct) { r.correct++; r.correctSet.add(w.word); }
   else         { r.wrongSet.add(w.word); speak(w.word); }
-  setTimeout(() => {
-    r.queue.shift();
-    if (r.queue.length === 0) finishReview();
-    else renderReviewFlashcard();
-  }, correct ? 500 : 900);
+  setTimeout(advanceReview, correct ? 500 : 900);
 }
 
 function answerReview(idx) {
@@ -3782,19 +3779,55 @@ function answerReview(idx) {
   }
 
   const ex = q.word.example ? esc(q.word.example).replace("___", `<b>${esc(q.word.word)}</b>`) : "";
+  const exJa = q.word.exJa ? esc(q.word.exJa) : "";
   const fb = document.getElementById("feedback");
   fb.className = "feedback show " + (correct ? "ok" : "ng");
   fb.innerHTML = `${correct ? "せいかい！" : "おしい！"}
     <div class="word-info">${esc(q.word.word)} — ${esc(q.word.def || "")}</div>`
-    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "")
+    + (!correct && exJa ? `<div style="margin-top:3px; font-size:0.86rem; opacity:0.85">${exJa}</div>` : "");
   if (!correct) speak(q.word.word);
 
-  setTimeout(() => {
-    r.queue.shift();
-    if (r.queue.length === 0) finishReview();
-    else renderReviewQuestion();
-  }, correct ? 1000 : 1600);
+  if (correct) {
+    // 正解は テンポよく 自動で つぎへ
+    setTimeout(advanceReview, 1000);
+  } else {
+    // まちがえた ときは 答えを 出したまま。読み終えたら 自分で「つぎへ」
+    const nx = document.getElementById("reviewNext");
+    if (nx) {
+      nx.innerHTML = `
+        <button class="btn" id="reviewNextBtn" onclick="advanceReview()"
+          style="width:100%; background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)">
+          つぎへ →
+        </button>
+        <div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft); text-align:center">
+          しっかり 読んでから おしてね（Enter でも すすめるよ）
+        </div>`;
+      const b = document.getElementById("reviewNextBtn");
+      if (b) b.focus();
+    }
+  }
 }
+
+// つぎの 問題へ（正解の 自動送り / まちがい時の「つぎへ」ボタン 共通）
+function advanceReview() {
+  const r = review;
+  if (!r) return;
+  r.queue.shift();
+  if (r.queue.length === 0) finishReview();
+  else if (r.style === "flash") renderReviewFlashcard();
+  else renderReviewQuestion();
+}
+
+// 復習中に Enter / Space で「つぎへ」を おせるように
+document.addEventListener("keydown", e => {
+  if (!review || !review.answered) return;
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const b = document.getElementById("reviewNextBtn");
+  if (!b) return;
+  e.preventDefault();
+  advanceReview();
+});
 
 function exitReview() {
   if (!confirm("復習を やめて ホームに もどりますか？\n（まだ 出ていない語と まちがえた語は、次の 復習 で つづきから 出ます）")) return;
