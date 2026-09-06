@@ -2527,6 +2527,36 @@ function advancePhase() {
   else if (learn.phase === "challenge") renderChallengeInput();
 }
 
+// まなぶ: 答えを 出したまま 止めて、「つぎへ」で 自分で すすむ
+//   correct   … ボタンの 色を きめる（緑 / 紫）
+//   nextArg   … nextLearnItem() に わたす 値
+function showLearnNext(correct, nextArg) {
+  const nx = document.getElementById("learnNext");
+  if (!nx) { nextLearnItem(nextArg); return; }   // 念のため（枠がなければ 従来どおり）
+  const col = correct
+    ? "background:var(--good); box-shadow:0 4px 0 #2d7a5c, 0 8px 16px rgba(63,156,124,0.22)"
+    : "background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)";
+  nx.innerHTML = `
+    <button class="btn" id="learnNextBtn" onclick="nextLearnItem(${nextArg})" style="width:100%; ${col}">
+      つぎへ →
+    </button>
+    <div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft); text-align:center">
+      ${correct ? "かくにん したら おしてね" : "しっかり 読んでから おしてね"}（Enter でも すすめるよ）
+    </div>`;
+  const b = document.getElementById("learnNextBtn");
+  if (b) b.focus();
+}
+
+// まなぶ中に Enter / Space で「つぎへ」
+document.addEventListener("keydown", e => {
+  if (!learn || !learn.answered) return;
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const b = document.getElementById("learnNextBtn");
+  if (!b) return;
+  e.preventDefault();
+  b.click();
+});
+
 function nextLearnItem(wasCorrect) {
   const entry = learn.phaseQueue.shift();
   // であうフェーズはマスタリーなし。recall/use は 間違えたら 末尾近くに 戻す（連続出題回避）。
@@ -2685,6 +2715,7 @@ function renderRecallQuiz() {
           </button>`).join("")}
       </div>
       <div class="feedback" id="feedback"></div>
+      <div id="learnNext" style="margin-top:12px"></div>
     </div>
   `;
 }
@@ -2717,6 +2748,7 @@ function renderUseQuiz() {
           </button>`).join("")}
       </div>
       <div class="feedback" id="feedback"></div>
+      <div id="learnNext" style="margin-top:12px"></div>
     </div>
   `;
 }
@@ -2747,10 +2779,11 @@ function answerLearn(idx) {
   fb.className = "feedback show " + (correct ? "ok" : "ng");
   fb.innerHTML = (correct ? "正解！" : "ここで しっかり覚えよう 💪")
     + `<div class="word-info">${esc(q.word.word)} — ${esc(q.word.def || "")}</div>`
-    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
-  if (!correct) speak(q.word.word);
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "")
+    + (q.word.exJa ? `<div style="margin-top:3px; font-size:0.86rem; opacity:0.85">${esc(q.word.exJa)}</div>` : "");
+  speak(q.word.word);
 
-  setTimeout(() => nextLearnItem(correct), correct ? 1100 : 2000);
+  showLearnNext(correct, correct);
 }
 
 // ---------- ★ チャレンジ (writing/タイピング入力, スキップ可) ----------
@@ -2790,6 +2823,7 @@ function renderChallengeInput() {
         <button class="btn teal" onclick="submitChallengeInput()" style="flex:2">こたえる →</button>
       </div>
       <div class="feedback" id="feedback"></div>
+      <div id="learnNext" style="margin-top:12px"></div>
     </div>
   `;
   setTimeout(() => {
@@ -2818,7 +2852,7 @@ function skipChallenge() {
     + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "");
   speak(w.word);
   // スキップは「間違い」扱いに しない（チャレンジは おまけ）→ nextLearnItem(true) で 次へ
-  setTimeout(() => nextLearnItem(true), 1800);
+  showLearnNext(true, true);
 }
 
 function submitChallengeInput() {
@@ -2854,7 +2888,7 @@ function submitChallengeInput() {
   speak(w.word);
 
   // チャレンジは 再復習しない（間違いでも 必ず 次へ）
-  setTimeout(() => nextLearnItem(true), correct ? 1200 : 2400);
+  showLearnNext(correct, true);
 }
 
 // まなぶの進捗を 保存（SRS反映・履歴追加・自動バックアップ）。
