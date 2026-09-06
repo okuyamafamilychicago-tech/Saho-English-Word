@@ -3785,27 +3785,25 @@ function answerReview(idx) {
   fb.innerHTML = `${correct ? "せいかい！" : "おしい！"}
     <div class="word-info">${esc(q.word.word)} — ${esc(q.word.def || "")}</div>`
     + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "")
-    + (!correct && exJa ? `<div style="margin-top:3px; font-size:0.86rem; opacity:0.85">${exJa}</div>` : "");
-  if (!correct) speak(q.word.word);
+    + (exJa ? `<div style="margin-top:3px; font-size:0.86rem; opacity:0.85">${exJa}</div>` : "");
+  speak(q.word.word);
 
-  if (correct) {
-    // 正解は テンポよく 自動で つぎへ
-    setTimeout(advanceReview, 1000);
-  } else {
-    // まちがえた ときは 答えを 出したまま。読み終えたら 自分で「つぎへ」
-    const nx = document.getElementById("reviewNext");
-    if (nx) {
-      nx.innerHTML = `
-        <button class="btn" id="reviewNextBtn" onclick="advanceReview()"
-          style="width:100%; background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)">
-          つぎへ →
-        </button>
-        <div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft); text-align:center">
-          しっかり 読んでから おしてね（Enter でも すすめるよ）
-        </div>`;
-      const b = document.getElementById("reviewNextBtn");
-      if (b) b.focus();
-    }
+  // 正解でも まちがいでも、答えを 出したまま 止まる。
+  // 読み終えたら 自分で「つぎへ」を おす（自動送りは しない）
+  const nx = document.getElementById("reviewNext");
+  if (nx) {
+    const col = correct
+      ? "background:var(--good); box-shadow:0 4px 0 #2d7a5c, 0 8px 16px rgba(63,156,124,0.22)"
+      : "background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)";
+    nx.innerHTML = `
+      <button class="btn" id="reviewNextBtn" onclick="advanceReview()" style="width:100%; ${col}">
+        つぎへ →
+      </button>
+      <div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft); text-align:center">
+        ${correct ? "かくにん したら おしてね" : "しっかり 読んでから おしてね"}（Enter でも すすめるよ）
+      </div>`;
+    const b = document.getElementById("reviewNextBtn");
+    if (b) b.focus();
   }
 }
 
