@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:37:07.466Z",
+  "exportedAt": "2026-09-07T18:39:28.323Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17788,7 +17788,6 @@
       "conference",
       "possess",
       "council",
-      "preserve",
       "threaten",
       "internal",
       "consequence",
@@ -18476,7 +18475,15 @@
       "guarantee",
       "alternative",
       "justice",
-      "administration"
+      "administration",
+      "entirely",
+      "launch",
+      "emergency",
+      "commission",
+      "chase",
+      "engage",
+      "moreover",
+      "landscape"
     ],
     "reviewRound": {
       "0": 1,
@@ -18490,28 +18497,7 @@
     "reviewSweep": {
       "0": {
         "round": 1,
-        "remaining": [
-          "confirm",
-          "institute",
-          "specific",
-          "emergency",
-          "landscape",
-          "commission",
-          "moreover",
-          "launch",
-          "chase",
-          "command",
-          "accompany",
-          "entirely",
-          "pose",
-          "preserve",
-          "encourage",
-          "adopt",
-          "bet",
-          "deposit",
-          "facility",
-          "engage"
-        ]
+        "remaining": []
       },
       "4": {
         "round": 2,
@@ -18569,6 +18555,26 @@
       },
       {
         "word": "scheme",
+        "at": "2026-09-07",
+        "count": 1
+      },
+      {
+        "word": "confirm",
+        "at": "2026-09-07",
+        "count": 1
+      },
+      {
+        "word": "accompany",
+        "at": "2026-09-07",
+        "count": 1
+      },
+      {
+        "word": "command",
+        "at": "2026-09-07",
+        "count": 1
+      },
+      {
+        "word": "preserve",
         "at": "2026-09-07",
         "count": 1
       }
