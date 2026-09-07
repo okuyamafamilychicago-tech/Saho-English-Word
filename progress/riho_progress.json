@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:35:28.058Z",
+  "exportedAt": "2026-09-07T18:37:07.466Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18465,7 +18465,18 @@
       "appreciate",
       "explore",
       "admire",
-      "rural"
+      "rural",
+      "restore",
+      "invest",
+      "portion",
+      "register",
+      "claim",
+      "extend",
+      "appoint",
+      "guarantee",
+      "alternative",
+      "justice",
+      "administration"
     ],
     "reviewRound": {
       "0": 1,
@@ -18481,45 +18492,25 @@
         "round": 1,
         "remaining": [
           "confirm",
-          "invest",
-          "council",
-          "alternative",
           "institute",
           "specific",
-          "justice",
-          "outcome",
           "emergency",
           "landscape",
           "commission",
           "moreover",
-          "administration",
-          "extend",
           "launch",
           "chase",
           "command",
           "accompany",
-          "threaten",
-          "restore",
           "entirely",
-          "appoint",
-          "register",
           "pose",
-          "resource",
           "preserve",
-          "claim",
-          "guarantee",
-          "emerge",
           "encourage",
-          "absolute",
           "adopt",
           "bet",
           "deposit",
           "facility",
-          "sentence",
-          "reveal",
-          "engage",
-          "portion",
-          "commit"
+          "engage"
         ]
       },
       "4": {
@@ -18553,11 +18544,6 @@
     "reviewWrong": [
       {
         "word": "affection",
-        "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "claim",
         "at": "2026-08-29",
         "count": 1
       },
