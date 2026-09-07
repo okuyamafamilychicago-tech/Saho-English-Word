@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:06:36.681Z",
+  "exportedAt": "2026-09-07T18:06:58.238Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3506,6 +3506,17 @@
         "scope": "バッチ2",
         "style": "quiz",
         "round": 5,
+        "found": 0
+      },
+      {
+        "date": "2026-09-07",
+        "climbed": 0,
+        "score": 6,
+        "total": 10,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "quiz",
+        "round": 6,
         "found": 0
       }
     ],
@@ -7695,16 +7706,20 @@
       "revenue",
       "modify",
       "fundamental",
-      "objective"
+      "objective",
+      "prospect",
+      "emphasize",
+      "proportion",
+      "reform"
     ],
     "reviewRound": {
-      "1": 6,
+      "1": 7,
       "2": 3,
       "3": 1
     },
     "reviewSweep": {
       "1": {
-        "round": 6,
+        "round": 7,
         "remaining": []
       },
       "2": {
@@ -7817,29 +7832,9 @@
         ]
       }
     },
-    "reviewDone": 54,
+    "reviewDone": 55,
     "schemaVersion": 2,
     "reviewWrong": [
-      {
-        "word": "emphasize",
-        "at": "2026-09-07",
-        "count": 6
-      },
-      {
-        "word": "reform",
-        "at": "2026-09-07",
-        "count": 6
-      },
-      {
-        "word": "prospect",
-        "at": "2026-09-07",
-        "count": 6
-      },
-      {
-        "word": "proportion",
-        "at": "2026-09-07",
-        "count": 6
-      },
       {
         "word": "sin",
         "at": "2026-08-29",
