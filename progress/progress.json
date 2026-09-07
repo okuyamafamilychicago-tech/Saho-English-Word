@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:06:58.238Z",
+  "exportedAt": "2026-09-07T18:07:07.612Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3518,6 +3518,17 @@
         "style": "quiz",
         "round": 6,
         "found": 0
+      },
+      {
+        "date": "2026-09-07",
+        "climbed": 0,
+        "score": 4,
+        "total": 4,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "quiz",
+        "round": 7,
+        "found": 1
       }
     ],
     "srs": {
@@ -7442,7 +7453,8 @@
     ],
     "svgTheme": "ac",
     "hiddenFound": [
-      0
+      0,
+      1
     ],
     "reviewOk": [
       "crisis",
@@ -7652,7 +7664,6 @@
       "exceed",
       "vital",
       "breed",
-      "discipline",
       "phase",
       "congress",
       "slave",
@@ -7713,14 +7724,114 @@
       "reform"
     ],
     "reviewRound": {
-      "1": 7,
+      "1": 1,
       "2": 3,
       "3": 1
     },
     "reviewSweep": {
       "1": {
-        "round": 7,
-        "remaining": []
+        "round": 1,
+        "remaining": [
+          "distinguish",
+          "stupid",
+          "evaluate",
+          "rescue",
+          "defeat",
+          "sponsor",
+          "transaction",
+          "poverty",
+          "prospect",
+          "revenue",
+          "ban",
+          "considerable",
+          "interpret",
+          "objective",
+          "flexible",
+          "resist",
+          "substance",
+          "alter",
+          "summary",
+          "outstanding",
+          "draft",
+          "impose",
+          "grain",
+          "reform",
+          "incredible",
+          "qualify",
+          "accomplish",
+          "differ",
+          "elementary",
+          "merit",
+          "emphasize",
+          "crucial",
+          "congress",
+          "quit",
+          "distribute",
+          "profession",
+          "consume",
+          "phase",
+          "intense",
+          "proceed",
+          "casual",
+          "enormous",
+          "bow",
+          "drag",
+          "grab",
+          "relevant",
+          "contemporary",
+          "plot",
+          "proportion",
+          "admission",
+          "curious",
+          "modify",
+          "barely",
+          "eliminate",
+          "heal",
+          "ray",
+          "grateful",
+          "era",
+          "complicated",
+          "consistent",
+          "assure",
+          "logic",
+          "spare",
+          "slave",
+          "illustrate",
+          "manufacture",
+          "vital",
+          "rear",
+          "breed",
+          "pile",
+          "edit",
+          "primarily",
+          "greet",
+          "transition",
+          "routine",
+          "confuse",
+          "artificial",
+          "fundamental",
+          "ingredient",
+          "inevitable",
+          "abuse",
+          "odd",
+          "remarkable",
+          "conventional",
+          "external",
+          "nevertheless",
+          "reverse",
+          "shelter",
+          "frequently",
+          "enterprise",
+          "exceed",
+          "intention",
+          "extensive",
+          "assign",
+          "numerous",
+          "transform",
+          "estimate",
+          "vice",
+          "scratch"
+        ]
       },
       "2": {
         "round": 2,
@@ -7832,7 +7943,7 @@
         ]
       }
     },
-    "reviewDone": 55,
+    "reviewDone": 56,
     "schemaVersion": 2,
     "reviewWrong": [
       {
@@ -8004,6 +8115,11 @@
         "word": "mature",
         "at": "2026-08-29",
         "count": 2
+      },
+      {
+        "word": "discipline",
+        "at": "2026-09-07",
+        "count": 1
       }
     ]
   }
