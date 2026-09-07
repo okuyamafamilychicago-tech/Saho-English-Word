@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:26:45.814Z",
+  "exportedAt": "2026-09-07T18:28:11.790Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8043,6 +8043,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 4,
+        "found": 0
+      },
+      {
+        "date": "2026-09-07",
+        "climbed": 0,
+        "score": 0,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 5,
         "found": 0
       }
     ],
@@ -18423,7 +18434,8 @@
       "tactic",
       "derive",
       "retain",
-      "versatile"
+      "versatile",
+      "forge"
     ],
     "reviewRound": {
       "0": 1,
@@ -18432,7 +18444,7 @@
       "6": 1,
       "7": 1,
       "9": 2,
-      "10": 5
+      "10": 6
     },
     "reviewSweep": {
       "0": {
@@ -18560,11 +18572,11 @@
         "remaining": []
       },
       "10": {
-        "round": 5,
+        "round": 6,
         "remaining": []
       }
     },
-    "reviewDone": 117,
+    "reviewDone": 118,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18582,11 +18594,6 @@
         "word": "greed",
         "at": "2026-08-29",
         "count": 1
-      },
-      {
-        "word": "forge",
-        "at": "2026-09-07",
-        "count": 5
       }
     ]
   }
