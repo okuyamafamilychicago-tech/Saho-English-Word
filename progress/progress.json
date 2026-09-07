@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:05:25.802Z",
+  "exportedAt": "2026-09-07T18:06:36.681Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3496,6 +3496,17 @@
         "score": 5,
         "total": 12,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-07",
+        "climbed": 0,
+        "score": 10,
+        "total": 17,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "quiz",
+        "round": 5,
+        "found": 0
       }
     ],
     "srs": {
@@ -7678,16 +7689,22 @@
       "impose",
       "sponsor",
       "logic",
-      "abuse"
+      "abuse",
+      "assure",
+      "substance",
+      "revenue",
+      "modify",
+      "fundamental",
+      "objective"
     ],
     "reviewRound": {
-      "1": 5,
+      "1": 6,
       "2": 3,
       "3": 1
     },
     "reviewSweep": {
       "1": {
-        "round": 5,
+        "round": 6,
         "remaining": []
       },
       "2": {
@@ -7800,58 +7817,28 @@
         ]
       }
     },
-    "reviewDone": 53,
+    "reviewDone": 54,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "fundamental",
-        "at": "2026-08-29",
-        "count": 5
-      },
-      {
         "word": "emphasize",
-        "at": "2026-09-06",
-        "count": 5
-      },
-      {
-        "word": "revenue",
         "at": "2026-09-07",
-        "count": 5
-      },
-      {
-        "word": "objective",
-        "at": "2026-09-07",
-        "count": 5
+        "count": 6
       },
       {
         "word": "reform",
         "at": "2026-09-07",
-        "count": 5
-      },
-      {
-        "word": "modify",
-        "at": "2026-09-07",
-        "count": 5
-      },
-      {
-        "word": "substance",
-        "at": "2026-09-07",
-        "count": 5
+        "count": 6
       },
       {
         "word": "prospect",
         "at": "2026-09-07",
-        "count": 5
+        "count": 6
       },
       {
         "word": "proportion",
         "at": "2026-09-07",
-        "count": 5
-      },
-      {
-        "word": "assure",
-        "at": "2026-09-06",
-        "count": 5
+        "count": 6
       },
       {
         "word": "sin",
