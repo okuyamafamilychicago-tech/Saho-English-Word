@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:28:11.790Z",
+  "exportedAt": "2026-09-07T18:31:22.148Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8055,6 +8055,17 @@
         "style": "quiz",
         "round": 5,
         "found": 0
+      },
+      {
+        "date": "2026-09-07",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 6,
+        "found": 1
       }
     ],
     "srs": {
@@ -17663,7 +17674,8 @@
       7,
       6,
       5,
-      4
+      4,
+      10
     ],
     "reviewOk": [
       "poke",
@@ -17797,7 +17809,6 @@
       "reputation",
       "candidate",
       "contribute",
-      "characteristic",
       "encourage",
       "appropriate",
       "extreme",
@@ -18435,7 +18446,13 @@
       "derive",
       "retain",
       "versatile",
-      "forge"
+      "forge",
+      "disaster",
+      "occasionally",
+      "incident",
+      "bury",
+      "expand",
+      "define"
     ],
     "reviewRound": {
       "0": 1,
@@ -18444,7 +18461,7 @@
       "6": 1,
       "7": 1,
       "9": 2,
-      "10": 6
+      "10": 1
     },
     "reviewSweep": {
       "0": {
@@ -18457,8 +18474,6 @@
           "submit",
           "ensure",
           "bond",
-          "crisis",
-          "define",
           "decline",
           "principal",
           "candidate",
@@ -18466,10 +18481,7 @@
           "council",
           "alternative",
           "institute",
-          "expand",
-          "efficient",
           "specific",
-          "bury",
           "justice",
           "scheme",
           "outcome",
@@ -18490,12 +18502,10 @@
           "extreme",
           "consequence",
           "administration",
-          "characteristic",
           "appreciate",
           "extend",
           "secure",
           "launch",
-          "conflict",
           "chase",
           "command",
           "grant",
@@ -18503,40 +18513,29 @@
           "faith",
           "predict",
           "accompany",
-          "disaster",
           "threaten",
           "restore",
           "entirely",
           "explore",
           "possess",
-          "incident",
           "appoint",
           "register",
           "pose",
           "appropriate",
-          "conference",
           "accurate",
-          "occasionally",
           "thread",
           "resource",
-          "capture",
           "preserve",
           "claim",
           "guarantee",
-          "internal",
           "sensitive",
-          "overcome",
           "emerge",
           "rural",
-          "investigate",
           "reputation",
           "encourage",
           "credit",
-          "cast",
-          "output",
           "absolute",
           "adopt",
-          "praise",
           "swallow",
           "bet",
           "deposit",
@@ -18545,7 +18544,6 @@
           "admire",
           "reveal",
           "approximately",
-          "associate",
           "engage",
           "portion",
           "commit"
@@ -18576,7 +18574,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 118,
+    "reviewDone": 119,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18593,6 +18591,16 @@
       {
         "word": "greed",
         "at": "2026-08-29",
+        "count": 1
+      },
+      {
+        "word": "characteristic",
+        "at": "2026-09-07",
+        "count": 1
+      },
+      {
+        "word": "conflict",
+        "at": "2026-09-07",
         "count": 1
       }
     ]
