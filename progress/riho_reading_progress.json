@@ -1,6 +1,6 @@
 {
   "app": "saho-reading",
-  "savedAt": "2026-09-07T18:24:41.491Z",
+  "savedAt": "2026-09-08T15:23:38.108Z",
   "state": {
     "levels": {
       "850": {
@@ -40,12 +40,28 @@
         "granted": true
       },
       "1150": {
-        "best": 5,
+        "best": 7,
         "cleared": false,
-        "total": 5
+        "total": 7
       }
     },
     "history": [
+      {
+        "lex": 1150,
+        "i": 27,
+        "ts": 1788881018104,
+        "c": 7,
+        "t": 7,
+        "picks": [
+          2,
+          3,
+          2,
+          3,
+          0,
+          3,
+          1
+        ]
+      },
       {
         "lex": 1150,
         "i": 26,
