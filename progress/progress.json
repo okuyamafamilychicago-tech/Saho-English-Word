@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T16:51:21.452Z",
+  "exportedAt": "2026-09-08T16:52:05.170Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3539,6 +3539,17 @@
         "scope": "バッチ3",
         "style": "quiz",
         "round": 3,
+        "found": 0
+      },
+      {
+        "date": "2026-09-08",
+        "climbed": 0,
+        "score": 11,
+        "total": 19,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "quiz",
+        "round": 4,
         "found": 0
       }
     ],
@@ -7758,11 +7769,18 @@
       "leisure",
       "initiative",
       "welfare",
-      "prompt"
+      "prompt",
+      "asset",
+      "strain",
+      "compose",
+      "whereas",
+      "evolve",
+      "fame",
+      "sin"
     ],
     "reviewRound": {
       "1": 1,
-      "2": 4,
+      "2": 5,
       "3": 1
     },
     "reviewSweep": {
@@ -7871,7 +7889,7 @@
         ]
       },
       "2": {
-        "round": 4,
+        "round": 5,
         "remaining": []
       },
       "3": {
@@ -7980,48 +7998,13 @@
         ]
       }
     },
-    "reviewDone": 57,
+    "reviewDone": 58,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "sin",
-        "at": "2026-09-08",
-        "count": 4
-      },
-      {
-        "word": "fame",
-        "at": "2026-09-08",
-        "count": 4
-      },
-      {
-        "word": "compose",
-        "at": "2026-09-08",
-        "count": 4
-      },
-      {
-        "word": "evolve",
-        "at": "2026-09-08",
-        "count": 4
-      },
-      {
-        "word": "whereas",
-        "at": "2026-09-08",
-        "count": 4
-      },
-      {
         "word": "venture",
         "at": "2026-09-08",
-        "count": 4
-      },
-      {
-        "word": "strain",
-        "at": "2026-09-08",
-        "count": 4
-      },
-      {
-        "word": "asset",
-        "at": "2026-09-08",
-        "count": 4
+        "count": 5
       },
       {
         "word": "discipline",
