@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-07T18:39:28.323Z",
+  "exportedAt": "2026-09-08T15:26:17.821Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8066,6 +8066,17 @@
         "style": "quiz",
         "round": 6,
         "found": 1
+      },
+      {
+        "date": "2026-09-07",
+        "climbed": 0,
+        "score": 16,
+        "total": 20,
+        "mode": "review",
+        "scope": "バッチ1",
+        "style": "quiz",
+        "round": 1,
+        "found": 0
       }
     ],
     "srs": {
@@ -18483,10 +18494,18 @@
       "chase",
       "engage",
       "moreover",
-      "landscape"
+      "landscape",
+      "generate",
+      "confirm",
+      "characteristic",
+      "command",
+      "conflict",
+      "preserve",
+      "accompany",
+      "scheme"
     ],
     "reviewRound": {
-      "0": 1,
+      "0": 2,
       "4": 3,
       "5": 1,
       "6": 1,
@@ -18496,7 +18515,7 @@
     },
     "reviewSweep": {
       "0": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       },
       "4": {
@@ -18524,7 +18543,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 119,
+    "reviewDone": 120,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18536,46 +18555,6 @@
       {
         "word": "greed",
         "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "characteristic",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "conflict",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "generate",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "scheme",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "confirm",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "accompany",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "command",
-        "at": "2026-09-07",
-        "count": 1
-      },
-      {
-        "word": "preserve",
-        "at": "2026-09-07",
         "count": 1
       }
     ]
