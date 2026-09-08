@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T16:52:05.170Z",
+  "exportedAt": "2026-09-08T16:52:10.964Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3550,6 +3550,17 @@
         "scope": "バッチ3",
         "style": "quiz",
         "round": 4,
+        "found": 0
+      },
+      {
+        "date": "2026-09-08",
+        "climbed": 0,
+        "score": 7,
+        "total": 8,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "quiz",
+        "round": 5,
         "found": 0
       }
     ],
@@ -7776,11 +7787,12 @@
       "whereas",
       "evolve",
       "fame",
-      "sin"
+      "sin",
+      "venture"
     ],
     "reviewRound": {
       "1": 1,
-      "2": 5,
+      "2": 6,
       "3": 1
     },
     "reviewSweep": {
@@ -7889,7 +7901,7 @@
         ]
       },
       "2": {
-        "round": 5,
+        "round": 6,
         "remaining": []
       },
       "3": {
@@ -7998,14 +8010,9 @@
         ]
       }
     },
-    "reviewDone": 58,
+    "reviewDone": 59,
     "schemaVersion": 2,
     "reviewWrong": [
-      {
-        "word": "venture",
-        "at": "2026-09-08",
-        "count": 5
-      },
       {
         "word": "discipline",
         "at": "2026-09-07",
