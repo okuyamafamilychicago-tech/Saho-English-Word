@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T16:49:35.415Z",
+  "exportedAt": "2026-09-08T16:51:21.452Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3529,6 +3529,17 @@
         "style": "quiz",
         "round": 7,
         "found": 1
+      },
+      {
+        "date": "2026-09-08",
+        "climbed": 0,
+        "score": 15,
+        "total": 34,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "quiz",
+        "round": 3,
+        "found": 0
       }
     ],
     "srs": {
@@ -7736,11 +7747,22 @@
       "restrict",
       "legislation",
       "dedicate",
-      "heritage"
+      "heritage",
+      "mature",
+      "precise",
+      "regret",
+      "govern",
+      "companion",
+      "keen",
+      "prior",
+      "leisure",
+      "initiative",
+      "welfare",
+      "prompt"
     ],
     "reviewRound": {
       "1": 1,
-      "2": 3,
+      "2": 4,
       "3": 1
     },
     "reviewSweep": {
@@ -7849,7 +7871,7 @@
         ]
       },
       "2": {
-        "round": 3,
+        "round": 4,
         "remaining": []
       },
       "3": {
@@ -7958,103 +7980,48 @@
         ]
       }
     },
-    "reviewDone": 56,
+    "reviewDone": 57,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "sin",
         "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "fame",
         "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "keen",
-        "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "companion",
-        "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "precise",
-        "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "compose",
         "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "initiative",
-        "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "regret",
-        "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "govern",
-        "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "evolve",
         "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "whereas",
         "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "welfare",
-        "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "venture",
         "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "prompt",
-        "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "prior",
-        "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "leisure",
-        "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "strain",
         "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "asset",
         "at": "2026-09-08",
-        "count": 3
-      },
-      {
-        "word": "mature",
-        "at": "2026-09-08",
-        "count": 3
+        "count": 4
       },
       {
         "word": "discipline",
