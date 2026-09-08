@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T16:45:31.750Z",
+  "exportedAt": "2026-09-08T16:49:35.415Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7721,7 +7721,22 @@
       "prospect",
       "emphasize",
       "proportion",
-      "reform"
+      "reform",
+      "justify",
+      "luxury",
+      "withdraw",
+      "storage",
+      "substantial",
+      "specialize",
+      "bind",
+      "disorder",
+      "imply",
+      "notion",
+      "generous",
+      "restrict",
+      "legislation",
+      "dedicate",
+      "heritage"
     ],
     "reviewRound": {
       "1": 1,
@@ -7834,7 +7849,7 @@
         ]
       },
       "2": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       },
       "3": {
@@ -7948,173 +7963,98 @@
     "reviewWrong": [
       {
         "word": "sin",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "justify",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "fame",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "imply",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "notion",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "keen",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "restrict",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "companion",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "precise",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "compose",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "initiative",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "regret",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "govern",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "bind",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "evolve",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "whereas",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "welfare",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "withdraw",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "venture",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "dedicate",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "luxury",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "prompt",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "disorder",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "generous",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "storage",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "prior",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "leisure",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "strain",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "specialize",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "substantial",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "heritage",
-        "at": "2026-08-29",
-        "count": 2
-      },
-      {
-        "word": "legislation",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "asset",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "mature",
-        "at": "2026-08-29",
-        "count": 2
+        "at": "2026-09-08",
+        "count": 3
       },
       {
         "word": "discipline",
