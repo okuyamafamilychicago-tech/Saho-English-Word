@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T15:35:52.016Z",
+  "exportedAt": "2026-09-09T18:06:14.951Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18376,7 +18376,6 @@
       "chronic",
       "sustainable",
       "comprise",
-      "divine",
       "fuel",
       "wage",
       "extract",
@@ -18398,7 +18397,6 @@
       "footage",
       "deem",
       "subsequent",
-      "execute",
       "virtually",
       "cluster",
       "juvenile",
@@ -18441,7 +18439,6 @@
       "expire",
       "toxic",
       "duration",
-      "static",
       "configuration",
       "dismiss",
       "adequate",
@@ -18456,7 +18453,6 @@
       "collaborate",
       "integrate",
       "maximize",
-      "subtle",
       "undergo",
       "regime",
       "array",
@@ -18467,7 +18463,6 @@
       "derive",
       "retain",
       "versatile",
-      "forge",
       "disaster",
       "occasionally",
       "incident",
@@ -18552,11 +18547,7 @@
       "10": {
         "round": 1,
         "remaining": [
-          "fuel",
-          "implement",
           "enhance",
-          "eligible",
-          "comprehensive",
           "ultimately",
           "configuration",
           "parameter",
@@ -18566,54 +18557,39 @@
           "exclusive",
           "compliance",
           "entity",
-          "execute",
           "venue",
           "equity",
           "enroll",
           "protocol",
           "wage",
           "excel",
-          "premium",
           "recipient",
-          "embrace",
           "legacy",
           "hub",
-          "comprise",
           "dual",
           "compatible",
           "fraud",
           "maximize",
           "equivalent",
-          "extended",
           "duration",
           "assault",
-          "derive",
           "subsequent",
           "integrity",
           "dispute",
           "spouse",
           "deem",
-          "vulnerable",
           "compile",
-          "subtle",
           "reminder",
-          "divine",
           "tactic",
           "dividend",
           "advocate",
           "identical",
-          "forge",
           "oversee",
-          "expire",
           "collaborate",
-          "enforce",
-          "static",
           "thrive",
           "swap",
-          "footage",
           "merge",
           "vibrant",
-          "juvenile",
           "dismiss"
         ]
       }
@@ -18635,6 +18611,31 @@
       {
         "word": "jurisdiction",
         "at": "2026-09-08",
+        "count": 1
+      },
+      {
+        "word": "execute",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "static",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "subtle",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "divine",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "forge",
+        "at": "2026-09-09",
         "count": 1
       }
     ]
