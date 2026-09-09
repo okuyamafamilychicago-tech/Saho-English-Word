@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T18:06:14.951Z",
+  "exportedAt": "2026-09-09T18:09:06.127Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -17762,7 +17762,6 @@
       "wrinkle",
       "mock",
       "pursue",
-      "legacy",
       "diminish",
       "urgent",
       "sew",
@@ -17926,7 +17925,6 @@
       "peculiar",
       "obsess",
       "eccentric",
-      "parameter",
       "buffer",
       "diplomacy",
       "reconstruct",
@@ -18381,7 +18379,6 @@
       "extract",
       "equivalent",
       "protocol",
-      "venue",
       "implement",
       "trigger",
       "authentic",
@@ -18405,7 +18402,6 @@
       "resume",
       "anonymous",
       "entrepreneur",
-      "entity",
       "enhance",
       "specify",
       "deploy",
@@ -18439,7 +18435,6 @@
       "expire",
       "toxic",
       "duration",
-      "configuration",
       "dismiss",
       "adequate",
       "facilitate",
@@ -18455,9 +18450,7 @@
       "maximize",
       "undergo",
       "regime",
-      "array",
       "equity",
-      "compliance",
       "premium",
       "tactic",
       "derive",
@@ -18548,49 +18541,16 @@
         "round": 1,
         "remaining": [
           "enhance",
-          "ultimately",
-          "configuration",
-          "parameter",
           "integrate",
-          "array",
-          "ongoing",
-          "exclusive",
-          "compliance",
-          "entity",
-          "venue",
           "equity",
-          "enroll",
-          "protocol",
-          "wage",
-          "excel",
-          "recipient",
-          "legacy",
-          "hub",
-          "dual",
-          "compatible",
-          "fraud",
-          "maximize",
-          "equivalent",
           "duration",
           "assault",
-          "subsequent",
-          "integrity",
-          "dispute",
           "spouse",
-          "deem",
           "compile",
-          "reminder",
-          "tactic",
-          "dividend",
           "advocate",
-          "identical",
           "oversee",
-          "collaborate",
           "thrive",
-          "swap",
-          "merge",
-          "vibrant",
-          "dismiss"
+          "swap"
         ]
       }
     },
@@ -18635,6 +18595,41 @@
       },
       {
         "word": "forge",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "venue",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "configuration",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "legacy",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "parameter",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "entity",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "compliance",
+        "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "array",
         "at": "2026-09-09",
         "count": 1
       }
