@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-09T18:10:08.119Z",
+  "exportedAt": "2026-09-10T05:27:34.678Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8088,6 +8088,17 @@
         "style": "quiz",
         "round": 2,
         "found": 1
+      },
+      {
+        "date": "2026-09-09",
+        "climbed": 0,
+        "score": 9,
+        "total": 11,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 1,
+        "found": 0
       }
     ],
     "srs": {
@@ -18499,21 +18510,124 @@
       "conflict",
       "preserve",
       "accompany",
-      "scheme"
+      "scheme",
+      "outstanding",
+      "ray",
+      "qualify",
+      "revenue",
+      "considerable",
+      "substance",
+      "profession",
+      "manufacture",
+      "ban",
+      "external",
+      "reverse",
+      "pile",
+      "exceed",
+      "intention",
+      "intense",
+      "congress",
+      "casual"
     ],
     "reviewRound": {
       "0": 1,
+      "1": 1,
       "4": 3,
       "5": 1,
       "6": 1,
       "7": 1,
       "9": 2,
-      "10": 1
+      "10": 2
     },
     "reviewSweep": {
       "0": {
         "round": 2,
         "remaining": []
+      },
+      "1": {
+        "round": 1,
+        "remaining": [
+          "distinguish",
+          "stupid",
+          "evaluate",
+          "rescue",
+          "defeat",
+          "sponsor",
+          "transaction",
+          "poverty",
+          "prospect",
+          "interpret",
+          "objective",
+          "flexible",
+          "alter",
+          "summary",
+          "draft",
+          "impose",
+          "grain",
+          "reform",
+          "incredible",
+          "accomplish",
+          "differ",
+          "elementary",
+          "merit",
+          "emphasize",
+          "crucial",
+          "quit",
+          "distribute",
+          "consume",
+          "phase",
+          "proceed",
+          "enormous",
+          "bow",
+          "drag",
+          "grab",
+          "relevant",
+          "contemporary",
+          "plot",
+          "proportion",
+          "admission",
+          "curious",
+          "modify",
+          "barely",
+          "eliminate",
+          "heal",
+          "grateful",
+          "era",
+          "consistent",
+          "assure",
+          "logic",
+          "spare",
+          "slave",
+          "illustrate",
+          "rear",
+          "breed",
+          "edit",
+          "primarily",
+          "greet",
+          "transition",
+          "routine",
+          "confuse",
+          "artificial",
+          "fundamental",
+          "ingredient",
+          "inevitable",
+          "abuse",
+          "odd",
+          "remarkable",
+          "conventional",
+          "discipline",
+          "nevertheless",
+          "shelter",
+          "frequently",
+          "enterprise",
+          "extensive",
+          "assign",
+          "numerous",
+          "transform",
+          "estimate",
+          "vice",
+          "scratch"
+        ]
       },
       "4": {
         "round": 2,
@@ -18540,7 +18654,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 121,
+    "reviewDone": 122,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18627,6 +18741,11 @@
       {
         "word": "assault",
         "at": "2026-09-09",
+        "count": 1
+      },
+      {
+        "word": "resist",
+        "at": "2026-09-10",
         "count": 1
       }
     ]
