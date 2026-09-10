@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T05:33:46.258Z",
+  "exportedAt": "2026-09-10T05:35:43.714Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18578,7 +18578,24 @@
       "emphasize",
       "contemporary",
       "vice",
-      "enterprise"
+      "enterprise",
+      "heal",
+      "merit",
+      "prospect",
+      "flexible",
+      "numerous",
+      "rescue",
+      "drag",
+      "evaluate",
+      "distinguish",
+      "odd",
+      "edit",
+      "fundamental",
+      "defeat",
+      "eliminate",
+      "primarily",
+      "discipline",
+      "barely"
     ],
     "reviewRound": {
       "0": 1,
@@ -18597,28 +18614,7 @@
       },
       "1": {
         "round": 1,
-        "remaining": [
-          "distinguish",
-          "evaluate",
-          "rescue",
-          "defeat",
-          "transaction",
-          "prospect",
-          "flexible",
-          "merit",
-          "drag",
-          "barely",
-          "eliminate",
-          "heal",
-          "era",
-          "rear",
-          "edit",
-          "primarily",
-          "fundamental",
-          "odd",
-          "discipline",
-          "numerous"
-        ]
+        "remaining": []
       },
       "4": {
         "round": 2,
@@ -18771,6 +18767,16 @@
       },
       {
         "word": "transition",
+        "at": "2026-09-10",
+        "count": 1
+      },
+      {
+        "word": "era",
+        "at": "2026-09-10",
+        "count": 1
+      },
+      {
+        "word": "transaction",
         "at": "2026-09-10",
         "count": 1
       }
