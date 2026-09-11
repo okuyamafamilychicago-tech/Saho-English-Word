@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-11T05:25:11.951Z",
+  "exportedAt": "2026-09-11T05:25:36.016Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8129,6 +8129,17 @@
         "total": 15,
         "mode": "review",
         "scope": "バッチ11",
+        "style": "quiz",
+        "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-09-11",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ9",
         "style": "quiz",
         "round": 2,
         "found": 0
@@ -18650,16 +18661,17 @@
       "divine",
       "venue",
       "subtle",
-      "greed"
+      "greed",
+      "affection"
     ],
     "reviewRound": {
       "0": 1,
       "1": 1,
       "4": 3,
       "5": 1,
-      "6": 1,
+      "6": 4,
       "7": 1,
-      "8": 2,
+      "8": 1,
       "9": 2,
       "10": 3
     },
@@ -18681,7 +18693,7 @@
         "remaining": []
       },
       "6": {
-        "round": 3,
+        "round": 4,
         "remaining": []
       },
       "7": {
@@ -18701,15 +18713,10 @@
         "remaining": []
       }
     },
-    "reviewDone": 125,
+    "reviewDone": 126,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
-      {
-        "word": "affection",
-        "at": "2026-08-29",
-        "count": 1
-      },
       {
         "word": "jurisdiction",
         "at": "2026-09-11",
