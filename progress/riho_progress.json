@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-10T05:35:43.714Z",
+  "exportedAt": "2026-09-11T05:22:48.239Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8096,6 +8096,17 @@
         "total": 11,
         "mode": "review",
         "scope": "バッチ11",
+        "style": "quiz",
+        "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-09-10",
+        "climbed": 0,
+        "score": 18,
+        "total": 20,
+        "mode": "review",
+        "scope": "バッチ2",
         "style": "quiz",
         "round": 1,
         "found": 0
@@ -18595,11 +18606,21 @@
       "eliminate",
       "primarily",
       "discipline",
-      "barely"
+      "barely",
+      "objective",
+      "transaction",
+      "transition",
+      "conventional",
+      "resist",
+      "spare",
+      "alter",
+      "phase",
+      "relevant",
+      "era"
     ],
     "reviewRound": {
       "0": 1,
-      "1": 1,
+      "1": 2,
       "4": 3,
       "5": 1,
       "6": 1,
@@ -18613,7 +18634,7 @@
         "remaining": []
       },
       "1": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       },
       "4": {
@@ -18641,7 +18662,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 122,
+    "reviewDone": 123,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18728,56 +18749,6 @@
       {
         "word": "assault",
         "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "resist",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "phase",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "spare",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "objective",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "alter",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "conventional",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "relevant",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "transition",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "era",
-        "at": "2026-09-10",
-        "count": 1
-      },
-      {
-        "word": "transaction",
-        "at": "2026-09-10",
         "count": 1
       }
     ]
