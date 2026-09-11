@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-11T05:24:57.504Z",
+  "exportedAt": "2026-09-11T05:25:11.951Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8121,6 +8121,17 @@
         "style": "quiz",
         "round": 2,
         "found": 1
+      },
+      {
+        "date": "2026-09-11",
+        "climbed": 0,
+        "score": 10,
+        "total": 15,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 2,
+        "found": 0
       }
     ],
     "srs": {
@@ -18638,7 +18649,8 @@
       "legacy",
       "divine",
       "venue",
-      "subtle"
+      "subtle",
+      "greed"
     ],
     "reviewRound": {
       "0": 1,
@@ -18647,8 +18659,9 @@
       "5": 1,
       "6": 1,
       "7": 1,
+      "8": 2,
       "9": 2,
-      "10": 2
+      "10": 3
     },
     "reviewSweep": {
       "0": {
@@ -18675,6 +18688,10 @@
         "round": 2,
         "remaining": []
       },
+      "8": {
+        "round": 2,
+        "remaining": []
+      },
       "9": {
         "round": 1,
         "remaining": []
@@ -18684,17 +18701,12 @@
         "remaining": []
       }
     },
-    "reviewDone": 124,
+    "reviewDone": 125,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "affection",
-        "at": "2026-08-29",
-        "count": 1
-      },
-      {
-        "word": "greed",
         "at": "2026-08-29",
         "count": 1
       },
