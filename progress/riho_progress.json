@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-11T05:22:48.239Z",
+  "exportedAt": "2026-09-11T05:24:57.504Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8110,6 +8110,17 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-09-11",
+        "climbed": 0,
+        "score": 10,
+        "total": 10,
+        "mode": "review",
+        "scope": "バッチ2",
+        "style": "quiz",
+        "round": 2,
+        "found": 1
       }
     ],
     "srs": {
@@ -17720,7 +17731,8 @@
       5,
       4,
       10,
-      0
+      0,
+      1
     ],
     "reviewOk": [
       "poke",
@@ -18616,11 +18628,21 @@
       "alter",
       "phase",
       "relevant",
-      "era"
+      "era",
+      "static",
+      "execute",
+      "parameter",
+      "forge",
+      "array",
+      "entity",
+      "legacy",
+      "divine",
+      "venue",
+      "subtle"
     ],
     "reviewRound": {
       "0": 1,
-      "1": 2,
+      "1": 1,
       "4": 3,
       "5": 1,
       "6": 1,
@@ -18658,11 +18680,11 @@
         "remaining": []
       },
       "10": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 123,
+    "reviewDone": 124,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18678,78 +18700,28 @@
       },
       {
         "word": "jurisdiction",
-        "at": "2026-09-08",
-        "count": 1
-      },
-      {
-        "word": "execute",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "static",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "subtle",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "divine",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "forge",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "venue",
-        "at": "2026-09-09",
-        "count": 1
+        "at": "2026-09-11",
+        "count": 2
       },
       {
         "word": "configuration",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "legacy",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "parameter",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "entity",
-        "at": "2026-09-09",
-        "count": 1
+        "at": "2026-09-11",
+        "count": 2
       },
       {
         "word": "compliance",
-        "at": "2026-09-09",
-        "count": 1
-      },
-      {
-        "word": "array",
-        "at": "2026-09-09",
-        "count": 1
+        "at": "2026-09-11",
+        "count": 2
       },
       {
         "word": "spouse",
-        "at": "2026-09-09",
-        "count": 1
+        "at": "2026-09-11",
+        "count": 2
       },
       {
         "word": "assault",
-        "at": "2026-09-09",
-        "count": 1
+        "at": "2026-09-11",
+        "count": 2
       }
     ]
   }
