@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-11T05:31:00.763Z",
+  "exportedAt": "2026-09-12T06:30:03.908Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18709,7 +18709,12 @@
       "strip",
       "anxious",
       "fame",
-      "bold"
+      "bold",
+      "compliance",
+      "assault",
+      "configuration",
+      "jurisdiction",
+      "spouse"
     ],
     "reviewRound": {
       "0": 1,
@@ -18922,7 +18927,7 @@
         "remaining": []
       },
       "10": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       }
     },
@@ -18930,31 +18935,6 @@
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
-      {
-        "word": "jurisdiction",
-        "at": "2026-09-11",
-        "count": 2
-      },
-      {
-        "word": "configuration",
-        "at": "2026-09-11",
-        "count": 2
-      },
-      {
-        "word": "compliance",
-        "at": "2026-09-11",
-        "count": 2
-      },
-      {
-        "word": "spouse",
-        "at": "2026-09-11",
-        "count": 2
-      },
-      {
-        "word": "assault",
-        "at": "2026-09-11",
-        "count": 2
-      },
       {
         "word": "extraordinary",
         "at": "2026-09-11",
