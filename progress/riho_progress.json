@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-12T06:30:03.908Z",
+  "exportedAt": "2026-09-12T06:33:48.136Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8153,6 +8153,17 @@
         "scope": "バッチ7",
         "style": "quiz",
         "round": 4,
+        "found": 0
+      },
+      {
+        "date": "2026-09-12",
+        "climbed": 0,
+        "score": 5,
+        "total": 5,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 3,
         "found": 0
       }
     ],
@@ -18479,7 +18490,6 @@
       "mentor",
       "enroll",
       "thrive",
-      "integrity",
       "tier",
       "advocate",
       "administer",
@@ -18513,12 +18523,10 @@
       "collaborate",
       "integrate",
       "maximize",
-      "undergo",
       "regime",
       "equity",
       "premium",
       "tactic",
-      "derive",
       "retain",
       "versatile",
       "disaster",
@@ -18726,7 +18734,7 @@
       "7": 1,
       "8": 1,
       "9": 2,
-      "10": 3
+      "10": 1
     },
     "reviewSweep": {
       "0": {
@@ -18927,11 +18935,95 @@
         "remaining": []
       },
       "10": {
-        "round": 3,
-        "remaining": []
+        "round": 1,
+        "remaining": [
+          "enhance",
+          "specify",
+          "eligible",
+          "comprehensive",
+          "ultimately",
+          "configuration",
+          "parameter",
+          "retain",
+          "integrate",
+          "array",
+          "ongoing",
+          "compliance",
+          "entity",
+          "execute",
+          "venue",
+          "verify",
+          "stunning",
+          "liability",
+          "equity",
+          "enroll",
+          "protocol",
+          "wage",
+          "excel",
+          "premium",
+          "facilitate",
+          "diagnose",
+          "embrace",
+          "trigger",
+          "sustainable",
+          "legacy",
+          "hub",
+          "comprise",
+          "dual",
+          "compatible",
+          "intake",
+          "chronic",
+          "deploy",
+          "fraud",
+          "maximize",
+          "anonymous",
+          "extended",
+          "virtually",
+          "duration",
+          "assault",
+          "subsequent",
+          "entrepreneur",
+          "administer",
+          "dispute",
+          "incentive",
+          "spouse",
+          "deem",
+          "vulnerable",
+          "compile",
+          "subtle",
+          "divine",
+          "tactic",
+          "dividend",
+          "advocate",
+          "patent",
+          "cluster",
+          "extract",
+          "versatile",
+          "tier",
+          "forge",
+          "authentic",
+          "oversee",
+          "habitat",
+          "expire",
+          "trait",
+          "collaborate",
+          "enforce",
+          "regime",
+          "tremendous",
+          "static",
+          "thrive",
+          "footage",
+          "merge",
+          "vibrant",
+          "juvenile",
+          "mentor",
+          "resume",
+          "dismiss",
+          "toxic"
+        ]
       }
     },
-    "reviewDone": 127,
+    "reviewDone": 128,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -18958,6 +19050,21 @@
       {
         "word": "trace",
         "at": "2026-09-11",
+        "count": 1
+      },
+      {
+        "word": "integrity",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "derive",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "undergo",
+        "at": "2026-09-12",
         "count": 1
       }
     ]
