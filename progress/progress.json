@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-08T16:52:10.964Z",
+  "exportedAt": "2026-09-12T17:43:59.533Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3562,6 +3562,17 @@
         "style": "quiz",
         "round": 5,
         "found": 0
+      },
+      {
+        "date": "2026-09-08",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "quiz",
+        "round": 6,
+        "found": 1
       }
     ],
     "srs": {
@@ -7487,7 +7498,8 @@
     "svgTheme": "ac",
     "hiddenFound": [
       0,
-      1
+      1,
+      2
     ],
     "reviewOk": [
       "crisis",
@@ -7788,11 +7800,77 @@
       "evolve",
       "fame",
       "sin",
-      "venture"
+      "venture",
+      "disadvantage",
+      "squeeze",
+      "stare",
+      "recruit",
+      "explode",
+      "rob",
+      "outlook",
+      "spoil",
+      "instruct",
+      "radical",
+      "occupation",
+      "colony",
+      "seemingly",
+      "urgent",
+      "desirable",
+      "ratio",
+      "hesitate",
+      "flesh",
+      "dull",
+      "ancestor",
+      "furthermore",
+      "alien",
+      "crush",
+      "partial",
+      "spill",
+      "mutual",
+      "evil",
+      "concrete",
+      "exaggerate",
+      "prominent",
+      "strive",
+      "innocent",
+      "sustain",
+      "yell",
+      "entitle",
+      "cattle",
+      "shortage",
+      "perceive",
+      "exceptional",
+      "breakdown",
+      "seize",
+      "collapse",
+      "consent",
+      "shield",
+      "await",
+      "motivate",
+      "monument",
+      "interfere",
+      "nod",
+      "charm",
+      "persuade",
+      "pretend",
+      "steep",
+      "obstacle",
+      "glance",
+      "pregnant",
+      "assemble",
+      "donate",
+      "treaty",
+      "sore",
+      "supreme",
+      "stake",
+      "liberal",
+      "accordingly",
+      "scent",
+      "oral"
     ],
     "reviewRound": {
       "1": 1,
-      "2": 6,
+      "2": 1,
       "3": 1
     },
     "reviewSweep": {
@@ -7906,116 +7984,185 @@
       },
       "3": {
         "round": 1,
-        "remaining": [
-          "outlook",
-          "peer",
-          "rob",
-          "alien",
-          "stake",
-          "prominent",
-          "strive",
-          "await",
-          "crush",
-          "scenery",
-          "grave",
-          "seemingly",
-          "insert",
-          "collapse",
-          "monument",
-          "tackle",
-          "thorough",
-          "loyal",
-          "yell",
-          "sacred",
-          "exceptional",
-          "regulate",
-          "motivate",
-          "shortage",
-          "accommodate",
-          "evil",
-          "moderate",
-          "disadvantage",
-          "concrete",
-          "shield",
-          "spill",
-          "burden",
-          "entitle",
-          "steep",
-          "prohibit",
-          "partial",
-          "interfere",
-          "sequence",
-          "mere",
-          "donate",
-          "insight",
-          "intent",
-          "radical",
-          "charm",
-          "furthermore",
-          "excessive",
-          "recruit",
-          "personnel",
-          "sore",
-          "supreme",
-          "occupation",
-          "innocent",
-          "stare",
-          "cattle",
-          "flesh",
-          "pregnant",
-          "colony",
-          "assemble",
-          "instruct",
-          "neglect",
-          "pretend",
-          "devote",
-          "obstacle",
-          "exaggerate",
-          "squeeze",
-          "remark",
-          "perceive",
-          "spoil",
-          "persuade",
-          "mutual",
-          "cite",
-          "scent",
-          "arise",
-          "genuine",
-          "accordingly",
-          "sustain",
-          "genetic",
-          "boost",
-          "glance",
-          "consent",
-          "terminal",
-          "scope",
-          "delight",
-          "liberal",
-          "explode",
-          "hesitate",
-          "oral",
-          "sacrifice",
-          "contrary",
-          "overlook",
-          "treaty",
-          "urgent",
-          "dull",
-          "ratio",
-          "breakdown",
-          "desirable",
-          "anticipate",
-          "seize",
-          "ancestor",
-          "nod"
-        ]
+        "remaining": []
       }
     },
-    "reviewDone": 59,
+    "reviewDone": 60,
     "schemaVersion": 2,
     "reviewWrong": [
       {
         "word": "discipline",
         "at": "2026-09-07",
+        "count": 1
+      },
+      {
+        "word": "prohibit",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "excessive",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "tackle",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "sacrifice",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "remark",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "peer",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "thorough",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "regulate",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "grave",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "scope",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "cite",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "scenery",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "boost",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "burden",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "intent",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "contrary",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "sacred",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "accommodate",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "sequence",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "personnel",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "neglect",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "genetic",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "loyal",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "mere",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "insert",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "devote",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "delight",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "insight",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "arise",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "terminal",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "moderate",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "anticipate",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "overlook",
+        "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "genuine",
+        "at": "2026-09-12",
         "count": 1
       }
     ]
