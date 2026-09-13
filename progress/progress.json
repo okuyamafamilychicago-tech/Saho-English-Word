@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-13T12:43:51.002Z",
+  "exportedAt": "2026-09-13T12:44:03.242Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -7945,7 +7945,8 @@
       "sacred",
       "arise",
       "sacrifice",
-      "devote"
+      "devote",
+      "discipline"
     ],
     "reviewRound": {
       "1": 1,
@@ -8169,12 +8170,6 @@
     },
     "reviewDone": 64,
     "schemaVersion": 2,
-    "reviewWrong": [
-      {
-        "word": "discipline",
-        "at": "2026-09-07",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
