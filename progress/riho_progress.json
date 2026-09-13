@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-13T06:44:46.743Z",
+  "exportedAt": "2026-09-13T06:50:00.192Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18738,7 +18738,36 @@
       "neat",
       "evolve",
       "acknowledge",
-      "script"
+      "script",
+      "heritage",
+      "exclude",
+      "fabric",
+      "sin",
+      "sweep",
+      "luxury",
+      "harvest",
+      "criticize",
+      "burst",
+      "disorder",
+      "justify",
+      "whereas",
+      "resemble",
+      "reliable",
+      "innovation",
+      "awful",
+      "literally",
+      "regret",
+      "dominate",
+      "fade",
+      "fancy",
+      "leisure",
+      "resort",
+      "interrupt",
+      "yield",
+      "withdraw",
+      "govern",
+      "fortunate",
+      "valid"
     ],
     "reviewRound": {
       "0": 1,
@@ -18764,44 +18793,11 @@
       "2": {
         "round": 1,
         "remaining": [
-          "literally",
-          "resort",
-          "heritage",
-          "exclude",
-          "prior",
-          "innovation",
-          "sweep",
-          "resemble",
-          "leisure",
-          "criticize",
-          "burst",
-          "disorder",
-          "reliable",
           "equip",
-          "justify",
-          "yield",
-          "withdraw",
-          "sin",
-          "awful",
-          "regret",
-          "harvest",
-          "fade",
-          "dominate",
-          "fortunate",
-          "whereas",
-          "luxury",
-          "fancy",
-          "interrupt",
-          "asset",
-          "fabric",
           "suburb",
-          "margin",
           "depart",
-          "govern",
-          "valid",
           "restrict",
           "rub",
-          "dedicate",
           "accuse"
         ]
       },
@@ -19080,6 +19076,26 @@
       },
       {
         "word": "grocery",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "asset",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "margin",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "dedicate",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "prior",
         "at": "2026-09-13",
         "count": 1
       }
