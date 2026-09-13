@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-12T06:33:48.136Z",
+  "exportedAt": "2026-09-13T06:44:46.743Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18722,7 +18722,23 @@
       "assault",
       "configuration",
       "jurisdiction",
-      "spouse"
+      "spouse",
+      "funeral",
+      "glory",
+      "harsh",
+      "forgive",
+      "wander",
+      "silly",
+      "mess",
+      "abandon",
+      "cruise",
+      "imply",
+      "initially",
+      "stir",
+      "neat",
+      "evolve",
+      "acknowledge",
+      "script"
     ],
     "reviewRound": {
       "0": 1,
@@ -18749,8 +18765,6 @@
         "round": 1,
         "remaining": [
           "literally",
-          "abandon",
-          "initially",
           "resort",
           "heritage",
           "exclude",
@@ -18760,24 +18774,13 @@
           "resemble",
           "leisure",
           "criticize",
-          "legislation",
           "burst",
           "disorder",
-          "grocery",
-          "stir",
-          "silly",
           "reliable",
-          "imply",
-          "wander",
-          "cruise",
           "equip",
           "justify",
           "yield",
           "withdraw",
-          "script",
-          "specialize",
-          "funeral",
-          "forgive",
           "sin",
           "awful",
           "regret",
@@ -18785,18 +18788,13 @@
           "fade",
           "dominate",
           "fortunate",
-          "harsh",
           "whereas",
-          "evolve",
           "luxury",
           "fancy",
-          "acknowledge",
           "interrupt",
           "asset",
-          "glory",
           "fabric",
           "suburb",
-          "mess",
           "margin",
           "depart",
           "govern",
@@ -18804,9 +18802,7 @@
           "restrict",
           "rub",
           "dedicate",
-          "neat",
-          "accuse",
-          "companion"
+          "accuse"
         ]
       },
       "4": {
@@ -19065,6 +19061,26 @@
       {
         "word": "undergo",
         "at": "2026-09-12",
+        "count": 1
+      },
+      {
+        "word": "legislation",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "specialize",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "companion",
+        "at": "2026-09-13",
+        "count": 1
+      },
+      {
+        "word": "grocery",
+        "at": "2026-09-13",
         "count": 1
       }
     ]
