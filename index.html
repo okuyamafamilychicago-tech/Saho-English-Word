@@ -2063,6 +2063,8 @@ function renderHome() {
       <p style="margin-top:6px; font-size:0.82rem;">${lastNote}</p>
     </div>
   `;
+  // 上の絵・なかま表は #app の外にあるので、ホームに 戻るたび ここで そろえる
+  renderMountain();
 }
 
 let uploadParsed = [];
@@ -3949,6 +3951,9 @@ function finishReview() {
     found: newly.length,
   });
   saveState();
+  // 🌟 上の絵と「ひみつの なかま」表を すぐ 描き直す。
+  //    テスト/まなぶ の終了時と 同じ扱いにする（これが無いと 再読込まで 古いまま だった）
+  renderMountain();
 
   // このセッションで さわった バッチの 進捗（あと何語で なかま？）
   const okSet = reviewOkSet();
