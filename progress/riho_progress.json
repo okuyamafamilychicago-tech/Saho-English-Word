@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-13T06:50:35.278Z",
+  "exportedAt": "2026-09-13T06:52:29.639Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8164,6 +8164,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 3,
+        "found": 0
+      },
+      {
+        "date": "2026-09-13",
+        "climbed": 0,
+        "score": 6,
+        "total": 6,
+        "mode": "review",
+        "scope": "バッチ3",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -18773,12 +18784,28 @@
       "equip",
       "rub",
       "suburb",
-      "restrict"
+      "restrict",
+      "trace",
+      "margin",
+      "specialize",
+      "undergo",
+      "extraordinary",
+      "legislation",
+      "grocery",
+      "companion",
+      "substantial",
+      "prior",
+      "asset",
+      "dedicate",
+      "integrity",
+      "gross",
+      "lean",
+      "derive"
     ],
     "reviewRound": {
       "0": 1,
       "1": 1,
-      "2": 1,
+      "2": 2,
       "4": 3,
       "5": 1,
       "6": 1,
@@ -19014,90 +19041,9 @@
         ]
       }
     },
-    "reviewDone": 128,
+    "reviewDone": 129,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "extraordinary",
-        "at": "2026-09-11",
-        "count": 1
-      },
-      {
-        "word": "substantial",
-        "at": "2026-09-11",
-        "count": 1
-      },
-      {
-        "word": "lean",
-        "at": "2026-09-11",
-        "count": 1
-      },
-      {
-        "word": "gross",
-        "at": "2026-09-11",
-        "count": 1
-      },
-      {
-        "word": "trace",
-        "at": "2026-09-11",
-        "count": 1
-      },
-      {
-        "word": "integrity",
-        "at": "2026-09-12",
-        "count": 1
-      },
-      {
-        "word": "derive",
-        "at": "2026-09-12",
-        "count": 1
-      },
-      {
-        "word": "undergo",
-        "at": "2026-09-12",
-        "count": 1
-      },
-      {
-        "word": "legislation",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "specialize",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "companion",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "grocery",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "asset",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "margin",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "dedicate",
-        "at": "2026-09-13",
-        "count": 1
-      },
-      {
-        "word": "prior",
-        "at": "2026-09-13",
-        "count": 1
-      }
-    ]
+    "reviewWrong": []
   }
 }
