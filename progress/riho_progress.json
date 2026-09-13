@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-13T06:50:00.192Z",
+  "exportedAt": "2026-09-13T06:50:35.278Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18767,7 +18767,13 @@
       "withdraw",
       "govern",
       "fortunate",
-      "valid"
+      "valid",
+      "accuse",
+      "depart",
+      "equip",
+      "rub",
+      "suburb",
+      "restrict"
     ],
     "reviewRound": {
       "0": 1,
@@ -18792,14 +18798,7 @@
       },
       "2": {
         "round": 1,
-        "remaining": [
-          "equip",
-          "suburb",
-          "depart",
-          "restrict",
-          "rub",
-          "accuse"
-        ]
+        "remaining": []
       },
       "4": {
         "round": 2,
