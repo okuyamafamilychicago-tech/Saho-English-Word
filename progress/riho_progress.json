@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-13T06:52:29.639Z",
+  "exportedAt": "2026-09-14T18:34:20.961Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8176,6 +8176,17 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-09-13",
+        "climbed": 0,
+        "score": 16,
+        "total": 16,
+        "mode": "review",
+        "scope": "まちがえ集中",
+        "style": "quiz",
+        "round": null,
+        "found": 1
       }
     ],
     "srs": {
@@ -17787,7 +17798,8 @@
       4,
       10,
       0,
-      1
+      1,
+      2
     ],
     "reviewOk": [
       "poke",
@@ -18800,12 +18812,29 @@
       "integrity",
       "gross",
       "lean",
-      "derive"
+      "derive",
+      "tackle",
+      "excessive",
+      "spill",
+      "pretend",
+      "concrete",
+      "shortage",
+      "personnel",
+      "sequence",
+      "evil",
+      "treaty",
+      "instruct",
+      "monument",
+      "genetic",
+      "recruit",
+      "steep",
+      "innocent"
     ],
     "reviewRound": {
       "0": 1,
       "1": 1,
       "2": 2,
+      "3": 1,
       "4": 3,
       "5": 1,
       "6": 1,
@@ -18826,6 +18855,89 @@
       "2": {
         "round": 1,
         "remaining": []
+      },
+      "3": {
+        "round": 1,
+        "remaining": [
+          "outlook",
+          "peer",
+          "rob",
+          "alien",
+          "stake",
+          "prominent",
+          "strive",
+          "await",
+          "crush",
+          "scenery",
+          "grave",
+          "insert",
+          "collapse",
+          "thorough",
+          "loyal",
+          "yell",
+          "sacred",
+          "exceptional",
+          "regulate",
+          "motivate",
+          "accommodate",
+          "disadvantage",
+          "shield",
+          "burden",
+          "entitle",
+          "partial",
+          "interfere",
+          "mere",
+          "donate",
+          "insight",
+          "intent",
+          "radical",
+          "charm",
+          "furthermore",
+          "sore",
+          "supreme",
+          "occupation",
+          "stare",
+          "cattle",
+          "flesh",
+          "pregnant",
+          "colony",
+          "assemble",
+          "neglect",
+          "obstacle",
+          "exaggerate",
+          "squeeze",
+          "remark",
+          "perceive",
+          "spoil",
+          "persuade",
+          "mutual",
+          "cite",
+          "scent",
+          "arise",
+          "genuine",
+          "accordingly",
+          "sustain",
+          "boost",
+          "glance",
+          "consent",
+          "terminal",
+          "scope",
+          "delight",
+          "liberal",
+          "explode",
+          "hesitate",
+          "oral",
+          "sacrifice",
+          "contrary",
+          "overlook",
+          "urgent",
+          "ratio",
+          "breakdown",
+          "desirable",
+          "seize",
+          "ancestor",
+          "nod"
+        ]
       },
       "4": {
         "round": 2,
@@ -19041,9 +19153,40 @@
         ]
       }
     },
-    "reviewDone": 129,
+    "reviewDone": 130,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "anticipate",
+        "at": "2026-09-14",
+        "count": 1
+      },
+      {
+        "word": "seemingly",
+        "at": "2026-09-14",
+        "count": 1
+      },
+      {
+        "word": "devote",
+        "at": "2026-09-14",
+        "count": 1
+      },
+      {
+        "word": "prohibit",
+        "at": "2026-09-14",
+        "count": 1
+      },
+      {
+        "word": "moderate",
+        "at": "2026-09-14",
+        "count": 1
+      },
+      {
+        "word": "dull",
+        "at": "2026-09-14",
+        "count": 1
+      }
+    ]
   }
 }
