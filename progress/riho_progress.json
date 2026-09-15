@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-15T16:36:59.621Z",
+  "exportedAt": "2026-09-15T16:39:14.018Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18882,7 +18882,17 @@
       "ratio",
       "loyal",
       "nod",
-      "exceptional"
+      "exceptional",
+      "scope",
+      "flesh",
+      "peer",
+      "alien",
+      "prominent",
+      "scent",
+      "seize",
+      "sacred",
+      "charm",
+      "intent"
     ],
     "reviewRound": {
       "0": 1,
@@ -18912,21 +18922,7 @@
       },
       "3": {
         "round": 1,
-        "remaining": [
-          "peer",
-          "alien",
-          "prominent",
-          "sacred",
-          "shield",
-          "mere",
-          "intent",
-          "charm",
-          "flesh",
-          "scent",
-          "boost",
-          "scope",
-          "seize"
-        ]
+        "remaining": []
       },
       "4": {
         "round": 2,
@@ -19208,6 +19204,21 @@
       },
       {
         "word": "desirable",
+        "at": "2026-09-15",
+        "count": 1
+      },
+      {
+        "word": "mere",
+        "at": "2026-09-15",
+        "count": 1
+      },
+      {
+        "word": "boost",
+        "at": "2026-09-15",
+        "count": 1
+      },
+      {
+        "word": "shield",
         "at": "2026-09-15",
         "count": 1
       }
