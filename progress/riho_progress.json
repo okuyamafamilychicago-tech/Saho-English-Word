@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-15T16:33:43.623Z",
+  "exportedAt": "2026-09-15T16:36:59.621Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18868,7 +18868,21 @@
       "arise",
       "contrary",
       "donate",
-      "spoil"
+      "spoil",
+      "insight",
+      "squeeze",
+      "entitle",
+      "consent",
+      "hesitate",
+      "interfere",
+      "crush",
+      "obstacle",
+      "cite",
+      "motivate",
+      "ratio",
+      "loyal",
+      "nod",
+      "exceptional"
     ],
     "reviewRound": {
       "0": 1,
@@ -18902,30 +18916,16 @@
           "peer",
           "alien",
           "prominent",
-          "crush",
-          "loyal",
           "sacred",
-          "exceptional",
-          "motivate",
           "shield",
-          "entitle",
-          "interfere",
           "mere",
-          "insight",
           "intent",
           "charm",
           "flesh",
-          "obstacle",
-          "squeeze",
-          "cite",
           "scent",
           "boost",
-          "consent",
           "scope",
-          "hesitate",
-          "ratio",
-          "seize",
-          "nod"
+          "seize"
         ]
       },
       "4": {
