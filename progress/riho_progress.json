@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-16T14:39:24.766Z",
+  "exportedAt": "2026-09-17T04:45:51.683Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8197,6 +8197,17 @@
         "scope": "バッチ4",
         "style": "quiz",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-09-16",
+        "climbed": 0,
+        "score": 13,
+        "total": 16,
+        "mode": "review",
+        "scope": "バッチ4",
+        "style": "quiz",
+        "round": 2,
         "found": 0
       }
     ],
@@ -18916,13 +18927,16 @@
       "mutual",
       "moderate",
       "regulate",
-      "shield"
+      "shield",
+      "devote",
+      "anticipate",
+      "liberal"
     ],
     "reviewRound": {
       "0": 1,
       "1": 1,
       "2": 2,
-      "3": 2,
+      "3": 3,
       "4": 3,
       "5": 1,
       "6": 1,
@@ -18945,7 +18959,7 @@
         "remaining": []
       },
       "3": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       },
       "4": {
@@ -19162,25 +19176,9 @@
         ]
       }
     },
-    "reviewDone": 131,
+    "reviewDone": 132,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": [
-      {
-        "word": "anticipate",
-        "at": "2026-09-16",
-        "count": 2
-      },
-      {
-        "word": "devote",
-        "at": "2026-09-16",
-        "count": 2
-      },
-      {
-        "word": "liberal",
-        "at": "2026-09-16",
-        "count": 2
-      }
-    ]
+    "reviewWrong": []
   }
 }
