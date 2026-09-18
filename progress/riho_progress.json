@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-18T14:57:53.413Z",
+  "exportedAt": "2026-09-18T14:59:08.123Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8220,6 +8220,17 @@
         "style": "quiz",
         "round": 3,
         "found": 1
+      },
+      {
+        "date": "2026-09-18",
+        "climbed": 0,
+        "score": 71,
+        "total": 79,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 1,
+        "found": 0
       }
     ],
     "srs": {
@@ -18934,7 +18945,14 @@
       "shield",
       "devote",
       "anticipate",
-      "liberal"
+      "liberal",
+      "diagnose",
+      "extended",
+      "regime",
+      "extract",
+      "oversee",
+      "deem",
+      "dividend"
     ],
     "reviewRound": {
       "0": 1,
@@ -18947,7 +18965,7 @@
       "7": 1,
       "8": 1,
       "9": 1,
-      "10": 1
+      "10": 2
     },
     "reviewSweep": {
       "0": {
@@ -19193,53 +19211,18 @@
         ]
       },
       "10": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 133,
+    "reviewDone": 134,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "extended",
-        "at": "2026-09-18",
-        "count": 1
-      },
-      {
-        "word": "dividend",
-        "at": "2026-09-18",
-        "count": 1
-      },
-      {
         "word": "subtle",
         "at": "2026-09-18",
-        "count": 1
-      },
-      {
-        "word": "oversee",
-        "at": "2026-09-18",
-        "count": 1
-      },
-      {
-        "word": "diagnose",
-        "at": "2026-09-18",
-        "count": 1
-      },
-      {
-        "word": "extract",
-        "at": "2026-09-18",
-        "count": 1
-      },
-      {
-        "word": "deem",
-        "at": "2026-09-18",
-        "count": 1
-      },
-      {
-        "word": "regime",
-        "at": "2026-09-18",
-        "count": 1
+        "count": 2
       }
     ]
   }
