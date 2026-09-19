@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:11:14.157Z",
+  "exportedAt": "2026-09-19T06:20:52.747Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8241,6 +8241,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 0,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ11",
+        "style": "quiz",
+        "round": 3,
         "found": 0
       }
     ],
@@ -18507,7 +18518,6 @@
       "humiliate",
       "sober",
       "fulfill",
-      "conviction",
       "curious",
       "vulgar",
       "rear",
@@ -18520,7 +18530,6 @@
       "cease",
       "acquire",
       "complicated",
-      "niche",
       "institute",
       "output",
       "bet",
@@ -18963,7 +18972,37 @@
       "extract",
       "oversee",
       "deem",
-      "dividend"
+      "dividend",
+      "drain",
+      "cognitive",
+      "mandatory",
+      "norm",
+      "compelling",
+      "notable",
+      "subsidiary",
+      "petition",
+      "disposal",
+      "empower",
+      "repository",
+      "relieve",
+      "allocate",
+      "induce",
+      "sheer",
+      "threshold",
+      "leverage",
+      "ramp",
+      "migration",
+      "exploit",
+      "transparent",
+      "surveillance",
+      "deficiency",
+      "embed",
+      "integral",
+      "momentum",
+      "alignment",
+      "renowned",
+      "velocity",
+      "sibling"
     ],
     "reviewRound": {
       "0": 1,
@@ -18976,7 +19015,8 @@
       "7": 1,
       "8": 1,
       "9": 1,
-      "10": 3
+      "10": 4,
+      "11": 1
     },
     "reviewSweep": {
       "0": {
@@ -19224,9 +19264,13 @@
       "10": {
         "round": 3,
         "remaining": []
+      },
+      "11": {
+        "round": 1,
+        "remaining": []
       }
     },
-    "reviewDone": 135,
+    "reviewDone": 136,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19234,6 +19278,81 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
+      },
+      {
+        "word": "manipulate",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "adverse",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "controversial",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "collision",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "foster",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "incur",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "milestone",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "niche",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "discretion",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "conviction",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "legitimate",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "depict",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "indigenous",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "custody",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "intimate",
+        "at": "2026-09-19",
+        "count": 1
       }
     ]
   }
