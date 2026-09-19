@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:20:52.747Z",
+  "exportedAt": "2026-09-19T06:23:21.602Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8252,6 +8252,17 @@
         "scope": "バッチ11",
         "style": "quiz",
         "round": 3,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 35,
+        "total": 50,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -19002,7 +19013,19 @@
       "alignment",
       "renowned",
       "velocity",
-      "sibling"
+      "sibling",
+      "conviction",
+      "intimate",
+      "foster",
+      "milestone",
+      "custody",
+      "indigenous",
+      "incur",
+      "discretion",
+      "niche",
+      "controversial",
+      "legitimate",
+      "collision"
     ],
     "reviewRound": {
       "0": 1,
@@ -19016,7 +19039,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 1
+      "11": 2
     },
     "reviewSweep": {
       "0": {
@@ -19266,11 +19289,11 @@
         "remaining": []
       },
       "11": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 136,
+    "reviewDone": 137,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19282,77 +19305,17 @@
       {
         "word": "manipulate",
         "at": "2026-09-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "adverse",
         "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "controversial",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "collision",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "foster",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "incur",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "milestone",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "niche",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "discretion",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "conviction",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "legitimate",
-        "at": "2026-09-19",
-        "count": 1
+        "count": 2
       },
       {
         "word": "depict",
         "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "indigenous",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "custody",
-        "at": "2026-09-19",
-        "count": 1
-      },
-      {
-        "word": "intimate",
-        "at": "2026-09-19",
-        "count": 1
+        "count": 2
       }
     ]
   }
