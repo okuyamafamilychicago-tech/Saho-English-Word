@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:47:27.091Z",
+  "exportedAt": "2026-09-19T06:47:50.017Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8373,6 +8373,17 @@
         "scope": "バッチ12",
         "style": "flash",
         "round": 8,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 3,
+        "total": 5,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "flash",
+        "round": 9,
         "found": 0
       }
     ],
@@ -19136,7 +19147,8 @@
       "depict",
       "exploit",
       "discretion",
-      "induce"
+      "induce",
+      "leverage"
     ],
     "reviewRound": {
       "0": 1,
@@ -19150,7 +19162,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 9
+      "11": 10
     },
     "reviewSweep": {
       "0": {
@@ -19400,11 +19412,11 @@
         "remaining": []
       },
       "11": {
-        "round": 9,
+        "round": 10,
         "remaining": []
       }
     },
-    "reviewDone": 147,
+    "reviewDone": 148,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19416,12 +19428,7 @@
       {
         "word": "integral",
         "at": "2026-09-19",
-        "count": 9
-      },
-      {
-        "word": "leverage",
-        "at": "2026-09-19",
-        "count": 9
+        "count": 10
       }
     ]
   }
