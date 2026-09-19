@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:33:36.805Z",
+  "exportedAt": "2026-09-19T06:36:46.591Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8296,6 +8296,17 @@
         "scope": "バッチ12",
         "style": "flash",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 5,
+        "total": 20,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "flash",
+        "round": 2,
         "found": 0
       }
     ],
@@ -19046,7 +19057,8 @@
       "legitimate",
       "custody",
       "subsidiary",
-      "cognitive"
+      "cognitive",
+      "deficiency"
     ],
     "reviewRound": {
       "0": 1,
@@ -19060,7 +19072,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 2
+      "11": 3
     },
     "reviewSweep": {
       "0": {
@@ -19310,11 +19322,11 @@
         "remaining": []
       },
       "11": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       }
     },
-    "reviewDone": 140,
+    "reviewDone": 141,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19324,79 +19336,74 @@
         "count": 3
       },
       {
-        "word": "deficiency",
-        "at": "2026-09-19",
-        "count": 2
-      },
-      {
         "word": "repository",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "depict",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "controversial",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "discretion",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "surveillance",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "integral",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "intimate",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "exploit",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "compelling",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "petition",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "induce",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "incur",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "conviction",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       },
       {
         "word": "leverage",
         "at": "2026-09-19",
-        "count": 2
+        "count": 3
       }
     ]
   }
