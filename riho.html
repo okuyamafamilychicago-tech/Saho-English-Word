@@ -1182,47 +1182,47 @@ const FRIENDS = FRIEND_CAST.map(([emoji, name], i) => {
 });
 
 // ============================================================
-// 🌟 隠れキャラ（ひみつの なかま）— 30体、バッチと 1対1
+// 🍽️ 隠れごちそう（ひみつの ごちそう）— 30品、バッチと 1対1
 // バッチNの 100語 ぜんぶを 復習で 正解 すると HIDDEN_CAST[N-1] を 発見。
-// 絵(viewBox 600x196)の 中の 決まった 場所に 住みつく。軌道(trail)を 避けた 座標。
-// 一度 見つけた なかまは ずっと 残る（あとで まちがえても 消えない）。
+// 絵(viewBox 600x196)の 中の 決まった 場所に ならぶ。軌道(trail)を 避けた 座標。
+// 一度 見つけた ごちそうは ずっと 残る（あとで まちがえても 消えない）。
 // ============================================================
 const HIDDEN_CAST = [
   // バッチ1-3: 左下（スタートの ちかく）
-  { emoji:"🦄", name:"ユニコーン",     x: 52,  y: 128 },
-  { emoji:"🧚", name:"ようせい",       x: 105, y: 128 },
-  { emoji:"🍄", name:"きのこの せい",   x: 158, y: 128 },
+  { emoji:"🍕", name:"ピザ",             x: 52,  y: 128 },
+  { emoji:"🍝", name:"たらこパスタ",     x: 105, y: 128 },
+  { emoji:"🍜", name:"牛すじうどん",     x: 158, y: 128 },
   // バッチ4-8: 左〜中の 森
-  { emoji:"🐉", name:"ドラゴン",       x: 60,  y: 92  },
-  { emoji:"🦕", name:"きょうりゅう",   x: 128, y: 92  },
-  { emoji:"👻", name:"おばけ",         x: 196, y: 92  },
-  { emoji:"🔮", name:"まほうの たま",   x: 264, y: 92  },
-  { emoji:"🌈", name:"にじ",           x: 320, y: 92  },
+  { emoji:"🍣", name:"おすし",           x: 60,  y: 92  },
+  { emoji:"🍛", name:"カレーライス",     x: 128, y: 92  },
+  { emoji:"🍙", name:"おにぎり",         x: 196, y: 92  },
+  { emoji:"🥟", name:"ぎょうざ",         x: 264, y: 92  },
+  { emoji:"🍤", name:"えびフライ",       x: 320, y: 92  },
   // バッチ9-16: 中そらの 高さ
-  { emoji:"⭐", name:"きらぼし",       x: 86,  y: 50  },
-  { emoji:"🌙", name:"みかづき",       x: 149, y: 50  },
-  { emoji:"☄️", name:"ほうきぼし",     x: 212, y: 50  },
-  { emoji:"🪐", name:"わくせい",       x: 275, y: 50  },
-  { emoji:"🧙", name:"まほうつかい",   x: 338, y: 50  },
-  { emoji:"🧞", name:"ランプの せい",   x: 401, y: 50  },
-  { emoji:"🐲", name:"りゅうの こ",     x: 464, y: 50  },
-  { emoji:"🦖", name:"ティラノ",       x: 520, y: 50  },
+  { emoji:"🍔", name:"ハンバーガー",     x: 86,  y: 50  },
+  { emoji:"🍟", name:"フライドポテト",   x: 149, y: 50  },
+  { emoji:"🌮", name:"タコス",           x: 212, y: 50  },
+  { emoji:"🍱", name:"おべんとう",       x: 275, y: 50  },
+  { emoji:"🍢", name:"おでん",           x: 338, y: 50  },
+  { emoji:"🥐", name:"クロワッサン",     x: 401, y: 50  },
+  { emoji:"🥞", name:"パンケーキ",       x: 464, y: 50  },
+  { emoji:"🧇", name:"ワッフル",         x: 520, y: 50  },
   // バッチ17-24: いちばん上の 空
-  { emoji:"🧜", name:"にんぎょ",       x: 55,  y: 26  },
-  { emoji:"🦩", name:"フラミンゴ",     x: 118, y: 26  },
-  { emoji:"🦚", name:"くじゃく",       x: 181, y: 26  },
-  { emoji:"🦢", name:"はくちょう",     x: 244, y: 26  },
-  { emoji:"🦜", name:"オウム",         x: 307, y: 26  },
-  { emoji:"🐧", name:"ペンギン",       x: 370, y: 26  },
-  { emoji:"🦭", name:"あざらし",       x: 433, y: 26  },
-  { emoji:"🐬", name:"いるか",         x: 496, y: 26  },
+  { emoji:"🍩", name:"ドーナツ",         x: 55,  y: 26  },
+  { emoji:"🍪", name:"クッキー",         x: 118, y: 26  },
+  { emoji:"🧁", name:"カップケーキ",     x: 181, y: 26  },
+  { emoji:"🍰", name:"ショートケーキ",   x: 244, y: 26  },
+  { emoji:"🍮", name:"プリン",           x: 307, y: 26  },
+  { emoji:"🍡", name:"だんご",           x: 370, y: 26  },
+  { emoji:"🍦", name:"ソフトクリーム",   x: 433, y: 26  },
+  { emoji:"🍧", name:"かき氷",           x: 496, y: 26  },
   // バッチ25-30: 右下（ゴールの ちかく・川のほう）
-  { emoji:"🐳", name:"くじら",         x: 385, y: 148 },
-  { emoji:"🐙", name:"たこ",           x: 440, y: 148 },
-  { emoji:"🦀", name:"かに",           x: 495, y: 148 },
-  { emoji:"🐠", name:"ねったいぎょ",   x: 550, y: 148 },
-  { emoji:"🍀", name:"よつばの クローバー", x: 415, y: 176 },
-  { emoji:"🌸", name:"さくらの せい",   x: 505, y: 176 },
+  { emoji:"🍫", name:"チョコレート",     x: 385, y: 148 },
+  { emoji:"🍓", name:"いちご",           x: 440, y: 148 },
+  { emoji:"🍑", name:"もも",             x: 495, y: 148 },
+  { emoji:"🍇", name:"ぶどう",           x: 550, y: 148 },
+  { emoji:"🍉", name:"すいか",           x: 415, y: 176 },
+  { emoji:"🎂", name:"バースデーケーキ", x: 505, y: 176 },
 ];
 
 /* ============================================================ */
@@ -1817,7 +1817,7 @@ function renderMountain() {
 }
 
 // ============================================================
-// 🌟 隠れキャラ
+// 🍽️ 隠れごちそう
 // ============================================================
 function hiddenFound() {
   if (!Array.isArray(state.hiddenFound)) state.hiddenFound = [];
@@ -1922,13 +1922,13 @@ function renderHiddenRoster() {
   }).join("");
   box.innerHTML = `
     <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px">
-      <span style="font-weight:800; font-size:0.82rem; color:var(--berry)">🌟 ひみつの なかま</span>
+      <span style="font-weight:800; font-size:0.82rem; color:var(--berry)">🍽️ ひみつの ごちそう</span>
       <span style="font-size:0.74rem; font-weight:800; color:var(--ink-soft)">${found.length} / ${HIDDEN_CAST.length}</span>
     </div>
     <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:6px 4px">${cells}</div>
     <div style="margin-top:8px; font-size:0.66rem; color:var(--ink-soft); line-height:1.5">
-      🔄 <b>復習</b>で バッチの <b>100語 ぜんぶ 正解</b> すると、そのバッチの なかまを 1体 発見！<br>
-      数字は「復習で 正解ずみ / 全語」。見つけた なかまは 上の 絵に すみつくよ 🌲
+      🔄 <b>復習</b>で バッチの <b>100語 ぜんぶ 正解</b> すると、そのバッチの ごちそうを 1品 発見！<br>
+      数字は「復習で 正解ずみ / 全語」。見つけた ごちそうは 上の 絵に ならぶよ 🍽️
     </div>`;
 }
 
@@ -3579,7 +3579,7 @@ function openReviewBatchPicker() {
     const hiddenLine = !h ? ""
       : got
       ? `<div style="font-size:0.68rem; color:var(--berry); font-weight:800; margin-top:2px">${h.emoji} ${h.name} げっと！</div>`
-      : `<div style="font-size:0.68rem; color:var(--berry); font-weight:700; margin-top:2px">🌟 復習クリア ${rp.ok}/${rp.total} — あと ${rp.total - rp.ok}語 で なかま</div>`;
+      : `<div style="font-size:0.68rem; color:var(--berry); font-weight:700; margin-top:2px">🌟 復習クリア ${rp.ok}/${rp.total} — あと ${rp.total - rp.ok}語 で ごちそう</div>`;
     // 🔁 つぎの 復習で 何語 出るか（startReview と 同じ reviewPlan で 決める）
     const plan = reviewPlan(i);
     const nextLine = plan.batchTotal === 0
@@ -4004,7 +4004,7 @@ function finishReview() {
     found: newly.length,
   });
   saveState();
-  // 🌟 上の絵と「ひみつの なかま」表を すぐ 描き直す。
+  // 🌟 上の絵と「ひみつの ごちそう」表を すぐ 描き直す。
   //    テスト/まなぶ の終了時と 同じ扱いにする（これが無いと 再読込まで 古いまま だった）
   renderMountain();
 
@@ -4025,7 +4025,7 @@ function finishReview() {
 
   const hiddenBlock = newly.length
     ? `<div class="hidden-pop" style="background:linear-gradient(135deg,#f7f0fa,#fff6e8); border:2px solid #c9a3d8; border-radius:18px; padding:16px 14px; margin:16px 0; text-align:center">
-         <div style="font-size:0.8rem; font-weight:800; color:var(--berry); letter-spacing:0.04em">✨ ひみつの なかま 発見！ ✨</div>
+         <div style="font-size:0.8rem; font-weight:800; color:var(--berry); letter-spacing:0.04em">✨ ひみつの ごちそう 発見！ ✨</div>
          ${newly.map(f => `
            <div style="margin:8px 0">
              <div style="font-size:3rem; line-height:1.2">${f.emoji}</div>
@@ -4033,15 +4033,15 @@ function finishReview() {
              <div style="font-size:0.68rem; color:var(--ink-soft); font-weight:700">バッチ${f.idx + 1} を 復習で ぜんぶ 正解！</div>
            </div>`).join("")}
          <div style="font-size:0.74rem; color:var(--ink-soft); font-weight:600; margin-top:6px">
-           上の 絵の 中に すみついたよ 🌲　（${foundCount} / ${HIDDEN_CAST.length}）
+           上の 絵の 中に ならんだよ 🍽️　（${foundCount} / ${HIDDEN_CAST.length}）
          </div>
        </div>`
     : foundCount >= HIDDEN_CAST.length
     ? `<div style="background:var(--cream); border:1.5px solid #e3d0ec; border-radius:14px; padding:11px 13px; margin:14px 0; text-align:center; font-size:0.8rem; font-weight:800; color:var(--berry)">
-         🌟 ひみつの なかま は ぜんぶ 見つけたよ！（${HIDDEN_CAST.length}／${HIDDEN_CAST.length}）
+         🍽️ ひみつの ごちそう は ぜんぶ 見つけたよ！（${HIDDEN_CAST.length}／${HIDDEN_CAST.length}）
        </div>`
     : `<div style="background:var(--cream); border:1px dashed #d9c9a5; border-radius:14px; padding:11px 13px; margin:14px 0; text-align:center; font-size:0.76rem; color:var(--ink-soft); font-weight:700; line-height:1.6">
-         🌟 バッチの <b>ぜんぶの 語</b> を 復習で 正解 すると なかまを 1体 発見！<br>
+         🌟 バッチの <b>ぜんぶの 語</b> を 復習で 正解 すると ごちそうを 1品 発見！<br>
          ${nearest
             ? `バッチ${nearest.i + 1}: <b style="color:var(--teal)">${nearest.ok} / ${nearest.total}</b> 語 クリア — あと <b>${nearest.total - nearest.ok}</b> 語！`
             : ""}
