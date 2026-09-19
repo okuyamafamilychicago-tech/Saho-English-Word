@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:24:07.217Z",
+  "exportedAt": "2026-09-19T06:30:09.043Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8274,6 +8274,17 @@
         "scope": "バッチ12",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 3,
+        "total": 3,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "quiz",
+        "round": 3,
         "found": 0
       }
     ],
@@ -18996,49 +19007,29 @@
       "deem",
       "dividend",
       "drain",
-      "cognitive",
       "mandatory",
       "norm",
-      "compelling",
       "notable",
-      "subsidiary",
-      "petition",
       "disposal",
       "empower",
-      "repository",
       "relieve",
       "allocate",
-      "induce",
       "sheer",
-      "threshold",
-      "leverage",
       "ramp",
       "migration",
-      "exploit",
       "transparent",
-      "surveillance",
-      "deficiency",
       "embed",
-      "integral",
       "momentum",
       "alignment",
       "renowned",
       "velocity",
       "sibling",
-      "conviction",
-      "intimate",
       "foster",
       "milestone",
-      "custody",
       "indigenous",
-      "incur",
-      "discretion",
       "niche",
-      "controversial",
-      "legitimate",
       "collision",
       "manipulate",
-      "depict",
       "adverse"
     ],
     "reviewRound": {
@@ -19053,7 +19044,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 3
+      "11": 1
     },
     "reviewSweep": {
       "0": {
@@ -19303,11 +19294,11 @@
         "remaining": []
       },
       "11": {
-        "round": 3,
+        "round": 1,
         "remaining": []
       }
     },
-    "reviewDone": 138,
+    "reviewDone": 139,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19315,6 +19306,106 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
+      },
+      {
+        "word": "deficiency",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "repository",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "depict",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "threshold",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "controversial",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "custody",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "discretion",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "surveillance",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "integral",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "intimate",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "exploit",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "compelling",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "petition",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "induce",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "incur",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "subsidiary",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "cognitive",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "legitimate",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "conviction",
+        "at": "2026-09-19",
+        "count": 1
+      },
+      {
+        "word": "leverage",
+        "at": "2026-09-19",
+        "count": 1
       }
     ]
   }
