@@ -1324,8 +1324,9 @@ function loadMy100Words() {
 
 hydrateUserWordsFromMyBank();
 
-// 起動時にGitHubから自動読込（Tokenがあれば）
-(async function autoLoadFromGitHub() {
+// 起動時にGitHubから自動読込（Tokenがあれば）。GH_TOKEN_KEY などは下の方で定義されるので、
+// スクリプト全体を読み終えてから走らせる（setTimeout 0）
+setTimeout(async function autoLoadFromGitHub() {
   const token = getGHToken();
   if (!token) return;
   try {
@@ -1348,7 +1349,7 @@ hydrateUserWordsFromMyBank();
   } catch (e) {
     console.warn("GitHub auto-load failed:", e);
   }
-})();
+}, 0);
 
 // ============================================================
 // 単語マスター（バッチ式ロック機構）
