@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:23:21.602Z",
+  "exportedAt": "2026-09-19T06:24:07.217Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8263,6 +8263,17 @@
         "scope": "バッチ12",
         "style": "quiz",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 12,
+        "total": 15,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "quiz",
+        "round": 2,
         "found": 0
       }
     ],
@@ -19025,7 +19036,10 @@
       "niche",
       "controversial",
       "legitimate",
-      "collision"
+      "collision",
+      "manipulate",
+      "depict",
+      "adverse"
     ],
     "reviewRound": {
       "0": 1,
@@ -19039,7 +19053,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 2
+      "11": 3
     },
     "reviewSweep": {
       "0": {
@@ -19289,11 +19303,11 @@
         "remaining": []
       },
       "11": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       }
     },
-    "reviewDone": 137,
+    "reviewDone": 138,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19301,21 +19315,6 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
-      },
-      {
-        "word": "manipulate",
-        "at": "2026-09-19",
-        "count": 2
-      },
-      {
-        "word": "adverse",
-        "at": "2026-09-19",
-        "count": 2
-      },
-      {
-        "word": "depict",
-        "at": "2026-09-19",
-        "count": 2
       }
     ]
   }
