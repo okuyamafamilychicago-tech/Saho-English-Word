@@ -26787,7 +26787,7 @@ const USERS = {
   riho: { name:"Riho", mark:"✧", key:"riho-reading-v1", startLex: 1150, grade: 6,
           tokenKey:"vocabTrail_riho_gh_token", ghPath:"progress/riho_reading_progress.json", wordApp:"riho.html" },
 };
-const BUILD = "2026-09-19 a";   // 更新のたびに変える。画面の下に出るので、届いたか確かめられる
+const BUILD = "2026-09-19 b";   // 更新のたびに変える。画面の下に出るので、届いたか確かめられる
 const USER_KEY = "saho-reading-user";
 const USER = (() => {
   // ① URL の ?user= がいちばん強い
@@ -27189,7 +27189,7 @@ function fmtDate(ts) {
 function accSVG(c, litCount, opt = {}) {
   const on = opt.on !== false;
   const S = opt.box || 100, k = S / 100, cx = S / 2, cy = S / 2;
-  let s = `<svg viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">`;
+  let s = `<svg viewBox="0 0 ${S} ${S}" width="${S}" height="${S}" xmlns="http://www.w3.org/2000/svg">`;
   // 台座（ゲットずみ＝白い丸に金のふち、未ゲット＝うすいグレー）
   s += `<circle cx="${cx}" cy="${cy}" r="${44*k}" fill="${on ? '#fffaf4' : '#ece4e8'}"
       stroke="${on ? '#e6c37a' : '#d9cdd3'}" stroke-width="${2.2*k}"/>`;
