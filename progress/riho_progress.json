@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:47:02.600Z",
+  "exportedAt": "2026-09-19T06:47:27.091Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8362,6 +8362,17 @@
         "scope": "バッチ12",
         "style": "flash",
         "round": 7,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 1,
+        "total": 6,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "flash",
+        "round": 8,
         "found": 0
       }
     ],
@@ -19122,7 +19133,10 @@
       "intimate",
       "incur",
       "repository",
-      "depict"
+      "depict",
+      "exploit",
+      "discretion",
+      "induce"
     ],
     "reviewRound": {
       "0": 1,
@@ -19136,7 +19150,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 8
+      "11": 9
     },
     "reviewSweep": {
       "0": {
@@ -19386,11 +19400,11 @@
         "remaining": []
       },
       "11": {
-        "round": 8,
+        "round": 9,
         "remaining": []
       }
     },
-    "reviewDone": 146,
+    "reviewDone": 147,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -19400,29 +19414,14 @@
         "count": 3
       },
       {
-        "word": "discretion",
-        "at": "2026-09-19",
-        "count": 8
-      },
-      {
         "word": "integral",
         "at": "2026-09-19",
-        "count": 8
-      },
-      {
-        "word": "exploit",
-        "at": "2026-09-19",
-        "count": 8
-      },
-      {
-        "word": "induce",
-        "at": "2026-09-19",
-        "count": 8
+        "count": 9
       },
       {
         "word": "leverage",
         "at": "2026-09-19",
-        "count": 8
+        "count": 9
       }
     ]
   }
