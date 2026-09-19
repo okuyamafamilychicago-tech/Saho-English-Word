@@ -7,7 +7,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Saho English Reading — 星座をあつめよう</title>
+<title>Saho English Reading — アクセサリーをあつめよう</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -32,9 +32,10 @@
     --good:      #3f9c7c;
     --bad:       #d65f48;
 
-    --night:     #232a44;
-    --night-2:   #39406a;
-    --star:      #ffd977;
+    --night:     #e9c2d3;   /* アクセサリーボックスのベルベット（うすいバラ色） */
+    --night-2:   #dfa9c1;
+    --star:      #b3688c;   /* ボックスの上の文字色（ベリー） */
+    --gold:      #d9a441;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -84,9 +85,9 @@
   .btn.small { padding: 7px 12px; font-size: 0.74rem; border-radius: 8px; }
   .btn.ghost { background: var(--card); color: var(--coral-deep); box-shadow: 0 2px 0 var(--line); border: 1px solid var(--line); }
   .btn.ghost:hover:not(:disabled) { background: #fff8ee; }
-  .btn.ghost.on { background: var(--night); color: #fff; border-color: var(--night); box-shadow: 0 2px 0 #161b2f; }
-  .btn.night { background: var(--night); box-shadow: 0 2px 0 #161b2f; }
-  .btn.night:hover:not(:disabled) { background: var(--night-2); }
+  .btn.ghost.on { background: var(--berry); color: #fff; border-color: var(--berry); box-shadow: 0 2px 0 #8f4f6f; }
+  .btn.night { background: var(--berry); box-shadow: 0 2px 0 #8f4f6f; }
+  .btn.night:hover:not(:disabled) { background: #9e5a7c; }
 
   /* ---------- Card ---------- */
   .card {
@@ -112,7 +113,7 @@
   .sky-pct { font-weight: 500; font-size: 1.4rem; color: var(--coral); line-height: 1; }
   .sky-pct small { font-size: 0.78rem; }
   .sky-cap { font-size: 0.6rem; color: var(--ink-soft); text-align: right; letter-spacing: 0.06em; font-weight: 300; }
-  /* いま挑戦中の星座 */
+  /* いま挑戦中のアクセサリー */
   .sky-now { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
   .sky-now .ni { font-size: 1.35rem; line-height: 1; filter: drop-shadow(0 0 6px rgba(236,122,99,.35)); }
   .sky-now .nt { font-weight: 500; font-size: 0.92rem; line-height: 1.25; }
@@ -131,7 +132,7 @@
   .next-up .btn { flex: none; padding: 6px 13px; font-size: 0.72rem; }
   .track { height: 8px; background: var(--bg-2); border-radius: 999px; margin-top: 10px; overflow: hidden; }
   .track > div { height: 100%; border-radius: 999px; transition: width 0.5s ease;
-    background: linear-gradient(90deg, var(--night), var(--berry), var(--honey)); }
+    background: linear-gradient(90deg, var(--berry), var(--coral), var(--honey)); }
 
   .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-bottom: 12px; }
   .stat { background: var(--card); border: 1px solid var(--line); border-radius: 11px; padding: 9px 6px; text-align: center; }
@@ -165,23 +166,23 @@
   .lv-read { font-size: 0.62rem; color: var(--teal); font-weight: 500; margin-top: 1px; white-space: nowrap; }
   .lv-state { font-size: 0.56rem; color: var(--ink-soft); letter-spacing: .04em; }
 
-  /* ゲットした星座のコレクション棚 */
+  /* ゲットしたアクセサリーのコレクション棚 */
   .badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; }
   .badge { background: var(--night); border-radius: 12px; padding: 9px 4px 8px; text-align: center;
            position: relative; transition: transform .12s ease; }
   .badge svg { width: 56px; height: 56px; display: block; margin: 0 auto; }
-  .badge .bn { font-size: 0.67rem; font-weight: 500; color: #ffd977; margin-top: 4px;
+  .badge .bn { font-size: 0.67rem; font-weight: 500; color: #8a4a6b; margin-top: 4px;
                white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .badge .be { font-size: 0.55rem; font-weight: 300; color: #8d94bd; letter-spacing: .03em; }
-  .badge .bl { font-size: 0.52rem; font-weight: 300; color: #6f7699; margin-top: 1px; }
-  .badge.off { opacity: .38; }
-  .badge.off .bn { color: #8d94bd; }
-  .badge .btag { position: absolute; top: 5px; right: 6px; font-size: 0.5rem; color: #8d94bd; }
+  .badge .be { font-size: 0.55rem; font-weight: 300; color: #a6789a; letter-spacing: .03em; }
+  .badge .bl { font-size: 0.52rem; font-weight: 300; color: #a6789a; margin-top: 1px; }
+  .badge.off { opacity: .5; background: #efe6ea; }
+  .badge.off .bn { color: #a6789a; }
+  .badge .btag { position: absolute; top: 5px; right: 6px; font-size: 0.5rem; color: #a6789a; }
   .badge .bicon { position: absolute; top: 4px; left: 5px; font-size: 0.95rem; line-height: 1;
-                  filter: drop-shadow(0 0 5px rgba(255,217,119,.55)); }
+                  filter: drop-shadow(0 0 5px rgba(217,164,65,.55)); }
   .badge.off .bicon { filter: grayscale(1); opacity: .5; }
   .cicon { font-size: 0.95rem; margin-right: 3px; }
-  /* 履歴の表にならべる小さい星座 */
+  /* 履歴の表にならべる小さいアクセサリー */
   .cmini { display: inline-block; width: 22px; height: 22px; vertical-align: -6px; margin-right: 4px; }
   .cmini svg { width: 22px; height: 22px; display: block; }
   .lv.done { background: linear-gradient(180deg, #fffdf8, var(--honey-soft)); border-color: #efd6a3; }
@@ -355,10 +356,10 @@
   <header>
     <div>
       <div class="logo"><span class="mark" id="brandMark">✦</span><span id="brandName">Saho</span>&nbsp;English Reading</div>
-      <div class="tagline" id="brandTag">長文を読んで、星座をあつめよう</div>
+      <div class="tagline" id="brandTag">長文を読んで、アクセサリーをあつめよう</div>
     </div>
     <div class="nav">
-      <button class="btn ghost small" id="navHome" onclick="renderHome()">星空マップ</button>
+      <button class="btn ghost small" id="navHome" onclick="renderHome()">アクセサリーボックス</button>
       <button class="btn ghost small" id="navHist" onclick="renderHistory()">履歴</button>
       <button class="btn ghost small" id="navSync" onclick="renderSync()" title="GitHubに保存 / 読み込み">☁️</button>
     </div>
@@ -369,64 +370,29 @@
 
 <script>
 /* =====================================================================
-   1. 星座データ（Lexile 850 から 1700 まで 50 きざみ）
+   1. アクセサリーデータ（Lexile 850 から 1700 まで 50 きざみ）
+      帯をぜんぶ読み終えると、そのアクセサリーがボックスに入ります
    ===================================================================== */
 /* 位置は index から自動計算（1行7つのヘビ型）。増減しても自動でならびます */
 const SKY = [
-  { lex:850,  name:"オリオン座",       en:"Orion", icon:"🗡️",
-    pts:[[22,12],[76,18],[38,48],[52,52],[66,50],[74,88],[24,84]],
-    lines:[[0,2],[1,4],[2,3],[3,4],[2,6],[4,5],[5,6]] },
-  { lex:900,  name:"北斗七星",         en:"Big Dipper", icon:"🥄",
-    pts:[[8,34],[24,24],[40,28],[56,40],[64,62],[82,70],[96,50]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,3]] },
-  { lex:950,  name:"カシオペヤ座",     en:"Cassiopeia", icon:"👑",
-    pts:[[6,22],[26,64],[50,26],[72,66],[94,24]],
-    lines:[[0,1],[1,2],[2,3],[3,4]] },
-  { lex:1000, name:"はくちょう座",     en:"Cygnus", icon:"🦢",
-    pts:[[50,6],[50,38],[50,74],[12,44],[88,40],[50,96]],
-    lines:[[0,1],[1,2],[2,5],[3,1],[1,4]] },
-  { lex:1050, name:"こと座",           en:"Lyra", icon:"🎵",
-    pts:[[50,6],[32,34],[68,38],[36,74],[64,76]],
-    lines:[[0,1],[0,2],[1,2],[1,3],[2,4],[3,4]] },
-  { lex:1100, name:"さそり座",         en:"Scorpius", icon:"🦂",
-    pts:[[14,10],[30,26],[24,48],[40,66],[60,76],[80,66],[88,44]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6]] },
-  { lex:1150, name:"しし座",           en:"Leo", icon:"🦁",
-    pts:[[16,18],[8,38],[22,54],[44,58],[64,42],[88,64],[62,76]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[4,0],[3,6],[6,5],[5,4]] },
-  { lex:1200, name:"ペガスス座",       en:"Pegasus", icon:"🐎",
-    pts:[[20,22],[80,22],[80,80],[20,80],[6,6]],
-    lines:[[0,1],[1,2],[2,3],[3,0],[0,4]] },
-  { lex:1250, name:"おうし座",         en:"Taurus", icon:"🐂",
-    pts:[[10,14],[30,40],[50,58],[70,40],[90,14],[50,86]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[2,5]] },
-  { lex:1300, name:"わし座",           en:"Aquila", icon:"🦅",
-    pts:[[50,14],[50,44],[50,76],[16,54],[84,50]],
-    lines:[[0,1],[1,2],[3,1],[1,4]] },
-  { lex:1350, name:"ふたご座",         en:"Gemini", icon:"👯",
-    pts:[[30,10],[62,12],[32,34],[62,36],[28,58],[58,60],[24,84],[56,86]],
-    lines:[[0,2],[1,3],[2,3],[2,4],[3,5],[4,6],[5,7]] },
-  { lex:1400, name:"おおいぬ座",       en:"Canis Major", icon:"🐕",
-    pts:[[38,26],[20,10],[58,14],[46,52],[30,70],[62,72],[50,90]],
-    lines:[[1,0],[0,2],[0,3],[3,4],[3,5],[4,6],[5,6]] },
-  { lex:1450, name:"ぎょしゃ座",       en:"Auriga", icon:"🛞",
-    pts:[[50,8],[84,34],[72,74],[28,76],[16,36]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[4,0]] },
-  { lex:1500, name:"おとめ座",         en:"Virgo", icon:"🌾",
-    pts:[[18,16],[44,26],[70,18],[52,48],[38,70],[64,80],[26,92]],
-    lines:[[0,1],[1,2],[1,3],[3,4],[3,5],[4,6]] },
-  { lex:1550, name:"いて座",           en:"Sagittarius", icon:"🏹",
-    pts:[[18,44],[34,24],[52,40],[70,26],[84,48],[66,68],[34,66]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,0]] },
-  { lex:1600, name:"ケフェウス座",     en:"Cepheus", icon:"🤴",
-    pts:[[50,8],[24,38],[76,38],[30,80],[70,80]],
-    lines:[[0,1],[0,2],[1,3],[2,4],[3,4]] },
-  { lex:1650, name:"こぐま座",         en:"Ursa Minor", icon:"🐻",
-    pts:[[88,16],[74,30],[60,40],[44,50],[30,42],[22,62],[38,72]],
-    lines:[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,3]] },
-  { lex:1700, name:"みなみじゅうじ座", en:"Crux", icon:"🧭",
-    pts:[[50,8],[50,50],[50,92],[16,46],[84,44]],
-    lines:[[0,1],[1,2],[3,1],[1,4]] },
+  { lex:850,  name:"リボン",             en:"Ribbon",           icon:"🎀" },
+  { lex:900,  name:"お花のヘアゴム",     en:"Flower Hair Tie",  icon:"🌸" },
+  { lex:950,  name:"ちょうちょのヘアピン", en:"Butterfly Clip",  icon:"🦋" },
+  { lex:1000, name:"ビーズブレスレット", en:"Beaded Bracelet",  icon:"📿" },
+  { lex:1050, name:"サングラス",         en:"Sunglasses",       icon:"🕶️" },
+  { lex:1100, name:"ポーチ",             en:"Pouch",            icon:"👛" },
+  { lex:1150, name:"ストローハット",     en:"Straw Hat",        icon:"👒" },
+  { lex:1200, name:"ハンドバッグ",       en:"Handbag",          icon:"👜" },
+  { lex:1250, name:"スカーフ",           en:"Scarf",            icon:"🧣" },
+  { lex:1300, name:"リップ",             en:"Lipstick",         icon:"💄" },
+  { lex:1350, name:"ネイル",             en:"Nail Polish",      icon:"💅" },
+  { lex:1400, name:"うで時計",           en:"Wristwatch",       icon:"⌚" },
+  { lex:1450, name:"日がさ",             en:"Parasol",          icon:"🌂" },
+  { lex:1500, name:"ハイヒール",         en:"High Heels",       icon:"👠" },
+  { lex:1550, name:"手鏡",               en:"Hand Mirror",      icon:"🪞" },
+  { lex:1600, name:"指輪",               en:"Ring",             icon:"💍" },
+  { lex:1650, name:"ダイヤモンド",       en:"Diamond",          icon:"💎" },
+  { lex:1700, name:"ティアラ",           en:"Tiara",            icon:"👑" },
 ];
 const SKY_COLS = 7;
 function posOf(i) {
@@ -26813,7 +26779,7 @@ const lsDel = k => { try { localStorage.removeItem(k); } catch (e) {} };
 
 /* ---------- 使う人（Saho / Riho）ごとに記録を分ける ---------- */
 /* startLex … その人が「ここから読みはじめる」Lexile。
-   これより下の帯は、はじめから星座を獲得ずみ（CLEAR）としてあつかい、
+   これより下の帯は、はじめからアクセサリーを獲得ずみ（CLEAR）としてあつかい、
    「読んだ本数 / 全体」の数え方からも外します。読みたければ読めます。 */
 const USERS = {
   saho: { name:"Saho", mark:"✦", key:"saho-reading-v1", startLex: 850, grade: 3,
@@ -26821,7 +26787,7 @@ const USERS = {
   riho: { name:"Riho", mark:"✧", key:"riho-reading-v1", startLex: 1150, grade: 6,
           tokenKey:"vocabTrail_riho_gh_token", ghPath:"progress/riho_reading_progress.json", wordApp:"riho.html" },
 };
-const BUILD = "2026-08-30 i";   // 更新のたびに変える。画面の下に出るので、届いたか確かめられる
+const BUILD = "2026-09-19 a";   // 更新のたびに変える。画面の下に出るので、届いたか確かめられる
 const USER_KEY = "saho-reading-user";
 const USER = (() => {
   // ① URL の ?user= がいちばん強い
@@ -27193,7 +27159,7 @@ const rateOf    = lex => avgRate(histLex(lex));            // その Lexile の�
 const overallRate = () => avgRate(state.history);
 const rateCls = r => r >= 80 ? "hi" : r >= 60 ? "mid" : "lo";
 
-/* 星座（cleared）を履歴から数えなおす。
+/* アクセサリー（cleared）を履歴から数えなおす。
    以前は「1本読んだらクリア」だったので、古い記録には
    1本しか読んでいないのに cleared になっている帯がある。
    起動時と、GitHub から読みこんだあとに、必ずここで正しくしなおす。
@@ -27216,25 +27182,28 @@ function fmtDate(ts) {
 }
 
 /* =====================================================================
-   5. 星座の描画
+   5. アクセサリーの描画
+      ・チャーム型の丸い台座の上に、アクセサリーの絵文字をのせる
+      ・まだゲットしていないものは、色をぬいてうすく表示する
    ===================================================================== */
-function constSVG(c, litCount, opt = {}) {
-  const total = c.pts.length;
-  const lit = opt.all ? total : Math.round(total * (litCount / (opt.of || total)));
+function accSVG(c, litCount, opt = {}) {
   const on = opt.on !== false;
-  const S = opt.box || 100, k = S / 100;
-  const P = c.pts.map(p => [p[0]*k, p[1]*k]);
+  const S = opt.box || 100, k = S / 100, cx = S / 2, cy = S / 2;
   let s = `<svg viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">`;
-  s += c.lines.map(([a,b]) =>
-    `<line x1="${P[a][0]}" y1="${P[a][1]}" x2="${P[b][0]}" y2="${P[b][1]}"
-      stroke="${on ? '#ffd977' : '#6b7194'}" stroke-width="${1.1*k}" opacity="${on ? .55 : .28}"/>`).join("");
-  s += P.map((p,i) => {
-    const active = on && i < lit;
-    const r = (i === 0 ? 3.6 : 2.7) * k;
-    return `<circle cx="${p[0]}" cy="${p[1]}" r="${r}"
-      fill="${active ? '#ffd977' : '#77809f'}" ${active ? 'class="tw"' : ''}/>` +
-      (active ? `<circle cx="${p[0]}" cy="${p[1]}" r="${r*2.1}" fill="#ffd977" opacity=".2"/>` : "");
-  }).join("");
+  // 台座（ゲットずみ＝白い丸に金のふち、未ゲット＝うすいグレー）
+  s += `<circle cx="${cx}" cy="${cy}" r="${44*k}" fill="${on ? '#fffaf4' : '#ece4e8'}"
+      stroke="${on ? '#e6c37a' : '#d9cdd3'}" stroke-width="${2.2*k}"/>`;
+  if (on) {
+    s += `<circle cx="${cx}" cy="${cy}" r="${38*k}" fill="none" stroke="#f4dfb0" stroke-width="${1*k}" opacity=".8"/>`;
+    // きらめき（ゲットしたときだけ）
+    [[20,18,4],[80,26,3],[74,80,3.5],[24,78,2.5]].forEach(([x,y,r],i) => {
+      const X = x*k, Y = y*k, R = r*k;
+      s += `<path d="M${X} ${Y-R} L${X+R*.35} ${Y-R*.35} L${X+R} ${Y} L${X+R*.35} ${Y+R*.35} L${X} ${Y+R} L${X-R*.35} ${Y+R*.35} L${X-R} ${Y} L${X-R*.35} ${Y-R*.35}Z"
+        fill="#e6c37a" opacity=".9" class="tw" style="animation-delay:${i*.5}s"/>`;
+    });
+  }
+  s += `<text x="${cx}" y="${cy + 17*k}" text-anchor="middle" font-size="${48*k}"
+      style="${on ? '' : 'filter:grayscale(1);opacity:.45'}">${c.icon}</text>`;
   return s + "</svg>";
 }
 
@@ -27261,15 +27230,24 @@ function skySVG() {
   const W = 760, H = 300;
   const cur = currentBand();
   let s = `<svg viewBox="0 0 ${W} ${H}" class="sky-svg" xmlns="http://www.w3.org/2000/svg">
-    <defs><linearGradient id="ng" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1c2340"/><stop offset="1" stop-color="#3a3f66"/></linearGradient></defs>
-    <rect width="${W}" height="${H}" rx="14" fill="url(#ng)"/>`;
-  for (let i = 0; i < 90; i++) {
-    const x = (i * 97.3) % W, y = (i * 53.7) % H, r = (i % 5 === 0) ? 1.6 : 0.9;
-    s += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}" fill="#fff" opacity="${0.15 + (i%7)*0.06}"/>`;
+    <defs>
+      <linearGradient id="ng" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#f7dbe6"/><stop offset="1" stop-color="#ecc3d5"/></linearGradient>
+      <pattern id="velvet" width="18" height="18" patternUnits="userSpaceOnUse">
+        <circle cx="9" cy="9" r="1" fill="#fff" opacity=".35"/></pattern>
+    </defs>
+    <rect width="${W}" height="${H}" rx="14" fill="url(#ng)"/>
+    <rect width="${W}" height="${H}" rx="14" fill="url(#velvet)"/>
+    <rect x="6" y="6" width="${W-12}" height="${H-12}" rx="11" fill="none" stroke="#fff" stroke-width="1.5" opacity=".55"/>`;
+  // ちいさなきらめき
+  for (let i = 0; i < 40; i++) {
+    const x = (i * 97.3) % W, y = (i * 53.7) % H, r = (i % 5 === 0) ? 3 : 1.8;
+    s += `<path d="M${x.toFixed(1)} ${(y-r).toFixed(1)} L${(x+r*.3).toFixed(1)} ${(y-r*.3).toFixed(1)} L${(x+r).toFixed(1)} ${y.toFixed(1)} L${(x+r*.3).toFixed(1)} ${(y+r*.3).toFixed(1)} L${x.toFixed(1)} ${(y+r).toFixed(1)} L${(x-r*.3).toFixed(1)} ${(y+r*.3).toFixed(1)} L${(x-r).toFixed(1)} ${y.toFixed(1)} L${(x-r*.3).toFixed(1)} ${(y-r*.3).toFixed(1)}Z"
+      fill="#fff" opacity="${0.3 + (i%7)*0.08}"/>`;
   }
+  // アクセサリーをつなぐリボンの道
   s += `<path d="${SKY.map((c,i) => { const p = posOf(i); return (i?'L':'M')+p[0].toFixed(1)+' '+p[1]; }).join(' ')}"
-        fill="none" stroke="#8d94bd" stroke-width="1.6" stroke-dasharray="3 6" opacity=".4"/>`;
+        fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="3 6" opacity=".7"/>`;
   SKY.forEach((c, i) => {
     const box = 50, on = isCleared(c.lex), p = posOf(i), isCur = c === cur;
     if (isCur) {                                   // 「いまここ」の輪
@@ -27278,13 +27256,13 @@ function skySVG() {
           stroke-width="1.8" stroke-dasharray="4 5" opacity=".95" class="tw"/>`;
     }
     s += `<g transform="translate(${(p[0]-box/2).toFixed(1)} ${p[1]-box/2})">
-      ${constSVG(c, 0, { box, on, all:true })}
+      ${accSVG(c, 0, { box, on, all:true })}
       <text x="${box/2}" y="${box+12}" text-anchor="middle" font-size="10"
-        fill="${isCur ? '#ffb9a6' : (on ? '#ffd977' : '#8d94bd')}"
-        font-family="Inter, sans-serif">${on || isCur ? c.name : c.lex}</text>
+        fill="${isCur ? '#d65f48' : (on ? '#8a4a6b' : '#b58fa3')}" font-weight="${on || isCur ? 500 : 400}"
+        font-family="Inter, 'Noto Sans JP', sans-serif">${on || isCur ? c.name : c.lex}</text>
     </g>`;
     if (isCur) s += `<text x="${p[0]}" y="${p[1]-36}" text-anchor="middle" font-size="9.5"
-      fill="#ffb9a6" font-family="Inter, sans-serif" letter-spacing=".08em">いま ここ</text>`;
+      fill="#d65f48" font-family="Inter, sans-serif" letter-spacing=".08em">いま ここ</text>`;
   });
   return s + "</svg>";
 }
@@ -27442,7 +27420,7 @@ function renderHome() {
           </div>
           <div>
             <div class="sky-pct">${pct}<small>%</small></div>
-            <div class="sky-cap">READING MAP</div>
+            <div class="sky-cap">JEWELRY BOX</div>
           </div>
         </div>
         <div class="track"><div style="width:${pct}%"></div></div>
@@ -27462,16 +27440,16 @@ function renderHome() {
 
     <div class="stats-row">
       <div class="stat"><div class="v">${state.history.length}</div><div class="l">のべ回数</div></div>
-      <div class="stat"><div class="v">${clearedCount()} / ${SKY.length}</div><div class="l">ゲットした星座</div></div>
+      <div class="stat"><div class="v">${clearedCount()} / ${SKY.length}</div><div class="l">ゲットしたアクセサリー</div></div>
       <div class="stat"><div class="v">${ov === null ? "—" : ov + "%"}</div><div class="l">平均正答率</div></div>
       <div class="stat"><div class="v">${cur.lex}</div><div class="l">いまの Lexile</div></div>
     </div>
 
     <div class="card">
-      <h2>✨ ゲットした星座（${clearedCount()} / ${SKY.length}）</h2>
+      <h2>✨ ゲットしたアクセサリー（${clearedCount()} / ${SKY.length}）</h2>
       <div class="hint" style="margin-bottom:9px">
-        ${clearedCount() ? "ひかっているのが、これまでにゲットした星座です。" : "課題をクリアすると、ここに星座がひかってならびます。"}
-        うすいものは、これからゲットする星座。
+        ${clearedCount() ? "色がついているのが、これまでにゲットしたアクセサリーです。" : "課題をクリアすると、ここにアクセサリーがならびます。"}
+        うすいものは、これからゲットするアクセサリー。
       </div>
       <div class="badge-grid">
         ${SKY.map(c => {
@@ -27479,8 +27457,7 @@ function renderHome() {
           const granted = got && !inRange(c.lex);
           return `<div class="badge ${got ? "" : "off"}" title="Lexile ${c.lex}–${c.lex+50}　${c.name}（${c.en}）">
             ${granted ? `<span class="btag">${ME.mark}</span>` : ""}
-            <span class="bicon">${c.icon}</span>
-            ${constSVG(c, 0, { box:56, on:got, all:true })}
+            ${accSVG(c, 0, { box:56, on:got, all:true })}
             <div class="bn">${got ? c.name : "？？？"}</div>
             <div class="be">${got ? c.en : ""}</div>
             <div class="bl">${c.lex}–${c.lex+50}</div>
@@ -27493,14 +27470,14 @@ function renderHome() {
       <h2>🗺️ 課題をえらぶ</h2>
       <div class="hint" style="margin-bottom:9px">
         1課題は「長文＋問題」（問題数は課題によってちがいます）。
-        その Lexile の長文を<b>ぜんぶ読み終えると</b>クリア → 星座がひかって、次の Lexile が開きます。
+        その Lexile の長文を<b>ぜんぶ読み終えると</b>クリア → アクセサリーがもらえて、次の Lexile が開きます。
         正答率は問いません（まちがえても、読み終えれば1本ぶんです）。<br>
         紫のとなりの2つの札は、その Lexile が<b>アメリカのネイティブの中でどのくらいか</b>の目安です。
         <span class="lv-rank">緑</span>＝${ME.name}（Grade ${ME.grade}）と同じ学年の中での位置、
         <span class="lv-gen">赤</span>＝一般には何年生あたりか。
       </div>${START_LEX > 850 ? `
       <div class="hint" style="margin-bottom:9px">
-        ${ME.name} は <b>Lexile ${START_LEX} から</b>はじめます。それより下の帯（${ME.mark} 獲得ずみ）の星座は、
+        ${ME.name} は <b>Lexile ${START_LEX} から</b>はじめます。それより下の帯（${ME.mark} 獲得ずみ）のアクセサリーは、
         もう持っているあつかいです。「読んだ本数」も ${START_LEX} 以上だけを数えます。
         もちろん、下の帯を読んでもかまいません。
       </div>` : ""}
@@ -27517,7 +27494,7 @@ function renderHome() {
                     : !n   ? "長文を追加すると読めるようになります"
                     : "";
           return `<button class="${cls}" ${dis} onclick="openLevel(${c.lex})">
-            <div class="lv-badge">${constSVG(c, 0, { box:46, on:done, all:true })}</div>
+            <div class="lv-badge">${accSVG(c, 0, { box:46, on:done, all:true })}</div>
             <div class="lv-main">
               <span class="lv-lex">Lexile ${c.lex}–${c.lex+50}</span>
               <span class="lv-rank">${ME.name} の学年で ${rankInMyGrade(c.lex + 25)}</span>
@@ -27563,12 +27540,12 @@ function renderHistory() {
       <h2>📊 Lexile べつの成績</h2>
       ${!lexes.length ? `<div class="empty">まだ記録がありません。長文を読むとここに出ます。</div>` : `
       <div class="scroll-x"><table class="htable">
-        <tr><th>Lexile</th><th>星座</th><th class="num">読んだ長文</th><th class="num">回数</th><th class="num">平均正答率</th><th class="num">ベスト</th><th>さいごに読んだ日</th></tr>
+        <tr><th>Lexile</th><th>アクセサリー</th><th class="num">読んだ長文</th><th class="num">回数</th><th class="num">平均正答率</th><th class="num">ベスト</th><th>さいごに読んだ日</th></tr>
         ${lexes.map(c => {
           const hs = histLex(c.lex), avg = avgRate(hs);
           return `<tr>
             <td>${c.lex}–${c.lex+50}</td>
-            <td><span class="cmini">${constSVG(c, 0, { box:22, on:isCleared(c.lex), all:true })}</span><span class="cicon">${c.icon}</span>${c.name}</td>
+            <td><span class="cmini">${accSVG(c, 0, { box:22, on:isCleared(c.lex), all:true })}</span><span class="cicon">${c.icon}</span>${c.name}</td>
             <td class="num">${readInLex(c.lex)} / ${listOf(c.lex).length} 本</td>
             <td class="num">${hs.length} 回</td>
             <td class="num"><span class="rate ${rateCls(avg)}">${avg}%</span><div class="bar" style="margin-left:auto"><div style="width:${avg}%"></div></div></td>
@@ -27631,7 +27608,7 @@ function renderLevel(lex) {
   const c = SKY.find(x => x.lex === lex), list = listOf(lex);
   app.innerHTML = `
     <div class="topbar">
-      <button class="btn ghost small" onclick="renderHome()">← 星空マップ</button>
+      <button class="btn ghost small" onclick="renderHome()">← アクセサリーボックス</button>
       <div class="ttl">Lexile ${lex}–${lex+50}　${c.icon} ${c.name}</div>
     </div>
     <div class="card">
@@ -27818,7 +27795,7 @@ function grade() {
 
   const prev = state.levels[lex] || { best:0, cleared:false };
   const list = listOf(lex);
-  // 星座がもらえるのは、その Lexile の長文を「ぜんぶ」読み終えたとき。
+  // アクセサリーがもらえるのは、その Lexile の長文を「ぜんぶ」読み終えたとき。
   // 正答率は問わない（1本でも未読なら、まだクリアではない）。
   const allRead = list.length > 0 && readInLex(lex) >= list.length;
   session.wasCleared = !!prev.cleared;
@@ -27846,7 +27823,7 @@ function renderAfter(correct, pastTs) {
                 : rt >= 75 ? `まちがえた${wrong}問の解説を読んでおこう。`
                 : `まちがえた${wrong}問の解説と、本文の下に出た和訳をじっくり読んで、もう一度読んでみよう。`;
 
-  // 星座がもらえるのは、この Lexile をぜんぶ読み終えたとき
+  // アクセサリーがもらえるのは、この Lexile をぜんぶ読み終えたとき
   const done = isCleared(lex), justNow = done && !session.wasCleared;
   const read = readInLex(lex), left = list.length - read;
   const head = session.replay
@@ -27856,7 +27833,7 @@ function renderAfter(correct, pastTs) {
     : justNow
     ? `<h2>🎉 ${c.icon} ${c.name}をゲット！</h2>
        <p>${comment}<br>Lexile ${lex}–${lex+50} の ${list.length} 本を、ぜんぶ読み終えました。
-       ${next ? `つぎは Lexile ${next.lex}–${next.lex+50}（${next.icon} ${next.name}）が開きました。` : "ぜんぶの星座をあつめました！"}</p>`
+       ${next ? `つぎは Lexile ${next.lex}–${next.lex+50}（${next.icon} ${next.name}）が開きました。` : "ぜんぶのアクセサリーをあつめました！"}</p>`
     : done
     ? `<h2>${c.icon} ${c.name}（ゲットずみ）</h2><p>${comment}</p>`
     : `<h2>📖 1本読めました（${read} / ${list.length} 本）</h2>
@@ -27872,7 +27849,7 @@ function renderAfter(correct, pastTs) {
         <span style="font-size:0.76rem">Lexile ${lex}–${lex+50}：<b>${read} / ${list.length} 本</b> 読んだ　／　ぜんぶで <b>${readCount()} / ${totalReadings()} 本</b></span></div>
       ${head}
       ${justNow ? `<div class="const-won">
-        ${constSVG(c, 0, { on:true, all:true, box:100 })}
+        ${accSVG(c, 0, { on:true, all:true, box:100 })}
         <div class="const-name">${c.icon} ${c.name}　${c.en}</div>
       </div>` : ""}
       <div class="result-actions">
@@ -27880,7 +27857,7 @@ function renderAfter(correct, pastTs) {
         ${ni !== null
           ? `<button class="btn" onclick="startReading(${lex},${ni})">次の長文へ →</button>`
           : `<button class="btn ghost" onclick="renderHistory()">履歴を見る</button>`}
-        <button class="btn night" onclick="${list.length > 1 ? `renderLevel(${lex})` : "renderHome()"}">${list.length > 1 ? "長文いちらんへ" : "星空マップへ"}</button>
+        <button class="btn night" onclick="${list.length > 1 ? `renderLevel(${lex})` : "renderHome()"}">${list.length > 1 ? "長文いちらんへ" : "アクセサリーボックスへ"}</button>
       </div>
     </div>
 
@@ -27905,14 +27882,14 @@ function renderAfter(correct, pastTs) {
 }
 
 function resetAll() {
-  if (!confirm("読んだ記録・星座・履歴をぜんぶ消します。よろしいですか？")) return;
+  if (!confirm("読んだ記録・アクセサリー・履歴をぜんぶ消します。よろしいですか？")) return;
   state = { levels:{}, history:[] }; save(); renderHome();
 }
 
 /* ---------- だれの記録かを画面に出す ---------- */
 document.getElementById("brandMark").textContent = ME.mark;
 document.getElementById("brandName").textContent = ME.name;
-document.title = `${ME.name} English Reading — 星座をあつめよう`;
+document.title = `${ME.name} English Reading — アクセサリーをあつめよう`;
 
 /* ---------- いつも上にある学習メニュー（Riho は4か所） ---------- */
 (() => {
