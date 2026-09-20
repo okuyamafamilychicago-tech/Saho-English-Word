@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-19T06:47:57.397Z",
+  "exportedAt": "2026-09-20T17:56:15.289Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8395,6 +8395,17 @@
         "scope": "バッチ12",
         "style": "flash",
         "round": 10,
+        "found": 0
+      },
+      {
+        "date": "2026-09-19",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "flash",
+        "round": 11,
         "found": 0
       }
     ],
@@ -19174,7 +19185,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 11
+      "11": 1
     },
     "reviewSweep": {
       "0": {
@@ -19424,11 +19435,62 @@
         "remaining": []
       },
       "11": {
-        "round": 11,
-        "remaining": []
+        "round": 1,
+        "remaining": [
+          "bias",
+          "leverage",
+          "fraction",
+          "depict",
+          "conviction",
+          "drain",
+          "relieve",
+          "niche",
+          "legitimate",
+          "mandatory",
+          "empower",
+          "threshold",
+          "momentum",
+          "controversial",
+          "incur",
+          "cognitive",
+          "petition",
+          "subsidiary",
+          "disposal",
+          "transparent",
+          "notable",
+          "velocity",
+          "indigenous",
+          "embed",
+          "alignment",
+          "repository",
+          "milestone",
+          "custody",
+          "renowned",
+          "migration",
+          "adverse",
+          "allocate",
+          "integral",
+          "projection",
+          "manipulate",
+          "deficiency",
+          "tribute",
+          "buffer",
+          "foster",
+          "norm",
+          "discretion",
+          "compelling",
+          "sheer",
+          "sibling",
+          "induce",
+          "surveillance",
+          "collision",
+          "ramp",
+          "intimate",
+          "exploit"
+        ]
       }
     },
-    "reviewDone": 149,
+    "reviewDone": 150,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
