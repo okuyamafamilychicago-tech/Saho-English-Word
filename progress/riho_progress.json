@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T17:33:14.010Z",
+  "exportedAt": "2026-09-21T17:36:47.725Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -19157,7 +19157,6 @@
       "cognitive",
       "deficiency",
       "controversial",
-      "surveillance",
       "compelling",
       "conviction",
       "petition",
@@ -19168,7 +19167,6 @@
       "exploit",
       "discretion",
       "induce",
-      "leverage",
       "integral"
     ],
     "reviewRound": {
@@ -19434,33 +19432,7 @@
       },
       "11": {
         "round": 1,
-        "remaining": [
-          "leverage",
-          "depict",
-          "conviction",
-          "drain",
-          "relieve",
-          "legitimate",
-          "mandatory",
-          "momentum",
-          "subsidiary",
-          "disposal",
-          "repository",
-          "milestone",
-          "migration",
-          "integral",
-          "projection",
-          "deficiency",
-          "buffer",
-          "foster",
-          "compelling",
-          "sheer",
-          "induce",
-          "surveillance",
-          "collision",
-          "ramp",
-          "intimate"
-        ]
+        "remaining": []
       }
     },
     "reviewDone": 150,
@@ -19479,6 +19451,16 @@
       },
       {
         "word": "adverse",
+        "at": "2026-09-21",
+        "count": 1
+      },
+      {
+        "word": "surveillance",
+        "at": "2026-09-21",
+        "count": 1
+      },
+      {
+        "word": "leverage",
         "at": "2026-09-21",
         "count": 1
       }
