@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-20T17:56:15.289Z",
+  "exportedAt": "2026-09-21T17:33:14.010Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -19130,7 +19130,6 @@
       "drain",
       "mandatory",
       "norm",
-      "notable",
       "disposal",
       "empower",
       "relieve",
@@ -19151,7 +19150,6 @@
       "niche",
       "collision",
       "manipulate",
-      "adverse",
       "threshold",
       "legitimate",
       "custody",
@@ -19437,56 +19435,31 @@
       "11": {
         "round": 1,
         "remaining": [
-          "bias",
           "leverage",
-          "fraction",
           "depict",
           "conviction",
           "drain",
           "relieve",
-          "niche",
           "legitimate",
           "mandatory",
-          "empower",
-          "threshold",
           "momentum",
-          "controversial",
-          "incur",
-          "cognitive",
-          "petition",
           "subsidiary",
           "disposal",
-          "transparent",
-          "notable",
-          "velocity",
-          "indigenous",
-          "embed",
-          "alignment",
           "repository",
           "milestone",
-          "custody",
-          "renowned",
           "migration",
-          "adverse",
-          "allocate",
           "integral",
           "projection",
-          "manipulate",
           "deficiency",
-          "tribute",
           "buffer",
           "foster",
-          "norm",
-          "discretion",
           "compelling",
           "sheer",
-          "sibling",
           "induce",
           "surveillance",
           "collision",
           "ramp",
-          "intimate",
-          "exploit"
+          "intimate"
         ]
       }
     },
@@ -19498,6 +19471,16 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
+      },
+      {
+        "word": "notable",
+        "at": "2026-09-21",
+        "count": 1
+      },
+      {
+        "word": "adverse",
+        "at": "2026-09-21",
+        "count": 1
       }
     ]
   }
