@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T17:45:31.616Z",
+  "exportedAt": "2026-09-22T16:09:29.460Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2229,6 +2229,41 @@
         "word": "inherit",
         "masteredAt": "2026-09-04",
         "mode": "test"
+      },
+      {
+        "word": "decent",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "exhaust",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "tender",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "nasty",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "shallow",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "beast",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "terror",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2273,11 +2308,6 @@
         "learnCount": 1
       },
       {
-        "word": "decent",
-        "at": "2026-09-04",
-        "learnCount": 1
-      },
-      {
         "word": "renew",
         "at": "2026-09-04",
         "learnCount": 1
@@ -2286,12 +2316,17 @@
         "word": "quest",
         "at": "2026-09-04",
         "learnCount": 1
+      },
+      {
+        "word": "dense",
+        "at": "2026-09-22",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4773,
-    "totalAttempts": 5544,
-    "lastSessionDate": "2026-09-21",
-    "streak": 1,
+    "totalCorrect": 4810,
+    "totalAttempts": 5589,
+    "lastSessionDate": "2026-09-22",
+    "streak": 2,
     "history": [
       {
         "date": "2026-06-02",
@@ -3635,6 +3670,13 @@
         "score": 11,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-22",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7253,11 +7295,11 @@
         "everLearned": true
       },
       "decent": {
-        "box": 4,
-        "due": "2026-09-14",
-        "correct": 6,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 9,
         "wrong": 2,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
@@ -7289,38 +7331,38 @@
         "everLearned": true
       },
       "terror": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
       "nasty": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
       "tender": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
       "exhaust": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
@@ -7352,11 +7394,11 @@
         "everLearned": true
       },
       "shallow": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
@@ -7379,11 +7421,11 @@
         "everLearned": true
       },
       "beast": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-09-06",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
@@ -7397,11 +7439,11 @@
         "everLearned": true
       },
       "dense": {
-        "box": 3,
-        "due": "2026-09-10",
-        "correct": 3,
-        "wrong": 0,
-        "seenAt": "2026-09-06",
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
+        "wrong": 1,
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-09-06",
         "everLearned": true
       },
