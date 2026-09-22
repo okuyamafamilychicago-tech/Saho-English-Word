@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-21T17:36:47.725Z",
+  "exportedAt": "2026-09-22T05:27:23.040Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6504,6 +6504,41 @@
         "word": "norm",
         "masteredAt": "2026-07-31",
         "mode": "test"
+      },
+      {
+        "word": "collision",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "sheer",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "compelling",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "intimate",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "discretion",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "surveillance",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "sibling",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6601,12 +6636,17 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
+      },
+      {
+        "word": "induce",
+        "at": "2026-09-22",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4074,
-    "totalAttempts": 4336,
-    "lastSessionDate": "2026-07-31",
-    "streak": 17,
+    "totalCorrect": 4098,
+    "totalAttempts": 4361,
+    "lastSessionDate": "2026-09-22",
+    "streak": 1,
     "history": [
       {
         "date": "2026-06-28",
@@ -8407,6 +8447,24 @@
         "style": "flash",
         "round": 11,
         "found": 0
+      },
+      {
+        "date": "2026-09-21",
+        "climbed": 0,
+        "score": 23,
+        "total": 25,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "quiz",
+        "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-09-22",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -17904,65 +17962,65 @@
         "everLearned": true
       },
       "discretion": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-09-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
       "compelling": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-09-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
       "sheer": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-09-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
       "sibling": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-09-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
       "induce": {
-        "box": 0,
-        "due": "2026-07-31",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-07-31",
+        "box": 2,
+        "due": "2026-09-24",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
       "surveillance": {
-        "box": 0,
-        "due": "2026-07-31",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-26",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
       "collision": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-09-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
@@ -17976,11 +18034,11 @@
         "everLearned": true
       },
       "intimate": {
-        "box": 0,
-        "due": "2026-07-31",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-09-26",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
@@ -19181,7 +19239,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 1
+      "11": 2
     },
     "reviewSweep": {
       "0": {
@@ -19435,7 +19493,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 150,
+    "reviewDone": 151,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
