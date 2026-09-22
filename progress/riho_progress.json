@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T05:29:54.955Z",
+  "exportedAt": "2026-09-22T05:31:26.730Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6549,6 +6549,11 @@
         "word": "exploit",
         "masteredAt": "2026-09-22",
         "mode": "test"
+      },
+      {
+        "word": "ramp",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6646,15 +6651,10 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
-      },
-      {
-        "word": "ramp",
-        "at": "2026-09-22",
-        "learnCount": 0
       }
     ],
-    "totalCorrect": 4113,
-    "totalAttempts": 4377,
+    "totalCorrect": 4122,
+    "totalAttempts": 4386,
     "lastSessionDate": "2026-09-22",
     "streak": 1,
     "history": [
@@ -8482,6 +8482,13 @@
         "score": 15,
         "total": 16,
         "mode": "test"
+      },
+      {
+        "date": "2026-09-22",
+        "climbed": 1,
+        "score": 9,
+        "total": 9,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -9013,18 +9020,18 @@
       },
       "conference": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-06-28"
       },
       "accurate": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-06-28"
       },
       "occasionally": {
@@ -18042,9 +18049,9 @@
         "everLearned": true
       },
       "ramp": {
-        "box": 3,
-        "due": "2026-09-26",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 7,
         "wrong": 1,
         "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
