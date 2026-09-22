@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-22T05:27:23.040Z",
+  "exportedAt": "2026-09-22T05:29:54.955Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6539,6 +6539,16 @@
         "word": "sibling",
         "masteredAt": "2026-09-22",
         "mode": "test"
+      },
+      {
+        "word": "induce",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
+      },
+      {
+        "word": "exploit",
+        "masteredAt": "2026-09-22",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6638,13 +6648,13 @@
         "learnCount": 1
       },
       {
-        "word": "induce",
+        "word": "ramp",
         "at": "2026-09-22",
         "learnCount": 0
       }
     ],
-    "totalCorrect": 4098,
-    "totalAttempts": 4361,
+    "totalCorrect": 4113,
+    "totalAttempts": 4377,
     "lastSessionDate": "2026-09-22",
     "streak": 1,
     "history": [
@@ -8465,6 +8475,13 @@
         "score": 24,
         "total": 25,
         "mode": "test"
+      },
+      {
+        "date": "2026-09-22",
+        "climbed": 2,
+        "score": 15,
+        "total": 16,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -8980,18 +8997,18 @@
       },
       "pose": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-06-28"
       },
       "appropriate": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-08",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-06-28"
       },
       "conference": {
@@ -17998,9 +18015,9 @@
         "everLearned": true
       },
       "induce": {
-        "box": 2,
-        "due": "2026-09-24",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-08",
+        "correct": 6,
         "wrong": 2,
         "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
@@ -18025,11 +18042,11 @@
         "everLearned": true
       },
       "ramp": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-07-31",
+        "box": 3,
+        "due": "2026-09-26",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       },
@@ -18043,11 +18060,11 @@
         "everLearned": true
       },
       "exploit": {
-        "box": 1,
-        "due": "2026-08-01",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-09-30",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-07-31",
+        "seenAt": "2026-09-22",
         "learnedAt": "2026-07-31",
         "everLearned": true
       }
