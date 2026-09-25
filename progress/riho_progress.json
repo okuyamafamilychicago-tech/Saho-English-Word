@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T05:44:48.170Z",
+  "exportedAt": "2026-09-25T17:38:43.395Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6693,8 +6693,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4244,
-    "totalAttempts": 4512,
+    "totalCorrect": 4287,
+    "totalAttempts": 4558,
     "lastSessionDate": "2026-09-25",
     "streak": 1,
     "history": [
@@ -8550,6 +8550,13 @@
         "score": 14,
         "total": 14,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-25",
+        "climbed": 0,
+        "score": 9,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -9105,10 +9112,10 @@
       },
       "thread": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-11",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-06-28"
       },
       "resource": {
@@ -18312,6 +18319,96 @@
         "due": "2026-09-26",
         "correct": 1,
         "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "inject": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "scam": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "prestigious": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "plunge": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "aesthetically": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "retrieve": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "artifact": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "beneficiary": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "constitutional": {
+        "box": 1,
+        "due": "2026-09-26",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-25",
+        "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "rig": {
+        "box": 0,
+        "due": "2026-09-25",
+        "correct": 0,
+        "wrong": 1,
         "seenAt": "2026-09-25",
         "learnedAt": "2026-09-25",
         "everLearned": true
