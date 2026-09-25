@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-23T14:15:31.006Z",
+  "exportedAt": "2026-09-25T05:40:17.344Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6554,6 +6554,36 @@
         "word": "ramp",
         "masteredAt": "2026-09-22",
         "mode": "test"
+      },
+      {
+        "word": "proxy",
+        "masteredAt": "2026-09-25",
+        "mode": "test"
+      },
+      {
+        "word": "allegedly",
+        "masteredAt": "2026-09-25",
+        "mode": "test"
+      },
+      {
+        "word": "termination",
+        "masteredAt": "2026-09-25",
+        "mode": "test"
+      },
+      {
+        "word": "prototype",
+        "masteredAt": "2026-09-25",
+        "mode": "test"
+      },
+      {
+        "word": "benchmark",
+        "masteredAt": "2026-09-25",
+        "mode": "test"
+      },
+      {
+        "word": "rebound",
+        "masteredAt": "2026-09-25",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6651,12 +6681,22 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
+      },
+      {
+        "word": "offset",
+        "at": "2026-09-25",
+        "learnCount": 0
+      },
+      {
+        "word": "viable",
+        "at": "2026-09-25",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4169,
-    "totalAttempts": 4434,
-    "lastSessionDate": "2026-09-23",
-    "streak": 2,
+    "totalCorrect": 4202,
+    "totalAttempts": 4470,
+    "lastSessionDate": "2026-09-25",
+    "streak": 1,
     "history": [
       {
         "date": "2026-06-28",
@@ -8496,6 +8536,13 @@
         "score": 9,
         "total": 10,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-25",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -18083,74 +18130,74 @@
         "everLearned": true
       },
       "prototype": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-23",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "allegedly": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-23",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "termination": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-23",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "rebound": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-23",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "proxy": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-23",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "benchmark": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-03",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-23",
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "viable": {
-        "box": 1,
-        "due": "2026-09-24",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-09-23",
+        "box": 3,
+        "due": "2026-09-29",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
       "offset": {
-        "box": 0,
-        "due": "2026-09-23",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-09-23",
+        "box": 3,
+        "due": "2026-09-29",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-09-25",
         "learnedAt": "2026-09-23",
         "everLearned": true
       },
