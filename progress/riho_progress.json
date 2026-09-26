@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-26T06:37:17.981Z",
+  "exportedAt": "2026-09-26T06:39:19.784Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6624,6 +6624,46 @@
         "word": "debris",
         "masteredAt": "2026-09-26",
         "mode": "test"
+      },
+      {
+        "word": "scam",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "dice",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "plunge",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "inject",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "aesthetically",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "prestigious",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "vent",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
+      },
+      {
+        "word": "flaw",
+        "masteredAt": "2026-09-26",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6733,8 +6773,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4361,
-    "totalAttempts": 4642,
+    "totalCorrect": 4385,
+    "totalAttempts": 4666,
     "lastSessionDate": "2026-09-26",
     "streak": 2,
     "history": [
@@ -8611,6 +8651,13 @@
         "score": 10,
         "total": 11,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-26",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       },
       {
         "date": "2026-09-26",
@@ -18358,74 +18405,74 @@
         "everLearned": true
       },
       "vent": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "dice": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "flaw": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "inject": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "scam": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "prestigious": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "plunge": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
       "aesthetically": {
-        "box": 1,
-        "due": "2026-09-26",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-04",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-25",
+        "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
         "everLearned": true
       },
