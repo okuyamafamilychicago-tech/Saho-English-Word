@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-26T06:46:05.484Z",
+  "exportedAt": "2026-09-26T06:52:48.542Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6853,8 +6853,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 4445,
-    "totalAttempts": 4726,
+    "totalCorrect": 4475,
+    "totalAttempts": 4758,
     "lastSessionDate": "2026-09-26",
     "streak": 2,
     "history": [
@@ -8766,6 +8766,13 @@
         "score": 12,
         "total": 12,
         "mode": "test"
+      },
+      {
+        "date": "2026-09-26",
+        "climbed": 0,
+        "score": 8,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -18710,6 +18717,96 @@
         "wrong": 0,
         "seenAt": "2026-09-26",
         "learnedAt": "2026-09-25",
+        "everLearned": true
+      },
+      "endorse": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "disrupt": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "proceeds": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "overly": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "sleek": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "replicate": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "correlation": {
+        "box": 0,
+        "due": "2026-09-26",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "redeem": {
+        "box": 0,
+        "due": "2026-09-26",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "clan": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
+        "everLearned": true
+      },
+      "ballot": {
+        "box": 1,
+        "due": "2026-09-27",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-09-26",
+        "learnedAt": "2026-09-26",
         "everLearned": true
       }
     },
