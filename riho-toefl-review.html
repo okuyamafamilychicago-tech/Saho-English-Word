@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOEFL 問題集 復習 📝</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fef9f3; --card: #ffffff; --soft: #fff4e6;
+    --bg-blue: #e8f4fd; --bg-pink: #ffe8ee; --bg-green: #e8f7ea; --bg-yellow: #fff5cc; --bg-purple: #f0e8fc;
+    --text: #3d3935; --text-soft: #6b635c; --text-light: #9a8e82;
+    --pink: #ff7a9c; --pink-dark: #e85a7f; --blue: #5ba3e0; --blue-dark: #3a7fb8;
+    --green: #6fbf73; --green-dark: #4a9e4f; --yellow: #f5c842; --yellow-dark: #d4a820;
+    --purple: #a78bd6; --purple-dark: #7a5fb3; --orange: #ff9966;
+    --shadow: 0 2px 0 rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'M PLUS Rounded 1c', 'Quicksand', sans-serif; background: var(--bg);
+    color: var(--text); line-height: 1.7; font-size: 16px; }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px 60px; }
+  h1 { font-size: 1.5rem; font-weight: 800; text-align: center; margin: 8px 0 4px; }
+  .sub { text-align: center; color: var(--text-soft); font-size: 0.9rem; margin-bottom: 18px; }
+
+  .tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; }
+  .tab { border: 2px solid transparent; background: var(--card); border-radius: 14px; padding: 10px 4px;
+    font: inherit; font-weight: 700; font-size: 0.9rem; color: var(--text-soft); cursor: pointer;
+    box-shadow: var(--shadow); transition: all .15s; }
+  .tab .n { display: block; font-size: 0.72rem; font-weight: 500; color: var(--text-light); }
+  .tab.on[data-cat=reading]   { border-color: var(--blue);   background: var(--bg-blue); color: var(--blue-dark); }
+  .tab.on[data-cat=listening] { border-color: var(--green);  background: var(--bg-green); color: var(--green-dark); }
+  .tab.on[data-cat=writing]   { border-color: var(--pink);   background: var(--bg-pink); color: var(--pink-dark); }
+  .tab.on[data-cat=speaking]  { border-color: var(--purple); background: var(--bg-purple); color: var(--purple-dark); }
+
+  .card { background: var(--card); border-radius: 18px; padding: 20px; box-shadow: var(--shadow); margin-bottom: 16px; }
+  .card h2 { font-size: 1.15rem; font-weight: 800; margin-bottom: 4px; }
+  .card h3 { font-size: 1rem; font-weight: 800; margin: 14px 0 8px; }
+  .meta { color: var(--text-light); font-size: 0.82rem; }
+  .empty { text-align: center; color: var(--text-soft); padding: 40px 16px; }
+  .empty .big { font-size: 2.4rem; }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+  .stat { background: var(--soft); border-radius: 12px; padding: 10px; text-align: center; }
+  .stat b { display: block; font-family: 'Quicksand', sans-serif; font-size: 1.5rem; }
+  .stat span { font-size: 0.75rem; color: var(--text-soft); }
+
+  .bar { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 0.85rem; }
+  .bar .lbl { width: 9.5em; flex-shrink: 0; }
+  .bar .track { flex: 1; height: 14px; background: #f1ece6; border-radius: 99px; overflow: hidden; }
+  .bar .fill { height: 100%; border-radius: 99px; }
+  .bar .num { width: 2.5em; text-align: right; font-weight: 700; }
+
+  .tip { background: var(--bg-yellow); border-radius: 12px; padding: 12px 14px; font-size: 0.9rem; margin-top: 10px; }
+  .tip ol { padding-left: 1.3em; }
+  .tip li { margin: 3px 0; }
+  code, .w { font-family: 'Quicksand', sans-serif; font-weight: 700; }
+
+  details { margin-top: 10px; }
+  summary { cursor: pointer; font-weight: 700; color: var(--blue-dark); font-size: 0.9rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 8px; }
+  td, th { padding: 6px 6px; border-bottom: 1px solid #f0e9e1; text-align: left; vertical-align: top; }
+  th { color: var(--text-soft); font-weight: 700; }
+  .x { color: var(--pink-dark); text-decoration: line-through; }
+  .o { color: var(--green-dark); font-weight: 700; }
+
+  .btn { font: inherit; font-weight: 800; border: none; border-radius: 999px; padding: 10px 22px; cursor: pointer;
+    background: var(--blue); color: #fff; box-shadow: 0 3px 0 var(--blue-dark); }
+  .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--blue-dark); }
+  .btn.alt { background: var(--card); color: var(--blue-dark); box-shadow: 0 3px 0 #cfe0ee; border: 2px solid var(--blue); }
+  .btn.pink { background: var(--pink); box-shadow: 0 3px 0 var(--pink-dark); }
+  .btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+
+  /* quiz */
+  .qhead { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-soft); }
+  .prog { height: 8px; background: #f1ece6; border-radius: 99px; overflow: hidden; margin: 6px 0 16px; }
+  .prog div { height: 100%; background: linear-gradient(90deg, var(--blue), var(--purple)); transition: width .3s; }
+  .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 10px; border-radius: 99px; }
+  .tag.form { background: var(--bg-purple); color: var(--purple-dark); }
+  .tag.mean { background: var(--bg-pink); color: var(--pink-dark); }
+  .tag.blank { background: var(--bg-yellow); color: var(--yellow-dark); }
+  .sentence { font-family: 'Quicksand', sans-serif; font-size: 1.2rem; font-weight: 600; line-height: 2.3; margin: 12px 0 6px; }
+  .word { white-space: nowrap; }
+  .word .stem { color: var(--blue-dark); font-weight: 700; }
+  .lt { width: 1.35em; height: 1.7em; text-align: center; font: inherit; font-weight: 700; font-size: 1.1rem;
+    border: none; border-bottom: 2.5px solid var(--blue); background: var(--bg-blue); border-radius: 4px 4px 0 0;
+    margin: 0 1px; color: var(--text); padding: 0; }
+  .lt:focus { outline: 2px solid var(--purple); }
+  .lt.ok { border-color: var(--green-dark); background: var(--bg-green); }
+  .lt.ng { border-color: var(--pink-dark); background: var(--bg-pink); }
+  .hint { font-size: 0.85rem; color: var(--text-soft); }
+  .fb { margin-top: 14px; border-radius: 14px; padding: 14px; font-size: 0.92rem; }
+  .fb.good { background: var(--bg-green); }
+  .fb.bad { background: var(--bg-pink); }
+  .fb .ttl { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
+  .fb .answers { margin: 4px 0 10px; }
+  .fb .ex { background: rgba(255,255,255,0.75); border-radius: 12px; padding: 4px 12px; }
+  .fb .exs { padding: 10px 0; border-bottom: 1px dashed rgba(0,0,0,0.1); }
+  .fb .exs:last-child { border-bottom: none; }
+  .fb .exh { font-weight: 800; font-size: 0.85rem; color: var(--text-soft); margin-bottom: 3px; }
+  .fb .memo { background: var(--bg-yellow); margin: 8px -12px -4px; padding: 10px 12px; border-radius: 0 0 12px 12px; }
+  .fam { margin-top: 2px; }
+  .fam td { padding: 3px 6px; border-bottom: 1px solid #f0e9e1; }
+  .fam tr.me td { background: var(--bg-green); font-weight: 700; }
+  .pos { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 0 8px; border-radius: 99px; background: var(--bg-purple); color: var(--purple-dark); white-space: nowrap; }
+  .col { padding-left: 1.2em; }
+  .fb .orig { margin-top: 8px; font-size: 0.82rem; color: var(--text-soft); border-top: 1px dashed rgba(0,0,0,0.12); padding-top: 8px; }
+  .result { text-align: center; }
+  .result .score { font-family: 'Quicksand', sans-serif; font-size: 3rem; font-weight: 700; color: var(--blue-dark); }
+  .wronglist { text-align: left; margin-top: 10px; font-size: 0.9rem; }
+
+  /* speaking / generic FB */
+  .fbsec { border-left: 4px solid var(--purple); padding: 4px 0 4px 12px; margin: 12px 0; }
+  .fbsec.good { border-color: var(--green); }
+  .fbsec.bad { border-color: var(--pink); }
+  .fbsec ul { padding-left: 1.2em; }
+  .steps { counter-reset: s; list-style: none; }
+  .steps li { position: relative; padding: 8px 10px 8px 40px; margin: 6px 0; background: var(--bg-purple); border-radius: 10px; }
+  .steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 10px; top: 8px;
+    width: 22px; height: 22px; border-radius: 50%; background: var(--purple); color: #fff; text-align: center;
+    font-size: 0.8rem; line-height: 22px; font-weight: 800; }
+  .model { background: #faf7ff; border: 2px dashed var(--purple); border-radius: 12px; padding: 12px 14px;
+    font-family: 'Quicksand', sans-serif; font-weight: 600; line-height: 1.8; }
+
+  @media (max-width: 520px) {
+    .tab { font-size: 0.78rem; }
+    .sentence { font-size: 1.05rem; }
+    .bar .lbl { width: 7.5em; font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+<style>
+  .rnav { position: sticky; top: 0; z-index: 9000; display: flex; gap: 6px; justify-content: center;
+    padding: 8px 10px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06); margin-bottom: 4px; flex-wrap: wrap; }
+  .rnav a { display: inline-flex; align-items: center; gap: 5px; text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif; font-weight: 700; font-size: 0.82rem;
+    color: #5a6470; padding: 7px 14px; border-radius: 999px; border: 1.5px solid transparent;
+    transition: all 0.18s; white-space: nowrap; }
+  .rnav a:hover { background: #f0f4f8; }
+  .rnav a.active { background: linear-gradient(90deg, #4db6ac, #ff8a80); color: #fff; box-shadow: 0 3px 8px rgba(77,182,172,0.3); }
+</style>
+<nav class="rnav">
+  <a href="riho.html">📚 単語学習</a>
+  <a href="riho-reading.html">📖 長文リーディング</a>
+  <a href="riho-toefl-writing.html">📓 TOEFL Essay</a>
+  <a href="riho-toefl-review.html" class="active">📝 問題集 復習</a>
+</nav>
+
+<div class="container">
+  <h1>📝 TOEFL 問題集 復習</h1>
+  <p class="sub">解いた問題の「まちがえたところ」だけを、もう一度。</p>
+  <div class="tabs" id="tabs"></div>
+  <div id="main"></div>
+</div>
+
+<script>
+/* =====================================================================
+   データ：問題集の記録。新しい回はそれぞれの配列の「先頭」に追加する。
+   ===================================================================== */
+const DATA = {
+  reading: [
+    {
+      id: "r-2026-09-27",
+      date: "2026-09-27",
+      title: "Complete the Words（単語の穴うめ）8セット",
+      correct: 49, total: 80,
+      breakdown: [
+        { key: "form",  label: "品詞・語尾のミス",   n: 13, color: "var(--purple)" },
+        { key: "mean",  label: "ちがう単語を入れた", n: 9,  color: "var(--pink)" },
+        { key: "blank", label: "わからず適当に埋めた", n: 9,  color: "var(--yellow)" }
+      ],
+      advice: [
+        "<b>いちばん多いのは「語幹は合っているのに語尾がちがう」ミス（13個）。</b> critical → <span class='x'>critcals</span>、consumers → <span class='x'>consuming</span>、innovative → <span class='x'>innovation</span> など。単語は思い出せているので、<b>空欄の“場所”から品詞を決める</b>だけで大きく点が伸びます。",
+        "<b>品詞の決め方：</b> 名詞の前（<code>___ decisions</code>, <code>small, ___ steps</code>）→ <b>形容詞</b>（-al / -ical / -able / -tive / -ed）。主語・<code>the ___ of</code>・<code>and</code> のあと → <b>名詞</b>（-tion / -sis / -ers / -ose）。<code>to / can / help</code> のあと → <b>動詞の原形</b>。",
+        "<b>形容詞に -s はつかない。</b> <span class='x'>critcals</span>, <span class='x'>natures</span> のように、迷うと -s や -ing を足すクセがあります。",
+        "<b>同じ文字の連打（pppp, ssssss, tttttt）は 0点確定。</b> smart cities のセットは後半4つがすべてこれでした。語幹（opti-, de-, busi-, cus-）から、文の意味に合う単語を1つ思い浮かべて書けば部分点のチャンスがあります。",
+        "<b>パッセージの最後の文はヒント。</b> bias の問題は、最後の文に “as little <b>bias</b> as possible” と答えそのものが書いてありました。"
+      ],
+      passages: [
+        { theme: "国際協力と人権",       score: 6,  miss: [["empower","embrace"],["campaigns","campagans"],["ensure","engage"],["support","supplys"]] },
+        { theme: "お金の教育",           score: 6,  miss: [["informed","infofads"],["budgeting","budgetdsd"],["concepts","conducts"],["future","fudddd"]] },
+        { theme: "メディア・リテラシー", score: 6,  miss: [["Critical","Critcals"],["bias","bite"],["medium","medads"],["consumers","consuming"]] },
+        { theme: "お金の目標",           score: 8,  miss: [["purpose","pursues"],["achievable","achieveing"]] },
+        { theme: "貯金",                 score: 9,  miss: [["invest","inpppp"]] },
+        { theme: "節水",                 score: 6,  miss: [["conservation","conserveings"],["actions","actings"],["leaky","leaks"],["showerheads","showersssss"]] },
+        { theme: "スマートシティ",       score: 3,  miss: [["services","serveres"],["analysis","analyogy"],["optimize","optioooo"],["distribution","districtions"],["deployed","derrrrrr"],["businesses","busissssss"],["customers","custtttttt"]] },
+        { theme: "都市計画と自然",       score: 5,  miss: [["planners","planning"],["natural","natures"],["vertical","vertittt"],["innovative","innovation"],["provide","produce"]] }
+      ],
+      /* 復習問題：まちがえた31個のうち、TOEFL で出やすい18語を厳選。
+         文は本番とは別の新しい文。語幹（stem）の切り方は本番と同じ。
+         tr=この文の意味 / clue=どこを見れば分かるか / trap=本番の答えがダメな理由
+         family=単語ファミリー [語, 品詞, 意味] / colloc=よく出る組み合わせ [英, 日] / memo=覚え方 */
+      quiz: [
+        { id:"empower", type:"mean", before:"Education can ", stem:"em", ans:"power", after:" young people to make changes in their communities.",
+          ja:"empower = 力を与える・地位を高める", yours:"embrace",
+          tr:"教育は、若者が地域社会を変えていけるよう力を与えることができる。",
+          clue:"<b>can</b> のあとなので空欄は<b>動詞の原形</b>。後ろに「人（young people）+ to 動詞」が続く → <b>empower 人 to ～</b>（人に～する力を与える）の形。",
+          trap:"<b>embrace</b> は「受け入れる・抱きしめる」。campaigns to embrace women（女性を抱きしめるキャンペーン）では意味が通りません。後ろに promote gender equality（男女平等を進める）とあるので、「女性の<b>地位を高める</b>」が正解の流れ。",
+          family:[["empower","動","力を与える"],["empowerment","名","地位向上・能力強化"],["power","名","力"],["powerful","形","強力な"]],
+          colloc:[["empower women","女性の地位を高める"],["empower people to make decisions","人が自分で決められるようにする"],["women's empowerment","女性の地位向上"]],
+          memo:"<b>em/en（～にする）+ power（力）</b>＝力を持たせる。同じ作り：<b>enable</b>（able にする＝可能にする）、<b>enrich</b>（rich にする＝豊かにする）。",
+          orig:"Global organizations have launched campaigns to <b>empower</b> women and promote gender equality.",
+          origJa:"国際機関は、女性の地位を高め、男女平等を進めるためのキャンペーンを始めている。" },
+        { id:"ensure", type:"mean", before:"Clear rules help ", stem:"en", ans:"sure", after:" that every student is treated fairly.",
+          ja:"ensure = 確実にする・保証する", yours:"engage",
+          tr:"はっきりしたルールは、すべての生徒が公平に扱われることを確実にするのに役立つ。",
+          clue:"<b>help</b> のあとなので<b>動詞の原形</b>。後ろが <b>that 節</b> → <b>ensure that ～</b>「～を確実にする」。本番は reduce violence <b>and</b> ___ equal rights と、and で動詞が2つ並ぶ形でした。",
+          trap:"<b>engage</b> は <b>engage in ～</b>（～に参加する）や engage students（生徒の関心を引く）で使う単語。「平等な権利に関わる」では目的（aim to）の文として意味が通りません。",
+          family:[["ensure","動","確実にする"],["sure","形","確かな"],["assure","動","（人を）安心させる"],["insure","動","保険をかける"]],
+          colloc:[["ensure that ～","～を確実にする"],["ensure equal rights","平等な権利を保障する"],["ensure safety","安全を確保する"]],
+          memo:"<b>en（～にする）+ sure（確かな）</b>＝確かにする。assure / insure と形が似ていますが、TOEFL の文章で圧倒的に多いのは <b>ensure</b>。",
+          orig:"These initiatives aim to reduce gender-based violence and <b>ensure</b> equal rights for all.",
+          origJa:"これらの取り組みは、性別にもとづく暴力を減らし、すべての人に平等な権利を保障することを目指している。" },
+        { id:"support", type:"mean", before:"The program offers financial ", stem:"supp", ans:"ort", after:" to families in need.",
+          ja:"support = 支援・支える", yours:"supplys",
+          tr:"その制度は、困っている家庭に経済的な支援を行っている。",
+          clue:"形容詞 financial のあと → <b>名詞</b>。本番は education, resources, <b>and ___</b> と<b>名詞が3つ並ぶ</b>形。supp のあと<b>3文字</b>で名詞になるのは -ort。",
+          trap:"supply の複数形は <b>supplies</b>（子音字＋y → ies）。<span class='x'>supplys</span> というつづりは存在しません。しかも空欄は3文字なので、<b>文字数からも</b> supplies（あと4文字必要）は入りません。",
+          family:[["support","名・動","支援／支える"],["supportive","形","協力的な"],["supporter","名","支持者"],["supply","名・動","供給（する）※別の単語"]],
+          colloc:[["provide support","支援を提供する"],["financial support","経済的支援"],["support the idea that ～","～という考えを支持する"]],
+          memo:"<b>空欄の文字数を必ず数える。</b>思いついた単語の文字数が合わなければ、それは答えではありません。",
+          orig:"Many programs also provide education, resources, and <b>support</b> to help communities achieve these goals.",
+          origJa:"多くのプログラムは、地域社会がこうした目標を達成できるよう、教育・資源・支援も提供している。" },
+        { id:"informed", type:"mean", before:"Reading several news sources helps voters make ", stem:"info", ans:"rmed", after:" choices.",
+          ja:"informed = 十分な情報にもとづいた", yours:"infofads",
+          tr:"いくつかのニュースを読むことで、有権者はよく知ったうえで選ぶことができる。",
+          clue:"make ___ <b>choices</b>：名詞 choices の前 → <b>形容詞</b>。動詞 inform（知らせる）の過去分詞 <b>informed</b> が形容詞になり「情報を得たうえでの」。",
+          trap:"<span class='x'>infofads</span> は英単語ではありません。語幹 <b>info-</b> から information / <b>inform</b> を思い出せれば、形容詞形の -rmed（4文字）にたどり着けます。",
+          family:[["inform","動","知らせる"],["information","名","情報"],["informed","形","情報にもとづいた"],["informative","形","有益な・ためになる"]],
+          colloc:[["make informed decisions","よく知ったうえで決める"],["be informed about ～","～についてよく知っている"],["well-informed","物知りの・情報通の"]],
+          memo:"<b>make an informed decision</b> は Reading・Listening・Writing すべてで出る超定番。まるごと覚えましょう。",
+          orig:"Financial education empowers individuals to make <b>informed</b> decisions about their money.",
+          origJa:"お金の教育は、人々が自分のお金について十分な情報にもとづいて判断できるようにする。" },
+        { id:"concepts", type:"mean", before:"The teacher used simple examples to explain difficult scientific ", stem:"con", ans:"cepts", after:".",
+          ja:"concept = 概念・考え方", yours:"conducts",
+          tr:"先生は、難しい科学の考え方を説明するために、かんたんな例を使った。",
+          clue:"形容詞 scientific のあと → <b>名詞</b>。本番は understanding <b>these ___</b> で、前の文の budgeting, saving, investing を<b>まとめて指す言葉</b>が入る →「考え方・概念」。",
+          trap:"<b>conduct</b> は「行う（動）／行動（名）」。「予算・貯金・投資という行動を理解する」は不自然です。<b>these ＋ 名詞</b>は前の文をまとめる言葉（these concepts / these factors / these ideas）で、穴うめの定番パターン。",
+          family:[["concept","名","概念"],["conceptual","形","概念的な"],["conceive","動","思いつく・考える"],["conception","名","構想・考え"]],
+          colloc:[["the concept of ～","～という考え方"],["understand a concept","概念を理解する"],["a basic concept","基本的な考え方"]],
+          memo:"<b>these / this ＋ 空欄</b> を見たら、答えのヒントは<b>前の文</b>にあります。",
+          orig:"By understanding these <b>concepts</b>, people can avoid common mistakes…",
+          origJa:"こうした考え方を理解することで、人はよくある失敗を避けられる…" },
+        { id:"critical", type:"form", before:"", stem:"Crit", ans:"ical", after:" thinking is an important skill for university students.",
+          ja:"critical = 批判的な・とても重要な", yours:"Critcals",
+          tr:"批判的に考える力は、大学生にとって大切なスキルだ。",
+          clue:"文の最初で、後ろに名詞 <b>thinking</b> → <b>形容詞</b>。本番も後ろに media literacy（名詞）がありました。",
+          trap:"<span class='x'>Critcals</span> には2つミスがあります。①つづり：-ical の <b>i</b> が抜けている。②<b>形容詞に -s をつけた</b>。形容詞はどんな時も複数形になりません（×criticals people）。",
+          family:[["critic","名","批評家"],["criticize","動","批判する"],["criticism","名","批判"],["critical","形","批判的な・重大な"]],
+          colloc:[["critical thinking","批判的思考"],["play a critical role in ～","～で重要な役割を果たす"],["It is critical that ～","～することがとても重要だ"]],
+          memo:"<b>-ical</b> は形容詞の語尾：typical, political, practical, critical。名詞の前に来たら -ical を疑う。",
+          orig:"<b>Critical</b> media literacy also involves understanding bias.",
+          origJa:"批判的なメディアリテラシーには、偏りを理解することも含まれる。" },
+        { id:"bias", type:"mean", before:"A good reporter tries to avoid ", stem:"bi", ans:"as", after:" when writing about politics.",
+          ja:"bias = 偏り・偏見", yours:"bite",
+          tr:"よい記者は、政治について書くときに偏りを避けようとする。",
+          clue:"<b>avoid</b>（～を避ける）のあと → <b>名詞</b>。本番は understanding ___ のあとに「どのメディアにも独自の視点がある」と続き、最後の文に <b>as little bias as possible</b> と答えそのものがありました。",
+          trap:"<b>bite</b> は「かむ」。メディアを読み解く力の話で「かむことを理解する」は意味が通りません。<b>パッセージ全体のテーマ</b>（ニュースの見方）に合う単語を選びます。",
+          family:[["bias","名","偏り・偏見"],["biased","形","偏った"],["unbiased","形","公平な・偏りのない"]],
+          colloc:[["avoid bias","偏りを避ける"],["a bias against ～","～への偏見"],["biased reporting","偏った報道"]],
+          memo:"<b>空欄のあとの文も読む。</b>答えやヒントが後ろに出てくることがよくあります。",
+          orig:"Critical media literacy also involves understanding <b>bias</b>.",
+          origJa:"批判的なメディアリテラシーには、偏りを理解することも含まれる。" },
+        { id:"consumers", type:"form", before:"Online reviews help ", stem:"consu", ans:"mers", after:" choose the best products.",
+          ja:"consumer = 消費者", yours:"consuming",
+          tr:"ネットのレビューは、消費者がいちばんよい商品を選ぶのに役立つ。",
+          clue:"<b>help ＋ 人 ＋ 動詞の原形</b>。本番は help ___ <b>form</b> balanced opinions → 意見を作る（form）のは<b>人</b>。",
+          trap:"<span class='x'>consuming</span>（消費すること）は動作であって人ではありません。「消費することが意見を作る」では意味が通らない。<b>-er / -or / -ist</b> は「～する人」。",
+          family:[["consume","動","消費する"],["consumer","名","消費者"],["consumption","名","消費"],["time-consuming","形","時間のかかる"]],
+          colloc:[["help consumers make choices","消費者の選択を助ける"],["consumer behavior","消費者行動"],["energy consumption","エネルギー消費"]],
+          memo:"<b>help の直後の空欄は、まず「人」を疑う。</b>",
+          orig:"…learning to recognize this can help <b>consumers</b> form balanced opinions.",
+          origJa:"…それを見抜けるようになれば、消費者はバランスのとれた意見を持てる。" },
+        { id:"purpose", type:"mean", before:"The main ", stem:"pur", ans:"pose", after:" of the experiment was to test the new medicine.",
+          ja:"purpose = 目的", yours:"pursues",
+          tr:"その実験の主な目的は、新しい薬を試すことだった。",
+          clue:"<b>The main ___ of</b>：the ＋ 形容詞 ＋ 空欄 ＋ of → <b>名詞</b>。本番は provide direction <b>and ___</b>：and の前が名詞（direction）なら、後ろも名詞。",
+          trap:"<span class='x'>pursues</span> は動詞 pursue（追い求める）に -s をつけた形。3単現の -s は<b>主語のすぐ後ろ</b>でしか使えません。and で名詞と並ぶ場所には入らない。",
+          family:[["purpose","名","目的"],["purposeful","形","目的のある"],["on purpose","副","わざと"],["pursue","動","追い求める ※別の単語"]],
+          colloc:[["the purpose of ～","～の目的"],["a sense of purpose","目的意識"],["for the purpose of ～ing","～するために"]],
+          memo:"<b>A and B は同じ品詞。</b>and の前を見れば、空欄の品詞が分かります。",
+          orig:"…clear goals provide direction and <b>purpose</b>.",
+          origJa:"…はっきりした目標は、方向性と目的を与えてくれる。" },
+        { id:"achievable", type:"form", before:"Set small, ", stem:"achiev", ans:"able", after:" goals so that you do not give up.",
+          ja:"achievable = 達成できる", yours:"achieveing",
+          tr:"あきらめないように、小さくて達成できる目標を立てよう。",
+          clue:"<b>small, ___ goals</b>：カンマで形容詞が2つ並び、そのあとに名詞 → <b>形容詞</b>。small と同じ仲間の言葉が入る。",
+          trap:"<span class='x'>achieveing</span> は ①動詞の -ing 形で、「達成できる」という意味にならない。②つづりも achieve ＋ ing ＝ <b>achieving</b>（最後の e を取る）。",
+          family:[["achieve","動","達成する"],["achievement","名","達成・業績"],["achievable","形","達成できる"]],
+          colloc:[["achievable goals","達成できる目標"],["achieve a goal","目標を達成する"],["academic achievement","学業成績"]],
+          memo:"<b>-able ＝ ～できる</b>：achievable, available, reliable（信頼できる）, affordable（手ごろな）。",
+          orig:"Break down your goals into small, <b>achievable</b> steps for success.",
+          origJa:"成功のために、目標を小さな、達成できるステップに分けよう。" },
+        { id:"invest", type:"blank", before:"Many young people choose to ", stem:"in", ans:"vest", after:" in technology companies.",
+          ja:"invest in ～ = ～に投資する", yours:"inpppp",
+          tr:"多くの若者が、テクノロジー企業に投資することを選んでいる。",
+          clue:"choose <b>to ＋ 動詞の原形</b>、後ろに <b>in</b> ～。お金の話で「in ___ in」なら <b>invest in</b>。本番も to ___ <b>in</b> opportunities that help you grow your wealth（財産を増やす）でした。",
+          trap:"同じ文字の連打（pppp）は<b>必ず0点</b>。同じ日の「お金の教育」のセットに <b>investing</b> が出ていました。saving（貯金）→ invest（投資）は、お金の文章の定番の流れです。",
+          family:[["invest","動","投資する"],["investment","名","投資"],["investor","名","投資家"]],
+          colloc:[["invest in ～","～に投資する"],["invest time in ～","～に時間をかける"],["a good investment","よい投資"]],
+          memo:"<b>invest は in とセット。</b>後ろに in が見えたら invest を思い出す。",
+          orig:"Moreover, savings can be used to <b>invest</b> in opportunities that help you grow your wealth.",
+          origJa:"さらに、貯金は財産を増やす機会に投資するのにも使える。" },
+        { id:"conservation", type:"form", before:"Energy ", stem:"conserv", ans:"ation", after:" is one way to fight climate change.",
+          ja:"conservation = 保護・節約", yours:"conserveings",
+          tr:"省エネは、気候変動と戦うひとつの方法だ。",
+          clue:"<b>Energy ___ is</b>：動詞 is の前の主語 → <b>名詞</b>。Energy / Water は後ろの名詞を説明する名詞（water bottle と同じ使い方）。",
+          trap:"conserve は動詞。-ing や -s を足しても「保護・節約」という名詞にはなりません（<span class='x'>conserveings</span> は存在しない）。動詞 → 名詞は <b>-ation</b>：conserve → conservation。",
+          family:[["conserve","動","保護する・節約する"],["conservation","名","保護・節約"],["conservative","形","保守的な"]],
+          colloc:[["water conservation","節水"],["energy conservation","省エネ"],["wildlife conservation","野生生物の保護"]],
+          memo:"<b>-ation</b> は名詞を作る代表選手：educate → education, inform → information, conserve → conservation。",
+          orig:"Water <b>conservation</b> is crucial in sustainable living.",
+          origJa:"節水は、持続可能な暮らしにとってとても重要だ。" },
+        { id:"analysis", type:"form", before:"A careful ", stem:"analy", ans:"sis", after:" of the data showed a clear pattern.",
+          ja:"analysis = 分析", yours:"analyogy",
+          tr:"データを注意深く分析すると、はっきりしたパターンが見えた。",
+          clue:"<b>A careful ___ of</b>：a ＋ 形容詞 ＋ 空欄 ＋ of → <b>名詞</b>。本番は Data ___ <b>can help</b> の主語でした。",
+          trap:"<span class='x'>analyogy</span> は analogy（たとえ・類推）とまざった形。analy- で始まり「分析」の意味の名詞は <b>analysis</b>。",
+          family:[["analyze","動","分析する"],["analysis","名","分析（複数 analyses）"],["analyst","名","分析する人"],["analytical","形","分析的な"]],
+          colloc:[["data analysis","データ分析"],["a careful analysis of ～","～の綿密な分析"],["analyze the results","結果を分析する"]],
+          memo:"<b>-sis</b> で終わる名詞：analysis, hypothesis（仮説）, crisis（危機）, basis（基礎）。",
+          orig:"Data <b>analysis</b> can help optimize waste management, energy distribution, and traffic control…",
+          origJa:"データ分析は、ごみ処理・エネルギー配分・交通管理を最適化するのに役立つ…" },
+        { id:"optimize", type:"blank", before:"Companies use software to ", stem:"opti", ans:"mize", after:" their delivery routes.",
+          ja:"optimize = 最適化する・いちばん効率よくする", yours:"optioooo",
+          tr:"企業はソフトを使って、配達ルートを最適化している。",
+          clue:"use software <b>to ＋ 動詞の原形</b>。本番も can help ___（help ＋ 動詞の原形）。後ろの waste management（ごみ処理）などを「データで効率よくする」→ 最適化する。",
+          trap:"文字の連打で0点。opti- から optimal（最適な）を思い出し、動詞を作る語尾 <b>-ize</b> をつければ optimize になります。",
+          family:[["optimize","動","最適化する"],["optimal","形","最適な"],["optimization","名","最適化"]],
+          colloc:[["optimize traffic flow","交通の流れを最適化する"],["optimize efficiency","効率を最大にする"],["the optimal solution","最適な解決策"]],
+          memo:"<b>-ize</b> は動詞を作る：organize, recognize, maximize, minimize, optimize。",
+          orig:"Data analysis can help <b>optimize</b> waste management, energy distribution, and traffic control…",
+          origJa:"データ分析は、ごみ処理・エネルギー配分・交通管理を最適化するのに役立つ…" },
+        { id:"distribution", type:"form", before:"The unequal ", stem:"distri", ans:"bution", after:" of wealth is a serious social problem.",
+          ja:"distribution = 分配・配ること", yours:"districtions",
+          tr:"富の不平等な分配は、深刻な社会問題だ。",
+          clue:"<b>The unequal ___ of</b> → <b>名詞</b>。本番は waste management, energy ___, and traffic control と<b>名詞のリスト</b>の中でした。",
+          trap:"<span class='x'>districtions</span> は district（地区）とまざった形。distri- のあと<b>6文字</b> → -bution。distribute（配る）の名詞形です。",
+          family:[["distribute","動","分配する・配る"],["distribution","名","分配・流通"],["distributor","名","販売業者"]],
+          colloc:[["energy distribution","エネルギーの配分"],["the distribution of wealth","富の分配"],["distribute food to ～","～に食料を配る"]],
+          memo:"<b>-ute → -ution</b>：distribute → distribution, contribute → contribution, pollute → pollution。",
+          orig:"Data analysis can help optimize waste management, energy <b>distribution</b>, and traffic control…",
+          origJa:"データ分析は、ごみ処理・エネルギー配分・交通管理を最適化するのに役立つ…" },
+        { id:"natural", type:"form", before:"Floods and earthquakes are ", stem:"natu", ans:"ral", after:" disasters.",
+          ja:"natural = 自然の", yours:"natures",
+          tr:"洪水や地震は自然災害だ。",
+          clue:"are ___ <b>disasters</b>：名詞 disasters の前 → <b>形容詞</b>。本番も the protection of ___ <b>habitats</b>（名詞 habitats の前）。",
+          trap:"<span class='x'>natures</span> は名詞 nature に -s をつけた形。「自然」の意味の nature はふつう数えないので -s はつきません。名詞の前で「自然の」と言うなら形容詞 <b>natural</b>。",
+          family:[["nature","名","自然"],["natural","形","自然の"],["naturally","副","自然に・当然"]],
+          colloc:[["natural habitats","自然の生息地"],["natural resources","天然資源"],["natural disasters","自然災害"]],
+          memo:"<b>-al</b> は形容詞の語尾：natural, environmental, cultural, financial。",
+          orig:"Urban planners must balance the needs of growing populations with the protection of <b>natural</b> habitats.",
+          origJa:"都市計画者は、増え続ける人口のニーズと、自然の生息地を守ることのバランスを取らなければならない。" },
+        { id:"innovative", type:"form", before:"The company is famous for its ", stem:"innova", ans:"tive", after:" designs.",
+          ja:"innovative = 革新的な・新しい発想の", yours:"innovation",
+          tr:"その会社は、革新的なデザインで有名だ。",
+          clue:"its ___ <b>designs</b>：名詞 designs の前 → <b>形容詞</b>。本番も are ___ <b>solutions</b>（名詞 solutions の前）。",
+          trap:"<span class='x'>innovation</span>（名詞）を入れると innovation solutions と名詞が2つ並び、「革新的な解決策」という意味になりません。名詞を説明するなら形容詞 <b>innovative</b>。",
+          family:[["innovate","動","革新する"],["innovation","名","革新"],["innovative","形","革新的な"],["innovator","名","革新者"]],
+          colloc:[["innovative solutions","革新的な解決策"],["technological innovation","技術革新"],["an innovative approach","新しいやり方"]],
+          memo:"<b>-tive</b> は形容詞：creative, effective, positive, innovative。",
+          orig:"Green roofs and vertical gardens are <b>innovative</b> solutions to bring nature back into urban areas.",
+          origJa:"屋上緑化や垂直庭園は、都市に自然を取り戻す革新的な解決策だ。" },
+        { id:"planners", type:"form", before:"City ", stem:"plann", ans:"ers", after:" decided to build more bike lanes.",
+          ja:"planner = 計画する人", yours:"planning",
+          tr:"市の都市計画担当者たちは、自転車レーンを増やすことに決めた。",
+          clue:"City ___ <b>decided</b>：決めるのは<b>人</b>。本番も Urban ___ <b>must balance</b>（バランスを取らなければならない）→ 人。",
+          trap:"urban planning（都市計画）という言葉はありますが、「都市計画が～のバランスを取らなければならない」より「計画する<b>人</b>が」が自然。動詞の主語になる人 → <b>-er(s)</b>。n を重ねて plann<b>ers</b>。",
+          family:[["plan","動・名","計画（する）"],["planner","名","計画する人"],["planning","名","計画すること"]],
+          colloc:[["urban planners","都市計画者"],["city planning","都市計画"],["careful planning","綿密な計画"]],
+          memo:"<b>主語の空欄は「人かモノか」を動詞で決める。</b>must balance / decided → 人。",
+          orig:"Urban <b>planners</b> must balance the needs of growing populations with the protection of natural habitats.",
+          origJa:"都市計画者は、増え続ける人口のニーズと、自然の生息地を守ることのバランスを取らなければならない。" }
+      ]
+    }
+  ],
+  listening: [],
+  writing: [],
+  /* speaking の1件の形：
+     { id, date, title, task, prompt, score, summary,
+       good:[...], issues:[...], structure:[...], model:"..." } */
+  speaking: []
+};
+
+const CATS = [
+  { key: "reading",   label: "📖 Reading" },
+  { key: "listening", label: "🎧 Listening" },
+  { key: "writing",   label: "✍️ Writing" },
+  { key: "speaking",  label: "🗣 Speaking" }
+];
+
+/* ---------- 保存（ブラウザ内のみ。使えなくても動く） ---------- */
+const STORE_KEY = "rihoToeflReview";
+function loadStore() { try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { return {}; } }
+function saveStore(s) { try { localStorage.setItem(STORE_KEY, JSON.stringify(s)); } catch (e) {} }
+let store = loadStore();
+function getTab() { try { return localStorage.getItem(STORE_KEY + ":tab") || "reading"; } catch (e) { return "reading"; } }
+function setTab(t) { try { localStorage.setItem(STORE_KEY + ":tab", t); } catch (e) {} }
+
+const $ = (s, r = document) => r.querySelector(s);
+const TAG = { form: ["form", "品詞・語尾"], mean: ["mean", "単語の意味"], blank: ["blank", "空欄だった"] };
+
+/* ---------- タブ ---------- */
+let current = getTab();
+function renderTabs() {
+  $("#tabs").innerHTML = CATS.map(c =>
+    `<button class="tab${c.key === current ? " on" : ""}" data-cat="${c.key}">${c.label}<span class="n">${DATA[c.key].length}回分</span></button>`
+  ).join("");
+  $("#tabs").querySelectorAll(".tab").forEach(b => b.onclick = () => { current = b.dataset.cat; setTab(current); render(); });
+}
+function render() {
+  renderTabs();
+  const list = DATA[current];
+  if (!list.length) {
+    $("#main").innerHTML = `<div class="card empty"><div class="big">🗂️</div>
+      <p>まだ記録がありません。<br>問題集を解いたら、結果とフィードバックがここに追加されます。</p></div>`;
+    return;
+  }
+  $("#main").innerHTML = list.map(e => ({ reading: readingCard, listening: genericCard, writing: genericCard, speaking: speakingCard })[current](e)).join("");
+  if (current === "reading") list.forEach(e => bindReading(e));
+}
+
+/* ---------- Reading ---------- */
+function readingCard(e) {
+  const pct = Math.round(e.correct / e.total * 100);
+  const missTotal = e.total - e.correct;
+  const rec = store[e.id] || {};
+  const bars = e.breakdown.map(b =>
+    `<div class="bar"><span class="lbl">${b.label}</span><span class="track"><span class="fill" style="display:block;width:${b.n / missTotal * 100}%;background:${b.color}"></span></span><span class="num">${b.n}</span></div>`).join("");
+  const rows = e.passages.map(p =>
+    `<tr><td>${p.theme}</td><td>${p.score}/10</td><td>${p.miss.map(([c, y]) => `<span class="x">${y}</span> → <span class="o">${c}</span>`).join("<br>")}</td></tr>`).join("");
+  return `<div class="card" id="card-${e.id}">
+    <h2>${e.title}</h2>
+    <div class="meta">${e.date}</div>
+    <div class="stats">
+      <div class="stat"><b>${e.correct}/${e.total}</b><span>正解した空欄</span></div>
+      <div class="stat"><b>${pct}%</b><span>正答率</span></div>
+      <div class="stat"><b>${rec.best != null ? rec.best + "/" + e.quiz.length : "—"}</b><span>復習ベスト</span></div>
+    </div>
+    <h3>まちがい ${missTotal} 個の内訳</h3>
+    ${bars}
+    <div class="tip"><ol>${e.advice.map(a => `<li>${a}</li>`).join("")}</ol></div>
+    <details><summary>セットごとの答え合わせを見る</summary>
+      <table><tr><th>テーマ</th><th>点</th><th>あなた → 正解</th></tr>${rows}</table>
+    </details>
+    <h3>🎯 復習問題（厳選 ${e.quiz.length} 問）</h3>
+    <p class="hint">まちがえた ${missTotal} 個から、TOEFL でよく出る単語だけを選びました。本番とはちがう新しい文で、同じ単語を穴うめします。</p>
+    <div class="quiz" id="quiz-${e.id}"></div>
+  </div>`;
+}
+
+function bindReading(e) {
+  const box = $("#quiz-" + e.id);
+  const rec = store[e.id] || {};
+  const startBtns = [`<button class="btn" data-go="all">全部とく（${e.quiz.length}問）</button>`];
+  if (rec.lastWrong && rec.lastWrong.length) startBtns.push(`<button class="btn pink" data-go="wrong">前回まちがえた ${rec.lastWrong.length} 問だけ</button>`);
+  box.innerHTML = `<div class="btns">${startBtns.join("")}</div>`;
+  box.querySelectorAll("[data-go]").forEach(b => b.onclick = () => {
+    const items = b.dataset.go === "wrong" ? e.quiz.filter(q => rec.lastWrong.includes(q.id)) : e.quiz.slice();
+    runQuiz(e, box, shuffle(items), b.dataset.go === "all");
+  });
+}
+
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+function runQuiz(e, box, items, full) {
+  let i = 0, right = 0; const wrong = [];
+  const show = () => {
+    const q = items[i];
+    const [tcls, tlabel] = TAG[q.type];
+    const boxes = [...q.ans].map((_, k) => `<input class="lt" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" data-k="${k}">`).join("");
+    box.innerHTML = `
+      <div class="qhead"><span>${i + 1} / ${items.length}</span><span class="tag ${tcls}">${tlabel}</span></div>
+      <div class="prog"><div style="width:${i / items.length * 100}%"></div></div>
+      <div class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${boxes}</span>${q.after}</div>
+      <p class="hint">空欄は ${q.ans.length} 文字。1マスに1文字ずつ入れてね。</p>
+      <div id="fbArea"></div>
+      <div class="btns"><button class="btn" id="checkBtn">こたえあわせ</button></div>`;
+    const ins = [...box.querySelectorAll(".lt")];
+    ins.forEach((inp, k) => {
+      inp.addEventListener("input", () => {
+        // 速く打つ・貼りつけたときは、あふれた文字を次のマスへ
+        const chars = inp.value.replace(/[^a-zA-Z]/g, "").toLowerCase().split("");
+        let j = k;
+        if (!chars.length) inp.value = "";
+        chars.forEach(c => { if (ins[j]) ins[j++].value = c; });
+        if (chars.length) (ins[j] || ins[ins.length - 1]).focus();
+      });
+      inp.addEventListener("keydown", ev => {
+        if (ev.key === "Backspace" && !inp.value && ins[k - 1]) { ins[k - 1].focus(); ins[k - 1].value = ""; ev.preventDefault(); }
+        if (ev.key === "ArrowLeft" && ins[k - 1]) ins[k - 1].focus();
+        if (ev.key === "ArrowRight" && ins[k + 1]) ins[k + 1].focus();
+        if (ev.key === "Enter") { ev.preventDefault(); const c = $("#checkBtn", box); if (c) c.click(); }
+      });
+    });
+    ins[0].focus();
+    $("#checkBtn", box).onclick = () => {
+      const typed = ins.map(x => x.value).join("");
+      const ok = typed === q.ans;
+      ins.forEach((x, k) => { x.readOnly = true; x.classList.add(x.value === q.ans[k] ? "ok" : "ng"); });
+      if (ok) right++; else wrong.push(q.id);
+      $("#fbArea", box).innerHTML = `<div class="fb ${ok ? "good" : "bad"}">
+        <div class="ttl">${ok ? "⭕ 正解！" : "❌ ざんねん"}　正解は <span class="w">${q.stem}${q.ans}</span></div>
+        <div class="answers">
+          ${ok ? "" : `<div>今回の答え：<span class="x">${q.stem}${typed || "（空欄）"}</span></div>`}
+          <div>本番でのあなたの答え：<span class="x">${q.yours}</span></div>
+        </div>
+        <div class="ex">
+          <div class="exs"><div class="exh">📝 この文の意味</div>${q.tr}</div>
+          <div class="exs"><div class="exh">🔍 どこを見れば分かる？</div>${q.clue}</div>
+          <div class="exs"><div class="exh">⚠️ 本番の答えがダメな理由</div>${q.trap}</div>
+          <div class="exs"><div class="exh">🌱 単語ファミリー（形が変わると品詞が変わる）</div>
+            <table class="fam">${q.family.map(([w, p, m]) => `<tr${(q.stem + q.ans).toLowerCase().replace(/s$/, "") === w.replace(/s$/, "") ? ' class="me"' : ""}><td class="w">${w}</td><td><span class="pos">${p}</span></td><td>${m}</td></tr>`).join("")}</table></div>
+          <div class="exs"><div class="exh">🔗 よく出る組み合わせ</div>
+            <ul class="col">${q.colloc.map(([en, j]) => `<li><span class="w">${en}</span>　${j}</li>`).join("")}</ul></div>
+          <div class="exs memo"><div class="exh">💡 おぼえ方</div>${q.memo}</div>
+        </div>
+        <div class="orig">本番の文：${q.orig}<br>（${q.origJa}）</div></div>`;
+      const btns = box.querySelector(".btns");
+      btns.innerHTML = `<button class="btn" id="nextBtn">${i + 1 < items.length ? "つぎへ →" : "結果を見る"}</button>`;
+      const nb = $("#nextBtn", box); setTimeout(() => nb.focus(), 250);
+      nb.onclick = () => { i++; i < items.length ? show() : finish(); };
+    };
+  };
+  const finish = () => {
+    const rec = store[e.id] || {};
+    rec.lastWrong = wrong.slice();
+    if (full) rec.best = Math.max(rec.best || 0, right);
+    rec.attempts = (rec.attempts || 0) + 1;
+    store[e.id] = rec; saveStore(store);
+    const wq = items.filter(q => wrong.includes(q.id));
+    box.innerHTML = `<div class="result">
+      <div class="score">${right} / ${items.length}</div>
+      <p>${wrong.length ? "まちがえた単語は、次は「前回まちがえた問題だけ」で練習できます。" : "全問正解！🎉 この回の単語はバッチリです。"}</p>
+      ${wq.length ? `<div class="wronglist"><b>もう一度おぼえる：</b><ul style="padding-left:1.2em">${wq.map(q => `<li>${q.ja.replace(/^(\S+)/, '<span class="w">$1</span>')}</li>`).join("")}</ul></div>` : ""}
+      <div class="btns">${wq.length ? `<button class="btn pink" id="againWrong">まちがえた ${wq.length} 問をもう一度</button>` : ""}<button class="btn alt" id="backBtn">もどる</button></div></div>`;
+    const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wq), false);
+    $("#backBtn", box).onclick = () => render();
+    const stat = $("#card-" + e.id + " .stat:nth-child(3) b");
+    if (stat && rec.best != null) stat.textContent = rec.best + "/" + e.quiz.length;
+  };
+  show();
+}
+
+/* ---------- Listening / Writing（結果＋FB） ---------- */
+function list(items) { return items && items.length ? `<ul>${items.map(x => `<li>${x}</li>`).join("")}</ul>` : ""; }
+function genericCard(e) {
+  return `<div class="card"><h2>${e.title}</h2><div class="meta">${e.date}${e.score ? "　・　" + e.score : ""}</div>
+    ${e.summary ? `<p style="margin-top:8px">${e.summary}</p>` : ""}
+    ${e.good && e.good.length ? `<div class="fbsec good"><b>👍 よかったところ</b>${list(e.good)}</div>` : ""}
+    ${e.issues && e.issues.length ? `<div class="fbsec bad"><b>🔧 直すところ</b>${list(e.issues)}</div>` : ""}
+    ${e.tips && e.tips.length ? `<div class="tip"><ol>${e.tips.map(t => `<li>${t}</li>`).join("")}</ol></div>` : ""}</div>`;
+}
+
+/* ---------- Speaking（FB＋構成＋お手本） ---------- */
+function speakingCard(e) {
+  return `<div class="card"><h2>${e.title}</h2><div class="meta">${e.date}${e.task ? "　・　" + e.task : ""}${e.score ? "　・　" + e.score : ""}</div>
+    ${e.prompt ? `<div class="tip" style="background:var(--bg-blue)"><b>問題：</b>${e.prompt}</div>` : ""}
+    ${e.summary ? `<p style="margin-top:10px">${e.summary}</p>` : ""}
+    ${e.good && e.good.length ? `<div class="fbsec good"><b>👍 よかったところ</b>${list(e.good)}</div>` : ""}
+    ${e.issues && e.issues.length ? `<div class="fbsec bad"><b>🔧 直すところ</b>${list(e.issues)}</div>` : ""}
+    ${e.structure && e.structure.length ? `<h3>🧱 こう組み立てると話しやすい</h3><ol class="steps">${e.structure.map(s => `<li>${s}</li>`).join("")}</ol>` : ""}
+    ${e.model ? `<h3>🎤 こんなふうに話せたら満点に近い</h3><div class="model">${e.model}</div>` : ""}</div>`;
+}
+
+render();
+</script>
+</body>
+</html>
