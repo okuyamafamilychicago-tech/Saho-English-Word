@@ -95,6 +95,11 @@
   .fb.bad { background: var(--bg-pink); }
   .fb .ttl { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
   .col { padding-left: 1.2em; }
+  .sumhead { background: var(--bg-blue); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
+  .sumlist { padding-left: 1.6em; }
+  .sumlist li { padding: 6px 0; border-bottom: 1px dashed #efe7de; }
+  .sumlist .sentence { display: inline; font-size: 1.05rem; margin: 0; line-height: 2.2; }
+  .sumfb { font-size: 0.88rem; }
   .fb .orig { margin-top: 8px; font-size: 0.88rem; color: var(--text); border-top: 1px dashed rgba(0,0,0,0.12); padding-top: 8px; }
   .result { text-align: center; }
   .result .score { font-family: 'Quicksand', sans-serif; font-size: 3rem; font-weight: 700; color: var(--blue-dark); }
@@ -522,7 +527,9 @@ function bindReading(e) {
   const rec = store[e.id] || {};
   const startBtns = [`<button class="btn" data-go="all">全部とく（${e.quiz.length}問）</button>`];
   if (rec.lastWrong && rec.lastWrong.length) startBtns.push(`<button class="btn pink" data-go="wrong">前回まちがえた ${rec.lastWrong.length} 問だけ</button>`);
+  if (rec.attempts) startBtns.push(`<button class="btn alt" data-sum="1">📋 Summary テスト${rec.summaryBest != null ? `（ベスト ${rec.summaryBest}/${e.quiz.length}）` : ""}</button>`);
   box.innerHTML = `<div class="btns">${startBtns.join("")}</div>`;
+  const sb = box.querySelector("[data-sum]"); if (sb) sb.onclick = () => runSummary(e, box);
   box.querySelectorAll("[data-go]").forEach(b => b.onclick = () => {
     const items = b.dataset.go === "wrong" ? e.quiz.filter(q => rec.lastWrong.includes(q.id)) : e.quiz.slice();
     runQuiz(e, box, shuffle(items), b.dataset.go === "all");
@@ -531,12 +538,72 @@ function bindReading(e) {
 
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
+const letterBoxes = n => Array.from({ length: n }, () =>
+  `<input class="lt" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">`).join("");
+
+// 1マス1文字の入力。ins は並んだマス全部（Summary では全問ぶん続けて移動できる）
+function bindLetters(ins, onEnter) {
+  ins.forEach((inp, k) => {
+    inp.addEventListener("input", () => {
+      // 速く打つ・貼りつけたときは、あふれた文字を次のマスへ
+      const chars = inp.value.replace(/[^a-zA-Z]/g, "").toLowerCase().split("");
+      let j = k;
+      if (!chars.length) inp.value = "";
+      chars.forEach(c => { if (ins[j]) ins[j++].value = c; });
+      if (chars.length) (ins[j] || ins[ins.length - 1]).focus();
+    });
+    inp.addEventListener("keydown", ev => {
+      if (ev.key === "Backspace" && !inp.value && ins[k - 1]) { ins[k - 1].focus(); ins[k - 1].value = ""; ev.preventDefault(); }
+      if (ev.key === "ArrowLeft" && ins[k - 1]) ins[k - 1].focus();
+      if (ev.key === "ArrowRight" && ins[k + 1]) ins[k + 1].focus();
+      if (ev.key === "Enter") { ev.preventDefault(); if (onEnter) onEnter(); }
+    });
+  });
+}
+
+/* ---------- Summary：全問を1ページでまとめて解き、最後に一括採点 ---------- */
+function runSummary(e, box) {
+  const items = shuffle(e.quiz.slice());
+  box.innerHTML = `
+    <div class="sumhead"><b>📋 Summary テスト</b>（全 ${items.length} 問）<br><span class="hint">本番と同じように、ぜんぶ埋めてから最後に採点します。</span></div>
+    <ol class="sumlist">${items.map(q => `<li data-id="${q.id}"><span class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${letterBoxes(q.ans.length)}</span>${q.after}</span><div class="sumfb"></div></li>`).join("")}</ol>
+    <div class="btns"><button class="btn" id="gradeBtn">採点する</button></div>`;
+  const all = [...box.querySelectorAll(".lt")];
+  bindLetters(all, null);
+  all[0].focus();
+  $("#gradeBtn", box).onclick = () => {
+    let right = 0; const wrong = [];
+    items.forEach(q => {
+      const li = box.querySelector(`li[data-id="${q.id}"]`);
+      const ins = [...li.querySelectorAll(".lt")];
+      const typed = ins.map(x => x.value).join("");
+      const ok = typed === q.ans;
+      ins.forEach((x, k) => { x.readOnly = true; x.classList.add(x.value === q.ans[k] ? "ok" : "ng"); });
+      if (ok) right++; else wrong.push(q);
+      li.querySelector(".sumfb").innerHTML = ok ? `<span class="o">⭕</span>`
+        : `<span class="x">❌</span> 正解 <span class="w o">${q.stem}${q.ans}</span>　<span class="hint">${q.pt}</span>`;
+    });
+    const rec = store[e.id] || {};
+    rec.summaryBest = Math.max(rec.summaryBest || 0, right);
+    rec.lastWrong = wrong.map(q => q.id);
+    store[e.id] = rec; saveStore(store);
+    const head = box.querySelector(".sumhead");
+    head.innerHTML = `<div class="result"><div class="score">${right} / ${items.length}</div>
+      <p>${wrong.length ? `まちがえた ${wrong.length} 問は下に ❌ と正解が出ています。` : "全問正解！🎉 この回の単語はマスターしました。"}</p></div>`;
+    box.querySelector(".btns").innerHTML = `${wrong.length ? `<button class="btn pink" id="againWrong">まちがえた ${wrong.length} 問を復習</button>` : ""}<button class="btn" id="sumAgain">Summary をもう一度</button><button class="btn alt" id="backBtn">もどる</button>`;
+    const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wrong), false);
+    $("#sumAgain", box).onclick = () => runSummary(e, box);
+    $("#backBtn", box).onclick = () => render();
+    head.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+}
+
 function runQuiz(e, box, items, full) {
   let i = 0, right = 0; const wrong = [];
   const show = () => {
     const q = items[i];
     const [tcls, tlabel] = TAG[q.type];
-    const boxes = [...q.ans].map((_, k) => `<input class="lt" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" data-k="${k}">`).join("");
+    const boxes = letterBoxes(q.ans.length);
     box.innerHTML = `
       <div class="qhead"><span>${i + 1} / ${items.length}</span><span class="tag ${tcls}">${tlabel}</span></div>
       <div class="prog"><div style="width:${i / items.length * 100}%"></div></div>
@@ -545,22 +612,7 @@ function runQuiz(e, box, items, full) {
       <div id="fbArea"></div>
       <div class="btns"><button class="btn" id="checkBtn">こたえあわせ</button></div>`;
     const ins = [...box.querySelectorAll(".lt")];
-    ins.forEach((inp, k) => {
-      inp.addEventListener("input", () => {
-        // 速く打つ・貼りつけたときは、あふれた文字を次のマスへ
-        const chars = inp.value.replace(/[^a-zA-Z]/g, "").toLowerCase().split("");
-        let j = k;
-        if (!chars.length) inp.value = "";
-        chars.forEach(c => { if (ins[j]) ins[j++].value = c; });
-        if (chars.length) (ins[j] || ins[ins.length - 1]).focus();
-      });
-      inp.addEventListener("keydown", ev => {
-        if (ev.key === "Backspace" && !inp.value && ins[k - 1]) { ins[k - 1].focus(); ins[k - 1].value = ""; ev.preventDefault(); }
-        if (ev.key === "ArrowLeft" && ins[k - 1]) ins[k - 1].focus();
-        if (ev.key === "ArrowRight" && ins[k + 1]) ins[k + 1].focus();
-        if (ev.key === "Enter") { ev.preventDefault(); const c = $("#checkBtn", box); if (c) c.click(); }
-      });
-    });
+    bindLetters(ins, () => { const c = $("#checkBtn", box); if (c) c.click(); });
     ins[0].focus();
     $("#checkBtn", box).onclick = () => {
       const typed = ins.map(x => x.value).join("");
@@ -591,7 +643,9 @@ function runQuiz(e, box, items, full) {
       <div class="score">${right} / ${items.length}</div>
       <p>${wrong.length ? "まちがえた単語は、次は「前回まちがえた問題だけ」で練習できます。" : "全問正解！🎉 この回の単語はバッチリです。"}</p>
       ${wq.length ? `<div class="wronglist"><b>もう一度おぼえる：</b><ul style="padding-left:1.2em">${wq.map(q => `<li>${q.ja.replace(/^(\S+)/, '<span class="w">$1</span>')}</li>`).join("")}</ul></div>` : ""}
-      <div class="btns">${wq.length ? `<button class="btn pink" id="againWrong">まちがえた ${wq.length} 問をもう一度</button>` : ""}<button class="btn alt" id="backBtn">もどる</button></div></div>`;
+      <div class="tip" style="margin-top:14px">📋 最後に <b>Summary テスト</b>：全 ${e.quiz.length} 問を1ページでまとめて解いて、ちゃんと覚えたか確認しよう。</div>
+      <div class="btns"><button class="btn" id="sumBtn">📋 Summary テストへ</button>${wq.length ? `<button class="btn pink" id="againWrong">まちがえた ${wq.length} 問をもう一度</button>` : ""}<button class="btn alt" id="backBtn">もどる</button></div></div>`;
+    $("#sumBtn", box).onclick = () => runSummary(e, box);
     const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wq), false);
     $("#backBtn", box).onclick = () => render();
     const stat = $("#card-" + e.id + " .stat:nth-child(3) b");
