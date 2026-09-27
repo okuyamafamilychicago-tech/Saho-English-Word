@@ -120,6 +120,15 @@
   .steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 10px; top: 8px;
     width: 22px; height: 22px; border-radius: 50%; background: var(--purple); color: #fff; text-align: center;
     font-size: 0.8rem; line-height: 22px; font-weight: 800; }
+  .steps.sp li { background: #faf8f5; border-left: 4px solid var(--c); }
+  .steps.sp li::before { background: var(--c); }
+  .chks { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+  .chk { font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 99px; }
+  .score-Limited { color: var(--pink-dark); font-size: 0.9rem; }
+  .score-Developing { color: var(--yellow-dark); font-size: 0.9rem; }
+  .seg { border-bottom: 3px solid var(--c); }
+  .segl { display: inline-block; font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 0.68rem; font-weight: 800;
+    color: #fff; background: var(--c); border-radius: 6px; padding: 0 6px; margin-right: 4px; vertical-align: 2px; }
   .model { background: #faf7ff; border: 2px dashed var(--purple); border-radius: 12px; padding: 12px 14px;
     font-family: 'Quicksand', sans-serif; font-weight: 600; line-height: 1.8; }
 
@@ -380,9 +389,123 @@ const DATA = {
   listening: [],
   writing: [],
   /* speaking の1件の形：
-     { id, date, title, task, prompt, score, summary,
-       good:[...], issues:[...], structure:[...], model:"..." } */
-  speaking: []
+     { id, date, prompt(推定の質問), score, summary(ひとことで),
+       check:[意見,理由,具体例,大切な理由,反対意見]（"o"=できた "t"=もう少し "x"=なかった "-"=FBで指摘なし）,
+       good:[...], issues:[...], fixes:[[言ったこと, こう言うと良い]],
+       model:[[ステップ番号0-4, "英文"], ...], modelJa:"訳" } */
+  speaking: [
+    { id:"s-2026-09-27-8", date:"2026-09-27", score:"Developing",
+      prompt:"Why are parks and public squares important in cities?（都市に公園や広場はなぜ大切？）",
+      summary:"「きれいな空気」「リラックスできる」という理由は良い。でも<b>同じ話のくり返し</b>になり、具体例と反対意見がなかった。",
+      check:["o","t","x","x","x"],
+      good:["公園の良さ（きれいな空気・リラックス）をはっきり言えた","近くにあると便利、という2つ目の視点も出せた"],
+      issues:["理由が同じことのくり返しになった（talking を何度も使った）","具体的な公園の名前や自分の体験がなかった","「なぜそれが大切か」まで言えていない","反対意見（公園よりビジネス用の建物が必要では？）にふれていない"],
+      fixes:[["talking, talking…（くり返し）","the hustle and bustle of city life（都会のざわざわ）"]],
+      model:[[0,"I believe parks and public squares are very important in cities."],
+             [1,"Cities are usually full of cars and noise, so people need a place where they can breathe clean air and relax."],
+             [2,"For instance, Central Park in New York lets people escape the hustle and bustle of city life, while it is still close to shops and offices."],
+             [3,"This is significant because relaxing in nature improves mental health, which is essential for people with busy lives."],
+             [4,"Some people might argue that cities should use the land for businesses instead, but I think a balance between buildings and green spaces is necessary."]],
+      modelJa:"公園や広場は都市にとってとても大切だと思います。都市はふつう車と騒音でいっぱいなので、きれいな空気を吸ってリラックスできる場所が必要です。たとえば、ニューヨークのセントラルパークでは、店やオフィスの近くにいながら都会のざわざわから離れられます。自然の中でリラックスすると心の健康が良くなるので、忙しい人にとって欠かせません。その土地をビジネスに使うべきだという人もいるかもしれませんが、建物と緑のバランスが必要だと思います。" },
+
+    { id:"s-2026-09-27-7", date:"2026-09-27", score:"Developing",
+      prompt:"How can cities solve the problem of overcrowding?（都市の人口過密をどう解決する？）",
+      summary:"「田舎へ移り住む」「自然公園をつくる」という<b>アイデアは良い</b>。でも話の順番がバラバラで、なぜそれで解決するのかの説明が足りなかった。",
+      check:["t","t","x","x","-"],
+      good:["2つの解決策（郊外・田舎に住む／公園をつくる）を出せた","「健康に良い」という方向性は正しい"],
+      issues:["話の順番が整理されていない（アイデアを First / Second で分けると聞きやすい）","「どうやって田舎に人を移すのか」の説明がない","実際の例（家を安くする・電車を便利にする）がなかった","公園が健康・空気・心にどう良いのかを言えていない"],
+      fixes:[["move people to rural areas（人を田舎に移す）","encourage people to live in nearby towns（近くの町に住むよう促す）※強制に聞こえない"]],
+      model:[[0,"I think cities can reduce crowding in two ways: encouraging people to live in nearby towns and creating more green spaces."],
+             [1,"First, if housing near the city is affordable and trains are fast, people don't have to live in the crowded center."],
+             [2,"For example, some cities have built cheaper homes in the suburbs and improved train lines, so people can commute easily."],
+             [3,"Second, more nature parks can reduce pollution and give residents places to relax, which is important for both physical and mental health."],
+             [4,"Of course, moving to rural areas isn't easy, because those areas also need schools, hospitals, and jobs. So cities must plan carefully."]],
+      modelJa:"都市は2つの方法で過密を減らせると思います。近くの町に住むよう促すことと、緑地を増やすことです。まず、都市の近くの家が手ごろで電車が速ければ、混んだ中心部に住む必要はありません。たとえば、郊外に安い家を建てて電車の路線を改善し、通勤しやすくした都市があります。次に、自然公園が増えれば汚染が減り、住民がリラックスできる場所ができます。これは体と心の健康の両方に大切です。もちろん、田舎に移るのは簡単ではありません。そこにも学校や病院、仕事が必要だからです。だから都市は慎重に計画しなければなりません。" },
+
+    { id:"s-2026-09-27-6", date:"2026-09-27", score:"Developing",
+      prompt:"If you could change one thing about your city, what would you change?（自分の街を1つ変えられるなら？）",
+      summary:"「楽しいお店を増やしたい → みんなが幸せになる」という<b>意見と理由はOK</b>。でも最初に答えをはっきり言っておらず、例・大切さ・反対意見が抜けていた。",
+      check:["t","o","x","x","x"],
+      good:["自分らしいユニークなアイデア（楽しいお店）を出せた","「人が幸せになる」という理由がついていた"],
+      issues:["最初の一文で答えをはっきり言っていない → 質問の言葉を使って1文目で答える","どんなお店か（ボードゲーム、工作キットなど）具体的でない","なぜそれが街にとって大切かを言えていない","つなぎ言葉が少なく、文がつながって聞こえない"],
+      fixes:[["（答えがあとから出てくる）","If I could change one thing in my city, I would add…（1文目で答える）"]],
+      model:[[0,"If I could change one thing in my city, I would add more shops that sell fun and playful items, like board games and craft kits."],
+             [1,"Right now, most shops in my area sell only everyday things, so there are not many places where people can just have fun."],
+             [2,"For example, imagine a shop where kids can try new games or make their own crafts on weekends. Families could spend time together there."],
+             [3,"This matters because these shops could give people a break from stress and encourage creativity, which makes the whole community happier."],
+             [4,"Some people might say these shops are unnecessary, but I believe they are good for everyone's well-being."]],
+      modelJa:"街を1つ変えられるなら、ボードゲームや工作キットのような楽しいものを売るお店を増やします。今、私の地域のお店はほとんど日用品しか売っていないので、ただ楽しめる場所があまりありません。たとえば、週末に子どもが新しいゲームを試したり工作をしたりできるお店を想像してみてください。家族で一緒に過ごせます。こうしたお店はストレスから離れる時間をくれて、創造力を育てるので、地域全体が幸せになります。必要ないと言う人もいるかもしれませんが、みんなの心の元気に役立つと思います。" },
+
+    { id:"s-2026-09-27-5", date:"2026-09-27", score:"Developing",
+      prompt:"What do you like and dislike about your city?（自分の街の好きなところ・嫌いなところは？）",
+      summary:"好き（自然・再生可能エネルギー）と嫌い（日本のお店が少ない）を<b>両方言えたのは良い</b>。でも同じ言葉のくり返しで分かりにくく、理由が浅かった。",
+      check:["o","x","t","x","t"],
+      good:["好きなこと・嫌いなことを両方答えられた","再生可能エネルギーという良い語彙を使えた"],
+      issues:["「nature to have nature and buildings and buildings」のように言葉がくり返され意味が分かりにくい","なぜ自然が自分や街にとって大切なのかを言えていない","日本のお店がないと何が困るのかを説明していない","好き → 嫌い に移るときの <b>On the other hand</b> がない"],
+      fixes:[["nature to have nature and buildings and buildings","a good balance of nature and buildings（自然と建物のバランス）"]],
+      model:[[0,"There is one thing I really like about my city and one thing I don't like."],
+             [1,"What I like most is that my city has a good balance of nature and buildings, and it uses renewable energy, such as solar panels."],
+             [2,"For example, there is a big park near my home, so I can enjoy trees and fresh air even though I live in the city."],
+             [3,"This is important to me because green spaces help people relax and stay healthy."],
+             [4,"On the other hand, I dislike that there are very few Japanese stores. Since I'm Japanese, I sometimes miss Japanese food and snacks, and it takes a long time to find them."]],
+      modelJa:"私の街には、とても好きなところと好きではないところが1つずつあります。いちばん好きなのは、自然と建物のバランスが良く、ソーラーパネルなどの再生可能エネルギーを使っていることです。たとえば、家の近くに大きな公園があるので、街に住んでいても木やきれいな空気を楽しめます。緑の場所は人をリラックスさせ、健康でいさせてくれるので、私にとって大切です。一方で、日本のお店がとても少ないのは好きではありません。日本人なので、日本の食べ物やお菓子が恋しくなることがあり、見つけるのに時間がかかります。" },
+
+    { id:"s-2026-09-27-4", date:"2026-09-27", score:"Developing",
+      prompt:"How can saving and investing help people achieve their dreams?（貯金や投資は夢の実現にどう役立つ？）",
+      summary:"「貯金・投資は目標達成に役立つ」という<b>方向性は良い</b>。でも意見がぼんやりしていて、どんな夢にどう役立つのかの例がなかった。",
+      check:["t","t","x","t","x"],
+      good:["テーマ（貯金・投資と夢）にそった内容を話せた","夢につながる、という大切さに少しふれられた"],
+      issues:["意見がぼんやり → I believe ～ are essential for ～ とはっきり言う","具体的な夢（留学・大学など）の例がない","例と意見のつながりが弱い","反対意見（今楽しむためにお金を使うべき）にふれていない"],
+      fixes:[["（意見がぼんやり）","I believe saving and investing are essential tools for achieving our dreams."]],
+      model:[[0,"I believe saving and investing are essential tools for achieving personal dreams."],
+             [1,"Most big dreams, like studying abroad or starting a business, cost a lot of money, and it's hard to pay for them all at once."],
+             [2,"For example, if someone saves a little every month from a young age and invests it wisely, they can pay for university overseas when they grow up."],
+             [3,"This is significant because studying abroad lets people learn new languages and experience different cultures, which can open up career opportunities."],
+             [4,"Some people think spending money freely is better for enjoying life now, but saving and investing provide long-term benefits."]],
+      modelJa:"貯金と投資は、自分の夢をかなえるために欠かせない道具だと思います。留学や起業のような大きな夢の多くはお金がかかり、一度に払うのは大変です。たとえば、小さいころから毎月少しずつ貯めて上手に投資すれば、大人になったとき海外の大学の学費を払えます。留学すれば新しい言語を学び、ちがう文化にふれられ、仕事のチャンスが広がるので、これは大切です。今を楽しむために自由にお金を使うほうがいいと考える人もいますが、貯金と投資は長い目で見て得になります。" },
+
+    { id:"s-2026-09-27-3", date:"2026-09-27", score:"Developing",
+      prompt:"Is it better to save money or to spend it?（お金は貯めるのと使うの、どちらがいい？）",
+      summary:"「貯金のほうがいい、急な出費に備えられるから」と<b>意見と理由をはっきり言えた</b>。でも例があいまいで、同じ言い方をくり返した。",
+      check:["o","t","t","x","-"],
+      good:["最初に意見（saving is better）をはっきり言えた","「将来の緊急事態のため」という理由がついていた"],
+      issues:["例があいまい → 「いつ・何が起きて・貯金でどう助かったか」を言う","「saving a little bit will be okay」を何度もくり返した","なぜ貯金が大切か（安心できる・ストレスが減る）まで言えていない","文の形が単調（because や so を使って文をつなぐ）"],
+      fixes:[["saving a little bit will be okay（くり返し）","Even saving a small amount can make a big difference.（少しの貯金でも大きな差になる）"]],
+      model:[[0,"In my opinion, saving money is better than spending it right away."],
+             [1,"The main reason is that we never know when an emergency will happen, so savings give us a safety net."],
+             [2,"For example, last year my phone screen broke unexpectedly. Because I had saved some of my allowance, I could pay for the repair myself."],
+             [3,"This is important because having savings reduces stress during difficult times. Even saving a small amount can make a big difference."],
+             [4,"Of course, spending money on things we enjoy isn't bad, but I think we should save first and spend what is left."]],
+      modelJa:"私は、お金はすぐに使うより貯めるほうがいいと思います。いちばんの理由は、いつ緊急事態が起きるか分からないので、貯金が安全ネットになるからです。たとえば去年、急にスマホの画面が割れました。おこづかいを少し貯めていたので、自分で修理代を払えました。貯金があると大変なときのストレスが減るので大切です。少しの貯金でも大きな差になります。もちろん、好きなものにお金を使うのは悪くありませんが、まず貯めて、残りを使うべきだと思います。" },
+
+    { id:"s-2026-09-27-2", date:"2026-09-27", score:"Limited",
+      prompt:"What advice would you give to someone who wants to start investing?（投資を始めたい人にどんなアドバイスをする？）",
+      summary:"8回の中で<b>いちばん低いスコア</b>。「リスクのバランス」「気をつける」という良いキーワードは出たが、何をアドバイスしたいのかがはっきりせず、文も分かりにくかった。",
+      check:["x","t","x","x","x"],
+      good:["「リスクのバランスをとる」「慎重に」という、投資の正しいポイントにふれた"],
+      issues:["アドバイス（意見）を最初に1文で言っていない","「Let me be careful also.」は英語として意味が通じない","なぜリスク管理が大切か（お金を失うかもしれない）を説明していない","初心者向けの具体的な方法（インデックスファンドなど）がない","反対意見（大きなリスクをとらないと成功しない）にふれていない"],
+      fixes:[["Let me be careful also.","It's also important to be careful.（慎重であることも大切です）"],["（アドバイスがはっきりしない）","My advice for beginners is to start small and manage risk carefully."]],
+      model:[[0,"My best advice for beginners is to start small and manage risk carefully."],
+             [1,"Investing always involves some uncertainty, so if you put all your money into one risky company, you could lose a lot very quickly."],
+             [2,"For instance, a beginner could start with a safer option like an index fund, which spreads money across many companies."],
+             [3,"This matters because beginners can learn how investing works without feeling scared, and their money can grow steadily over time."],
+             [4,"Some people say you need to take big risks to succeed. However, for beginners, being careful is more important than getting rich quickly."]],
+      modelJa:"初心者へのいちばんのアドバイスは、少額から始めて、リスクを慎重に管理することです。投資には必ず不確かさがあるので、全部のお金を1つのリスクの高い会社に入れると、あっという間にたくさん失うかもしれません。たとえば初心者は、たくさんの会社にお金を分けるインデックスファンドのような安全な方法から始められます。そうすれば怖がらずに投資の仕組みを学べて、お金も少しずつ増えていくので大切です。成功するには大きなリスクをとるべきだと言う人もいます。でも初心者にとっては、早くお金持ちになるより慎重であることのほうが大切です。" },
+
+    { id:"s-2026-09-27-1", date:"2026-09-27", score:"Developing",
+      prompt:"Have you ever saved money for something? Tell me about it.（何かのためにお金を貯めたことはある？）",
+      summary:"「貯めたことがある」と理由を<b>簡単に言えたのは良い</b>。でも「何のために貯めたのか（目標）」がはっきりせず、体験の中身が足りなかった。",
+      check:["t","o","x","x","x"],
+      good:["質問に Yes で答え、貯めた理由も話せた"],
+      issues:["目標（何を買うため／何のため）をはっきり言っていない","どのくらいの期間・どうやって貯めたかの具体的な体験がない","その目標が自分にとってなぜ大切だったかを言えていない","In addition / For example などのつなぎ言葉がない"],
+      fixes:[["（目標がぼんやり）","My goal was to save enough money to buy a new tablet for school.（目標をはっきり）"]],
+      model:[[0,"Yes, I have. Last year, my goal was to save enough money to buy a new tablet for school."],
+             [1,"I wanted my own device because I had to share my family's computer, and it was hard to finish my homework on time."],
+             [2,"For example, I saved part of my allowance every week and stopped buying snacks for about six months. Finally, I bought the tablet with my own money."],
+             [3,"This was important to me because I learned that small amounts add up, and I felt really proud of myself."],
+             [4,"Some people think it's easier to just ask their parents, but saving by myself taught me patience."]],
+      modelJa:"はい、あります。去年、学校用の新しいタブレットを買えるだけのお金を貯めることが目標でした。家族のパソコンを共有しなければならず、宿題を時間どおりに終わらせるのが大変だったので、自分の端末がほしかったのです。たとえば、毎週おこづかいの一部を貯めて、6か月ほどお菓子を買うのをやめました。そしてついに、自分のお金でタブレットを買いました。少しずつでも積み重なると学べて、自分を誇らしく思えたので、私にとって大切な経験でした。親に頼むほうが簡単だと思う人もいますが、自分で貯めることで忍耐を学びました。" }
+  ]
 };
 
 const CATS = [
@@ -419,7 +542,13 @@ function render() {
       <p>まだ記録がありません。<br>問題集を解いたら、結果とフィードバックがここに追加されます。</p></div>`;
     return;
   }
-  $("#main").innerHTML = list.map(e => ({ reading: readingCard, listening: genericCard, writing: genericCard, speaking: speakingCard })[current](e)).join("");
+  if (current === "speaking") {
+    // 同じ日の分は解いた順（id の番号順）に並べる
+    const sorted = list.slice().sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id, undefined, { numeric: true }));
+    $("#main").innerHTML = speakingOverview(list) + sorted.map(speakingCard).join("");
+    return;
+  }
+  $("#main").innerHTML = list.map(e => ({ reading: readingCard, listening: genericCard, writing: genericCard })[current](e)).join("");
   if (current === "reading") list.forEach(e => bindReading(e));
 }
 
@@ -556,14 +685,56 @@ function genericCard(e) {
 }
 
 /* ---------- Speaking（FB＋構成＋お手本） ---------- */
-function speakingCard(e) {
-  return `<div class="card"><h2>${e.title}</h2><div class="meta">${e.date}${e.task ? "　・　" + e.task : ""}${e.score ? "　・　" + e.score : ""}</div>
-    ${e.prompt ? `<div class="tip" style="background:var(--bg-blue)"><b>問題：</b>${e.prompt}</div>` : ""}
-    ${e.summary ? `<p style="margin-top:10px">${e.summary}</p>` : ""}
-    ${e.good && e.good.length ? `<div class="fbsec good"><b>👍 よかったところ</b>${list(e.good)}</div>` : ""}
-    ${e.issues && e.issues.length ? `<div class="fbsec bad"><b>🔧 直すところ</b>${list(e.issues)}</div>` : ""}
-    ${e.structure && e.structure.length ? `<h3>🧱 こう組み立てると話しやすい</h3><ol class="steps">${e.structure.map(s => `<li>${s}</li>`).join("")}</ol>` : ""}
-    ${e.model ? `<h3>🎤 こんなふうに話せたら満点に近い</h3><div class="model">${e.model}</div>` : ""}</div>`;
+const STEPS = [
+  { name: "意見",       en: "Opinion",      color: "#5ba3e0", sec: "5秒",  say: "I believe ～ / In my opinion, ～ / If I could ～, I would ～", tip: "質問の言葉を使って、<b>1文目で答えを言い切る</b>。" },
+  { name: "理由",       en: "Reason",       color: "#6fbf73", sec: "8秒",  say: "The main reason is that ～ / This is because ～", tip: "「なぜそう思うか」を1〜2文で。" },
+  { name: "具体例",     en: "Example",      color: "#ff9966", sec: "15秒", say: "For example, ～ / For instance, ～ / Last year, I ～", tip: "<b>いつ・どこで・何が起きたか</b>。自分の体験でOK。作った話でも減点されない。" },
+  { name: "大切な理由", en: "Significance", color: "#a78bd6", sec: "10秒", say: "This is important because ～ / This matters because ～", tip: "その例から<b>何が良くなるのか</b>（健康・安心・将来・成長）まで言う。" },
+  { name: "反対意見",   en: "Contrast",     color: "#ff7a9c", sec: "7秒",  say: "Some people might say ～, but I think ～ / On the other hand, ～", tip: "反対の考えに一言ふれて、<b>自分の意見にもどって終わる</b>。" }
+];
+const CHECK = { o: ["✓", "var(--bg-green)", "var(--green-dark)"], t: ["△", "var(--bg-yellow)", "var(--yellow-dark)"],
+                x: ["✗", "var(--bg-pink)", "var(--pink-dark)"], "-": ["–", "#f3efea", "var(--text-light)"] };
+
+function speakingOverview(list) {
+  const n = list.length;
+  const scores = {};
+  list.forEach(e => scores[e.score] = (scores[e.score] || 0) + 1);
+  const miss = STEPS.map((s, k) => list.filter(e => e.check[k] === "x" || e.check[k] === "t").length);
+  const bars = STEPS.map((s, k) =>
+    `<div class="bar"><span class="lbl">${s.name}が弱い</span><span class="track"><span class="fill" style="display:block;width:${miss[k] / n * 100}%;background:${s.color}"></span></span><span class="num">${miss[k]}/${n}</span></div>`).join("");
+  return `<div class="card">
+    <h2>🗣 Speaking まとめ（${n}問）</h2>
+    <div class="meta">${Object.entries(scores).map(([k, v]) => `${k} ×${v}`).join("　・　")}</div>
+    <div class="tip" style="margin-top:12px"><b>いちばん大事なこと：</b>意見と理由は言えています。点が伸びない原因は、<b>「具体例」と「なぜ大切か」が全${n}問でほぼ抜けている</b>こと。
+      意見を言ったら、すぐ <b>For example</b> で自分の体験を話し、<b>This is important because</b> でしめる。これだけで話の長さも中身も2倍になります。</div>
+    <h3>5つのステップ、どこが弱い？（FBで「足りない・もう少し」と言われた回数）</h3>
+    ${bars}
+    <h3>🧱 どの問題でも使える「話す順番」（45秒の目安）</h3>
+    <ol class="steps sp">${STEPS.map(s => `<li style="--c:${s.color}"><b>${s.name}</b> <span class="meta">${s.en}・${s.sec}</span><br><span class="w">${s.say}</span><br><span class="hint">${s.tip}</span></li>`).join("")}</ol>
+    <h3>🔁 同じ言葉をくり返さないために</h3>
+    <p class="hint">「同じ言葉のくり返し」「分かりにくい文」は ${list.filter(e => e.fixes && e.fixes.length).length} 問で指摘されました。つなぎ言葉を1つ入れるだけで、話が整理されて聞こえます。</p>
+    <table><tr><th>使う場面</th><th>つなぎ言葉</th></tr>
+      <tr><td>理由を足す</td><td class="w">In addition, / Also, / Another reason is that</td></tr>
+      <tr><td>例を出す</td><td class="w">For example, / For instance, / Last year, I</td></tr>
+      <tr><td>反対のことを言う</td><td class="w">However, / On the other hand, / But</td></tr>
+      <tr><td>しめる</td><td class="w">That's why ～ / So, overall, I think ～</td></tr></table>
+  </div>`;
+}
+
+function speakingCard(e, idx) {
+  const chips = STEPS.map((s, k) => { const [m, bg, fg] = CHECK[e.check[k]] || CHECK["-"];
+    return `<span class="chk" style="background:${bg};color:${fg}">${m} ${s.name}</span>`; }).join("");
+  const model = e.model.map(([k, t]) => `<span class="seg" style="--c:${STEPS[k].color}"><span class="segl">${STEPS[k].name}</span>${t}</span>`).join(" ");
+  return `<div class="card"><h2>問題 ${idx + 1}　<span class="score-${e.score}">${e.score}</span></h2><div class="meta">${e.date}</div>
+    <div class="tip" style="background:var(--bg-blue)"><b>質問（FBから推定）：</b><span class="w">${e.prompt}</span></div>
+    <p style="margin-top:10px">${e.summary}</p>
+    <div class="chks">${chips}</div>
+    <div class="fbsec good"><b>👍 よかったところ</b>${list(e.good)}</div>
+    <div class="fbsec bad"><b>🔧 直すところ</b>${list(e.issues)}</div>
+    ${e.fixes && e.fixes.length ? `<h3>✏️ 言い直し</h3><table>${e.fixes.map(([a, b]) => `<tr><td class="x">${a}</td><td>→</td><td class="o">${b}</td></tr>`).join("")}</table>` : ""}
+    <h3>🎤 こんなふうに話せたら良かった</h3>
+    <div class="model">${model}</div>
+    <details><summary>日本語訳を見る</summary><p style="margin-top:6px;font-size:0.9rem">${e.modelJa}</p></details></div>`;
 }
 
 render();
