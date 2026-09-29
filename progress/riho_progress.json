@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T05:28:34.787Z",
+  "exportedAt": "2026-09-29T05:32:01.464Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6794,6 +6794,11 @@
         "word": "disrupt",
         "masteredAt": "2026-09-29",
         "mode": "test"
+      },
+      {
+        "word": "ballot",
+        "masteredAt": "2026-09-29",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6891,10 +6896,20 @@
         "word": "conflict",
         "at": "2026-07-28",
         "learnCount": 1
+      },
+      {
+        "word": "guarantee",
+        "at": "2026-09-29",
+        "learnCount": 0
+      },
+      {
+        "word": "clan",
+        "at": "2026-09-29",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4516,
-    "totalAttempts": 4800,
+    "totalCorrect": 4528,
+    "totalAttempts": 4814,
     "lastSessionDate": "2026-09-29",
     "streak": 1,
     "history": [
@@ -8827,6 +8842,13 @@
         "score": 24,
         "total": 24,
         "mode": "test"
+      },
+      {
+        "date": "2026-09-29",
+        "climbed": 1,
+        "score": 12,
+        "total": 14,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -9414,18 +9436,18 @@
       },
       "claim": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-15",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-29",
         "learnedAt": "2026-06-28"
       },
       "guarantee": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "due": "2026-10-15",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-09-29",
         "learnedAt": "2026-06-28"
       },
       "internal": {
@@ -18846,20 +18868,20 @@
         "everLearned": true
       },
       "clan": {
-        "box": 1,
-        "due": "2026-09-27",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-09-26",
+        "box": 3,
+        "due": "2026-10-03",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-09-29",
         "learnedAt": "2026-09-26",
         "everLearned": true
       },
       "ballot": {
-        "box": 1,
-        "due": "2026-09-27",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-07",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-09-26",
+        "seenAt": "2026-09-29",
         "learnedAt": "2026-09-26",
         "everLearned": true
       }
