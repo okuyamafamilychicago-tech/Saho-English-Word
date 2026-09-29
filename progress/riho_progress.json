@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T05:32:01.464Z",
+  "exportedAt": "2026-09-29T05:32:48.523Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6900,16 +6900,16 @@
       {
         "word": "guarantee",
         "at": "2026-09-29",
-        "learnCount": 0
+        "learnCount": 1
       },
       {
         "word": "clan",
         "at": "2026-09-29",
-        "learnCount": 0
+        "learnCount": 1
       }
     ],
-    "totalCorrect": 4528,
-    "totalAttempts": 4814,
+    "totalCorrect": 4534,
+    "totalAttempts": 4820,
     "lastSessionDate": "2026-09-29",
     "streak": 1,
     "history": [
@@ -8849,6 +8849,13 @@
         "score": 12,
         "total": 14,
         "mode": "test"
+      },
+      {
+        "date": "2026-09-29",
+        "climbed": 0,
+        "score": 2,
+        "total": 2,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -9445,10 +9452,11 @@
       "guarantee": {
         "box": 5,
         "due": "2026-10-15",
-        "correct": 4,
+        "correct": 5,
         "wrong": 1,
         "seenAt": "2026-09-29",
-        "learnedAt": "2026-06-28"
+        "learnedAt": "2026-09-29",
+        "everLearned": true
       },
       "internal": {
         "box": 5,
@@ -18868,12 +18876,12 @@
         "everLearned": true
       },
       "clan": {
-        "box": 3,
-        "due": "2026-10-03",
-        "correct": 4,
+        "box": 4,
+        "due": "2026-10-07",
+        "correct": 5,
         "wrong": 1,
         "seenAt": "2026-09-29",
-        "learnedAt": "2026-09-26",
+        "learnedAt": "2026-09-29",
         "everLearned": true
       },
       "ballot": {
