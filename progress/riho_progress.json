@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-29T05:32:48.523Z",
+  "exportedAt": "2026-09-30T14:12:52.458Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -6799,6 +6799,11 @@
         "word": "ballot",
         "masteredAt": "2026-09-29",
         "mode": "test"
+      },
+      {
+        "word": "clan",
+        "masteredAt": "2026-09-30",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -6903,15 +6908,15 @@
         "learnCount": 1
       },
       {
-        "word": "clan",
-        "at": "2026-09-29",
-        "learnCount": 1
+        "word": "overcome",
+        "at": "2026-09-30",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 4534,
-    "totalAttempts": 4820,
-    "lastSessionDate": "2026-09-29",
-    "streak": 1,
+    "totalCorrect": 4549,
+    "totalAttempts": 4837,
+    "lastSessionDate": "2026-09-30",
+    "streak": 2,
     "history": [
       {
         "date": "2026-06-28",
@@ -8856,6 +8861,13 @@
         "score": 2,
         "total": 2,
         "mode": "learn"
+      },
+      {
+        "date": "2026-09-30",
+        "climbed": 1,
+        "score": 9,
+        "total": 10,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -9460,26 +9472,26 @@
       },
       "internal": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-16",
+        "correct": 4,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-30",
         "learnedAt": "2026-06-28"
       },
       "sensitive": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
+        "due": "2026-10-16",
+        "correct": 3,
         "wrong": 0,
-        "seenAt": "2026-06-28",
+        "seenAt": "2026-09-30",
         "learnedAt": "2026-06-28"
       },
       "overcome": {
         "box": 5,
-        "due": "2026-07-14",
-        "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-06-28",
+        "due": "2026-10-16",
+        "correct": 4,
+        "wrong": 1,
+        "seenAt": "2026-09-30",
         "learnedAt": "2026-06-28"
       },
       "emerge": {
@@ -18876,11 +18888,11 @@
         "everLearned": true
       },
       "clan": {
-        "box": 4,
-        "due": "2026-10-07",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-10-16",
+        "correct": 11,
         "wrong": 1,
-        "seenAt": "2026-09-29",
+        "seenAt": "2026-09-30",
         "learnedAt": "2026-09-29",
         "everLearned": true
       },
