@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-30T14:12:52.458Z",
+  "exportedAt": "2026-10-01T17:36:05.794Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -18918,7 +18918,8 @@
       "batch-9",
       "batch-10",
       "batch-11",
-      "batch-12"
+      "batch-12",
+      "batch-13"
     ],
     "svgTheme": "forest",
     "hiddenFound": [
@@ -20079,7 +20080,11 @@
       "exploit",
       "discretion",
       "induce",
-      "integral"
+      "integral",
+      "surveillance",
+      "adverse",
+      "notable",
+      "leverage"
     ],
     "reviewRound": {
       "0": 1,
@@ -20343,7 +20348,7 @@
         "remaining": []
       },
       "11": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
@@ -20355,26 +20360,6 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
-      },
-      {
-        "word": "notable",
-        "at": "2026-09-21",
-        "count": 1
-      },
-      {
-        "word": "adverse",
-        "at": "2026-09-21",
-        "count": 1
-      },
-      {
-        "word": "surveillance",
-        "at": "2026-09-21",
-        "count": 1
-      },
-      {
-        "word": "leverage",
-        "at": "2026-09-21",
-        "count": 1
       }
     ]
   }
