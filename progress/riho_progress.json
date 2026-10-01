@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T17:36:05.794Z",
+  "exportedAt": "2026-10-01T17:42:17.449Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8868,6 +8868,17 @@
         "score": 9,
         "total": 10,
         "mode": "test"
+      },
+      {
+        "date": "2026-10-01",
+        "climbed": 0,
+        "score": 4,
+        "total": 4,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "quiz",
+        "round": 2,
+        "found": 0
       }
     ],
     "srs": {
@@ -20069,7 +20080,6 @@
       "subsidiary",
       "cognitive",
       "deficiency",
-      "controversial",
       "compelling",
       "conviction",
       "petition",
@@ -20084,7 +20094,19 @@
       "surveillance",
       "adverse",
       "notable",
-      "leverage"
+      "leverage",
+      "replicate",
+      "sleek",
+      "vent",
+      "offset",
+      "scam",
+      "fusion",
+      "commence",
+      "viable",
+      "prototype",
+      "artifact",
+      "confidential",
+      "beneficiary"
     ],
     "reviewRound": {
       "0": 1,
@@ -20098,7 +20120,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 2
+      "11": 1
     },
     "reviewSweep": {
       "0": {
@@ -20348,11 +20370,82 @@
         "remaining": []
       },
       "11": {
-        "round": 2,
-        "remaining": []
+        "round": 1,
+        "remaining": [
+          "leverage",
+          "fraction",
+          "depict",
+          "conviction",
+          "drain",
+          "relieve",
+          "niche",
+          "legitimate",
+          "mandatory",
+          "empower",
+          "momentum",
+          "incur",
+          "petition",
+          "subsidiary",
+          "notable",
+          "velocity",
+          "indigenous",
+          "alignment",
+          "repository",
+          "milestone",
+          "custody",
+          "migration",
+          "adverse",
+          "integral",
+          "projection",
+          "manipulate",
+          "tribute",
+          "buffer",
+          "norm",
+          "compelling",
+          "sibling",
+          "induce",
+          "surveillance",
+          "intimate",
+          "allegedly",
+          "termination",
+          "rebound",
+          "proxy",
+          "benchmark",
+          "discharge",
+          "counterpart",
+          "elevation",
+          "prone",
+          "intuitive",
+          "debris",
+          "dice",
+          "flaw",
+          "inject",
+          "prestigious",
+          "plunge",
+          "aesthetically",
+          "retrieve",
+          "constitutional",
+          "predator",
+          "specimen",
+          "revise",
+          "legislature",
+          "coalition",
+          "widespread",
+          "encompass",
+          "streak",
+          "prerequisite",
+          "endorse",
+          "disrupt",
+          "proceeds",
+          "overly",
+          "correlation",
+          "redeem",
+          "clan",
+          "ballot"
+        ]
       }
     },
-    "reviewDone": 151,
+    "reviewDone": 152,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -20360,6 +20453,21 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
+      },
+      {
+        "word": "validate",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "controversial",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "rig",
+        "at": "2026-10-01",
+        "count": 1
       }
     ]
   }
