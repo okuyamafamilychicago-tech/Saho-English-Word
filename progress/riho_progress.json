@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T17:49:39.463Z",
+  "exportedAt": "2026-10-01T17:52:12.166Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -20051,7 +20051,6 @@
       "oversee",
       "deem",
       "dividend",
-      "drain",
       "mandatory",
       "norm",
       "disposal",
@@ -20075,9 +20074,7 @@
       "collision",
       "manipulate",
       "threshold",
-      "legitimate",
       "custody",
-      "subsidiary",
       "cognitive",
       "deficiency",
       "compelling",
@@ -20116,7 +20113,15 @@
       "discharge",
       "ballot",
       "retrieve",
-      "plunge"
+      "plunge",
+      "specimen",
+      "intuitive",
+      "predator",
+      "constitutional",
+      "aesthetically",
+      "legislature",
+      "streak",
+      "termination"
     ],
     "reviewRound": {
       "0": 1,
@@ -20382,51 +20387,33 @@
       "11": {
         "round": 1,
         "remaining": [
-          "fraction",
           "depict",
           "conviction",
-          "drain",
-          "relieve",
-          "niche",
-          "legitimate",
           "mandatory",
           "empower",
           "momentum",
           "incur",
-          "subsidiary",
           "notable",
           "indigenous",
           "alignment",
           "custody",
           "migration",
-          "adverse",
           "integral",
-          "tribute",
-          "buffer",
           "norm",
           "sibling",
           "induce",
           "intimate",
-          "allegedly",
-          "termination",
           "rebound",
           "proxy",
           "counterpart",
           "prone",
-          "intuitive",
           "debris",
           "dice",
           "flaw",
           "prestigious",
-          "aesthetically",
-          "constitutional",
-          "predator",
-          "specimen",
           "revise",
-          "legislature",
           "coalition",
           "widespread",
-          "streak",
           "overly",
           "correlation",
           "redeem",
@@ -20465,6 +20452,26 @@
       },
       {
         "word": "proceeds",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "legitimate",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "drain",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "allegedly",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "subsidiary",
         "at": "2026-10-01",
         "count": 1
       }
