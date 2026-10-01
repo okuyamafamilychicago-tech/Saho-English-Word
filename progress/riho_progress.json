@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T17:54:23.959Z",
+  "exportedAt": "2026-10-01T17:55:24.151Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -20080,7 +20080,6 @@
       "compelling",
       "conviction",
       "petition",
-      "intimate",
       "incur",
       "repository",
       "depict",
@@ -20132,7 +20131,9 @@
       "proxy",
       "flaw",
       "widespread",
-      "dice"
+      "dice",
+      "revise",
+      "correlation"
     ],
     "reviewRound": {
       "0": 1,
@@ -20397,18 +20398,7 @@
       },
       "11": {
         "round": 1,
-        "remaining": [
-          "mandatory",
-          "empower",
-          "indigenous",
-          "alignment",
-          "migration",
-          "norm",
-          "sibling",
-          "intimate",
-          "revise",
-          "correlation"
-        ]
+        "remaining": []
       }
     },
     "reviewDone": 152,
@@ -20472,6 +20462,11 @@
       },
       {
         "word": "redeem",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "intimate",
         "at": "2026-10-01",
         "count": 1
       }
