@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T17:42:17.449Z",
+  "exportedAt": "2026-10-01T17:49:39.463Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -20106,7 +20106,17 @@
       "prototype",
       "artifact",
       "confidential",
-      "beneficiary"
+      "beneficiary",
+      "prerequisite",
+      "endorse",
+      "elevation",
+      "inject",
+      "disrupt",
+      "benchmark",
+      "discharge",
+      "ballot",
+      "retrieve",
+      "plunge"
     ],
     "reviewRound": {
       "0": 1,
@@ -20372,7 +20382,6 @@
       "11": {
         "round": 1,
         "remaining": [
-          "leverage",
           "fraction",
           "depict",
           "conviction",
@@ -20384,46 +20393,32 @@
           "empower",
           "momentum",
           "incur",
-          "petition",
           "subsidiary",
           "notable",
-          "velocity",
           "indigenous",
           "alignment",
-          "repository",
-          "milestone",
           "custody",
           "migration",
           "adverse",
           "integral",
-          "projection",
-          "manipulate",
           "tribute",
           "buffer",
           "norm",
-          "compelling",
           "sibling",
           "induce",
-          "surveillance",
           "intimate",
           "allegedly",
           "termination",
           "rebound",
           "proxy",
-          "benchmark",
-          "discharge",
           "counterpart",
-          "elevation",
           "prone",
           "intuitive",
           "debris",
           "dice",
           "flaw",
-          "inject",
           "prestigious",
-          "plunge",
           "aesthetically",
-          "retrieve",
           "constitutional",
           "predator",
           "specimen",
@@ -20431,17 +20426,11 @@
           "legislature",
           "coalition",
           "widespread",
-          "encompass",
           "streak",
-          "prerequisite",
-          "endorse",
-          "disrupt",
-          "proceeds",
           "overly",
           "correlation",
           "redeem",
-          "clan",
-          "ballot"
+          "clan"
         ]
       }
     },
@@ -20466,6 +20455,16 @@
       },
       {
         "word": "rig",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "encompass",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "proceeds",
         "at": "2026-10-01",
         "count": 1
       }
