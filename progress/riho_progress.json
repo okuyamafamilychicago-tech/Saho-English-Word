@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T17:52:12.166Z",
+  "exportedAt": "2026-10-01T17:54:23.959Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -20121,7 +20121,18 @@
       "aesthetically",
       "legislature",
       "streak",
-      "termination"
+      "termination",
+      "overly",
+      "clan",
+      "debris",
+      "counterpart",
+      "rebound",
+      "prestigious",
+      "coalition",
+      "proxy",
+      "flaw",
+      "widespread",
+      "dice"
     ],
     "reviewRound": {
       "0": 1,
@@ -20387,37 +20398,16 @@
       "11": {
         "round": 1,
         "remaining": [
-          "depict",
-          "conviction",
           "mandatory",
           "empower",
-          "momentum",
-          "incur",
-          "notable",
           "indigenous",
           "alignment",
-          "custody",
           "migration",
-          "integral",
           "norm",
           "sibling",
-          "induce",
           "intimate",
-          "rebound",
-          "proxy",
-          "counterpart",
-          "prone",
-          "debris",
-          "dice",
-          "flaw",
-          "prestigious",
           "revise",
-          "coalition",
-          "widespread",
-          "overly",
-          "correlation",
-          "redeem",
-          "clan"
+          "correlation"
         ]
       }
     },
@@ -20472,6 +20462,16 @@
       },
       {
         "word": "subsidiary",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "prone",
+        "at": "2026-10-01",
+        "count": 1
+      },
+      {
+        "word": "redeem",
         "at": "2026-10-01",
         "count": 1
       }
