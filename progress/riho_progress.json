@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-01T17:55:24.151Z",
+  "exportedAt": "2026-10-02T16:53:26.107Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8878,6 +8878,17 @@
         "scope": "バッチ12",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-10-01",
+        "climbed": 0,
+        "score": 9,
+        "total": 10,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "quiz",
+        "round": 1,
         "found": 0
       }
     ],
@@ -20133,7 +20144,19 @@
       "widespread",
       "dice",
       "revise",
-      "correlation"
+      "correlation",
+      "prone",
+      "subsidiary",
+      "intimate",
+      "allegedly",
+      "controversial",
+      "redeem",
+      "validate",
+      "rig",
+      "drain",
+      "encompass",
+      "proceeds",
+      "legitimate"
     ],
     "reviewRound": {
       "0": 1,
@@ -20147,7 +20170,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 1
+      "11": 2
     },
     "reviewSweep": {
       "0": {
@@ -20397,11 +20420,11 @@
         "remaining": []
       },
       "11": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 152,
+    "reviewDone": 153,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
@@ -20409,66 +20432,6 @@
         "word": "subtle",
         "at": "2026-09-19",
         "count": 3
-      },
-      {
-        "word": "validate",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "controversial",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "rig",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "encompass",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "proceeds",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "legitimate",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "drain",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "allegedly",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "subsidiary",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "prone",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "redeem",
-        "at": "2026-10-01",
-        "count": 1
-      },
-      {
-        "word": "intimate",
-        "at": "2026-10-01",
-        "count": 1
       }
     ]
   }
