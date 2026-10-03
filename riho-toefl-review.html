@@ -625,7 +625,7 @@ function readingCard(e) {
     <div class="stats">
       <div class="stat"><b>${e.correct}/${e.total}</b><span>正解した空欄</span></div>
       <div class="stat"><b>${pct}%</b><span>正答率</span></div>
-      <div class="stat"><b>${rec.best != null ? rec.best + "/" + e.quiz.length : "—"}</b><span>復習ベスト</span></div>
+      <div class="stat" id="best-${e.id}">${bestStat(e)}</div>
     </div>
     <h3>まちがい ${missTotal} 個の内訳</h3>
     ${bars}
@@ -638,6 +638,17 @@ function readingCard(e) {
     <div class="quiz" id="quiz-${e.id}"></div>
   </div>`;
 }
+
+// 復習（全問）と Summary のうち良いほうの点。まだ解いていなければ問題数を見せる
+function bestStat(e) {
+  const rec = store[e.id] || {};
+  const scores = [rec.best, rec.summaryBest].filter(v => v != null);
+  const n = e.quiz.length;
+  return scores.length
+    ? `<b>${Math.max(...scores)}/${n}</b><span>復習ベスト</span>`
+    : `<b>${n}問</b><span>復習問題（まだ挑戦していません）</span>`;
+}
+function refreshBest(e) { const el = $("#best-" + e.id); if (el) el.innerHTML = bestStat(e); }
 
 function bindReading(e) {
   const box = $("#quiz-" + e.id);
@@ -704,6 +715,7 @@ function runSummary(e, box) {
     rec.summaryBest = Math.max(rec.summaryBest || 0, right);
     rec.lastWrong = wrong.map(q => q.id);
     store[e.id] = rec; saveStore(store);
+    refreshBest(e);
     const head = box.querySelector(".sumhead");
     head.innerHTML = `<div class="result"><div class="score">${right} / ${items.length}</div>
       <p>${wrong.length ? `まちがえた ${wrong.length} 問は下に ❌ と正解が出ています。` : "全問正解！🎉 この回の単語はマスターしました。"}</p></div>`;
@@ -765,8 +777,7 @@ function runQuiz(e, box, items, full) {
     $("#sumBtn", box).onclick = () => runSummary(e, box);
     const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wq), false);
     $("#backBtn", box).onclick = () => render();
-    const stat = $("#card-" + e.id + " .stat:nth-child(3) b");
-    if (stat && rec.best != null) stat.textContent = rec.best + "/" + e.quiz.length;
+    refreshBest(e);
   };
   show();
 }
