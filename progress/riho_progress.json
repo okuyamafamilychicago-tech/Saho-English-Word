@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-03T06:24:28.222Z",
+  "exportedAt": "2026-10-03T06:32:58.914Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8901,6 +8901,17 @@
         "style": "quiz",
         "round": 2,
         "found": 1
+      },
+      {
+        "date": "2026-10-03",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "まちがえ集中",
+        "style": "quiz",
+        "round": null,
+        "found": 0
       }
     ],
     "srs": {
@@ -20084,43 +20095,27 @@
       "ramp",
       "migration",
       "transparent",
-      "embed",
       "momentum",
       "alignment",
       "renowned",
       "velocity",
       "sibling",
-      "foster",
       "milestone",
-      "indigenous",
-      "niche",
       "collision",
       "manipulate",
       "threshold",
-      "custody",
       "cognitive",
       "deficiency",
       "compelling",
-      "conviction",
-      "petition",
-      "incur",
       "repository",
-      "depict",
-      "exploit",
       "discretion",
-      "induce",
-      "integral",
       "surveillance",
-      "adverse",
       "notable",
-      "leverage",
       "replicate",
       "sleek",
-      "vent",
       "offset",
       "scam",
       "fusion",
-      "commence",
       "viable",
       "prototype",
       "artifact",
@@ -20135,40 +20130,29 @@
       "discharge",
       "ballot",
       "retrieve",
-      "plunge",
       "specimen",
-      "intuitive",
       "predator",
-      "constitutional",
       "aesthetically",
-      "legislature",
       "streak",
-      "termination",
       "overly",
       "clan",
       "debris",
       "counterpart",
       "rebound",
-      "prestigious",
-      "coalition",
       "proxy",
       "flaw",
       "widespread",
       "dice",
       "revise",
-      "correlation",
       "prone",
       "subsidiary",
       "intimate",
       "allegedly",
-      "controversial",
       "redeem",
       "validate",
       "rig",
       "drain",
       "encompass",
-      "proceeds",
-      "legitimate",
       "subtle"
     ],
     "reviewRound": {
@@ -20433,13 +20417,149 @@
         "remaining": []
       },
       "11": {
-        "round": 2,
+        "round": 1,
         "remaining": []
       }
     },
-    "reviewDone": 154,
+    "reviewDone": 155,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "coalition",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "legislature",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "custody",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "indigenous",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "termination",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "controversial",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "intuitive",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "vent",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "niche",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "correlation",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "integral",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "petition",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "exploit",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "commence",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "prestigious",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "foster",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "conviction",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "adverse",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "depict",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "legitimate",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "proceeds",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "induce",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "embed",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "plunge",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "leverage",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "constitutional",
+        "at": "2026-10-03",
+        "count": 1
+      },
+      {
+        "word": "incur",
+        "at": "2026-10-03",
+        "count": 1
+      }
+    ]
   }
 }
