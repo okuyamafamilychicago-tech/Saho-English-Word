@@ -298,6 +298,14 @@
   .mode-card.learn:hover:not(:disabled) { border-color: var(--teal); }
   .mode-card.test { background: var(--coral-soft); border-color: #f3cfc6; }
   .mode-card.test:hover:not(:disabled) { border-color: var(--coral); }
+  .mode-card.describe { background: var(--berry-soft); border-color: #e6c4d4; grid-column: 1 / -1; }
+  .mode-card.describe:hover:not(:disabled) { border-color: var(--berry); }
+  .desc-input { width: 100%; padding: 13px 15px; font-size: 1.02rem; font-family: inherit;
+    border: 2px solid var(--line); border-radius: 14px; background: #fff; color: var(--ink);
+    outline: none; transition: border-color 0.15s; }
+  .desc-input:focus { border-color: var(--berry); }
+  .desc-input:disabled { background: var(--bg-2); opacity: 0.75; }
+  .desc-hit { background: #d7f0da; border-radius: 4px; padding: 0 3px; font-weight: 800; }
   .mode-emoji { font-size: 1.9rem; }
   .mode-name { font-weight: 900; font-size: 1.1rem; color: var(--ink); margin-top: 2px; }
   .mode-desc { font-size: 0.7rem; color: var(--ink-soft); margin-top: 4px; line-height: 1.5; font-weight: 600; }
@@ -1248,6 +1256,8 @@ const defaultState = {
   reviewSweep: {},     // 🔁 バッチごとの 今の周 { "0": { round: 2, remaining: ["word", ...] } }
                        //    remaining = その周で まだ 出していない語。途中で やめても のこる
   reviewDone: 0,       // 復習を コンプリートした 回数
+  describeWrong: [],   // ✍️ せつめいで まちがえた語（独立。テスト/まなぶ/復習 には 影響しない）
+  describeDone: 0,     // せつめいを 終えた 回数
   schemaVersion: 2,
 };
 
@@ -2082,6 +2092,15 @@ function renderHome() {
             ${flowMode === "learn-first"
               ? "学んだ単語を テストで 確認。<br>未マスター 8語が 出るよ。"
               : "未マスター 8語が 出題。<br>全問正解で「覚えた」+8語！"}
+          </div>
+        </button>
+        <button class="mode-card describe" onclick="startDescribe()" ${describePool().length > 0 ? "" : "disabled"}>
+          <div class="mode-emoji">✍️</div>
+          <div class="mode-name">せつめい</div>
+          <div class="mode-desc">
+            ${describePool().length > 0
+              ? `単語の いみを <b>英語で かく</b>。だいたい 合っていれば 正解！<br>1回 <b>${DESCRIBE_SESSION_SIZE}語</b>${(state.describeWrong||[]).length ? ` ・ まちがい <b>${state.describeWrong.length}語</b>を 優先` : ""}`
+              : "まず まなぶ か テスト を してね"}
           </div>
         </button>
       </div>
@@ -3005,23 +3024,28 @@ function setHistFilter(f) { _histFilter = f; renderHistory(); }
 function renderHistory() {
   const testHistory   = state.history.filter(r => r.mode === "test");
   const reviewHistory = state.history.filter(r => r.mode === "review");
+  const describeHistory = state.history.filter(r => r.mode === "describe");
 
-  const shown = _histFilter === "test"   ? testHistory
-              : _histFilter === "review" ? reviewHistory
-              : state.history.filter(r => r.mode === "test" || r.mode === "review");
+  const shown = _histFilter === "test"     ? testHistory
+              : _histFilter === "review"   ? reviewHistory
+              : _histFilter === "describe" ? describeHistory
+              : state.history.filter(r => r.mode === "test" || r.mode === "review" || r.mode === "describe");
   const reversed = [...shown].reverse();
 
   const rows = reversed.length
     ? `<div class="hist-list">` + reversed.map(r => {
         const pct = r.total ? Math.round((r.score / r.total) * 100) : 0;
         const isRev = r.mode === "review";
-        const barCol = isRev ? "background:var(--berry)" : "";
+        const isDesc = r.mode === "describe";
+        const barCol = (isRev || isDesc) ? "background:var(--berry)" : "";
         // 復習の 行は 出題範囲と 形式、なかま発見を 出す
         const note = isRev
           ? `<span class="hist-climb" style="color:var(--berry)">${r.style === "flash" ? "🃏" : "🎯"} ${esc(r.scope || "復習")}${r.round ? ` ・ ${r.round}周目` : ""}${r.found ? ` ・ 🌟${r.found}体` : ""}</span>`
+          : isDesc
+          ? `<span class="hist-climb" style="color:var(--berry)">✍️ 英語で せつめい</span>`
           : (r.climbed ? `<span class="hist-climb">+${r.climbed}語 覚えた</span>` : "");
         return `<div class="hist-row">
-          <span class="hist-date">${isRev ? "🔄" : "📝"} ${r.date}</span>
+          <span class="hist-date">${isRev ? "🔄" : isDesc ? "✍️" : "📝"} ${r.date}</span>
           <div>
             <div class="hist-bar"><div style="width:${pct}%; ${barCol}"></div></div>
             ${note}
@@ -3052,10 +3076,10 @@ function renderHistory() {
     <div class="card">
       <div class="section-title">
         <span>学習の記録</span>
-        <span class="sub">📝 ${testHistory.length}回 平均 ${avg(testHistory)}% ・ 🔄 ${reviewHistory.length}回 平均 ${avg(reviewHistory)}%</span>
+        <span class="sub">📝 ${testHistory.length}回 ${avg(testHistory)}% ・ 🔄 ${reviewHistory.length}回 ${avg(reviewHistory)}% ・ ✍️ ${describeHistory.length}回 ${avg(describeHistory)}%</span>
       </div>
       <div style="display:flex; gap:6px; margin:0 0 12px">
-        ${tab("all", "ぜんぶ")}${tab("test", "📝 テスト")}${tab("review", "🔄 復習")}
+        ${tab("all", "ぜんぶ")}${tab("test", "📝 テスト")}${tab("review", "🔄 復習")}${tab("describe", "✍️ せつめい")}
       </div>
       ${chartSvg ? `<div style="font-size:0.7rem; color:var(--ink-soft); font-weight:700; margin-bottom:4px">📝 テストの点数（直近12回）</div>${chartSvg}` : ""}
       ${rows}
@@ -3526,6 +3550,464 @@ function resetProgress() {
   document.querySelector(".modal-backdrop")?.remove();
   alert("すべて リセットしました。ゼロから 始めましょう 🌱");
 }
+
+// ============================================================
+// ✍️ せつめい (Describe) — 単語を見て、意味を 英語で タイプする
+// まなぶ/テスト とは 独立。mastered・testWrong・SRS には 触らない。
+// 判定は オフラインの キーワード照合。最後に 自分で ○× を 直せる。
+// ============================================================
+let describe = null;
+
+const DESCRIBE_SESSION_SIZE = 10;   // 1セッションの 語数
+
+// 意味を もたない語（照合から 外す）
+const DESC_STOPWORDS = new Set([
+  "a","an","the","to","of","in","on","at","for","with","by","from","as","into","onto","over",
+  "and","or","but","so","that","which","who","whom","whose","this","these","those","it","its",
+  "is","are","was","were","be","been","being","am","do","does","did","done","has","have","had",
+  "can","could","will","would","shall","should","may","might","must",
+  "something","someone","somebody","anything","anyone","things","thing","stuff",
+  "usually","especially","etc","often","sometimes","very","more","most","such","other","another",
+  "you","your","they","their","them","he","she","his","her","we","our","i","me","my",
+  "not","no","if","when","while","than","then","there","here","also","about","up","out","off",
+  "one","two","way","ways","kind","type","used","use",
+]);
+
+// よくある 不規則変化（broken → break のように 形が ちがうもの）
+// ※ descStem から 使うので、DESC_SYN_INDEX の 組み立てより 前に 置くこと
+const DESC_IRREGULAR = {
+  broken:"break", wrote:"write", written:"write", took:"take", taken:"take",
+  gave:"give", given:"give", knew:"know", known:"know", shown:"show", showed:"show",
+  made:"make", held:"hold", kept:"keep", lost:"lose", left:"leave", built:"build",
+  sent:"send", spent:"spend", felt:"feel", told:"tell", thought:"think",
+  brought:"bring", caught:"catch", taught:"teach", bought:"buy", found:"find",
+  got:"get", gotten:"get", became:"become", began:"begin", begun:"begin",
+  chose:"choose", chosen:"choose", drove:"drive", driven:"drive", fell:"fall",
+  fallen:"fall", grew:"grow", grown:"grow", paid:"pay", ran:"run", said:"say",
+  saw:"see", seen:"see", sold:"sell", stood:"stand", wore:"wear", worn:"wear",
+  won:"win", hidden:"hide", hid:"hide", torn:"tear", tore:"tear",
+  rose:"rise", risen:"rise", drew:"draw", drawn:"draw", threw:"throw", thrown:"throw",
+  better:"good", best:"good", worse:"bad", worst:"bad",
+};
+
+// よく出る 同義語グループ（どれかが 合えば 同じ意味 とみなす）
+const DESC_SYNONYM_GROUPS = [
+  ["get","gain","obtain","acquire","receive","earn","win"],
+  ["give","provide","offer","supply","grant","donate"],
+  ["make","create","produce","build","form","develop"],
+  ["stop","end","finish","halt","quit","cease","close"],
+  ["start","begin","launch","open"],
+  ["big","large","huge","great","enormous","giant","massive"],
+  ["small","little","tiny","minor","slight"],
+  ["change","alter","modify","adjust","shift","switch"],
+  ["show","display","reveal","demonstrate","present","indicate"],
+  ["say","tell","state","express","mention","speak"],
+  ["think","believe","consider","feel","suppose"],
+  ["want","wish","desire","hope"],
+  ["help","assist","support","aid"],
+  ["hurt","harm","damage","injure","wound"],
+  ["destroy","ruin","wreck","demolish","devastate"],
+  ["happy","glad","pleased","cheerful","joyful"],
+  ["sad","unhappy","upset","miserable"],
+  ["angry","mad","furious","annoyed"],
+  ["afraid","scared","frightened","fearful"],
+  ["hard","difficult","tough","challenging"],
+  ["easy","simple"],
+  ["important","significant","major","crucial","key","essential","vital"],
+  ["bad","poor","terrible","awful","harmful"],
+  ["good","fine","nice","excellent"],
+  ["fast","quick","rapid","speedy","sudden"],
+  ["slow","gradual"],
+  ["person","people","human","individual"],
+  ["place","area","location","spot","region"],
+  ["money","cash","funds","payment","income","salary"],
+  ["job","work","task","duty","role"],
+  ["keep","hold","maintain","retain","preserve","save"],
+  ["leave","depart","exit","abandon"],
+  ["find","discover","locate","detect"],
+  ["allow","permit","let","enable"],
+  ["prevent","block","stop","avoid"],
+  ["ask","request","question","inquire"],
+  ["answer","reply","respond"],
+  ["learn","study"],
+  ["teach","instruct","train","educate"],
+  ["look","watch","see","observe","view","examine"],
+  ["move","travel","transport"],
+  ["increase","grow","rise","expand","raise","boost"],
+  ["decrease","reduce","lower","drop","fall","shrink","cut"],
+  ["clean","wash","clear","pure"],
+  ["dirty","unclean","filthy"],
+  ["strong","powerful","firm"],
+  ["weak","fragile","frail","delicate"],
+  ["new","fresh","recent","modern"],
+  ["old","ancient","former","past","previous"],
+  ["group","team","crowd","organization"],
+  ["many","much","lots","several","numerous","plenty"],
+  ["part","piece","section","portion","share"],
+  ["whole","entire","complete","total","full"],
+  ["real","true","actual","genuine","correct","right"],
+  ["false","fake","untrue","wrong"],
+  ["choose","select","pick","decide"],
+  ["agree","accept","approve"],
+  ["refuse","reject","deny","decline"],
+  ["happen","occur","take"],
+  ["cause","lead","result","bring"],
+  ["understand","know","realize","comprehend"],
+  ["remember","recall"],
+  ["forget","ignore","neglect"],
+  ["protect","defend","guard","shield"],
+  ["attack","strike","assault"],
+  ["angry","upset"],
+  ["careful","cautious","wary"],
+  ["dangerous","risky","unsafe"],
+  ["safe","secure"],
+  ["beautiful","pretty","attractive","lovely"],
+  ["ugly","unattractive"],
+  ["rich","wealthy","affluent"],
+  ["poor","needy"],
+  ["law","rule","regulation"],
+  ["country","nation","state"],
+  ["city","town"],
+  ["food","meal"],
+  ["water","liquid"],
+  ["build","construct","establish","found"],
+  ["break","crack","split","destroy","smash","shatter"],
+  ["brave","courage","bold","fearless","confidence","confident","nerve"],
+  ["shy","timid","nervous","afraid"],
+  ["join","connect","attach","link","combine"],
+  ["separate","divide","split","apart"],
+  ["send","deliver","ship"],
+  ["carry","bring","transport"],
+  ["buy","purchase"],
+  ["sell","trade"],
+  ["pay","spend"],
+  ["like","enjoy","love","prefer"],
+  ["hate","dislike"],
+];
+
+// 単語 → グループ番号 の 索引（語幹で ひく）
+const DESC_SYN_INDEX = (() => {
+  const m = new Map();
+  DESC_SYNONYM_GROUPS.forEach((g, i) => {
+    g.forEach(w => {
+      const s = descStem(w);
+      if (!m.has(s)) m.set(s, new Set());
+      m.get(s).add(i);
+    });
+  });
+  return m;
+})();
+
+// ざっくり 語幹化（複数形・過去形・-ing などを 落とす）
+function descStem(w) {
+  w = String(w || "").toLowerCase();
+  if (DESC_IRREGULAR[w]) return DESC_IRREGULAR[w];
+  if (w.length <= 3) return w;
+  if (w.endsWith("ies") && w.length > 4) return w.slice(0, -3) + "y";
+  if (w.endsWith("ing") && w.length > 5) return w.slice(0, -3);
+  if (w.endsWith("ed")  && w.length > 4) return w.slice(0, -2);
+  if (w.endsWith("es")  && w.length > 4) return w.slice(0, -2);
+  if (w.endsWith("ly")  && w.length > 4) return w.slice(0, -2);
+  if (w.endsWith("s") && !w.endsWith("ss") && w.length > 3) return w.slice(0, -1);
+  return w;
+}
+
+// 文 → 意味のある語の 語幹リスト
+function descKeywords(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, " ")          // (…) の 補足は 外す
+    .replace(/[^a-z\s'-]/g, " ")
+    .split(/\s+/)
+    .filter(w => w && !DESC_STOPWORDS.has(w))
+    .map(descStem)
+    .filter(w => w.length > 1);
+}
+
+// 2語が 同じ意味と みなせるか（語幹一致 or 同義語グループ共有）
+function descSameWord(a, b) {
+  if (a === b) return true;
+  const ga = DESC_SYN_INDEX.get(a), gb = DESC_SYN_INDEX.get(b);
+  if (!ga || !gb) return false;
+  for (const g of ga) if (gb.has(g)) return true;
+  return false;
+}
+
+// 自動判定。ok=正解か / hits=def側で 当たった語 / total=def側の語数
+function describeJudge(answer, def) {
+  const ansWords = descKeywords(answer);
+  const defWords = descKeywords(def);
+  if (defWords.length === 0) return { ok: false, hits: [], total: 0, ratio: 0 };
+  if (ansWords.length === 0) return { ok: false, hits: [], total: defWords.length, ratio: 0 };
+
+  const hits = defWords.filter(d => ansWords.some(a => descSameWord(a, d)));
+  const uniqHits = [...new Set(hits)];
+  const ratio = uniqHits.length / new Set(defWords).size;
+  const head = descHead(def);                  // def の 核になる語（-ly の 副詞は とばす）
+  const headOk = !!head && ansWords.some(a => descSameWord(a, head));
+
+  // だいたい 合っていれば 正解にする（ゆるめ）
+  const ok = (headOk && uniqHits.length >= 1)
+          || ratio >= 0.5
+          || uniqHits.length >= 3;
+  return { ok, hits: uniqHits, total: new Set(defWords).size, ratio, headOk };
+}
+// def の 核になる語を とる。completely / especially のような -ly 副詞は 先頭でも とばす
+function descHead(def) {
+  const raw = String(def || "").toLowerCase()
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[^a-z\s'-]/g, " ")
+    .split(/\s+/)
+    .filter(w => w && !DESC_STOPWORDS.has(w) && w.length > 1);
+  const head = raw.find(w => !w.endsWith("ly")) || raw[0];
+  return head ? descStem(head) : null;
+}
+
+// ---------- セッション ----------
+function describePool() {
+  const pool = getWords();
+  const masteredSet = new Set(state.mastered.map(m => m.word));
+  // 「学んだ語」= SRSに 記録がある か mastered。意味を 知らない語は 出さない
+  return pool.filter(w => (!isNew(w.word) || masteredSet.has(w.word)) && w.def);
+}
+
+function startDescribe() {
+  if (!Array.isArray(state.describeWrong)) state.describeWrong = [];
+  const all = describePool();
+  if (all.length === 0) {
+    alert("せつめい できる単語が まだ ありません。\nまず まなぶ か テスト を してみてね ✍️");
+    return;
+  }
+  // 前に まちがえた語を 先に、のこりは シャッフル
+  const dwSet = new Set(state.describeWrong.map(t => t.word));
+  const wrongFirst = shuffle(all.filter(w => dwSet.has(w.word)));
+  const others     = shuffle(all.filter(w => !dwSet.has(w.word)));
+  const picked = [...wrongFirst, ...others].slice(0, DESCRIBE_SESSION_SIZE);
+
+  describe = {
+    queue: picked,
+    total: picked.length,
+    asked: 0,
+    correct: 0,
+    answered: false,
+    current: null,
+    judged: null,       // 自動判定の 結果
+    finalOk: null,      // 訂正後の 最終判定
+    results: [],        // [{word, def, answer, ok}]
+  };
+  renderDescribeQuestion();
+}
+
+function describeTopBar() {
+  return `<div class="session-bar">
+    <button class="icon-btn" onclick="exitDescribe()">← やめる</button>
+    <span style="font-size:0.72rem; color:var(--berry); font-weight:800">✍️ せつめいモード</span>
+  </div>`;
+}
+
+function renderDescribeQuestion() {
+  const d = describe;
+  const w = d.queue[0];
+  d.current = w;
+  d.answered = false;
+  d.judged = null;
+  d.finalOk = null;
+  const pct = d.total ? (d.asked / d.total) * 100 : 0;
+
+  app.innerHTML = `
+    <div class="card">
+      ${describeTopBar()}
+      <div class="q-progress-bar"><div style="width:${pct}%"></div></div>
+      <div class="q-meta">
+        <span>せつめい ${d.asked + 1} / ${d.total}</span>
+        <span class="q-type-tag" style="background:var(--berry)">✍️ 英語で かく</span>
+      </div>
+      <div style="text-align:center; padding:14px 8px 6px">
+        <div class="q-content word" style="font-size:2.1rem; margin:6px 0">${esc(w.word)}</div>
+        <button class="icon-btn" onclick="speak('${esc(w.word).replace(/'/g, "\\'")}')">🔊</button>
+      </div>
+      <div class="q-prompt" style="margin-top:6px">この単語の いみを 英語で かいてみよう</div>
+      <input class="desc-input" id="descInput" type="text" autocomplete="off" autocapitalize="off"
+        spellcheck="false" placeholder="れい: to give up something"
+        onkeydown="if(event.key==='Enter') submitDescribe()" />
+      <div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft); text-align:center">
+        かんぺきで なくて OK。いみが だいたい 合っていれば 正解だよ
+      </div>
+      <div style="display:flex; gap:8px; margin-top:12px">
+        <button class="btn ghost small" onclick="skipDescribe()" style="flex:1">わからない</button>
+        <button class="btn small" onclick="submitDescribe()" style="flex:2; background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)">こたえる →</button>
+      </div>
+      <div class="feedback" id="feedback"></div>
+      <div id="describeNext" style="margin-top:12px"></div>
+    </div>
+  `;
+  speak(w.word);
+  setTimeout(() => { const i = document.getElementById("descInput"); if (i) i.focus(); }, 80);
+}
+
+function submitDescribe() {
+  const d = describe;
+  if (!d || d.answered) return;
+  const input = document.getElementById("descInput");
+  const answer = input ? (input.value || "").trim() : "";
+  if (!answer) { if (input) input.focus(); return; }
+  const judged = describeJudge(answer, d.current.def);
+  showDescribeResult(answer, judged.ok, judged);
+}
+
+function skipDescribe() {
+  const d = describe;
+  if (!d || d.answered) return;
+  showDescribeResult("", false, { ok: false, hits: [], total: 0, ratio: 0 }, true);
+}
+
+function showDescribeResult(answer, ok, judged, skipped) {
+  const d = describe;
+  d.answered = true;
+  d.judged = judged;
+  d.finalOk = ok;
+  d.lastAnswer = answer;
+
+  const w = d.current;
+  const input = document.getElementById("descInput");
+  if (input) input.disabled = true;
+
+  // def の うち 当たった語を 緑で 光らせる
+  const defHtml = esc(w.def).split(/(\s+)/).map(tok => {
+    const bare = tok.toLowerCase().replace(/[^a-z'-]/g, "");
+    if (!bare) return tok;
+    const st = descStem(bare);
+    return (judged.hits || []).some(h => h === st) ? `<span class="desc-hit">${tok}</span>` : tok;
+  }).join("");
+
+  const ex = w.example ? esc(w.example).replace("___", `<b>${esc(w.word)}</b>`) : "";
+  const fb = document.getElementById("feedback");
+  fb.className = "feedback show " + (ok ? "ok" : "ng");
+  fb.innerHTML =
+      (skipped ? "だいじょうぶ！ こたえを 見てみよう 🌱" : (ok ? "せいかい！ いみが 合ってるよ 🎉" : "おしい！ こたえを 見てみよう"))
+    + (answer ? `<div style="margin-top:8px; font-size:0.84rem; color:var(--ink-soft)">きみの こたえ: 「${esc(answer)}」</div>` : "")
+    + `<div class="word-info" style="margin-top:8px">${esc(w.word)} — ${defHtml}</div>`
+    + (ex ? `<div style="margin-top:4px; font-weight:600">${ex}</div>` : "")
+    + (w.exJa ? `<div style="margin-top:3px; font-size:0.86rem; opacity:0.85">${esc(w.exJa)}</div>` : "")
+    + (judged.total ? `<div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft)">キーワード ${(judged.hits||[]).length} / ${judged.total} 一致</div>` : "");
+
+  speak(w.word);
+  renderDescribeNext();
+}
+
+// 自動判定は かんぺきでは ないので、自分で ○× を 直せる
+function flipDescribe() {
+  const d = describe;
+  if (!d || !d.answered) return;
+  d.finalOk = !d.finalOk;
+  const fb = document.getElementById("feedback");
+  if (fb) fb.className = "feedback show " + (d.finalOk ? "ok" : "ng");
+  renderDescribeNext();
+}
+
+function renderDescribeNext() {
+  const d = describe;
+  const nx = document.getElementById("describeNext");
+  if (!nx) return;
+  const col = d.finalOk
+    ? "background:var(--good); box-shadow:0 4px 0 #2d7a5c, 0 8px 16px rgba(63,156,124,0.22)"
+    : "background:var(--berry); box-shadow:0 4px 0 #8a4568, 0 8px 16px rgba(179,104,140,0.22)";
+  nx.innerHTML = `
+    <button class="btn ghost small" onclick="flipDescribe()" style="width:100%; margin-bottom:8px">
+      ${d.finalOk ? "やっぱり まちがいに する ❌" : "やっぱり 正解に する ✅"}
+    </button>
+    <button class="btn" id="describeNextBtn" onclick="advanceDescribe()" style="width:100%; ${col}">
+      つぎへ →
+    </button>
+    <div style="margin-top:6px; font-size:0.68rem; color:var(--ink-soft); text-align:center">
+      ${d.finalOk ? "正解に なっているよ" : "まちがいに なっているよ"}（Enter でも すすめるよ）
+    </div>`;
+  const b = document.getElementById("describeNextBtn");
+  if (b) b.focus();
+}
+
+function advanceDescribe() {
+  const d = describe;
+  if (!d || !d.answered) return;
+  const w = d.current;
+  d.asked++;
+  if (d.finalOk) d.correct++;
+  d.results.push({ word: w.word, def: w.def, answer: d.lastAnswer || "", ok: !!d.finalOk });
+  d.queue.shift();
+  if (d.queue.length === 0) finishDescribe();
+  else renderDescribeQuestion();
+}
+
+// せつめいで まちがえた語を 記録（テスト・まなぶ・復習 には 影響しない）
+function finalizeDescribe() {
+  if (!describe) return;
+  if (!Array.isArray(state.describeWrong)) state.describeWrong = [];
+  const todayStr = today();
+  for (const r of describe.results) {
+    const existing = state.describeWrong.find(t => t.word === r.word);
+    if (r.ok) {
+      if (existing) state.describeWrong = state.describeWrong.filter(t => t.word !== r.word);
+    } else if (existing) {
+      existing.at = todayStr;
+      existing.count = (existing.count || 1) + 1;
+    } else {
+      state.describeWrong.push({ word: r.word, at: todayStr, count: 1 });
+    }
+  }
+  saveState();
+  autoBackup("describe");
+}
+
+function exitDescribe() {
+  if (!confirm("せつめいを やめて ホームに もどりますか？\n（ここまでの けっかは 記録されます）")) return;
+  finalizeDescribe();
+  describe = null;
+  renderHome();
+}
+
+function finishDescribe() {
+  finalizeDescribe();
+  const d = describe;
+  const total = d.asked, correct = d.correct;
+  const acc = total ? Math.round((correct / total) * 100) : 0;
+  const stars = acc === 100 ? "🌟🌟🌟" : acc >= 80 ? "🌟🌟" : acc >= 60 ? "🌟" : "🌰";
+  const cheer = acc === 100 ? "パーフェクト！" : acc >= 80 ? "とても いい！" : acc >= 60 ? "いい調子！" : "また やってみよう！";
+
+  state.describeDone = (state.describeDone || 0) + 1;
+  state.history.push({
+    date: today(), climbed: 0, score: correct, total,
+    mode: "describe", scope: "せつめい", style: "type",
+  });
+  saveState();
+
+  const missed = d.results.filter(r => !r.ok);
+  app.innerHTML = `
+    <div class="card result">
+      <div class="stars-burst">${stars}</div>
+      <h2>✍️ せつめい 完了！— ${cheer}</h2>
+      <p class="summary">${total}語中 ${correct}語 せいかい（${acc}%）</p>
+      ${missed.length ? `<div style="background:var(--berry-soft); border:1px solid #e6c4d4; border-radius:14px; padding:12px 14px; margin:14px 0; text-align:left">
+        <div style="color:var(--berry); font-weight:800; font-size:0.9rem; margin-bottom:6px">もう一度 見ておこう (${missed.length}語)</div>
+        ${missed.map(r => `<div style="font-size:0.82rem; margin-bottom:4px"><b>${esc(r.word)}</b> — ${esc(r.def || "")}</div>`).join("")}
+      </div>` : `<p style="color:var(--good); font-weight:800; margin-top:10px">ぜんぶ せいかい！ すごい 🎉</p>`}
+      <div class="result-actions">
+        <button class="btn ghost" onclick="describe = null; renderHome()">ホーム</button>
+        <button class="btn teal" onclick="describe = null; startDescribe()">もう1回 →</button>
+      </div>
+    </div>
+  `;
+  describe = null;
+}
+
+// せつめい中に Enter / Space で「つぎへ」
+document.addEventListener("keydown", e => {
+  if (!describe || !describe.answered) return;
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const b = document.getElementById("describeNextBtn");
+  if (!b) return;
+  e.preventDefault();
+  b.click();
+});
 
 // ============================================================
 // 🔄 復習モード (裏道) — 既存の まなぶ/テスト に 影響を 与えない
