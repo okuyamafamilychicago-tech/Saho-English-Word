@@ -285,10 +285,10 @@
   .home-actions .btn { flex: 1; }
 
   /* ---------- Mode cards (Learn / Test) ---------- */
-  .mode-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 4px; }
+  .mode-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 4px; }
   .mode-card {
     border: 2px solid var(--line); border-radius: 18px;
-    padding: 18px 12px; cursor: pointer; text-align: center;
+    padding: 16px 8px; cursor: pointer; text-align: center;
     font-family: inherit; transition: transform 0.1s, box-shadow 0.15s, border-color 0.15s;
     box-shadow: 0 5px 0 var(--bg-2);
   }
@@ -298,7 +298,7 @@
   .mode-card.learn:hover:not(:disabled) { border-color: var(--teal); }
   .mode-card.test { background: var(--coral-soft); border-color: #f3cfc6; }
   .mode-card.test:hover:not(:disabled) { border-color: var(--coral); }
-  .mode-card.describe { background: var(--berry-soft); border-color: #e6c4d4; grid-column: 1 / -1; }
+  .mode-card.describe { background: var(--berry-soft); border-color: #e6c4d4; }
   .mode-card.describe:hover:not(:disabled) { border-color: var(--berry); }
   .desc-input { width: 100%; padding: 13px 15px; font-size: 1.02rem; font-family: inherit;
     border: 2px solid var(--line); border-radius: 14px; background: #fff; color: var(--ink);
@@ -306,9 +306,9 @@
   .desc-input:focus { border-color: var(--berry); }
   .desc-input:disabled { background: var(--bg-2); opacity: 0.75; }
   .desc-hit { background: #d7f0da; border-radius: 4px; padding: 0 3px; font-weight: 800; }
-  .mode-emoji { font-size: 1.9rem; }
-  .mode-name { font-weight: 900; font-size: 1.1rem; color: var(--ink); margin-top: 2px; }
-  .mode-desc { font-size: 0.7rem; color: var(--ink-soft); margin-top: 4px; line-height: 1.5; font-weight: 600; }
+  .mode-emoji { font-size: 1.7rem; }
+  .mode-name { font-weight: 900; font-size: 0.98rem; color: var(--ink); margin-top: 2px; }
+  .mode-desc { font-size: 0.64rem; color: var(--ink-soft); margin-top: 4px; line-height: 1.5; font-weight: 600; }
 
   /* ---------- Learning: steps + flashcard ---------- */
   .steps { display: flex; gap: 6px; justify-content: center; margin-bottom: 14px; }
@@ -2050,8 +2050,8 @@ function renderHome() {
           <div class="mode-name">せつめい</div>
           <div class="mode-desc">
             ${describePool().length > 0
-              ? `単語の いみを <b>英語で かく</b>。だいたい 合っていれば 正解！<br>1回 <b>${DESCRIBE_SESSION_SIZE}語</b>${(state.describeWrong||[]).length ? ` ・ まちがい <b>${state.describeWrong.length}語</b>を 優先` : ""}`
-              : "まず まなぶ か テスト を してね"}
+              ? `いみを <b>英語で かく</b><br>1回 <b>${DESCRIBE_SESSION_SIZE}語</b>${(state.describeWrong||[]).length ? `<br>まちがい <b>${state.describeWrong.length}語</b>優先` : ""}`
+              : "まず まなぶ か<br>テスト を してね"}
           </div>
         </button>
       </div>
