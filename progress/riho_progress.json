@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-03T06:46:26.157Z",
+  "exportedAt": "2026-10-03T06:47:18.607Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8922,6 +8922,17 @@
         "scope": "バッチ12",
         "style": "flash",
         "round": 1,
+        "found": 0
+      },
+      {
+        "date": "2026-10-03",
+        "climbed": 0,
+        "score": 18,
+        "total": 27,
+        "mode": "review",
+        "scope": "まちがえ集中",
+        "style": "flash",
+        "round": null,
         "found": 0
       }
     ],
@@ -20182,7 +20193,12 @@
       "embed",
       "termination",
       "legislature",
-      "foster"
+      "foster",
+      "legitimate",
+      "depict",
+      "coalition",
+      "custody",
+      "plunge"
     ],
     "reviewRound": {
       "0": 1,
@@ -20450,54 +20466,29 @@
         "remaining": []
       }
     },
-    "reviewDone": 156,
+    "reviewDone": 157,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
-        "word": "coalition",
-        "at": "2026-10-03",
-        "count": 2
-      },
-      {
-        "word": "custody",
-        "at": "2026-10-03",
-        "count": 2
-      },
-      {
         "word": "intuitive",
         "at": "2026-10-03",
-        "count": 2
+        "count": 3
       },
       {
         "word": "integral",
         "at": "2026-10-03",
-        "count": 2
-      },
-      {
-        "word": "depict",
-        "at": "2026-10-03",
-        "count": 2
-      },
-      {
-        "word": "legitimate",
-        "at": "2026-10-03",
-        "count": 2
-      },
-      {
-        "word": "plunge",
-        "at": "2026-10-03",
-        "count": 2
+        "count": 3
       },
       {
         "word": "leverage",
         "at": "2026-10-03",
-        "count": 2
+        "count": 3
       },
       {
         "word": "constitutional",
         "at": "2026-10-03",
-        "count": 2
+        "count": 3
       }
     ]
   }
