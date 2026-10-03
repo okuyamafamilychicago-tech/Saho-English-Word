@@ -50,7 +50,7 @@
   .bar .lbl { width: 9.5em; flex-shrink: 0; }
   .bar .track { flex: 1; height: 14px; background: #f1ece6; border-radius: 99px; overflow: hidden; }
   .bar .fill { height: 100%; border-radius: 99px; }
-  .bar .num { width: 2.5em; text-align: right; font-weight: 700; }
+  .bar .num { width: 3em; text-align: right; font-weight: 700; }
 
   .tip { background: var(--bg-yellow); border-radius: 12px; padding: 12px 14px; font-size: 0.9rem; margin-top: 10px; }
   .tip ol { padding-left: 1.3em; }
@@ -616,7 +616,7 @@ function readingCard(e) {
   const missTotal = e.total - e.correct;
   const rec = store[e.id] || {};
   const bars = e.breakdown.map(b =>
-    `<div class="bar"><span class="lbl">${b.label}</span><span class="track"><span class="fill" style="display:block;width:${b.n / missTotal * 100}%;background:${b.color}"></span></span><span class="num">${b.n}</span></div>`).join("");
+    `<div class="bar"><span class="lbl">${b.label}</span><span class="track"><span class="fill" style="display:block;width:${b.n / missTotal * 100}%;background:${b.color}"></span></span><span class="num">${Math.round(b.n / missTotal * 100)}%</span></div>`).join("");
   const rows = e.passages.map(p =>
     `<tr><td>${p.theme}</td><td>${p.score}/10</td><td>${p.miss.map(([c, y]) => `<span class="x">${y}</span> → <span class="o">${c}</span>`).join("<br>")}</td></tr>`).join("");
   return `<div class="card" id="card-${e.id}">
@@ -798,13 +798,13 @@ function speakingOverview(list) {
   list.forEach(e => scores[e.score] = (scores[e.score] || 0) + 1);
   const miss = STEPS.map((s, k) => list.filter(e => e.check[k] === "x" || e.check[k] === "t").length);
   const bars = STEPS.map((s, k) =>
-    `<div class="bar"><span class="lbl">${s.name}が弱い</span><span class="track"><span class="fill" style="display:block;width:${miss[k] / n * 100}%;background:${s.color}"></span></span><span class="num">${miss[k]}/${n}</span></div>`).join("");
+    `<div class="bar"><span class="lbl">${s.name}が弱い</span><span class="track"><span class="fill" style="display:block;width:${miss[k] / n * 100}%;background:${s.color}"></span></span><span class="num">${Math.round(miss[k] / n * 100)}%</span></div>`).join("");
   return `<div class="card">
     <h2>🗣 Speaking まとめ（${n}問）</h2>
     <div class="meta">${Object.entries(scores).map(([k, v]) => `${k} ×${v}`).join("　・　")}</div>
     <div class="tip" style="margin-top:12px"><b>いちばん大事なこと：</b>意見と理由は言えています。点が伸びない原因は、<b>「具体例」と「なぜ大切か」が全${n}問でほぼ抜けている</b>こと。
       意見を言ったら、すぐ <b>For example</b> で自分の体験を話し、<b>This is important because</b> でしめる。これだけで話の長さも中身も2倍になります。</div>
-    <h3>5つのステップ、どこが弱い？（FBで「足りない・もう少し」と言われた回数）</h3>
+    <h3>5つのステップ、どこが弱い？（FBで「足りない・もう少し」と言われた割合）</h3>
     ${bars}
     <h3>🧱 どの問題でも使える「話す順番」（45秒の目安）</h3>
     <ol class="steps sp">${STEPS.map(s => `<li style="--c:${s.color}"><b>${s.name}</b> <span class="meta">${s.en}・${s.sec}</span><br><span class="w">${s.say}</span><br><span class="hint">${s.tip}</span></li>`).join("")}</ol>
