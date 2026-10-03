@@ -79,9 +79,6 @@
   .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 10px; border-radius: 99px; }
   .tag.form { background: var(--bg-purple); color: var(--purple-dark); }
   .tag.mean { background: var(--bg-pink); color: var(--pink-dark); }
-  .tag.adv { background: #eceff3; color: #5a6470; }
-  .stat.must { background: var(--bg-blue); }
-  .stat span { line-height: 1.4; }
   .tag.blank { background: var(--bg-yellow); color: var(--yellow-dark); }
   .sentence { font-family: 'Quicksand', sans-serif; font-size: 1.2rem; font-weight: 600; line-height: 2.3; margin: 12px 0 6px; }
   .word { white-space: nowrap; }
@@ -174,15 +171,13 @@ const DATA = {
       date: "2026-10-03",
       title: "Complete the Words（単語の穴うめ）5セット",
       correct: 29, total: 50,
-      /* TOEFL 5.5（C1）を超える語＝落としてもよい問題。breakdown はそれ以外（C1で解くべき問題）のまちがいだけを数える */
-      beyond: ["exacerbate", "Unsaturated", "cholesterol", "inflammation", "clippings"],
       breakdown: [
-        { key: "form",  label: "品詞・語尾のミス",   n: 4,  color: "var(--purple)" },
+        { key: "form",  label: "品詞・語尾のミス",   n: 6,  color: "var(--purple)" },
         { key: "mean",  label: "ちがう単語を入れた", n: 3,  color: "var(--pink)" },
-        { key: "blank", label: "わからず適当に埋めた", n: 9,  color: "var(--yellow)" }
+        { key: "blank", label: "わからず適当に埋めた", n: 12, color: "var(--yellow)" }
       ],
       advice: [
-        "<b>C1で解くべき問題のまちがいの半分以上（16個中9個）が「同じ文字の連打・でたらめ」</b>。投資のセットは2/10でした。ここを減らすのが一番の近道です。",
+        "<b>まちがい21個のうち12個が「同じ文字の連打・でたらめ」</b>（前回は9個）。投資のセットは2/10でした。ここを減らすのが一番の近道です。",
         "<b>知らない単語でも、文字数で語尾は当てられる。</b> 2文字 → <code>-ic / -al</code>、4文字 → <code>-tion / -ance / -ting</code>、5文字 → <code>-ation</code>、6文字 → <code>-mental</code>。今回の expecta<b>tion</b>, genera<b>ting</b>, fin<b>ance</b>, inflamm<b>ation</b>, organ<b>ic</b>, funda<b>mental</b> はこれで取れた問題です。",
         "<b>似た単語に引っぱられない。</b> advocates → <span class='x'>advocados</span>（アボカド）、landfills → <span class='x'>landscape</span>（景色）。入れたあと、文の意味が通るか確かめる。",
         "<b>学問の名前は -ics。</b> finance and econom<b>ics</b>（経済学）。<span class='x'>economies</span> は「国の経済」の複数形。"
@@ -293,14 +288,13 @@ const DATA = {
       date: "2026-09-27",
       title: "Complete the Words（単語の穴うめ）8セット",
       correct: 49, total: 80,
-      beyond: ["optimize", "deployed", "showerheads"],
       breakdown: [
         { key: "form",  label: "品詞・語尾のミス",   n: 13, color: "var(--purple)" },
         { key: "mean",  label: "ちがう単語を入れた", n: 9,  color: "var(--pink)" },
-        { key: "blank", label: "わからず適当に埋めた", n: 6,  color: "var(--yellow)" }
+        { key: "blank", label: "わからず適当に埋めた", n: 9,  color: "var(--yellow)" }
       ],
       advice: [
-        "<b>いちばん多いのは「語幹は合っているのに語尾がちがう」ミス（C1で解くべき問題のまちがい28個中13個）。</b> critical → <span class='x'>critcals</span>、consumers → <span class='x'>consuming</span>、innovative → <span class='x'>innovation</span> など。単語は思い出せているので、<b>空欄の“場所”から品詞を決める</b>だけで大きく点が伸びます。",
+        "<b>いちばん多いのは「語幹は合っているのに語尾がちがう」ミス（13個）。</b> critical → <span class='x'>critcals</span>、consumers → <span class='x'>consuming</span>、innovative → <span class='x'>innovation</span> など。単語は思い出せているので、<b>空欄の“場所”から品詞を決める</b>だけで大きく点が伸びます。",
         "<b>品詞の決め方：</b> 名詞の前（<code>___ decisions</code>, <code>small, ___ steps</code>）→ <b>形容詞</b>（-al / -ical / -able / -tive / -ed）。主語・<code>the ___ of</code>・<code>and</code> のあと → <b>名詞</b>（-tion / -sis / -ers / -ose）。<code>to / can / help</code> のあと → <b>動詞の原形</b>。",
         "<b>形容詞に -s はつかない。</b> <span class='x'>critcals</span>, <span class='x'>natures</span> のように、迷うと -s や -ing を足すクセがあります。",
         "<b>同じ文字の連打（pppp, ssssss, tttttt）は 0点確定。</b> smart cities のセットは後半4つがすべてこれでした。語幹（opti-, de-, busi-, cus-）から、文の意味に合う単語を1つ思い浮かべて書けば部分点のチャンスがあります。",
@@ -617,40 +611,30 @@ function render() {
 }
 
 /* ---------- Reading ---------- */
-// C1（TOEFL 5.5）で解くべき問題と、C1超えで落としてもよい問題に分けて数える
-function splitScore(e) {
-  const beyond = new Set((e.beyond || []).map(w => w.toLowerCase()));
-  const missed = new Set(e.passages.flatMap(p => p.miss.map(([c]) => c.toLowerCase())));
-  const bTotal = beyond.size;
-  const bRight = [...beyond].filter(w => !missed.has(w)).length;
-  return { mustTotal: e.total - bTotal, mustRight: e.correct - bRight, bTotal, bRight, beyond };
-}
-
 function readingCard(e) {
-  const s = splitScore(e);
-  const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
-  const mustMiss = s.mustTotal - s.mustRight;
+  const pct = Math.round(e.correct / e.total * 100);
+  const missTotal = e.total - e.correct;
+  const rec = store[e.id] || {};
   const bars = e.breakdown.map(b =>
-    `<div class="bar"><span class="lbl">${b.label}</span><span class="track"><span class="fill" style="display:block;width:${pct(b.n, mustMiss)}%;background:${b.color}"></span></span><span class="num">${pct(b.n, mustMiss)}%</span></div>`).join("");
+    `<div class="bar"><span class="lbl">${b.label}</span><span class="track"><span class="fill" style="display:block;width:${b.n / missTotal * 100}%;background:${b.color}"></span></span><span class="num">${Math.round(b.n / missTotal * 100)}%</span></div>`).join("");
   const rows = e.passages.map(p =>
-    `<tr><td>${p.theme}</td><td>${p.score}/10</td><td>${p.miss.map(([c, y]) => `<span class="x">${y}</span> → <span class="o">${c}</span>${s.beyond.has(c.toLowerCase()) ? ' <span class="tag adv">C1超え</span>' : ""}`).join("<br>")}</td></tr>`).join("");
+    `<tr><td>${p.theme}</td><td>${p.score}/10</td><td>${p.miss.map(([c, y]) => `<span class="x">${y}</span> → <span class="o">${c}</span>`).join("<br>")}</td></tr>`).join("");
   return `<div class="card" id="card-${e.id}">
     <h2>${e.title}</h2>
-    <div class="meta">${e.date}　・　全体 ${e.correct}/${e.total}（${pct(e.correct, e.total)}%）</div>
+    <div class="meta">${e.date}</div>
     <div class="stats">
-      <div class="stat must"><b>${pct(s.mustRight, s.mustTotal)}%</b><span>C1で解くべき問題<br>${s.mustRight}/${s.mustTotal}</span></div>
-      <div class="stat"><b>${pct(s.bRight, s.bTotal)}%</b><span>C1超え（落としてOK）<br>${s.bRight}/${s.bTotal}</span></div>
+      <div class="stat"><b>${e.correct}/${e.total}</b><span>正解した空欄</span></div>
+      <div class="stat"><b>${pct}%</b><span>正答率</span></div>
       <div class="stat" id="best-${e.id}">${bestStat(e)}</div>
     </div>
-    <h3>C1で解くべき問題のまちがい（${mustMiss}個）の内訳</h3>
+    <h3>まちがい ${missTotal} 個の内訳</h3>
     ${bars}
-    <p class="hint" style="margin-top:6px">落としてOK（TOEFL 5.5＝C1 を超える語）：${[...e.beyond].map(w => `<span class="w">${w}</span>`).join(", ")}</p>
     <div class="tip"><ol>${e.advice.map(a => `<li>${a}</li>`).join("")}</ol></div>
     <details><summary>セットごとの答え合わせを見る</summary>
       <table><tr><th>テーマ</th><th>点</th><th>あなた → 正解</th></tr>${rows}</table>
     </details>
     <h3>🎯 復習問題（厳選 ${e.quiz.length} 問）</h3>
-    <p class="hint">まちがえた単語から、TOEFL でよく出る単語だけを選びました。本番とはちがう新しい文で、同じ単語を穴うめします。</p>
+    <p class="hint">まちがえた ${missTotal} 個から、TOEFL でよく出る単語だけを選びました。本番とはちがう新しい文で、同じ単語を穴うめします。</p>
     <div class="quiz" id="quiz-${e.id}"></div>
   </div>`;
 }
@@ -750,7 +734,7 @@ function runQuiz(e, box, items, full) {
     const [tcls, tlabel] = TAG[q.type];
     const boxes = letterBoxes(q.ans.length);
     box.innerHTML = `
-      <div class="qhead"><span>${i + 1} / ${items.length}</span><span>${(e.beyond || []).some(w => w.toLowerCase() === (q.stem + q.ans).toLowerCase()) ? `<span class="tag adv">発展（C1超え）</span> ` : ""}<span class="tag ${tcls}">${tlabel}</span></span></div>
+      <div class="qhead"><span>${i + 1} / ${items.length}</span><span class="tag ${tcls}">${tlabel}</span></div>
       <div class="prog"><div style="width:${i / items.length * 100}%"></div></div>
       <div class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${boxes}</span>${q.after}</div>
       <p class="hint">空欄は ${q.ans.length} 文字。1マスに1文字ずつ入れてね。</p>
