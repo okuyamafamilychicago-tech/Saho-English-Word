@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-03T06:32:58.914Z",
+  "exportedAt": "2026-10-03T06:46:26.157Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8911,6 +8911,17 @@
         "scope": "まちがえ集中",
         "style": "quiz",
         "round": null,
+        "found": 0
+      },
+      {
+        "date": "2026-10-03",
+        "climbed": 0,
+        "score": 73,
+        "total": 100,
+        "mode": "review",
+        "scope": "バッチ12",
+        "style": "flash",
+        "round": 1,
         "found": 0
       }
     ],
@@ -20153,7 +20164,25 @@
       "rig",
       "drain",
       "encompass",
-      "subtle"
+      "subtle",
+      "induce",
+      "proceeds",
+      "prestigious",
+      "vent",
+      "exploit",
+      "niche",
+      "controversial",
+      "commence",
+      "conviction",
+      "adverse",
+      "petition",
+      "incur",
+      "correlation",
+      "indigenous",
+      "embed",
+      "termination",
+      "legislature",
+      "foster"
     ],
     "reviewRound": {
       "0": 1,
@@ -20167,7 +20196,7 @@
       "8": 1,
       "9": 1,
       "10": 4,
-      "11": 1
+      "11": 2
     },
     "reviewSweep": {
       "0": {
@@ -20421,144 +20450,54 @@
         "remaining": []
       }
     },
-    "reviewDone": 155,
+    "reviewDone": 156,
     "schemaVersion": 2,
     "rihoBulk800Done": true,
     "reviewWrong": [
       {
         "word": "coalition",
         "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "legislature",
-        "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "custody",
         "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "indigenous",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "termination",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "controversial",
-        "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "intuitive",
         "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "vent",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "niche",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "correlation",
-        "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "integral",
         "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "petition",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "exploit",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "commence",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "prestigious",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "foster",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "conviction",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "adverse",
-        "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "depict",
         "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "legitimate",
         "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "proceeds",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "induce",
-        "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "embed",
-        "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "plunge",
         "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "leverage",
         "at": "2026-10-03",
-        "count": 1
+        "count": 2
       },
       {
         "word": "constitutional",
         "at": "2026-10-03",
-        "count": 1
-      },
-      {
-        "word": "incur",
-        "at": "2026-10-03",
-        "count": 1
+        "count": 2
       }
     ]
   }
