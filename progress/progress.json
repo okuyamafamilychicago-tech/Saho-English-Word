@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-04T07:24:11.381Z",
+  "exportedAt": "2026-10-04T07:27:29.031Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2374,6 +2374,46 @@
         "word": "transmit",
         "masteredAt": "2026-10-03",
         "mode": "test"
+      },
+      {
+        "word": "isolate",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "enthusiastic",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "dense",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "lease",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "divorce",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "cough",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "navigate",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
+      },
+      {
+        "word": "interact",
+        "masteredAt": "2026-10-04",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2423,11 +2463,6 @@
         "learnCount": 2
       },
       {
-        "word": "dense",
-        "at": "2026-09-22",
-        "learnCount": 1
-      },
-      {
         "word": "consequently",
         "at": "2026-09-24",
         "learnCount": 1
@@ -2443,23 +2478,13 @@
         "learnCount": 1
       },
       {
-        "word": "divorce",
-        "at": "2026-09-29",
-        "learnCount": 1
-      },
-      {
         "word": "undertake",
-        "at": "2026-10-02",
-        "learnCount": 1
-      },
-      {
-        "word": "lease",
         "at": "2026-10-02",
         "learnCount": 1
       }
     ],
-    "totalCorrect": 5300,
-    "totalAttempts": 6159,
+    "totalCorrect": 5334,
+    "totalAttempts": 6194,
     "lastSessionDate": "2026-10-04",
     "streak": 3,
     "history": [
@@ -3875,6 +3900,13 @@
         "score": 11,
         "total": 11,
         "mode": "learn"
+      },
+      {
+        "date": "2026-10-04",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -7638,10 +7670,10 @@
       },
       "dense": {
         "box": 5,
-        "due": "2026-10-08",
-        "correct": 7,
+        "due": "2026-10-20",
+        "correct": 10,
         "wrong": 1,
-        "seenAt": "2026-09-22",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-09-22",
         "everLearned": true
       },
@@ -7727,11 +7759,11 @@
         "everLearned": true
       },
       "enthusiastic": {
-        "box": 4,
-        "due": "2026-10-11",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 7,
         "wrong": 1,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-09-28",
         "everLearned": true
       },
@@ -7745,11 +7777,11 @@
         "everLearned": true
       },
       "isolate": {
-        "box": 3,
-        "due": "2026-10-07",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 8,
         "wrong": 2,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-10-03",
         "everLearned": true
       },
@@ -7808,11 +7840,11 @@
         "everLearned": true
       },
       "divorce": {
-        "box": 4,
-        "due": "2026-10-08",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 8,
         "wrong": 3,
-        "seenAt": "2026-09-30",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-09-30",
         "everLearned": true
       },
@@ -7844,20 +7876,20 @@
         "everLearned": true
       },
       "cough": {
-        "box": 3,
-        "due": "2026-10-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-10-03",
         "everLearned": true
       },
       "navigate": {
-        "box": 3,
-        "due": "2026-10-07",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-10-03",
         "everLearned": true
       },
@@ -7916,11 +7948,11 @@
         "everLearned": true
       },
       "interact": {
-        "box": 2,
-        "due": "2026-10-05",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-10-03",
         "everLearned": true
       },
@@ -7934,11 +7966,11 @@
         "everLearned": true
       },
       "lease": {
-        "box": 4,
-        "due": "2026-10-11",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-10-20",
+        "correct": 7,
         "wrong": 3,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-04",
         "learnedAt": "2026-10-03",
         "everLearned": true
       },
