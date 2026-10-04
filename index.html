@@ -1336,28 +1336,51 @@ hydrateUserWordsFromMyBank();
 
 // 起動時にGitHubから自動読込（Tokenがあれば）。GH_TOKEN_KEY などは下の方で定義されるので、
 // スクリプト全体を読み終えてから走らせる（setTimeout 0）
-setTimeout(async function autoLoadFromGitHub() {
-  const token = getGHToken();
-  if (!token) return;
+// 公開ファイル（Web上の バックアップ）から 読む。Token は いらない。
+// サイトと 同じ場所に 置いてあるので、相対パスで そのまま 取れる。
+async function fetchWebBackup() {
   try {
-    const apiUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
-    const res = await fetch(apiUrl, { headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json" } });
-    if (!res.ok) return;
-    const j = await res.json();
-    const text = decodeURIComponent(escape(atob(j.content)));
-    const parsed = JSON.parse(text);
-    if (!parsed.state) return;
+    const res = await fetch(GH_PATH + "?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) return null;
+    const parsed = await res.json();
+    return (parsed && parsed.state) ? parsed : null;
+  } catch (e) {
+    return null;   // file:// で 開いたときなど
+  }
+}
+
+// Token が あれば API から、なければ 公開ファイルから
+async function fetchRemoteBackup() {
+  const token = getGHToken();
+  if (token) {
+    try {
+      const apiUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
+      const res = await fetch(apiUrl, { headers: { Authorization: `token ${token}`, Accept: "application/vnd.github+json" } });
+      if (res.ok) {
+        const j = await res.json();
+        const parsed = JSON.parse(decodeURIComponent(escape(atob(j.content))));
+        if (parsed && parsed.state) return parsed;
+      }
+    } catch (e) { /* 落ちたら 公開ファイルに まわす */ }
+  }
+  return await fetchWebBackup();
+}
+
+setTimeout(async function autoLoadFromGitHub() {
+  try {
+    const parsed = await fetchRemoteBackup();
+    if (!parsed) return;
     const ghMastered = (parsed.state.mastered || []).length;
     const localMastered = (state.mastered || []).length;
-    // GitHubの方が新しければ上書き
+    // 向こうの方が 進んでいる ときだけ 上書き（こちらが 多いときは 触らない）
     if (ghMastered > localMastered) {
       Object.assign(state, parsed.state);
       saveState();
-      showGHToast(`☁️ GitHubから読込 (${ghMastered}語)`);
+      showGHToast(`☁️ Webから読込 (${ghMastered}語)`);
       setTimeout(() => location.reload(), 1500);
     }
   } catch (e) {
-    console.warn("GitHub auto-load failed:", e);
+    console.warn("auto-load failed:", e);
   }
 }, 0);
 
@@ -3175,6 +3198,7 @@ function openSettings() {
         <button class="btn small" onclick="autoSaveToGitHub()">☁️ 今すぐ保存</button>
       </div>
       <div class="row">
+        <button class="btn ghost small" onclick="loadFromWeb()">🌐 Webから復元</button>
         <button class="btn ghost small" onclick="loadFromGitHub()">☁️ GitHubから読込</button>
       </div>
       <div class="row">
@@ -3403,6 +3427,27 @@ async function autoSaveToGitHub() {
   } catch (e) {
     console.warn("GitHub save failed:", e);
   }
+}
+
+// 🌐 Web上の バックアップから 復元（Token いらない）
+async function loadFromWeb() {
+  const parsed = await fetchWebBackup();
+  if (!parsed) {
+    alert("Web上の バックアップが 見つかりませんでした。\n（インターネットに つながっているか 確認してね）");
+    return;
+  }
+  const n = (parsed.state.mastered || []).length;
+  const h = (parsed.state.history || []).length;
+  const now = (state.mastered || []).length;
+  if (!confirm(
+    `Web上の バックアップから 復元します。\n\n`
+    + `覚えた語: ${n}語\n記録: ${h}回\n保存日: ${parsed.exportedAt || "不明"}\n\n`
+    + `いまの この端末: ${now}語\n\n`
+    + `この端末の 進捗は 上書きされます。よろしいですか？`)) return;
+  state = { ...structuredClone(defaultState), ...parsed.state };
+  saveState();
+  alert(`復元しました！\n覚えた語: ${state.mastered.length}語`);
+  location.reload();
 }
 
 async function loadFromGitHub() {
