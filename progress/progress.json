@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T06:54:52.656Z",
+  "exportedAt": "2026-10-05T06:55:37.158Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2494,6 +2494,16 @@
         "word": "chaos",
         "masteredAt": "2026-10-05",
         "mode": "test"
+      },
+      {
+        "word": "leap",
+        "masteredAt": "2026-10-05",
+        "mode": "test"
+      },
+      {
+        "word": "undertake",
+        "masteredAt": "2026-10-05",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2536,15 +2546,10 @@
         "word": "favor",
         "at": "2026-07-29",
         "learnCount": 1
-      },
-      {
-        "word": "undertake",
-        "at": "2026-10-02",
-        "learnCount": 1
       }
     ],
-    "totalCorrect": 5382,
-    "totalAttempts": 6242,
+    "totalCorrect": 5394,
+    "totalAttempts": 6254,
     "lastSessionDate": "2026-10-05",
     "streak": 4,
     "history": [
@@ -3981,6 +3986,13 @@
         "score": 24,
         "total": 24,
         "mode": "test"
+      },
+      {
+        "date": "2026-10-05",
+        "climbed": 2,
+        "score": 12,
+        "total": 12,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -4269,10 +4281,10 @@
       },
       "grant": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 9,
+        "due": "2026-10-21",
+        "correct": 12,
         "wrong": 2,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-10-05"
       },
       "appreciate": {
         "box": 5,
@@ -4325,10 +4337,10 @@
       },
       "contribute": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 8,
+        "due": "2026-10-21",
+        "correct": 11,
         "wrong": 2,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-10-05"
       },
       "launch": {
         "box": 5,
@@ -7896,11 +7908,11 @@
         "everLearned": true
       },
       "leap": {
-        "box": 4,
-        "due": "2026-10-12",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-10-21",
+        "correct": 7,
         "wrong": 0,
-        "seenAt": "2026-10-04",
+        "seenAt": "2026-10-05",
         "learnedAt": "2026-10-04",
         "everLearned": true
       },
@@ -7986,11 +7998,11 @@
         "everLearned": true
       },
       "undertake": {
-        "box": 3,
-        "due": "2026-10-07",
-        "correct": 4,
+        "box": 5,
+        "due": "2026-10-21",
+        "correct": 7,
         "wrong": 2,
-        "seenAt": "2026-10-03",
+        "seenAt": "2026-10-05",
         "learnedAt": "2026-10-03",
         "everLearned": true
       },
