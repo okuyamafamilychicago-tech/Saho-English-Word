@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-05T06:55:37.158Z",
+  "exportedAt": "2026-10-06T07:04:46.564Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -8138,7 +8138,8 @@
       "batch-2",
       "batch-3",
       "batch-4",
-      "batch-5"
+      "batch-5",
+      "batch-6"
     ],
     "svgTheme": "ac",
     "hiddenFound": [
@@ -8547,12 +8548,93 @@
       "arise",
       "sacrifice",
       "devote",
-      "discipline"
+      "discipline",
+      "chaos",
+      "passive",
+      "flee",
+      "consequently",
+      "exhaust",
+      "quest",
+      "divorce",
+      "constitute",
+      "endure",
+      "shallow",
+      "agenda",
+      "sew",
+      "nasty",
+      "invade",
+      "leap",
+      "accidentally",
+      "overwhelming",
+      "supplement",
+      "sole",
+      "scary",
+      "appetite",
+      "probable",
+      "abstract",
+      "offend",
+      "privilege",
+      "leak",
+      "swell",
+      "namely",
+      "outlet",
+      "navigate",
+      "scatter",
+      "renew",
+      "drown",
+      "reproduce",
+      "beast",
+      "profitable",
+      "decent",
+      "lease",
+      "sensation",
+      "suspend",
+      "uncover",
+      "dye",
+      "premise",
+      "influential",
+      "virtue",
+      "literary",
+      "sympathy",
+      "instinct",
+      "appliance",
+      "modest",
+      "isolate",
+      "progressive",
+      "cough",
+      "delete",
+      "originate",
+      "enthusiastic",
+      "transmit",
+      "span",
+      "noble",
+      "terror",
+      "bump",
+      "saint",
+      "ally",
+      "demanding",
+      "classify",
+      "sophisticated",
+      "tender",
+      "domain",
+      "likewise",
+      "alert",
+      "undertake",
+      "commodity",
+      "dense",
+      "interact",
+      "weave",
+      "fossil",
+      "swear",
+      "boast",
+      "awkward",
+      "soak"
     ],
     "reviewRound": {
       "1": 1,
       "2": 1,
-      "3": 1
+      "3": 1,
+      "4": 1
     },
     "reviewSweep": {
       "1": {
@@ -8767,12 +8849,117 @@
           "ancestor",
           "nod"
         ]
+      },
+      "4": {
+        "round": 1,
+        "remaining": []
       }
     },
     "reviewDone": 65,
     "describeWrong": [],
     "describeDone": 0,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "cease",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "convey",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "ethnic",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "inherit",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "retreat",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "given",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "discourage",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "violate",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "provision",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "descend",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "pioneer",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "fulfill",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "acute",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "drift",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "sue",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "evident",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "shed",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "stimulate",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "inspect",
+        "at": "2026-10-06",
+        "count": 1
+      },
+      {
+        "word": "remedy",
+        "at": "2026-10-06",
+        "count": 1
+      }
+    ]
   }
 }
