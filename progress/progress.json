@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-06T07:17:13.975Z",
+  "exportedAt": "2026-10-07T05:56:37.066Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -4004,6 +4004,15 @@
         "style": "quiz",
         "round": 1,
         "found": 0
+      },
+      {
+        "date": "2026-10-06",
+        "climbed": 0,
+        "score": 3,
+        "total": 10,
+        "mode": "describe",
+        "scope": "せつめい",
+        "style": "type"
       }
     ],
     "srs": {
@@ -8639,7 +8648,22 @@
       "swear",
       "boast",
       "awkward",
-      "soak"
+      "soak",
+      "acute",
+      "ethnic",
+      "drift",
+      "sue",
+      "inherit",
+      "inspect",
+      "evident",
+      "descend",
+      "violate",
+      "pioneer",
+      "shed",
+      "cease",
+      "discourage",
+      "convey",
+      "remedy"
     ],
     "reviewRound": {
       "1": 1,
@@ -8862,7 +8886,7 @@
         ]
       },
       "4": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
@@ -8904,108 +8928,33 @@
         "count": 1
       }
     ],
-    "describeDone": 0,
+    "describeDone": 1,
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "cease",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "convey",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "ethnic",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "inherit",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
         "word": "retreat",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-07",
+        "count": 2
       },
       {
         "word": "given",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "discourage",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "violate",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-07",
+        "count": 2
       },
       {
         "word": "provision",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "descend",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "pioneer",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-07",
+        "count": 2
       },
       {
         "word": "fulfill",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "acute",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "drift",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "sue",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "evident",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "shed",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-07",
+        "count": 2
       },
       {
         "word": "stimulate",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "inspect",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
-        "word": "remedy",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-07",
+        "count": 2
       }
     ]
   }
