@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-07T05:56:37.066Z",
+  "exportedAt": "2026-10-07T17:44:59.670Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -4013,6 +4013,17 @@
         "mode": "describe",
         "scope": "せつめい",
         "style": "type"
+      },
+      {
+        "date": "2026-10-07",
+        "climbed": 0,
+        "score": 15,
+        "total": 20,
+        "mode": "review",
+        "scope": "バッチ5",
+        "style": "quiz",
+        "round": 2,
+        "found": 0
       }
     ],
     "srs": {
@@ -8663,13 +8674,15 @@
       "cease",
       "discourage",
       "convey",
-      "remedy"
+      "remedy",
+      "fulfill",
+      "retreat"
     ],
     "reviewRound": {
       "1": 1,
       "2": 1,
       "3": 1,
-      "4": 2
+      "4": 3
     },
     "reviewSweep": {
       "1": {
@@ -8886,11 +8899,11 @@
         ]
       },
       "4": {
-        "round": 2,
+        "round": 3,
         "remaining": []
       }
     },
-    "reviewDone": 66,
+    "reviewDone": 67,
     "describeWrong": [
       {
         "word": "differ",
@@ -8932,29 +8945,19 @@
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "retreat",
-        "at": "2026-10-07",
-        "count": 2
-      },
-      {
         "word": "given",
         "at": "2026-10-07",
-        "count": 2
+        "count": 3
       },
       {
         "word": "provision",
         "at": "2026-10-07",
-        "count": 2
-      },
-      {
-        "word": "fulfill",
-        "at": "2026-10-07",
-        "count": 2
+        "count": 3
       },
       {
         "word": "stimulate",
         "at": "2026-10-07",
-        "count": 2
+        "count": 3
       }
     ]
   }
