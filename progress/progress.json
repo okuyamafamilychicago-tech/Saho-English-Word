@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-07T17:44:59.670Z",
+  "exportedAt": "2026-10-07T17:45:14.182Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -4023,6 +4023,17 @@
         "scope": "バッチ5",
         "style": "quiz",
         "round": 2,
+        "found": 0
+      },
+      {
+        "date": "2026-10-07",
+        "climbed": 0,
+        "score": 2,
+        "total": 5,
+        "mode": "review",
+        "scope": "バッチ5",
+        "style": "quiz",
+        "round": 3,
         "found": 0
       }
     ],
@@ -8676,13 +8687,15 @@
       "convey",
       "remedy",
       "fulfill",
-      "retreat"
+      "retreat",
+      "given",
+      "stimulate"
     ],
     "reviewRound": {
       "1": 1,
       "2": 1,
       "3": 1,
-      "4": 3
+      "4": 4
     },
     "reviewSweep": {
       "1": {
@@ -8899,11 +8912,11 @@
         ]
       },
       "4": {
-        "round": 3,
+        "round": 4,
         "remaining": []
       }
     },
-    "reviewDone": 67,
+    "reviewDone": 68,
     "describeWrong": [
       {
         "word": "differ",
@@ -8945,19 +8958,9 @@
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "given",
-        "at": "2026-10-07",
-        "count": 3
-      },
-      {
         "word": "provision",
         "at": "2026-10-07",
-        "count": 3
-      },
-      {
-        "word": "stimulate",
-        "at": "2026-10-07",
-        "count": 3
+        "count": 4
       }
     ]
   }
