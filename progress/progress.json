@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-10T18:22:45.105Z",
+  "exportedAt": "2026-10-11T19:50:12.075Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2504,6 +2504,36 @@
         "word": "undertake",
         "masteredAt": "2026-10-05",
         "mode": "test"
+      },
+      {
+        "word": "segment",
+        "masteredAt": "2026-10-11",
+        "mode": "test"
+      },
+      {
+        "word": "mold",
+        "masteredAt": "2026-10-11",
+        "mode": "test"
+      },
+      {
+        "word": "fatigue",
+        "masteredAt": "2026-10-11",
+        "mode": "test"
+      },
+      {
+        "word": "accumulate",
+        "masteredAt": "2026-10-11",
+        "mode": "test"
+      },
+      {
+        "word": "sensible",
+        "masteredAt": "2026-10-11",
+        "mode": "test"
+      },
+      {
+        "word": "realm",
+        "masteredAt": "2026-10-11",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2546,12 +2576,22 @@
         "word": "favor",
         "at": "2026-07-29",
         "learnCount": 1
+      },
+      {
+        "word": "respective",
+        "at": "2026-10-11",
+        "learnCount": 0
+      },
+      {
+        "word": "voluntary",
+        "at": "2026-10-11",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 5487,
-    "totalAttempts": 6372,
-    "lastSessionDate": "2026-10-10",
-    "streak": 2,
+    "totalCorrect": 5520,
+    "totalAttempts": 6415,
+    "lastSessionDate": "2026-10-11",
+    "streak": 3,
     "history": [
       {
         "date": "2026-06-02",
@@ -4071,6 +4111,13 @@
         "score": 14,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-10-11",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -8211,20 +8258,20 @@
         "everLearned": true
       },
       "realm": {
-        "box": 0,
-        "due": "2026-10-10",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-10-15",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-10-10",
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
       "voluntary": {
-        "box": 1,
-        "due": "2026-10-11",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-10-10",
+        "box": 3,
+        "due": "2026-10-15",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
@@ -8247,20 +8294,20 @@
         "everLearned": true
       },
       "segment": {
-        "box": 1,
-        "due": "2026-10-11",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-19",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-10-10",
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
       "respective": {
-        "box": 0,
-        "due": "2026-10-10",
-        "correct": 1,
-        "wrong": 1,
-        "seenAt": "2026-10-10",
+        "box": 2,
+        "due": "2026-10-13",
+        "correct": 4,
+        "wrong": 2,
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
@@ -8310,20 +8357,20 @@
         "everLearned": true
       },
       "mold": {
-        "box": 0,
-        "due": "2026-10-10",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-10-15",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-10-10",
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
       "sensible": {
-        "box": 0,
-        "due": "2026-10-10",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-10-15",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-10-10",
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
@@ -8373,20 +8420,20 @@
         "everLearned": true
       },
       "fatigue": {
-        "box": 0,
-        "due": "2026-10-10",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-10-15",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-10-10",
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       },
       "accumulate": {
-        "box": 0,
-        "due": "2026-10-10",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-10-15",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-10-10",
+        "seenAt": "2026-10-11",
         "learnedAt": "2026-10-10",
         "everLearned": true
       }
