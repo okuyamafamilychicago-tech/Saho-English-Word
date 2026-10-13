@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-13T15:10:15.196Z",
+  "exportedAt": "2026-10-13T15:42:35.831Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2648,8 +2648,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 5607,
-    "totalAttempts": 6516,
+    "totalCorrect": 5612,
+    "totalAttempts": 6524,
     "lastSessionDate": "2026-10-13",
     "streak": 5,
     "history": [
@@ -9362,38 +9362,38 @@
     "reviewDone": 70,
     "describeWrong": [
       {
-        "word": "differ",
-        "at": "2026-10-06",
-        "count": 1
-      },
-      {
         "word": "commodity",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-13",
+        "count": 2
       },
       {
         "word": "pursue",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-13",
+        "count": 2
       },
       {
         "word": "interfere",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-13",
+        "count": 2
       },
       {
         "word": "candidate",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-13",
+        "count": 2
       },
       {
         "word": "rural",
-        "at": "2026-10-06",
-        "count": 1
+        "at": "2026-10-13",
+        "count": 2
       },
       {
         "word": "sponsor",
-        "at": "2026-10-06",
+        "at": "2026-10-13",
+        "count": 2
+      },
+      {
+        "word": "assess",
+        "at": "2026-10-13",
         "count": 1
       }
     ],
