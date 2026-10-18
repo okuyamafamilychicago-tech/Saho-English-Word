@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-17T06:27:36.978Z",
+  "exportedAt": "2026-10-18T07:22:39.838Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2703,10 +2703,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 5696,
-    "totalAttempts": 6616,
-    "lastSessionDate": "2026-10-17",
-    "streak": 2,
+    "totalCorrect": 5791,
+    "totalAttempts": 6737,
+    "lastSessionDate": "2026-10-18",
+    "streak": 3,
     "history": [
       {
         "date": "2026-06-02",
@@ -4290,6 +4290,13 @@
         "climbed": 0,
         "score": 9,
         "total": 12,
+        "mode": "learn"
+      },
+      {
+        "date": "2026-10-18",
+        "climbed": 0,
+        "score": 10,
+        "total": 20,
         "mode": "learn"
       }
     ],
@@ -8703,93 +8710,183 @@
         "everLearned": true
       },
       "stumble": {
-        "box": 1,
+        "box": 0,
         "due": "2026-10-18",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "ritual": {
-        "box": 1,
+        "box": 0,
         "due": "2026-10-18",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "ashamed": {
-        "box": 1,
-        "due": "2026-10-18",
-        "correct": 1,
+        "box": 2,
+        "due": "2026-10-20",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "miserable": {
-        "box": 0,
-        "due": "2026-10-17",
-        "correct": 0,
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
         "wrong": 1,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "scold": {
-        "box": 1,
+        "box": 0,
         "due": "2026-10-18",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "lump": {
-        "box": 1,
+        "box": 0,
         "due": "2026-10-18",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "cautious": {
-        "box": 1,
-        "due": "2026-10-18",
-        "correct": 1,
+        "box": 2,
+        "due": "2026-10-20",
+        "correct": 2,
         "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "designate": {
-        "box": 1,
+        "box": 0,
         "due": "2026-10-18",
         "correct": 1,
-        "wrong": 0,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "insure": {
         "box": 0,
-        "due": "2026-10-17",
+        "due": "2026-10-18",
         "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "wrong": 2,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       },
       "racial": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "enclose": {
         "box": 0,
-        "due": "2026-10-17",
+        "due": "2026-10-18",
         "correct": 0,
         "wrong": 1,
-        "seenAt": "2026-10-17",
-        "learnedAt": "2026-10-17",
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "carve": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "stain": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "confess": {
+        "box": 0,
+        "due": "2026-10-18",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "flock": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "courtesy": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "compromise": {
+        "box": 0,
+        "due": "2026-10-18",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "amaze": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "durable": {
+        "box": 1,
+        "due": "2026-10-19",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
+        "everLearned": true
+      },
+      "narrative": {
+        "box": 0,
+        "due": "2026-10-18",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-10-18",
+        "learnedAt": "2026-10-18",
         "everLearned": true
       }
     },
