@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-20T16:29:06.511Z",
+  "exportedAt": "2026-10-22T05:44:13.481Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2649,6 +2649,46 @@
         "word": "clarify",
         "masteredAt": "2026-10-16",
         "mode": "test"
+      },
+      {
+        "word": "stumble",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "cultivate",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "enclose",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "scold",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "insure",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "ritual",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "lump",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
+      },
+      {
+        "word": "designate",
+        "masteredAt": "2026-10-22",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2693,19 +2733,14 @@
         "learnCount": 1
       },
       {
-        "word": "cultivate",
-        "at": "2026-10-16",
-        "learnCount": 1
-      },
-      {
         "word": "restore",
         "at": "2026-10-16",
         "learnCount": 1
       }
     ],
-    "totalCorrect": 5861,
-    "totalAttempts": 6817,
-    "lastSessionDate": "2026-10-20",
+    "totalCorrect": 5902,
+    "totalAttempts": 6859,
+    "lastSessionDate": "2026-10-22",
     "streak": 1,
     "history": [
       {
@@ -4305,6 +4340,13 @@
         "score": 19,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-10-22",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -8672,11 +8714,11 @@
         "everLearned": true
       },
       "cultivate": {
-        "box": 3,
-        "due": "2026-10-21",
-        "correct": 5,
+        "box": 5,
+        "due": "2026-11-07",
+        "correct": 8,
         "wrong": 3,
-        "seenAt": "2026-10-17",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-17",
         "everLearned": true
       },
@@ -8717,20 +8759,20 @@
         "everLearned": true
       },
       "stumble": {
-        "box": 1,
-        "due": "2026-10-21",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-10-30",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
       "ritual": {
-        "box": 0,
-        "due": "2026-10-20",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-10-26",
+        "correct": 4,
         "wrong": 2,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
@@ -8753,20 +8795,20 @@
         "everLearned": true
       },
       "scold": {
-        "box": 1,
-        "due": "2026-10-21",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-10-30",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
       "lump": {
-        "box": 1,
-        "due": "2026-10-21",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-10-30",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
@@ -8780,20 +8822,20 @@
         "everLearned": true
       },
       "designate": {
-        "box": 1,
-        "due": "2026-10-21",
-        "correct": 2,
+        "box": 4,
+        "due": "2026-10-30",
+        "correct": 5,
         "wrong": 1,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
       "insure": {
-        "box": 1,
-        "due": "2026-10-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-30",
+        "correct": 4,
         "wrong": 2,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
@@ -8807,11 +8849,11 @@
         "everLearned": true
       },
       "enclose": {
-        "box": 1,
-        "due": "2026-10-21",
-        "correct": 1,
+        "box": 4,
+        "due": "2026-10-30",
+        "correct": 4,
         "wrong": 1,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-22",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
