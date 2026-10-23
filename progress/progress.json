@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-23T05:49:37.099Z",
+  "exportedAt": "2026-10-23T05:53:04.455Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2689,6 +2689,16 @@
         "word": "designate",
         "masteredAt": "2026-10-22",
         "mode": "test"
+      },
+      {
+        "word": "cautious",
+        "masteredAt": "2026-10-23",
+        "mode": "test"
+      },
+      {
+        "word": "ashamed",
+        "masteredAt": "2026-10-23",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2738,8 +2748,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 5962,
-    "totalAttempts": 6924,
+    "totalCorrect": 5988,
+    "totalAttempts": 6953,
     "lastSessionDate": "2026-10-23",
     "streak": 2,
     "history": [
@@ -4354,6 +4364,13 @@
         "score": 16,
         "total": 20,
         "mode": "learn"
+      },
+      {
+        "date": "2026-10-23",
+        "climbed": 2,
+        "score": 12,
+        "total": 12,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -4779,17 +4796,17 @@
       },
       "appoint": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 8,
+        "due": "2026-11-08",
+        "correct": 11,
         "wrong": 3,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-10-23"
       },
       "possess": {
         "box": 5,
-        "due": "2026-06-22",
-        "correct": 11,
+        "due": "2026-11-08",
+        "correct": 14,
         "wrong": 3,
-        "seenAt": "2026-06-06"
+        "seenAt": "2026-10-23"
       },
       "disaster": {
         "box": 5,
@@ -8784,11 +8801,11 @@
         "everLearned": true
       },
       "ashamed": {
-        "box": 3,
-        "due": "2026-10-24",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-11-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-23",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
@@ -8820,11 +8837,11 @@
         "everLearned": true
       },
       "cautious": {
-        "box": 3,
-        "due": "2026-10-24",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-11-08",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-10-20",
+        "seenAt": "2026-10-23",
         "learnedAt": "2026-10-20",
         "everLearned": true
       },
