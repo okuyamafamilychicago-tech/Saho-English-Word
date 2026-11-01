@@ -98,6 +98,10 @@
   .card.overall { border: 2px solid var(--purple); }
   .logday { margin-top: 10px; }
   .logday table { margin-top: 2px; }
+  .logrow { cursor: pointer; }
+  .logrow:hover td { background: var(--bg-blue); }
+  .logrow .go { color: var(--blue-dark); font-weight: 800; }
+  .runview table { margin-top: 6px; }
   .sumhead { background: var(--bg-blue); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
   .sumlist { padding-left: 1.6em; }
   .sumlist li { padding: 6px 0; border-bottom: 1px dashed #efe7de; }
@@ -884,15 +888,39 @@ function logBody() {
   const pctCls = p => p >= 80 ? "o" : p < 50 ? "x" : "";
   return days.map(g => `<div class="logday"><b>📅 ${g.day}</b>
     <table>${g.runs.map(r => { const p = Math.round(r.score / r.total * 100), d = new Date(r.t);
-      return `<tr><td>${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}</td><td>${name(r.sid)}</td><td>${MODE[r.mode] || r.mode}</td><td><b>${r.score}/${r.total}</b> <span class="${pctCls(p)}">${p}%</span></td></tr>`; }).join("")}</table></div>`).join("")
+      return `<tr class="logrow" data-t="${r.t}" title="タップで結果を見る"><td>${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}</td><td>${name(r.sid)}</td><td>${MODE[r.mode] || r.mode}</td><td><b>${r.score}/${r.total}</b> <span class="${pctCls(p)}">${p}%</span> <span class="go">›</span></td></tr>`; }).join("")}</table></div>`).join("")
     + (runs.length > 10 ? `<div class="btns"><button class="btn alt" id="logMore">${logAll ? "最近の10回だけ表示" : `すべて表示（${runs.length}回）`}</button></div>` : "");
 }
 function logCard() {
   return `<div class="card"><h2>📅 実施記録</h2><div id="log-body">${logBody()}</div></div>`;
 }
 document.addEventListener("click", ev => {
-  if (ev.target && ev.target.id === "logMore") { logAll = !logAll; $("#log-body").innerHTML = logBody(); }
+  if (ev.target && ev.target.id === "logMore") { logAll = !logAll; $("#log-body").innerHTML = logBody(); return; }
+  const row = ev.target && ev.target.closest && ev.target.closest(".logrow");
+  if (row) showRun(row.dataset.t);
 });
+
+// 実施記録の1行 → その回のカードへ飛んで、1問ずつの結果を見せる
+function showRun(t) {
+  const r = store.runs.find(x => x.t === t); if (!r) return;
+  if (quizBusy() && !confirm("いま解いている問題は記録されません。結果を見ますか？")) return;
+  render();
+  const box = $("#quiz-" + r.sid); if (!box) return;
+  const byKey = new Map(DATA.reading.flatMap(e => e.quiz).map(q => [wkey(q), q]));
+  const d = new Date(r.t);
+  const rows = r.items.map(({ k, ok }) => { const q = byKey.get(k);
+    return `<tr><td>${ok ? '<span class="o">⭕</span>' : '<span class="x">❌</span>'}</td><td class="w">${q ? q.stem + q.ans : k}</td><td>${q ? q.ja.replace(/^\S+\s*=\s*/, "") : ""}</td></tr>`; }).join("");
+  const wrong = r.items.filter(x => !x.ok).map(x => byKey.get(x.k)).filter(Boolean);
+  box.innerHTML = `<div class="runview">
+    <div class="sumhead"><b>📅 ${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}　${MODE[r.mode] || r.mode} の結果</b>
+      <div class="result"><div class="score">${r.score} / ${r.total}</div><p>${Math.round(r.score / r.total * 100)}%　まちがい ${wrong.length} 問</p></div></div>
+    <table>${rows}</table>
+    <div class="btns">${wrong.length ? `<button class="btn pink" id="rvWrong">まちがえた ${wrong.length} 問をもう一度</button>` : ""}<button class="btn alt" id="rvBack">とじる</button></div></div>`;
+  const e = r.sid === "overall" ? { id: "overall", quiz: wrong } : DATA.reading.find(x => x.id === r.sid);
+  const w = $("#rvWrong", box); if (w) w.onclick = () => runQuiz(e, box, shuffle(wrong.slice()), "wrong");
+  $("#rvBack", box).onclick = () => render();
+  box.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 function readingCard(e) {
   const missTotal = e.total - e.correct;
