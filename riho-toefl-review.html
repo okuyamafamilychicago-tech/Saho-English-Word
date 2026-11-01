@@ -41,7 +41,7 @@
   .empty { text-align: center; color: var(--text-soft); padding: 40px 16px; }
   .empty .big { font-size: 2.4rem; }
 
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin: 12px 0; }
   .stat { background: var(--soft); border-radius: 12px; padding: 10px; text-align: center; }
   .stat b { display: block; font-family: 'Quicksand', sans-serif; font-size: 1.5rem; }
   .stat span { font-size: 0.75rem; color: var(--text-soft); }
@@ -95,6 +95,7 @@
   .fb.bad { background: var(--bg-pink); }
   .fb .ttl { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
   .col { padding-left: 1.2em; }
+  .card.overall { border: 2px solid var(--purple); }
   .sumhead { background: var(--bg-blue); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
   .sumlist { padding-left: 1.6em; }
   .sumlist li { padding: 6px 0; border-bottom: 1px dashed #efe7de; }
@@ -156,6 +157,7 @@
 <div class="container">
   <h1>📝 TOEFL 問題集 復習</h1>
   <p class="sub">解いた問題の「まちがえたところ」だけを、もう一度。</p>
+  <p class="sub" id="sync" style="font-size:0.78rem;margin-top:-12px"></p>
   <div class="tabs" id="tabs"></div>
   <div id="main"></div>
 </div>
@@ -678,16 +680,72 @@ const CATS = [
   { key: "speaking",  label: "🗣 Speaking" }
 ];
 
-/* ---------- 保存（ブラウザ内のみ。使えなくても動く） ---------- */
+/* ---------- 保存：この端末（localStorage）＋ GitHub（単語学習と同じトークンがあれば自動で同期） ---------- */
 const STORE_KEY = "rihoToeflReview";
-function loadStore() { try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { return {}; } }
-function saveStore(s) { try { localStorage.setItem(STORE_KEY, JSON.stringify(s)); } catch (e) {} }
+const GH_TOKEN_KEY = "vocabTrail_riho_gh_token";   // riho.html と共通。1回入れればどのページでも使える
+const GH_OWNER = "okuyamafamilychicago-tech", GH_REPO = "Saho-English-Word";
+const GH_PATH = "progress/riho_toefl_review.json";
+function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+// 記録は「解いた1回ごと」の runs だけ持つ。実施回数・ベスト・苦手な単語はすべて runs から計算する
+function loadStore() {
+  let s = {}; try { s = JSON.parse(lsGet(STORE_KEY) || "{}"); } catch (e) {}
+  if (!Array.isArray(s.runs)) s = { runs: [], legacy: s };   // 以前の形式（ベストだけ）は legacy に残す
+  return s;
+}
+function saveStore() { lsSet(STORE_KEY, JSON.stringify(store)); }
 let store = loadStore();
-function getTab() { try { return localStorage.getItem(STORE_KEY + ":tab") || "reading"; } catch (e) { return "reading"; } }
-function setTab(t) { try { localStorage.setItem(STORE_KEY + ":tab", t); } catch (e) {} }
+function getTab() { return lsGet(STORE_KEY + ":tab") || "reading"; }
+function setTab(t) { lsSet(STORE_KEY + ":tab", t); }
+
+const ghToken = () => lsGet(GH_TOKEN_KEY) || "";
+const ghApi = () => `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`;
+const ghHead = () => ({ Authorization: `token ${ghToken()}`, Accept: "application/vnd.github+json" });
+function mergeRuns(a, b) { const m = new Map(); [...a, ...b].forEach(r => m.set(r.t, r)); return [...m.values()].sort((x, y) => x.t.localeCompare(y.t)); }
+let syncState = "";
+async function ghSync() {
+  if (!ghToken()) { syncState = "local"; renderSync(); return; }
+  try {
+    const g = await fetch(ghApi(), { headers: ghHead(), cache: "no-store" });
+    let remote = [], sha = "";
+    if (g.ok) {
+      const j = await g.json(); sha = j.sha;
+      remote = JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g, ""))))).runs || [];
+    } else if (g.status !== 404) throw new Error(g.status);
+    const merged = mergeRuns(store.runs, remote);
+    const gotNew = merged.length !== store.runs.length;
+    store.runs = merged; saveStore();
+    if (merged.length !== remote.length) {
+      const payload = JSON.stringify({ app: "riho-toefl-review", savedAt: new Date().toISOString(), runs: merged });
+      const p = await fetch(ghApi(), { method: "PUT", headers: { ...ghHead(), "Content-Type": "application/json" },
+        body: JSON.stringify({ message: `TOEFL復習記録 ${new Date().toLocaleString("ja-JP")}`,
+          content: btoa(unescape(encodeURIComponent(payload))), ...(sha ? { sha } : {}) }) });
+      if (!p.ok) throw new Error(p.status);
+    }
+    syncState = "ok";
+    if (gotNew && current === "reading" && !quizBusy()) render();
+  } catch (e) { syncState = "err"; }
+  renderSync();
+}
+function renderSync() {
+  const el = $("#sync"); if (!el) return;
+  el.textContent = { ok: "☁️ 記録は GitHub に保存されています（どの端末でも同じ記録）",
+    local: "💾 記録はこの端末に保存（単語学習で GitHub トークンを設定すると、ほかの端末とも共有されます）",
+    err: "⚠️ GitHub と同期できませんでした（この端末には保存済み）" }[syncState] || "";
+}
+const quizBusy = () => !!document.querySelector("#checkBtn, #nextBtn, #gradeBtn");
 
 const $ = (s, r = document) => r.querySelector(s);
 const TAG = { form: ["form", "品詞・語尾"], mean: ["mean", "単語の意味"], blank: ["blank", "空欄だった"] };
+const MODE = { review: "復習（全問）", wrong: "まちがえた問題だけ", summary: "Summary", overall: "総合復習" };
+const wkey = q => (q.stem + q.ans).toLowerCase();
+const fmtT = t => { const d = new Date(t); return `${d.getMonth() + 1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}`; };
+
+function addRun(sid, mode, results) {   // results: [{ k, ok }]
+  store.runs.push({ t: new Date().toISOString(), sid, mode, score: results.filter(r => r.ok).length, total: results.length, items: results });
+  saveStore(); ghSync();
+}
+const runsOf = sid => store.runs.filter(r => r.sid === sid);
 
 /* ---------- タブ ---------- */
 let current = getTab();
@@ -711,15 +769,103 @@ function render() {
     $("#main").innerHTML = speakingOverview(list) + sorted.map(speakingCard).join("");
     return;
   }
-  $("#main").innerHTML = list.map(e => ({ reading: readingCard, listening: genericCard, writing: genericCard })[current](e)).join("");
-  if (current === "reading") list.forEach(e => bindReading(e));
+  if (current === "reading") {
+    $("#main").innerHTML = overallCard() + list.map(readingCard).join("");
+    bindOverall();
+    list.forEach(e => bindReading(e));
+    return;
+  }
+  $("#main").innerHTML = list.map(genericCard).join("");
+}
+
+/* ---------- 実施記録 ---------- */
+function historyHtml(runs) {
+  if (!runs.length) return "";
+  return `<details><summary>実施記録を見る（${runs.length}回）</summary>
+    <table><tr><th>日時</th><th>やったこと</th><th>点</th></tr>${runs.slice().reverse().map(r =>
+      `<tr><td>${fmtT(r.t)}</td><td>${MODE[r.mode] || r.mode}</td><td><b>${r.score}/${r.total}</b>（${Math.round(r.score / r.total * 100)}%）</td></tr>`).join("")}</table></details>`;
+}
+
+/* ---------- 総合復習：何度もまちがえている単語 ＋ まだ練習していない単語 ---------- */
+const OVERALL_MAX = 20;
+function overallPool() {
+  // 単語ごとの成績（どの回・どのモードで解いたかは問わない）
+  const st = {};
+  store.runs.forEach(r => r.items.forEach(({ k, ok }) => {
+    const s = st[k] || (st[k] = { seen: 0, wrong: 0, recent: [] });
+    s.seen++; if (!ok) s.wrong++; s.recent.push(ok);
+  }));
+  // 全部の回の復習単語（新しい回が先）。同じ単語が別の回でも出ていれば本番のミス回数を足す
+  const m = new Map();
+  DATA.reading.forEach(e => e.quiz.forEach(q => {
+    const k = wkey(q);
+    if (m.has(k)) m.get(k).testMiss++; else m.set(k, { k, q, testMiss: 1 });
+  }));
+  const words = [...m.values()].map(w => {
+    const s = st[w.k] || { seen: 0, wrong: 0, recent: [] };
+    return { ...w, seen: s.seen, misses: w.testMiss + s.wrong,
+      mastered: s.recent.length >= 2 && s.recent.slice(-2).every(Boolean) };   // 2回続けて正解したら卒業
+  });
+  const weak = words.filter(w => w.seen > 0 && w.misses >= 2 && !w.mastered).sort((a, b) => b.misses - a.misses);
+  const fresh = words.filter(w => w.seen === 0);
+  return { weak, fresh, pick: [...weak, ...fresh].slice(0, OVERALL_MAX) };
+}
+function overallMeta() {
+  const { weak, fresh } = overallPool();
+  const runs = runsOf("overall");
+  return `<div class="stats">
+      <div class="stat"><b>${weak.length}語</b><span>何度もまちがえている</span></div>
+      <div class="stat"><b>${fresh.length}語</b><span>まだ練習していない</span></div>
+      <div class="stat"><b>${runs.length}回</b><span>総合復習の実施回数</span></div>
+    </div>
+    ${weak.length ? `<p class="hint">苦手な単語：${weak.slice(0, 8).map(w => `<span class="w">${w.q.stem}${w.q.ans}</span>（${w.misses}回ミス）`).join("、")}</p>` : ""}
+    ${historyHtml(runs)}`;
+}
+function overallCard() {
+  return `<div class="card overall" id="card-overall">
+    <h2>🔁 総合復習</h2>
+    <p class="hint">これまでの全部の回から、<b>何度もまちがえている単語</b>と<b>まだ練習していない単語</b>を最大 ${OVERALL_MAX} 問出します。2回続けて正解した単語は出なくなります。</p>
+    <div id="meta-overall">${overallMeta()}</div>
+    <div class="quiz" id="quiz-overall"></div></div>`;
+}
+function bindOverall() {
+  const box = $("#quiz-overall");
+  const { pick } = overallPool();
+  if (!pick.length) { box.innerHTML = `<p class="hint" style="text-align:center;margin-top:10px">今は出す単語がありません 🎉 全部2回続けて正解しています。</p>`; return; }
+  const e = { id: "overall", quiz: pick.map(w => w.q) };
+  box.innerHTML = `<div class="btns"><button class="btn" id="ovGo">総合復習をはじめる（${pick.length}問）</button></div>`;
+  $("#ovGo").onclick = () => runQuiz(e, box, shuffle(e.quiz.slice()), "overall");
 }
 
 /* ---------- Reading ---------- */
+function sessionStats(e) {
+  const runs = runsOf(e.id);
+  const leg = (store.legacy || {})[e.id] || {};
+  const full = runs.filter(r => r.total === e.quiz.length).map(r => r.score);
+  [leg.best, leg.summaryBest].forEach(v => { if (v != null) full.push(v); });
+  const last = runs[runs.length - 1];
+  const lastWrong = last ? last.items.filter(x => !x.ok).map(x => x.k)
+    : e.quiz.filter(q => (leg.lastWrong || []).includes(q.id)).map(wkey);
+  return { runs, attempts: runs.length + (leg.attempts || 0), best: full.length ? Math.max(...full) : null, lastWrong };
+}
+function sessionMeta(e) {
+  const s = sessionStats(e), n = e.quiz.length;
+  return `<div class="stats">
+      <div class="stat"><b>${e.correct}/${e.total}</b><span>本番で正解した空欄</span></div>
+      <div class="stat"><b>${Math.round(e.correct / e.total * 100)}%</b><span>本番の正答率</span></div>
+      <div class="stat">${s.best != null ? `<b>${s.best}/${n}</b><span>復習ベスト</span>` : `<b>${n}問</b><span>復習問題</span>`}</div>
+      <div class="stat"><b>${s.attempts}回</b><span>復習の実施回数</span></div>
+    </div>
+    ${historyHtml(s.runs)}`;
+}
+function refreshMeta(e) {
+  const el = $("#meta-" + e.id); if (!el) return;
+  el.innerHTML = e.id === "overall" ? overallMeta() : sessionMeta(e);
+  const ov = $("#meta-overall"); if (ov && e.id !== "overall") ov.innerHTML = overallMeta();
+}
+
 function readingCard(e) {
-  const pct = Math.round(e.correct / e.total * 100);
   const missTotal = e.total - e.correct;
-  const rec = store[e.id] || {};
   const bars = e.breakdown.map(b =>
     `<div class="bar"><span class="lbl">${b.label}</span><span class="track"><span class="fill" style="display:block;width:${b.n / missTotal * 100}%;background:${b.color}"></span></span><span class="num">${Math.round(b.n / missTotal * 100)}%</span></div>`).join("");
   const rows = e.passages.map(p =>
@@ -727,11 +873,7 @@ function readingCard(e) {
   return `<div class="card" id="card-${e.id}">
     <h2>${e.title}</h2>
     <div class="meta">${e.date}</div>
-    <div class="stats">
-      <div class="stat"><b>${e.correct}/${e.total}</b><span>正解した空欄</span></div>
-      <div class="stat"><b>${pct}%</b><span>正答率</span></div>
-      <div class="stat" id="best-${e.id}">${bestStat(e)}</div>
-    </div>
+    <div id="meta-${e.id}">${sessionMeta(e)}</div>
     <h3>まちがい ${missTotal} 個の内訳</h3>
     ${bars}
     <div class="tip"><ol>${e.advice.map(a => `<li>${a}</li>`).join("")}</ol></div>
@@ -744,28 +886,18 @@ function readingCard(e) {
   </div>`;
 }
 
-// 復習（全問）と Summary のうち良いほうの点。まだ解いていなければ問題数を見せる
-function bestStat(e) {
-  const rec = store[e.id] || {};
-  const scores = [rec.best, rec.summaryBest].filter(v => v != null);
-  const n = e.quiz.length;
-  return scores.length
-    ? `<b>${Math.max(...scores)}/${n}</b><span>復習ベスト</span>`
-    : `<b>${n}問</b><span>復習問題（まだ挑戦していません）</span>`;
-}
-function refreshBest(e) { const el = $("#best-" + e.id); if (el) el.innerHTML = bestStat(e); }
-
 function bindReading(e) {
   const box = $("#quiz-" + e.id);
-  const rec = store[e.id] || {};
-  const startBtns = [`<button class="btn" data-go="all">全部とく（${e.quiz.length}問）</button>`];
-  if (rec.lastWrong && rec.lastWrong.length) startBtns.push(`<button class="btn pink" data-go="wrong">前回まちがえた ${rec.lastWrong.length} 問だけ</button>`);
-  if (rec.attempts) startBtns.push(`<button class="btn alt" data-sum="1">📋 Summary テスト${rec.summaryBest != null ? `（ベスト ${rec.summaryBest}/${e.quiz.length}）` : ""}</button>`);
+  const s = sessionStats(e);
+  const wrongItems = e.quiz.filter(q => s.lastWrong.includes(wkey(q)));
+  const startBtns = [`<button class="btn" data-go="review">全部とく（${e.quiz.length}問）</button>`];
+  if (wrongItems.length) startBtns.push(`<button class="btn pink" data-go="wrong">前回まちがえた ${wrongItems.length} 問だけ</button>`);
+  if (s.attempts) startBtns.push(`<button class="btn alt" data-sum="1">📋 Summary テスト</button>`);
   box.innerHTML = `<div class="btns">${startBtns.join("")}</div>`;
   const sb = box.querySelector("[data-sum]"); if (sb) sb.onclick = () => runSummary(e, box);
   box.querySelectorAll("[data-go]").forEach(b => b.onclick = () => {
-    const items = b.dataset.go === "wrong" ? e.quiz.filter(q => rec.lastWrong.includes(q.id)) : e.quiz.slice();
-    runQuiz(e, box, shuffle(items), b.dataset.go === "all");
+    const mode = b.dataset.go;
+    runQuiz(e, box, shuffle(mode === "wrong" ? wrongItems : e.quiz.slice()), mode);
   });
 }
 
@@ -799,49 +931,45 @@ function runSummary(e, box) {
   const items = shuffle(e.quiz.slice());
   box.innerHTML = `
     <div class="sumhead"><b>📋 Summary テスト</b>（全 ${items.length} 問）<br><span class="hint">本番と同じように、ぜんぶ埋めてから最後に採点します。</span></div>
-    <ol class="sumlist">${items.map(q => `<li data-id="${q.id}"><span class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${letterBoxes(q.ans.length)}</span>${q.after}</span><div class="sumfb"></div></li>`).join("")}</ol>
+    <ol class="sumlist">${items.map((q, n) => `<li data-n="${n}"><span class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${letterBoxes(q.ans.length)}</span>${q.after}</span><div class="sumfb"></div></li>`).join("")}</ol>
     <div class="btns"><button class="btn" id="gradeBtn">採点する</button></div>`;
   const all = [...box.querySelectorAll(".lt")];
   bindLetters(all, null);
   all[0].focus();
   $("#gradeBtn", box).onclick = () => {
-    let right = 0; const wrong = [];
-    items.forEach(q => {
-      const li = box.querySelector(`li[data-id="${q.id}"]`);
+    const results = [], wrong = [];
+    items.forEach((q, n) => {
+      const li = box.querySelector(`li[data-n="${n}"]`);
       const ins = [...li.querySelectorAll(".lt")];
-      const typed = ins.map(x => x.value).join("");
-      const ok = typed === q.ans;
+      const ok = ins.map(x => x.value).join("") === q.ans;
       ins.forEach((x, k) => { x.readOnly = true; x.classList.add(x.value === q.ans[k] ? "ok" : "ng"); });
-      if (ok) right++; else wrong.push(q);
+      results.push({ k: wkey(q), ok }); if (!ok) wrong.push(q);
       li.querySelector(".sumfb").innerHTML = ok ? `<span class="o">⭕</span>`
         : `<span class="x">❌</span> 正解 <span class="w o">${q.stem}${q.ans}</span>　<span class="hint">${q.pt}</span>`;
     });
-    const rec = store[e.id] || {};
-    rec.summaryBest = Math.max(rec.summaryBest || 0, right);
-    rec.lastWrong = wrong.map(q => q.id);
-    store[e.id] = rec; saveStore(store);
-    refreshBest(e);
+    addRun(e.id, "summary", results);
+    refreshMeta(e);
+    const right = items.length - wrong.length;
     const head = box.querySelector(".sumhead");
     head.innerHTML = `<div class="result"><div class="score">${right} / ${items.length}</div>
       <p>${wrong.length ? `まちがえた ${wrong.length} 問は下に ❌ と正解が出ています。` : "全問正解！🎉 この回の単語はマスターしました。"}</p></div>`;
     box.querySelector(".btns").innerHTML = `${wrong.length ? `<button class="btn pink" id="againWrong">まちがえた ${wrong.length} 問を復習</button>` : ""}<button class="btn" id="sumAgain">Summary をもう一度</button><button class="btn alt" id="backBtn">もどる</button>`;
-    const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wrong), false);
+    const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wrong), "wrong");
     $("#sumAgain", box).onclick = () => runSummary(e, box);
     $("#backBtn", box).onclick = () => render();
     head.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 }
 
-function runQuiz(e, box, items, full) {
-  let i = 0, right = 0; const wrong = [];
+function runQuiz(e, box, items, mode) {
+  let i = 0; const results = [], wrong = [];
   const show = () => {
     const q = items[i];
     const [tcls, tlabel] = TAG[q.type];
-    const boxes = letterBoxes(q.ans.length);
     box.innerHTML = `
       <div class="qhead"><span>${i + 1} / ${items.length}</span><span class="tag ${tcls}">${tlabel}</span></div>
       <div class="prog"><div style="width:${i / items.length * 100}%"></div></div>
-      <div class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${boxes}</span>${q.after}</div>
+      <div class="sentence">${q.before}<span class="word"><span class="stem">${q.stem}</span>${letterBoxes(q.ans.length)}</span>${q.after}</div>
       <p class="hint">空欄は ${q.ans.length} 文字。1マスに1文字ずつ入れてね。</p>
       <div id="fbArea"></div>
       <div class="btns"><button class="btn" id="checkBtn">こたえあわせ</button></div>`;
@@ -852,7 +980,7 @@ function runQuiz(e, box, items, full) {
       const typed = ins.map(x => x.value).join("");
       const ok = typed === q.ans;
       ins.forEach((x, k) => { x.readOnly = true; x.classList.add(x.value === q.ans[k] ? "ok" : "ng"); });
-      if (ok) right++; else wrong.push(q.id);
+      results.push({ k: wkey(q), ok }); if (!ok) wrong.push(q);
       $("#fbArea", box).innerHTML = `<div class="fb ${ok ? "good" : "bad"}">
         <div class="ttl">${ok ? "⭕ 正解！" : "❌ ざんねん"}　${q.ja}</div>
         <div>あなたの答え：<span class="x">${q.yours}</span>（本番）${ok ? "" : `／<span class="x">${q.stem}${typed || "（空欄）"}</span>（今回）`}</div>
@@ -867,22 +995,18 @@ function runQuiz(e, box, items, full) {
     };
   };
   const finish = () => {
-    const rec = store[e.id] || {};
-    rec.lastWrong = wrong.slice();
-    if (full) rec.best = Math.max(rec.best || 0, right);
-    rec.attempts = (rec.attempts || 0) + 1;
-    store[e.id] = rec; saveStore(store);
-    const wq = items.filter(q => wrong.includes(q.id));
+    addRun(e.id, mode, results);
+    const right = items.length - wrong.length;
     box.innerHTML = `<div class="result">
       <div class="score">${right} / ${items.length}</div>
-      <p>${wrong.length ? "まちがえた単語は、次は「前回まちがえた問題だけ」で練習できます。" : "全問正解！🎉 この回の単語はバッチリです。"}</p>
-      ${wq.length ? `<div class="wronglist"><b>もう一度おぼえる：</b><ul style="padding-left:1.2em">${wq.map(q => `<li>${q.ja.replace(/^(\S+)/, '<span class="w">$1</span>')}</li>`).join("")}</ul></div>` : ""}
+      <p>${wrong.length ? "まちがえた単語は、次は「前回まちがえた問題だけ」や総合復習で練習できます。" : "全問正解！🎉 バッチリです。"}</p>
+      ${wrong.length ? `<div class="wronglist"><b>もう一度おぼえる：</b><ul style="padding-left:1.2em">${wrong.map(q => `<li>${q.ja.replace(/^(\S+)/, '<span class="w">$1</span>')}</li>`).join("")}</ul></div>` : ""}
       <div class="tip" style="margin-top:14px">📋 最後に <b>Summary テスト</b>：全 ${e.quiz.length} 問を1ページでまとめて解いて、ちゃんと覚えたか確認しよう。</div>
-      <div class="btns"><button class="btn" id="sumBtn">📋 Summary テストへ</button>${wq.length ? `<button class="btn pink" id="againWrong">まちがえた ${wq.length} 問をもう一度</button>` : ""}<button class="btn alt" id="backBtn">もどる</button></div></div>`;
+      <div class="btns"><button class="btn" id="sumBtn">📋 Summary テストへ</button>${wrong.length ? `<button class="btn pink" id="againWrong">まちがえた ${wrong.length} 問をもう一度</button>` : ""}<button class="btn alt" id="backBtn">もどる</button></div></div>`;
     $("#sumBtn", box).onclick = () => runSummary(e, box);
-    const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wq), false);
+    const aw = $("#againWrong", box); if (aw) aw.onclick = () => runQuiz(e, box, shuffle(wrong.slice()), "wrong");
     $("#backBtn", box).onclick = () => render();
-    refreshBest(e);
+    refreshMeta(e);
   };
   show();
 }
@@ -951,6 +1075,7 @@ function speakingCard(e, idx) {
 }
 
 render();
+ghSync();
 </script>
 </body>
 </html>
