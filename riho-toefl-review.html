@@ -96,6 +96,8 @@
   .fb .ttl { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
   .col { padding-left: 1.2em; }
   .card.overall { border: 2px solid var(--purple); }
+  .logday { margin-top: 10px; }
+  .logday table { margin-top: 2px; }
   .sumhead { background: var(--bg-blue); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
   .sumlist { padding-left: 1.6em; }
   .sumlist li { padding: 6px 0; border-bottom: 1px dashed #efe7de; }
@@ -770,7 +772,7 @@ function render() {
     return;
   }
   if (current === "reading") {
-    $("#main").innerHTML = overallCard() + list.map(readingCard).join("");
+    $("#main").innerHTML = logCard() + overallCard() + list.map(readingCard).join("");
     bindOverall();
     list.forEach(e => bindReading(e));
     return;
@@ -862,7 +864,35 @@ function refreshMeta(e) {
   const el = $("#meta-" + e.id); if (!el) return;
   el.innerHTML = e.id === "overall" ? overallMeta() : sessionMeta(e);
   const ov = $("#meta-overall"); if (ov && e.id !== "overall") ov.innerHTML = overallMeta();
+  const lg = $("#log-body"); if (lg) lg.innerHTML = logBody();
 }
+
+/* ---------- 実施記録：いつ・どの回を・何点だったか（日にちごと） ---------- */
+let logAll = false;
+function logBody() {
+  if (!store.runs.length) return `<p class="hint">まだ記録がありません。復習を解くと、ここに日にちと結果が出ます。</p>`;
+  const name = sid => { if (sid === "overall") return "全部の回から";
+    const e = DATA.reading.find(x => x.id === sid); return e ? `${+e.date.slice(5, 7)}/${+e.date.slice(8)} の回` : sid; };
+  const runs = store.runs.slice().sort((a, b) => b.t.localeCompare(a.t));
+  const shown = logAll ? runs : runs.slice(0, 10);
+  const days = [];
+  shown.forEach(r => {
+    const d = new Date(r.t), day = `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`;
+    let g = days.find(x => x.day === day); if (!g) days.push(g = { day, runs: [] });
+    g.runs.push(r);
+  });
+  const pctCls = p => p >= 80 ? "o" : p < 50 ? "x" : "";
+  return days.map(g => `<div class="logday"><b>📅 ${g.day}</b>
+    <table>${g.runs.map(r => { const p = Math.round(r.score / r.total * 100), d = new Date(r.t);
+      return `<tr><td>${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}</td><td>${name(r.sid)}</td><td>${MODE[r.mode] || r.mode}</td><td><b>${r.score}/${r.total}</b> <span class="${pctCls(p)}">${p}%</span></td></tr>`; }).join("")}</table></div>`).join("")
+    + (runs.length > 10 ? `<div class="btns"><button class="btn alt" id="logMore">${logAll ? "最近の10回だけ表示" : `すべて表示（${runs.length}回）`}</button></div>` : "");
+}
+function logCard() {
+  return `<div class="card"><h2>📅 実施記録</h2><div id="log-body">${logBody()}</div></div>`;
+}
+document.addEventListener("click", ev => {
+  if (ev.target && ev.target.id === "logMore") { logAll = !logAll; $("#log-body").innerHTML = logBody(); }
+});
 
 function readingCard(e) {
   const missTotal = e.total - e.correct;
