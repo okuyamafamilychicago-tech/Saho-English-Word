@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-03T06:14:21.887Z",
+  "exportedAt": "2026-11-03T06:31:33.848Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2858,8 +2858,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 6398,
-    "totalAttempts": 7431,
+    "totalCorrect": 6403,
+    "totalAttempts": 7442,
     "lastSessionDate": "2026-11-03",
     "streak": 3,
     "history": [
@@ -10220,37 +10220,42 @@
     "describeWrong": [
       {
         "word": "commodity",
-        "at": "2026-11-02",
-        "count": 3
+        "at": "2026-11-03",
+        "count": 4
       },
       {
         "word": "pursue",
-        "at": "2026-11-02",
-        "count": 3
+        "at": "2026-11-03",
+        "count": 4
       },
       {
         "word": "interfere",
-        "at": "2026-11-02",
-        "count": 3
+        "at": "2026-11-03",
+        "count": 4
       },
       {
         "word": "sponsor",
-        "at": "2026-11-02",
-        "count": 3
+        "at": "2026-11-03",
+        "count": 4
       },
       {
         "word": "assess",
-        "at": "2026-11-02",
-        "count": 2
+        "at": "2026-11-03",
+        "count": 3
       },
       {
         "word": "retreat",
-        "at": "2026-11-02",
-        "count": 1
+        "at": "2026-11-03",
+        "count": 2
       },
       {
         "word": "frequently",
-        "at": "2026-11-02",
+        "at": "2026-11-03",
+        "count": 2
+      },
+      {
+        "word": "descend",
+        "at": "2026-11-03",
         "count": 1
       }
     ],
