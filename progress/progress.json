@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-03T06:31:33.848Z",
+  "exportedAt": "2026-11-04T05:19:21.606Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2784,6 +2784,36 @@
         "word": "destiny",
         "masteredAt": "2026-11-01",
         "mode": "test"
+      },
+      {
+        "word": "profound",
+        "masteredAt": "2026-11-04",
+        "mode": "test"
+      },
+      {
+        "word": "dump",
+        "masteredAt": "2026-11-04",
+        "mode": "test"
+      },
+      {
+        "word": "magnificent",
+        "masteredAt": "2026-11-04",
+        "mode": "test"
+      },
+      {
+        "word": "fake",
+        "masteredAt": "2026-11-04",
+        "mode": "test"
+      },
+      {
+        "word": "desperate",
+        "masteredAt": "2026-11-04",
+        "mode": "test"
+      },
+      {
+        "word": "substitute",
+        "masteredAt": "2026-11-04",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2843,11 +2873,6 @@
         "learnCount": 1
       },
       {
-        "word": "desperate",
-        "at": "2026-11-01",
-        "learnCount": 2
-      },
-      {
         "word": "impulse",
         "at": "2026-11-01",
         "learnCount": 1
@@ -2856,12 +2881,22 @@
         "word": "compromise",
         "at": "2026-11-01",
         "learnCount": 1
+      },
+      {
+        "word": "triumph",
+        "at": "2026-11-04",
+        "learnCount": 0
+      },
+      {
+        "word": "publicity",
+        "at": "2026-11-04",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 6403,
-    "totalAttempts": 7442,
-    "lastSessionDate": "2026-11-03",
-    "streak": 3,
+    "totalCorrect": 6427,
+    "totalAttempts": 7468,
+    "lastSessionDate": "2026-11-04",
+    "streak": 4,
     "history": [
       {
         "date": "2026-06-02",
@@ -4546,6 +4581,22 @@
         "score": 7,
         "total": 13,
         "mode": "learn"
+      },
+      {
+        "date": "2026-11-03",
+        "climbed": 0,
+        "score": 2,
+        "total": 10,
+        "mode": "describe",
+        "scope": "せつめい",
+        "style": "type"
+      },
+      {
+        "date": "2026-11-04",
+        "climbed": 6,
+        "score": 24,
+        "total": 26,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -9221,20 +9272,20 @@
         "everLearned": true
       },
       "publicity": {
-        "box": 0,
-        "due": "2026-11-03",
-        "correct": 1,
-        "wrong": 4,
-        "seenAt": "2026-11-03",
+        "box": 3,
+        "due": "2026-11-08",
+        "correct": 4,
+        "wrong": 5,
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-03",
         "everLearned": true
       },
       "fake": {
-        "box": 2,
-        "due": "2026-11-04",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-11-20",
+        "correct": 6,
         "wrong": 1,
-        "seenAt": "2026-11-02",
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-02",
         "everLearned": true
       },
@@ -9257,11 +9308,11 @@
         "everLearned": true
       },
       "triumph": {
-        "box": 2,
-        "due": "2026-11-04",
-        "correct": 3,
-        "wrong": 1,
-        "seenAt": "2026-11-02",
+        "box": 4,
+        "due": "2026-11-12",
+        "correct": 6,
+        "wrong": 2,
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-02",
         "everLearned": true
       },
@@ -9347,11 +9398,11 @@
         "everLearned": true
       },
       "desperate": {
-        "box": 0,
-        "due": "2026-11-03",
-        "correct": 3,
+        "box": 3,
+        "due": "2026-11-08",
+        "correct": 6,
         "wrong": 5,
-        "seenAt": "2026-11-03",
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-03",
         "everLearned": true
       },
@@ -9410,20 +9461,20 @@
         "everLearned": true
       },
       "dump": {
-        "box": 0,
-        "due": "2026-11-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-03",
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-03",
         "everLearned": true
       },
       "profound": {
-        "box": 0,
-        "due": "2026-11-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-03",
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-03",
         "everLearned": true
       },
@@ -9446,11 +9497,11 @@
         "everLearned": true
       },
       "substitute": {
-        "box": 0,
-        "due": "2026-11-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-03",
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-03",
         "everLearned": true
       },
@@ -9464,11 +9515,11 @@
         "everLearned": true
       },
       "magnificent": {
-        "box": 0,
-        "due": "2026-11-03",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-08",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-03",
+        "seenAt": "2026-11-04",
         "learnedAt": "2026-11-03",
         "everLearned": true
       }
@@ -10259,7 +10310,7 @@
         "count": 1
       }
     ],
-    "describeDone": 3,
+    "describeDone": 4,
     "schemaVersion": 2,
     "reviewWrong": []
   }
