@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-07T09:12:47.154Z",
+  "exportedAt": "2026-11-08T09:48:37.302Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -2854,6 +2854,41 @@
         "word": "attain",
         "masteredAt": "2026-11-04",
         "mode": "test"
+      },
+      {
+        "word": "bulk",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
+      },
+      {
+        "word": "grasp",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
+      },
+      {
+        "word": "distract",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
+      },
+      {
+        "word": "digest",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
+      },
+      {
+        "word": "render",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
+      },
+      {
+        "word": "portray",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
+      },
+      {
+        "word": "decay",
+        "masteredAt": "2026-11-08",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -2931,12 +2966,17 @@
         "word": "publicity",
         "at": "2026-11-04",
         "learnCount": 1
+      },
+      {
+        "word": "consensus",
+        "at": "2026-11-08",
+        "learnCount": 0
       }
     ],
-    "totalCorrect": 6558,
-    "totalAttempts": 7629,
-    "lastSessionDate": "2026-11-07",
-    "streak": 2,
+    "totalCorrect": 6588,
+    "totalAttempts": 7662,
+    "lastSessionDate": "2026-11-08",
+    "streak": 3,
     "history": [
       {
         "date": "2026-06-02",
@@ -4667,6 +4707,13 @@
         "score": 7,
         "total": 16,
         "mode": "learn"
+      },
+      {
+        "date": "2026-11-08",
+        "climbed": 7,
+        "score": 24,
+        "total": 25,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -9522,11 +9569,11 @@
         "everLearned": true
       },
       "digest": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 1,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 4,
         "wrong": 2,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
@@ -9612,20 +9659,20 @@
         "everLearned": true
       },
       "render": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
       "decay": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
         "wrong": 2,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
@@ -9657,47 +9704,47 @@
         "everLearned": true
       },
       "grasp": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
       "distract": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
       "bulk": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
       "portray": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
         "wrong": 1,
-        "seenAt": "2026-11-07",
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
       "consensus": {
-        "box": 0,
-        "due": "2026-11-07",
-        "correct": 0,
-        "wrong": 1,
-        "seenAt": "2026-11-07",
+        "box": 3,
+        "due": "2026-11-12",
+        "correct": 3,
+        "wrong": 2,
+        "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
       },
