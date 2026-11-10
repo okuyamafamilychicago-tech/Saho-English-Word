@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-08T09:55:54.370Z",
+  "exportedAt": "2026-11-10T16:01:15.412Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -9877,7 +9877,8 @@
       "batch-3",
       "batch-4",
       "batch-5",
-      "batch-6"
+      "batch-6",
+      "batch-7"
     ],
     "svgTheme": "ac",
     "hiddenFound": [
@@ -10387,13 +10388,33 @@
       "retreat",
       "given",
       "stimulate",
-      "provision"
+      "provision",
+      "enclose",
+      "jealous",
+      "vivid",
+      "idle",
+      "browse",
+      "assert",
+      "stumble",
+      "distract",
+      "conceive",
+      "sour",
+      "scold",
+      "carve",
+      "lump",
+      "expedition",
+      "abundant",
+      "accumulate",
+      "bounce",
+      "bleed",
+      "immense"
     ],
     "reviewRound": {
       "1": 1,
       "2": 1,
       "3": 1,
-      "4": 1
+      "4": 1,
+      "5": 1
     },
     "reviewSweep": {
       "1": {
@@ -10612,6 +10633,91 @@
       "4": {
         "round": 5,
         "remaining": []
+      },
+      "5": {
+        "round": 1,
+        "remaining": [
+          "realm",
+          "voluntary",
+          "refine",
+          "vanish",
+          "segment",
+          "respective",
+          "implication",
+          "bore",
+          "infect",
+          "illusion",
+          "nightmare",
+          "mold",
+          "sensible",
+          "crawl",
+          "tolerate",
+          "deficit",
+          "fatigue",
+          "clarify",
+          "semester",
+          "cultivate",
+          "resign",
+          "sorrow",
+          "reluctant",
+          "ritual",
+          "ashamed",
+          "miserable",
+          "cautious",
+          "designate",
+          "insure",
+          "racial",
+          "stain",
+          "confess",
+          "flock",
+          "courtesy",
+          "compromise",
+          "amaze",
+          "durable",
+          "narrative",
+          "disclose",
+          "mercy",
+          "compensate",
+          "frankly",
+          "whisper",
+          "neutral",
+          "intensive",
+          "ridiculous",
+          "publicity",
+          "fake",
+          "annoy",
+          "distress",
+          "triumph",
+          "worship",
+          "hence",
+          "shrink",
+          "nonetheless",
+          "destiny",
+          "intermediate",
+          "mainstream",
+          "impulse",
+          "desperate",
+          "coordinate",
+          "attain",
+          "cater",
+          "digest",
+          "dump",
+          "profound",
+          "frustrate",
+          "substitute",
+          "cruel",
+          "magnificent",
+          "correspond",
+          "motive",
+          "render",
+          "decay",
+          "tempt",
+          "comply",
+          "grasp",
+          "bulk",
+          "portray",
+          "voyage"
+        ]
       }
     },
     "reviewDone": 70,
@@ -10664,6 +10770,12 @@
     ],
     "describeDone": 5,
     "schemaVersion": 2,
-    "reviewWrong": []
+    "reviewWrong": [
+      {
+        "word": "consensus",
+        "at": "2026-11-10",
+        "count": 1
+      }
+    ]
   }
 }
