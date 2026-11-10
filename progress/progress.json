@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T16:05:57.617Z",
+  "exportedAt": "2026-11-10T16:08:36.581Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -10448,7 +10448,31 @@
       "durable",
       "cautious",
       "triumph",
-      "distress"
+      "distress",
+      "insure",
+      "worship",
+      "disclose",
+      "annoy",
+      "whisper",
+      "mainstream",
+      "grasp",
+      "digest",
+      "motive",
+      "frustrate",
+      "impulse",
+      "segment",
+      "neutral",
+      "vanish",
+      "magnificent",
+      "render",
+      "realm",
+      "shrink",
+      "miserable",
+      "racial",
+      "cater",
+      "sorrow",
+      "respective",
+      "substitute"
     ],
     "reviewRound": {
       "1": 1,
@@ -10778,37 +10802,7 @@
       },
       "5": {
         "round": 1,
-        "remaining": [
-          "realm",
-          "vanish",
-          "segment",
-          "respective",
-          "sensible",
-          "crawl",
-          "deficit",
-          "cultivate",
-          "sorrow",
-          "miserable",
-          "insure",
-          "racial",
-          "disclose",
-          "compensate",
-          "whisper",
-          "neutral",
-          "annoy",
-          "worship",
-          "shrink",
-          "mainstream",
-          "impulse",
-          "cater",
-          "digest",
-          "frustrate",
-          "substitute",
-          "magnificent",
-          "motive",
-          "render",
-          "grasp"
-        ]
+        "remaining": []
       }
     },
     "reviewDone": 70,
@@ -10914,6 +10908,31 @@
       },
       {
         "word": "dump",
+        "at": "2026-11-10",
+        "count": 1
+      },
+      {
+        "word": "deficit",
+        "at": "2026-11-10",
+        "count": 1
+      },
+      {
+        "word": "cultivate",
+        "at": "2026-11-10",
+        "count": 1
+      },
+      {
+        "word": "compensate",
+        "at": "2026-11-10",
+        "count": 1
+      },
+      {
+        "word": "crawl",
+        "at": "2026-11-10",
+        "count": 1
+      },
+      {
+        "word": "sensible",
         "at": "2026-11-10",
         "count": 1
       }
