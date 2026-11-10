@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T16:08:36.581Z",
+  "exportedAt": "2026-11-10T16:10:11.096Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -4827,6 +4827,17 @@
         "score": 15,
         "total": 15,
         "mode": "test"
+      },
+      {
+        "date": "2026-11-10",
+        "climbed": 0,
+        "score": 24,
+        "total": 29,
+        "mode": "review",
+        "scope": "バッチ6",
+        "style": "quiz",
+        "round": 1,
+        "found": 0
       }
     ],
     "srs": {
@@ -10472,14 +10483,29 @@
       "cater",
       "sorrow",
       "respective",
-      "substitute"
+      "substitute",
+      "semester",
+      "fatigue",
+      "implication",
+      "consensus",
+      "frankly",
+      "tolerate",
+      "crawl",
+      "sensible",
+      "cultivate",
+      "mold",
+      "deficit",
+      "dump",
+      "nightmare",
+      "portray",
+      "compensate"
     ],
     "reviewRound": {
       "1": 1,
       "2": 1,
       "3": 1,
       "4": 1,
-      "5": 1
+      "5": 2
     },
     "reviewSweep": {
       "1": {
@@ -10801,11 +10827,11 @@
         ]
       },
       "5": {
-        "round": 1,
+        "round": 2,
         "remaining": []
       }
     },
-    "reviewDone": 70,
+    "reviewDone": 71,
     "describeWrong": [
       {
         "word": "commodity",
@@ -10857,84 +10883,9 @@
     "schemaVersion": 2,
     "reviewWrong": [
       {
-        "word": "consensus",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "frankly",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "semester",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "fatigue",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "nightmare",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "implication",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "portray",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "mold",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "tolerate",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
         "word": "reluctant",
         "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "dump",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "deficit",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "cultivate",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "compensate",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "crawl",
-        "at": "2026-11-10",
-        "count": 1
-      },
-      {
-        "word": "sensible",
-        "at": "2026-11-10",
-        "count": 1
+        "count": 2
       }
     ]
   }
