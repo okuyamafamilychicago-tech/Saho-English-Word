@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-10T16:10:17.662Z",
+  "exportedAt": "2026-11-12T15:38:22.304Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3058,10 +3058,10 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 6685,
-    "totalAttempts": 7764,
-    "lastSessionDate": "2026-11-08",
-    "streak": 3,
+    "totalCorrect": 6714,
+    "totalAttempts": 7801,
+    "lastSessionDate": "2026-11-12",
+    "streak": 1,
     "history": [
       {
         "date": "2026-06-02",
@@ -4849,6 +4849,24 @@
         "style": "quiz",
         "round": 2,
         "found": 0
+      },
+      {
+        "date": "2026-11-10",
+        "climbed": 0,
+        "score": 1,
+        "total": 1,
+        "mode": "review",
+        "scope": "バッチ6",
+        "style": "quiz",
+        "round": 3,
+        "found": 1
+      },
+      {
+        "date": "2026-11-12",
+        "climbed": 0,
+        "score": 8,
+        "total": 10,
+        "mode": "learn"
       }
     ],
     "srs": {
@@ -9891,6 +9909,96 @@
         "seenAt": "2026-11-08",
         "learnedAt": "2026-11-07",
         "everLearned": true
+      },
+      "dignity": {
+        "box": 0,
+        "due": "2026-11-12",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "tease": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "diminish": {
+        "box": 0,
+        "due": "2026-11-12",
+        "correct": 0,
+        "wrong": 1,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "compliment": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "humble": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "perfume": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "persist": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "revenge": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "rotate": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
+      },
+      "insult": {
+        "box": 1,
+        "due": "2026-11-13",
+        "correct": 1,
+        "wrong": 0,
+        "seenAt": "2026-11-12",
+        "learnedAt": "2026-11-12",
+        "everLearned": true
       }
     },
     "images": {},
@@ -9908,7 +10016,8 @@
       1,
       2,
       3,
-      4
+      4,
+      5
     ],
     "reviewOk": [
       "crisis",
@@ -10517,7 +10626,7 @@
       "2": 1,
       "3": 1,
       "4": 1,
-      "5": 3
+      "5": 1
     },
     "reviewSweep": {
       "1": {
@@ -10843,7 +10952,7 @@
         "remaining": []
       }
     },
-    "reviewDone": 72,
+    "reviewDone": 73,
     "describeWrong": [
       {
         "word": "commodity",
