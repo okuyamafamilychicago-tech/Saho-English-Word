@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-17T05:50:04.913Z",
+  "exportedAt": "2026-11-17T05:58:10.484Z",
   "auto": true,
   "masterVersion": "2026-07-26-batches-1-20",
   "state": {
@@ -3004,6 +3004,46 @@
         "word": "comply",
         "masteredAt": "2026-11-08",
         "mode": "test"
+      },
+      {
+        "word": "insult",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "humble",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "verbal",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "glow",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "compliment",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "revenge",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "hypothesis",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
+      },
+      {
+        "word": "herd",
+        "masteredAt": "2026-11-17",
+        "mode": "test"
       }
     ],
     "testWrong": [
@@ -3058,8 +3098,8 @@
         "learnCount": 1
       }
     ],
-    "totalCorrect": 6940,
-    "totalAttempts": 8056,
+    "totalCorrect": 6976,
+    "totalAttempts": 8094,
     "lastSessionDate": "2026-11-17",
     "streak": 2,
     "history": [
@@ -4895,6 +4935,13 @@
         "score": 15,
         "total": 19,
         "mode": "learn"
+      },
+      {
+        "date": "2026-11-17",
+        "climbed": 8,
+        "score": 24,
+        "total": 24,
+        "mode": "test"
       }
     ],
     "srs": {
@@ -9966,20 +10013,20 @@
         "everLearned": true
       },
       "compliment": {
-        "box": 3,
-        "due": "2026-11-20",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
       "humble": {
-        "box": 3,
-        "due": "2026-11-20",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
@@ -10002,11 +10049,11 @@
         "everLearned": true
       },
       "revenge": {
-        "box": 3,
-        "due": "2026-11-20",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
@@ -10020,11 +10067,11 @@
         "everLearned": true
       },
       "insult": {
-        "box": 3,
-        "due": "2026-11-20",
-        "correct": 3,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 6,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
@@ -10065,20 +10112,20 @@
         "everLearned": true
       },
       "verbal": {
-        "box": 2,
-        "due": "2026-11-18",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
       "glow": {
-        "box": 2,
-        "due": "2026-11-18",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
@@ -10101,20 +10148,20 @@
         "everLearned": true
       },
       "hypothesis": {
-        "box": 2,
-        "due": "2026-11-18",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
       "herd": {
-        "box": 2,
-        "due": "2026-11-18",
-        "correct": 2,
+        "box": 5,
+        "due": "2026-12-03",
+        "correct": 5,
         "wrong": 0,
-        "seenAt": "2026-11-16",
+        "seenAt": "2026-11-17",
         "learnedAt": "2026-11-16",
         "everLearned": true
       },
